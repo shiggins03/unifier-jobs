@@ -1,0 +1,29 @@
+# Bulk staffing-firm spam filter. Matches route to data/quarantine.jsonl
+# (never the dashboard). Company match is case-insensitive substring.
+# False positive? Remove the entry and the job resurfaces next run.
+companies:
+  - Diverse Lynx
+  - Cynet Systems
+  - TekWissen
+  - eTeam
+  - Mindlance
+  - Collabera
+  - Infojini
+  - SysMind
+  - VDart
+  - Amtex
+  - HireTalent
+  - Radiant Systems
+  - Stellent IT
+  - Georgia IT
+  - Accion Labs
+  - E-Solutions
+  - Tanisha Systems
+# Title/description red flags (any match = quarantine)
+title_patterns:
+  - 'c2c'
+  - 'corp to corp'
+  - 'corp-to-corp'
+  - 'h1b'
+  - 'opt/cpt'
+  - 'w2 only'

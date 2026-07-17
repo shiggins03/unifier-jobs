@@ -1,0 +1,23 @@
+[
+  {
+    "company": "Meta",
+    "url": "https://www.metacareers.com/jobs?q=Primavera",
+    "note": "careers page mentions \"unifier\" — extract the actual posting",
+    "source": "generic_page:Meta",
+    "first_seen": "2026-07-17"
+  },
+  {
+    "company": "DRMcNatty & Associates",
+    "url": "https://www.drmcnatty.com/careers",
+    "note": "careers page mentions \"unifier\" — extract the actual posting",
+    "source": "generic_page:DRMcNatty & Associates",
+    "first_seen": "2026-07-17"
+  },
+  {
+    "company": "Project Partners",
+    "url": "https://www.projectp.com/company/careers.php",
+    "note": "careers page mentions \"unifier\" — extract the actual posting",
+    "source": "generic_page:Project Partners",
+    "first_seen": "2026-07-17"
+  }
+]

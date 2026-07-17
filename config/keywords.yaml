@@ -1,0 +1,10 @@
+# Keyword tiers. Tier 1 stands alone; tier 2 tokens only count when a
+# context term also appears somewhere in the posting (title or body).
+tier1:
+  - unifier
+tier2:
+  tokens: [P6, OPC, PIF, OIC]
+  context_required: [primavera, oracle, project controls]
+discovery_queries:
+  - '"Primavera Unifier"'
+  - 'Oracle Unifier'

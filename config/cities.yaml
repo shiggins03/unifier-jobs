@@ -1,0 +1,21 @@
+# Location ranking for sort order. Matching is metro-area substring match
+# against the posting's stated location (lowercased). Display stays verbatim.
+# rank 1 = highest. "remote" slots after named metros, before other US.
+metros:
+  - rank: 1
+    name: NYC
+    match: [new york, nyc, brooklyn, manhattan, queens, bronx, jersey city, newark, hoboken, long island, white plains, stamford]
+  - rank: 2
+    name: LA
+    match: [los angeles, santa monica, burbank, glendale, pasadena, long beach, anaheim, irvine, el segundo]
+  - rank: 3
+    name: SF Bay
+    match: [san francisco, oakland, san jose, palo alto, mountain view, sunnyvale, menlo park, berkeley, fremont, redwood city]
+  - rank: 4
+    name: Miami
+    match: [miami, fort lauderdale, boca raton, west palm beach, doral]
+  - rank: 5
+    name: Boston
+    match: [boston, cambridge, somerville, waltham, quincy, burlington ma]
+remote_rank: 6
+other_us_rank: 7

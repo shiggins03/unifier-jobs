@@ -1,0 +1,174 @@
+# Direct-monitor roster. The triage agent proposes additions/fixes via PR.
+# tier: A (marquee) / B (major owners & E&C) / C (specialist consultancies)
+# ats: workday | oracle_orc | greenhouse | generic_page
+# enabled: true = endpoint live-verified 2026-07-17; false = needs fingerprinting (see note)
+# generic_page monitors: URL is fetched and checked for the tier-1 keyword.
+#   For search-result URLs, query a DIFFERENT term (Primavera) than the checked
+#   keyword (unifier) so the query echo can't false-positive.
+companies:
+  # ---- Tier A ----
+  - name: Meta
+    tier: A
+    ats: generic_page
+    url: https://www.metacareers.com/jobs?q=Primavera
+    enabled: true
+  - name: Google
+    tier: A
+    ats: generic_page
+    url: https://www.google.com/about/careers/applications/jobs/results?q=%22primavera%22
+    enabled: true
+  - name: Oracle
+    tier: A
+    ats: oracle_orc
+    url: https://eeho.fa.us2.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions
+    site_number: CX_45001
+    enabled: false
+    note: endpoint responds but finder returns 0 for any keyword — verify siteNumber/finder syntax
+  - name: JLL
+    tier: A
+    ats: workday
+    workday_host: jll.wd1.myworkdayjobs.com
+    workday_tenant: jll
+    workday_site: jllcareers
+    enabled: true
+  - name: Accenture
+    tier: A
+    ats: workday
+    workday_host: accenture.wd103.myworkdayjobs.com
+    workday_tenant: accenture
+    workday_site: AccentureCareers
+    enabled: true
+  - name: Deloitte
+    tier: A
+    ats: generic_page
+    url: https://apply.deloitte.com/
+    enabled: false
+    note: Avature platform — find keyword-searchable listing URL
+  - name: Bechtel
+    tier: A
+    ats: generic_page
+    url: https://jobs.bechtel.com/search-jobs/Unifier
+    enabled: true
+
+  # ---- Tier B ----
+  - name: WSP
+    tier: B
+    ats: workday
+    workday_host: wsp.wd3.myworkdayjobs.com
+    workday_tenant: wsp
+    workday_site: WSP
+    enabled: false
+    note: host resolves but tenant/site 422 — find correct cxs pair
+  - name: Burns & McDonnell
+    tier: B
+    ats: workday
+    workday_host: burnsmcd.wd1.myworkdayjobs.com
+    workday_tenant: burnsmcd
+    workday_site: External
+    enabled: false
+    note: host resolves but tenant/site 422 — find correct cxs pair
+  - name: Turner & Townsend
+    tier: B
+    ats: generic_page
+    url: https://careers.turnerandtownsend.com/search/?q=Unifier
+    enabled: true
+  - name: MTA
+    tier: B
+    ats: generic_page
+    url: https://careers.mta.org/search/unifier/jobs
+    enabled: false
+    note: 403 bot protection — needs different approach
+  - name: LA Metro
+    tier: B
+    ats: generic_page
+    url: https://www.governmentjobs.com/careers/lacmta?keywords=unifier
+    enabled: false
+    note: governmentjobs.com — check for JSON API
+  - name: MARTA
+    tier: B
+    ats: generic_page
+    url: https://careers-martatransit.icims.com/jobs/search?ss=1&searchKeyword=unifier
+    enabled: false
+    note: verify iCIMS portal URL
+  - name: BC Hydro
+    tier: B
+    ats: generic_page
+    url: https://www.bchydro.com/careers.html
+    enabled: false
+    note: Canada — outside US scope; keep for reference only
+  - name: Northwell Health
+    tier: B
+    ats: generic_page
+    url: https://jobs.northwell.edu/
+    enabled: false
+    note: search path 404 — find keyword search URL on their Phenom site
+  - name: Mass General Brigham
+    tier: B
+    ats: workday
+    workday_host: partners.wd1.myworkdayjobs.com
+    workday_tenant: partners
+    workday_site: MGB
+    enabled: false
+    note: host resolves but tenant/site 422 — find correct cxs pair
+  - name: Petrofac
+    tier: B
+    ats: generic_page
+    url: https://careers.petrofac.com/
+    enabled: false
+    note: SSL error on probe — revisit
+  - name: Linesight
+    tier: B
+    ats: generic_page
+    url: https://www.linesight.com/careers/
+    enabled: true
+  - name: Wipro
+    tier: B
+    ats: generic_page
+    url: https://careers.wipro.com/
+    enabled: false
+    note: search URL echoes query (false positives); discovery net covers them
+
+  # ---- Tier C (specialist Unifier consultancies) ----
+  - name: DRMcNatty & Associates
+    tier: C
+    ats: generic_page
+    url: https://www.drmcnatty.com/careers
+    enabled: true
+  - name: OnIndus
+    tier: C
+    ats: generic_page
+    url: https://www.onindus.com/careers/
+    enabled: true
+  - name: Project Partners
+    tier: C
+    ats: generic_page
+    url: https://www.projectp.com/company/careers.php
+    enabled: true
+    note: marketing text mentions Unifier — first triage entry will be a false alarm; mark it ignored
+  - name: EPMA
+    tier: C
+    ats: generic_page
+    url: https://www.epmainc.com/careers
+    enabled: true
+  - name: CDP Inc.
+    tier: C
+    ats: generic_page
+    url: https://www.cdp-inc.com/careers
+    enabled: false
+    note: 404 — find correct careers URL
+  - name: Consertus
+    tier: C
+    ats: generic_page
+    url: https://www.consertus.com/careers
+    enabled: true
+  - name: Luster National
+    tier: C
+    ats: generic_page
+    url: https://luster.com/careers/
+    enabled: true
+  - name: Compass Consult
+    tier: C
+    ats: generic_page
+    url: https://compassconsult.co/careers/
+    enabled: false
+    note: page always contains Unifier in marketing copy — permanent false positive; needs a jobs-only URL
