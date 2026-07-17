@@ -64,13 +64,15 @@ def run():
     roster_norms = {models.norm(c["name"]): c for c in companies}
     query = kw["tier1"][0]
 
-    def record_health(name, count, ok):
+    def record_health(name, count, ok, inventory=None):
         h = health.setdefault(name, {"counts": [], "fail_streak": 0})
         if ok:
             h["counts"] = (h["counts"] + [count])[-5:]
             h["fail_streak"] = 0
         else:
             h["fail_streak"] += 1
+        if inventory is not None:
+            h["inventory"] = inventory  # source's total visible jobs (aliveness)
         h["last_run"] = today
 
     def add_triage(company, url, note, source):
@@ -89,7 +91,7 @@ def run():
         adapter = sources.DIRECT_ADAPTERS.get(co["ats"])
         if not adapter:
             continue
-        records, ok = adapter(co, query)
+        records, ok, inventory = adapter(co, query)
         src = f"{co['ats']}:{co['name']}"
         listings = 0
         if ok:
@@ -113,7 +115,7 @@ def run():
             _merge(store, job, today, baseline)
             seen_this_run.setdefault(src, set()).add(job["id"])
             listings += 1
-        record_health(src, listings, ok)
+        record_health(src, listings, ok, inventory)
 
     # ---- discovery boards ----
     board_batches = [("jsearch", sources.fetch_jsearch(kw["discovery_queries"])),
@@ -197,6 +199,9 @@ def run():
             continue
         if h.get("fail_streak", 0) >= 3:
             warnings.append(f"{name}: fetch failing ({h['fail_streak']} runs)")
+        elif h.get("inventory") == 0:
+            warnings.append(f"{name}: source reports 0 total jobs — monitor may be "
+                            f"blind or endpoint changed")
         elif len(h.get("counts", [])) >= 3 and all(c == 0 for c in h["counts"][-3:]) \
                 and any(c > 0 for c in h["counts"][:-3]):
             warnings.append(f"{name}: zero results for 3+ runs (was returning data)")

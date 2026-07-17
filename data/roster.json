@@ -5,8 +5,8 @@
       "name": "Meta",
       "tier": "A",
       "ats": "generic_page",
-      "enabled": true,
-      "note": null
+      "enabled": false,
+      "note": "BLIND — JS app; raw HTML identical for any query and contains a static \"unifier\" string (false trigger). Needs graphql/browser approach."
     },
     {
       "name": "Google",
@@ -47,8 +47,8 @@
       "name": "Bechtel",
       "tier": "A",
       "ats": "generic_page",
-      "enabled": true,
-      "note": null
+      "enabled": false,
+      "note": "BLIND — search results JS-rendered (identical HTML for any query); find the underlying jobs API."
     },
     {
       "name": "WSP",
@@ -68,8 +68,8 @@
       "name": "Turner & Townsend",
       "tier": "B",
       "ats": "generic_page",
-      "enabled": true,
-      "note": null
+      "enabled": false,
+      "note": "BLIND — search results JS-rendered (identical HTML for any query); find the underlying jobs API."
     },
     {
       "name": "MTA",

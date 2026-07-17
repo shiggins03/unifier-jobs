@@ -1,7 +1,10 @@
 """Source adapters. Direct ATS adapters return structured listings; generic_page
 returns triage entries (the script never parses arbitrary page structure).
 Discovery adapters skip silently when their API key isn't configured.
-Every adapter returns (records, ok) — ok=False means the fetch itself failed."""
+Direct adapters return (records, ok, inventory): inventory is the source's TOTAL
+visible job count regardless of keyword (aliveness check — 0 or None-when-expected
+means the monitor may be blind, not that no jobs match). Discovery adapters
+return (records, ok)."""
 import html
 import os
 import re
@@ -29,7 +32,15 @@ def fetch_workday(co, query):
         r.raise_for_status()
         postings = r.json().get("jobPostings", [])
     except Exception:
-        return [], False
+        return [], False, None
+    inventory = None
+    try:
+        inv = requests.post(url, json={"appliedFacets": {}, "limit": 1, "offset": 0,
+                                       "searchText": ""}, headers=UA, timeout=TIMEOUT)
+        if inv.ok:
+            inventory = inv.json().get("total")
+    except Exception:
+        pass
     out = []
     for p in postings:
         path = p.get("externalPath")
@@ -52,7 +63,7 @@ def fetch_workday(co, query):
             "url": f"https://{host}/en-US/{site}{path}",
             "posted_date": posted, "description": desc,
         })
-    return out, True
+    return out, True, inventory
 
 
 def fetch_google_careers(co, query):
@@ -61,7 +72,7 @@ def fetch_google_careers(co, query):
         r.raise_for_status()
         jobs = r.json().get("jobs", [])
     except Exception:
-        return [], False
+        return [], False, None
     out = []
     for j in jobs:
         out.append({
@@ -71,7 +82,7 @@ def fetch_google_careers(co, query):
             "posted_date": j.get("publish_date"),
             "description": _clean_html(j.get("description")),
         })
-    return out, True
+    return out, True, None
 
 
 def fetch_oracle_orc(co, query):
@@ -85,7 +96,7 @@ def fetch_oracle_orc(co, query):
         items = r.json().get("items", [])
         reqs = items[0].get("requisitionList", []) if items else []
     except Exception:
-        return [], False
+        return [], False, None
     out = []
     for q in reqs:
         rid = q.get("Id")
@@ -108,7 +119,7 @@ def fetch_oracle_orc(co, query):
             "url": f"https://careers.oracle.com/jobs/#en/sites/jobsearch/job/{rid}",
             "posted_date": q.get("PostedDate"), "description": desc,
         })
-    return out, True
+    return out, True, None
 
 
 def fetch_greenhouse(co, query):
@@ -119,7 +130,7 @@ def fetch_greenhouse(co, query):
         r.raise_for_status()
         jobs = r.json().get("jobs", [])
     except Exception:
-        return [], False
+        return [], False, None
     out = []
     for j in jobs:
         desc = _clean_html(j.get("content"))
@@ -133,7 +144,7 @@ def fetch_greenhouse(co, query):
             "posted_date": j.get("first_published") or j.get("updated_at"),
             "description": desc,
         })
-    return out, True
+    return out, True, len(jobs)
 
 
 def fetch_generic_page(co, query):
@@ -146,12 +157,12 @@ def fetch_generic_page(co, query):
         # embedded script JSON that get_text() would strip
         text = r.text.casefold()
     except Exception:
-        return [], False
+        return [], False, None
     if query.casefold() in text:
         return [{"triage": True, "company": co["name"], "title": None,
                  "url": co["url"],
-                 "note": f'careers page mentions "{query}" — extract the actual posting'}], True
-    return [], True
+                 "note": f'careers page mentions "{query}" — extract the actual posting'}], True, None
+    return [], True, None
 
 
 def fetch_jsearch(queries):

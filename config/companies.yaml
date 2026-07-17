@@ -11,7 +11,9 @@ companies:
     tier: A
     ats: generic_page
     url: https://www.metacareers.com/jobs?q=Primavera
-    enabled: true
+    enabled: false
+    note: BLIND — JS app; raw HTML identical for any query and contains a static
+      "unifier" string (false trigger). Needs graphql/browser approach.
   - name: Google
     tier: A
     ats: generic_page
@@ -48,7 +50,9 @@ companies:
     tier: A
     ats: generic_page
     url: https://jobs.bechtel.com/search-jobs/Unifier
-    enabled: true
+    enabled: false
+    note: BLIND — search results JS-rendered (identical HTML for any query);
+      find the underlying jobs API.
 
   # ---- Tier B ----
   - name: WSP
@@ -71,7 +75,9 @@ companies:
     tier: B
     ats: generic_page
     url: https://careers.turnerandtownsend.com/search/?q=Unifier
-    enabled: true
+    enabled: false
+    note: BLIND — search results JS-rendered (identical HTML for any query);
+      find the underlying jobs API.
   - name: MTA
     tier: B
     ats: generic_page

@@ -30,7 +30,8 @@
       0
     ],
     "fail_streak": 0,
-    "last_run": "2026-07-17"
+    "last_run": "2026-07-17",
+    "inventory": 2000
   },
   "workday:Accenture": {
     "counts": [
@@ -41,7 +42,8 @@
       0
     ],
     "fail_streak": 0,
-    "last_run": "2026-07-17"
+    "last_run": "2026-07-17",
+    "inventory": 2000
   },
   "generic_page:Bechtel": {
     "counts": [
@@ -145,16 +147,20 @@
   "_warnings": [],
   "workday:Consertus": {
     "counts": [
+      2,
       2
     ],
     "fail_streak": 0,
-    "last_run": "2026-07-17"
+    "last_run": "2026-07-17",
+    "inventory": 65
   },
   "greenhouse:Luster National": {
     "counts": [
+      4,
       4
     ],
     "fail_streak": 0,
-    "last_run": "2026-07-17"
+    "last_run": "2026-07-17",
+    "inventory": 20
   }
 }

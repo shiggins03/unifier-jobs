@@ -4,7 +4,9 @@
     "url": "https://www.metacareers.com/jobs?q=Primavera",
     "note": "careers page mentions \"unifier\" — extract the actual posting",
     "source": "generic_page:Meta",
-    "first_seen": "2026-07-17"
+    "first_seen": "2026-07-17",
+    "status": "invalidated",
+    "status_note": "false positive: 'unifier' string is static page furniture on metacareers.com (present for any query incl. nonsense terms); monitor disabled as blind 2026-07-17"
   },
   {
     "company": "DRMcNatty & Associates",
