@@ -142,5 +142,19 @@
     "fail_streak": 0,
     "last_run": "2026-07-17"
   },
-  "_warnings": []
+  "_warnings": [],
+  "workday:Consertus": {
+    "counts": [
+      2
+    ],
+    "fail_streak": 0,
+    "last_run": "2026-07-17"
+  },
+  "greenhouse:Luster National": {
+    "counts": [
+      4
+    ],
+    "fail_streak": 0,
+    "last_run": "2026-07-17"
+  }
 }

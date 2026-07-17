@@ -172,14 +172,14 @@
     {
       "name": "Consertus",
       "tier": "C",
-      "ats": "generic_page",
+      "ats": "workday",
       "enabled": true,
       "note": null
     },
     {
       "name": "Luster National",
       "tier": "C",
-      "ats": "generic_page",
+      "ats": "greenhouse",
       "enabled": true,
       "note": null
     },

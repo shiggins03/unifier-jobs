@@ -158,13 +158,15 @@ companies:
     note: 404 — find correct careers URL
   - name: Consertus
     tier: C
-    ats: generic_page
-    url: https://www.consertus.com/careers
+    ats: workday
+    workday_host: consertus.wd501.myworkdayjobs.com
+    workday_tenant: consertus
+    workday_site: consertuscareers
     enabled: true
   - name: Luster National
     tier: C
-    ats: generic_page
-    url: https://luster.com/careers/
+    ats: greenhouse
+    greenhouse_board: lusternational
     enabled: true
   - name: Compass Consult
     tier: C
