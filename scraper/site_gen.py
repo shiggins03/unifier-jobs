@@ -39,6 +39,7 @@ max-height:400px;overflow-y:auto;background:none;margin:8px 0 0}
 section details.fold>summary{font-size:15px;color:var(--text);font-weight:600}
 .gone .title a{color:var(--gone)}.gone .co{color:var(--gone)}
 footer{color:var(--muted);font-size:12px;margin:24px 0}
+.on{color:var(--text)}.off{color:var(--muted);opacity:.65}
 """
 
 
@@ -101,6 +102,28 @@ def generate(store, companies, cities, warnings, today):
                     f'({len(jobs)})</summary>{cards}</details></section>')
         return f"<section><h2>{esc(title)} ({len(jobs)})</h2>{cards}</section>"
 
+    def roster_section():
+        tiers = {"A": [], "B": [], "C": []}
+        for c in companies:
+            tiers.setdefault(c["tier"], []).append(c)
+        parts = []
+        n_on = sum(1 for c in companies if c.get("enabled"))
+        for t in ("A", "B", "C"):
+            rows = []
+            for c in tiers.get(t, []):
+                if c.get("enabled"):
+                    rows.append(f'<span class="on">{esc(c["name"])}</span>')
+                else:
+                    rows.append(f'<span class="off" title="{esc(c.get("note") or "pending fingerprint")}">{esc(c["name"])}</span>')
+            parts.append(f'<div class="meta" style="margin-top:6px"><b>Tier {t}:</b> '
+                         + " &middot; ".join(rows) + "</div>")
+        return (f'<section><details class="fold"><summary>Monitored companies '
+                f'({n_on} active of {len(companies)})</summary><div class="card">'
+                + "".join(parts)
+                + '<div class="meta" style="margin-top:10px">Greyed = endpoint pending '
+                  'fingerprint (triage queue). Roster grows via discovery &rarr; triage PRs.</div>'
+                  '</div></details></section>')
+
     new_count = sum(1 for j in active if "new" in j["flags"])
     body = f"""<main>
 <h1>Unifier job watch</h1>
@@ -111,6 +134,7 @@ def generate(store, companies, cities, warnings, today):
 {section("Related keywords (P6 / OPC / PIF / OIC) — direct listings", t2_direct)}
 {section("Unresolved board finds (pending triage)", boards, fold=True)}
 {section("No longer listed", gone, fold=True)}
+{roster_section()}
 <footer>All fields shown verbatim from the source posting — nothing estimated.
 Sorted by keyword tier, company tier, stated comp, location.</footer>
 </main>"""

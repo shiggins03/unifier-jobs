@@ -205,6 +205,12 @@ def run():
     models.save_jobs(store)
     models.save_json(models.TRIAGE, triage)
     models.save_json(models.HEALTH, health)
+    models.save_json(models.DATA / "roster.json", {
+        "updated": today,
+        "companies": [{"name": c["name"], "tier": c["tier"], "ats": c["ats"],
+                       "enabled": bool(c.get("enabled")), "note": c.get("note")}
+                      for c in companies],
+    })
     site_gen.generate(store, companies, cities, warnings, today)
 
     active = sum(1 for j in store.values() if j["status"] == "active")
