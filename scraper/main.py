@@ -217,21 +217,28 @@ def run():
     models.save_jobs(store)
     models.save_json(models.TRIAGE, triage)
     models.save_json(models.HEALTH, health)
-    # Compact single-file feed for the artifact: MCP connector responses are
-    # size-capped, so descriptions are truncated here (flagged, link has full
-    # text). The Pages dashboard keeps complete descriptions.
+    # Artifact feed: MCP connector replies have a size ceiling (large files
+    # hang and die at the ~130s reply budget), so the feed is a tiny index
+    # and each description is its own small file fetched on demand when a
+    # card is expanded. The Pages dashboard keeps complete descriptions.
     DESC_CAP = 2000
+    descs_dir = models.DATA / "descs"
+    if descs_dir.exists():
+        for f in descs_dir.glob("*.txt"):
+            f.unlink()
+    descs_dir.mkdir(exist_ok=True)
     feed_jobs = []
     for j in sorted(store.values(), key=lambda x: x["status"] != "active"):
         fj = {k: j[k] for k in ("id", "kind", "company", "title", "location", "url",
                                 "posted_date", "comp", "tier", "status", "gone_date",
                                 "flags")}
         desc = j.get("description")
-        if desc and len(desc) > DESC_CAP:
-            fj["description"] = desc[:DESC_CAP]
-            fj["desc_truncated"] = True
-        else:
-            fj["description"] = desc
+        if desc and j["status"] == "active":
+            fj["has_desc"] = True
+            out_text = desc[:DESC_CAP]
+            if len(desc) > DESC_CAP:
+                out_text += "\n\n[Truncated for this view — full text at the posting link]"
+            (descs_dir / f"{j['id']}.txt").write_text(out_text, encoding="utf-8")
         feed_jobs.append(fj)
     models.save_json(models.DATA / "feed.json", {
         "updated": today,
