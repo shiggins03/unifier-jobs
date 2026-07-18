@@ -41,7 +41,10 @@ companies:
     workday_host: accenture.wd103.myworkdayjobs.com
     workday_tenant: accenture
     workday_site: AccentureCareers
-    enabled: true
+    enabled: false
+    note: public Workday cxs API gone as of 2026-07-18 — returns SPA HTML (200)
+      for every UA/Accept combo; careers moved to accenture.com custom portal,
+      needs a new adapter. Was fail_streak 2 in health.
   - name: Deloitte
     tier: A
     ats: avature_feed
@@ -72,17 +75,20 @@ companies:
     note: host resolves but tenant/site 422 — find correct cxs pair
   - name: Turner & Townsend
     tier: B
-    ats: generic_page
-    url: https://careers.turnerandtownsend.com/search/?q=Unifier
-    enabled: false
-    note: BLIND — search results JS-rendered (identical HTML for any query);
-      find the underlying jobs API.
+    ats: smartrecruiters
+    smartrecruiters_company: turnertownsend
+    enabled: true
+    note: careers.turnerandtownsend.com is dead (redirects to a Foleon marketing
+      page); real board is SmartRecruiters, public API verified 2026-07-18
+      (inventory 2726, 9 unifier hits). Global firm — US filter does real work.
   - name: MTA
     tier: B
     ats: generic_page
     url: https://careers.mta.org/search/unifier/jobs
     enabled: false
-    note: 403 bot protection — needs different approach
+    note: Cloudflare challenge on careers.mta.org AND mta.info (verified
+      2026-07-18) — no script route; rely on aggregator discovery once keys
+      are added.
   - name: LA Metro
     tier: B
     ats: generic_page
@@ -106,21 +112,27 @@ companies:
     ats: generic_page
     url: https://jobs.northwell.edu/
     enabled: false
-    note: search path 404 — find keyword search URL on their Phenom site
+    note: NOT Phenom — WordPress; search form posts to /job-search-results/
+      (?keyword=) but that path 403s scripts while the homepage 200s
+      (verified 2026-07-18). Rely on discovery.
   - name: Mass General Brigham
     tier: B
     ats: workday
-    workday_host: partners.wd1.myworkdayjobs.com
-    workday_tenant: partners
-    workday_site: MGB
-    enabled: false
-    note: host resolves but tenant/site 422 — find correct cxs pair
+    workday_host: massgeneralbrigham.wd1.myworkdayjobs.com
+    workday_tenant: massgeneralbrigham
+    workday_site: MGBExternal
+    enabled: true
+    note: tenant renamed from partners → massgeneralbrigham; cxs verified
+      2026-07-18 (total=2000)
   - name: Petrofac
     tier: B
     ats: generic_page
     url: https://careers.petrofac.com/
     enabled: false
-    note: SSL error on probe — revisit
+    note: careers.petrofac.com cert is misconfigured (hostname mismatch);
+      www.petrofac.com/careers works but job pages are India/Lithuania/Oman/UAE
+      only — no US board (verified 2026-07-18). Outside US scope; keep for
+      reference.
   - name: Linesight
     tier: B
     ats: generic_page
@@ -160,7 +172,8 @@ companies:
     ats: generic_page
     url: https://www.cdp-inc.com/careers
     enabled: false
-    note: 404 — find correct careers URL
+    note: site has no careers page at all anymore (checked nav + sitemap
+      2026-07-18; 145 internal paths, none career-ish). Rely on discovery.
   - name: Consertus
     tier: C
     ats: workday

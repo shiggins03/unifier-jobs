@@ -93,7 +93,10 @@ def fetch_oracle_orc(co, query):
     # empty; "unifier" fuzzy-matches the whole site, so search a configured
     # tighter term and let the pipeline's keyword filter do the real work.
     q = co.get("search_query", query)
-    finder = f'findReqs;siteNumber={site},keyword={q},limit=25'
+    # limit must exceed the match count or qualifying reqs get truncated:
+    # 2026-07-18 the ONE unifier-mentioning req was #26+ of 27 and limit=25
+    # silently dropped it every run.
+    finder = f'findReqs;siteNumber={site},keyword={q},limit=100'
     try:
         r = requests.get(base, params={"onlyData": "true", "expand": "all",
                                        "finder": finder},
@@ -101,6 +104,7 @@ def fetch_oracle_orc(co, query):
         r.raise_for_status()
         items = r.json().get("items", [])
         reqs = items[0].get("requisitionList", []) if items else []
+        inventory = items[0].get("TotalJobsCount") if items else None
     except Exception:
         return [], False, None
     out = []
@@ -124,8 +128,11 @@ def fetch_oracle_orc(co, query):
             "location": q.get("PrimaryLocation"),
             "url": f"https://careers.oracle.com/jobs/#en/sites/jobsearch/job/{rid}",
             "posted_date": q.get("PostedDate"), "description": desc,
+            # desc fetched → tier filter's call is final; desc missing → the
+            # filter is blind, surface as triage instead of dropping silently
+            "search_matched": desc is None,
         })
-    return out, True, None
+    return out, True, inventory
 
 
 def fetch_greenhouse(co, query):
@@ -169,6 +176,63 @@ def fetch_generic_page(co, query):
                  "url": co["url"],
                  "note": f'careers page mentions "{query}" — extract the actual posting'}], True, None
     return [], True, None
+
+
+def fetch_smartrecruiters(co, query):
+    """SmartRecruiters public postings API (e.g. Turner & Townsend). Search is
+    server-side full-text; US scope enforced from the posting's own stated
+    country code (global firms list worldwide on one board)."""
+    company = co["smartrecruiters_company"]
+    api = f"https://api.smartrecruiters.com/v1/companies/{company}/postings"
+
+    def search(q):
+        r = requests.get(api, params={"q": q, "limit": 100}, headers=UA,
+                         timeout=TIMEOUT)
+        r.raise_for_status()
+        return r.json().get("content", [])
+
+    try:
+        postings = search(query) + search("Primavera")
+    except Exception:
+        return [], False, None
+    out, seen = [], set()
+    for p in postings:
+        pid = p.get("id")
+        if not pid or pid in seen:
+            continue
+        seen.add(pid)
+        loc = p.get("location") or {}
+        if (loc.get("country") or "").lower() != "us":
+            continue
+        desc, url = None, None
+        try:
+            d = requests.get(f"{api}/{pid}", headers=UA, timeout=TIMEOUT)
+            if d.ok:
+                detail = d.json()
+                secs = (detail.get("jobAd") or {}).get("sections") or {}
+                desc = _clean_html("\n".join(
+                    s.get("text", "") for s in secs.values()
+                    if isinstance(s, dict)))
+                url = detail.get("applyUrl")
+        except Exception:
+            pass
+        out.append({
+            "company": co["name"], "title": p.get("name"),
+            "location": ", ".join(x for x in [
+                loc.get("city"), loc.get("region"),
+                (loc.get("country") or "").upper()] if x) or None,
+            "url": url or f"https://jobs.smartrecruiters.com/{company}/{pid}",
+            "posted_date": p.get("releasedDate"), "description": desc,
+            "search_matched": desc is None,
+        })
+    inventory = None
+    try:
+        inv = requests.get(api, params={"limit": 1}, headers=UA, timeout=TIMEOUT)
+        if inv.ok:
+            inventory = inv.json().get("totalFound")
+    except Exception:
+        pass
+    return out, True, inventory
 
 
 def fetch_jsearch(queries):
@@ -414,6 +478,7 @@ DIRECT_ADAPTERS = {
     "greenhouse": fetch_greenhouse,
     "generic_page": fetch_generic_page,
     "meta_graphql": fetch_meta_graphql,
+    "smartrecruiters": fetch_smartrecruiters,
     "avature_feed": fetch_avature_feed,
     "phenom": fetch_phenom,
 }
