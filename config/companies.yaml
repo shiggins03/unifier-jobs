@@ -9,11 +9,11 @@ companies:
   # ---- Tier A ----
   - name: Meta
     tier: A
-    ats: generic_page
-    url: https://www.metacareers.com/jobs?q=Primavera
-    enabled: false
-    note: BLIND — JS app; raw HTML identical for any query and contains a static
-      "unifier" string (false trigger). Needs graphql/browser approach.
+    ats: meta_graphql
+    doc_id: "27807005005556827"
+    enabled: true
+    note: graphql CPJobSearchSourceQuery, shape captured 2026-07-17; searches
+      pipeline keyword + Primavera. doc_id long-lived but may rotate.
   - name: Google
     tier: A
     ats: generic_page
@@ -24,8 +24,10 @@ companies:
     ats: oracle_orc
     url: https://eeho.fa.us2.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions
     site_number: CX_45001
-    enabled: false
-    note: endpoint responds but finder returns 0 for any keyword — verify siteNumber/finder syntax
+    search_query: primavera
+    enabled: true
+    note: needs expand=all; "unifier" keyword fuzzy-matches whole site so we
+      search "primavera" (27 real matches) and let the tier filter decide.
   - name: JLL
     tier: A
     ats: workday
@@ -42,17 +44,14 @@ companies:
     enabled: true
   - name: Deloitte
     tier: A
-    ats: generic_page
-    url: https://apply.deloitte.com/
-    enabled: false
-    note: Avature platform — find keyword-searchable listing URL
+    ats: avature_feed
+    feed_url: https://apply.deloitte.com/en_US/careers/SearchJobs/Unifier/feed/?jobRecordsPerPage=25
+    enabled: true
   - name: Bechtel
     tier: A
-    ats: generic_page
-    url: https://jobs.bechtel.com/search-jobs/Unifier
-    enabled: false
-    note: BLIND — search results JS-rendered (identical HTML for any query);
-      find the underlying jobs API.
+    ats: phenom
+    phenom_host: jobs.bechtel.com
+    enabled: true
 
   # ---- Tier B ----
   - name: WSP

@@ -6,6 +6,7 @@ visible job count regardless of keyword (aliveness check — 0 or None-when-expe
 means the monitor may be blind, not that no jobs match). Discovery adapters
 return (records, ok)."""
 import html
+import json
 import os
 import re
 
@@ -88,9 +89,14 @@ def fetch_google_careers(co, query):
 def fetch_oracle_orc(co, query):
     base = co["url"].rstrip("/")
     site = co["site_number"]
-    finder = f'findReqs;siteNumber={site},keyword="{query}",limit=25'
+    # ORC quirk: keyword search needs expand=all or requisitionList comes back
+    # empty; "unifier" fuzzy-matches the whole site, so search a configured
+    # tighter term and let the pipeline's keyword filter do the real work.
+    q = co.get("search_query", query)
+    finder = f'findReqs;siteNumber={site},keyword={q},limit=25'
     try:
-        r = requests.get(base, params={"onlyData": "true", "finder": finder},
+        r = requests.get(base, params={"onlyData": "true", "expand": "all",
+                                       "finder": finder},
                          headers=UA, timeout=TIMEOUT)
         r.raise_for_status()
         items = r.json().get("items", [])
@@ -257,10 +263,157 @@ def fetch_jooble(queries):
     return out, ok
 
 
+def fetch_meta_graphql(co, query):
+    """Meta careers CPJobSearchSourceQuery — shape captured from live site
+    2026-07-17. lsd token is per-pagefetch; doc_id is long-lived."""
+    doc_id = co.get("doc_id", "27807005005556827")
+    s = requests.Session()
+    s.headers["User-Agent"] = UA["User-Agent"]
+    try:
+        p = s.get("https://www.metacareers.com/jobs", timeout=TIMEOUT)
+        lsd = re.search(r'"LSD",\[\],\{"token":"([^"]+)"', p.text).group(1)
+    except Exception:
+        return [], False, None
+    jazoest = "2" + str(sum(ord(c) for c in lsd))
+
+    def search(q):
+        r = s.post("https://www.metacareers.com/graphql", data={
+            "av": "0", "__user": "0", "__a": "1", "__comet_req": "31", "lsd": lsd,
+            "jazoest": jazoest, "fb_api_caller_class": "RelayModern",
+            "fb_api_req_friendly_name": "CPJobSearchSourceQuery",
+            "variables": json.dumps({"search_input": {"q": q, "results_per_page": "FIVE"}}),
+            "server_timestamps": "true", "doc_id": doc_id},
+            headers={"x-fb-lsd": lsd,
+                     "Content-Type": "application/x-www-form-urlencoded"},
+            timeout=TIMEOUT)
+        body = r.text[9:] if r.text.startswith("for (;;);") else r.text
+        d = json.loads(body).get("data") or {}
+        js = d.get("job_search_with_featured_jobs_v2") or \
+            d.get("job_search_with_featured_jobs") or {}
+        return js.get("all_jobs")
+
+    out, seen = [], set()
+    ok = True
+    try:
+        # Meta pads empty searches with "featured jobs" filler; anything that
+        # also comes back for a nonsense query is noise, not a keyword match.
+        noise = {j.get("id") for j in (search("zzqxvwy999") or [])}
+        for q in (query, "Primavera"):
+            for j in search(q) or []:
+                jid = j.get("id")
+                if not jid or jid in seen or jid in noise:
+                    continue
+                seen.add(jid)
+                out.append({
+                    "company": co["name"], "title": j.get("title"),
+                    "location": "; ".join(j.get("locations") or []) or None,
+                    "url": f"https://www.metacareers.com/jobs/{jid}/",
+                    "posted_date": None, "description": None,
+                    "search_matched": True,
+                })
+        inventory = len(search("engineer") or [])  # aliveness: common term
+    except Exception:
+        return out, False, None
+    return out, ok, inventory
+
+
+def fetch_avature_feed(co, query):
+    """Avature keyword-search RSS feed (e.g. Deloitte). Detail pages are
+    server-rendered; description text pulled from the posting page."""
+    try:
+        r = requests.get(co["feed_url"], headers=UA, timeout=TIMEOUT)
+        r.raise_for_status()
+        items = re.findall(r"<item>(.*?)</item>", r.text, re.S)
+    except Exception:
+        return [], False, None
+    out = []
+    for it in items:
+        def tag(name):
+            m = re.search(rf"<{name}>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?</{name}>", it, re.S)
+            return html.unescape(m.group(1).strip()) if m else None
+        link = tag("link")
+        if not link:
+            continue
+        desc = None
+        try:
+            d = requests.get(link, headers=UA, timeout=TIMEOUT)
+            if d.ok:
+                soup = BeautifulSoup(d.text, "html.parser")
+                node = soup.select_one(
+                    ".jobDescription, .job-description, .article__content, "
+                    "[class*=jobDetail], main") or soup.body
+                if node:
+                    desc = re.sub(r"\n{3,}", "\n\n", node.get_text("\n")).strip() or None
+        except Exception:
+            pass
+        out.append({
+            "company": co["name"], "title": tag("title"), "location": tag("location"),
+            "url": link, "posted_date": tag("pubDate"), "description": desc,
+        })
+    return out, True, None
+
+
+def fetch_phenom(co, query):
+    """Phenom People careers sites (e.g. Bechtel): refineSearch widget for
+    matches + jobDetail widget for full descriptions."""
+    host = co["phenom_host"]
+
+    def widgets(payload):
+        r = requests.post(f"https://{host}/widgets", json=payload,
+                          headers={**UA, "Content-Type": "application/json"},
+                          timeout=TIMEOUT)
+        r.raise_for_status()
+        return r.json()
+
+    base = {"lang": "en_us", "deviceType": "desktop", "country": "us",
+            "siteType": "external"}
+    try:
+        d = widgets({**base, "pageName": "search-results", "ddoKey": "refineSearch",
+                     "sortBy": "", "subsearch": "", "from": 0, "jobs": True,
+                     "counts": True, "all_fields": [], "size": 50, "clearAll": False,
+                     "jdsource": "facets", "isSliderEnable": False, "pageId": "page12",
+                     "keywords": query, "global": True})
+        jobs = d.get("refineSearch", {}).get("data", {}).get("jobs", [])
+    except Exception:
+        return [], False, None
+    out = []
+    for j in jobs:
+        desc = None
+        try:
+            det = widgets({**base, "pageName": "job-details", "ddoKey": "jobDetail",
+                           "jobId": str(j.get("jobId")),
+                           "jobSeqNo": j.get("jobSeqNo"), "pageId": "page14"})
+            job = (det.get("jobDetail", {}).get("data") or {}).get("job", {})
+            desc = _clean_html(job.get("description"))
+        except Exception:
+            pass
+        out.append({
+            "company": co["name"], "title": j.get("title"),
+            "location": j.get("cityStateCountry") or j.get("location"),
+            "url": j.get("applyUrl") or f"https://{host}/job/{j.get('jobId')}",
+            "posted_date": j.get("dateCreated"),
+            "description": desc or j.get("descriptionTeaser"),
+        })
+    inventory = None
+    try:
+        inv = widgets({**base, "pageName": "search-results", "ddoKey": "refineSearch",
+                       "sortBy": "", "subsearch": "", "from": 0, "jobs": False,
+                       "counts": True, "all_fields": [], "size": 1, "clearAll": False,
+                       "jdsource": "facets", "isSliderEnable": False, "pageId": "page12",
+                       "keywords": "", "global": True})
+        inventory = inv.get("refineSearch", {}).get("totalHits")
+    except Exception:
+        pass
+    return out, True, inventory
+
+
 DIRECT_ADAPTERS = {
     "workday": fetch_workday,
     "google_careers": fetch_google_careers,
     "oracle_orc": fetch_oracle_orc,
     "greenhouse": fetch_greenhouse,
     "generic_page": fetch_generic_page,
+    "meta_graphql": fetch_meta_graphql,
+    "avature_feed": fetch_avature_feed,
+    "phenom": fetch_phenom,
 }

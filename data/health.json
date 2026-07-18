@@ -148,6 +148,9 @@
   "workday:Consertus": {
     "counts": [
       2,
+      2,
+      2,
+      2,
       2
     ],
     "fail_streak": 0,
@@ -157,10 +160,51 @@
   "greenhouse:Luster National": {
     "counts": [
       4,
+      4,
+      4,
+      4,
       4
     ],
     "fail_streak": 0,
     "last_run": "2026-07-17",
     "inventory": 20
+  },
+  "meta_graphql:Meta": {
+    "counts": [
+      0,
+      0,
+      0
+    ],
+    "fail_streak": 0,
+    "inventory": 5,
+    "last_run": "2026-07-17"
+  },
+  "oracle_orc:Oracle": {
+    "counts": [
+      0,
+      0,
+      0
+    ],
+    "fail_streak": 0,
+    "last_run": "2026-07-17"
+  },
+  "avature_feed:Deloitte": {
+    "counts": [
+      1,
+      1,
+      1
+    ],
+    "fail_streak": 0,
+    "last_run": "2026-07-17"
+  },
+  "phenom:Bechtel": {
+    "counts": [
+      22,
+      21,
+      21
+    ],
+    "fail_streak": 0,
+    "inventory": 1039,
+    "last_run": "2026-07-17"
   }
 }

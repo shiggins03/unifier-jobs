@@ -7,7 +7,8 @@ from pathlib import Path
 import yaml
 
 from . import models, sources, site_gen
-from .filters import (blocklisted, extract_stated_comp, is_non_us, keyword_tier)
+from .filters import (blocklisted, extract_stated_comp, is_non_us, keyword_tier,
+                      title_match)
 
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG = ROOT / "config"
@@ -105,6 +106,10 @@ def run():
                 continue
             tier = keyword_tier(r.get("title"), r.get("description"), kw)
             if tier is None:
+                if r.get("search_matched"):
+                    add_triage(r["company"], r["url"],
+                               f"employer's own search matched '{query}' but posting "
+                               f"text unavailable — verify: {r.get('title')}", src)
                 continue
             comp = r.get("comp") or extract_stated_comp(r.get("description"))
             job = models.make_job(
@@ -112,6 +117,8 @@ def run():
                 location=r.get("location"), url=r["url"],
                 posted_date=r.get("posted_date"), comp=comp,
                 description=r.get("description"), tier=tier, today=today)
+            if tier == 1 and title_match(r.get("title"), kw):
+                job["flags"].append("title-match")
             _merge(store, job, today, baseline)
             seen_this_run.setdefault(src, set()).add(job["id"])
             listings += 1
@@ -241,6 +248,8 @@ def _merge(store, job, today, baseline):
         for f in ("posted_date", "comp", "description", "url", "location"):
             if job.get(f):
                 old[f] = job[f]
+        if "title-match" in job["flags"] and "title-match" not in old["flags"]:
+            old["flags"].append("title-match")
     else:
         if not baseline:
             job["flags"].append("new")

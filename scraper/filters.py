@@ -6,7 +6,8 @@ NON_US = re.compile(
     r"\b(india|united kingdom|\buk\b|london|dubai|abu dhabi|uae|saudi|riyadh|qatar|doha|"
     r"canada|toronto|vancouver|ontario|australia|sydney|melbourne|singapore|philippines|"
     r"malaysia|hyderabad|bangalore|bengaluru|chennai|mumbai|pune|noida|gurgaon|delhi|"
-    r"ireland|dublin|germany|poland|romania|mexico|\bmx\b|brazil|colombia)\b", re.I)
+    r"ireland|dublin|germany|poland|romania|mexico|\bmx\b|brazil|colombia|"
+    r"argentina|buenos aires|chile|peru|santiago)\b", re.I)
 
 COMP_RE = re.compile(
     r"(?:salary|pay|compensation|range|rate)[^.\n]{0,80}?"
@@ -17,6 +18,11 @@ DOLLAR_RANGE_RE = re.compile(
     r"\$[\d,]{4,}(?:\.\d+)?\s*(?:[-–]|to)\s*\$?[\d,]{4,}(?:\.\d+)?"
     r"(?:\s*(?:/|per\s*)?(?:year|yr|hour|hr|annum|annually|hourly))?", re.I)
 SALARY_NUM_RE = re.compile(r"\$?([\d,]+(?:\.\d+)?)")
+
+
+def title_match(title, kw):
+    low = (title or "").casefold()
+    return any(re.search(rf"\b{re.escape(t.casefold())}\b", low) for t in kw["tier1"])
 
 
 def keyword_tier(title, body, kw):

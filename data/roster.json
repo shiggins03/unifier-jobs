@@ -4,9 +4,9 @@
     {
       "name": "Meta",
       "tier": "A",
-      "ats": "generic_page",
-      "enabled": false,
-      "note": "BLIND — JS app; raw HTML identical for any query and contains a static \"unifier\" string (false trigger). Needs graphql/browser approach."
+      "ats": "meta_graphql",
+      "enabled": true,
+      "note": "graphql CPJobSearchSourceQuery, shape captured 2026-07-17; searches pipeline keyword + Primavera. doc_id long-lived but may rotate."
     },
     {
       "name": "Google",
@@ -19,8 +19,8 @@
       "name": "Oracle",
       "tier": "A",
       "ats": "oracle_orc",
-      "enabled": false,
-      "note": "endpoint responds but finder returns 0 for any keyword — verify siteNumber/finder syntax"
+      "enabled": true,
+      "note": "needs expand=all; \"unifier\" keyword fuzzy-matches whole site so we search \"primavera\" (27 real matches) and let the tier filter decide."
     },
     {
       "name": "JLL",
@@ -39,16 +39,16 @@
     {
       "name": "Deloitte",
       "tier": "A",
-      "ats": "generic_page",
-      "enabled": false,
-      "note": "Avature platform — find keyword-searchable listing URL"
+      "ats": "avature_feed",
+      "enabled": true,
+      "note": null
     },
     {
       "name": "Bechtel",
       "tier": "A",
-      "ats": "generic_page",
-      "enabled": false,
-      "note": "BLIND — search results JS-rendered (identical HTML for any query); find the underlying jobs API."
+      "ats": "phenom",
+      "enabled": true,
+      "note": null
     },
     {
       "name": "WSP",

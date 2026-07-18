@@ -51,6 +51,8 @@ def _card(j, prestige):
     tier_badge = f'<span class="badge">Tier {esc(prestige)}</span>' if prestige else ""
     new_badge = '<span class="badge new">new</span>' if "new" in j["flags"] else ""
     lp = ' <span class="badge">long-posted</span>' if "long-posted" in j["flags"] else ""
+    tm = ('' if "title-match" in j["flags"] or j["tier"] != 1
+          else ' <span class="badge" style="opacity:.7">mentions Unifier</span>')
     comp = esc(j.get("comp")) or '<span style="color:var(--muted)">Not listed</span>'
     posted = esc(j.get("posted_date")) or "Not listed"
     loc = esc(j.get("location")) or "Not listed"
@@ -61,7 +63,7 @@ def _card(j, prestige):
     if j["status"] == "gone":
         gone = f' — no longer listed as of {esc(j["gone_date"])}'
     return f"""<div class="card{' gone' if j['status'] == 'gone' else ''}">
-<div class="co">{esc(j['company'])}{tier_badge}{new_badge}{lp}</div>
+<div class="co">{esc(j['company'])}{tier_badge}{new_badge}{lp}{tm}</div>
 <div class="title"><a href="{esc(j['url'])}" target="_blank" rel="noopener">{esc(j['title'])}</a></div>
 <div class="meta">{loc} &middot; Posted: {posted}{gone}</div>
 <div class="comp">Comp: {comp}</div>
@@ -76,7 +78,8 @@ def generate(store, companies, cities, warnings, today):
 
     def sort_key(j):
         p = p_of(j)
-        return (TIER_ORDER.get(p, 3), -comp_sort_value(j.get("comp")),
+        return (0 if "title-match" in j["flags"] else 1,
+                TIER_ORDER.get(p, 3), -comp_sort_value(j.get("comp")),
                 city_rank(j.get("location"), cities), norm(j["company"]))
 
     active = [j for j in store.values() if j["status"] == "active"]

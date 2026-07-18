@@ -21,5 +21,50 @@
     "note": "careers page mentions \"unifier\" — extract the actual posting",
     "source": "generic_page:Project Partners",
     "first_seen": "2026-07-17"
+  },
+  {
+    "company": "Meta",
+    "url": "https://www.metacareers.com/jobs/1565674545076717/",
+    "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Schedule & Technical Integration Manager, Data Centers",
+    "source": "meta_graphql:Meta",
+    "first_seen": "2026-07-17",
+    "status": "invalidated",
+    "status_note": "featured-jobs filler, not a keyword match (adapter now filters noise baseline)"
+  },
+  {
+    "company": "Meta",
+    "url": "https://www.metacareers.com/jobs/1670149234051960/",
+    "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Software Developer, GO Systems",
+    "source": "meta_graphql:Meta",
+    "first_seen": "2026-07-17",
+    "status": "invalidated",
+    "status_note": "featured-jobs filler, not a keyword match (adapter now filters noise baseline)"
+  },
+  {
+    "company": "Meta",
+    "url": "https://www.metacareers.com/jobs/806895615747338/",
+    "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Equipment and Inventory Planner, Data Center Construction",
+    "source": "meta_graphql:Meta",
+    "first_seen": "2026-07-17",
+    "status": "invalidated",
+    "status_note": "featured-jobs filler, not a keyword match (adapter now filters noise baseline)"
+  },
+  {
+    "company": "Meta",
+    "url": "https://www.metacareers.com/jobs/1326784526233147/",
+    "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Brand Strategist",
+    "source": "meta_graphql:Meta",
+    "first_seen": "2026-07-17",
+    "status": "invalidated",
+    "status_note": "featured-jobs filler, not a keyword match (adapter now filters noise baseline)"
+  },
+  {
+    "company": "Meta",
+    "url": "https://www.metacareers.com/jobs/27034262962921676/",
+    "note": "employer's own search matched 'unifier' but posting text unavailable — verify: IC8 Data Scientist, Product Analytics - CP New Revenue Bets",
+    "source": "meta_graphql:Meta",
+    "first_seen": "2026-07-17",
+    "status": "invalidated",
+    "status_note": "featured-jobs filler, not a keyword match (adapter now filters noise baseline)"
   }
 ]
