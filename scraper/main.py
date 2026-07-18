@@ -217,11 +217,30 @@ def run():
     models.save_jobs(store)
     models.save_json(models.TRIAGE, triage)
     models.save_json(models.HEALTH, health)
-    models.save_json(models.DATA / "roster.json", {
+    # Compact single-file feed for the artifact: MCP connector responses are
+    # size-capped, so descriptions are truncated here (flagged, link has full
+    # text). The Pages dashboard keeps complete descriptions.
+    DESC_CAP = 2000
+    feed_jobs = []
+    for j in sorted(store.values(), key=lambda x: x["status"] != "active"):
+        fj = {k: j[k] for k in ("id", "kind", "company", "title", "location", "url",
+                                "posted_date", "comp", "tier", "status", "gone_date",
+                                "flags")}
+        desc = j.get("description")
+        if desc and len(desc) > DESC_CAP:
+            fj["description"] = desc[:DESC_CAP]
+            fj["desc_truncated"] = True
+        else:
+            fj["description"] = desc
+        feed_jobs.append(fj)
+    models.save_json(models.DATA / "feed.json", {
         "updated": today,
-        "companies": [{"name": c["name"], "tier": c["tier"], "ats": c["ats"],
-                       "enabled": bool(c.get("enabled")), "note": c.get("note")}
-                      for c in companies],
+        "warnings": warnings,
+        "roster": [{"name": c["name"], "tier": c["tier"], "ats": c["ats"],
+                    "enabled": bool(c.get("enabled")), "note": c.get("note")}
+                   for c in companies],
+        "triage": [t for t in triage if not t.get("status")],
+        "jobs": feed_jobs,
     })
     site_gen.generate(store, companies, cities, warnings, today)
 
