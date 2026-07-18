@@ -1,0 +1,510 @@
+<title>Unifier job watch</title>
+<style>
+:root{--bg:#f7f7f5;--card:#fff;--text:#1a1a1a;--muted:#666;--line:#e2e2de;
+--accent:#0c447c;--badge:#e6f1fb;--warn-bg:#faeeda;--warn-text:#633806;
+--new:#1d9e75;--gone:#999}
+@media(prefers-color-scheme:dark){:root{--bg:#171715;--card:#22221f;--text:#eee;
+--muted:#9a9a94;--line:#3a3a36;--accent:#85b7eb;--badge:#0c2c4c;
+--warn-bg:#3a2c10;--warn-text:#fac775}}
+:root[data-theme="dark"]{--bg:#171715;--card:#22221f;--text:#eee;
+--muted:#9a9a94;--line:#3a3a36;--accent:#85b7eb;--badge:#0c2c4c;
+--warn-bg:#3a2c10;--warn-text:#fac775}
+:root[data-theme="light"]{--bg:#f7f7f5;--card:#fff;--text:#1a1a1a;--muted:#666;
+--line:#e2e2de;--accent:#0c447c;--badge:#e6f1fb;--warn-bg:#faeeda;
+--warn-text:#633806}
+*{box-sizing:border-box}
+body{margin:0;padding:16px;background:var(--bg);color:var(--text);
+font:16px/1.5 system-ui,-apple-system,sans-serif}
+main{max-width:840px;margin:0 auto}
+h1{font-size:22px;margin:0 0 4px;text-wrap:balance}
+.sub{color:var(--muted);font-size:13px;margin-bottom:4px;
+font-variant-numeric:tabular-nums}
+.fresh{color:var(--muted);font-size:12px;margin-bottom:16px}
+.warn{background:var(--warn-bg);color:var(--warn-text);border-radius:8px;
+padding:10px 14px;font-size:14px;margin-bottom:16px}
+.notice{background:var(--card);border:1px solid var(--line);border-radius:10px;
+padding:14px 16px;font-size:14px;margin:16px 0}
+.notice code{font-size:13px}
+h2{font-size:17px;margin:24px 0 10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;
+padding:14px 16px;margin-bottom:10px}
+.co{font-weight:600}
+.badge{display:inline-block;font-size:11px;font-weight:600;
+background:var(--badge);color:var(--accent);border-radius:4px;padding:1px 6px;
+margin-left:6px;vertical-align:1px}
+.badge.new{background:transparent;color:var(--new);border:1px solid var(--new)}
+.title a{color:var(--accent);text-decoration:none;font-size:17px}
+.title a:hover{text-decoration:underline}
+.meta{color:var(--muted);font-size:13px;margin-top:4px}
+.comp{font-size:14px;margin-top:4px}
+details{margin-top:8px;font-size:14px}
+summary{cursor:pointer;color:var(--muted)}
+details pre{white-space:pre-wrap;font:13px/1.5 inherit;color:var(--text);
+max-height:400px;overflow-y:auto;background:none;margin:8px 0 0}
+section details.fold>summary{font-size:15px;color:var(--text);font-weight:600}
+.gone .title a{color:var(--gone)}.gone .co{color:var(--gone)}
+.on{color:var(--text)}.off{color:var(--muted);opacity:.65}
+.loading{color:var(--muted);font-size:14px;padding:24px 0}
+@keyframes pulse{50%{opacity:.45}}
+.loading{animation:pulse 1.6s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){.loading{animation:none}}
+a{color:var(--accent)}
+footer{color:var(--muted);font-size:12px;margin:24px 0}
+</style>
+<main>
+<h1>Unifier job watch</h1>
+<div class="sub" id="sub">Loading&hellip;</div>
+<div class="fresh" id="fresh"></div>
+<div id="content"><div class="loading">Loading live data from GitHub&hellip;</div></div>
+<footer>All fields shown verbatim from the source posting — nothing estimated.
+Sorted by keyword tier, company tier, stated comp, location.<br>
+Canonical dashboard: <a href="https://shiggins03.github.io/unifier-jobs/"
+target="_blank" rel="noopener">shiggins03.github.io/unifier-jobs</a></footer>
+</main>
+<script>
+"use strict";
+const SERVER = "GitHub";
+const TOOL = "get_file_contents";
+const REPO_ARGS = { owner: "shiggins03", repo: "unifier-jobs" };
+const FILES = { feed: "data/feed.json" };
+const TIER_ORDER = { A: 0, B: 1, C: 2 };
+// Mirror of config/cities.yaml — sorting only; displayed location stays verbatim.
+const METROS = [
+  { rank: 1, match: ["new york","nyc","brooklyn","manhattan","queens","bronx","jersey city","newark","hoboken","long island","white plains","stamford"] },
+  { rank: 2, match: ["los angeles","santa monica","burbank","glendale","pasadena","long beach","anaheim","irvine","el segundo"] },
+  { rank: 3, match: ["san francisco","oakland","san jose","palo alto","mountain view","sunnyvale","menlo park","berkeley","fremont","redwood city"] },
+  { rank: 4, match: ["miami","fort lauderdale","boca raton","west palm beach","doral"] },
+  { rank: 5, match: ["boston","cambridge","somerville","waltham","quincy","burlington ma"] },
+];
+const REMOTE_RANK = 6, OTHER_US_RANK = 7;
+const AUTHZ = ["needs_reauth","server_not_connected","selection_required",
+  "blocked_by_policy","approval_required","not_granted"];
+
+const state = { data: {}, err: {}, storedAt: {}, pageError: null, unsubs: [], debug: [] };
+
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g,
+  (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const safeUrl = (u) => /^https?:\/\//i.test(u || "") ? u : "#";
+const norm = (s) => (s || "").toLowerCase().trim().replace(/\s+/g, " ");
+
+function b64utf8(s) {
+  try {
+    const bin = atob(s.replace(/\s/g, ""));
+    const bytes = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    return new TextDecoder().decode(bytes);
+  } catch (e) { return null; }
+}
+
+// Observed live 2026-07-17: GitHub MCP get_file_contents returns a TEXT
+// block reading "successfully downloaded text file (SHA: <hex>)" followed by
+// the raw file content. Other connectors/shapes: bare string, GitHub API
+// base64 envelope, or already-parsed JSON. Handle all of them.
+const SHA_PREFIX = /^successfully downloaded[^\n{[]*\(SHA:\s*[0-9a-f]+\)\s*/i;
+function fileStrings(result) {
+  const out = [];
+  const push = (s) => {
+    if (typeof s === "string" && s.length) out.push(s.replace(SHA_PREFIX, ""));
+  };
+  if (result) {
+    const p = result.payload;
+    if (typeof p === "string") push(p);
+    else if (p && typeof p === "object" && typeof p.content === "string")
+      push(p.encoding === "base64" ? (b64utf8(p.content) || "") : p.content);
+    if (Array.isArray(result.content))
+      for (const b of result.content) {
+        if (b && b.type === "text" && typeof b.text === "string") push(b.text);
+        // Observed live in the artifact runtime: file content arrives as a
+        // resource block — {type:"resource", resource:{uri, mimeType, text}}.
+        if (b && b.type === "resource" && b.resource &&
+            typeof b.resource.text === "string") push(b.resource.text);
+      }
+  }
+  return out.filter((s) => s.trim());
+}
+function parseFeedResult(result) {
+  const p = result && result.payload;
+  if (p && typeof p === "object" && Array.isArray(p.jobs)) return p;
+  for (const s of fileStrings(result)) {
+    try { const o = JSON.parse(s); if (o && typeof o === "object") return o; } catch (e) {}
+    const i = s.search(/[{[]/);
+    if (i > -1) {
+      try { const o = JSON.parse(s.slice(i)); if (o && typeof o === "object") return o; } catch (e) {}
+    }
+  }
+  return null;
+}
+function fileText(p) {
+  if (typeof p === "string") return p;
+  if (p && typeof p === "object" && typeof p.content === "string") {
+    return p.encoding === "base64" ? b64utf8(p.content) : p.content;
+  }
+  if (p && typeof p === "object" && typeof p.text === "string") return p.text;
+  return null;
+}
+function payloadOf(res) {
+  if (res && res.payload !== undefined) return res.payload;
+  if (res && Array.isArray(res.content)) {
+    const t = res.content.find((b) => b.type === "text");
+    if (t) { try { return JSON.parse(t.text); } catch (e) { return t.text; } }
+  }
+  return undefined;
+}
+function parseJSONL(p) {
+  const t = fileText(p);
+  if (t != null) return t.split(/\r?\n/).filter((l) => l.trim())
+    .map((l) => { try { return JSON.parse(l); } catch (e) { return null; } })
+    .filter(Boolean);
+  if (Array.isArray(p)) return p;
+  if (p && typeof p === "object") return [p];
+  return [];
+}
+function parseJSONFile(p, fallback) {
+  const t = fileText(p);
+  if (t != null) { try { return JSON.parse(t); } catch (e) { return fallback; } }
+  if (p && typeof p === "object") return p;
+  return fallback;
+}
+function parseCompaniesYaml(p) {
+  const t = fileText(p);
+  if (t == null) return null;
+  const list = []; let cur = null;
+  for (const line of t.split(/\r?\n/)) {
+    const nm = line.match(/^\s*-\s*name:\s*["']?(.+?)["']?\s*$/);
+    if (nm) { cur = { name: nm[1], tier: null, enabled: false, note: null }; list.push(cur); continue; }
+    if (!cur) continue;
+    const tm = line.match(/^\s+tier:\s*([ABC])\s*$/);
+    if (tm) { cur.tier = tm[1]; continue; }
+    const em = line.match(/^\s+enabled:\s*(true|false)\s*$/);
+    if (em) { cur.enabled = em[1] === "true"; continue; }
+    const no = line.match(/^\s+note:\s*(.+?)\s*$/);
+    if (no) cur.note = no[1];
+  }
+  return list;
+}
+
+// Sorting mirrors scraper/filters.py — classifies stated data, never shown.
+function compSortValue(comp) {
+  if (!comp) return -1;
+  const nums = [];
+  for (const m of String(comp).matchAll(/\$?([\d,]+(?:\.\d+)?)/g)) {
+    const n = parseFloat(m[1].replace(/,/g, ""));
+    if (!isNaN(n) && n >= 20) nums.push(n);
+  }
+  if (!nums.length) return -1;
+  let v = Math.max(...nums);
+  if (v < 1000) v *= 2080;
+  return v;
+}
+function cityRank(location) {
+  if (!location) return OTHER_US_RANK;
+  const low = location.toLowerCase();
+  if (low.includes("remote")) return REMOTE_RANK;
+  for (const m of METROS) if (m.match.some((t) => low.includes(t))) return m.rank;
+  return OTHER_US_RANK;
+}
+function makeSortKey(prestige) {
+  return (j) => [
+    (j.flags || []).includes("title-match") ? 0 : 1,
+    TIER_ORDER[prestige[norm(j.company)]] ?? 3,
+    -compSortValue(j.comp),
+    cityRank(j.location),
+    norm(j.company),
+  ];
+}
+function bySortKey(keyFn) {
+  return (a, b) => {
+    const ka = keyFn(a), kb = keyFn(b);
+    for (let i = 0; i < ka.length; i++) {
+      if (ka[i] < kb[i]) return -1;
+      if (ka[i] > kb[i]) return 1;
+    }
+    return 0;
+  };
+}
+
+function jobCard(j, prestige) {
+  const p = prestige[norm(j.company)];
+  const flags = Array.isArray(j.flags) ? j.flags : [];
+  const tierBadge = p ? `<span class="badge">Tier ${esc(p)}</span>` : "";
+  const newBadge = flags.includes("new") ? '<span class="badge new">new</span>' : "";
+  const lp = flags.includes("long-posted") ? ' <span class="badge">long-posted</span>' : "";
+  const tm = (j.tier === 1 && !flags.includes("title-match"))
+    ? ' <span class="badge" style="opacity:.7">mentions Unifier</span>' : "";
+  const comp = j.comp ? esc(j.comp) : '<span style="color:var(--muted)">Not listed</span>';
+  const posted = j.posted_date ? esc(j.posted_date) : "Not listed";
+  const loc = j.location ? esc(j.location) : "Not listed";
+  const desc = j.has_desc
+    ? `<details data-desc="${esc(j.id)}"><summary>Job description</summary><pre class="descbox">Loading&hellip;</pre></details>` : "";
+  const gone = j.status === "gone"
+    ? ` — no longer listed as of ${esc(j.gone_date)}` : "";
+  return `<div class="card${j.status === "gone" ? " gone" : ""}">
+<div class="co">${esc(j.company)}${tierBadge}${newBadge}${lp}${tm}</div>
+<div class="title"><a href="${esc(safeUrl(j.url))}" target="_blank" rel="noopener">${esc(j.title)}</a></div>
+<div class="meta">${loc} &middot; Posted: ${posted}${gone}</div>
+<div class="comp">Comp: ${comp}</div>
+${desc}</div>`;
+}
+function triageCard(t) {
+  return `<div class="card">
+<div class="co">${esc(t.company)}</div>
+<div class="meta">${esc(t.note)}</div>
+<div class="meta">First seen: ${t.first_seen ? esc(t.first_seen) : "Not listed"}
+ &middot; <a href="${esc(safeUrl(t.url))}" target="_blank" rel="noopener">Open source page</a></div>
+</div>`;
+}
+function rosterSection(companies, openSet) {
+  if (!companies.length) return "";
+  const tiers = {};
+  for (const c of companies) (tiers[c.tier || "?"] = tiers[c.tier || "?"] || []).push(c);
+  const nOn = companies.filter((c) => c.enabled).length;
+  let inner = "";
+  for (const t of ["A", "B", "C", "?"]) {
+    const rows = (tiers[t] || []).map((c) =>
+      c.enabled ? `<span class="on">${esc(c.name)}</span>`
+        : `<span class="off" title="${esc(c.note || "pending fingerprint")}">${esc(c.name)}</span>`);
+    if (rows.length) inner +=
+      `<div class="meta" style="margin-top:6px"><b>Tier ${esc(t)}:</b> ${rows.join(" &middot; ")}</div>`;
+  }
+  inner += `<div class="meta" style="margin-top:10px">Greyed = endpoint pending
+ fingerprint (in triage). Roster grows via discovery &rarr; triage PRs.</div>`;
+  const open = openSet.has("roster") ? " open" : "";
+  return `<section><details class="fold" data-sec="roster"${open}>
+<summary>Monitored companies (${nOn} active of ${companies.length})</summary>
+<div class="card">${inner}</div></details></section>`;
+}
+function section(id, title, cardsHtml, count, fold, openSet) {
+  if (!count) return "";
+  if (fold) {
+    const open = openSet.has(id) ? " open" : "";
+    return `<section><details class="fold" data-sec="${id}"${open}>
+<summary>${esc(title)} (${count})</summary>${cardsHtml}</details></section>`;
+  }
+  return `<section><h2>${esc(title)} (${count})</h2>${cardsHtml}</section>`;
+}
+
+const ERROR_COPY = {
+  needs_reauth: "GitHub connection expired. Reconnect GitHub in claude.ai Settings → Connectors, then reload this page.",
+  server_not_connected: "GitHub connector not found. Add GitHub in claude.ai Settings → Connectors, then reload this page.",
+  selection_required: "More than one GitHub connector is connected. Choose one when claude.ai prompts you, then reload this page.",
+  blocked_by_policy: "Your organization's policy blocks this GitHub tool, so live data can't load here.",
+  approval_required: "Your organization requires per-call approval for this GitHub tool, which artifacts don't support yet.",
+  not_granted: "This page wasn't granted connector access. Reload and accept the connector prompt to see live data.",
+};
+function errorNotice(err) {
+  const copy = ERROR_COPY[err.code] ||
+    `Couldn't load live data from GitHub (${esc(err.code)}). ${esc(err.message || "")} Try reloading.`;
+  return `<div class="warn">&#9888; ${esc(ERROR_COPY[err.code] ? copy : "")}${ERROR_COPY[err.code] ? "" : copy}</div>`;
+}
+function fallbackLink() {
+  return `<div class="notice">The always-on dashboard works in any browser:
+<a href="https://shiggins03.github.io/unifier-jobs/" target="_blank" rel="noopener">
+shiggins03.github.io/unifier-jobs</a></div>`;
+}
+
+function render() {
+  const content = document.getElementById("content");
+  const sub = document.getElementById("sub");
+  const fresh = document.getElementById("fresh");
+  const openSet = new Set(
+    [...content.querySelectorAll("details.fold[open]")].map((d) => d.dataset.sec));
+
+  if (state.pageError) {
+    sub.textContent = "Live data unavailable";
+    fresh.textContent = "";
+    content.innerHTML = errorNotice(state.pageError) + fallbackLink();
+    return;
+  }
+
+  const feed = state.data.feed;
+  const feedErr = state.err.feed;
+  if (!feed && feedErr) {
+    sub.textContent = "Live data unavailable";
+    fresh.textContent = "";
+    content.innerHTML = errorNotice(feedErr) + fallbackLink();
+    return;
+  }
+  if (!feed) return; // still loading
+
+  const jobs = Array.isArray(feed.jobs) ? feed.jobs : [];
+  const companies = Array.isArray(feed.roster) ? feed.roster : [];
+  const prestige = {};
+  for (const c of companies) if (c.tier) prestige[norm(c.name)] = c.tier;
+  const keyFn = makeSortKey(prestige);
+  const cmp = bySortKey(keyFn);
+
+  const active = jobs.filter((j) => j.status === "active");
+  const t1 = active.filter((j) => j.tier === 1 && j.kind === "direct").sort(cmp);
+  const t2 = active.filter((j) => j.tier === 2 && j.kind === "direct").sort(cmp);
+  const boards = active.filter((j) => j.kind === "board").sort(cmp);
+  const gone = jobs.filter((j) => j.status === "gone")
+    .sort((a, b) => (b.gone_date || "").localeCompare(a.gone_date || ""))
+    .slice(0, 25);
+  const newCount = active.filter((j) => (j.flags || []).includes("new")).length;
+  const triage = Array.isArray(feed.triage) ? feed.triage : [];
+
+  const updated = feed.updated || "";
+  sub.innerHTML = `${updated ? "Updated " + esc(updated) + " &middot; " : ""}` +
+    `${t1.length + t2.length} direct listings &middot; ${boards.length} unresolved ` +
+    `board finds &middot; ${newCount} new this run`;
+
+  const at = state.storedAt.feed;
+  fresh.textContent = at
+    ? "Live from GitHub · checked " + new Date(at).toLocaleString([],
+        { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" })
+    : "Live from GitHub";
+
+  let html = "";
+  const warns = Array.isArray(feed.warnings) ? feed.warnings : [];
+  if (warns.length) {
+    html += `<div class="warn">&#9888; Source health: ${warns.map(esc).join("<br>")}</div>`;
+  }
+  if (state.err.feed) {
+    html += `<div class="warn">&#9888; Latest refresh failed — showing last good data.</div>`;
+  }
+  html += section("t1", "Unifier — direct listings",
+    t1.map((j) => jobCard(j, prestige)).join("\n"), t1.length, false, openSet);
+  html += section("t2", "Related keywords (P6 / OPC / PIF / OIC) — direct listings",
+    t2.map((j) => jobCard(j, prestige)).join("\n"), t2.length, false, openSet);
+  if (!t1.length && !t2.length) {
+    const enabled = companies.filter((c) => c.enabled).length;
+    html += `<div class="notice">No live Unifier listings right now.` +
+      `${enabled ? " " + enabled + " company sources are checked daily at 11:00 UTC." : ""}</div>`;
+  }
+  html += section("boards", "Unresolved board finds (pending triage)",
+    boards.map((j) => jobCard(j, prestige)).join("\n"), boards.length, true, openSet);
+  html += section("triage", "Triage queue (page hits awaiting extraction)",
+    triage.map(triageCard).join("\n"), triage.length, true, openSet);
+  html += section("gone", "No longer listed",
+    gone.map((j) => jobCard(j, prestige)).join("\n"), gone.length, true, openSet);
+  html += rosterSection(companies, openSet);
+  if (!companies.length && state.err.companies) {
+    html += `<div class="meta">Company roster unavailable right now.</div>`;
+  }
+  content.innerHTML = html;
+}
+
+const descCache = {};
+async function loadDesc(details) {
+  const id = details.dataset.desc;
+  const pre = details.querySelector("pre.descbox");
+  if (!pre || details.dataset.loaded) return;
+  details.dataset.loaded = "1";
+  if (descCache[id]) { pre.textContent = descCache[id]; return; }
+  try {
+    const res = await window.claude.mcp.callTool(SERVER, TOOL,
+      { ...REPO_ARGS, path: `data/descs/${id}.txt` },
+      { cache: { staleTime: 300000, gcTime: 86400000 } });
+    const strs = fileStrings(res);
+    const text = strs.length
+      ? strs.sort((a, b) => b.length - a.length)[0] : null;
+    if (text != null) {
+      descCache[id] = text;
+      pre.textContent = text;
+    } else {
+      pre.textContent = "Couldn't read the description — open the posting link instead.";
+    }
+  } catch (e) {
+    details.dataset.loaded = "";
+    pre.textContent = "Couldn't load the description (" + (e && e.code || "error") +
+      ") — collapse and re-expand to retry, or open the posting link.";
+  }
+}
+
+function handleEvent(name, parse) {
+  return (ev) => {
+    if (state.debug.length < 6) {
+      let snap = "";
+      try { snap = JSON.stringify(ev).slice(0, 900); } catch (e) { snap = String(ev && ev.type); }
+      state.debug.push(snap);
+    }
+    if (ev.type === "data") {
+      state.data[name] = parse(ev.result);
+      state.err[name] = null;
+      state.storedAt[name] = ev.result.cache ? ev.result.cache.storedAt : Date.now();
+    } else {
+      state.err[name] = ev.error;
+      if (AUTHZ.includes(ev.error.code)) {
+        state.data[name] = null; // authz denial: retract rendered data
+        state.pageError = ev.error;
+      }
+    }
+    render();
+  };
+}
+
+async function boot() {
+  const content = document.getElementById("content");
+  content.addEventListener("toggle", (ev) => {
+    const t = ev.target;
+    if (t && t.tagName === "DETAILS" && t.open && t.dataset.desc) loadDesc(t);
+  }, true);
+  if (!window.claude || window.claude.mcp === undefined) {
+    document.getElementById("sub").textContent = "Live data unavailable in this view";
+    content.innerHTML = `<div class="notice">This page pulls live data through the
+claude.ai GitHub connector, which isn't available in this view.</div>` + fallbackLink();
+    return;
+  }
+  const mcp = window.claude.mcp;
+  let serversSeen = null, listErr = null;
+  try {
+    const { servers } = await mcp.listTools();
+    serversSeen = servers;
+    const gh = servers.find((s) => s.server === SERVER) ||
+      servers.find((s) => norm(s.server) === norm(SERVER));
+    if (!gh) {
+      state.pageError = { code: "server_not_connected", message: "" };
+      render(); return;
+    }
+    if (gh.authStatus === "needs_reauth") {
+      state.pageError = { code: "needs_reauth", message: "" };
+      render(); return;
+    }
+    if (gh.tools.length && !gh.tools.some((t) => t.name === TOOL)) {
+      document.getElementById("sub").textContent = "Live data unavailable";
+      content.innerHTML = `<div class="warn">&#9888; The GitHub connector doesn't
+expose a <code>${esc(TOOL)}</code> tool. Its tools are:
+<code>${gh.tools.map((t) => esc(t.name)).join(", ")}</code>.
+Paste this list to Claude so it can update this page.</div>` + fallbackLink();
+      return;
+    }
+  } catch (e) {
+    listErr = e;
+  }
+  const parsers = { feed: parseFeedResult };
+  try {
+    for (const [name, path] of Object.entries(FILES)) {
+      const unsub = mcp.watchTool(SERVER, TOOL, { ...REPO_ARGS, path },
+        handleEvent(name, parsers[name]),
+        { cache: { staleTime: 300000, gcTime: 86400000 } });
+      state.unsubs.push(unsub);
+    }
+  } catch (e) {
+    state.pageError = { code: "watch_failed", message: String(e && e.message || e) };
+    render(); return;
+  }
+  setTimeout(() => {
+    if (state.data.feed || state.err.feed || state.pageError) return;
+    const diag = [];
+    diag.push(listErr
+      ? `listTools failed: <code>${esc(String(listErr.message || listErr))}</code>`
+      : serversSeen
+        ? "Connectors visible to this page: " + (serversSeen.length
+            ? serversSeen.map((s) => `<code>${esc(s.server)}</code>` +
+                (s.authStatus ? ` (${esc(s.authStatus)})` : "")).join(", ")
+            : "<b>none</b>")
+        : "listTools never returned.");
+    diag.push(state.debug.length
+      ? `Raw events received (${state.debug.length}) but none produced usable data — ` +
+        "screenshot this whole box for Claude:<br>" +
+        state.debug.map((s) => `<code style="font-size:11px;word-break:break-all">${esc(s)}</code>`).join("<br>")
+      : "ZERO events after 20 seconds — the request was sent and nothing whatsoever " +
+        "came back. If a connector-permission prompt appeared, accept it and reload. " +
+        "Otherwise screenshot this box for Claude.");
+    document.getElementById("sub").textContent = "Live data is stuck";
+    content.innerHTML = `<div class="warn">&#9888; ${diag.join("<br><br>")}</div>` +
+      fallbackLink();
+  }, 20000);
+}
+boot();
+</script>

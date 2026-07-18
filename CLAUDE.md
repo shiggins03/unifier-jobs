@@ -30,6 +30,25 @@ Runs daily at 11:00 UTC via GitHub Actions; publishes a static dashboard to GitH
   deleted; set status handled/ignored); `health.json` — per-source run counts
 - `docs/index.html` — generated dashboard (do not hand-edit; edit `scraper/site_gen.py`)
 
+## The artifact (live mobile/claude.ai view)
+
+- URL (stable, redeploys in place): https://claude.ai/code/artifact/608cd631-fd87-4549-a241-6558b72d13c3
+- Source of truth: `artifact/unifier-job-watch.html` in THIS repo. Edit it here,
+  then publish with the Artifact tool passing `url:` = the URL above (any session
+  from the owner's account can do this; without `url:` you'd mint a new address —
+  never do that). Favicon stays 📡.
+- Data contract: the page reads ONLY `data/feed.json` (keep it under ~100KB;
+  descriptions live in `data/descs/{id}.txt`, lazy-loaded per card) through the
+  user's claude.ai GitHub connector (`server: "GitHub"`, tool
+  `get_file_contents`, args `{owner, repo, path}`).
+- HARD-WON WIRE FORMAT (do not regress): in the artifact runtime,
+  get_file_contents returns content blocks
+  `[{type:"text", text:"successfully downloaded ... (SHA: ...)"}, {type:"resource", resource:{uri, mimeType, text:<FILE CONTENT>}}]`
+  and `payload` is just the useless message string. The page's `fileStrings()`
+  reads resource blocks + strips the SHA prefix — keep that parser, and keep the
+  raw-event debug dump (20s timeout box) that diagnosed it.
+- Keep the page's sort/badges in sync with `scraper/site_gen.py` when either changes.
+
 ## Current state (update this section when you change it) — as of 2026-07-17
 
 - Baseline run done: 0 structured listings, 3 triage entries (Meta, DRMcNatty = likely a
