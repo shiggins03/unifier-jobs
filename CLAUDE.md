@@ -49,13 +49,31 @@ Runs daily at 11:00 UTC via GitHub Actions; publishes a static dashboard to GitH
   raw-event debug dump (20s timeout box) that diagnosed it.
 - Keep the page's sort/badges in sync with `scraper/site_gen.py` when either changes.
 
-## Current state (update this section when you change it) — as of 2026-07-17
+## Diagnosing endpoints (the probe workflow)
 
-- Baseline run done: 0 structured listings, 3 triage entries (Meta, DRMcNatty = likely a
-  real Unifier posting, Project Partners = known marketing-copy false alarm → mark ignored).
-- 13 of ~27 roster companies enabled; disabled ones have inline notes in companies.yaml.
-- Open work: extract Meta + DRMcNatty postings from triage; fix Oracle ORC finder syntax;
-  find correct Workday cxs tenants for WSP / Burns & McDonnell / Mass General Brigham;
-  MTA blocked by 403 bot wall; aggregator API keys not yet added (discovery layer dormant).
+Claude-session sandboxes usually can't reach career sites (proxy policy), but
+GitHub Actions can. `scraper/probe.py` + `.github/workflows/probe.yml`
+(workflow_dispatch only): write probes into `main()`, push, dispatch, read the
+Actions log, iterate. `run_adapter()` exercises a real adapter end-to-end
+before trusting it in the daily run. Keep `main()` empty between
+investigations.
+
+## Current state (update this section when you change it) — as of 2026-07-18
+
+- Broken-roster sweep done (probe rounds 1-4, see companies.yaml notes for
+  per-company verdicts). Fixed: Oracle ORC (limit=25 truncated the one
+  unifier-mentioning req of 27 — now 100, TotalJobsCount as inventory),
+  Mass General Brigham (Workday tenant renamed partners → massgeneralbrigham,
+  site MGBExternal), Turner & Townsend (new smartrecruiters adapter; their old
+  careers domain now redirects to a marketing page). Accenture cxs is
+  intermittently flaky, left enabled.
+- Confirmed dead ends (disabled, reasons inline in companies.yaml): WSP,
+  Burns & McDonnell, MTA, LA Metro, MARTA, Northwell, Petrofac (no US board),
+  CDP (no careers page), Compass (no careers page). Most become reachable only
+  via the discovery layer — aggregator API keys still not added (dormant).
+- Open work: extract Meta + DRMcNatty postings from triage; add aggregator
+  keys; Accenture custom-portal adapter if cxs flakiness worsens.
 - Gotcha: `generic_page` sources check RAW html, not extracted text — job data on JS-heavy
   sites lives in embedded script JSON.
+- Gotcha: Workday cxs searchText is fuzzy — JLL/MGB return ~20 unrelated
+  postings for "unifier"; the tier filter drops them, expected noise.
