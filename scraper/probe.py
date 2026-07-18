@@ -1,4 +1,4 @@
-"""One-off endpoint diagnostics for broken roster companies (round 2). Runs only
+"""One-off endpoint diagnostics for broken roster companies (round 3). Runs only
 via the probe workflow (workflow_dispatch) from a network that can reach career
 sites; prints findings to the Actions log and writes nothing. Delete probes as
 their companies get fixed in companies.yaml."""
@@ -34,177 +34,188 @@ def get(url, ua=BROWSER_UA, **kw):
     return r
 
 
-def cxs(host, tenant, site):
-    u = f"https://{host}/wday/cxs/{tenant}/{site}/jobs"
-    r = requests.post(u, json={"appliedFacets": {}, "limit": 1, "offset": 0,
-                               "searchText": ""}, headers=ADAPTER_UA, timeout=T)
-    total = None
-    if r.ok and "json" in (r.headers.get("content-type") or ""):
-        total = r.json().get("total")
-    print(f"  POST cxs {host} {tenant}/{site} -> {r.status_code} total={total} "
-          f"ctype={r.headers.get('content-type')} body[:150]={r.text[:150]!r}")
-
-
 def main():
-    # --- MGB: web search says tenant renamed to massgeneralbrigham -----------
-    section("MGB verify")
-    show("MGBExternal", lambda: cxs("massgeneralbrigham.wd1.myworkdayjobs.com",
-                                    "massgeneralbrigham", "MGBExternal"))
-
-    # --- Accenture: 200 but non-JSON — see what it actually returns ---------
-    section("ACCENTURE cxs raw")
-    show("AccentureCareers", lambda: cxs("accenture.wd103.myworkdayjobs.com",
-                                         "accenture", "AccentureCareers"))
-
-    # --- WSP: find their real ATS from the corporate careers page -----------
-    section("WSP discovery")
-    def wsp_page():
-        r = get("https://www.wsp.com/en-us/careers/job-opportunities")
-        links = sorted(set(re.findall(
-            r'https?://[^"\'\s]*(?:myworkdayjobs|successfactors|smartrecruiters|'
-            r'taleo|dejobs|icims|greenhouse|lever|phenom|jobs?\.)[^"\'\s]*',
-            r.text)))[:20]
-        print(f"  ATS-ish links: {links}")
-    show("careers page", wsp_page)
-    for site in ["WSP_Global", "WSPGlobal", "Careers", "wspcareers",
-                 "WSP_External", "WSPUS", "WSP-Global", "Ext", "External_Careers"]:
-        show(site, lambda s=site: cxs("wsp.wd3.myworkdayjobs.com", "wsp", s))
-
-    # --- Oracle ORC: works; check whether limit>25 captures all matches -----
-    section("ORACLE ORC limits")
+    # --- ORACLE ORC: why do all 27 search hits die in the pipeline? ---------
+    # Theory: the detail fetch (description) silently fails, so keyword_tier
+    # sees title-only and drops everything. Exercise the detail endpoint
+    # exactly as fetch_oracle_orc does, then with variants.
+    section("ORACLE ORC details")
     base = ("https://eeho.fa.us2.oraclecloud.com/hcmRestApi/resources/latest/"
             "recruitingCEJobRequisitions")
-    for lim in (50, 100):
-        def orc(lim=lim):
-            r = requests.get(base, params={
+    dbase = base.replace("recruitingCEJobRequisitions",
+                         "recruitingCEJobRequisitionDetails")
+    r = requests.get(base, params={
+        "onlyData": "true", "expand": "all",
+        "finder": 'findReqs;siteNumber=CX_45001,keyword=primavera,limit=50'},
+        headers=ADAPTER_UA, timeout=T)
+    reqs = r.json()["items"][0]["requisitionList"]
+    print(f"  search -> {r.status_code} reqs={len(reqs)}")
+    print(f"  first req keys: {sorted(reqs[0].keys())}")
+    rid = reqs[0].get("Id")
+    title = reqs[0].get("Title")
+    print(f"  probing details for Id={rid!r} Title={title!r}")
+    variants = [
+        ("adapter-as-is", {"onlyData": "true",
+                           "finder": f'ById;Id="{rid}",siteNumber=CX_45001'}),
+        ("with expand=all", {"onlyData": "true", "expand": "all",
+                             "finder": f'ById;Id="{rid}",siteNumber=CX_45001'}),
+        ("unquoted Id", {"onlyData": "true", "expand": "all",
+                         "finder": f'ById;Id={rid},siteNumber=CX_45001'}),
+    ]
+    for name, params in variants:
+        def det(name=name, params=params):
+            d = requests.get(dbase, params=params, headers=ADAPTER_UA, timeout=T)
+            desc = None
+            items = []
+            if d.ok and "json" in (d.headers.get("content-type") or ""):
+                items = d.json().get("items", [])
+                if items:
+                    desc = items[0].get("ExternalDescriptionStr")
+                    print(f"  {name} -> {d.status_code} items={len(items)} "
+                          f"item keys sample: {sorted(items[0].keys())[:15]}")
+            print(f"  {name} -> {d.status_code} desc-len="
+                  f"{len(desc) if desc else None} "
+                  f"body[:150]={d.text[:150]!r}" if not desc else
+                  f"  {name}: DESC OK len={len(desc)} "
+                  f"unifier={'unifier' in desc.casefold()} "
+                  f"p6={'p6' in desc.casefold()}")
+        show(name, det)
+
+    # If a variant works, sweep all 27 and count which would pass the tier
+    # filter (unifier as tier1; P6/OPC/PIF/OIC with primavera/oracle context).
+    def sweep():
+        pass_count, examples = 0, []
+        for q in reqs:
+            rid = q.get("Id")
+            d = requests.get(dbase, params={
                 "onlyData": "true", "expand": "all",
-                "finder": f'findReqs;siteNumber=CX_45001,keyword=primavera,limit={lim}'},
+                "finder": f'ById;Id="{rid}",siteNumber=CX_45001'},
                 headers=ADAPTER_UA, timeout=T)
-            items = r.json().get("items", []) if r.ok else []
-            n = len(items[0].get("requisitionList", [])) if items else None
-            tot = items[0].get("TotalJobsCount") if items else None
-            print(f"  limit={lim} -> {r.status_code} reqs={n} TotalJobsCount={tot}")
-        show(f"limit {lim}", orc)
+            desc = ""
+            if d.ok and "json" in (d.headers.get("content-type") or ""):
+                items = d.json().get("items", [])
+                if items:
+                    desc = items[0].get("ExternalDescriptionStr") or ""
+            text = f"{q.get('Title', '')}\n{desc}"
+            low = text.casefold()
+            t1 = bool(re.search(r"\bunifier\b", low))
+            ctx = any(c in low for c in ("primavera", "oracle", "project controls"))
+            t2 = ctx and bool(re.search(r"\b(P6|OPC|PIF|OIC)\b", text))
+            if t1 or t2:
+                pass_count += 1
+                if len(examples) < 5:
+                    examples.append((q.get("Title"), "t1" if t1 else "t2"))
+        print(f"  {pass_count}/{len(reqs)} reqs would pass the tier filter")
+        for e in examples:
+            print(f"    e.g. {e}")
+    show("sweep all reqs", sweep)
 
-    # --- Turner & Townsend: SmartRecruiters public API ----------------------
-    section("T&T SmartRecruiters")
-    for slug in ["turnertownsend", "TurnerTownsend", "turner-townsend"]:
-        def sr(slug=slug):
-            r = get(f"https://api.smartrecruiters.com/v1/companies/{slug}/postings"
-                    f"?q=unifier&limit=10", ua=ADAPTER_UA)
-            if r.ok:
-                d = r.json()
-                print(f"  slug={slug} totalFound={d.get('totalFound')} "
-                      f"first={[p.get('name') for p in d.get('content', [])[:3]]}")
-        show(slug, sr)
-    def sr_inv():
-        r = requests.get("https://api.smartrecruiters.com/v1/companies/"
-                         "turnertownsend/postings?limit=1", headers=ADAPTER_UA,
-                         timeout=T)
-        print(f"  inventory (no q) -> {r.status_code} "
-              f"totalFound={r.json().get('totalFound') if r.ok else None}")
-    show("inventory", sr_inv)
+    # --- ACCENTURE: does the cxs API answer a browser-ish request? ----------
+    section("ACCENTURE cxs UA test")
+    for ua_name, ua in [("adapter UA + Accept json",
+                         {**ADAPTER_UA, "Accept": "application/json"}),
+                        ("browser UA + Accept json",
+                         {"User-Agent": BROWSER_UA["User-Agent"],
+                          "Accept": "application/json"})]:
+        def acc(ua_name=ua_name, ua=ua):
+            r = requests.post("https://accenture.wd103.myworkdayjobs.com/wday/cxs/"
+                              "accenture/AccentureCareers/jobs",
+                              json={"appliedFacets": {}, "limit": 1, "offset": 0,
+                                    "searchText": ""}, headers=ua, timeout=T)
+            ctype = r.headers.get("content-type")
+            total = (r.json().get("total")
+                     if r.ok and "json" in (ctype or "") else None)
+            print(f"  {ua_name} -> {r.status_code} ctype={ctype} total={total}")
+        show(ua_name, acc)
 
-    # --- LA Metro: correct slug is lametro; is the page server-rendered? ----
-    section("LA METRO lametro")
-    def lametro(q):
-        r = get(f"https://www.governmentjobs.com/careers/lametro?keywords={q}")
-        low = r.text.casefold()
-        print(f"  q={q!r}: mentions-of-q={low.count(q.casefold())} "
-              f"job-table-rows={low.count('job-table')} "
-              f"list-items={low.count('list-item')}")
-        m = re.findall(r'href="(/careers/lametro/jobs/[^"]+)"', r.text)
-        print(f"  job links: {len(m)} first3={m[:3]}")
-    show("q=primavera", lambda: lametro("primavera"))
-    show("q=zzqnope", lambda: lametro("zzqnope"))
+    # --- LA METRO: find the SPA's real data endpoint ------------------------
+    section("LA METRO api discovery")
+    def lametro_page():
+        r = get("https://www.governmentjobs.com/careers/lametro")
+        hints = sorted(set(re.findall(
+            r'["\'](/careers/[^"\']*(?:api|search|jobs)[^"\']*)["\']', r.text)))[:15]
+        print(f"  inline api-ish paths: {hints}")
+        scripts = sorted(set(re.findall(r'<script[^>]+src="([^"]+)"', r.text)))[:10]
+        print(f"  scripts: {scripts}")
+    show("page", lametro_page)
+    for u in ["https://www.governmentjobs.com/careers/lametro/jobs.rss",
+              "https://www.governmentjobs.com/jobfeed/lametro",
+              "https://www.governmentjobs.com/careers/lametro/jobs?keywords=unifier"]:
+        show(u, lambda u=u: print(f"  body[:200]={get(u).text[:200]!r}"))
 
-    # --- Northwell: WP site — find the real search endpoint -----------------
-    section("NORTHWELL search discovery")
-    def nw_home():
+    # --- NORTHWELL: the search form posts to /job-search-results/ -----------
+    section("NORTHWELL job-search-results")
+    def nw_form():
         r = get("https://jobs.northwell.edu/")
-        forms = re.findall(r'<form[^>]+action="([^"]+)"', r.text)
-        print(f"  form actions: {forms[:5]}")
-        api = sorted(set(re.findall(
-            r'https?://[^"\'\s]*(?:search|api|widget)[^"\'\s]*', r.text)))[:15]
-        print(f"  search/api-ish urls: {api}")
-    show("home", nw_home)
-    for u in ["https://jobs.northwell.edu/?s=unifier",
-              "https://jobs.northwell.edu/search-jobs/?keyword=unifier",
-              "https://jobs.northwell.edu/search/?q=unifier"]:
-        show(u, lambda u=u: get(u))
+        m = re.search(r'<form[^>]+action="/job-search-results/"(.*?)</form>',
+                      r.text, re.S)
+        if m:
+            inputs = re.findall(r'<(?:input|select)[^>]+name="([^"]+)"', m.group(1))
+            print(f"  form input names: {inputs}")
+    show("form inputs", nw_form)
+    for u in ["https://jobs.northwell.edu/job-search-results/?keyword=unifier",
+              "https://jobs.northwell.edu/job-search-results/?search=unifier",
+              "https://jobs.northwell.edu/job-search-results/?kw=zzqnope"]:
+        def nws(u=u):
+            r = get(u)
+            low = r.text.casefold()
+            print(f"  results-markers: 'no results'={('no result' in low)} "
+                  f"job-count-hits={len(re.findall(r'job[_-]?(?:result|listing|card)', low))}")
+        show(u, nws)
 
-    # --- Burns & McDonnell: burnsmcd.jobs (DirectEmployers) + apply. ATS ----
-    section("BURNS MCD boards")
-    def bmcd(q):
-        r = get(f"https://burnsmcd.jobs/jobs/?q={q}")
-        low = r.text.casefold()
-        print(f"  q={q!r}: direct-se-hits={low.count('direct_joblisting')} "
-              f"'no jobs'={('no jobs' in low) or ('0 jobs' in low)}")
-    show("q=primavera", lambda: bmcd("primavera"))
-    show("q=zzqnope", lambda: bmcd("zzqnope"))
-    def bmcd_apply():
-        r = get("https://apply.burnsmcd.com/apply")
-        hint = re.findall(r'(avature|icims|workday|successfactors|taleo|'
-                          r'smartrecruiters|greenhouse|lever|phenom|jibe|radancy)',
-                          r.text, re.I)
-        print(f"  ATS fingerprints: {sorted(set(h.lower() for h in hint))}")
-    show("apply.burnsmcd.com", bmcd_apply)
+    # --- BURNS MCD: DirectEmployers ajax search -----------------------------
+    section("BURNS MCD ajax")
+    for u in ["https://burnsmcd.jobs/ajax/jobs/search-and-render/?q=primavera&num_items=10",
+              "https://burnsmcd.jobs/ajax/jobs/search/?q=primavera"]:
+        def bma(u=u):
+            r = get(u)
+            print(f"  body[:250]={r.text[:250]!r}")
+        show(u, bma)
+    def bmcd_page_hints():
+        r = get("https://burnsmcd.jobs/jobs/?q=primavera")
+        hints = sorted(set(re.findall(r'["\'](/[^"\']*ajax[^"\']*)["\']', r.text)))[:10]
+        print(f"  ajax-ish paths in page: {hints}")
+    show("page hints", bmcd_page_hints)
 
-    # --- MARTA: where do jobs actually live on itsmarta.com? ----------------
-    section("MARTA discovery")
+    # --- MARTA: relative links + iframes on careers.aspx --------------------
+    section("MARTA relative links")
     def marta():
         r = get("https://itsmarta.com/careers.aspx")
         links = sorted(set(re.findall(
-            r'https?://[^"\'\s]*(?:icims|jobs|career|taleo|neogov|governmentjobs)'
-            r'[^"\'\s]*', r.text)))[:15]
-        print(f"  job-ish links: {links}")
+            r'(?:href|src)="([^"]*(?:job|career|icims|apply)[^"]*)"', r.text,
+            re.I)))[:20]
+        print(f"  job-ish hrefs/srcs: {links}")
     show("careers.aspx", marta)
 
-    # --- Petrofac: www works — false-positive check + find search URL -------
-    section("PETROFAC www")
+    # --- PETROFAC: relative job links on www careers page -------------------
+    section("PETROFAC relative links")
     def petrofac():
         r = get("https://www.petrofac.com/careers")
-        low = r.text.casefold()
-        print(f"  contains unifier={('unifier' in low)} "
-              f"primavera={('primavera' in low)}")
         links = sorted(set(re.findall(
-            r'https?://[^"\'\s]*(?:job|vacan|oleeo|successfactors|workday|taleo)'
-            r'[^"\'\s]*', r.text)))[:15]
-        print(f"  job-ish links: {links}")
+            r'href="([^"]*(?:job|vacan|opportunit|search)[^"]*)"', r.text,
+            re.I)))[:20]
+        print(f"  job-ish hrefs: {links}")
     show("careers", petrofac)
 
-    # --- CDP Inc: hunt the careers page via sitemap -------------------------
-    section("CDP INC sitemap")
-    def cdp():
-        r = get("https://www.cdp-inc.com/sitemap.xml")
-        if r.ok:
-            hits = [u for u in re.findall(r"<loc>([^<]+)</loc>", r.text)
-                    if re.search(r"career|job|join|team", u, re.I)]
-            print(f"  career-ish sitemap urls: {hits[:10]}")
-    show("sitemap", cdp)
+    # --- CDP INC: guess paths + homepage nav --------------------------------
+    section("CDP INC paths")
+    for u in ["https://www.cdp-inc.com/content/careers",
+              "https://www.cdp-inc.com/about",
+              "https://www.cdp-inc.com/about-us"]:
+        show(u, lambda u=u: get(u))
+    def cdp_nav():
+        r = get("https://www.cdp-inc.com/")
+        links = sorted(set(re.findall(r'href="(/[^"]*)"', r.text)))
+        print(f"  all internal paths ({len(links)}): {links[:40]}")
+    show("nav", cdp_nav)
 
-    # --- Compass Consult: hunt jobs page via sitemap ------------------------
-    section("COMPASS sitemap")
+    # --- COMPASS: page sitemap ----------------------------------------------
+    section("COMPASS pages")
     def compass():
-        r = get("https://compassconsult.co/sitemap.xml")
-        if r.ok:
-            hits = [u for u in re.findall(r"<loc>([^<]+)</loc>", r.text)
-                    if re.search(r"career|job|join|team|position", u, re.I)]
-            print(f"  career-ish sitemap urls: {hits[:10]}")
-        sub = re.findall(r"<loc>([^<]+\.xml)</loc>", r.text)[:10]
-        print(f"  sub-sitemaps: {sub}")
-    show("sitemap", compass)
-
-    # --- MTA: is anything not behind Cloudflare? ----------------------------
-    section("MTA alternates")
-    for u in ["https://new.mta.info/careers", "https://www.mta.info/careers"]:
-        def mta(u=u):
-            r = get(u)
-            links = sorted(set(re.findall(
-                r'https?://[^"\'\s]*(?:careers|jobs|icims|taleo)[^"\'\s]*',
-                r.text)))[:10]
-            print(f"  job-ish links: {links}")
-        show(u, mta)
+        r = get("https://compassconsult.co/page-sitemap.xml")
+        urls = re.findall(r"<loc>([^<]+)</loc>", r.text)
+        print(f"  pages ({len(urls)}): {urls[:30]}")
+    show("page-sitemap", compass)
 
 
 if __name__ == "__main__":
