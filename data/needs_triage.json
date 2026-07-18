@@ -66,5 +66,61 @@
     "first_seen": "2026-07-17",
     "status": "invalidated",
     "status_note": "featured-jobs filler, not a keyword match (adapter now filters noise baseline)"
+  },
+  {
+    "company": "Oracle",
+    "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/job/333254",
+    "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Principal Cost Manager",
+    "source": "oracle_orc:Oracle",
+    "first_seen": "2026-07-18"
+  },
+  {
+    "company": "Oracle",
+    "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/job/336510",
+    "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Principal Data Center Construction Manager Lead",
+    "source": "oracle_orc:Oracle",
+    "first_seen": "2026-07-18"
+  },
+  {
+    "company": "Oracle",
+    "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/job/336507",
+    "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Senior Data Center Commissioning Engineer",
+    "source": "oracle_orc:Oracle",
+    "first_seen": "2026-07-18"
+  },
+  {
+    "company": "Oracle",
+    "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/job/333261",
+    "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Senior Data Center Construction Manager",
+    "source": "oracle_orc:Oracle",
+    "first_seen": "2026-07-18"
+  },
+  {
+    "company": "Oracle",
+    "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/job/325801",
+    "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Director, Data Center Cost Control Team Lead",
+    "source": "oracle_orc:Oracle",
+    "first_seen": "2026-07-18"
+  },
+  {
+    "company": "Oracle",
+    "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/job/333296",
+    "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Data Center Integrated Planning & Scheduling",
+    "source": "oracle_orc:Oracle",
+    "first_seen": "2026-07-18"
+  },
+  {
+    "company": "Oracle",
+    "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/job/339647",
+    "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Senior Director, Special Projects – Data Center Operations (Nashville, TN)",
+    "source": "oracle_orc:Oracle",
+    "first_seen": "2026-07-18"
+  },
+  {
+    "company": "Oracle",
+    "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/job/337725",
+    "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Data Center Portfolio Controls Strategy Lead",
+    "source": "oracle_orc:Oracle",
+    "first_seen": "2026-07-18"
   }
 ]

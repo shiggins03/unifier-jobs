@@ -1,0 +1,25 @@
+Entity
+: Oracle America, Inc.
+
+ 
+
+Job Duties
+: Analyze requirements and deliver functional and technical solutions. Implement products and technologies to meet post-sale customer needs. As a member of the consulting organization, ensure that a quality, integrated software solution is delivered in a timely manner, at budget, and to client’s satisfaction. Work closely with client to understand and manage expectations, as well as work closely with Oracle and third-party vendors to ensure delivery. Provide engagement delivery services both as an individual and as a team member. Services include identifying needs, developing, influencing and implementing proposals. Support and participate on project teams. Problem solve by applying company policies and procedures. May telecommute.  (385.32400)
+
+ 
+
+Employer will accept a Bachelor’s degree in Computer Science, Engineering, or related technical field and 7 years of experience in the job offered or in a Technical Consultant-related occupation. *In lieu of a Bachelor’s degree, employer will accept 2 years of work experience. Position requires:
+
+Oracle Primavera P6;
+
+Unifier;
+
+Aconex;
+
+Oracle Primavera cloud;
+
+Project Integration framework;
+
+Unifier Web Services; and
+
+Primavera Data Services.

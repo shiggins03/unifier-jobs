@@ -187,10 +187,11 @@
       0,
       0,
       0,
-      0
+      1
     ],
-    "fail_streak": 1,
-    "last_run": "2026-07-18"
+    "fail_streak": 0,
+    "last_run": "2026-07-18",
+    "inventory": 27
   },
   "avature_feed:Deloitte": {
     "counts": [
@@ -213,6 +214,22 @@
     ],
     "fail_streak": 0,
     "inventory": 1025,
+    "last_run": "2026-07-18"
+  },
+  "smartrecruiters:Turner & Townsend": {
+    "counts": [
+      29
+    ],
+    "fail_streak": 0,
+    "inventory": 2726,
+    "last_run": "2026-07-18"
+  },
+  "workday:Mass General Brigham": {
+    "counts": [
+      0
+    ],
+    "fail_streak": 0,
+    "inventory": 2000,
     "last_run": "2026-07-18"
   }
 }
