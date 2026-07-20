@@ -164,7 +164,10 @@ def fetch_greenhouse(co, query):
 
 def fetch_generic_page(co, query):
     """Keyword presence check only. Hits become triage entries — the agent
-    extracts the real posting; the script never guesses page structure."""
+    extracts the real posting; the script never guesses page structure.
+    Optional check_pattern (regex) replaces the plain keyword check for
+    search pages that echo the query into their own HTML (e.g. match the
+    keyword inside a job-URL slug instead)."""
     try:
         r = requests.get(co["url"], headers=UA, timeout=TIMEOUT)
         r.raise_for_status()
@@ -173,11 +176,68 @@ def fetch_generic_page(co, query):
         text = r.text.casefold()
     except Exception:
         return [], False, None
-    if query.casefold() in text:
+    pattern = co.get("check_pattern")
+    if (re.search(pattern, r.text, re.I) if pattern else query.casefold() in text):
         return [{"triage": True, "company": co["name"], "title": None,
                  "url": co["url"],
                  "note": f'careers page mentions "{query}" — extract the actual posting'}], True, None
     return [], True, None
+
+
+def fetch_successfactors(co, query):
+    """SuccessFactors Career Site Builder (e.g. Amtrak): server-rendered
+    keyword search. QUIRK: a no-match search silently falls back to listing
+    ALL jobs, so results only count when they differ from a nonsense query's
+    results. Detail pages are server-rendered; description from .jobdescription."""
+    base = co["sf_base"].rstrip("/")
+
+    def job_links(q):
+        r = requests.get(f"{base}/search/", params={"q": q}, headers=UA,
+                         timeout=TIMEOUT)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, "html.parser")
+        out = {}
+        for a in soup.select("a.jobTitle-link[href]"):
+            out[a["href"]] = a.get_text(strip=True)
+        return out
+
+    try:
+        baseline = set(job_links("zzqnomatch999"))
+        found = {}
+        for q in (query, "Primavera"):
+            found.update(job_links(q))
+        if set(found) <= baseline and baseline:
+            found = {}  # both searches hit the all-jobs fallback: no matches
+    except Exception:
+        return [], False, None
+    out = []
+    for href, title in found.items():
+        url = href if href.startswith("http") else base + href
+        desc, loc, posted = None, None, None
+        try:
+            d = requests.get(url, headers=UA, timeout=TIMEOUT)
+            if d.ok:
+                soup = BeautifulSoup(d.text, "html.parser")
+                node = soup.select_one(".jobdescription, [itemprop=description]")
+                if node:
+                    desc = re.sub(r"\n{3,}", "\n\n",
+                                  node.get_text("\n")).strip() or None
+                ln = soup.select_one(".jobGeoLocation, [itemprop=address], "
+                                     ".jobLocation")
+                if ln:
+                    loc = " ".join(ln.get_text(" ").split()) or None
+                pd = soup.select_one("[itemprop=datePosted]")
+                if pd:
+                    posted = pd.get_text(strip=True) or None
+        except Exception:
+            pass
+        out.append({
+            "company": co["name"], "title": title, "location": loc,
+            "url": url, "posted_date": posted, "description": desc,
+            "search_matched": desc is None,
+        })
+    inventory = len(baseline) or None  # first-page size of the all-jobs list
+    return out, True, inventory
 
 
 def fetch_smartrecruiters(co, query):
@@ -481,6 +541,7 @@ DIRECT_ADAPTERS = {
     "generic_page": fetch_generic_page,
     "meta_graphql": fetch_meta_graphql,
     "smartrecruiters": fetch_smartrecruiters,
+    "successfactors": fetch_successfactors,
     "avature_feed": fetch_avature_feed,
     "phenom": fetch_phenom,
 }

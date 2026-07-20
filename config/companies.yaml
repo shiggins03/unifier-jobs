@@ -92,9 +92,78 @@ companies:
     ats: generic_page
     url: https://careers.mta.org/search/unifier/jobs
     enabled: false
-    note: Cloudflare challenge on careers.mta.org AND mta.info (verified
-      2026-07-18) — no script route; rely on aggregator discovery once keys
-      are added.
+    note: 'FINAL (2026-07-20): Cloudflare challenges everything on
+      careers.mta.org (even robots.txt/sitemap.xml) and mta.info; the
+      jibeapply API hostname does not exist. No legitimate script route —
+      their postings syndicate to Google Jobs, so aggregator discovery
+      (JSearch) is THE route once keys are added. Do not retry scraping.'
+  - name: City of New York
+    tier: B
+    ats: generic_page
+    url: https://cityjobs.nyc.gov/jobs?q=unifier
+    check_pattern: href="/job/[^"]*unifier
+    enabled: true
+    note: NYC DDC/DEP/Parks etc. post Unifier admin roles here (live "Unifier
+      Coordinator" posting 2026-07-20). Search echoes the query on zero-result
+      pages (5x), so the plain keyword check would false-positive — the
+      check_pattern only fires when a job-URL slug contains unifier (city
+      Unifier roles carry it in the title). Search is NOT full-text (primavera
+      query missed the unifier-titled posting), so slug-match is the signal.
+  - name: STV
+    tier: B
+    ats: workday
+    workday_host: stvinc.wd5.myworkdayjobs.com
+    workday_tenant: stvinc
+    workday_site: stv
+    enabled: true
+    note: NYC-HQ transit/infrastructure firm. cxs verified 2026-07-20
+      (inventory 385; unifier search returned 4 incl. a NYC role). Site name
+      found via link on stvinc.com/careers — earlier wd1 guesses were wrong host.
+  - name: Hill International
+    tier: B
+    ats: oracle_orc
+    url: https://hcib.fa.us2.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions
+    site_number: CX_1001
+    job_url_base: https://hcib.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job
+    enabled: true
+    note: PM/construction-claims firm, heavy PMIS user. ORC endpoint found via
+      links on hillintl.com/careers; verified 2026-07-20 (10 unifier-keyword
+      reqs, global — US filter does real work).
+  - name: Amtrak
+    tier: B
+    ats: successfactors
+    sf_base: https://careers.amtrak.com
+    enabled: true
+    note: SF Career Site Builder, server-rendered; verified 2026-07-20 (6
+      unifier search hits). QUIRK handled by adapter - no-match searches fall
+      back to listing ALL jobs, and the page echoes the query (14x), so
+      results only count when they differ from a nonsense query's.
+  - name: Turner Construction
+    tier: B
+    ats: generic_page
+    url: https://turnerconstruction.csod.com/ux/ats/careersite/1/home?c=turnerconstruction
+    enabled: false
+    note: Cornerstone (csod.com) SPA, careersites 1-4 — JS-rendered, no
+      scriptable endpoint found 2026-07-20. Needs a csod adapter or discovery.
+  - name: Port Authority NY/NJ
+    tier: B
+    ats: workday
+    workday_host: panynj.wd1.myworkdayjobs.com
+    workday_tenant: panynj
+    workday_site: External
+    enabled: false
+    note: wd1 host exists but 6 site-name candidates all 422 (2026-07-20);
+      panynj.gov careers page moved/404. Grab the site name from a real job
+      link via discovery.
+  - name: NYPA
+    tier: B
+    ats: workday
+    workday_host: nypa.wd1.myworkdayjobs.com
+    workday_tenant: nypa
+    workday_site: External
+    enabled: false
+    note: wd1 host exists but 8 site-name candidates all 422 (2026-07-20);
+      nypa.gov/careers shows no ATS links to scripts. Site name via discovery.
   - name: LA Metro
     tier: B
     ats: generic_page

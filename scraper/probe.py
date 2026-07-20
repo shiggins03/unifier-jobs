@@ -85,40 +85,31 @@ def sf_csb(base, label):
 
 
 def main():
-    # --- echo baselines: does an empty search echo the query into HTML? -----
-    section("ECHO BASELINES")
-    def echo(label, url_tpl):
-        r = requests.get(url_tpl.format(q="zzqecho777"), headers=BROWSER_UA,
-                         timeout=T)
-        n = r.text.casefold().count("zzqecho777")
-        print(f"  {label}: {r.status_code} query-echoes={n} len={len(r.text)}")
-    show("cityjobs", lambda: echo("cityjobs",
-         "https://cityjobs.nyc.gov/jobs?q={q}"))
-    show("amtrak", lambda: echo("amtrak",
-         "https://careers.amtrak.com/search/?q={q}"))
+    # --- e2e: new successfactors adapter (Amtrak) ---------------------------
+    section("AMTRAK successfactors e2e")
+    show("amtrak", lambda: run_adapter(
+        "successfactors", sources.fetch_successfactors,
+        {"name": "Amtrak", "sf_base": "https://careers.amtrak.com"}))
 
-    # --- STV: real Workday URL found on stvinc.com (wd5, site stv) ----------
-    section("STV wd5 verify")
-    cxs("stvinc.wd5.myworkdayjobs.com", "stvinc", "stv")
-    show("stv e2e", lambda: run_adapter("workday", sources.fetch_workday, {
+    # --- e2e: generic_page with check_pattern (City of New York) ------------
+    section("CITYJOBS check_pattern e2e")
+    co = {"name": "City of New York",
+          "url": "https://cityjobs.nyc.gov/jobs?q=unifier",
+          "check_pattern": 'href="/job/[^"]*unifier'}
+    show("cityjobs", lambda: run_adapter(
+        "generic_page", sources.fetch_generic_page, co))
+    # negative control: nonsense query page must NOT trigger the pattern
+    co_neg = {"name": "negative control",
+              "url": "https://cityjobs.nyc.gov/jobs?q=zzqnope999",
+              "check_pattern": 'href="/job/[^"]*unifier'}
+    show("negative", lambda: run_adapter(
+        "generic_page", sources.fetch_generic_page, co_neg))
+
+    # --- e2e: STV workday through real config shape -------------------------
+    section("STV e2e")
+    show("stv", lambda: run_adapter("workday", sources.fetch_workday, {
         "name": "STV", "workday_host": "stvinc.wd5.myworkdayjobs.com",
         "workday_tenant": "stvinc", "workday_site": "stv"}))
-
-    # --- Hill International: Oracle ORC on hcib.fa.us2, site CX_1001 --------
-    section("HILL ORC verify")
-    show("hill e2e", lambda: run_adapter("oracle_orc", sources.fetch_oracle_orc, {
-        "name": "Hill International",
-        "url": "https://hcib.fa.us2.oraclecloud.com/hcmRestApi/resources/latest/"
-               "recruitingCEJobRequisitions",
-        "site_number": "CX_1001",
-        "job_url_base": "https://hcib.fa.us2.oraclecloud.com/hcmUI/"
-                        "CandidateExperience/en/sites/CX_1001/job"}))
-    # sanity: Oracle config still works with the generalized job_url_base
-    show("oracle e2e", lambda: run_adapter("oracle_orc", sources.fetch_oracle_orc, {
-        "name": "Oracle",
-        "url": "https://eeho.fa.us2.oraclecloud.com/hcmRestApi/resources/latest/"
-               "recruitingCEJobRequisitions",
-        "site_number": "CX_45001", "search_query": "primavera"}))
 
 
 if __name__ == "__main__":
