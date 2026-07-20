@@ -44,6 +44,25 @@ max-height:400px;overflow-y:auto;background:none;margin:8px 0 0}
 section details.fold>summary{font-size:15px;color:var(--text);font-weight:600}
 .gone .title a{color:var(--gone)}.gone .co{color:var(--gone)}
 .on{color:var(--text)}.off{color:var(--muted);opacity:.65}
+.controls{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;
+background:var(--card);border:1px solid var(--line);border-radius:10px;
+padding:10px 14px;margin:0 0 16px;font-size:13px}
+.fgroup{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.flabel{color:var(--muted);font-size:11px;font-weight:600;
+text-transform:uppercase;letter-spacing:.04em;margin-right:2px}
+.chip{font:600 12px/1.4 system-ui,-apple-system,sans-serif;cursor:pointer;
+border:1px solid var(--line);border-radius:999px;padding:3px 10px;
+background:transparent;color:var(--muted)}
+.chip[aria-pressed="true"]{background:var(--badge);color:var(--accent);
+border-color:var(--accent)}
+.chip:focus-visible,select:focus-visible{outline:2px solid var(--accent);
+outline-offset:1px}
+.controls select{font:13px system-ui,-apple-system,sans-serif;
+color:var(--text);background:var(--card);border:1px solid var(--line);
+border-radius:8px;padding:4px 8px;max-width:200px}
+.clearbtn{font:12px system-ui,-apple-system,sans-serif;cursor:pointer;
+border:0;background:none;color:var(--accent);text-decoration:underline;
+padding:2px}
 .loading{color:var(--muted);font-size:14px;padding:24px 0}
 @keyframes pulse{50%{opacity:.45}}
 .loading{animation:pulse 1.6s ease-in-out infinite}
@@ -55,9 +74,33 @@ footer{color:var(--muted);font-size:12px;margin:24px 0}
 <h1>Unifier job watch</h1>
 <div class="sub" id="sub">Loading&hellip;</div>
 <div class="fresh" id="fresh"></div>
+<div class="controls" id="controls" hidden>
+  <span class="fgroup"><span class="flabel">Tier</span>
+    <button type="button" class="chip" data-f="tiers" data-v="A" aria-pressed="false">A</button>
+    <button type="button" class="chip" data-f="tiers" data-v="B" aria-pressed="false">B</button>
+    <button type="button" class="chip" data-f="tiers" data-v="C" aria-pressed="false">C</button>
+  </span>
+  <span class="fgroup"><span class="flabel">Unifier</span>
+    <button type="button" class="chip" data-f="match" data-v="title" aria-pressed="false">In title</button>
+    <button type="button" class="chip" data-f="match" data-v="desc" aria-pressed="false">In description</button>
+    <button type="button" class="chip" data-f="match" data-v="related" aria-pressed="false">Related (P6/OPC&hellip;)</button>
+  </span>
+  <span class="fgroup"><span class="flabel">Company</span>
+    <select id="f-company" aria-label="Filter by company"><option value="">All</option></select>
+  </span>
+  <span class="fgroup"><span class="flabel">Sort</span>
+    <select id="f-sort" aria-label="Sort listings">
+      <option value="best">Best match</option>
+      <option value="date">Date posted (newest)</option>
+      <option value="comp">Compensation (highest)</option>
+    </select>
+  </span>
+  <button type="button" class="clearbtn" id="f-clear" hidden>Clear filters</button>
+</div>
 <div id="content"><div class="loading">Loading live data from GitHub&hellip;</div></div>
 <footer>All fields shown verbatim from the source posting — nothing estimated.
-Sorted by keyword tier, company tier, stated comp, location.<br>
+Sort and filters are display-only: date and comp are parsed from the verbatim
+strings for ordering, never altered.<br>
 Canonical dashboard: <a href="https://shiggins03.github.io/unifier-jobs/"
 target="_blank" rel="noopener">shiggins03.github.io/unifier-jobs</a></footer>
 </main>
@@ -80,7 +123,25 @@ const REMOTE_RANK = 6, OTHER_US_RANK = 7;
 const AUTHZ = ["needs_reauth","server_not_connected","selection_required",
   "blocked_by_policy","approval_required","not_granted"];
 
-const state = { data: {}, err: {}, storedAt: {}, pageError: null, unsubs: [], debug: [] };
+const state = { data: {}, err: {}, storedAt: {}, pageError: null, unsubs: [], debug: [],
+  ui: { tiers: new Set(), match: new Set(), company: "", sort: "best" } };
+const UI_KEY = "ujw-filters-v1";
+function saveUI() {
+  try {
+    localStorage.setItem(UI_KEY, JSON.stringify({
+      tiers: [...state.ui.tiers], match: [...state.ui.match],
+      company: state.ui.company, sort: state.ui.sort }));
+  } catch (e) {}
+}
+function loadUI() {
+  try {
+    const s = JSON.parse(localStorage.getItem(UI_KEY) || "{}");
+    if (Array.isArray(s.tiers)) state.ui.tiers = new Set(s.tiers);
+    if (Array.isArray(s.match)) state.ui.match = new Set(s.match);
+    if (typeof s.company === "string") state.ui.company = s.company;
+    if (["best", "date", "comp"].includes(s.sort)) state.ui.sort = s.sort;
+  } catch (e) {}
+}
 
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g,
   (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -212,6 +273,36 @@ function makeSortKey(prestige) {
     norm(j.company),
   ];
 }
+// Posted dates are shown verbatim; this parse exists for ORDERING only.
+// Relative strings ("Posted 13 Days Ago") anchor to the feed's update time,
+// not the viewer's clock. Unparseable -> bottom of the list.
+function dateSortValue(pd, refMs) {
+  const s = String(pd || "").trim();
+  if (!s) return -Infinity;
+  const iso = s.match(/(\d{4})-(\d{2})-(\d{2})/);
+  if (iso) return Date.UTC(+iso[1], +iso[2] - 1, +iso[3]);
+  const low = s.toLowerCase();
+  if (/\btoday\b/.test(low)) return refMs;
+  if (/\byesterday\b/.test(low)) return refMs - 864e5;
+  const rel = low.match(/(\d+)\+?\s*days?\s*ago/);
+  if (rel) return refMs - (+rel[1]) * 864e5;
+  const t = Date.parse(s);
+  return isNaN(t) ? -Infinity : t;
+}
+function matchKind(j) {
+  if ((j.flags || []).includes("title-match")) return "title";
+  return j.tier === 1 ? "desc" : "related";
+}
+function uiActive() {
+  return state.ui.tiers.size > 0 || state.ui.match.size > 0 || !!state.ui.company;
+}
+function passesFilters(j, prestige) {
+  const ui = state.ui;
+  if (ui.tiers.size && !ui.tiers.has(prestige[norm(j.company)] || "?")) return false;
+  if (ui.match.size && !ui.match.has(matchKind(j))) return false;
+  if (ui.company && norm(j.company) !== ui.company) return false;
+  return true;
+}
 function bySortKey(keyFn) {
   return (a, b) => {
     const ka = keyFn(a), kb = keyFn(b);
@@ -302,6 +393,37 @@ function fallbackLink() {
 shiggins03.github.io/unifier-jobs</a></div>`;
 }
 
+function renderControls(activeDirect, prestige) {
+  const box = document.getElementById("controls");
+  box.hidden = false;
+  for (const chip of box.querySelectorAll(".chip")) {
+    chip.setAttribute("aria-pressed",
+      state.ui[chip.dataset.f].has(chip.dataset.v) ? "true" : "false");
+  }
+  const sel = document.getElementById("f-company");
+  const counts = {};
+  for (const j of activeDirect) counts[j.company] = (counts[j.company] || 0) + 1;
+  const names = Object.keys(counts).sort((a, b) => a.localeCompare(b));
+  const want = "all," + names.join(",");
+  if (sel.dataset.opts !== want) {
+    sel.dataset.opts = want;
+    sel.innerHTML = '<option value="">All</option>' + names.map((n) =>
+      `<option value="${esc(norm(n))}">${esc(n)} (${counts[n]})</option>`).join("");
+  }
+  sel.value = state.ui.company;
+  if (sel.value !== state.ui.company) { state.ui.company = ""; sel.value = ""; }
+  document.getElementById("f-sort").value = state.ui.sort;
+  document.getElementById("f-clear").hidden = !uiActive();
+}
+
+function clearFilters() {
+  state.ui.tiers.clear();
+  state.ui.match.clear();
+  state.ui.company = "";
+  saveUI();
+  render();
+}
+
 function render() {
   const content = document.getElementById("content");
   const sub = document.getElementById("sub");
@@ -330,23 +452,35 @@ function render() {
   const companies = Array.isArray(feed.roster) ? feed.roster : [];
   const prestige = {};
   for (const c of companies) if (c.tier) prestige[norm(c.name)] = c.tier;
-  const keyFn = makeSortKey(prestige);
+  const bestKey = makeSortKey(prestige);
+  const refMs = Date.parse(feed.updated || "") || Date.now();
+  const keyFn = state.ui.sort === "date"
+    ? (j) => [-dateSortValue(j.posted_date, refMs), ...bestKey(j)]
+    : state.ui.sort === "comp"
+      ? (j) => [-compSortValue(j.comp), ...bestKey(j)]
+      : bestKey;
   const cmp = bySortKey(keyFn);
 
   const active = jobs.filter((j) => j.status === "active");
-  const t1 = active.filter((j) => j.tier === 1 && j.kind === "direct").sort(cmp);
-  const t2 = active.filter((j) => j.tier === 2 && j.kind === "direct").sort(cmp);
-  const boards = active.filter((j) => j.kind === "board").sort(cmp);
-  const gone = jobs.filter((j) => j.status === "gone")
+  const activeDirect = active.filter((j) => j.kind === "direct");
+  renderControls(activeDirect, prestige);
+  const shown = active.filter((j) => passesFilters(j, prestige));
+  const t1 = shown.filter((j) => j.tier === 1 && j.kind === "direct").sort(cmp);
+  const t2 = shown.filter((j) => j.tier === 2 && j.kind === "direct").sort(cmp);
+  const boards = shown.filter((j) => j.kind === "board").sort(cmp);
+  const gone = jobs.filter((j) => j.status === "gone" && passesFilters(j, prestige))
     .sort((a, b) => (b.gone_date || "").localeCompare(a.gone_date || ""))
     .slice(0, 25);
   const newCount = active.filter((j) => (j.flags || []).includes("new")).length;
   const triage = Array.isArray(feed.triage) ? feed.triage : [];
 
   const updated = feed.updated || "";
+  const filterNote = uiActive()
+    ? ` &middot; filters: showing ${t1.length + t2.length + boards.length} of ` +
+      `${active.length}` : "";
   sub.innerHTML = `${updated ? "Updated " + esc(updated) + " &middot; " : ""}` +
     `${t1.length + t2.length} direct listings &middot; ${boards.length} unresolved ` +
-    `board finds &middot; ${newCount} new this run`;
+    `board finds &middot; ${newCount} new this run${filterNote}`;
 
   const at = state.storedAt.feed;
   fresh.textContent = at
@@ -367,9 +501,15 @@ function render() {
   html += section("t2", "Related keywords (P6 / OPC / PIF / OIC) — direct listings",
     t2.map((j) => jobCard(j, prestige)).join("\n"), t2.length, false, openSet);
   if (!t1.length && !t2.length) {
-    const enabled = companies.filter((c) => c.enabled).length;
-    html += `<div class="notice">No live Unifier listings right now.` +
-      `${enabled ? " " + enabled + " company sources are checked daily at 11:00 UTC." : ""}</div>`;
+    if (uiActive()) {
+      html += `<div class="notice">No direct listings match the current filters
+ &mdash; <button type="button" class="clearbtn" data-clear>clear filters</button>
+ to see all ${activeDirect.length}.</div>`;
+    } else {
+      const enabled = companies.filter((c) => c.enabled).length;
+      html += `<div class="notice">No live Unifier listings right now.` +
+        `${enabled ? " " + enabled + " company sources are checked daily at 11:00 UTC." : ""}</div>`;
+    }
   }
   html += section("boards", "Unresolved board finds (pending triage)",
     boards.map((j) => jobCard(j, prestige)).join("\n"), boards.length, true, openSet);
@@ -434,11 +574,33 @@ function handleEvent(name, parse) {
 }
 
 async function boot() {
+  loadUI();
   const content = document.getElementById("content");
   content.addEventListener("toggle", (ev) => {
     const t = ev.target;
     if (t && t.tagName === "DETAILS" && t.open && t.dataset.desc) loadDesc(t);
   }, true);
+  content.addEventListener("click", (ev) => {
+    if (ev.target && ev.target.closest("[data-clear]")) clearFilters();
+  });
+  const controls = document.getElementById("controls");
+  controls.addEventListener("click", (ev) => {
+    const chip = ev.target.closest(".chip");
+    if (chip) {
+      const set = state.ui[chip.dataset.f];
+      set.has(chip.dataset.v) ? set.delete(chip.dataset.v) : set.add(chip.dataset.v);
+      saveUI();
+      render();
+      return;
+    }
+    if (ev.target.id === "f-clear") clearFilters();
+  });
+  controls.addEventListener("change", (ev) => {
+    if (ev.target.id === "f-company") state.ui.company = ev.target.value;
+    if (ev.target.id === "f-sort") state.ui.sort = ev.target.value;
+    saveUI();
+    render();
+  });
   if (!window.claude || window.claude.mcp === undefined) {
     document.getElementById("sub").textContent = "Live data unavailable in this view";
     content.innerHTML = `<div class="notice">This page pulls live data through the
