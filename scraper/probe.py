@@ -85,77 +85,40 @@ def sf_csb(base, label):
 
 
 def main():
-    # --- cityjobs.nyc.gov: echo-safety for the generic_page monitor ---------
-    # Config rule: query a DIFFERENT term (primavera) than the checked keyword
-    # (unifier). Verify the search is full-text so primavera finds the
-    # unifier-titled posting.
-    section("CITYJOBS echo safety")
-    def cj(q):
-        r = get(f"https://cityjobs.nyc.gov/jobs?q={q}")
-        low = r.text.casefold()
-        print(f"  q={q!r}: len={len(r.text)} unifier-mentions={low.count('unifier')}")
-    for q in ("primavera", "zzqnope999"):
-        show(q, lambda q=q: cj(q))
+    # --- echo baselines: does an empty search echo the query into HTML? -----
+    section("ECHO BASELINES")
+    def echo(label, url_tpl):
+        r = requests.get(url_tpl.format(q="zzqecho777"), headers=BROWSER_UA,
+                         timeout=T)
+        n = r.text.casefold().count("zzqecho777")
+        print(f"  {label}: {r.status_code} query-echoes={n} len={len(r.text)}")
+    show("cityjobs", lambda: echo("cityjobs",
+         "https://cityjobs.nyc.gov/jobs?q={q}"))
+    show("amtrak", lambda: echo("amtrak",
+         "https://careers.amtrak.com/search/?q={q}"))
 
-    # --- AMTRAK SF CSB: echo baseline + markup sample -----------------------
-    section("AMTRAK echo + markup")
-    def amtrak(q):
-        r = get(f"https://careers.amtrak.com/search/?q={q}")
-        low = r.text.casefold()
-        print(f"  q={q!r}: len={len(r.text)} unifier={low.count('unifier')} "
-              f"title-markers={len(re.findall('jobTitle', r.text))}")
-        return r
-    show("q=Primavera", lambda: amtrak("Primavera"))
-    show("q=zzqnope999", lambda: amtrak("zzqnope999"))
-    def amtrak_markup():
-        r = amtrak("Unifier")
-        rows = re.findall(r'<a[^>]*class="[^"]*jobTitle-link[^"]*"[^>]*>.*?</a>',
-                          r.text, re.S)[:4]
-        for row in rows:
-            print(f"  row: {row[:300]!r}")
-        loc = re.findall(r'class="jobLocation"[^>]*>([^<]{1,80})', r.text)[:4]
-        print(f"  locations: {loc}")
-    show("markup", amtrak_markup)
+    # --- STV: real Workday URL found on stvinc.com (wd5, site stv) ----------
+    section("STV wd5 verify")
+    cxs("stvinc.wd5.myworkdayjobs.com", "stvinc", "stv")
+    show("stv e2e", lambda: run_adapter("workday", sources.fetch_workday, {
+        "name": "STV", "workday_host": "stvinc.wd5.myworkdayjobs.com",
+        "workday_tenant": "stvinc", "workday_site": "stv"}))
 
-    # --- Careers pages -> find each org's real ATS link ---------------------
-    section("ATS LINK HUNT")
-    def links(label, url, pat=r'href="(https?://[^"]*(?:workday|successfactors|icims|taleo|csod|jobaps|governmentjobs|smartrecruiters|greenhouse|lever|phenom|oraclecloud|jibe|avature|inflight|cityjobs)[^"]*)"'):
-        r = get(url)
-        found = sorted(set(re.findall(pat, r.text, re.I)))[:12]
-        print(f"  {label} ATS links: {found}")
-    show("panynj", lambda: links("panynj", "https://www.panynj.gov/port-authority/en/careers.html"))
-    show("nypa", lambda: links("nypa", "https://www.nypa.gov/careers"))
-    show("nycsca", lambda: links("nycsca", "https://www.nycsca.org/Careers/Overview"))
-    show("turner", lambda: links("turner", "https://www.turnerconstruction.com/careers"))
-    show("dasny", lambda: links("dasny", "https://www.dasny.org/opportunities/employment"))
-    show("njtransit", lambda: links("njtransit", "https://www.njtransit.com/careers"))
-    show("aecom", lambda: links("aecom", "https://aecom.com/careers/"))
-    show("stv", lambda: links("stv", "https://www.stvinc.com/careers"))
-    show("arcadis", lambda: links("arcadis", "https://www.arcadis.com/en-us/careers"))
-    show("skanska", lambda: links("skanska", "https://www.usa.skanska.com/who-we-are/careers/"))
-    show("hill", lambda: links("hill", "https://www.hillintl.com/careers/"))
-    show("hntb", lambda: links("hntb", "https://www.hntb.com/careers/"))
-
-    # --- Workday site-name candidates, round 2 ------------------------------
-    section("WORKDAY SITES ROUND 2")
-    for host, tenant, sites in [
-        ("panynj.wd1.myworkdayjobs.com", "panynj",
-         ["External", "PANYNJ", "Careers", "PA", "portauthority", "PANYNJ_Careers"]),
-        ("nypa.wd1.myworkdayjobs.com", "nypa",
-         ["NYPACareers", "nypacareers", "NYPA_Careers", "NYPAExternal", "external"]),
-        ("aecom.wd1.myworkdayjobs.com", "aecom",
-         ["AECOM_Ext", "AECOMCareers", "aecomcareers", "Ext", "AECOM_Careers", "careers"]),
-        ("stvinc.wd1.myworkdayjobs.com", "stvinc",
-         ["STVCareers", "stvcareers", "Careers", "STV_External", "STVINC"]),
-        ("arcadis.wd3.myworkdayjobs.com", "arcadis",
-         ["ArcadisCareers", "Careers", "Ext", "ARCADIS", "Arcadis_External", "GlobalCareers"]),
-        ("skanska.wd3.myworkdayjobs.com", "skanska",
-         ["SkanskaCareers", "External_Careers", "Careers", "USA", "skanska_ext"]),
-        ("hillintl.wd1.myworkdayjobs.com", "hillintl",
-         ["HillCareers", "Careers", "hillintl", "Hill_External"]),
-    ]:
-        for site in sites:
-            cxs(host, tenant, site)
+    # --- Hill International: Oracle ORC on hcib.fa.us2, site CX_1001 --------
+    section("HILL ORC verify")
+    show("hill e2e", lambda: run_adapter("oracle_orc", sources.fetch_oracle_orc, {
+        "name": "Hill International",
+        "url": "https://hcib.fa.us2.oraclecloud.com/hcmRestApi/resources/latest/"
+               "recruitingCEJobRequisitions",
+        "site_number": "CX_1001",
+        "job_url_base": "https://hcib.fa.us2.oraclecloud.com/hcmUI/"
+                        "CandidateExperience/en/sites/CX_1001/job"}))
+    # sanity: Oracle config still works with the generalized job_url_base
+    show("oracle e2e", lambda: run_adapter("oracle_orc", sources.fetch_oracle_orc, {
+        "name": "Oracle",
+        "url": "https://eeho.fa.us2.oraclecloud.com/hcmRestApi/resources/latest/"
+               "recruitingCEJobRequisitions",
+        "site_number": "CX_45001", "search_query": "primavera"}))
 
 
 if __name__ == "__main__":

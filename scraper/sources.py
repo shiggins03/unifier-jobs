@@ -123,10 +123,12 @@ def fetch_oracle_orc(co, query):
                     desc = _clean_html(di[0].get("ExternalDescriptionStr"))
         except Exception:
             pass
+        job_base = co.get("job_url_base",
+                          "https://careers.oracle.com/jobs/#en/sites/jobsearch/job")
         out.append({
             "company": co["name"], "title": q.get("Title"),
             "location": q.get("PrimaryLocation"),
-            "url": f"https://careers.oracle.com/jobs/#en/sites/jobsearch/job/{rid}",
+            "url": f"{job_base}/{rid}",
             "posted_date": q.get("PostedDate"), "description": desc,
             # desc fetched → tier filter's call is final; desc missing → the
             # filter is blind, surface as triage instead of dropping silently
