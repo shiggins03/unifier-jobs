@@ -26,11 +26,12 @@ def section(name):
 
 
 def show(label, fn):
-    """Run one probe; print its traceback instead of killing the run."""
+    """Run one probe; print a one-line error instead of killing the run.
+    (Full tracebacks drown the Actions log — round 5 lesson.)"""
     try:
         fn()
-    except Exception:
-        print(f"  {label}: EXCEPTION\n{traceback.format_exc()}")
+    except Exception as e:
+        print(f"  {label}: EXC {type(e).__name__}: {str(e)[:160]}")
 
 
 def get(url, ua=BROWSER_UA, **kw):
@@ -84,76 +85,77 @@ def sf_csb(base, label):
 
 
 def main():
-    # --- MTA: non-circumvention routes only ---------------------------------
-    section("MTA alternate routes")
-    for u in ["https://careers.mta.org/robots.txt",
-              "https://careers.mta.org/sitemap.xml",
-              "https://mta.jibeapply.com/api/jobs?page=1&keyword=unifier",
-              "https://careers.mta.org/search/jobs/in/ny-new-york"]:
-        show(u, lambda u=u: print(f"  body[:250]={get(u).text[:250]!r}"))
+    # --- cityjobs.nyc.gov: echo-safety for the generic_page monitor ---------
+    # Config rule: query a DIFFERENT term (primavera) than the checked keyword
+    # (unifier). Verify the search is full-text so primavera finds the
+    # unifier-titled posting.
+    section("CITYJOBS echo safety")
+    def cj(q):
+        r = get(f"https://cityjobs.nyc.gov/jobs?q={q}")
+        low = r.text.casefold()
+        print(f"  q={q!r}: len={len(r.text)} unifier-mentions={low.count('unifier')}")
+    for q in ("primavera", "zzqnope999"):
+        show(q, lambda q=q: cj(q))
 
-    # --- City of New York: live Unifier posting seen on cityjobs.nyc.gov ----
-    section("CITYJOBS NYC")
-    for u in ["https://cityjobs.nyc.gov/jobs?q=unifier",
-              "https://cityjobs.nyc.gov/api/jobs?q=unifier",
-              "https://cityjobs.nyc.gov/job/unifier-coordinator-for-capital-projects-in-queens-jid-27772"]:
-        def cj(u=u):
-            r = get(u)
-            low = r.text.casefold()
-            print(f"  unifier-mentions={low.count('unifier')} "
-                  f"json={'json' in (r.headers.get('content-type') or '')}")
-            print(f"  body[:200]={r.text[:200]!r}")
-        show(u, cj)
-    def cj_echo():
-        a = requests.get("https://cityjobs.nyc.gov/jobs?q=unifier",
-                         headers=BROWSER_UA, timeout=T)
-        b = requests.get("https://cityjobs.nyc.gov/jobs?q=zzqnope999",
-                         headers=BROWSER_UA, timeout=T)
-        print(f"  echo test: lenA={len(a.text)} lenB={len(b.text)} "
-              f"differs={len(a.text) != len(b.text)}")
-    show("echo", cj_echo)
+    # --- AMTRAK SF CSB: echo baseline + markup sample -----------------------
+    section("AMTRAK echo + markup")
+    def amtrak(q):
+        r = get(f"https://careers.amtrak.com/search/?q={q}")
+        low = r.text.casefold()
+        print(f"  q={q!r}: len={len(r.text)} unifier={low.count('unifier')} "
+              f"title-markers={len(re.findall('jobTitle', r.text))}")
+        return r
+    show("q=Primavera", lambda: amtrak("Primavera"))
+    show("q=zzqnope999", lambda: amtrak("zzqnope999"))
+    def amtrak_markup():
+        r = amtrak("Unifier")
+        rows = re.findall(r'<a[^>]*class="[^"]*jobTitle-link[^"]*"[^>]*>.*?</a>',
+                          r.text, re.S)[:4]
+        for row in rows:
+            print(f"  row: {row[:300]!r}")
+        loc = re.findall(r'class="jobLocation"[^>]*>([^<]{1,80})', r.text)[:4]
+        print(f"  locations: {loc}")
+    show("markup", amtrak_markup)
 
-    # --- NYC-area public owners ---------------------------------------------
-    section("PORT AUTHORITY NY/NJ")
-    for u in ["https://careers.panynj.gov/",
-              "https://www.jobapscloud.com/PA/",
-              "https://panynj.wd1.myworkdayjobs.com/"]:
-        show(u, lambda u=u: get(u))
-    section("NYPA")
-    for site in ["Careers", "NYPA", "External"]:
-        show(site, lambda s=site: cxs("nypa.wd1.myworkdayjobs.com", "nypa", s))
-    show("nypa.gov careers", lambda: get("https://www.nypa.gov/careers"))
-    section("NYC SCA")
-    for u in ["https://www.nycsca.org/Careers",
-              "https://careers.nycsca.org/"]:
-        show(u, lambda u=u: get(u))
-    section("DASNY")
-    show("dasny careers", lambda: get("https://www.dasny.org/careers"))
-    section("AMTRAK")
-    sf_csb("https://careers.amtrak.com", "amtrak SF CSB")
-    section("NJ TRANSIT")
-    show("njtransit careers", lambda: get("https://careers.njtransit.com/"))
+    # --- Careers pages -> find each org's real ATS link ---------------------
+    section("ATS LINK HUNT")
+    def links(label, url, pat=r'href="(https?://[^"]*(?:workday|successfactors|icims|taleo|csod|jobaps|governmentjobs|smartrecruiters|greenhouse|lever|phenom|oraclecloud|jibe|avature|inflight|cityjobs)[^"]*)"'):
+        r = get(url)
+        found = sorted(set(re.findall(pat, r.text, re.I)))[:12]
+        print(f"  {label} ATS links: {found}")
+    show("panynj", lambda: links("panynj", "https://www.panynj.gov/port-authority/en/careers.html"))
+    show("nypa", lambda: links("nypa", "https://www.nypa.gov/careers"))
+    show("nycsca", lambda: links("nycsca", "https://www.nycsca.org/Careers/Overview"))
+    show("turner", lambda: links("turner", "https://www.turnerconstruction.com/careers"))
+    show("dasny", lambda: links("dasny", "https://www.dasny.org/opportunities/employment"))
+    show("njtransit", lambda: links("njtransit", "https://www.njtransit.com/careers"))
+    show("aecom", lambda: links("aecom", "https://aecom.com/careers/"))
+    show("stv", lambda: links("stv", "https://www.stvinc.com/careers"))
+    show("arcadis", lambda: links("arcadis", "https://www.arcadis.com/en-us/careers"))
+    show("skanska", lambda: links("skanska", "https://www.usa.skanska.com/who-we-are/careers/"))
+    show("hill", lambda: links("hill", "https://www.hillintl.com/careers/"))
+    show("hntb", lambda: links("hntb", "https://www.hntb.com/careers/"))
 
-    # --- national E&C / consultancies that recur in Unifier postings --------
-    section("WORKDAY GUESSES (E&C)")
-    cxs("aecom.wd1.myworkdayjobs.com", "aecom", "AECOM")
-    cxs("aecom.wd1.myworkdayjobs.com", "aecom", "External")
-    cxs("parsons.wd5.myworkdayjobs.com", "parsons", "ParsonsCareers")
-    cxs("parsons.wd5.myworkdayjobs.com", "parsons", "External")
-    cxs("stvinc.wd1.myworkdayjobs.com", "stvinc", "STV")
-    cxs("stvinc.wd1.myworkdayjobs.com", "stvinc", "External")
-    cxs("arcadis.wd3.myworkdayjobs.com", "arcadis", "Arcadis_Careers")
-    cxs("arcadis.wd3.myworkdayjobs.com", "arcadis", "External")
-    cxs("hillintl.wd1.myworkdayjobs.com", "hillintl", "External")
-    cxs("skanska.wd3.myworkdayjobs.com", "skanska", "External")
-    section("SF CSB GUESSES (E&C)")
-    sf_csb("https://careers.jacobs.com", "jacobs")
-    sf_csb("https://careers.hntb.com", "hntb")
-    sf_csb("https://jobs.turnerconstruction.com", "turner construction")
-    section("MISC CAREERS PAGES")
-    for u in ["https://careers.jacobs.com/", "https://careers.hntb.com/",
-              "https://www.turnerconstruction.com/careers"]:
-        show(u, lambda u=u: get(u))
+    # --- Workday site-name candidates, round 2 ------------------------------
+    section("WORKDAY SITES ROUND 2")
+    for host, tenant, sites in [
+        ("panynj.wd1.myworkdayjobs.com", "panynj",
+         ["External", "PANYNJ", "Careers", "PA", "portauthority", "PANYNJ_Careers"]),
+        ("nypa.wd1.myworkdayjobs.com", "nypa",
+         ["NYPACareers", "nypacareers", "NYPA_Careers", "NYPAExternal", "external"]),
+        ("aecom.wd1.myworkdayjobs.com", "aecom",
+         ["AECOM_Ext", "AECOMCareers", "aecomcareers", "Ext", "AECOM_Careers", "careers"]),
+        ("stvinc.wd1.myworkdayjobs.com", "stvinc",
+         ["STVCareers", "stvcareers", "Careers", "STV_External", "STVINC"]),
+        ("arcadis.wd3.myworkdayjobs.com", "arcadis",
+         ["ArcadisCareers", "Careers", "Ext", "ARCADIS", "Arcadis_External", "GlobalCareers"]),
+        ("skanska.wd3.myworkdayjobs.com", "skanska",
+         ["SkanskaCareers", "External_Careers", "Careers", "USA", "skanska_ext"]),
+        ("hillintl.wd1.myworkdayjobs.com", "hillintl",
+         ["HillCareers", "Careers", "hillintl", "Hill_External"]),
+    ]:
+        for site in sites:
+            cxs(host, tenant, site)
 
 
 if __name__ == "__main__":
