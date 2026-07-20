@@ -77,9 +77,14 @@ def generate(store, companies, cities, warnings, today):
         return prestige.get(norm(j["company"]))
 
     def sort_key(j):
+        # Company tier (prestige/comp) outranks title-match by owner
+        # preference: an elite employer's desc-mention beats a boutique's
+        # Unifier-titled role. Keyword relevance still leads via the
+        # t1/t2 section split.
         p = p_of(j)
-        return (0 if "title-match" in j["flags"] else 1,
-                TIER_ORDER.get(p, 3), -comp_sort_value(j.get("comp")),
+        return (TIER_ORDER.get(p, 3),
+                0 if "title-match" in j["flags"] else 1,
+                -comp_sort_value(j.get("comp")),
                 city_rank(j.get("location"), cities), norm(j["company"]))
 
     active = [j for j in store.values() if j["status"] == "active"]
@@ -139,7 +144,7 @@ def generate(store, companies, cities, warnings, today):
 {section("No longer listed", gone, fold=True)}
 {roster_section()}
 <footer>All fields shown verbatim from the source posting — nothing estimated.
-Sorted by keyword tier, company tier, stated comp, location.</footer>
+Sorted by company tier (prestige/comp), title match, stated comp, location within each keyword section.</footer>
 </main>"""
 
     DOCS.mkdir(exist_ok=True)

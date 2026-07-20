@@ -1,5 +1,15 @@
 # Direct-monitor roster. The triage agent proposes additions/fixes via PR.
-# tier: A (marquee) / B (major owners & E&C) / C (specialist consultancies)
+# tier = GENERAL-MARKET PRESTIGE + COMP of the employer, judged OUTSIDE the
+#   Unifier world (a resume-maker regardless of Unifier). It is NOT a measure
+#   of Unifier relevance — that is carried separately by the keyword tier
+#   (1=Unifier / 2=P6/OPC/PIF/OIC) and the title-match flag, which the sort
+#   applies before company tier. So a boutique's "Unifier in the title" role
+#   still surfaces even though the boutique is tier C.
+#   A = elite: top-of-market prestige/comp, universal-brand (big tech, elite
+#       consulting). B = major/established: large reputable firms, marquee
+#       E&C, big public owners/agencies, large health systems; solid but not
+#       elite comp. C = boutique/niche: specialist Unifier consultancies &
+#       small shops — lower profile/comp, but highest Unifier yield.
 # ats: workday | oracle_orc | greenhouse | generic_page
 # enabled: true = endpoint live-verified 2026-07-17; false = needs fingerprinting (see note)
 # generic_page monitors: URL is fetched and checked for the tier-1 keyword.
@@ -28,13 +38,6 @@ companies:
     enabled: true
     note: needs expand=all; "unifier" keyword fuzzy-matches whole site so we
       search "primavera" (27 real matches) and let the tier filter decide.
-  - name: JLL
-    tier: A
-    ats: workday
-    workday_host: jll.wd1.myworkdayjobs.com
-    workday_tenant: jll
-    workday_site: jllcareers
-    enabled: true
   - name: Accenture
     tier: A
     ats: workday
@@ -50,13 +53,23 @@ companies:
     ats: avature_feed
     feed_url: https://apply.deloitte.com/en_US/careers/SearchJobs/Unifier/feed/?jobRecordsPerPage=25
     enabled: true
+  # ---- Tier B ----
+  - name: JLL
+    tier: B
+    ats: workday
+    workday_host: jll.wd1.myworkdayjobs.com
+    workday_tenant: jll
+    workday_site: jllcareers
+    enabled: true
+    note: moved A→B 2026-07-20 when tiers became prestige/comp — major
+      real-estate services brand, but not elite-comp territory.
   - name: Bechtel
-    tier: A
+    tier: B
     ats: phenom
     phenom_host: jobs.bechtel.com
     enabled: true
-
-  # ---- Tier B ----
+    note: moved A→B 2026-07-20 when tiers became prestige/comp — marquee E&C
+      name, but E&C comp bands, and the owner flagged it as over-rated at A.
   - name: WSP
     tier: B
     ats: workday
@@ -224,8 +237,18 @@ companies:
     url: https://careers.wipro.com/
     enabled: false
     note: search URL echoes query (false positives); discovery net covers them
+  - name: Consertus
+    tier: B
+    ats: workday
+    workday_host: consertus.wd501.myworkdayjobs.com
+    workday_tenant: consertus
+    workday_site: consertuscareers
+    enabled: true
+    note: moved C→B 2026-07-20 when tiers became prestige/comp — ~1,000-person
+      global capital-program firm, same weight class as Hill/STV/Linesight,
+      not a boutique. (Owner flagged it as under-rated at C.)
 
-  # ---- Tier C (specialist Unifier consultancies) ----
+  # ---- Tier C (boutique/niche Unifier consultancies) ----
   - name: DRMcNatty & Associates
     tier: C
     ats: generic_page
@@ -254,13 +277,6 @@ companies:
     enabled: false
     note: site has no careers page at all anymore (checked nav + sitemap
       2026-07-18; 145 internal paths, none career-ish). Rely on discovery.
-  - name: Consertus
-    tier: C
-    ats: workday
-    workday_host: consertus.wd501.myworkdayjobs.com
-    workday_tenant: consertus
-    workday_site: consertuscareers
-    enabled: true
   - name: Luster National
     tier: C
     ats: greenhouse

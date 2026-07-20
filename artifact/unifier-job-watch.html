@@ -264,10 +264,14 @@ function cityRank(location) {
   for (const m of METROS) if (m.match.some((t) => low.includes(t))) return m.rank;
   return OTHER_US_RANK;
 }
+// Company tier (prestige/comp) outranks title-match by owner preference:
+// an elite employer's desc-mention beats a boutique's Unifier-titled role.
+// Keyword relevance still leads via the t1/t2 section split.
+// Mirrors scraper/site_gen.py sort_key — keep in sync.
 function makeSortKey(prestige) {
   return (j) => [
-    (j.flags || []).includes("title-match") ? 0 : 1,
     TIER_ORDER[prestige[norm(j.company)]] ?? 3,
+    (j.flags || []).includes("title-match") ? 0 : 1,
     -compSortValue(j.comp),
     cityRank(j.location),
     norm(j.company),
