@@ -122,5 +122,26 @@
     "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Data Center Portfolio Controls Strategy Lead",
     "source": "oracle_orc:Oracle",
     "first_seen": "2026-07-18"
+  },
+  {
+    "company": "City of New York",
+    "url": "https://cityjobs.nyc.gov/jobs?q=unifier",
+    "note": "careers page mentions \"unifier\" — extract the actual posting",
+    "source": "generic_page:City of New York",
+    "first_seen": "2026-07-20"
+  },
+  {
+    "company": "Hill International",
+    "url": "https://hcib.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/14813",
+    "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Data & AI-Driven Decision Specialist",
+    "source": "oracle_orc:Hill International",
+    "first_seen": "2026-07-20"
+  },
+  {
+    "company": "Hill International",
+    "url": "https://hcib.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/14811",
+    "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Digital Twin Specialist",
+    "source": "oracle_orc:Hill International",
+    "first_seen": "2026-07-20"
   }
 ]

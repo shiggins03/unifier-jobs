@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-19",
+  "updated": "2026-07-20",
   "warnings": [],
   "roster": [
     {
@@ -77,7 +77,56 @@
       "tier": "B",
       "ats": "generic_page",
       "enabled": false,
-      "note": "Cloudflare challenge on careers.mta.org AND mta.info (verified 2026-07-18) — no script route; rely on aggregator discovery once keys are added."
+      "note": "FINAL (2026-07-20): Cloudflare challenges everything on careers.mta.org (even robots.txt/sitemap.xml) and mta.info; the jibeapply API hostname does not exist. No legitimate script route — their postings syndicate to Google Jobs, so aggregator discovery (JSearch) is THE route once keys are added. Do not retry scraping."
+    },
+    {
+      "name": "City of New York",
+      "tier": "B",
+      "ats": "generic_page",
+      "enabled": true,
+      "note": "NYC DDC/DEP/Parks etc. post Unifier roles here (a \"Unifier Coordinator\" ran until 6/30/2026; a full-text unifier match was live 2026-07-20). Search echoes the query on zero-result pages (5x) so the plain keyword check would false-positive; instead the check_pattern fires when ANY result link (href with -jid-<id>) is server-rendered — a nonsense query renders zero of them (verified 2026-07-20)."
+    },
+    {
+      "name": "STV",
+      "tier": "B",
+      "ats": "workday",
+      "enabled": true,
+      "note": "NYC-HQ transit/infrastructure firm. cxs verified 2026-07-20 (inventory 385; unifier search returned 4 incl. a NYC role). Site name found via link on stvinc.com/careers — earlier wd1 guesses were wrong host."
+    },
+    {
+      "name": "Hill International",
+      "tier": "B",
+      "ats": "oracle_orc",
+      "enabled": true,
+      "note": "PM/construction-claims firm, heavy PMIS user. ORC endpoint found via links on hillintl.com/careers; verified 2026-07-20 (10 unifier-keyword reqs, global — US filter does real work)."
+    },
+    {
+      "name": "Amtrak",
+      "tier": "B",
+      "ats": "successfactors",
+      "enabled": true,
+      "note": "SF Career Site Builder, server-rendered; verified 2026-07-20 (6 unifier search hits). QUIRK handled by adapter - no-match searches fall back to listing ALL jobs, and the page echoes the query (14x), so results only count when they differ from a nonsense query's."
+    },
+    {
+      "name": "Turner Construction",
+      "tier": "B",
+      "ats": "generic_page",
+      "enabled": false,
+      "note": "Cornerstone (csod.com) SPA, careersites 1-4 — JS-rendered, no scriptable endpoint found 2026-07-20. Needs a csod adapter or discovery."
+    },
+    {
+      "name": "Port Authority NY/NJ",
+      "tier": "B",
+      "ats": "workday",
+      "enabled": false,
+      "note": "wd1 host exists but 6 site-name candidates all 422 (2026-07-20); panynj.gov careers page moved/404. Grab the site name from a real job link via discovery."
+    },
+    {
+      "name": "NYPA",
+      "tier": "B",
+      "ats": "workday",
+      "enabled": false,
+      "note": "wd1 host exists but 8 site-name candidates all 422 (2026-07-20); nypa.gov/careers shows no ATS links to scripts. Site name via discovery."
     },
     {
       "name": "LA Metro",
@@ -262,6 +311,27 @@
       "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Data Center Portfolio Controls Strategy Lead",
       "source": "oracle_orc:Oracle",
       "first_seen": "2026-07-18"
+    },
+    {
+      "company": "City of New York",
+      "url": "https://cityjobs.nyc.gov/jobs?q=unifier",
+      "note": "careers page mentions \"unifier\" — extract the actual posting",
+      "source": "generic_page:City of New York",
+      "first_seen": "2026-07-20"
+    },
+    {
+      "company": "Hill International",
+      "url": "https://hcib.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/14813",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Data & AI-Driven Decision Specialist",
+      "source": "oracle_orc:Hill International",
+      "first_seen": "2026-07-20"
+    },
+    {
+      "company": "Hill International",
+      "url": "https://hcib.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/14811",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Digital Twin Specialist",
+      "source": "oracle_orc:Hill International",
+      "first_seen": "2026-07-20"
     }
   ],
   "jobs": [
@@ -272,7 +342,7 @@
       "title": "Primavera Unifier Solution Architect",
       "location": "US Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-Remote/Primavera-Unifier-Solution-Architect_JR1504",
-      "posted_date": "Posted 12 Days Ago",
+      "posted_date": "Posted 13 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -1101,6 +1171,142 @@
       "gone_date": null,
       "flags": [
         "long-posted"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "da57f856338cc9bf",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Project Controls Specialist",
+      "location": "Los Angeles, California",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Project-Controls-Manager_JR5055",
+      "posted_date": "Posted 30+ Days Ago",
+      "comp": "$91,976.90 - $105,116.46",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "909411d8fd156e3b",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Project Controls Specialist",
+      "location": "Dallas, Texas",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Dallas-Texas/Project-Controls-Specialist_JR5845",
+      "posted_date": "Posted 20 Days Ago",
+      "comp": "$83,978.91 - $95,975.90",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "11dfbc72345ed17b",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Project Solutions Lead",
+      "location": "Empire State Building, New York, New York",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Empire-State-Building-New-York-New-York/Project-Solutions-Manager_JR5636",
+      "posted_date": "Posted 30+ Days Ago",
+      "comp": "$149,671.54 - $171,053.19",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "5a2744ddc81f0318",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Senior Project Controls Specialist",
+      "location": "Vermont Avenue, Washington, District of Columbia",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Vermont-Avenue-Washington-District-of-Columbia/Senior-Project-Controls-Specialist_JR5675",
+      "posted_date": "Posted 30+ Days Ago",
+      "comp": "$128,067.17 - $146,362.48",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "0f322d8a6f49f45e",
+      "kind": "direct",
+      "company": "Amtrak",
+      "title": "Project Controls Mgr Penn Station Access - 90411148 - New York (New Rochelle)",
+      "location": "New York, NY, US, 10119",
+      "url": "https://careers.amtrak.com/job/New-York-Project-Controls-Mgr-Penn-Station-Access-90411148-New-York-%28New-Rochelle%29-NY-10119/1399094500/",
+      "posted_date": null,
+      "comp": "salary/hourly range is $113,200.00 – $146,664.00",
+      "tier": 2,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "c28f5599a09cd02f",
+      "kind": "direct",
+      "company": "Amtrak",
+      "title": "Project Controls Schedulers for Infrastructure Capital Delivery ( PA, NJ, NY, CT, DE, MD)",
+      "location": "Baltimore, Maryland, US",
+      "url": "https://careers.amtrak.com/job/Baltimore-Project-Controls-Schedulers-for-Infrastructure-Capital-Delivery-%28-PA%2C-NJ%2C-NY%2C-CT%2C-DE%2C-MD%29-Mary/1236532500/",
+      "posted_date": null,
+      "comp": "salary/hourly range is $94,300– 176,040",
+      "tier": 2,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "a568dd487cbc25a3",
+      "kind": "direct",
+      "company": "Amtrak",
+      "title": "Sr Mgr Work Planning - 90331142 - New York",
+      "location": "New York, NY, US, 10119",
+      "url": "https://careers.amtrak.com/job/New-York-Sr-Mgr-Work-Planning-90331142-New-York-NY-10119/1408957000/",
+      "posted_date": null,
+      "comp": "salary/hourly range is $135,800.00 – $176,040.00",
+      "tier": 2,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "f9e5501c6ee20ace",
+      "kind": "direct",
+      "company": "Amtrak",
+      "title": "Project Controls Mgr - 90298642 - Philadelphia",
+      "location": "Philadelphia, PA, US, 19104",
+      "url": "https://careers.amtrak.com/job/Philadelphia-Project-Controls-Mgr-90298642-Philadelphia-PA-19104/1398537100/",
+      "posted_date": null,
+      "comp": "salary/hourly range is $113,200.00 – $146,664.00",
+      "tier": 2,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
       ],
       "has_desc": true
     }
