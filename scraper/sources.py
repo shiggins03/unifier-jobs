@@ -198,7 +198,18 @@ def fetch_successfactors(co, query):
         soup = BeautifulSoup(r.text, "html.parser")
         out = {}
         for a in soup.select("a.jobTitle-link[href]"):
-            out[a["href"]] = a.get_text(strip=True)
+            # location lives in a .jobLocation span in the same result row
+            loc, node = None, a
+            for _ in range(4):
+                node = node.parent
+                if node is None:
+                    break
+                ln = node.select_one(".jobLocation")
+                if ln:
+                    loc = " ".join(ln.get_text(" ").split()) or None
+                    if loc:
+                        break
+            out[a["href"]] = (a.get_text(strip=True), loc)
         return out
 
     try:
@@ -211,9 +222,9 @@ def fetch_successfactors(co, query):
     except Exception:
         return [], False, None
     out = []
-    for href, title in found.items():
+    for href, (title, loc) in found.items():
         url = href if href.startswith("http") else base + href
-        desc, loc, posted = None, None, None
+        desc, posted = None, None
         try:
             d = requests.get(url, headers=UA, timeout=TIMEOUT)
             if d.ok:
@@ -222,10 +233,11 @@ def fetch_successfactors(co, query):
                 if node:
                     desc = re.sub(r"\n{3,}", "\n\n",
                                   node.get_text("\n")).strip() or None
-                ln = soup.select_one(".jobGeoLocation, [itemprop=address], "
-                                     ".jobLocation")
-                if ln:
-                    loc = " ".join(ln.get_text(" ").split()) or None
+                if not loc:
+                    ln = soup.select_one(".jobGeoLocation, [itemprop=address], "
+                                         ".jobLocation")
+                    if ln:
+                        loc = " ".join(ln.get_text(" ").split()) or None
                 pd = soup.select_one("[itemprop=datePosted]")
                 if pd:
                     posted = pd.get_text(strip=True) or None

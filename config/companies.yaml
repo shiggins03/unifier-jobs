@@ -101,7 +101,7 @@ companies:
     tier: B
     ats: generic_page
     url: https://cityjobs.nyc.gov/jobs?q=unifier
-    check_pattern: href="/job/[^"]*unifier
+    check_pattern: href="[^"]*/job/[^"]*unifier
     enabled: true
     note: NYC DDC/DEP/Parks etc. post Unifier admin roles here (live "Unifier
       Coordinator" posting 2026-07-20). Search echoes the query on zero-result
