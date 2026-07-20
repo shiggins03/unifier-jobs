@@ -4,6 +4,8 @@ import re
 
 NON_US = re.compile(
     r"\b(india|united kingdom|\buk\b|london|dubai|abu dhabi|uae|saudi|riyadh|qatar|doha|"
+    # country names only — city names like Cairo/Jordan collide with US towns
+    r"egypt|\boman\b|muscat|kuwait|bahrain|amman|lithuania|vilnius|"
     r"canada|toronto|vancouver|ontario|australia|sydney|melbourne|singapore|philippines|"
     r"malaysia|hyderabad|bangalore|bengaluru|chennai|mumbai|pune|noida|gurgaon|delhi|"
     r"ireland|dublin|germany|poland|romania|mexico|\bmx\b|brazil|colombia|"
