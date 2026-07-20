@@ -24,13 +24,6 @@
       "note": "needs expand=all; \"unifier\" keyword fuzzy-matches whole site so we search \"primavera\" (27 real matches) and let the tier filter decide."
     },
     {
-      "name": "JLL",
-      "tier": "A",
-      "ats": "workday",
-      "enabled": true,
-      "note": null
-    },
-    {
       "name": "Accenture",
       "tier": "A",
       "ats": "workday",
@@ -45,11 +38,18 @@
       "note": null
     },
     {
+      "name": "JLL",
+      "tier": "B",
+      "ats": "workday",
+      "enabled": true,
+      "note": "moved A→B 2026-07-20 when tiers became prestige/comp — major real-estate services brand, but not elite-comp territory."
+    },
+    {
       "name": "Bechtel",
-      "tier": "A",
+      "tier": "B",
       "ats": "phenom",
       "enabled": true,
-      "note": null
+      "note": "moved A→B 2026-07-20 when tiers became prestige/comp — marquee E&C name, but E&C comp bands, and the owner flagged it as over-rated at A."
     },
     {
       "name": "WSP",
@@ -185,6 +185,13 @@
       "note": "search URL echoes query (false positives); discovery net covers them"
     },
     {
+      "name": "Consertus",
+      "tier": "B",
+      "ats": "workday",
+      "enabled": true,
+      "note": "moved C→B 2026-07-20 when tiers became prestige/comp — ~1,000-person global capital-program firm, same weight class as Hill/STV/Linesight, not a boutique. (Owner flagged it as under-rated at C.)"
+    },
+    {
       "name": "DRMcNatty & Associates",
       "tier": "C",
       "ats": "generic_page",
@@ -218,13 +225,6 @@
       "ats": "generic_page",
       "enabled": false,
       "note": "site has no careers page at all anymore (checked nav + sitemap 2026-07-18; 145 internal paths, none career-ish). Rely on discovery."
-    },
-    {
-      "name": "Consertus",
-      "tier": "C",
-      "ats": "workday",
-      "enabled": true,
-      "note": null
     },
     {
       "name": "Luster National",
@@ -1292,6 +1292,23 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "has_desc": true
+    },
+    {
+      "id": "069c9449c2b28123",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Lead Field Welding Engineer",
+      "location": "Pecos, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297129&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-20T15:54:38.536+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
       "has_desc": true
     }
   ]
