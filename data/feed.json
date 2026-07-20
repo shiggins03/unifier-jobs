@@ -1186,9 +1186,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     },
     {
@@ -1203,9 +1201,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     },
     {
@@ -1220,9 +1216,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     },
     {
@@ -1237,9 +1231,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     },
     {
@@ -1254,9 +1246,7 @@
       "tier": 2,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     },
     {
@@ -1271,9 +1261,7 @@
       "tier": 2,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     },
     {
@@ -1288,9 +1276,7 @@
       "tier": 2,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     },
     {
@@ -1305,9 +1291,7 @@
       "tier": 2,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     }
   ]
