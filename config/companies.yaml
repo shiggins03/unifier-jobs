@@ -101,14 +101,14 @@ companies:
     tier: B
     ats: generic_page
     url: https://cityjobs.nyc.gov/jobs?q=unifier
-    check_pattern: href="[^"]*/job/[^"]*unifier
+    check_pattern: href="[^"]*-jid-\d+
     enabled: true
-    note: NYC DDC/DEP/Parks etc. post Unifier admin roles here (live "Unifier
-      Coordinator" posting 2026-07-20). Search echoes the query on zero-result
-      pages (5x), so the plain keyword check would false-positive — the
-      check_pattern only fires when a job-URL slug contains unifier (city
-      Unifier roles carry it in the title). Search is NOT full-text (primavera
-      query missed the unifier-titled posting), so slug-match is the signal.
+    note: NYC DDC/DEP/Parks etc. post Unifier roles here (a "Unifier
+      Coordinator" ran until 6/30/2026; a full-text unifier match was live
+      2026-07-20). Search echoes the query on zero-result pages (5x) so the
+      plain keyword check would false-positive; instead the check_pattern
+      fires when ANY result link (href with -jid-<id>) is server-rendered —
+      a nonsense query renders zero of them (verified 2026-07-20).
   - name: STV
     tier: B
     ats: workday

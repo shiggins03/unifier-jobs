@@ -85,25 +85,8 @@ def sf_csb(base, label):
 
 
 def main():
-    # cityjobs: where do the search results actually live in the HTML?
-    section("CITYJOBS markup autopsy")
-    def autopsy(q):
-        r = requests.get(f"https://cityjobs.nyc.gov/jobs?q={q}",
-                         headers=BROWSER_UA, timeout=T)
-        print(f"  q={q!r} len={len(r.text)}")
-        hrefs = re.findall(r'href="([^"]*jid-\d+[^"]*)"', r.text)
-        print(f"  jid hrefs ({len(hrefs)}): {hrefs[:6]}")
-        # embedded JSON state? sniff common keys
-        for key in ("jobTitle", '\"title\"', "positionTitle", "businessTitle"):
-            n = r.text.count(key)
-            if n:
-                print(f"  key {key!r} occurs {n}x")
-        m = re.search(r".{120}[Cc]oordinator.{120}", r.text)
-        print(f"  'coordinator' context: {m.group(0)[:260]!r}" if m else
-              "  no 'coordinator' in HTML")
-        return r
-    show("unifier", lambda: autopsy("unifier"))
-    show("zzqnope999", lambda: autopsy("zzqnope999"))
+    section("no active probes")
+    print("  write probes here, push, dispatch the probe workflow")
 
 
 if __name__ == "__main__":

@@ -58,7 +58,24 @@ Actions log, iterate. `run_adapter()` exercises a real adapter end-to-end
 before trusting it in the daily run. Keep `main()` empty between
 investigations.
 
-## Current state (update this section when you change it) — as of 2026-07-18
+## Current state (update this section when you change it) — as of 2026-07-20
+
+- NYC-focused roster expansion (probe rounds 5-10): ADDED & VERIFIED —
+  City of New York (cityjobs.nyc.gov, generic_page with a jid-href
+  check_pattern because the search echoes queries), STV (Workday wd5/stv,
+  found via stvinc.com link; a NYC "Project Solutions Lead" in first results),
+  Hill International (Oracle ORC hcib/CX_1001 via hillintl.com links; new
+  job_url_base config generalizes the ORC adapter), Amtrak (new
+  successfactors adapter — CSB no-match searches fall back to ALL jobs, so
+  results only count when they differ from a nonsense query; 3 NYC project
+  controls jobs in first results).
+- New-company dead ends documented inline in companies.yaml: Turner
+  Construction (Cornerstone SPA), PANYNJ + NYPA (Workday hosts exist, site
+  names undiscoverable), NJ Transit/DASNY/SCA (no scriptable endpoints found).
+- MTA verdict is FINAL (see its note): Cloudflare on everything, no script
+  route; aggregator discovery is the only path. Do not re-scrape.
+
+## Previous state — as of 2026-07-18
 
 - Broken-roster sweep done (probe rounds 1-4, see companies.yaml notes for
   per-company verdicts). Fixed: Oracle ORC (limit=25 truncated the one
