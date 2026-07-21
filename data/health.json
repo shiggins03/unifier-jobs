@@ -19,7 +19,7 @@
       0
     ],
     "fail_streak": 0,
-    "last_run": "2026-07-20"
+    "last_run": "2026-07-21"
   },
   "workday:JLL": {
     "counts": [
@@ -30,7 +30,7 @@
       0
     ],
     "fail_streak": 0,
-    "last_run": "2026-07-20",
+    "last_run": "2026-07-21",
     "inventory": 2000
   },
   "workday:Accenture": {
@@ -42,7 +42,7 @@
       0
     ],
     "fail_streak": 0,
-    "last_run": "2026-07-20",
+    "last_run": "2026-07-21",
     "inventory": 2000
   },
   "generic_page:Bechtel": {
@@ -76,7 +76,7 @@
       0
     ],
     "fail_streak": 0,
-    "last_run": "2026-07-20"
+    "last_run": "2026-07-21"
   },
   "generic_page:DRMcNatty & Associates": {
     "counts": [
@@ -87,7 +87,7 @@
       1
     ],
     "fail_streak": 0,
-    "last_run": "2026-07-20"
+    "last_run": "2026-07-21"
   },
   "generic_page:OnIndus": {
     "counts": [
@@ -98,7 +98,7 @@
       0
     ],
     "fail_streak": 0,
-    "last_run": "2026-07-20"
+    "last_run": "2026-07-21"
   },
   "generic_page:Project Partners": {
     "counts": [
@@ -109,7 +109,7 @@
       1
     ],
     "fail_streak": 0,
-    "last_run": "2026-07-20"
+    "last_run": "2026-07-21"
   },
   "generic_page:EPMA": {
     "counts": [
@@ -120,7 +120,7 @@
       0
     ],
     "fail_streak": 0,
-    "last_run": "2026-07-20"
+    "last_run": "2026-07-21"
   },
   "generic_page:Consertus": {
     "counts": [
@@ -154,7 +154,7 @@
       2
     ],
     "fail_streak": 0,
-    "last_run": "2026-07-20",
+    "last_run": "2026-07-21",
     "inventory": 64
   },
   "greenhouse:Luster National": {
@@ -166,8 +166,8 @@
       4
     ],
     "fail_streak": 0,
-    "last_run": "2026-07-20",
-    "inventory": 20
+    "last_run": "2026-07-21",
+    "inventory": 22
   },
   "meta_graphql:Meta": {
     "counts": [
@@ -179,7 +179,7 @@
     ],
     "fail_streak": 0,
     "inventory": 5,
-    "last_run": "2026-07-20"
+    "last_run": "2026-07-21"
   },
   "oracle_orc:Oracle": {
     "counts": [
@@ -190,7 +190,7 @@
       1
     ],
     "fail_streak": 0,
-    "last_run": "2026-07-20",
+    "last_run": "2026-07-21",
     "inventory": 27
   },
   "avature_feed:Deloitte": {
@@ -202,19 +202,19 @@
       1
     ],
     "fail_streak": 0,
-    "last_run": "2026-07-20"
+    "last_run": "2026-07-21"
   },
   "phenom:Bechtel": {
     "counts": [
       21,
       21,
       21,
-      21,
+      20,
       20
     ],
     "fail_streak": 0,
-    "inventory": 1045,
-    "last_run": "2026-07-20"
+    "inventory": 1042,
+    "last_run": "2026-07-21"
   },
   "smartrecruiters:Turner & Townsend": {
     "counts": [
@@ -222,11 +222,11 @@
       29,
       29,
       29,
-      29
+      27
     ],
     "fail_streak": 0,
-    "inventory": 2738,
-    "last_run": "2026-07-20"
+    "inventory": 2724,
+    "last_run": "2026-07-21"
   },
   "workday:Mass General Brigham": {
     "counts": [
@@ -238,45 +238,49 @@
     ],
     "fail_streak": 0,
     "inventory": 2000,
-    "last_run": "2026-07-20"
+    "last_run": "2026-07-21"
   },
   "generic_page:City of New York": {
     "counts": [
       1,
       1,
+      1,
       1
     ],
     "fail_streak": 0,
-    "last_run": "2026-07-20"
+    "last_run": "2026-07-21"
   },
   "workday:STV": {
     "counts": [
+      4,
       4,
       4,
       4
     ],
     "fail_streak": 0,
     "inventory": 385,
-    "last_run": "2026-07-20"
+    "last_run": "2026-07-21"
   },
   "oracle_orc:Hill International": {
     "counts": [
       0,
       0,
+      0,
       0
     ],
     "fail_streak": 0,
-    "inventory": 10,
-    "last_run": "2026-07-20"
+    "inventory": 12,
+    "last_run": "2026-07-21"
   },
   "successfactors:Amtrak": {
     "counts": [
+      4,
       4,
       4,
       4
     ],
     "fail_streak": 0,
     "inventory": 25,
-    "last_run": "2026-07-20"
+    "last_run": "2026-07-21"
   }
 }
