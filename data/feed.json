@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-21",
+  "updated": "2026-07-22",
   "warnings": [],
   "roster": [
     {
@@ -339,6 +339,13 @@
       "note": "employer's own search matched 'unifier' but posting text unavailable — verify: System Architecture Engineer",
       "source": "meta_graphql:Meta",
       "first_seen": "2026-07-21"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/1525571325609177/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Senior Data Architect - Supply Chain",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-07-22"
     }
   ],
   "jobs": [
@@ -349,7 +356,7 @@
       "title": "Primavera Unifier Solution Architect",
       "location": "US Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-Remote/Primavera-Unifier-Solution-Architect_JR1504",
-      "posted_date": "Posted 14 Days Ago",
+      "posted_date": "Posted 15 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -560,8 +567,8 @@
       "company": "Bechtel",
       "title": "Piping Superintendent",
       "location": "Lake Charles, Louisiana, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=294278&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-14T17:01:26.386+0000",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297241&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-21T19:18:37.208+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -990,21 +997,6 @@
       "has_desc": true
     },
     {
-      "id": "bc30456a904b0bd3",
-      "kind": "direct",
-      "company": "Turner & Townsend",
-      "title": "Remote Senior Scheduler - Data Center Construction",
-      "location": "Nashville, Tennessee, US",
-      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000131525420-remote-senior-scheduler-data-center-construction?oga=true",
-      "posted_date": "2026-06-10T19:25:45.622Z",
-      "comp": null,
-      "tier": 2,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "has_desc": true
-    },
-    {
       "id": "b93998f8ce02b557",
       "kind": "direct",
       "company": "Turner & Townsend",
@@ -1135,23 +1127,6 @@
       "has_desc": true
     },
     {
-      "id": "89e41c7d389ee458",
-      "kind": "direct",
-      "company": "Turner & Townsend",
-      "title": "Senior Scheduler - Data Center Construction",
-      "location": "Reno, Nevada, US",
-      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000096692871-senior-scheduler-data-center-construction?oga=true",
-      "posted_date": "2025-12-02T20:55:18.371Z",
-      "comp": null,
-      "tier": 2,
-      "status": "active",
-      "gone_date": null,
-      "flags": [
-        "long-posted"
-      ],
-      "has_desc": true
-    },
-    {
       "id": "da57f856338cc9bf",
       "kind": "direct",
       "company": "STV",
@@ -1173,7 +1148,7 @@
       "title": "Project Controls Specialist",
       "location": "Dallas, Texas",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Dallas-Texas/Project-Controls-Specialist_JR5845",
-      "posted_date": "Posted 21 Days Ago",
+      "posted_date": "Posted 22 Days Ago",
       "comp": "$83,978.91 - $95,975.90",
       "tier": 1,
       "status": "active",
@@ -1287,6 +1262,40 @@
       "has_desc": true
     },
     {
+      "id": "bd8eabbb45e3534f",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Construction Automation Specialist",
+      "location": "Houston, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297161&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-21T13:17:35.728+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "6005b160abf61af3",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Building Electrical Field Engineer",
+      "location": "Lake Charles, Louisiana, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297249&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-21T18:18:37.571+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
       "id": "7aa4d9f6e39cc91d",
       "kind": "direct",
       "company": "Bechtel",
@@ -1313,6 +1322,36 @@
       "status": "gone",
       "gone_date": "2026-07-21",
       "flags": []
+    },
+    {
+      "id": "bc30456a904b0bd3",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Remote Senior Scheduler - Data Center Construction",
+      "location": "Nashville, Tennessee, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000131525420-remote-senior-scheduler-data-center-construction?oga=true",
+      "posted_date": "2026-06-10T19:25:45.622Z",
+      "comp": null,
+      "tier": 2,
+      "status": "gone",
+      "gone_date": "2026-07-22",
+      "flags": []
+    },
+    {
+      "id": "89e41c7d389ee458",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Senior Scheduler - Data Center Construction",
+      "location": "Reno, Nevada, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000096692871-senior-scheduler-data-center-construction?oga=true",
+      "posted_date": "2025-12-02T20:55:18.371Z",
+      "comp": null,
+      "tier": 2,
+      "status": "gone",
+      "gone_date": "2026-07-22",
+      "flags": [
+        "long-posted"
+      ]
     }
   ]
 }
