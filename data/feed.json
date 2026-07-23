@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-22",
+  "updated": "2026-07-23",
   "warnings": [],
   "roster": [
     {
@@ -356,7 +356,7 @@
       "title": "Primavera Unifier Solution Architect",
       "location": "US Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-Remote/Primavera-Unifier-Solution-Architect_JR1504",
-      "posted_date": "Posted 15 Days Ago",
+      "posted_date": "Posted 16 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -584,21 +584,6 @@
       "location": "Port Arthur, Texas, United States",
       "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296695&jobPipeline=PhenomCareerSite",
       "posted_date": "2026-07-07T12:16:54.733+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "has_desc": true
-    },
-    {
-      "id": "2902a33e73d6e258",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Welding Field Engineer",
-      "location": "Brownsville, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296444&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-06-29T17:17:10.527+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -882,8 +867,8 @@
       "company": "Turner & Townsend",
       "title": "Remote Senior Scheduler - Data Center Construction",
       "location": "USA wide, US",
-      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000137924813-remote-senior-scheduler-data-center-construction?oga=true",
-      "posted_date": "2026-07-15T15:13:04.913Z",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000139116889-remote-senior-scheduler-data-center-construction?oga=true",
+      "posted_date": "2026-07-22T16:11:28.703Z",
       "comp": null,
       "tier": 2,
       "status": "active",
@@ -1148,7 +1133,7 @@
       "title": "Project Controls Specialist",
       "location": "Dallas, Texas",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Dallas-Texas/Project-Controls-Specialist_JR5845",
-      "posted_date": "Posted 22 Days Ago",
+      "posted_date": "Posted 23 Days Ago",
       "comp": "$83,978.91 - $95,975.90",
       "tier": 1,
       "status": "active",
@@ -1273,9 +1258,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     },
     {
@@ -1290,10 +1273,39 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
+      "flags": [],
+      "has_desc": true
+    },
+    {
+      "id": "1ff175a24c2e5f41",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Field Welding Engineer",
+      "location": "Brownsville, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297288&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-22T18:23:18.907+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
       "flags": [
         "new"
       ],
       "has_desc": true
+    },
+    {
+      "id": "2902a33e73d6e258",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Welding Field Engineer",
+      "location": "Brownsville, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296444&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-06-29T17:17:10.527+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-07-23",
+      "flags": []
     },
     {
       "id": "7aa4d9f6e39cc91d",
