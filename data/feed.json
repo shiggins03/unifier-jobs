@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24",
+  "updated": "2026-07-25",
   "warnings": [],
   "roster": [
     {
@@ -356,7 +356,7 @@
       "title": "Primavera Unifier Solution Architect",
       "location": "US Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-Remote/Primavera-Unifier-Solution-Architect_JR1504",
-      "posted_date": "Posted 17 Days Ago",
+      "posted_date": "Posted 18 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -742,21 +742,6 @@
       "has_desc": true
     },
     {
-      "id": "77b1303705e9ff5a",
-      "kind": "direct",
-      "company": "Turner & Townsend",
-      "title": "Scheduler / Planner - Data Center Construction",
-      "location": "Houston, Texas, US",
-      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000137991239-scheduler-planner-data-center-construction?oga=true",
-      "posted_date": "2026-07-15T23:35:37.774Z",
-      "comp": null,
-      "tier": 2,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "has_desc": true
-    },
-    {
       "id": "fec7769fa359e27b",
       "kind": "direct",
       "company": "Turner & Townsend",
@@ -772,51 +757,6 @@
       "has_desc": true
     },
     {
-      "id": "3b142657788b6f89",
-      "kind": "direct",
-      "company": "Turner & Townsend",
-      "title": "Scheduler / Planner - Data Center Construction",
-      "location": "Dallas, Texas, US",
-      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000137991099-scheduler-planner-data-center-construction?oga=true",
-      "posted_date": "2026-07-15T23:34:30.210Z",
-      "comp": null,
-      "tier": 2,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "has_desc": true
-    },
-    {
-      "id": "00bc51ac4273da77",
-      "kind": "direct",
-      "company": "Turner & Townsend",
-      "title": "Scheduler / Planner - Data Center Construction",
-      "location": "Richmond, Virginia, US",
-      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000137990610-scheduler-planner-data-center-construction?oga=true",
-      "posted_date": "2026-07-15T23:34:06.173Z",
-      "comp": null,
-      "tier": 2,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "has_desc": true
-    },
-    {
-      "id": "8b73de58b0cbc936",
-      "kind": "direct",
-      "company": "Turner & Townsend",
-      "title": "Scheduler / Planner - Data Center Construction",
-      "location": "Atlanta, Georgia, US",
-      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000137975494-scheduler-planner-data-center-construction?oga=true",
-      "posted_date": "2026-07-15T20:14:59.279Z",
-      "comp": null,
-      "tier": 2,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "has_desc": true
-    },
-    {
       "id": "af877b066f873675",
       "kind": "direct",
       "company": "Turner & Townsend",
@@ -824,21 +764,6 @@
       "location": "USA wide, US",
       "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000139323888-remote-senior-scheduler-data-center-construction?oga=true",
       "posted_date": "2026-07-23T15:59:38.356Z",
-      "comp": null,
-      "tier": 2,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "has_desc": true
-    },
-    {
-      "id": "24f3fb4d25193d5b",
-      "kind": "direct",
-      "company": "Turner & Townsend",
-      "title": "Senior Program Scheduler",
-      "location": "USA wide, US",
-      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000137766749-senior-program-scheduler?oga=true",
-      "posted_date": "2026-07-14T23:49:19.073Z",
       "comp": null,
       "tier": 2,
       "status": "active",
@@ -1088,7 +1013,7 @@
       "title": "Project Controls Specialist",
       "location": "Dallas, Texas",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Dallas-Texas/Project-Controls-Specialist_JR5845",
-      "posted_date": "Posted 24 Days Ago",
+      "posted_date": "Posted 25 Days Ago",
       "comp": "$83,978.91 - $95,975.90",
       "tier": 1,
       "status": "active",
@@ -1258,9 +1183,7 @@
       "tier": 2,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     },
     {
@@ -1273,6 +1196,38 @@
       "posted_date": "2026-07-23T15:58:52.158Z",
       "comp": null,
       "tier": 2,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "has_desc": true
+    },
+    {
+      "id": "474bb337a55aa0f3",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Senior Cost Engineering Specialist",
+      "location": "Dallas, Texas",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Dallas-Texas/Senior-Cost-Engineering-Specialist_JR5958",
+      "posted_date": "Posted Yesterday",
+      "comp": "$116,930.89 - $133,635.31",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "03dc50c63fd3d917",
+      "kind": "direct",
+      "company": "Consertus",
+      "title": "Senior Program Controls Manager",
+      "location": "US-WA-Seattle",
+      "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Seattle/Senior-Program-Controls-Manager_JR1535",
+      "posted_date": "Posted Yesterday",
+      "comp": "$180,000-$250,000 annually",
+      "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [
@@ -1362,6 +1317,76 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-07-24",
+      "flags": []
+    },
+    {
+      "id": "77b1303705e9ff5a",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Scheduler / Planner - Data Center Construction",
+      "location": "Houston, Texas, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000137991239-scheduler-planner-data-center-construction?oga=true",
+      "posted_date": "2026-07-15T23:35:37.774Z",
+      "comp": null,
+      "tier": 2,
+      "status": "gone",
+      "gone_date": "2026-07-25",
+      "flags": []
+    },
+    {
+      "id": "3b142657788b6f89",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Scheduler / Planner - Data Center Construction",
+      "location": "Dallas, Texas, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000137991099-scheduler-planner-data-center-construction?oga=true",
+      "posted_date": "2026-07-15T23:34:30.210Z",
+      "comp": null,
+      "tier": 2,
+      "status": "gone",
+      "gone_date": "2026-07-25",
+      "flags": []
+    },
+    {
+      "id": "00bc51ac4273da77",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Scheduler / Planner - Data Center Construction",
+      "location": "Richmond, Virginia, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000137990610-scheduler-planner-data-center-construction?oga=true",
+      "posted_date": "2026-07-15T23:34:06.173Z",
+      "comp": null,
+      "tier": 2,
+      "status": "gone",
+      "gone_date": "2026-07-25",
+      "flags": []
+    },
+    {
+      "id": "8b73de58b0cbc936",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Scheduler / Planner - Data Center Construction",
+      "location": "Atlanta, Georgia, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000137975494-scheduler-planner-data-center-construction?oga=true",
+      "posted_date": "2026-07-15T20:14:59.279Z",
+      "comp": null,
+      "tier": 2,
+      "status": "gone",
+      "gone_date": "2026-07-25",
+      "flags": []
+    },
+    {
+      "id": "24f3fb4d25193d5b",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Senior Program Scheduler",
+      "location": "USA wide, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000137766749-senior-program-scheduler?oga=true",
+      "posted_date": "2026-07-14T23:49:19.073Z",
+      "comp": null,
+      "tier": 2,
+      "status": "gone",
+      "gone_date": "2026-07-25",
       "flags": []
     },
     {
