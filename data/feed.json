@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-25",
+  "updated": "2026-07-26",
   "warnings": [],
   "roster": [
     {
@@ -356,7 +356,7 @@
       "title": "Primavera Unifier Solution Architect",
       "location": "US Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-Remote/Primavera-Unifier-Solution-Architect_JR1504",
-      "posted_date": "Posted 18 Days Ago",
+      "posted_date": "Posted 19 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -364,21 +364,6 @@
       "flags": [
         "title-match"
       ],
-      "has_desc": true
-    },
-    {
-      "id": "9b3c43692c548d44",
-      "kind": "direct",
-      "company": "Consertus",
-      "title": "Senior Cost Manager/Program Controls Manager",
-      "location": "US-WA-Seattle",
-      "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Seattle/Senior-Cost-Manager-Program-Controls-Manager_JR1397",
-      "posted_date": "Posted 30+ Days Ago",
-      "comp": "$180,000-$250,000 annually",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
       "has_desc": true
     },
     {
@@ -1013,7 +998,7 @@
       "title": "Project Controls Specialist",
       "location": "Dallas, Texas",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Dallas-Texas/Project-Controls-Specialist_JR5845",
-      "posted_date": "Posted 25 Days Ago",
+      "posted_date": "Posted 26 Days Ago",
       "comp": "$83,978.91 - $95,975.90",
       "tier": 1,
       "status": "active",
@@ -1208,14 +1193,12 @@
       "title": "Senior Cost Engineering Specialist",
       "location": "Dallas, Texas",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Dallas-Texas/Senior-Cost-Engineering-Specialist_JR5958",
-      "posted_date": "Posted Yesterday",
+      "posted_date": "Posted 2 Days Ago",
       "comp": "$116,930.89 - $133,635.31",
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     },
     {
@@ -1225,15 +1208,27 @@
       "title": "Senior Program Controls Manager",
       "location": "US-WA-Seattle",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Seattle/Senior-Program-Controls-Manager_JR1535",
-      "posted_date": "Posted Yesterday",
+      "posted_date": "Posted 2 Days Ago",
       "comp": "$180,000-$250,000 annually",
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
+    },
+    {
+      "id": "9b3c43692c548d44",
+      "kind": "direct",
+      "company": "Consertus",
+      "title": "Senior Cost Manager/Program Controls Manager",
+      "location": "US-WA-Seattle",
+      "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Seattle/Senior-Cost-Manager-Program-Controls-Manager_JR1397",
+      "posted_date": "Posted 30+ Days Ago",
+      "comp": "$180,000-$250,000 annually",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-07-26",
+      "flags": []
     },
     {
       "id": "6e02d7daf784bb12",
