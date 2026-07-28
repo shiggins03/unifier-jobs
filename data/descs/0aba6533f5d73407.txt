@@ -1,11 +1,11 @@
-Requisition ID: 297201
+Requisition ID: 297474
  
  
-Relocation Authorized: National - Single
+Relocation Authorized: National - Family
  
 Telework Type: Full-Time Office/Project
  
-Work Location: Pecos, TX
+Work Location: Port Arthur, TX
  
 Extraordinary teams building inspiring projects:
  
@@ -21,11 +21,10 @@ Impact Report
 . 
 Project Overview:
  
-The rapid growth of AI and digitalization is fueling unprecedented demand for data centers that require large, reliable sources of energy. In response to this market trend, the Renewables & Clean Power (R&CP) team have signed an early works contract to build one of the largest gas fired power generation facilities in the U.S. 
-This project is of significant scale and complexity, and our team is helping the customer progress early-stage development, that would lead to the start of full EPC delivery this year. 
-The successful candidate will mobilize on a long-term (camp) assignment to Pecos, Texas. This position is contingent upon project award.
+Port Arthur LNG, LLC (PALNG) is developing a Liquefied Natural Gas (LNG) production and export facility on a site located on the western shoreline of the Port Arthur Canal in Jefferson County, Texas. The project base scope will include two (2) identical LNG trains, two (2) LNG Storage Tanks, one (1) LNG Carrier Berth, and associated utilities/facilities. The Project is to be constructed on a parcel of land located along State Highway 87 south of Port Arthur, Texas, between the inner coastal waterway bridge and Keith Lake. The Infrastructure Global Business Unit (GBU) is executing site civil and marine scopes of work associated with our scopes of work on the Energy GBU LNG projects. 
+ 
 Job Summary:
  
-Reporting to the Project Welding Engineer, you will implement, and maintain global construction field welding programs and provide specialized welding engin
+In this role, you will provide project field engineering specialization and expertise with work planning and
 
 [Truncated for this view — full text at the posting link]

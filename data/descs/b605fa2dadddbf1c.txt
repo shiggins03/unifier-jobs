@@ -1,0 +1,33 @@
+The position works closely with customer executives, business leaders, IT teams, partners, and Oracle stakeholders to translate business requirements into scalable, supportable solutions. The Senior Principal Consultant also mentors consulting teams, drives delivery quality, manages implementation risk, and contributes to professional services methods and best practices.
+
+Key Responsibilities
+
+Lead complex, enterprise-scale Unifier implementations from discovery through deployment and stabilization.
+
+Serve as a trusted advisor to customer executives, business process owners, project controls teams, and IT stakeholders.
+
+Supports solution architecture, implementation strategy, governance, and delivery standards.
+
+Lead requirements workshops and translate business needs into functional and technical designs.
+
+Design and oversee Unifier business processes, workflows, data structures, reports, dashboards, security, and integrations.
+
+Review and approve requirements, configuration, integration, testing, deployment, and training deliverables.
+
+Direct cross-functional teams of consultants, technical resources, partners, and customer stakeholders.
+
+Identify and manage solution, delivery, data, integration, and adoption risks.
+
+Lead solution reviews, design decisions, issue resolution, and executive governance discussions.
+
+Support end-to-end testing, production readiness, cutover, go-live, and post-production stabilization.
+
+Provide guidance on integrations with Primavera P6, ERP, financial, procurement, document management, and other enterprise systems.
+
+Mentor consultants and contribute to reusable delivery assets, implementation standards, and consulting best practices.
+
+Support pre-sales activities, including discovery, estimates, proposals, statements of work, and solution presentations.
+
+Identify opportunities to expand customer value through additional capabilities, process improvements, or services.
+
+Travel to customer locations as required.
