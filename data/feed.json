@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-28",
+  "updated": "2026-07-29",
   "warnings": [],
   "roster": [
     {
@@ -356,7 +356,7 @@
       "title": "Primavera Unifier Solution Architect",
       "location": "US Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-Remote/Primavera-Unifier-Solution-Architect_JR1504",
-      "posted_date": "Posted 21 Days Ago",
+      "posted_date": "Posted 22 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -539,21 +539,6 @@
       "location": "Port Arthur, Texas, United States",
       "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296695&jobPipeline=PhenomCareerSite",
       "posted_date": "2026-07-07T12:16:54.733+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "has_desc": true
-    },
-    {
-      "id": "4b3437068a4a0562",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Principal Commissioning Engineer - Electrical",
-      "location": "Brownsville, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296877&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-13T15:16:08.009+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -998,7 +983,7 @@
       "title": "Project Controls Specialist",
       "location": "Dallas, Texas",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Dallas-Texas/Project-Controls-Specialist_JR5845",
-      "posted_date": "Posted 28 Days Ago",
+      "posted_date": "Posted 29 Days Ago",
       "comp": "$83,978.91 - $95,975.90",
       "tier": 1,
       "status": "active",
@@ -1193,7 +1178,7 @@
       "title": "Senior Cost Engineering Specialist",
       "location": "Dallas, Texas",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Dallas-Texas/Senior-Cost-Engineering-Specialist_JR5958",
-      "posted_date": "Posted 4 Days Ago",
+      "posted_date": "Posted 5 Days Ago",
       "comp": "$116,930.89 - $133,635.31",
       "tier": 1,
       "status": "active",
@@ -1208,7 +1193,7 @@
       "title": "Senior Program Controls Manager",
       "location": "US-WA-Seattle",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Seattle/Senior-Program-Controls-Manager_JR1535",
-      "posted_date": "Posted 4 Days Ago",
+      "posted_date": "Posted 5 Days Ago",
       "comp": "$180,000-$250,000 annually",
       "tier": 1,
       "status": "active",
@@ -1222,8 +1207,8 @@
       "company": "Bechtel",
       "title": "Field Welding Engineer",
       "location": "Pecos, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297201&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-27T13:17:29.333+0000",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297409&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-27T13:17:29.331+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -1244,8 +1229,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [
-        "title-match",
-        "new"
+        "title-match"
       ],
       "has_desc": true
     },
@@ -1261,9 +1245,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     },
     {
@@ -1275,6 +1257,106 @@
       "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297120&jobPipeline=PhenomCareerSite",
       "posted_date": "2026-07-27T19:17:51.676+0000",
       "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "has_desc": true
+    },
+    {
+      "id": "567408d36e24d283",
+      "kind": "direct",
+      "company": "Deloitte",
+      "title": "US E-Consulting Services – Manager – S&T/Strategy/I&RE – Capital Projects (Project Delivery) – FY27 – 354009 – OK",
+      "location": null,
+      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Manager-Project-Delivery/354009",
+      "posted_date": "Fri, 29 May 2026 00:00:00 +0000",
+      "comp": "range is $134,500 to $265,100",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "9b450b2863b5d6aa",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Lead Welding Field Engineer",
+      "location": "Clay, New York, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297471&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-28T13:17:33.897+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "94809f719eb442f3",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Welding Field Engineer",
+      "location": "Clay, New York, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297472&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-28T13:17:33.900+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "9d320a4f45dd8ef5",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Senior Digital Consultant – Systems, Data & Analytics (Construction)",
+      "location": "Indianapolis, Indiana, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000140344389-senior-digital-consultant-systems-data-analytics-construction-?oga=true",
+      "posted_date": "2026-07-28T22:21:42.006Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "827308f08705f2d8",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Senior Digital Consultant – Systems, Data & Analytics (Construction)",
+      "location": "New York, New York, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000140344104-senior-digital-consultant-systems-data-analytics-construction-?oga=true",
+      "posted_date": "2026-07-28T22:18:49.966Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "893a6bc8d7c72f07",
+      "kind": "direct",
+      "company": "Consertus",
+      "title": "P6 Scheduler",
+      "location": "US-CA-San Francisco Bay Area",
+      "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-CA-San-Francisco-Bay-Area/P6-Scheduler_JR1539",
+      "posted_date": "Posted Yesterday",
+      "comp": "$128,960 - $139,360 annually",
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -1351,6 +1433,20 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-07-21",
+      "flags": []
+    },
+    {
+      "id": "4b3437068a4a0562",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Principal Commissioning Engineer - Electrical",
+      "location": "Brownsville, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296877&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-13T15:16:08.009+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-07-29",
       "flags": []
     },
     {
