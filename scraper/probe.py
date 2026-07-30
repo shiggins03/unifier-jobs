@@ -86,47 +86,70 @@ def sf_csb(base, label):
 
 
 def main():
-    # Can we confirm Adzuna BEFORE the owner signs up? Two things to learn:
-    #   1. does the exact endpoint the adapter uses exist (vs JSearch's 404)?
-    #   2. does the free/registration tier include search, per their own docs?
-    section("ADZUNA: unauthenticated call to the adapter's exact endpoint")
-    def unauth():
+    # Verify Adzuna with REAL credentials before the daily run depends on it.
+    # Prints results and quota only — never the credentials.
+    import os
+    section("ADZUNA credential + search verification")
+    app_id = os.environ.get("ADZUNA_APP_ID")
+    app_key = os.environ.get("ADZUNA_APP_KEY")
+    print(f"  app_id present: {bool(app_id)} | app_key present: {bool(app_key)}")
+    if not (app_id and app_key):
+        print("  -> secrets not set yet; add them and re-dispatch")
+        return
+
+    def search(what_phrase, label):
         r = requests.get("https://api.adzuna.com/v1/api/jobs/us/search/1",
-                         params={"what_phrase": "Primavera Unifier",
-                                 "results_per_page": 5},
-                         headers=BROWSER_UA, timeout=T)
-        print(f"  HTTP {r.status_code} ctype={(r.headers.get('content-type') or '')[:40]}")
-        print(f"  body: {r.text[:400]!r}")
-        print("  -> endpoint EXISTS, auth is the only gap"
-              if r.status_code in (400, 401, 403) else
-              "  -> unexpected; read the body above")
-    show("unauth", unauth)
+                         params={"app_id": app_id, "app_key": app_key,
+                                 "what_phrase": what_phrase, "max_days_old": 90,
+                                 "results_per_page": 50},
+                         headers=ADAPTER_UA, timeout=T)
+        ct = (r.headers.get("content-type") or "").split(";")[0]
+        print(f"  [{label}] HTTP {r.status_code} ctype={ct}")
+        quota = {k: v for k, v in r.headers.items()
+                 if any(t in k.lower() for t in ("ratelimit", "quota", "limit"))}
+        if quota:
+            print(f"    quota headers: {quota}")
+        if not r.ok:
+            body = r.text[:300]
+            for secret in (app_id, app_key):
+                body = body.replace(secret, "<REDACTED>")
+            print(f"    body: {body!r}")
+            return []
+        d = r.json()
+        res = d.get("results", [])
+        print(f"    total_available={d.get('count')} returned={len(res)}")
+        return res
 
-    section("ADZUNA: does it 404 for a genuinely bogus path? (control)")
-    def control():
-        r = requests.get("https://api.adzuna.com/v1/api/jobs/us/zzqnope999/1",
-                         headers=BROWSER_UA, timeout=T)
-        print(f"  bogus path -> HTTP {r.status_code} body={r.text[:200]!r}")
-    show("control", control)
+    for phrase, label in [("Primavera Unifier", 'the pipeline query #1'),
+                          ("Oracle Unifier", "the pipeline query #2"),
+                          ("zzqnope999", "NEGATIVE CONTROL")]:
+        def go(phrase=phrase, label=label):
+            res = search(phrase, label)
+            for j in res[:10]:
+                co = (j.get("company") or {}).get("display_name")
+                loc = (j.get("location") or {}).get("display_name")
+                sal = ""
+                if str(j.get("salary_is_predicted")) == "0" and j.get("salary_min"):
+                    sal = f" | ${j.get('salary_min'):,.0f}-${j.get('salary_max') or j.get('salary_min'):,.0f}"
+                print(f"      - {co} | {(j.get('title') or '')[:46]} | {loc}{sal}")
+            hits = [j for j in res
+                    if "mta" in ((j.get("company") or {}).get("display_name") or "").lower()
+                    or "metropolitan transportation" in
+                       ((j.get("company") or {}).get("display_name") or "").lower()]
+            if hits:
+                print(f"    *** MTA HITS: {len(hits)} ***")
+                for j in hits:
+                    print(f"      {j.get('title')} -> {j.get('redirect_url')}")
+        show(label, go)
 
-    section("ADZUNA: API docs / tier info")
-    for u in ["https://developer.adzuna.com/docs/search",
-              "https://developer.adzuna.com/overview",
-              "https://developer.adzuna.com/"]:
-        def doc(u=u):
-            r = requests.get(u, headers=BROWSER_UA, timeout=T)
-            low = r.text.casefold()
-            import re as _re
-            text = _re.sub(r"<[^>]+>", " ", r.text)
-            text = _re.sub(r"\s+", " ", text)
-            print(f"  {u} -> {r.status_code} len={len(r.text)}")
-            for term in ("free", "per month", "rate limit", "calls", "pricing",
-                         "commercial"):
-                idx = low.find(term)
-                if idx > -1:
-                    seg = text[max(0, idx - 120):idx + 160].strip()
-                    print(f"    [{term}] ...{seg[:240]}...")
-        show(u, doc)
+    section("ADZUNA via the real adapter (fetch_adzuna)")
+    def adapter():
+        records, ok = sources.fetch_adzuna(['"Primavera Unifier"', "Oracle Unifier"])
+        print(f"  ok={ok} records={len(records)}")
+        for r in records[:12]:
+            print(f"    - {r.get('company')} | {(r.get('title') or '')[:44]} | "
+                  f"{r.get('location')} | comp={r.get('comp')}")
+    show("adapter", adapter)
 
 
 if __name__ == "__main__":
