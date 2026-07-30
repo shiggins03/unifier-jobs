@@ -56,6 +56,14 @@ def run():
 
     store = models.load_jobs()
     baseline = not store
+    # Scope (US + remote only) is a hard rule, so it applies to the whole
+    # store, not just today's fetch: when the non-US filter is tightened,
+    # already-stored postings that are now out of scope drop immediately
+    # instead of lingering two runs until they age out as "gone" — which
+    # would also mislabel them, since they are still listed, just not for us.
+    dropped_scope = [k for k, j in store.items() if is_non_us(j.get("location"))]
+    for k in dropped_scope:
+        del store[k]
     for j in store.values():
         j["flags"] = [f for f in j["flags"] if f != "new"]
 
@@ -255,6 +263,7 @@ def run():
     new = sum(1 for j in store.values() if "new" in j["flags"])
     print(f"run complete: {active} active listings, {new} new, "
           f"{len(triage)} in triage queue, {len(warnings)} health warnings"
+          + (f", {len(dropped_scope)} dropped as out-of-scope" if dropped_scope else "")
           + (" [baseline run]" if baseline else ""))
 
 
