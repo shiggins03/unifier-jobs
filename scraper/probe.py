@@ -86,8 +86,55 @@ def sf_csb(base, label):
 
 
 def main():
-    section("no active probes")
-    print("  write probes here, push, dispatch the probe workflow")
+    # The daily run recorded jsearch fail_streak=1 with zero results, and
+    # fetch_jsearch swallows the exception — so surface the real status and
+    # body here. NEVER print the key itself.
+    import os
+    section("JSEARCH diagnosis")
+    key = os.environ.get("JSEARCH_API_KEY")
+    print(f"  key present: {bool(key)} len={len(key) if key else 0}")
+    if not key:
+        print("  -> secret not visible to this workflow")
+        return
+    for label, params in [
+        ('quoted phrase (what the pipeline sends)',
+         {"query": '"Primavera Unifier"', "country": "us", "num_pages": 1}),
+        ('plain', {"query": "Oracle Unifier", "country": "us", "num_pages": 1}),
+        ('minimal', {"query": "unifier"}),
+    ]:
+        def call(label=label, params=params):
+            r = requests.get("https://jsearch.p.rapidapi.com/search",
+                             params=params,
+                             headers={"X-RapidAPI-Key": key,
+                                      "X-RapidAPI-Host": "jsearch.p.rapidapi.com"},
+                             timeout=T)
+            body = r.text[:400]
+            if key in body:
+                body = body.replace(key, "<REDACTED>")
+            print(f"  {label}: HTTP {r.status_code}")
+            rl = {k: v for k, v in r.headers.items()
+                  if "ratelimit" in k.lower() or "quota" in k.lower()}
+            if rl:
+                print(f"    quota: {rl}")
+            if r.ok:
+                try:
+                    d = r.json()
+                    jobs = d.get("data") or []
+                    print(f"    status={d.get('status')} results={len(jobs)}")
+                    for j in jobs[:10]:
+                        direct = [o.get("apply_link") for o in (j.get("apply_options") or [])
+                                  if o.get("is_direct")]
+                        print(f"      - {j.get('employer_name')} | "
+                              f"{(j.get('job_title') or '')[:46]} | "
+                              f"{j.get('job_city')},{j.get('job_state')} | "
+                              f"direct={bool(direct)}")
+                        if direct:
+                            print(f"          {direct[0][:100]}")
+                except Exception as e:
+                    print(f"    json parse failed: {e}")
+            else:
+                print(f"    body: {body!r}")
+        show(label, call)
 
 
 if __name__ == "__main__":
