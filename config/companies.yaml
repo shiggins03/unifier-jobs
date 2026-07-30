@@ -184,11 +184,15 @@ companies:
     ats: generic_page
     url: https://careers.mta.org/search/unifier/jobs
     enabled: false
-    note: 'FINAL (2026-07-20): Cloudflare challenges everything on
-      careers.mta.org (even robots.txt/sitemap.xml) and mta.info; the
-      jibeapply API hostname does not exist. No legitimate script route —
-      their postings syndicate to Google Jobs, so aggregator discovery
-      (JSearch) is THE route once keys are added. Do not retry scraping.'
+    note: 'FINAL (2026-07-30, retested 10 paths incl. /search/jobs?q=): every
+      URL on careers.mta.org returns a Cloudflare interstitial (403, __cf_bm
+      cookie) to every automated client, from two different networks — search
+      paths, the JSON routes, robots.txt/sitemap.xml, AND individual job
+      pages. Getting past it would mean defeating bot protection, so DO NOT
+      RETRY SCRAPING. Two working routes instead: (1) seed_jobs.yaml — browse
+      careers.mta.org/search/jobs?q=unifier by hand and paste postings in;
+      (2) aggregator discovery once API keys are added, since MTA syndicates
+      to Google Jobs.'
   - name: City of New York
     tier: B
     ats: generic_page

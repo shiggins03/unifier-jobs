@@ -8,6 +8,11 @@
 # paraphrase, never estimate, never reconstruct a title from the URL slug.
 # Omit any field you can't copy — it renders as "Not listed".
 #
+# WHERE TO CHECK for new postings at the walled employers (open in a browser —
+# these work for a human, and 403 for every script):
+#   MTA      https://careers.mta.org/search/jobs?q=unifier&location=
+#   MTA (P6) https://careers.mta.org/search/jobs?q=primavera&location=
+#
 # Fields: url + company are required. Optional: title, location, comp,
 #   posted_date, description, tier (1|2 — only needed when the keyword filter
 #   can't see the match because no description was supplied).

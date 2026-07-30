@@ -85,62 +85,8 @@ def sf_csb(base, label):
 
 
 def main():
-    # The owner supplied a working search URL shape we never tested:
-    #   /search/jobs?q=unifier&location=
-    # Earlier probes used /search/{kw}/jobs and /api/jobs. Different paths can
-    # carry different Cloudflare rules, and Actions runs from different IPs
-    # than the session proxy — so retest properly before declaring it dead.
-    section("MTA /search/jobs query-param shape")
-    variants = [
-        ("owner URL", "https://careers.mta.org/search/jobs?q=unifier&location="),
-        ("no location", "https://careers.mta.org/search/jobs?q=unifier"),
-        ("nonsense (control)", "https://careers.mta.org/search/jobs?q=zzqnope999"),
-        ("bare search", "https://careers.mta.org/search/jobs"),
-        ("json suffix", "https://careers.mta.org/search/jobs.json?q=unifier"),
-        ("pages route", "https://careers.mta.org/pages"),
-        ("direct job page", "https://careers.mta.org/jobs/"
-                            "17757061-advanced-software-engineer-unifier"),
-    ]
-    for label, u in variants:
-        def go(label=label, u=u):
-            r = requests.get(u, headers=BROWSER_UA, timeout=T)
-            low = r.text.casefold()
-            challenge = ("just a moment" in low or "cf-browser-verification" in low
-                         or "human verification" in low)
-            print(f"  {label}: {r.status_code} len={len(r.text)} "
-                  f"challenge={challenge} unifier={low.count('unifier')} "
-                  f"server={r.headers.get('server')}")
-            if r.ok and not challenge:
-                hrefs = sorted(set(re.findall(r'href="(/jobs/\d+[^"]*)"', r.text)))
-                print(f"    JOB LINKS ({len(hrefs)}): {hrefs[:8]}")
-        show(label, go)
-
-    # If HTML is walled, is there a JSON endpoint behind the same UI?
-    section("MTA JSON attempts (Accept: application/json)")
-    for u in ["https://careers.mta.org/search/jobs?q=unifier",
-              "https://careers.mta.org/api/search/jobs?q=unifier",
-              "https://careers.mta.org/api/v1/jobs?q=unifier"]:
-        def js(u=u):
-            r = requests.get(u, headers={**BROWSER_UA,
-                                         "Accept": "application/json"}, timeout=T)
-            print(f"  {u} -> {r.status_code} ctype={r.headers.get('content-type')} "
-                  f"body[:140]={r.text[:140]!r}")
-        show(u, js)
-
-    # Vendor fingerprint: even a block page often names the platform, and
-    # knowing the ATS may reveal a reachable vendor-hosted mirror.
-    section("MTA vendor fingerprint")
-    def fingerprint():
-        r = requests.get("https://careers.mta.org/", headers=BROWSER_UA, timeout=T)
-        print(f"  / -> {r.status_code} server={r.headers.get('server')} "
-              f"powered-by={r.headers.get('x-powered-by')}")
-        print(f"  set-cookie: {str(r.headers.get('set-cookie'))[:220]}")
-        hits = sorted(set(re.findall(
-            r'(jibe|radancy|phenom|icims|workday|smartrecruiters|teamtailor|'
-            r'greenhouse|lever|avature|eightfold|talemetry|clinch|symphony)',
-            r.text, re.I)))
-        print(f"  vendor tokens in body: {hits}")
-    show("headers", fingerprint)
+    section("no active probes")
+    print("  write probes here, push, dispatch the probe workflow")
 
 
 if __name__ == "__main__":
