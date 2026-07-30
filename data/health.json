@@ -215,7 +215,7 @@
       23
     ],
     "fail_streak": 0,
-    "inventory": 1034,
+    "inventory": 1037,
     "last_run": "2026-07-30"
   },
   "smartrecruiters:Turner & Townsend": {
@@ -227,7 +227,7 @@
       32
     ],
     "fail_streak": 0,
-    "inventory": 2840,
+    "inventory": 2843,
     "last_run": "2026-07-30"
   },
   "workday:Mass General Brigham": {
@@ -273,7 +273,7 @@
       0,
       0
     ],
-    "fail_streak": 1,
+    "fail_streak": 0,
     "inventory": 11,
     "last_run": "2026-07-30"
   },
@@ -294,6 +294,7 @@
       5,
       5,
       5,
+      5,
       5
     ],
     "fail_streak": 0,
@@ -302,6 +303,7 @@
   },
   "workday:NVIDIA": {
     "counts": [
+      0,
       0,
       0,
       0,
@@ -316,10 +318,11 @@
       0,
       0,
       0,
+      0,
       0
     ],
     "fail_streak": 0,
-    "inventory": 2744,
+    "inventory": 2750,
     "last_run": "2026-07-30"
   },
   "workday:Intel": {
@@ -327,10 +330,11 @@
       0,
       0,
       0,
+      0,
       0
     ],
     "fail_streak": 0,
-    "inventory": 642,
+    "inventory": 643,
     "last_run": "2026-07-30"
   },
   "workday:Pfizer": {
@@ -338,10 +342,11 @@
       0,
       0,
       0,
+      0,
       0
     ],
     "fail_streak": 0,
-    "inventory": 562,
+    "inventory": 561,
     "last_run": "2026-07-30"
   },
   "workday:PwC": {
@@ -349,14 +354,16 @@
       3,
       0,
       0,
+      0,
       0
     ],
     "fail_streak": 0,
-    "inventory": 4629,
+    "inventory": 4628,
     "last_run": "2026-07-30"
   },
   "phenom:Eli Lilly": {
     "counts": [
+      3,
       3,
       3,
       3,
@@ -371,17 +378,24 @@
       0,
       0,
       0,
+      0,
       0
     ],
     "fail_streak": 0,
-    "inventory": 1894,
+    "inventory": 1885,
     "last_run": "2026-07-30"
   },
   "seed:MTA": {
     "counts": [
+      1,
       1
     ],
     "fail_streak": 0,
+    "last_run": "2026-07-30"
+  },
+  "jsearch": {
+    "counts": [],
+    "fail_streak": 1,
     "last_run": "2026-07-30"
   }
 }
