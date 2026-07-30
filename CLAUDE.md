@@ -48,6 +48,12 @@ Runs daily at 11:00 UTC via GitHub Actions; publishes a static dashboard to GitH
   reads resource blocks + strips the SHA prefix — keep that parser, and keep the
   raw-event debug dump (20s timeout box) that diagnosed it.
 - Keep the page's sort/badges in sync with `scraper/site_gen.py` when either changes.
+- Applied-tracking lives ONLY in the artifact (localStorage key
+  `ujw-applied-v1`, job id -> ISO tick date). Job ids hash
+  company|title|location, so a tick survives daily re-fetches. It is
+  per-browser, NOT synced across devices and NOT in the repo. Ticking updates
+  the card in place rather than re-rendering, so an open description stays
+  open — keep that if you touch the handler.
 
 ## Adding a job from a direct link (`config/seed_jobs.yaml`)
 
