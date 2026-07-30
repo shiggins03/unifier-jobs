@@ -148,7 +148,7 @@
   "workday:Consertus": {
     "counts": [
       2,
-      2,
+      3,
       3,
       3,
       3
@@ -183,7 +183,7 @@
   },
   "oracle_orc:Oracle": {
     "counts": [
-      1,
+      2,
       2,
       2,
       2,
@@ -196,8 +196,8 @@
   "avature_feed:Deloitte": {
     "counts": [
       1,
-      1,
       2,
+      1,
       1,
       1
     ],
@@ -206,21 +206,21 @@
   },
   "phenom:Bechtel": {
     "counts": [
-      22,
       24,
       24,
+      23,
       23,
       23
     ],
     "fail_streak": 0,
-    "inventory": 1026,
+    "inventory": 1025,
     "last_run": "2026-07-30"
   },
   "smartrecruiters:Turner & Townsend": {
     "counts": [
       24,
-      24,
       25,
+      32,
       32,
       32
     ],
@@ -278,7 +278,7 @@
   "successfactors:Amtrak": {
     "counts": [
       4,
-      4,
+      3,
       3,
       3,
       3
@@ -289,6 +289,7 @@
   },
   "amazon_jobs:Amazon": {
     "counts": [
+      5,
       5
     ],
     "fail_streak": 0,
@@ -297,6 +298,7 @@
   },
   "workday:NVIDIA": {
     "counts": [
+      0,
       0
     ],
     "fail_streak": 0,
@@ -305,38 +307,43 @@
   },
   "workday:Micron": {
     "counts": [
+      0,
       0
     ],
     "fail_streak": 0,
-    "inventory": 2745,
+    "inventory": 2744,
     "last_run": "2026-07-30"
   },
   "workday:Intel": {
     "counts": [
+      0,
       0
     ],
     "fail_streak": 0,
-    "inventory": 640,
+    "inventory": 641,
     "last_run": "2026-07-30"
   },
   "workday:Pfizer": {
     "counts": [
+      0,
       0
     ],
     "fail_streak": 0,
-    "inventory": 560,
+    "inventory": 561,
     "last_run": "2026-07-30"
   },
   "workday:PwC": {
     "counts": [
-      3
+      3,
+      0
     ],
     "fail_streak": 0,
-    "inventory": 4592,
+    "inventory": 4599,
     "last_run": "2026-07-30"
   },
   "phenom:Eli Lilly": {
     "counts": [
+      3,
       3
     ],
     "fail_streak": 0,
@@ -345,10 +352,11 @@
   },
   "workday:Johnson & Johnson": {
     "counts": [
+      0,
       0
     ],
     "fail_streak": 0,
-    "inventory": 1882,
+    "inventory": 1884,
     "last_run": "2026-07-30"
   }
 }
