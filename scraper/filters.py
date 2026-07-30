@@ -3,13 +3,35 @@ Comp extraction quotes the posting's exact text — it never computes a value.""
 import re
 
 NON_US = re.compile(
-    r"\b(india|united kingdom|\buk\b|london|dubai|abu dhabi|uae|saudi|riyadh|qatar|doha|"
+    r"\b(india|united kingdom|\buk\b|england|scotland|wales|"
+    r"dubai|abu dhabi|uae|saudi|riyadh|qatar|doha|"
     # country names only — city names like Cairo/Jordan collide with US towns
     r"egypt|\boman\b|muscat|kuwait|bahrain|amman|lithuania|vilnius|"
     r"canada|toronto|vancouver|ontario|australia|sydney|melbourne|singapore|philippines|"
     r"malaysia|hyderabad|bangalore|bengaluru|chennai|mumbai|pune|noida|gurgaon|delhi|"
-    r"ireland|dublin|germany|poland|romania|mexico|\bmx\b|brazil|colombia|"
+    r"ireland|germany|poland|romania|mexico|\bmx\b|brazil|colombia|"
     r"argentina|buenos aires|chile|peru|santiago)\b", re.I)
+
+# Cities that name both a foreign metro and a US town (Cairo IL, Athens GA,
+# Moscow ID...). Treated as non-US ONLY when the location carries no US
+# marker. Added 2026-07-30 after PwC's "Cairo - ETIC" postings (their Egypt
+# delivery center) slipped onto the board.
+# london/dublin live here rather than in NON_US because London OH and
+# Dublin OH are real US job locations; their country names still match above.
+AMBIGUOUS_CITY = re.compile(r"\b(cairo|athens|moscow|lima|dublin|london|"
+                            r"manchester|birmingham|naples|odessa|versailles)\b",
+                            re.I)
+US_MARKER = re.compile(
+    r"\b(united states|u\.?s\.?a?|remote|"
+    r"al|ak|az|ar|ca|co|ct|de|fl|ga|hi|id|il|in|ia|ks|ky|la|me|md|ma|mi|mn|"
+    r"ms|mo|mt|ne|nv|nh|nj|nm|ny|nc|nd|oh|ok|or|pa|ri|sc|sd|tn|tx|ut|vt|va|"
+    r"wa|wv|wi|wy|dc|"
+    r"alabama|alaska|arizona|arkansas|california|colorado|connecticut|"
+    r"delaware|florida|georgia|hawaii|idaho|illinois|indiana|iowa|kansas|"
+    r"kentucky|louisiana|maine|maryland|massachusetts|michigan|minnesota|"
+    r"mississippi|missouri|montana|nebraska|nevada|ohio|oklahoma|oregon|"
+    r"pennsylvania|tennessee|texas|utah|vermont|virginia|washington|"
+    r"wisconsin|wyoming)\b", re.I)
 
 COMP_RE = re.compile(
     r"(?:salary|pay|compensation|range|rate)[^.\n]{0,80}?"
@@ -42,7 +64,13 @@ def keyword_tier(title, body, kw):
 
 
 def is_non_us(location):
-    return bool(location and NON_US.search(location))
+    if not location:
+        return False
+    if NON_US.search(location):
+        return True
+    # ambiguous city + no US state/country marker anywhere => foreign
+    return bool(AMBIGUOUS_CITY.search(location)
+                and not US_MARKER.search(location))
 
 
 def blocklisted(company, title, bl):
