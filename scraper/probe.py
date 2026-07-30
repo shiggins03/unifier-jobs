@@ -10,6 +10,7 @@ import re
 import traceback
 
 import requests
+from bs4 import BeautifulSoup
 
 from . import sources  # adapters can be exercised end-to-end, see run_adapter
 
@@ -85,72 +86,70 @@ def sf_csb(base, label):
 
 
 def main():
-    # GOAL: a fully automated route to MTA (and other Cloudflare-walled
-    # employers) that needs NO API key and NO human step. MTA syndicates
-    # postings, so look for a reachable aggregator that carries them. Per
-    # hard rule #4 an aggregator is discovery-only: we resolve each hit back
-    # to the employer's own posting URL.
-    def show_json(label, url, headers=None, pick=None):
-        r = requests.get(url, headers={**BROWSER_UA, **(headers or {})}, timeout=T)
-        ct = r.headers.get("content-type") or ""
-        print(f"  {label}: {r.status_code} ctype={ct.split(';')[0]} len={len(r.text)}")
-        if r.ok and "json" in ct:
-            try:
-                d = r.json()
-            except Exception:
-                print(f"    unparseable json: {r.text[:120]!r}"); return
-            print(f"    top-level: {list(d)[:8] if isinstance(d, dict) else type(d).__name__}")
-            if pick:
-                try:
-                    print(f"    {pick(d)}")
-                except Exception as e:
-                    print(f"    pick failed: {e}")
-        else:
-            low = r.text.casefold()
-            print(f"    challenge={'just a moment' in low} "
-                  f"mta={low.count('mta')} unifier={low.count('unifier')}")
+    # Two key-free leads from round 15. Both need the echo control before
+    # being trusted, then the real job rows + employer links extracted.
+    section("APTA transit job board (jobs.apta.com)")
+    def apta(q):
+        r = requests.get("https://jobs.apta.com/jobs/", params={"keywords": q},
+                         headers=BROWSER_UA, timeout=T)
+        low = r.text.casefold()
+        print(f"  q={q!r}: {r.status_code} len={len(r.text)} "
+              f"echo={low.count(q.casefold())} unifier={low.count('unifier')} "
+              f"mta={low.count('mta')}")
+        return r
+    show("unifier", lambda: apta("unifier"))
+    show("primavera", lambda: apta("primavera"))
+    show("control", lambda: apta("zzqnope999"))
 
-    section("THE MUSE public API (no key required)")
-    show_json("muse unifier",
-              "https://www.themuse.com/api/public/jobs?page=0&q=unifier",
-              pick=lambda d: f"count={len(d.get('results', []))} "
-                             f"first={[j.get('name') for j in d.get('results', [])[:3]]}")
+    def apta_rows():
+        r = apta("unifier")
+        soup = BeautifulSoup(r.text, "html.parser")
+        # dump candidate row containers so we can pick a stable selector
+        for sel in ["a[href*='/job/']", ".bti-job-title a", "h3 a", "article a"]:
+            hits = soup.select(sel)
+            if hits:
+                print(f"  selector {sel!r} -> {len(hits)} matches")
+                for a in hits[:6]:
+                    print(f"    {a.get_text(' ', strip=True)[:70]!r} -> {a.get('href')}")
+                break
+        # any structured data?
+        ld = re.findall(r'<script[^>]+application/ld\+json[^>]*>(.*?)</script>',
+                        r.text, re.S)
+        print(f"  JSON-LD blocks: {len(ld)}")
+        for blk in ld[:2]:
+            print(f"    {blk.strip()[:220]!r}")
+    show("apta rows", apta_rows)
 
-    section("CAREERJET public search (no key)")
-    for u in ["https://www.careerjet.com/search/jobs?s=unifier&l=New+York",
-              "http://public.api.careerjet.net/search?keywords=unifier&location=new+york"
-              "&affid=213e213hd12344&user_ip=1.2.3.4&user_agent=probe&url=http://x"]:
-        show_json(u[:52], u)
+    section("GOVERNMENTJOBS cross-agency (governmentjobs.com/jobs?keyword=)")
+    def gj(q):
+        r = requests.get("https://www.governmentjobs.com/jobs",
+                         params={"keyword": q}, headers=BROWSER_UA, timeout=T)
+        low = r.text.casefold()
+        print(f"  q={q!r}: {r.status_code} len={len(r.text)} "
+              f"echo={low.count(q.casefold())} unifier={low.count('unifier')}")
+        return r
+    show("unifier", lambda: gj("unifier"))
+    show("control", lambda: gj("zzqnope999"))
 
-    section("GOVERNMENTJOBS cross-agency search (reachable earlier)")
-    for u in ["https://www.governmentjobs.com/careers?keyword=unifier",
-              "https://www.governmentjobs.com/jobs?keyword=unifier"]:
-        def gj(u=u):
-            r = requests.get(u, headers=BROWSER_UA, timeout=T)
-            low = r.text.casefold()
-            print(f"  {u[-38:]}: {r.status_code} len={len(r.text)} "
-                  f"unifier={low.count('unifier')} mta={low.count('mta')}")
-        show(u, gj)
-
-    section("CAREERS IN GOVERNMENT / transit boards")
-    for label, u in [
-        ("careersingovernment", "https://www.careersingovernment.com/jobs/?keyword=unifier"),
-        ("transitjobs", "https://www.transitjobs.com/search?q=unifier"),
-        ("apta careers", "https://jobs.apta.com/jobs/?keywords=unifier"),
-        ("statejobsny", "https://statejobs.ny.gov/public/vacancySearch.cfm?keyword=unifier"),
-    ]:
-        def gen(label=label, u=u):
-            r = requests.get(u, headers=BROWSER_UA, timeout=T, allow_redirects=True)
-            low = r.text.casefold()
-            print(f"  {label}: {r.status_code} final={r.url[:60]} len={len(r.text)} "
-                  f"challenge={'just a moment' in low} unifier={low.count('unifier')} "
-                  f"mta={low.count('mta')}")
-        show(label, gen)
-
-    section("ADZUNA / JSEARCH / JOOBLE key status (already coded in sources.py)")
-    import os
-    for k in ("JSEARCH_API_KEY", "ADZUNA_APP_ID", "ADZUNA_APP_KEY", "JOOBLE_API_KEY"):
-        print(f"  {k}: {'SET' if os.environ.get(k) else 'not set'}")
+    def gj_rows():
+        r = gj("unifier")
+        soup = BeautifulSoup(r.text, "html.parser")
+        for sel in ["a[href*='/jobs/']", "a[href*='/careers/']", ".job-title a",
+                    "h3 a", "[class*=job] a"]:
+            hits = soup.select(sel)
+            if len(hits) > 3:
+                print(f"  selector {sel!r} -> {len(hits)} matches")
+                for a in hits[:8]:
+                    t = a.get_text(" ", strip=True)[:60]
+                    if t:
+                        print(f"    {t!r} -> {a.get('href')}")
+                break
+        ld = re.findall(r'<script[^>]+application/ld\+json[^>]*>(.*?)</script>',
+                        r.text, re.S)
+        print(f"  JSON-LD blocks: {len(ld)}")
+        for blk in ld[:2]:
+            print(f"    {blk.strip()[:300]!r}")
+    show("gj rows", gj_rows)
 
 
 if __name__ == "__main__":
