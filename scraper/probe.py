@@ -85,54 +85,20 @@ def sf_csb(base, label):
 
 
 def main():
-    section("AMAZON adapter e2e")
-    show("amazon", lambda: run_adapter("amazon_jobs", sources.fetch_amazon_jobs,
-                                       {"name": "Amazon"}))
+    section("ELI LILLY phenom e2e (confirmed Unifier user)")
+    show("lilly", lambda: run_adapter("phenom", sources.fetch_phenom,
+                                      {"name": "Eli Lilly",
+                                       "phenom_host": "careers.lilly.com"}))
 
-    section("NEW WORKDAY configs e2e (does the unifier search yield?)")
-    for name, host, tenant, site in [
-        ("NVIDIA", "nvidia.wd5.myworkdayjobs.com", "nvidia", "NVIDIAExternalCareerSite"),
-        ("Micron", "micron.wd1.myworkdayjobs.com", "micron", "External"),
-        ("Intel", "intel.wd1.myworkdayjobs.com", "intel", "External"),
-        ("Pfizer", "pfizer.wd1.myworkdayjobs.com", "pfizer", "PfizerCareers"),
-        ("PwC", "pwc.wd3.myworkdayjobs.com", "pwc", "Global_Experienced_Careers"),
-    ]:
-        show(name, lambda n=name, h=host, t=tenant, s=site: run_adapter(
-            f"workday:{n}", sources.fetch_workday,
-            {"name": n, "workday_host": h, "workday_tenant": t, "workday_site": s}))
+    section("J&J workday e2e")
+    cxs("jj.wd5.myworkdayjobs.com", "jj", "JJ")
+    show("jnj", lambda: run_adapter("workday", sources.fetch_workday, {
+        "name": "Johnson & Johnson", "workday_host": "jj.wd5.myworkdayjobs.com",
+        "workday_tenant": "jj", "workday_site": "JJ"}))
 
-    section("NORTHWELL findly ECHO CONTROL (unifier=15 may be query echo)")
-    def findly(q):
-        r = get(f"https://northwell.site.findly.com/?s={q}")
-        low = r.text.casefold()
-        print(f"    q={q!r} len={len(r.text)} echoes={low.count(q.lower())} "
-              f"unifier={low.count('unifier')}")
-    for q in ("unifier", "zzqnope999"):
-        show(q, lambda q=q: findly(q))
-
-    section("ELI LILLY ats hunt (confirmed Unifier user, tenant unknown)")
-    def hunt(label, url):
-        r = get(url)
-        links = sorted(set(re.findall(
-            r'https?://[^"\'\s]*(?:myworkdayjobs|myworkdaysite|icims|taleo|'
-            r'successfactors|phenom|eightfold|avature|oraclecloud|brassring)'
-            r'[^"\'\s]*', r.text)))[:8]
-        print(f"    {label}: {links}")
-    show("careers.lilly.com", lambda: hunt("lilly", "https://careers.lilly.com/us/en"))
-    for site in ["LLY_External", "lillycareers", "LillyCareers", "Lilly_Careers",
-                 "EliLilly", "lly"]:
-        cxs("lilly.wd5.myworkdayjobs.com", "lilly", site)
-
-    section("MORE ATS HUNTS: J&J / AECOM / Jacobs / KPMG / EY / GM")
-    for label, url in [
-        ("jnj", "https://www.careers.jnj.com/en"),
-        ("aecom", "https://aecom.jobs/"),
-        ("jacobs", "https://careers.jacobs.com/en_US/careers"),
-        ("kpmg", "https://www.kpmguscareers.com/"),
-        ("ey", "https://careers.ey.com/ey/search/"),
-        ("gm", "https://search-careers.gm.com/en/jobs/"),
-    ]:
-        show(label, lambda l=label, u=url: hunt(l, u))
+    section("EY successfactors e2e")
+    show("ey", lambda: run_adapter("successfactors", sources.fetch_successfactors,
+                                   {"name": "EY", "sf_base": "https://careers.ey.com/ey"}))
 
 
 if __name__ == "__main__":
