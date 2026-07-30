@@ -86,48 +86,56 @@ def sf_csb(base, label):
 
 
 def main():
-    # 404 "Endpoint '/search' does not exist" => auth is fine, the path is
-    # stale. Find the current one empirically instead of guessing in prod.
+    # /estimated-salary, /job-details, /company-job-salary => 200.
+    # /search and /search-filters => 404 "does not exist".
+    # Either the search endpoint was renamed, or the subscribed plan excludes
+    # it (RapidAPI reports out-of-plan routes as 404). Settle it.
     import os
-    section("JSEARCH endpoint discovery")
+    section("JSEARCH: plan headers from a WORKING endpoint")
     key = os.environ.get("JSEARCH_API_KEY")
     if not key:
-        print("  no key visible"); return
+        print("  no key"); return
     H = {"X-RapidAPI-Key": key, "X-RapidAPI-Host": "jsearch.p.rapidapi.com"}
     base = "https://jsearch.p.rapidapi.com"
+    def hdrs():
+        r = requests.get(base + "/job-details", params={"job_id": "x"},
+                         headers=H, timeout=T)
+        keep = {k: v for k, v in r.headers.items()
+                if any(t in k.lower() for t in
+                       ("ratelimit", "quota", "plan", "subscription", "tier",
+                        "requests"))}
+        print(f"  /job-details {r.status_code}; plan/quota headers:")
+        for k, v in sorted(keep.items()):
+            print(f"    {k}: {v}")
+        if not keep:
+            print("    (none exposed)")
+    show("headers", hdrs)
 
-    def hit(path, params=None):
+    section("JSEARCH: exhaustive search-path sweep")
+    paths = ["/jobs", "/job", "/jobs-search", "/find-jobs", "/list-jobs",
+             "/search-job", "/searchjobs", "/job/search", "/v1/job-search",
+             "/v2/search-jobs", "/search/jobs", "/api/jobs", "/query",
+             "/jobs/list", "/jobsearch", "/job-search-v2", "/search_v2",
+             "/v3/search"]
+    found = []
+    for p in paths:
         try:
-            r = requests.get(base + path, params=params or {}, headers=H, timeout=T)
+            r = requests.get(base + p, params={"query": "unifier", "country": "us"},
+                             headers=H, timeout=T)
+            if r.status_code != 404:
+                found.append((p, r.status_code, r.text[:160]))
+                print(f"  {p:22s} {r.status_code}  <-- NOT 404")
         except Exception as e:
-            print(f"  {path:26s} EXC {type(e).__name__}"); return
-        body = r.text[:200]
-        if key in body:
-            body = body.replace(key, "<REDACTED>")
-        marker = ""
-        if r.ok:
-            try:
-                d = r.json()
-                n = len(d.get("data") or []) if isinstance(d, dict) else 0
-                marker = f"  <-- OK status={d.get('status')} data={n}"
-            except Exception:
-                marker = "  <-- OK (non-json)"
-        print(f"  {path:26s} {r.status_code}{marker}")
-        if not r.ok:
-            print(f"      {body!r}")
+            print(f"  {p:22s} EXC {type(e).__name__}")
+    print(f"  swept {len(paths)} paths; non-404: {len(found)}")
 
-    # root + documented-ish siblings first: whichever answers tells us the
-    # API is alive and which family of paths is current
-    for p in ["/", "/search", "/v1/search", "/v2/search", "/search-jobs",
-              "/job-search", "/jobs/search", "/api/search", "/api/v1/search"]:
-        hit(p, {"query": "unifier", "country": "us"})
-
-    section("JSEARCH sibling endpoints (confirm which exist)")
-    hit("/search-filters", {"query": "unifier", "country": "us"})
-    hit("/estimated-salary", {"job_title": "engineer", "location": "new york",
-                              "location_type": "ANY"})
-    hit("/job-details", {"job_id": "test"})
-    hit("/company-job-salary", {"company": "amazon", "job_title": "engineer"})
+    section("JSEARCH: POST /search (in case the verb changed)")
+    def post_search():
+        r = requests.post(base + "/search",
+                          json={"query": "unifier", "country": "us"},
+                          headers=H, timeout=T)
+        print(f"  POST /search -> {r.status_code} body={r.text[:160]!r}")
+    show("post", post_search)
 
 
 if __name__ == "__main__":
