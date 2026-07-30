@@ -184,6 +184,50 @@ def fetch_generic_page(co, query):
     return [], True, None
 
 
+def fetch_amazon_jobs(co, query):
+    """amazon.jobs public search JSON. Full-text over the posting body, and a
+    nonsense query returns 0 hits (verified 2026-07-30), so no echo guard is
+    needed. Covers AWS/GES data-center construction roles."""
+    out, seen = [], set()
+    for q in (query, "Primavera"):
+        try:
+            r = requests.get("https://www.amazon.jobs/en/search.json",
+                             params={"base_query": q, "result_limit": 100,
+                                     "country": "USA"},
+                             headers=UA, timeout=TIMEOUT)
+            r.raise_for_status()
+            jobs = r.json().get("jobs", [])
+        except Exception:
+            return out, False, None
+        for j in jobs:
+            path = j.get("job_path")
+            if not path or path in seen:
+                continue
+            seen.add(path)
+            desc = "\n\n".join(_clean_html(j.get(k)) or "" for k in
+                               ("description", "basic_qualifications",
+                                "preferred_qualifications")).strip() or None
+            loc = j.get("location") or ", ".join(
+                x for x in [j.get("city"), j.get("state")] if x) or None
+            out.append({
+                "company": co["name"], "title": j.get("title"),
+                "location": loc,
+                "url": f"https://www.amazon.jobs{path}",
+                "posted_date": j.get("posted_date"), "description": desc,
+                "search_matched": desc is None,
+            })
+    inventory = None
+    try:
+        inv = requests.get("https://www.amazon.jobs/en/search.json",
+                           params={"base_query": "", "result_limit": 1},
+                           headers=UA, timeout=TIMEOUT)
+        if inv.ok:
+            inventory = inv.json().get("hits")
+    except Exception:
+        pass
+    return out, True, inventory
+
+
 def fetch_successfactors(co, query):
     """SuccessFactors Career Site Builder (e.g. Amtrak): server-rendered
     keyword search. QUIRK: a no-match search silently falls back to listing
@@ -554,6 +598,7 @@ DIRECT_ADAPTERS = {
     "meta_graphql": fetch_meta_graphql,
     "smartrecruiters": fetch_smartrecruiters,
     "successfactors": fetch_successfactors,
+    "amazon_jobs": fetch_amazon_jobs,
     "avature_feed": fetch_avature_feed,
     "phenom": fetch_phenom,
 }

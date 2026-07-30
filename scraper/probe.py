@@ -85,122 +85,54 @@ def sf_csb(base, label):
 
 
 def main():
-    # ================= NEW CANDIDATES: public job APIs =================
-    section("AMAZON amazon.jobs public JSON")
-    def amazon(q):
-        r = requests.get("https://www.amazon.jobs/en/search.json",
-                         params={"base_query": q, "result_limit": 10},
-                         headers=BROWSER_UA, timeout=T)
-        if r.ok and "json" in (r.headers.get("content-type") or ""):
-            d = r.json()
-            hits = d.get("jobs", [])
-            print(f"  q={q!r} -> {r.status_code} hits={d.get('hits')} "
-                  f"first={[j.get('title') for j in hits[:3]]}")
-        else:
-            print(f"  q={q!r} -> {r.status_code} ctype={r.headers.get('content-type')} "
-                  f"body[:120]={r.text[:120]!r}")
-    for q in ("unifier", "primavera", "zzqnope999"):
-        show(q, lambda q=q: amazon(q))
+    section("AMAZON adapter e2e")
+    show("amazon", lambda: run_adapter("amazon_jobs", sources.fetch_amazon_jobs,
+                                       {"name": "Amazon"}))
 
-    section("MICROSOFT gcs careers API")
-    def msft(q):
-        r = requests.get("https://gcsservices.careers.microsoft.com/search/api/v1/search",
-                         params={"q": q, "l": "en_us", "pg": 1, "pgSz": 20,
-                                 "o": "Relevance", "flt": "true"},
-                         headers=BROWSER_UA, timeout=T)
-        if r.ok and "json" in (r.headers.get("content-type") or ""):
-            res = (r.json().get("operationResult") or {}).get("result") or {}
-            jobs = res.get("jobs", [])
-            print(f"  q={q!r} -> total={res.get('totalJobs')} "
-                  f"first={[j.get('title') for j in jobs[:3]]}")
-        else:
-            print(f"  q={q!r} -> {r.status_code} ctype={r.headers.get('content-type')}")
-    for q in ("unifier", "primavera", "zzqnope999"):
-        show(q, lambda q=q: msft(q))
+    section("NEW WORKDAY configs e2e (does the unifier search yield?)")
+    for name, host, tenant, site in [
+        ("NVIDIA", "nvidia.wd5.myworkdayjobs.com", "nvidia", "NVIDIAExternalCareerSite"),
+        ("Micron", "micron.wd1.myworkdayjobs.com", "micron", "External"),
+        ("Intel", "intel.wd1.myworkdayjobs.com", "intel", "External"),
+        ("Pfizer", "pfizer.wd1.myworkdayjobs.com", "pfizer", "PfizerCareers"),
+        ("PwC", "pwc.wd3.myworkdayjobs.com", "pwc", "Global_Experienced_Careers"),
+    ]:
+        show(name, lambda n=name, h=host, t=tenant, s=site: run_adapter(
+            f"workday:{n}", sources.fetch_workday,
+            {"name": n, "workday_host": h, "workday_tenant": t, "workday_site": s}))
 
-    section("APPLE jobs API")
-    def apple(q):
-        r = requests.post("https://jobs.apple.com/api/role/search",
-                          json={"query": q, "filters": {}, "page": 1,
-                                "locale": "en-us", "sort": "relevance"},
-                          headers={**BROWSER_UA, "Content-Type": "application/json"},
-                          timeout=T)
-        print(f"  q={q!r} -> {r.status_code} ctype={r.headers.get('content-type')} "
-              f"body[:180]={r.text[:180]!r}")
+    section("NORTHWELL findly ECHO CONTROL (unifier=15 may be query echo)")
+    def findly(q):
+        r = get(f"https://northwell.site.findly.com/?s={q}")
+        low = r.text.casefold()
+        print(f"    q={q!r} len={len(r.text)} echoes={low.count(q.lower())} "
+              f"unifier={low.count('unifier')}")
     for q in ("unifier", "zzqnope999"):
-        show(q, lambda q=q: apple(q))
+        show(q, lambda q=q: findly(q))
 
-    section("GOOGLE careers API (currently-blind generic_page)")
-    for u in ["https://careers.google.com/api/v3/search/?q=unifier",
-              "https://www.google.com/about/careers/applications/api/v3/search/?q=unifier",
-              "https://careers.google.com/api/v2/jobs/search/?q=unifier"]:
-        show(u, lambda u=u: print(f"    body[:200]={get(u).text[:200]!r}"))
+    section("ELI LILLY ats hunt (confirmed Unifier user, tenant unknown)")
+    def hunt(label, url):
+        r = get(url)
+        links = sorted(set(re.findall(
+            r'https?://[^"\'\s]*(?:myworkdayjobs|myworkdaysite|icims|taleo|'
+            r'successfactors|phenom|eightfold|avature|oraclecloud|brassring)'
+            r'[^"\'\s]*', r.text)))[:8]
+        print(f"    {label}: {links}")
+    show("careers.lilly.com", lambda: hunt("lilly", "https://careers.lilly.com/us/en"))
+    for site in ["LLY_External", "lillycareers", "LillyCareers", "Lilly_Careers",
+                 "EliLilly", "lly"]:
+        cxs("lilly.wd5.myworkdayjobs.com", "lilly", site)
 
-    # ================= NEW CANDIDATES: Workday tenants =================
-    section("WORKDAY: new tier-A/B candidates")
-    for host, tenant, sites in [
-        # pharma / life sciences (huge capital programs, Lilly confirmed Unifier)
-        ("lilly.wd5.myworkdayjobs.com", "lilly", ["LLY", "lilly", "External"]),
-        ("pfizer.wd1.myworkdayjobs.com", "pfizer", ["PfizerCareers", "External"]),
-        ("jnj.wd5.myworkdayjobs.com", "jnj", ["jnjcareers", "External"]),
-        # semis / tech infra
-        ("nvidia.wd5.myworkdayjobs.com", "nvidia",
-         ["NVIDIAExternalCareerSite", "External"]),
-        ("intel.wd1.myworkdayjobs.com", "intel", ["External", "IntelCareers"]),
-        ("micron.wd1.myworkdayjobs.com", "micron", ["External", "MicronCareers"]),
-        ("gm.wd5.myworkdayjobs.com", "gm", ["External", "GM"]),
-        # elite consulting (Unifier implementers)
-        ("kpmg.wd12.myworkdayjobs.com", "kpmg", ["External", "KPMGCareers"]),
-        ("ey.wd3.myworkdayjobs.com", "ey", ["EY_Careers", "External"]),
-        ("pwc.wd3.myworkdayjobs.com", "pwc",
-         ["Global_Experienced_Careers", "External"]),
-        # E&C still unresolved
-        ("aecom.wd1.myworkdayjobs.com", "aecom", ["AECOM_External", "aecom"]),
-        ("jacobs.wd1.myworkdayjobs.com", "jacobs", ["External", "Jacobs"]),
+    section("MORE ATS HUNTS: J&J / AECOM / Jacobs / KPMG / EY / GM")
+    for label, url in [
+        ("jnj", "https://www.careers.jnj.com/en"),
+        ("aecom", "https://aecom.jobs/"),
+        ("jacobs", "https://careers.jacobs.com/en_US/careers"),
+        ("kpmg", "https://www.kpmguscareers.com/"),
+        ("ey", "https://careers.ey.com/ey/search/"),
+        ("gm", "https://search-careers.gm.com/en/jobs/"),
     ]:
-        for site in sites:
-            cxs(host, tenant, site)
-
-    # ================= FIX ATTEMPTS: broken roster =================
-    section("NORTHWELL findly (site search hinted northwell.site.findly.com)")
-    for u in ["https://northwell.site.findly.com/?s=unifier",
-              "https://jobs.northwell.edu/job-search-results/?keyword=primavera"]:
-        def nw(u=u):
-            r = get(u)
-            low = r.text.casefold()
-            print(f"    unifier={low.count('unifier')} primavera={low.count('primavera')}")
-        show(u, nw)
-
-    section("TURNER CONSTRUCTION csod public API")
-    for u in ["https://turnerconstruction.csod.com/services/x/career-site/v1/search"
-              "?careerSiteId=1&pageSize=25&keyword=unifier",
-              "https://turnerconstruction.csod.com/services/x/career-site/v2/search"
-              "?career_site_id=1&keyword=unifier"]:
-        show(u, lambda u=u: print(f"    body[:220]={get(u).text[:220]!r}"))
-
-    section("LA METRO / MARTA / PANYNJ / NYPA alt boards")
-    for label, u in [
-        ("lametro NEOGOV api", "https://www.governmentjobs.com/careers/lametro/jobs.json?keyword=unifier"),
-        ("marta icims rss", "https://careers-martatransit.icims.com/jobs/search?ss=1&searchKeyword=unifier&mobile=false&format=rss"),
-        ("panynj jobapscloud", "https://www.jobapscloud.com/panynj/"),
-        ("panynj careers", "https://www.panynj.gov/corporate/en/careers.html"),
-        ("nypa careers alt", "https://www.nypa.gov/careers/career-opportunities"),
-    ]:
-        show(label, lambda u=u, label=label: print(f"    {label}: body[:180]={get(u).text[:180]!r}"))
-
-    section("WSP / BURNS MCD: find a real job link (gives the Workday site name)")
-    for label, u in [
-        ("wsp jobs subdomain", "https://jobs.wsp.com/"),
-        ("wsp careers alt", "https://www.wsp.com/en-US/careers"),
-        ("burnsmcd careers", "https://www.burnsmcd.com/careers"),
-    ]:
-        def hunt(u=u, label=label):
-            r = get(u)
-            links = sorted(set(re.findall(
-                r'https?://[^"\'\s]*(?:myworkdayjobs|myworkdaysite|icims|taleo|'
-                r'successfactors|phenom|eightfold|avature)[^"\'\s]*', r.text)))[:8]
-            print(f"    {label} ATS links: {links}")
-        show(label, hunt)
+        show(label, lambda l=label, u=url: hunt(l, u))
 
 
 if __name__ == "__main__":

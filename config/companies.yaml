@@ -38,6 +38,57 @@ companies:
     enabled: true
     note: needs expand=all; "unifier" keyword fuzzy-matches whole site so we
       search "primavera" (27 real matches) and let the tier filter decide.
+  - name: Amazon
+    tier: A
+    ats: amazon_jobs
+    enabled: true
+    note: public search.json, full-text; nonsense query returns 0 hits so no
+      echo guard needed (verified 2026-07-30 — "unifier" hit a GES/D&C
+      Construction Cost Manager, "primavera" hit 20). AWS + Global Engineering
+      Services run massive data-center capital programs.
+  - name: NVIDIA
+    tier: A
+    ats: workday
+    workday_host: nvidia.wd5.myworkdayjobs.com
+    workday_tenant: nvidia
+    workday_site: NVIDIAExternalCareerSite
+    enabled: true
+    note: cxs verified 2026-07-30 (inventory 2000).
+  - name: Micron
+    tier: A
+    ats: workday
+    workday_host: micron.wd1.myworkdayjobs.com
+    workday_tenant: micron
+    workday_site: External
+    enabled: true
+    note: cxs verified 2026-07-30 (inventory 2745). Multi-fab US buildout
+      (incl. the NY DRAM fab Bechtel is EPC on) — heavy project-controls hiring.
+  - name: Intel
+    tier: A
+    ats: workday
+    workday_host: intel.wd1.myworkdayjobs.com
+    workday_tenant: intel
+    workday_site: External
+    enabled: true
+    note: cxs verified 2026-07-30 (inventory 640). Fab construction programs.
+  - name: Pfizer
+    tier: A
+    ats: workday
+    workday_host: pfizer.wd1.myworkdayjobs.com
+    workday_tenant: pfizer
+    workday_site: PfizerCareers
+    enabled: true
+    note: cxs verified 2026-07-30 (inventory 560). Pharma capital projects are
+      a known Unifier vertical.
+  - name: PwC
+    tier: A
+    ats: workday
+    workday_host: pwc.wd3.myworkdayjobs.com
+    workday_tenant: pwc
+    workday_site: Global_Experienced_Careers
+    enabled: true
+    note: cxs verified 2026-07-30 (inventory 4578). Big-4 capital-projects
+      advisory implements Unifier/PMIS.
   - name: Accenture
     tier: A
     ats: workday
