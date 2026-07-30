@@ -89,6 +89,34 @@ companies:
     enabled: true
     note: cxs verified 2026-07-30 (inventory 4578). Big-4 capital-projects
       advisory implements Unifier/PMIS.
+  - name: Eli Lilly
+    tier: A
+    ats: phenom
+    phenom_host: careers.lilly.com
+    enabled: true
+    note: CONFIRMED Unifier user — their Project Controls Lead posting requires
+      Oracle Unifier + P6. Phenom (same adapter as Bechtel); verified
+      2026-07-30, unifier search returned 3 US project-controls roles
+      (Huntsville / Indianapolis / Houston). Massive pharma capex buildout.
+  - name: Johnson & Johnson
+    tier: A
+    ats: workday
+    workday_host: jj.wd5.myworkdayjobs.com
+    workday_tenant: jj
+    workday_site: JJ
+    enabled: true
+    note: cxs verified 2026-07-30 (inventory 1881); 0 unifier hits that day —
+      monitor is live, just no matches yet. Tenant is jj (not jnj), found via
+      careers.jnj.com links.
+  - name: EY
+    tier: A
+    ats: successfactors
+    sf_base: https://careers.ey.com/ey
+    enabled: false
+    note: search works (42 hits) but the detail fetch finds no description
+      node on their SF markup, so every hit would arrive description-less and
+      flood triage with non-US noise (verified 2026-07-30). Needs an
+      EY-specific description selector before enabling.
   - name: Accenture
     tier: A
     ats: workday
@@ -207,8 +235,9 @@ companies:
     ats: generic_page
     url: https://turnerconstruction.csod.com/ux/ats/careersite/1/home?c=turnerconstruction
     enabled: false
-    note: Cornerstone (csod.com) SPA, careersites 1-4 — JS-rendered, no
-      scriptable endpoint found 2026-07-20. Needs a csod adapter or discovery.
+    note: 'FINAL (2026-07-30): Cornerstone (csod.com) SPA. Their career-site
+      search API (v1 and v2) answers 401 "no Authorization header found" —
+      it requires a token, so there is no public endpoint. Rely on discovery.'
   - name: Port Authority NY/NJ
     tier: B
     ats: workday
@@ -256,9 +285,11 @@ companies:
     ats: generic_page
     url: https://jobs.northwell.edu/
     enabled: false
-    note: NOT Phenom — WordPress; search form posts to /job-search-results/
-      (?keyword=) but that path 403s scripts while the homepage 200s
-      (verified 2026-07-18). Rely on discovery.
+    note: 'FINAL (2026-07-30): NOT Phenom — WordPress; /job-search-results/
+      403s scripts. Their findly mirror (northwell.site.findly.com/?s=) does
+      answer, but it ECHOES the query 15x whether or not anything matches — a
+      nonsense query scored identically, so it is blind, not a source. Rely on
+      discovery.'
   - name: Mass General Brigham
     tier: B
     ats: workday

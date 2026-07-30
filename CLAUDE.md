@@ -58,7 +58,29 @@ Actions log, iterate. `run_adapter()` exercises a real adapter end-to-end
 before trusting it in the daily run. Keep `main()` empty between
 investigations.
 
-## Current state (update this section when you change it) — as of 2026-07-20
+## Current state (update this section when you change it) — as of 2026-07-30
+
+- Tier meaning changed: company tier is now GENERAL-MARKET PRESTIGE/COMP
+  (see companies.yaml header), and it leads the sort inside each keyword
+  section — an elite employer's desc-mention outranks a boutique's
+  Unifier-titled role, by owner preference.
+- Tier-A expansion (probe rounds 11-13), all endpoint-verified: Amazon (new
+  `amazon_jobs` adapter — public search.json, full-text, nonsense query
+  returns 0 so no echo guard needed), Eli Lilly (phenom; CONFIRMED Unifier
+  user, 3 US project-controls roles on first run), Johnson & Johnson
+  (workday jj/JJ), Pfizer, NVIDIA, Intel, Micron, PwC. 28 of 43 enabled.
+- Gotcha: Workday's fuzzy searchText makes NVIDIA/Intel/Pfizer return
+  unrelated postings for "unifier" (NVIDIA matches "Unified Memory"). The
+  keyword tier filter drops them — expected noise, not breakage.
+- Rejected after verification (do not re-add without fixing first): EY
+  (SF search works but description selector doesn't match their markup →
+  would flood triage), Northwell findly mirror (echoes the query 15x for
+  ANY input — blind), Turner Construction csod API (401, token required).
+- ALWAYS run an echo/negative control before trusting a keyword search:
+  query a nonsense string and confirm the result differs. Round 12 caught
+  Northwell this way after round 11 looked like a hit.
+
+## Previous state — as of 2026-07-20
 
 - NYC-focused roster expansion (probe rounds 5-10): ADDED & VERIFIED —
   City of New York (cityjobs.nyc.gov, generic_page with a jid-href

@@ -85,20 +85,8 @@ def sf_csb(base, label):
 
 
 def main():
-    section("ELI LILLY phenom e2e (confirmed Unifier user)")
-    show("lilly", lambda: run_adapter("phenom", sources.fetch_phenom,
-                                      {"name": "Eli Lilly",
-                                       "phenom_host": "careers.lilly.com"}))
-
-    section("J&J workday e2e")
-    cxs("jj.wd5.myworkdayjobs.com", "jj", "JJ")
-    show("jnj", lambda: run_adapter("workday", sources.fetch_workday, {
-        "name": "Johnson & Johnson", "workday_host": "jj.wd5.myworkdayjobs.com",
-        "workday_tenant": "jj", "workday_site": "JJ"}))
-
-    section("EY successfactors e2e")
-    show("ey", lambda: run_adapter("successfactors", sources.fetch_successfactors,
-                                   {"name": "EY", "sf_base": "https://careers.ey.com/ey"}))
+    section("no active probes")
+    print("  write probes here, push, dispatch the probe workflow")
 
 
 if __name__ == "__main__":
