@@ -60,6 +60,21 @@ and it shows "Not listed". Give `tier:` explicitly when no description was
 copied, since the keyword filter would otherwise see only the title. Seeds are
 "seen" every run, so they never age out — delete the entry when it closes.
 
+## Key-free aggregators: searched, none viable (2026-07-30)
+
+Hunted a zero-key, zero-human route for the Cloudflare-walled employers
+(MTA et al). All dead — do not re-run without a new candidate:
+- The Muse public API: `q` is not real full-text; "unifier" returns LPN /
+  PCB Technician / Retail Merchandiser.
+- governmentjobs.com/jobs?keyword=: stems to "unif" — hits are Unified
+  Sports Coach / Reunification / Unified Family Court. No MTA (not NEOGOV).
+- jobs.apta.com: reachable, but "unifier" occurrences == query-echo count,
+  i.e. no real Unifier postings; also has an all-jobs fallback on no match.
+- Careerjet (403 without affiliate id), careersingovernment (0),
+  transitjobs (404), statejobs.ny.gov (404).
+The coded JSearch/Adzuna/Jooble adapters remain the only automated route,
+and each needs one free API key in repo secrets.
+
 ## Diagnosing endpoints (the probe workflow)
 
 Claude-session sandboxes usually can't reach career sites (proxy policy), but

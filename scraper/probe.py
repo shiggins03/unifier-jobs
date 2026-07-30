@@ -86,70 +86,8 @@ def sf_csb(base, label):
 
 
 def main():
-    # Two key-free leads from round 15. Both need the echo control before
-    # being trusted, then the real job rows + employer links extracted.
-    section("APTA transit job board (jobs.apta.com)")
-    def apta(q):
-        r = requests.get("https://jobs.apta.com/jobs/", params={"keywords": q},
-                         headers=BROWSER_UA, timeout=T)
-        low = r.text.casefold()
-        print(f"  q={q!r}: {r.status_code} len={len(r.text)} "
-              f"echo={low.count(q.casefold())} unifier={low.count('unifier')} "
-              f"mta={low.count('mta')}")
-        return r
-    show("unifier", lambda: apta("unifier"))
-    show("primavera", lambda: apta("primavera"))
-    show("control", lambda: apta("zzqnope999"))
-
-    def apta_rows():
-        r = apta("unifier")
-        soup = BeautifulSoup(r.text, "html.parser")
-        # dump candidate row containers so we can pick a stable selector
-        for sel in ["a[href*='/job/']", ".bti-job-title a", "h3 a", "article a"]:
-            hits = soup.select(sel)
-            if hits:
-                print(f"  selector {sel!r} -> {len(hits)} matches")
-                for a in hits[:6]:
-                    print(f"    {a.get_text(' ', strip=True)[:70]!r} -> {a.get('href')}")
-                break
-        # any structured data?
-        ld = re.findall(r'<script[^>]+application/ld\+json[^>]*>(.*?)</script>',
-                        r.text, re.S)
-        print(f"  JSON-LD blocks: {len(ld)}")
-        for blk in ld[:2]:
-            print(f"    {blk.strip()[:220]!r}")
-    show("apta rows", apta_rows)
-
-    section("GOVERNMENTJOBS cross-agency (governmentjobs.com/jobs?keyword=)")
-    def gj(q):
-        r = requests.get("https://www.governmentjobs.com/jobs",
-                         params={"keyword": q}, headers=BROWSER_UA, timeout=T)
-        low = r.text.casefold()
-        print(f"  q={q!r}: {r.status_code} len={len(r.text)} "
-              f"echo={low.count(q.casefold())} unifier={low.count('unifier')}")
-        return r
-    show("unifier", lambda: gj("unifier"))
-    show("control", lambda: gj("zzqnope999"))
-
-    def gj_rows():
-        r = gj("unifier")
-        soup = BeautifulSoup(r.text, "html.parser")
-        for sel in ["a[href*='/jobs/']", "a[href*='/careers/']", ".job-title a",
-                    "h3 a", "[class*=job] a"]:
-            hits = soup.select(sel)
-            if len(hits) > 3:
-                print(f"  selector {sel!r} -> {len(hits)} matches")
-                for a in hits[:8]:
-                    t = a.get_text(" ", strip=True)[:60]
-                    if t:
-                        print(f"    {t!r} -> {a.get('href')}")
-                break
-        ld = re.findall(r'<script[^>]+application/ld\+json[^>]*>(.*?)</script>',
-                        r.text, re.S)
-        print(f"  JSON-LD blocks: {len(ld)}")
-        for blk in ld[:2]:
-            print(f"    {blk.strip()[:300]!r}")
-    show("gj rows", gj_rows)
+    section("no active probes")
+    print("  write probes here, push, dispatch the probe workflow")
 
 
 if __name__ == "__main__":
