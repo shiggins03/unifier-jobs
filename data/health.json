@@ -144,7 +144,9 @@
     "fail_streak": 0,
     "last_run": "2026-07-17"
   },
-  "_warnings": [],
+  "_warnings": [
+    "workday:PwC: zero results for 3+ runs (was returning data)"
+  ],
   "workday:Consertus": {
     "counts": [
       3,
@@ -195,7 +197,7 @@
   },
   "avature_feed:Deloitte": {
     "counts": [
-      2,
+      1,
       1,
       1,
       1,
@@ -206,19 +208,19 @@
   },
   "phenom:Bechtel": {
     "counts": [
-      24,
+      23,
       23,
       23,
       23,
       23
     ],
     "fail_streak": 0,
-    "inventory": 1028,
+    "inventory": 1034,
     "last_run": "2026-07-30"
   },
   "smartrecruiters:Turner & Townsend": {
     "counts": [
-      25,
+      32,
       32,
       32,
       32,
@@ -271,7 +273,7 @@
       0,
       0
     ],
-    "fail_streak": 0,
+    "fail_streak": 1,
     "inventory": 11,
     "last_run": "2026-07-30"
   },
@@ -291,6 +293,7 @@
     "counts": [
       5,
       5,
+      5,
       5
     ],
     "fail_streak": 0,
@@ -299,6 +302,7 @@
   },
   "workday:NVIDIA": {
     "counts": [
+      0,
       0,
       0,
       0
@@ -311,6 +315,7 @@
     "counts": [
       0,
       0,
+      0,
       0
     ],
     "fail_streak": 0,
@@ -321,50 +326,62 @@
     "counts": [
       0,
       0,
+      0,
       0
     ],
     "fail_streak": 0,
-    "inventory": 641,
+    "inventory": 642,
     "last_run": "2026-07-30"
   },
   "workday:Pfizer": {
     "counts": [
       0,
       0,
+      0,
       0
     ],
     "fail_streak": 0,
-    "inventory": 561,
+    "inventory": 562,
     "last_run": "2026-07-30"
   },
   "workday:PwC": {
     "counts": [
       3,
       0,
+      0,
       0
     ],
     "fail_streak": 0,
-    "inventory": 4589,
+    "inventory": 4629,
     "last_run": "2026-07-30"
   },
   "phenom:Eli Lilly": {
     "counts": [
       3,
       3,
+      3,
       3
     ],
     "fail_streak": 0,
-    "inventory": 696,
+    "inventory": 691,
     "last_run": "2026-07-30"
   },
   "workday:Johnson & Johnson": {
     "counts": [
       0,
       0,
+      0,
       0
     ],
     "fail_streak": 0,
-    "inventory": 1886,
+    "inventory": 1894,
+    "last_run": "2026-07-30"
+  },
+  "seed:MTA": {
+    "counts": [
+      1
+    ],
+    "fail_streak": 0,
     "last_run": "2026-07-30"
   }
 }
