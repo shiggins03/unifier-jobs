@@ -147,7 +147,7 @@
   "_warnings": [],
   "workday:Consertus": {
     "counts": [
-      2,
+      3,
       3,
       3,
       3,
@@ -195,8 +195,8 @@
   },
   "avature_feed:Deloitte": {
     "counts": [
-      1,
       2,
+      1,
       1,
       1,
       1
@@ -207,19 +207,19 @@
   "phenom:Bechtel": {
     "counts": [
       24,
-      24,
+      23,
       23,
       23,
       23
     ],
     "fail_streak": 0,
-    "inventory": 1025,
+    "inventory": 1028,
     "last_run": "2026-07-30"
   },
   "smartrecruiters:Turner & Townsend": {
     "counts": [
-      24,
       25,
+      32,
       32,
       32,
       32
@@ -277,7 +277,7 @@
   },
   "successfactors:Amtrak": {
     "counts": [
-      4,
+      3,
       3,
       3,
       3,
@@ -290,6 +290,7 @@
   "amazon_jobs:Amazon": {
     "counts": [
       5,
+      5,
       5
     ],
     "fail_streak": 0,
@@ -298,6 +299,7 @@
   },
   "workday:NVIDIA": {
     "counts": [
+      0,
       0,
       0
     ],
@@ -308,6 +310,7 @@
   "workday:Micron": {
     "counts": [
       0,
+      0,
       0
     ],
     "fail_streak": 0,
@@ -316,6 +319,7 @@
   },
   "workday:Intel": {
     "counts": [
+      0,
       0,
       0
     ],
@@ -326,6 +330,7 @@
   "workday:Pfizer": {
     "counts": [
       0,
+      0,
       0
     ],
     "fail_streak": 0,
@@ -335,14 +340,16 @@
   "workday:PwC": {
     "counts": [
       3,
+      0,
       0
     ],
     "fail_streak": 0,
-    "inventory": 4599,
+    "inventory": 4589,
     "last_run": "2026-07-30"
   },
   "phenom:Eli Lilly": {
     "counts": [
+      3,
       3,
       3
     ],
@@ -353,10 +360,11 @@
   "workday:Johnson & Johnson": {
     "counts": [
       0,
+      0,
       0
     ],
     "fail_streak": 0,
-    "inventory": 1884,
+    "inventory": 1886,
     "last_run": "2026-07-30"
   }
 }
