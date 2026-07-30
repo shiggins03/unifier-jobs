@@ -1,0 +1,23 @@
+Line of Service
+Advisory
+Industry/Sector
+Technology
+Specialism
+Advisory - Other
+Management Level
+Senior Associate
+Job Description & Summary
+PwC is seeking a PMIS Business Analyst to support large-scale capital projects and infrastructure programs in designing and implementing enterprise Project Management Information Systems (PMIS).
+The role focuses on aligning project controls, PMO governance, and digital platforms (e.g., Primavera Unifier, P6, ERP integrations) to enable effective cost, schedule, risk, and contract management across complex portfolios.
+In product management, you will be the general manager of commercial and internal products. You will sit at the intersection of the business, user experience, and the technologies that solve our customer and end-user problems; confirming they meet market demands and drive business growth. You will design, develop and manage activities for a specific product or group of products from product definition and planning through production, release, and end of life. Your involvement will last throughout all stages of a product’s lifecycle including modifications, upgrades, maintenance of the product or product line. For commercial products, it also includes commercialization, go-to-market planning, sales, and other key business support activities.
+Key Responsibilities
+Business Analysis & Requirements
+      •     Elicit, analyze, and document business requirements through workshops, interviews, and process reviews
+      •     Translate business needs into functional and non-functional system requirements
+      •     Develop and maintain documentation such as BRDs, SRS, user stories, process maps, and solution design documents
+      •     Perform gap analysis between current and future-state processes
+PMIS Design & Configuration
+      •     Support and/or lead configuration of PMIS platforms (e.g., Primavera Unifier, P6, Aconex, CostOS)
+      •     Design workflows, business processes, cost templates, and approval structures
+
+[Truncated for this view — full text at the posting link]

@@ -1,0 +1,35 @@
+Line of Service
+Advisory
+Industry/Sector
+Technology
+Specialism
+Advisory - Other
+Management Level
+Associate
+Job Description & Summary
+PwC is seeking a PMIS Business Analyst to support large-scale capital projects and infrastructure programs in designing and implementing enterprise Project Management Information Systems (PMIS).
+The role focuses on aligning project controls, PMO governance, and digital platforms (e.g., Primavera Unifier, P6, ERP integrations) to enable effective cost, schedule, risk, and contract management across complex portfolios.
+Key Responsibilities
+Business Analysis & Requirements
+      •     Elicit, analyze, and document business requirements through workshops, interviews, and process reviews
+      •     Translate business needs into functional and non-functional system requirements
+      •     Develop and maintain documentation such as BRDs, SRS, user stories, process maps, and solution design documents
+      •     Perform gap analysis between current and future-state processes
+PMIS Design & Configuration
+      •     Support and/or lead configuration of PMIS platforms (e.g., Primavera Unifier, P6, Aconex, CostOS)
+      •     Design workflows, business processes, cost templates, and approval structures
+      •     Define data structures, forms, and governance frameworks
+      •     Support deployment of PMIS across projects and departments
+System Integration & Data Management
+      •     Coordinate integrations between PMIS and enterprise systems (ERP, scheduling tools, document management systems)
+      •     Support data migration, validation, and quality assurance
+      •     Ensure data accuracy, governance, and compliance standards
+Testing & Deployment
+      •     Develop test scenarios and support system testing
+      •     Lead or support User Acceptance Testing (UAT)
+      •     Manage defect tracking and resolution coordination
+      •     Support go-live activities and stabilization
+Reporting & Performance Insights
+      •     Define a
+
+[Truncated for this view — full text at the posting link]

@@ -24,6 +24,69 @@
       "note": "needs expand=all; \"unifier\" keyword fuzzy-matches whole site so we search \"primavera\" (27 real matches) and let the tier filter decide."
     },
     {
+      "name": "Amazon",
+      "tier": "A",
+      "ats": "amazon_jobs",
+      "enabled": true,
+      "note": "public search.json, full-text; nonsense query returns 0 hits so no echo guard needed (verified 2026-07-30 — \"unifier\" hit a GES/D&C Construction Cost Manager, \"primavera\" hit 20). AWS + Global Engineering Services run massive data-center capital programs."
+    },
+    {
+      "name": "NVIDIA",
+      "tier": "A",
+      "ats": "workday",
+      "enabled": true,
+      "note": "cxs verified 2026-07-30 (inventory 2000)."
+    },
+    {
+      "name": "Micron",
+      "tier": "A",
+      "ats": "workday",
+      "enabled": true,
+      "note": "cxs verified 2026-07-30 (inventory 2745). Multi-fab US buildout (incl. the NY DRAM fab Bechtel is EPC on) — heavy project-controls hiring."
+    },
+    {
+      "name": "Intel",
+      "tier": "A",
+      "ats": "workday",
+      "enabled": true,
+      "note": "cxs verified 2026-07-30 (inventory 640). Fab construction programs."
+    },
+    {
+      "name": "Pfizer",
+      "tier": "A",
+      "ats": "workday",
+      "enabled": true,
+      "note": "cxs verified 2026-07-30 (inventory 560). Pharma capital projects are a known Unifier vertical."
+    },
+    {
+      "name": "PwC",
+      "tier": "A",
+      "ats": "workday",
+      "enabled": true,
+      "note": "cxs verified 2026-07-30 (inventory 4578). Big-4 capital-projects advisory implements Unifier/PMIS."
+    },
+    {
+      "name": "Eli Lilly",
+      "tier": "A",
+      "ats": "phenom",
+      "enabled": true,
+      "note": "CONFIRMED Unifier user — their Project Controls Lead posting requires Oracle Unifier + P6. Phenom (same adapter as Bechtel); verified 2026-07-30, unifier search returned 3 US project-controls roles (Huntsville / Indianapolis / Houston). Massive pharma capex buildout."
+    },
+    {
+      "name": "Johnson & Johnson",
+      "tier": "A",
+      "ats": "workday",
+      "enabled": true,
+      "note": "cxs verified 2026-07-30 (inventory 1881); 0 unifier hits that day — monitor is live, just no matches yet. Tenant is jj (not jnj), found via careers.jnj.com links."
+    },
+    {
+      "name": "EY",
+      "tier": "A",
+      "ats": "successfactors",
+      "enabled": false,
+      "note": "search works (42 hits) but the detail fetch finds no description node on their SF markup, so every hit would arrive description-less and flood triage with non-US noise (verified 2026-07-30). Needs an EY-specific description selector before enabling."
+    },
+    {
       "name": "Accenture",
       "tier": "A",
       "ats": "workday",
@@ -112,7 +175,7 @@
       "tier": "B",
       "ats": "generic_page",
       "enabled": false,
-      "note": "Cornerstone (csod.com) SPA, careersites 1-4 — JS-rendered, no scriptable endpoint found 2026-07-20. Needs a csod adapter or discovery."
+      "note": "FINAL (2026-07-30): Cornerstone (csod.com) SPA. Their career-site search API (v1 and v2) answers 401 \"no Authorization header found\" — it requires a token, so there is no public endpoint. Rely on discovery."
     },
     {
       "name": "Port Authority NY/NJ",
@@ -154,7 +217,7 @@
       "tier": "B",
       "ats": "generic_page",
       "enabled": false,
-      "note": "NOT Phenom — WordPress; search form posts to /job-search-results/ (?keyword=) but that path 403s scripts while the homepage 200s (verified 2026-07-18). Rely on discovery."
+      "note": "FINAL (2026-07-30): NOT Phenom — WordPress; /job-search-results/ 403s scripts. Their findly mirror (northwell.site.findly.com/?s=) does answer, but it ECHOES the query 15x whether or not anything matches — a nonsense query scored identically, so it is blind, not a source. Rely on discovery."
     },
     {
       "name": "Mass General Brigham",
@@ -471,21 +534,6 @@
       "location": "New Albany, Ohio, United States",
       "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296422&jobPipeline=PhenomCareerSite",
       "posted_date": "2026-07-01T14:18:48.996+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "has_desc": true
-    },
-    {
-      "id": "6ac85c0bced38907",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "LOTO - Tagging Authority",
-      "location": "Battle Creek, Michigan, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296964&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-15T15:19:06.160+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -1044,36 +1092,6 @@
       "has_desc": true
     },
     {
-      "id": "069c9449c2b28123",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Lead Field Welding Engineer",
-      "location": "Pecos, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297129&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-20T15:54:38.536+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "has_desc": true
-    },
-    {
-      "id": "bd8eabbb45e3534f",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Construction Automation Specialist",
-      "location": "Houston, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297161&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-21T13:17:35.728+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "has_desc": true
-    },
-    {
       "id": "6005b160abf61af3",
       "kind": "direct",
       "company": "Bechtel",
@@ -1196,21 +1214,6 @@
       "has_desc": true
     },
     {
-      "id": "0aba6533f5d73407",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Instrumentation Field Engineering - Pre-Commissioning",
-      "location": "Port Arthur, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297474&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-27T20:18:29.125+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "has_desc": true
-    },
-    {
       "id": "91119a33edfa85ad",
       "kind": "direct",
       "company": "Bechtel",
@@ -1219,21 +1222,6 @@
       "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297120&jobPipeline=PhenomCareerSite",
       "posted_date": "2026-07-27T19:17:51.676+0000",
       "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "has_desc": true
-    },
-    {
-      "id": "567408d36e24d283",
-      "kind": "direct",
-      "company": "Deloitte",
-      "title": "US E-Consulting Services – Manager – S&T/Strategy/I&RE – Capital Projects (Project Delivery) – FY27 – 354009 – OK",
-      "location": null,
-      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Manager-Project-Delivery/354009",
-      "posted_date": "Fri, 29 May 2026 00:00:00 +0000",
-      "comp": "range is $134,500 to $265,100",
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -1327,9 +1315,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     },
     {
@@ -1344,9 +1330,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     },
     {
@@ -1361,9 +1345,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     },
     {
@@ -1378,9 +1360,7 @@
       "tier": 2,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     },
     {
@@ -1395,9 +1375,7 @@
       "tier": 2,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     },
     {
@@ -1412,9 +1390,7 @@
       "tier": 2,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     },
     {
@@ -1429,9 +1405,7 @@
       "tier": 2,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     },
     {
@@ -1446,9 +1420,7 @@
       "tier": 2,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     },
     {
@@ -1463,9 +1435,7 @@
       "tier": 2,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     },
     {
@@ -1478,6 +1448,176 @@
       "posted_date": "2026-07-29T17:15:59.008Z",
       "comp": null,
       "tier": 2,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "has_desc": true
+    },
+    {
+      "id": "87832dc1c24fd215",
+      "kind": "direct",
+      "company": "Amazon",
+      "title": "Executive Assistant, Amazon Ads - Demand Product ",
+      "location": "US, NY, New York",
+      "url": "https://www.amazon.jobs/en/jobs/10454651/executive-assistant-amazon-ads-demand-product",
+      "posted_date": "June 22, 2026",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "0b8287d0a22b0605",
+      "kind": "direct",
+      "company": "Amazon",
+      "title": "Construction Cost Manager, NA Design & Construction Governance, Global Engineering Services, GEMS D&C, Cost Management",
+      "location": "US, WA, Bellevue",
+      "url": "https://www.amazon.jobs/en/jobs/10436957/construction-cost-manager-na-design-construction-governance-global-engineering-services-gems-d-c-cost-management",
+      "posted_date": "June  2, 2026",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "6178fff094789954",
+      "kind": "direct",
+      "company": "Amazon",
+      "title": "Sr. Schedule Controls Manager, AMER Construction Programs",
+      "location": "US, VA, Herndon",
+      "url": "https://www.amazon.jobs/en/jobs/3199810/sr-schedule-controls-manager-amer-construction-programs",
+      "posted_date": "March  9, 2026",
+      "comp": null,
+      "tier": 2,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "58da84b3f5f7f162",
+      "kind": "direct",
+      "company": "Amazon",
+      "title": "Project Engineer, AWS DC Acquisition & Construction",
+      "location": "US, PA, Fairless Hills",
+      "url": "https://www.amazon.jobs/en/jobs/10459108/project-engineer-aws-dc-acquisition-construction",
+      "posted_date": "June 25, 2026",
+      "comp": null,
+      "tier": 2,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "88c1b9aae863a7dd",
+      "kind": "direct",
+      "company": "PwC",
+      "title": "ETIC, PMIS - Business Analyst - Associate",
+      "location": "Cairo - ETIC",
+      "url": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Experienced_Careers/job/Cairo---ETIC/ETIC--PMIS---Business-Analyst---Associate_726527WD",
+      "posted_date": "Posted 30+ Days Ago",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "aefc029526e4dfce",
+      "kind": "direct",
+      "company": "PwC",
+      "title": "ETIC, PMIS - Business Analyst - Senior Associate",
+      "location": "Cairo - ETIC",
+      "url": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Experienced_Careers/job/Cairo---ETIC/ETIC--PMIS---Business-Analyst---Senior-Associate_726524WD",
+      "posted_date": "Posted 30+ Days Ago",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "a14e1c99674a667a",
+      "kind": "direct",
+      "company": "PwC",
+      "title": "ETIC, PMIS - Business Analyst - Manager",
+      "location": "Cairo - ETIC",
+      "url": "https://pwc.wd3.myworkdayjobs.com/en-US/Global_Experienced_Careers/job/Cairo---ETIC/ETIC--PMIS---Business-Analyst---Manager_707819WD",
+      "posted_date": "Posted 30+ Days Ago",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "c056f1e8c2bf0d15",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Advisor, Project Controls - GFD",
+      "location": "Huntsville, Alabama, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Huntsville-AL/Advisor--Project-Controls---GFD_R-104250/apply",
+      "posted_date": "2026-04-15T20:32:12.447+0000",
+      "comp": "$129,000 - $209,000",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new",
+        "long-posted"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "a82018d7a4a03839",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Associate Director - Project Controls - GFD",
+      "location": "Indianapolis, Indiana, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Indianapolis-IN/Project-Controls-Advisor--Global-Facilities-Delivery_R-95938-1/apply",
+      "posted_date": "2025-11-06T14:17:47.203+0000",
+      "comp": "$117,000 - $171,600",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new",
+        "long-posted"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "e2b09eea06d5a92b",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Project Controls Lead",
+      "location": "Houston, Texas, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Houston-TX/Deputy-Project-Controls-Lead_R-106580-1/apply",
+      "posted_date": "2026-06-04T12:46:46.536+0000",
+      "comp": "$66,000 - $171,600",
+      "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [
@@ -1511,6 +1651,20 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-07-24",
+      "flags": []
+    },
+    {
+      "id": "6ac85c0bced38907",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "LOTO - Tagging Authority",
+      "location": "Battle Creek, Michigan, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296964&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-15T15:19:06.160+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-07-30",
       "flags": []
     },
     {
@@ -1735,6 +1889,62 @@
       "posted_date": null,
       "comp": "salary/hourly range is $135,800.00 – $176,040.00",
       "tier": 2,
+      "status": "gone",
+      "gone_date": "2026-07-30",
+      "flags": []
+    },
+    {
+      "id": "069c9449c2b28123",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Lead Field Welding Engineer",
+      "location": "Pecos, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297129&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-20T15:54:38.536+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-07-30",
+      "flags": []
+    },
+    {
+      "id": "bd8eabbb45e3534f",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Construction Automation Specialist",
+      "location": "Houston, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297161&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-21T13:17:35.728+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-07-30",
+      "flags": []
+    },
+    {
+      "id": "0aba6533f5d73407",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Instrumentation Field Engineering - Pre-Commissioning",
+      "location": "Port Arthur, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297474&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-27T20:18:29.125+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-07-30",
+      "flags": []
+    },
+    {
+      "id": "567408d36e24d283",
+      "kind": "direct",
+      "company": "Deloitte",
+      "title": "US E-Consulting Services – Manager – S&T/Strategy/I&RE – Capital Projects (Project Delivery) – FY27 – 354009 – OK",
+      "location": null,
+      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Manager-Project-Delivery/354009",
+      "posted_date": "Fri, 29 May 2026 00:00:00 +0000",
+      "comp": "range is $134,500 to $265,100",
+      "tier": 1,
       "status": "gone",
       "gone_date": "2026-07-30",
       "flags": []
