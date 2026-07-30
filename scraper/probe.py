@@ -86,8 +86,47 @@ def sf_csb(base, label):
 
 
 def main():
-    section("no active probes")
-    print("  write probes here, push, dispatch the probe workflow")
+    # Can we confirm Adzuna BEFORE the owner signs up? Two things to learn:
+    #   1. does the exact endpoint the adapter uses exist (vs JSearch's 404)?
+    #   2. does the free/registration tier include search, per their own docs?
+    section("ADZUNA: unauthenticated call to the adapter's exact endpoint")
+    def unauth():
+        r = requests.get("https://api.adzuna.com/v1/api/jobs/us/search/1",
+                         params={"what_phrase": "Primavera Unifier",
+                                 "results_per_page": 5},
+                         headers=BROWSER_UA, timeout=T)
+        print(f"  HTTP {r.status_code} ctype={(r.headers.get('content-type') or '')[:40]}")
+        print(f"  body: {r.text[:400]!r}")
+        print("  -> endpoint EXISTS, auth is the only gap"
+              if r.status_code in (400, 401, 403) else
+              "  -> unexpected; read the body above")
+    show("unauth", unauth)
+
+    section("ADZUNA: does it 404 for a genuinely bogus path? (control)")
+    def control():
+        r = requests.get("https://api.adzuna.com/v1/api/jobs/us/zzqnope999/1",
+                         headers=BROWSER_UA, timeout=T)
+        print(f"  bogus path -> HTTP {r.status_code} body={r.text[:200]!r}")
+    show("control", control)
+
+    section("ADZUNA: API docs / tier info")
+    for u in ["https://developer.adzuna.com/docs/search",
+              "https://developer.adzuna.com/overview",
+              "https://developer.adzuna.com/"]:
+        def doc(u=u):
+            r = requests.get(u, headers=BROWSER_UA, timeout=T)
+            low = r.text.casefold()
+            import re as _re
+            text = _re.sub(r"<[^>]+>", " ", r.text)
+            text = _re.sub(r"\s+", " ", text)
+            print(f"  {u} -> {r.status_code} len={len(r.text)}")
+            for term in ("free", "per month", "rate limit", "calls", "pricing",
+                         "commercial"):
+                idx = low.find(term)
+                if idx > -1:
+                    seg = text[max(0, idx - 120):idx + 160].strip()
+                    print(f"    [{term}] ...{seg[:240]}...")
+        show(u, doc)
 
 
 if __name__ == "__main__":
