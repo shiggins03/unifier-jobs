@@ -248,9 +248,12 @@ function parseCompaniesYaml(p) {
 function compSortValue(comp) {
   if (!comp) return -1;
   const nums = [];
-  for (const m of String(comp).matchAll(/\$?([\d,]+(?:\.\d+)?)/g)) {
-    const n = parseFloat(m[1].replace(/,/g, ""));
-    if (!isNaN(n) && n >= 20) nums.push(n);
+  for (const m of String(comp).matchAll(/\$?([\d,]+(?:\.\d+)?)\s*([kK])?/g)) {
+    let n = parseFloat(m[1].replace(/,/g, ""));
+    if (isNaN(n)) continue;
+    if (m[2]) n *= 1000;        // "$141K" means 141,000 — not 141
+    else if (n < 20) continue;  // stray small number
+    nums.push(n);
   }
   if (!nums.length) return -1;
   let v = Math.max(...nums);
@@ -324,6 +327,8 @@ function jobCard(j, prestige) {
   const tierBadge = p ? `<span class="badge">Tier ${esc(p)}</span>` : "";
   const newBadge = flags.includes("new") ? '<span class="badge new">new</span>' : "";
   const lp = flags.includes("long-posted") ? ' <span class="badge">long-posted</span>' : "";
+  const man = flags.includes("manual")
+    ? ' <span class="badge" title="added by hand from a direct link — this employer blocks automated access">manual</span>' : "";
   const tm = (j.tier === 1 && !flags.includes("title-match"))
     ? ' <span class="badge" style="opacity:.7">mentions Unifier</span>' : "";
   const comp = j.comp ? esc(j.comp) : '<span style="color:var(--muted)">Not listed</span>';
@@ -334,7 +339,7 @@ function jobCard(j, prestige) {
   const gone = j.status === "gone"
     ? ` — no longer listed as of ${esc(j.gone_date)}` : "";
   return `<div class="card${j.status === "gone" ? " gone" : ""}">
-<div class="co">${esc(j.company)}${tierBadge}${newBadge}${lp}${tm}</div>
+<div class="co">${esc(j.company)}${tierBadge}${newBadge}${lp}${man}${tm}</div>
 <div class="title"><a href="${esc(safeUrl(j.url))}" target="_blank" rel="noopener">${esc(j.title)}</a></div>
 <div class="meta">${loc} &middot; Posted: ${posted}${gone}</div>
 <div class="comp">Comp: ${comp}</div>

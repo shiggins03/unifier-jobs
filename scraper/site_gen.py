@@ -51,6 +51,9 @@ def _card(j, prestige):
     tier_badge = f'<span class="badge">Tier {esc(prestige)}</span>' if prestige else ""
     new_badge = '<span class="badge new">new</span>' if "new" in j["flags"] else ""
     lp = ' <span class="badge">long-posted</span>' if "long-posted" in j["flags"] else ""
+    man = (' <span class="badge" title="added by hand from a direct link — '
+           'this employer blocks automated access">manual</span>'
+           if "manual" in j["flags"] else "")
     tm = ('' if "title-match" in j["flags"] or j["tier"] != 1
           else ' <span class="badge" style="opacity:.7">mentions Unifier</span>')
     comp = esc(j.get("comp")) or '<span style="color:var(--muted)">Not listed</span>'
@@ -63,7 +66,7 @@ def _card(j, prestige):
     if j["status"] == "gone":
         gone = f' — no longer listed as of {esc(j["gone_date"])}'
     return f"""<div class="card{' gone' if j['status'] == 'gone' else ''}">
-<div class="co">{esc(j['company'])}{tier_badge}{new_badge}{lp}{tm}</div>
+<div class="co">{esc(j['company'])}{tier_badge}{new_badge}{lp}{man}{tm}</div>
 <div class="title"><a href="{esc(j['url'])}" target="_blank" rel="noopener">{esc(j['title'])}</a></div>
 <div class="meta">{loc} &middot; Posted: {posted}{gone}</div>
 <div class="comp">Comp: {comp}</div>

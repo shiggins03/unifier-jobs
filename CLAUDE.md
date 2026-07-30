@@ -49,6 +49,17 @@ Runs daily at 11:00 UTC via GitHub Actions; publishes a static dashboard to GitH
   raw-event debug dump (20s timeout box) that diagnosed it.
 - Keep the page's sort/badges in sync with `scraper/site_gen.py` when either changes.
 
+## Adding a job from a direct link (`config/seed_jobs.yaml`)
+
+The escape hatch for employers whose sites refuse automated clients (MTA,
+Port Authority, NYPA, Burns & McDonnell, MARTA...). Paste the job URL plus
+whatever fields can be copied VERBATIM from the posting; it renders as a
+normal direct listing badged "manual". Hard rule #1 is unchanged — copy, never
+paraphrase or reconstruct a title from the URL slug; omit what you can't copy
+and it shows "Not listed". Give `tier:` explicitly when no description was
+copied, since the keyword filter would otherwise see only the title. Seeds are
+"seen" every run, so they never age out — delete the entry when it closes.
+
 ## Diagnosing endpoints (the probe workflow)
 
 Claude-session sandboxes usually can't reach career sites (proxy policy), but

@@ -132,6 +132,33 @@ def run():
             listings += 1
         record_health(src, listings, ok, inventory)
 
+    # ---- manually seeded postings ----
+    # Escape hatch for employers whose sites refuse automated clients (MTA and
+    # friends). Fields are human-copied verbatim per hard rule #1, so they are
+    # trusted as-is; the keyword filter still decides tier unless the entry
+    # states one (needed when no description could be copied).
+    for r in (load_yaml("seed_jobs.yaml") or {}).get("jobs") or []:
+        if not (r.get("url") and r.get("company") and r.get("title")):
+            continue
+        src = f"seed:{r['company']}"
+        sources_ok.add(src)
+        if is_non_us(r.get("location")):
+            continue
+        tier = keyword_tier(r.get("title"), r.get("description"), kw) or r.get("tier")
+        if tier not in (1, 2):
+            continue
+        job = models.make_job(
+            source=src, kind="direct", company=r["company"], title=r["title"],
+            location=r.get("location"), url=r["url"],
+            posted_date=r.get("posted_date"), comp=r.get("comp"),
+            description=r.get("description"), tier=tier, today=today)
+        job["flags"].append("manual")
+        if tier == 1 and title_match(r.get("title"), kw):
+            job["flags"].append("title-match")
+        _merge(store, job, today, baseline)
+        seen_this_run.setdefault(src, set()).add(job["id"])
+        record_health(src, 1, True)
+
     # ---- discovery boards ----
     board_batches = [("jsearch", sources.fetch_jsearch(kw["discovery_queries"])),
                      ("adzuna", sources.fetch_adzuna(kw["discovery_queries"])),

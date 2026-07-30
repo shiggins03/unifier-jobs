@@ -41,7 +41,7 @@ COMP_RE = re.compile(
 DOLLAR_RANGE_RE = re.compile(
     r"\$[\d,]{4,}(?:\.\d+)?\s*(?:[-–]|to)\s*\$?[\d,]{4,}(?:\.\d+)?"
     r"(?:\s*(?:/|per\s*)?(?:year|yr|hour|hr|annum|annually|hourly))?", re.I)
-SALARY_NUM_RE = re.compile(r"\$?([\d,]+(?:\.\d+)?)")
+SALARY_NUM_RE = re.compile(r"\$?([\d,]+(?:\.\d+)?)\s*([kK])?")
 
 
 def title_match(title, kw):
@@ -102,9 +102,17 @@ def comp_sort_value(comp):
     """Numeric value for ORDERING only — display always shows the verbatim string."""
     if not comp:
         return -1.0
-    nums = [float(n.replace(",", "")) for n in SALARY_NUM_RE.findall(comp)
-            if n.replace(",", "").replace(".", "").isdigit()]
-    nums = [n for n in nums if n >= 20]  # ignore stray small numbers
+    nums = []
+    for num, suffix in SALARY_NUM_RE.findall(comp):
+        raw = num.replace(",", "")
+        if not raw.replace(".", "").isdigit():
+            continue
+        n = float(raw)
+        if suffix:      # "$141K" means 141,000 — not 141
+            n *= 1000
+        elif n < 20:    # ignore stray small numbers
+            continue
+        nums.append(n)
     if not nums:
         return -1.0
     v = max(nums)

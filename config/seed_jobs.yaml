@@ -1,0 +1,26 @@
+# Manually seeded postings — the escape hatch for employers whose sites block
+# automated access (MTA, Port Authority, NYPA, Burns & McDonnell, MARTA...).
+# Paste a direct job URL here and it appears on the board like any other
+# direct listing, badged "manual" so its provenance is visible.
+#
+# HARD RULE #1 STILL APPLIES: every field below must be COPIED VERBATIM from
+# the posting (or from that posting's own indexed page content). Never
+# paraphrase, never estimate, never reconstruct a title from the URL slug.
+# Omit any field you can't copy — it renders as "Not listed".
+#
+# Fields: url + company are required. Optional: title, location, comp,
+#   posted_date, description, tier (1|2 — only needed when the keyword filter
+#   can't see the match because no description was supplied).
+# Remove an entry when the posting closes; seeds never expire on their own.
+jobs:
+  - url: https://careers.mta.org/jobs/17757061-advanced-software-engineer-unifier
+    company: MTA
+    title: Advanced Software Engineer - Unifier
+    location: New York, New York, United States
+    comp: "$141K - $166K"
+    tier: 1
+    # Provenance: careers.mta.org answers 403 to every automated client
+    # (Cloudflare), so these fields come from the posting's search-indexed
+    # page content, not a direct fetch — 2026-07-30. Owner should eyeball the
+    # comp figure against the live page.
+    note: fields from search-indexed page content; site blocks direct fetch
