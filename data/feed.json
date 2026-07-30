@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-29",
+  "updated": "2026-07-30",
   "warnings": [],
   "roster": [
     {
@@ -346,6 +346,13 @@
       "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Senior Data Architect - Supply Chain",
       "source": "meta_graphql:Meta",
       "first_seen": "2026-07-22"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/1012709678418823/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Systems Architect, Data Center Design and Construction",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-07-30"
     }
   ],
   "jobs": [
@@ -356,7 +363,7 @@
       "title": "Primavera Unifier Solution Architect",
       "location": "US Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-Remote/Primavera-Unifier-Solution-Architect_JR1504",
-      "posted_date": "Posted 22 Days Ago",
+      "posted_date": "Posted 23 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -592,21 +599,6 @@
       "has_desc": true
     },
     {
-      "id": "3c178b344fb01f46",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "LOTO Authority",
-      "location": "Chandler, Arizona, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296771&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-07T22:16:49.503+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "has_desc": true
-    },
-    {
       "id": "13d0175cc88b6c9d",
       "kind": "direct",
       "company": "Oracle",
@@ -614,21 +606,6 @@
       "location": "Austin, TX, United States",
       "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/job/338444",
       "posted_date": "2026-06-26",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "has_desc": true
-    },
-    {
-      "id": "848162e79248819a",
-      "kind": "direct",
-      "company": "Turner & Townsend",
-      "title": "Senior Digital Consultant – Systems, Data & Analytics (Construction)",
-      "location": "Los Angeles, California, US",
-      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000134886199-senior-digital-consultant-systems-data-analytics-construction-?oga=true",
-      "posted_date": "2026-06-29T21:52:52.146Z",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -983,7 +960,7 @@
       "title": "Project Controls Specialist",
       "location": "Dallas, Texas",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Dallas-Texas/Project-Controls-Specialist_JR5845",
-      "posted_date": "Posted 29 Days Ago",
+      "posted_date": "Posted 30 Days Ago",
       "comp": "$83,978.91 - $95,975.90",
       "tier": 1,
       "status": "active",
@@ -1045,21 +1022,6 @@
       "url": "https://careers.amtrak.com/job/Baltimore-Project-Controls-Schedulers-for-Infrastructure-Capital-Delivery-%28-PA%2C-NJ%2C-NY%2C-CT%2C-DE%2C-MD%29-Mary/1236532500/",
       "posted_date": null,
       "comp": "salary/hourly range is $94,300– 176,040",
-      "tier": 2,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "has_desc": true
-    },
-    {
-      "id": "a568dd487cbc25a3",
-      "kind": "direct",
-      "company": "Amtrak",
-      "title": "Sr Mgr Work Planning - 90331142 - New York",
-      "location": "New York, NY, US, 10119",
-      "url": "https://careers.amtrak.com/job/New-York-Sr-Mgr-Work-Planning-90331142-New-York-NY-10119/1408957000/",
-      "posted_date": null,
-      "comp": "salary/hourly range is $135,800.00 – $176,040.00",
       "tier": 2,
       "status": "active",
       "gone_date": null,
@@ -1178,7 +1140,7 @@
       "title": "Senior Cost Engineering Specialist",
       "location": "Dallas, Texas",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Dallas-Texas/Senior-Cost-Engineering-Specialist_JR5958",
-      "posted_date": "Posted 5 Days Ago",
+      "posted_date": "Posted 6 Days Ago",
       "comp": "$116,930.89 - $133,635.31",
       "tier": 1,
       "status": "active",
@@ -1193,7 +1155,7 @@
       "title": "Senior Program Controls Manager",
       "location": "US-WA-Seattle",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Seattle/Senior-Program-Controls-Manager_JR1535",
-      "posted_date": "Posted 5 Days Ago",
+      "posted_date": "Posted 6 Days Ago",
       "comp": "$180,000-$250,000 annually",
       "tier": 1,
       "status": "active",
@@ -1275,9 +1237,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     },
     {
@@ -1292,9 +1252,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     },
     {
@@ -1309,9 +1267,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     },
     {
@@ -1326,9 +1282,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     },
     {
@@ -1343,9 +1297,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "has_desc": true
     },
     {
@@ -1355,9 +1307,177 @@
       "title": "P6 Scheduler",
       "location": "US-CA-San Francisco Bay Area",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-CA-San-Francisco-Bay-Area/P6-Scheduler_JR1539",
-      "posted_date": "Posted Yesterday",
+      "posted_date": "Posted 2 Days Ago",
       "comp": "$128,960 - $139,360 annually",
       "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "has_desc": true
+    },
+    {
+      "id": "7e6f11972bc78e0e",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Instrumentation Field Engineer - Pre-Commissioning",
+      "location": "Port Arthur, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297474&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-27T20:18:29.125+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "129d9dad97036d6d",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Subcontracts Formation Specialist",
+      "location": "Houston, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297361&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-29T16:20:43.325+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "d824dabe45e41c09",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "CSU Area Lead - ISBL",
+      "location": "Brownsville, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=294712&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-06-18T19:14:53.453+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "39fd343e772ed3dd",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Field Planner/Scheduler – Power Generation Construction",
+      "location": "Seminole, Texas, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000140538874-field-planner-scheduler-power-generation-construction?oga=true",
+      "posted_date": "2026-07-29T19:40:25.727Z",
+      "comp": null,
+      "tier": 2,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "9b544db869bfaf6b",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Field Planner/Scheduler – Power Generation Construction",
+      "location": "El Paso, Texas, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000140539829-field-planner-scheduler-power-generation-construction?oga=true",
+      "posted_date": "2026-07-29T19:39:26.621Z",
+      "comp": null,
+      "tier": 2,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "aa9c77dac78d57b4",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Field Planner/Scheduler – Power Generation Construction",
+      "location": "Lubbock, Texas, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000140524249-field-planner-scheduler-power-generation-construction?oga=true",
+      "posted_date": "2026-07-29T17:43:54.049Z",
+      "comp": null,
+      "tier": 2,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "ab03e3d2292ba3fb",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Field Planner/Scheduler – Power Generation Construction",
+      "location": "New Orleans, Louisiana, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000140523959-field-planner-scheduler-power-generation-construction?oga=true",
+      "posted_date": "2026-07-29T17:42:17.442Z",
+      "comp": null,
+      "tier": 2,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "83320f89b8fad821",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Field Planner/Scheduler – Power Generation Construction",
+      "location": "Amarillo, Texas, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000140523040-field-planner-scheduler-power-generation-construction?oga=true",
+      "posted_date": "2026-07-29T17:38:16.771Z",
+      "comp": null,
+      "tier": 2,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "1729adf076e1f6bf",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Field Planner/Scheduler – Power Generation Construction",
+      "location": "West Odessa, Texas, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000140520220-field-planner-scheduler-power-generation-construction?oga=true",
+      "posted_date": "2026-07-29T17:18:49.591Z",
+      "comp": null,
+      "tier": 2,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "3b4029757c44204f",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Field Planner/Scheduler – Power Generation Construction",
+      "location": "Midland, Texas, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000140519609-field-planner-scheduler-power-generation-construction?oga=true",
+      "posted_date": "2026-07-29T17:15:59.008Z",
+      "comp": null,
+      "tier": 2,
       "status": "active",
       "gone_date": null,
       "flags": [
@@ -1478,6 +1598,34 @@
       "flags": []
     },
     {
+      "id": "3c178b344fb01f46",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "LOTO Authority",
+      "location": "Chandler, Arizona, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296771&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-07T22:16:49.503+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-07-30",
+      "flags": []
+    },
+    {
+      "id": "848162e79248819a",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Senior Digital Consultant – Systems, Data & Analytics (Construction)",
+      "location": "Los Angeles, California, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000134886199-senior-digital-consultant-systems-data-analytics-construction-?oga=true",
+      "posted_date": "2026-06-29T21:52:52.146Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-07-30",
+      "flags": []
+    },
+    {
       "id": "77b1303705e9ff5a",
       "kind": "direct",
       "company": "Turner & Townsend",
@@ -1576,6 +1724,20 @@
       "flags": [
         "long-posted"
       ]
+    },
+    {
+      "id": "a568dd487cbc25a3",
+      "kind": "direct",
+      "company": "Amtrak",
+      "title": "Sr Mgr Work Planning - 90331142 - New York",
+      "location": "New York, NY, US, 10119",
+      "url": "https://careers.amtrak.com/job/New-York-Sr-Mgr-Work-Planning-90331142-New-York-NY-10119/1408957000/",
+      "posted_date": null,
+      "comp": "salary/hourly range is $135,800.00 – $176,040.00",
+      "tier": 2,
+      "status": "gone",
+      "gone_date": "2026-07-30",
+      "flags": []
     }
   ]
 }

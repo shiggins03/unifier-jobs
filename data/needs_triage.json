@@ -157,5 +157,12 @@
     "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Senior Data Architect - Supply Chain",
     "source": "meta_graphql:Meta",
     "first_seen": "2026-07-22"
+  },
+  {
+    "company": "Meta",
+    "url": "https://www.metacareers.com/jobs/1012709678418823/",
+    "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Systems Architect, Data Center Design and Construction",
+    "source": "meta_graphql:Meta",
+    "first_seen": "2026-07-30"
   }
 ]

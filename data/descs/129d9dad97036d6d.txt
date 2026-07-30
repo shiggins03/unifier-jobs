@@ -1,11 +1,11 @@
-Requisition ID: 296771
+Requisition ID: 297361
  
  
-Relocation Authorized: National - Family
+Relocation Authorized: National/International - Family
  
-Telework Type: Full-Time Office/Project
+Telework Type: Part-Time Telework
  
-Work Location: Chandler, AZ
+Work Location: Houston, TX
  
 Extraordinary teams building inspiring projects:
  
@@ -20,8 +20,9 @@ Impact Report
 . 
 Project Overview:
  
-Bechtel Manufacturing and Technology (M&T) is an exciting and growing business that serves the increasing demand of EPC services for customers in the Data Centers, Semiconductor, Pharmaceutical and Electric Vehicle (batteries, charging infrastructure, and production), markets.
-M&T strives to exceed our customer objectives through utilizing our agility, innovative technologies, and world class talent. M&T will solve the industries toughest challenges, building both our company and the world for the future.
-Headquartered in the U.S. with employees in various states, M&T also has colleagues in the United Kingdom, India, and other locations while we actively pursue exciting opportunities in other parts of the world. We are looking for talented people to join our team that are passionate about making a difference an
+Phase 1 of the latest SPL expansion is expected to consist of one large-scale train, Train 7, and one boil-off gas reliquefaction unit, along with supporting infrastructure and tie-ins to the existing facility. SPL is the first and largest LNG production and export complex in the U.S. Lower 48. It produced and shipped its first LNG cargo in 2016 and has since exported more than 3,300 cargoes to dozens of markets globally.
+Job Summary:
+ 
+In this role based in the Bechtel Houston Office, you will support subcontract formation and related contract management activities for assigned packages. Subcontract formation includes preparing and reviewing bid request packages, supporting development of project contract operating procedures, and coordinating required inputs from project stakeholders. You will be expec
 
 [Truncated for this view — full text at the posting link]
