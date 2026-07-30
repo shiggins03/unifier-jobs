@@ -66,6 +66,18 @@ and it shows "Not listed". Give `tier:` explicitly when no description was
 copied, since the keyword filter would otherwise see only the title. Seeds are
 "seen" every run, so they never age out — delete the entry when it closes.
 
+## JSearch free tier does NOT include search (verified 2026-07-30)
+
+A live key on RapidAPI's free plan (X-RateLimit-Requests-Limit: 200) reaches
+JSearch fine — /job-details, /estimated-salary, /company-job-salary all
+return 200 — but /search and /search-filters answer 404 "Endpoint does not
+exist". 27 path variants plus POST were swept: it is plan gating, not a
+rename. The working endpoints are useless here (/estimated-salary would
+violate hard rule #1 anyway). fetch_jsearch now treats that 404 as
+"unavailable" instead of a failure so it stops raising daily health warnings.
+NEXT CANDIDATE: Adzuna — direct API, not a marketplace with per-endpoint
+gating, and its search endpoint is the core of the free developer tier.
+
 ## Key-free aggregators: searched, none viable (2026-07-30)
 
 Hunted a zero-key, zero-human route for the Cloudflare-walled employers

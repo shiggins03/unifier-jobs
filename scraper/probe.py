@@ -86,56 +86,8 @@ def sf_csb(base, label):
 
 
 def main():
-    # /estimated-salary, /job-details, /company-job-salary => 200.
-    # /search and /search-filters => 404 "does not exist".
-    # Either the search endpoint was renamed, or the subscribed plan excludes
-    # it (RapidAPI reports out-of-plan routes as 404). Settle it.
-    import os
-    section("JSEARCH: plan headers from a WORKING endpoint")
-    key = os.environ.get("JSEARCH_API_KEY")
-    if not key:
-        print("  no key"); return
-    H = {"X-RapidAPI-Key": key, "X-RapidAPI-Host": "jsearch.p.rapidapi.com"}
-    base = "https://jsearch.p.rapidapi.com"
-    def hdrs():
-        r = requests.get(base + "/job-details", params={"job_id": "x"},
-                         headers=H, timeout=T)
-        keep = {k: v for k, v in r.headers.items()
-                if any(t in k.lower() for t in
-                       ("ratelimit", "quota", "plan", "subscription", "tier",
-                        "requests"))}
-        print(f"  /job-details {r.status_code}; plan/quota headers:")
-        for k, v in sorted(keep.items()):
-            print(f"    {k}: {v}")
-        if not keep:
-            print("    (none exposed)")
-    show("headers", hdrs)
-
-    section("JSEARCH: exhaustive search-path sweep")
-    paths = ["/jobs", "/job", "/jobs-search", "/find-jobs", "/list-jobs",
-             "/search-job", "/searchjobs", "/job/search", "/v1/job-search",
-             "/v2/search-jobs", "/search/jobs", "/api/jobs", "/query",
-             "/jobs/list", "/jobsearch", "/job-search-v2", "/search_v2",
-             "/v3/search"]
-    found = []
-    for p in paths:
-        try:
-            r = requests.get(base + p, params={"query": "unifier", "country": "us"},
-                             headers=H, timeout=T)
-            if r.status_code != 404:
-                found.append((p, r.status_code, r.text[:160]))
-                print(f"  {p:22s} {r.status_code}  <-- NOT 404")
-        except Exception as e:
-            print(f"  {p:22s} EXC {type(e).__name__}")
-    print(f"  swept {len(paths)} paths; non-404: {len(found)}")
-
-    section("JSEARCH: POST /search (in case the verb changed)")
-    def post_search():
-        r = requests.post(base + "/search",
-                          json={"query": "unifier", "country": "us"},
-                          headers=H, timeout=T)
-        print(f"  POST /search -> {r.status_code} body={r.text[:160]!r}")
-    show("post", post_search)
+    section("no active probes")
+    print("  write probes here, push, dispatch the probe workflow")
 
 
 if __name__ == "__main__":

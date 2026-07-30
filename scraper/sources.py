@@ -365,6 +365,14 @@ def fetch_jsearch(queries):
                              headers={"X-RapidAPI-Key": key,
                                       "X-RapidAPI-Host": "jsearch.p.rapidapi.com"},
                              timeout=TIMEOUT)
+            # Verified 2026-07-30: on RapidAPI's FREE plan /search and
+            # /search-filters answer 404 "Endpoint does not exist" while
+            # /job-details, /estimated-salary and /company-job-salary return
+            # 200 — i.e. search is gated to a paid tier, not renamed (27 path
+            # variants + POST all 404). Report unavailable rather than failing,
+            # so a known-gated endpoint doesn't raise a health warning daily.
+            if r.status_code == 404 and "does not exist" in r.text:
+                return [], None
             r.raise_for_status()
             for j in r.json().get("data", []):
                 loc = ", ".join(x for x in [j.get("job_city"), j.get("job_state")] if x) or \
