@@ -1,8 +1,6 @@
 {
-  "updated": "2026-07-30",
-  "warnings": [
-    "workday:PwC: zero results for 3+ runs (was returning data)"
-  ],
+  "updated": "2026-07-31",
+  "warnings": [],
   "roster": [
     {
       "name": "Meta",
@@ -418,6 +416,27 @@
       "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Systems Architect, Data Center Design and Construction",
       "source": "meta_graphql:Meta",
       "first_seen": "2026-07-30"
+    },
+    {
+      "company": "LGL Technologies",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=cLH7_JKM8RG8JMyxbRrc7Q&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-07-31"
+    },
+    {
+      "company": "Randstad Digital",
+      "url": "https://www.adzuna.com/land/ad/5804140363?se=cLH7_JKM8RG8JMyxbRrc7Q&utm_medium=api&utm_source=55569923&v=C1F881456D9E8D882D9851E80FCEB7B4888CB8CF",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-07-31"
+    },
+    {
+      "company": "NewYork-Presbyterian Hospital",
+      "url": "https://www.adzuna.com/details/5820911122?utm_medium=api&utm_source=55569923",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-07-31"
     }
   ],
   "jobs": [
@@ -759,9 +778,9 @@
       "company": "Turner & Townsend",
       "title": "Remote Senior Scheduler - Data Center Construction",
       "location": "USA wide, US",
-      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000140084490-remote-senior-scheduler-data-center-construction?oga=true",
-      "posted_date": "2026-07-27T20:05:08.080Z",
-      "comp": null,
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000140778109-remote-senior-scheduler-data-center-construction?oga=true",
+      "posted_date": "2026-07-30T21:23:41.388Z",
+      "comp": "salary range for this role is $140K-$200K USD",
       "tier": 2,
       "status": "active",
       "gone_date": null,
@@ -1580,6 +1599,125 @@
         "manual",
         "title-match"
       ]
+    },
+    {
+      "id": "9eefe0306bcb20f0",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Field Planner/Scheduler – Power Generation Construction",
+      "location": "Baton Rouge, Louisiana, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000140783019-field-planner-scheduler-power-generation-construction?oga=true",
+      "posted_date": "2026-07-30T22:13:46.870Z",
+      "comp": null,
+      "tier": 2,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "36f44de603c88a04",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Field Planner/Scheduler – Power Generation Construction",
+      "location": "Lake Charles, Louisiana, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000140782769-field-planner-scheduler-power-generation-construction?oga=true",
+      "posted_date": "2026-07-30T22:12:24.537Z",
+      "comp": null,
+      "tier": 2,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "22e15a91abb4f441",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Senior Scheduler - Data Center Construction",
+      "location": "USA wide, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000140776509-senior-scheduler-data-center-construction?oga=true",
+      "posted_date": "2026-07-30T21:06:54.485Z",
+      "comp": "salary range for this role is $140K-$200K USD",
+      "tier": 2,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "c0516ae01e0c20d3",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Roadway, Bridge and Guideway Engineer",
+      "location": "Fresno, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5375443008",
+      "posted_date": "2026-07-30T17:09:45-04:00",
+      "comp": "Salary: $120k-$190k/year ($57-$91/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "5b2fe5d1ac13221c",
+      "kind": "board",
+      "company": "LGL Technologies",
+      "title": "Oracle Primavera Unifier Consultant",
+      "location": "Texas, US",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=cLH7_JKM8RG8JMyxbRrc7Q&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "posted_date": "2026-07-09T15:01:35Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "bba8ac8c54adb7fe",
+      "kind": "board",
+      "company": "Randstad Digital",
+      "title": "Testing & Training Lead (Oracle Primavera Unifier)",
+      "location": "Glendale, Denver",
+      "url": "https://www.adzuna.com/land/ad/5804140363?se=cLH7_JKM8RG8JMyxbRrc7Q&utm_medium=api&utm_source=55569923&v=C1F881456D9E8D882D9851E80FCEB7B4888CB8CF",
+      "posted_date": "2026-07-16T21:44:52Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
+    },
+    {
+      "id": "4812275502cd5be3",
+      "kind": "board",
+      "company": "NewYork-Presbyterian Hospital",
+      "title": "Program Manager – Facilities Systems (Oracle Unifier Program Manager)",
+      "location": "US",
+      "url": "https://www.adzuna.com/details/5820911122?utm_medium=api&utm_source=55569923",
+      "posted_date": "2026-07-30T04:56:27Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "has_desc": true
     },
     {
       "id": "9b3c43692c548d44",
