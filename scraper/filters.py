@@ -121,6 +121,35 @@ def comp_sort_value(comp):
     return v
 
 
+def classify_role(title, description, roles):
+    """Which KIND of job this is — systems / field / controls / unclear.
+
+    A derived tag for filtering only (like the metro sort bucket), never a
+    displayed claim about the posting; hard rule #1 is unaffected. Title hits
+    outweigh body hits because boilerplate mentions ('we use Primavera
+    Unifier') are exactly the false signal this exists to defeat. Anything
+    ambiguous stays "unclear" rather than being guessed into a bucket, so a
+    hide-filter can never silently drop a job on a weak signal.
+    """
+    t = (title or "").casefold()
+    b = (description or "").casefold()
+    tw = roles.get("title_weight", 6)
+    scores = {}
+    for kind, sig in (roles.get("kinds") or {}).items():
+        s = sum(tw for term in (sig.get("title") or []) if term.casefold() in t)
+        s += sum(1 for term in (sig.get("body") or []) if term.casefold() in b)
+        scores[kind] = s
+    if not scores:
+        return None
+    best = max(scores, key=lambda k: scores[k])
+    top = scores[best]
+    if top < roles.get("min_score", 3):
+        return "unclear"
+    if sorted(scores.values())[-2:].count(top) > 1:   # tied leaders
+        return "unclear"
+    return best
+
+
 def city_rank(location, cities):
     if not location:
         return cities["other_us_rank"]

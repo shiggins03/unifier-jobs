@@ -51,6 +51,10 @@ def _card(j, prestige):
     tier_badge = f'<span class="badge">Tier {esc(prestige)}</span>' if prestige else ""
     new_badge = '<span class="badge new">new</span>' if "new" in j["flags"] else ""
     lp = ' <span class="badge">long-posted</span>' if "long-posted" in j["flags"] else ""
+    role = (f' <span class="badge" style="background:transparent;color:var(--muted);'
+            f'border:1px solid var(--line);font-weight:500" title="derived from title/'
+            f'description keywords — not stated by the employer">{esc(j.get("role"))}</span>'
+            if j.get("role") and j["role"] != "unclear" else "")
     man = (' <span class="badge" title="added by hand from a direct link — '
            'this employer blocks automated access">manual</span>'
            if "manual" in j["flags"] else "")
@@ -66,7 +70,7 @@ def _card(j, prestige):
     if j["status"] == "gone":
         gone = f' — no longer listed as of {esc(j["gone_date"])}'
     return f"""<div class="card{' gone' if j['status'] == 'gone' else ''}">
-<div class="co">{esc(j['company'])}{tier_badge}{new_badge}{lp}{man}{tm}</div>
+<div class="co">{esc(j['company'])}{tier_badge}{new_badge}{lp}{man}{role}{tm}</div>
 <div class="title"><a href="{esc(j['url'])}" target="_blank" rel="noopener">{esc(j['title'])}</a></div>
 <div class="meta">{loc} &middot; Posted: {posted}{gone}</div>
 <div class="comp">Comp: {comp}</div>
@@ -147,7 +151,7 @@ def generate(store, companies, cities, warnings, today):
 {section("No longer listed", gone, fold=True)}
 {roster_section()}
 <footer>All fields shown verbatim from the source posting — nothing estimated.
-Sorted by company tier (prestige/comp), title match, stated comp, location within each keyword section.</footer>
+Sorted by company tier (prestige/comp), title match, stated comp, location within each keyword section. Role tags are derived from title/description keywords, not stated by the employer.</footer>
 </main>"""
 
     DOCS.mkdir(exist_ok=True)

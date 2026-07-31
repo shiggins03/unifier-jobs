@@ -55,6 +55,24 @@ Runs daily at 11:00 UTC via GitHub Actions; publishes a static dashboard to GitH
   the card in place rather than re-rendering, so an open description stays
   open — keep that if you touch the handler.
 
+## Role classifier (`config/roles.yaml`)
+
+The owner is a Unifier SYSTEMS person (admin/config/integration/development),
+NOT a construction engineer or scheduler — but Bechtel's welding field
+engineers and Turner & Townsend's schedulers match because Unifier/P6 appears
+in their boilerplate. `classify_role()` tags each posting systems / controls /
+field / unclear, surfaced as artifact filter chips and a muted card badge.
+- DERIVED, not stated: it is a filter tag in the same category as the metro
+  sort bucket. Hard rule #1 still holds — title/comp/location/description
+  render verbatim, and both surfaces say so in the footer.
+- Title hits outweigh body hits (title_weight), because boilerplate mentions
+  are the exact false signal this defeats. Ambiguous => "unclear", never
+  guessed into a bucket, so a hide-filter can't silently drop a real job.
+- Highest-precision signal is `unifier` in the TITLE => systems. Without it
+  Oracle's "Senior Principal Consultant-Oracle Primavera Unifier" and NYP's
+  "Facilities Systems (Oracle Unifier)" both fell through to unclear.
+- Tune the term lists in roles.yaml; no code change needed.
+
 ## Adding a job from a direct link (`config/seed_jobs.yaml`)
 
 The escape hatch for employers whose sites refuse automated clients (MTA,

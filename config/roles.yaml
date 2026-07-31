@@ -1,0 +1,130 @@
+# Role-kind classifier. Sorts each posting into what the JOB actually is, so
+# the owner (a Unifier SYSTEMS person — admin/config/integration/development)
+# can hide construction-delivery and scheduling roles that merely mention
+# Unifier in boilerplate. Bechtel's welding/piping field engineers and Turner
+# & Townsend's schedulers are the motivating cases.
+#
+# NOT a displayed fact about the posting — a derived tag, same category as the
+# NYC/metro sort bucket. Hard rule #1 is untouched: title, comp, location and
+# description still render verbatim.
+#
+# Scoring: a title hit is worth `title_weight`, a description hit 1. Highest
+# scoring kind wins; ties and total-zero => "unclear" (never hidden by
+# accident — the owner filters on what they trust).
+title_weight: 6
+min_score: 3
+
+kinds:
+  # What the owner IS looking for: configuring/building/running the system.
+  systems:
+    title:
+      # Highest-precision signal there is: if the TITLE names the product,
+      # the job is about the product. No welding superintendent's title says
+      # "Unifier". Added after Oracle's "Senior Principal Consultant-Oracle
+      # Primavera Unifier", Randstad's "Testing & Training Lead (Oracle
+      # Primavera Unifier)" and NYP's "Facilities Systems (Oracle Unifier)"
+      # all fell through to "unclear" without it.
+      - unifier
+      - unifier administrator
+      - unifier admin
+      - unifier developer
+      - unifier consultant
+      - unifier analyst
+      - unifier architect
+      - solution architect
+      - software engineer
+      - systems analyst
+      - systems administrator
+      - application administrator
+      - application analyst
+      - technical consultant
+      - technical analyst
+      - integration
+      - developer
+      - digital consultant
+      - business systems
+      - pmis
+      - implementation consultant
+      - configuration
+      - pmis administrator
+      - reporting analyst
+      - data analyst
+      - solutions lead
+      - technical lead
+    body:
+      - udesigner
+      - business process setup
+      - workflow configuration
+      - configure business processes
+      - shell hierarchy
+      - unifier configuration
+      - unifier administration
+      - rest api
+      - web services
+      - oracle integration cloud
+      - bi publisher
+      - user defined report
+      - custom reports
+      - data elements
+      - sql
+      - system administration
+      - integrations
+
+  # Construction execution in the field — not the owner's work.
+  field:
+    title:
+      - field engineer
+      - superintendent
+      - welding
+      - piping
+      - concrete
+      - civil/structural
+      - structural engineer
+      - electrical field
+      - instrument field
+      - instrumentation
+      - commissioning
+      - pre-commissioning
+      - craft
+      - foreman
+      - surveyor
+      - safety
+      - quality control inspector
+      - roadway
+      - bridge
+      - guideway
+      - construction manager
+      - site manager
+      - subcontracts
+    body:
+      - jobsite
+      - job site
+      - hard hat
+      - personal protective equipment
+      - osha
+      - field conditions
+      - construction site
+      - walk the site
+
+  # Scheduling / cost / project controls — adjacent, but explicitly not the
+  # owner's target ("I'm not a Project Scheduler").
+  controls:
+    title:
+      - scheduler
+      - planner
+      - project controls
+      - program controls
+      - cost engineer
+      - cost manager
+      - cost control
+      - estimator
+      - claims
+      - change specialist
+      - document control
+    body:
+      - critical path method
+      - earned value
+      - baseline schedule
+      - schedule updates
+      - cost loading
+      - resource loading

@@ -7,8 +7,8 @@ from pathlib import Path
 import yaml
 
 from . import models, sources, site_gen
-from .filters import (blocklisted, city_rank, extract_stated_comp, is_non_us,
-                      keyword_tier, title_match)
+from .filters import (blocklisted, city_rank, classify_role, extract_stated_comp,
+                      is_non_us, keyword_tier, title_match)
 
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG = ROOT / "config"
@@ -53,6 +53,7 @@ def run():
     kw = load_yaml("keywords.yaml")
     bl = load_yaml("blocklist.yaml")
     cities = load_yaml("cities.yaml")
+    roles = load_yaml("roles.yaml")
 
     store = models.load_jobs()
     baseline = not store
@@ -125,6 +126,7 @@ def run():
                 location=r.get("location"), url=r["url"],
                 posted_date=r.get("posted_date"), comp=comp,
                 description=r.get("description"), tier=tier, today=today)
+            job["role"] = classify_role(r.get("title"), r.get("description"), roles)
             if tier == 1 and title_match(r.get("title"), kw):
                 job["flags"].append("title-match")
             _merge(store, job, today, baseline)
@@ -153,6 +155,7 @@ def run():
             posted_date=r.get("posted_date"), comp=r.get("comp"),
             description=r.get("description"), tier=tier, today=today)
         job["flags"].append("manual")
+        job["role"] = classify_role(r.get("title"), r.get("description"), roles)
         if tier == 1 and title_match(r.get("title"), kw):
             job["flags"].append("title-match")
         _merge(store, job, today, baseline)
@@ -225,6 +228,7 @@ def run():
                 location=r.get("location"), url=r["url"],
                 posted_date=r.get("posted_date"), comp=comp,
                 description=r.get("description"), tier=tier, today=today)
+            job["role"] = classify_role(title, r.get("description"), roles)
             _merge(store, job, today, baseline)
             seen_this_run.setdefault(name, set()).add(job["id"])
             kept += 1
@@ -286,6 +290,7 @@ def run():
         fj = {k: j[k] for k in ("id", "kind", "company", "title", "location", "url",
                                 "posted_date", "comp", "tier", "status", "gone_date",
                                 "flags")}
+        fj["role"] = j.get("role")   # derived filter tag, not a stated fact
         desc = j.get("description")
         if desc and j["status"] == "active":
             fj["has_desc"] = True
