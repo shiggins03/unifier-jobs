@@ -451,6 +451,20 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-07-31"
+    },
+    {
+      "company": "LGL Technologies",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=GFJykeSM8RG00uSDPS7n2A&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-07-31"
+    },
+    {
+      "company": "Randstad Digital",
+      "url": "https://www.adzuna.com/land/ad/5804140363?se=GFJykeSM8RG00uSDPS7n2A&utm_medium=api&utm_source=55569923&v=C1F881456D9E8D882D9851E80FCEB7B4888CB8CF",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-07-31"
     }
   ],
   "jobs": [
@@ -469,7 +483,7 @@
       "flags": [
         "title-match"
       ],
-      "role": null,
+      "role": "systems",
       "has_desc": true
     },
     {
@@ -485,7 +499,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -501,7 +515,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -517,7 +531,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -533,7 +547,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "unclear",
       "has_desc": true
     },
     {
@@ -549,7 +563,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "field",
       "has_desc": true
     },
     {
@@ -565,7 +579,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "field",
       "has_desc": true
     },
     {
@@ -581,7 +595,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "field",
       "has_desc": true
     },
     {
@@ -597,7 +611,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "field",
       "has_desc": true
     },
     {
@@ -613,7 +627,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "field",
       "has_desc": true
     },
     {
@@ -629,7 +643,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "field",
       "has_desc": true
     },
     {
@@ -645,55 +659,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
-      "has_desc": true
-    },
-    {
-      "id": "e15720ff82817361",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Welding Superintendent",
-      "location": "Pecos, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296397&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-01T23:19:10.904+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": null,
-      "has_desc": true
-    },
-    {
-      "id": "3602808878cb9f43",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Lead Welding Superintendent",
-      "location": "Pecos, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296391&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-01T23:19:10.905+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": null,
-      "has_desc": true
-    },
-    {
-      "id": "7b4388aba54a69e3",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Project Engineer",
-      "location": "Ogden, Utah, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296014&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-06-23T12:15:48.413+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": null,
+      "role": "field",
       "has_desc": true
     },
     {
@@ -709,7 +675,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "unclear",
       "has_desc": true
     },
     {
@@ -725,7 +691,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "systems",
       "has_desc": true
     },
     {
@@ -741,7 +707,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "systems",
       "has_desc": true
     },
     {
@@ -757,7 +723,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -773,7 +739,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -789,7 +755,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -805,7 +771,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -821,7 +787,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -837,7 +803,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -853,7 +819,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -869,7 +835,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -885,7 +851,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -901,7 +867,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -917,7 +883,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -933,7 +899,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -949,7 +915,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -965,7 +931,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -983,7 +949,7 @@
       "flags": [
         "long-posted"
       ],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1001,7 +967,7 @@
       "flags": [
         "long-posted"
       ],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1019,7 +985,7 @@
       "flags": [
         "long-posted"
       ],
-      "role": null,
+      "role": "unclear",
       "has_desc": true
     },
     {
@@ -1037,7 +1003,7 @@
       "flags": [
         "long-posted"
       ],
-      "role": null,
+      "role": "unclear",
       "has_desc": true
     },
     {
@@ -1055,7 +1021,7 @@
       "flags": [
         "long-posted"
       ],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1071,7 +1037,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1087,7 +1053,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1103,7 +1069,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "systems",
       "has_desc": true
     },
     {
@@ -1119,7 +1085,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1135,7 +1101,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1151,7 +1117,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1167,7 +1133,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1183,7 +1149,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "field",
       "has_desc": true
     },
     {
@@ -1199,7 +1165,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "field",
       "has_desc": true
     },
     {
@@ -1215,7 +1181,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1231,7 +1197,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1247,7 +1213,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1263,7 +1229,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1272,14 +1238,14 @@
       "company": "Bechtel",
       "title": "Field Welding Engineer",
       "location": "Pecos, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297409&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-27T13:17:29.331+0000",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297201&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-27T13:17:29.333+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "field",
       "has_desc": true
     },
     {
@@ -1297,7 +1263,7 @@
       "flags": [
         "title-match"
       ],
-      "role": null,
+      "role": "systems",
       "has_desc": true
     },
     {
@@ -1313,7 +1279,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "unclear",
       "has_desc": true
     },
     {
@@ -1329,7 +1295,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "field",
       "has_desc": true
     },
     {
@@ -1345,7 +1311,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "field",
       "has_desc": true
     },
     {
@@ -1361,7 +1327,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "systems",
       "has_desc": true
     },
     {
@@ -1377,7 +1343,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "systems",
       "has_desc": true
     },
     {
@@ -1393,7 +1359,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1409,7 +1375,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "field",
       "has_desc": true
     },
     {
@@ -1425,7 +1391,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "field",
       "has_desc": true
     },
     {
@@ -1441,7 +1407,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "unclear",
       "has_desc": true
     },
     {
@@ -1457,7 +1423,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1473,7 +1439,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1489,7 +1455,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1505,7 +1471,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1521,7 +1487,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1537,7 +1503,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1553,7 +1519,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1569,7 +1535,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "unclear",
       "has_desc": true
     },
     {
@@ -1585,7 +1551,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1601,7 +1567,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "unclear",
       "has_desc": true
     },
     {
@@ -1617,7 +1583,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "unclear",
       "has_desc": true
     },
     {
@@ -1635,7 +1601,7 @@
       "flags": [
         "long-posted"
       ],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1653,7 +1619,7 @@
       "flags": [
         "long-posted"
       ],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1669,7 +1635,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1688,7 +1654,7 @@
         "manual",
         "title-match"
       ],
-      "role": null
+      "role": "systems"
     },
     {
       "id": "9eefe0306bcb20f0",
@@ -1703,7 +1669,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1719,7 +1685,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1735,7 +1701,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -1751,7 +1717,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "field",
       "has_desc": true
     },
     {
@@ -1760,14 +1726,14 @@
       "company": "LGL Technologies",
       "title": "Oracle Primavera Unifier Consultant",
       "location": "Texas, US",
-      "url": "https://www.adzuna.com/land/ad/5794406427?se=QniEot-M8RG8JMyxbRrc7Q&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=GFJykeSM8RG00uSDPS7n2A&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
       "posted_date": "2026-07-09T15:01:35Z",
       "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "systems",
       "has_desc": true
     },
     {
@@ -1776,14 +1742,14 @@
       "company": "Randstad Digital",
       "title": "Testing & Training Lead (Oracle Primavera Unifier)",
       "location": "Glendale, Denver",
-      "url": "https://www.adzuna.com/land/ad/5804140363?se=QniEot-M8RG8JMyxbRrc7Q&utm_medium=api&utm_source=55569923&v=C1F881456D9E8D882D9851E80FCEB7B4888CB8CF",
+      "url": "https://www.adzuna.com/land/ad/5804140363?se=GFJykeSM8RG00uSDPS7n2A&utm_medium=api&utm_source=55569923&v=C1F881456D9E8D882D9851E80FCEB7B4888CB8CF",
       "posted_date": "2026-07-16T21:44:52Z",
       "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "systems",
       "has_desc": true
     },
     {
@@ -1799,7 +1765,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": null,
+      "role": "systems",
       "has_desc": true
     },
     {
@@ -1815,7 +1781,7 @@
       "status": "gone",
       "gone_date": "2026-07-26",
       "flags": [],
-      "role": null
+      "role": "controls"
     },
     {
       "id": "6e02d7daf784bb12",
@@ -1830,7 +1796,7 @@
       "status": "gone",
       "gone_date": "2026-07-24",
       "flags": [],
-      "role": null
+      "role": "controls"
     },
     {
       "id": "6ac85c0bced38907",
@@ -1845,7 +1811,7 @@
       "status": "gone",
       "gone_date": "2026-07-30",
       "flags": [],
-      "role": null
+      "role": "unclear"
     },
     {
       "id": "ee0169af2f3bdcab",
@@ -1860,7 +1826,7 @@
       "status": "gone",
       "gone_date": "2026-07-24",
       "flags": [],
-      "role": null
+      "role": "field"
     },
     {
       "id": "2902a33e73d6e258",
@@ -1875,7 +1841,7 @@
       "status": "gone",
       "gone_date": "2026-07-23",
       "flags": [],
-      "role": null
+      "role": "field"
     },
     {
       "id": "7aa4d9f6e39cc91d",
@@ -1890,7 +1856,7 @@
       "status": "gone",
       "gone_date": "2026-07-21",
       "flags": [],
-      "role": null
+      "role": "unclear"
     },
     {
       "id": "4b3437068a4a0562",
@@ -1905,7 +1871,7 @@
       "status": "gone",
       "gone_date": "2026-07-29",
       "flags": [],
-      "role": null
+      "role": "field"
     },
     {
       "id": "e481e30b9d7b0836",
@@ -1920,7 +1886,37 @@
       "status": "gone",
       "gone_date": "2026-07-21",
       "flags": [],
-      "role": null
+      "role": "field"
+    },
+    {
+      "id": "e15720ff82817361",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Welding Superintendent",
+      "location": "Pecos, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296397&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-01T23:19:10.904+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-07-31",
+      "flags": [],
+      "role": "field"
+    },
+    {
+      "id": "3602808878cb9f43",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Lead Welding Superintendent",
+      "location": "Pecos, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296391&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-01T23:19:10.905+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-07-31",
+      "flags": [],
+      "role": "field"
     },
     {
       "id": "4b337098b90c3295",
@@ -1935,7 +1931,22 @@
       "status": "gone",
       "gone_date": "2026-07-24",
       "flags": [],
-      "role": null
+      "role": "field"
+    },
+    {
+      "id": "7b4388aba54a69e3",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Project Engineer",
+      "location": "Ogden, Utah, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296014&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-06-23T12:15:48.413+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-07-31",
+      "flags": [],
+      "role": "unclear"
     },
     {
       "id": "3c178b344fb01f46",
@@ -1950,7 +1961,7 @@
       "status": "gone",
       "gone_date": "2026-07-30",
       "flags": [],
-      "role": null
+      "role": "unclear"
     },
     {
       "id": "848162e79248819a",
@@ -1965,7 +1976,7 @@
       "status": "gone",
       "gone_date": "2026-07-30",
       "flags": [],
-      "role": null
+      "role": "systems"
     },
     {
       "id": "77b1303705e9ff5a",
@@ -1980,7 +1991,7 @@
       "status": "gone",
       "gone_date": "2026-07-25",
       "flags": [],
-      "role": null
+      "role": "controls"
     },
     {
       "id": "3b142657788b6f89",
@@ -1995,7 +2006,7 @@
       "status": "gone",
       "gone_date": "2026-07-25",
       "flags": [],
-      "role": null
+      "role": "controls"
     },
     {
       "id": "00bc51ac4273da77",
@@ -2010,7 +2021,7 @@
       "status": "gone",
       "gone_date": "2026-07-25",
       "flags": [],
-      "role": null
+      "role": "controls"
     },
     {
       "id": "8b73de58b0cbc936",
@@ -2025,7 +2036,7 @@
       "status": "gone",
       "gone_date": "2026-07-25",
       "flags": [],
-      "role": null
+      "role": "controls"
     },
     {
       "id": "24f3fb4d25193d5b",
@@ -2040,7 +2051,7 @@
       "status": "gone",
       "gone_date": "2026-07-25",
       "flags": [],
-      "role": null
+      "role": "controls"
     },
     {
       "id": "bc30456a904b0bd3",
@@ -2055,7 +2066,7 @@
       "status": "gone",
       "gone_date": "2026-07-22",
       "flags": [],
-      "role": null
+      "role": "controls"
     },
     {
       "id": "89e41c7d389ee458",
@@ -2072,7 +2083,7 @@
       "flags": [
         "long-posted"
       ],
-      "role": null
+      "role": "controls"
     },
     {
       "id": "a568dd487cbc25a3",
@@ -2087,7 +2098,7 @@
       "status": "gone",
       "gone_date": "2026-07-30",
       "flags": [],
-      "role": null
+      "role": "unclear"
     },
     {
       "id": "069c9449c2b28123",
@@ -2102,7 +2113,7 @@
       "status": "gone",
       "gone_date": "2026-07-30",
       "flags": [],
-      "role": null
+      "role": "field"
     },
     {
       "id": "bd8eabbb45e3534f",
@@ -2117,7 +2128,7 @@
       "status": "gone",
       "gone_date": "2026-07-30",
       "flags": [],
-      "role": null
+      "role": "unclear"
     },
     {
       "id": "0aba6533f5d73407",
@@ -2132,7 +2143,7 @@
       "status": "gone",
       "gone_date": "2026-07-30",
       "flags": [],
-      "role": null
+      "role": "field"
     },
     {
       "id": "567408d36e24d283",
@@ -2147,7 +2158,7 @@
       "status": "gone",
       "gone_date": "2026-07-30",
       "flags": [],
-      "role": null
+      "role": "unclear"
     }
   ]
 }

@@ -161,7 +161,7 @@
     "counts": [
       3,
       3,
-      3,
+      4,
       4,
       4
     ],
@@ -209,18 +209,18 @@
       23,
       23,
       23,
-      23,
+      20,
       20
     ],
     "fail_streak": 0,
-    "inventory": 1014,
+    "inventory": 1015,
     "last_run": "2026-07-31"
   },
   "smartrecruiters:Turner & Townsend": {
     "counts": [
       32,
       32,
-      32,
+      36,
       36,
       36
     ],
@@ -260,7 +260,7 @@
       5
     ],
     "fail_streak": 0,
-    "inventory": 370,
+    "inventory": 372,
     "last_run": "2026-07-31"
   },
   "oracle_orc:Hill International": {
@@ -320,7 +320,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 2727,
+    "inventory": 2726,
     "last_run": "2026-07-31"
   },
   "workday:Intel": {
@@ -332,7 +332,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 655,
+    "inventory": 657,
     "last_run": "2026-07-31"
   },
   "workday:Pfizer": {
@@ -344,7 +344,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 537,
+    "inventory": 540,
     "last_run": "2026-07-31"
   },
   "workday:PwC": {
@@ -356,7 +356,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 4629,
+    "inventory": 4648,
     "last_run": "2026-07-31"
   },
   "phenom:Eli Lilly": {
@@ -380,11 +380,12 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 1713,
+    "inventory": 1716,
     "last_run": "2026-07-31"
   },
   "seed:MTA": {
     "counts": [
+      1,
       1,
       1,
       1,
@@ -400,6 +401,7 @@
   },
   "adzuna": {
     "counts": [
+      3,
       3,
       3
     ],
