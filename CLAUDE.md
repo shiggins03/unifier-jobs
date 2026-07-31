@@ -71,7 +71,20 @@ field / unclear, surfaced as artifact filter chips and a muted card badge.
 - Highest-precision signal is `unifier` in the TITLE => systems. Without it
   Oracle's "Senior Principal Consultant-Oracle Primavera Unifier" and NYP's
   "Facilities Systems (Oracle Unifier)" both fell through to unclear.
-- Tune the term lists in roles.yaml; no code change needed.
+- COUNTER-INTUITIVE, do not "fix" it: naming SIBLING PMIS platforms (Kahua,
+  EcoSys, Procore, e-Builder, Aconex) in the body is a POSITIVE systems
+  signal, not a false match. A posting only reaches this board by matching
+  Unifier/P6 first, so a competitor list marks platform work. Added 2026-07-31
+  for Deloitte's "Sr. Consultant – Capital Projects", a role the owner applied
+  to IRL whose generic title left it "unclear"; its systems signal was
+  body-only ("configuration and implementation of Project Management
+  Information Systems (PMIS)"). Verified as the ONLY reclassification across
+  all 83 active jobs. Construction postings do pick up these terms (Bechtel
+  +aconex, STV/T&T +ecosys) but title_weight holds them in place — narrowest
+  margin was STV "Senior Cost Engineering Specialist", ctl=7 vs sys=4.
+- Tune the term lists in roles.yaml; no code change needed. ALWAYS diff the
+  whole store old-config-vs-new before committing a term-list change — a
+  broad term can silently migrate whole employers between kinds.
 
 ## Adding a job from a direct link (`config/seed_jobs.yaml`)
 

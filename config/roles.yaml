@@ -69,6 +69,28 @@ kinds:
       - sql
       - system administration
       - integrations
+      # PMIS implementation/rollout language. Added 2026-07-31: Deloitte's
+      # "Sr. Consultant – Capital Projects" is a role the owner actually
+      # applied to IRL, but its generic title left it in "unclear" — the
+      # systems signal lives entirely in the body ("Leading the configuration
+      # and implementation of Project Management Information Systems (PMIS)").
+      - pmis
+      - project management information system
+      - configuration and implementation
+      - implementation of project management
+      - rollout of systems
+      - system implementation
+      - systems implementation
+      # Naming SIBLING PMIS platforms means the job is about running these
+      # systems. Counter-intuitive but correct: a posting only reaches this
+      # board by matching Unifier/P6 in the first place, so a competitor list
+      # marks platform work, NOT a false match.
+      - kahua
+      - ecosys
+      - procore
+      - e-builder
+      - ebuilder
+      - aconex
 
   # Construction execution in the field — not the owner's work.
   field:
