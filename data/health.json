@@ -160,7 +160,7 @@
   "greenhouse:Luster National": {
     "counts": [
       3,
-      3,
+      4,
       4,
       4,
       4
@@ -208,24 +208,24 @@
     "counts": [
       23,
       23,
-      23,
+      20,
       20,
       20
     ],
     "fail_streak": 0,
-    "inventory": 1015,
+    "inventory": 991,
     "last_run": "2026-07-31"
   },
   "smartrecruiters:Turner & Townsend": {
     "counts": [
       32,
-      32,
       36,
       36,
-      36
+      36,
+      37
     ],
     "fail_streak": 0,
-    "inventory": 2828,
+    "inventory": 2812,
     "last_run": "2026-07-31"
   },
   "workday:Mass General Brigham": {
@@ -260,7 +260,7 @@
       5
     ],
     "fail_streak": 0,
-    "inventory": 372,
+    "inventory": 370,
     "last_run": "2026-07-31"
   },
   "oracle_orc:Hill International": {
@@ -320,7 +320,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 2726,
+    "inventory": 2729,
     "last_run": "2026-07-31"
   },
   "workday:Intel": {
@@ -332,7 +332,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 657,
+    "inventory": 664,
     "last_run": "2026-07-31"
   },
   "workday:Pfizer": {
@@ -344,7 +344,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 540,
+    "inventory": 538,
     "last_run": "2026-07-31"
   },
   "workday:PwC": {
@@ -356,7 +356,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 4648,
+    "inventory": 4653,
     "last_run": "2026-07-31"
   },
   "phenom:Eli Lilly": {
@@ -365,10 +365,10 @@
       3,
       3,
       3,
-      3
+      4
     ],
     "fail_streak": 0,
-    "inventory": 687,
+    "inventory": 681,
     "last_run": "2026-07-31"
   },
   "workday:Johnson & Johnson": {
@@ -380,7 +380,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 1716,
+    "inventory": 1754,
     "last_run": "2026-07-31"
   },
   "seed:MTA": {
@@ -401,6 +401,7 @@
   },
   "adzuna": {
     "counts": [
+      3,
       3,
       3,
       3
