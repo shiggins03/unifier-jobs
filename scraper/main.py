@@ -67,6 +67,12 @@ def run():
         del store[k]
     for j in store.values():
         j["flags"] = [f for f in j["flags"] if f != "new"]
+    # Derived tags are recomputed across the WHOLE store every run, not just
+    # for postings seen today: otherwise adding or tuning roles.yaml never
+    # reaches the jobs already stored, and sources that fail for a day would
+    # leave their jobs untagged.
+    for j in store.values():
+        j["role"] = classify_role(j.get("title"), j.get("description"), roles)
 
     triage = models.load_json(models.TRIAGE, [])
     triage_keys = {(t.get("company"), t.get("url")) for t in triage}
@@ -334,6 +340,10 @@ def _merge(store, job, today, baseline):
         for f in ("posted_date", "comp", "description", "url", "location"):
             if job.get(f):
                 old[f] = job[f]
+        # Derived tags must refresh on every run, not just for new jobs —
+        # otherwise tuning roles.yaml (or adding the classifier at all) never
+        # reaches the ~all postings that already exist in the store.
+        old["role"] = job.get("role")
         if "title-match" in job["flags"] and "title-match" not in old["flags"]:
             old["flags"].append("title-match")
     else:
