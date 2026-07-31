@@ -5,6 +5,9 @@ tier1:
 tier2:
   tokens: [P6, OPC, PIF, OIC]
   context_required: [primavera, oracle, project controls]
+# Aggregator queries — both are phrase searches. Adzuna's what_phrase on the
+# unquoted 'Oracle Unifier' matched the word Oracle alone (Linux engineers,
+# LDAP admins): 346 hits, nearly all noise. Verified 2026-07-30.
 discovery_queries:
   - '"Primavera Unifier"'
-  - 'Oracle Unifier'
+  - '"Oracle Unifier"'

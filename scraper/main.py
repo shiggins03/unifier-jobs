@@ -7,8 +7,8 @@ from pathlib import Path
 import yaml
 
 from . import models, sources, site_gen
-from .filters import (blocklisted, extract_stated_comp, is_non_us, keyword_tier,
-                      title_match)
+from .filters import (blocklisted, city_rank, extract_stated_comp, is_non_us,
+                      keyword_tier, title_match)
 
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG = ROOT / "config"
@@ -169,7 +169,26 @@ def run():
         if ok:
             sources_ok.add(name)
         kept = 0
+        # Aggregators syndicate one posting once per city — Adzuna returned
+        # Oracle's "Senior Principal Consultant" ~10 times (Madison,
+        # Providence, Atlanta, Pierre...). Job ids hash location, so those
+        # would land as distinct cards. Collapse on company+title and keep
+        # the best-ranked location, since an aggregator hit is discovery
+        # anyway (rule #4) and resolves to one employer posting.
+        seen_ct, deduped = {}, []
         for r in records:
+            k = (models.norm(r.get("company")), models.norm(r.get("title")))
+            prev = seen_ct.get(k)
+            if prev is None:
+                seen_ct[k] = len(deduped)
+                deduped.append(r)
+            elif (city_rank(r.get("location"), cities)
+                  < city_rank(deduped[prev].get("location"), cities)):
+                deduped[prev] = r  # nearer metro wins
+        if len(deduped) != len(records):
+            print(f"  {name}: collapsed {len(records)} -> {len(deduped)} "
+                  f"(same job listed per-city)")
+        for r in deduped:
             company, title = r.get("company"), r.get("title")
             if not (company and title and r.get("url")):
                 continue

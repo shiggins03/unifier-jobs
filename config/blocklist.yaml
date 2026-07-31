@@ -19,6 +19,16 @@ companies:
   - Accion Labs
   - E-Solutions
   - Tanisha Systems
+  # Added 2026-07-30 from Adzuna's first live results — body-shop listings
+  # that matched "Oracle Unifier" on the word Oracle alone.
+  - TechAffinity
+  - Gurus Infotech
+  - Prominds
+  - APN Software
+  - Procession Systems
+  - Global Enterprise Services
+  - Programmers.io
+  - Advantra Consulting
 # Title/description red flags (any match = quarantine)
 title_patterns:
   - 'c2c'
