@@ -437,6 +437,20 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-07-31"
+    },
+    {
+      "company": "LGL Technologies",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=QniEot-M8RG8JMyxbRrc7Q&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-07-31"
+    },
+    {
+      "company": "Randstad Digital",
+      "url": "https://www.adzuna.com/land/ad/5804140363?se=QniEot-M8RG8JMyxbRrc7Q&utm_medium=api&utm_source=55569923&v=C1F881456D9E8D882D9851E80FCEB7B4888CB8CF",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-07-31"
     }
   ],
   "jobs": [
@@ -447,7 +461,7 @@
       "title": "Primavera Unifier Solution Architect",
       "location": "US Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-Remote/Primavera-Unifier-Solution-Architect_JR1504",
-      "posted_date": "Posted 23 Days Ago",
+      "posted_date": "Posted 24 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -455,6 +469,7 @@
       "flags": [
         "title-match"
       ],
+      "role": null,
       "has_desc": true
     },
     {
@@ -470,6 +485,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -485,6 +501,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -500,6 +517,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -515,6 +533,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -530,6 +549,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -545,6 +565,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -560,6 +581,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -575,6 +597,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -590,6 +613,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -605,6 +629,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -620,6 +645,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -635,6 +661,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -650,6 +677,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -665,6 +693,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -680,6 +709,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -695,6 +725,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -710,6 +741,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -725,6 +757,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -740,6 +773,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -755,6 +789,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -770,6 +805,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -785,6 +821,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -800,6 +837,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -815,6 +853,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -830,6 +869,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -845,6 +885,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -860,6 +901,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -875,6 +917,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -890,6 +933,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -905,6 +949,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -920,6 +965,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -937,6 +983,7 @@
       "flags": [
         "long-posted"
       ],
+      "role": null,
       "has_desc": true
     },
     {
@@ -954,6 +1001,7 @@
       "flags": [
         "long-posted"
       ],
+      "role": null,
       "has_desc": true
     },
     {
@@ -971,6 +1019,7 @@
       "flags": [
         "long-posted"
       ],
+      "role": null,
       "has_desc": true
     },
     {
@@ -988,6 +1037,7 @@
       "flags": [
         "long-posted"
       ],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1005,6 +1055,7 @@
       "flags": [
         "long-posted"
       ],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1020,6 +1071,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1029,12 +1081,13 @@
       "title": "Project Controls Specialist",
       "location": "Dallas, Texas",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Dallas-Texas/Project-Controls-Specialist_JR5845",
-      "posted_date": "Posted 30 Days Ago",
+      "posted_date": "Posted 30+ Days Ago",
       "comp": "$83,978.91 - $95,975.90",
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1050,6 +1103,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1065,6 +1119,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1080,6 +1135,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1095,6 +1151,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1110,6 +1167,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1125,6 +1183,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1140,6 +1199,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1155,6 +1215,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1170,6 +1231,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1179,12 +1241,13 @@
       "title": "Senior Cost Engineering Specialist",
       "location": "Dallas, Texas",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Dallas-Texas/Senior-Cost-Engineering-Specialist_JR5958",
-      "posted_date": "Posted 6 Days Ago",
+      "posted_date": "Posted 7 Days Ago",
       "comp": "$116,930.89 - $133,635.31",
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1194,12 +1257,13 @@
       "title": "Senior Program Controls Manager",
       "location": "US-WA-Seattle",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Seattle/Senior-Program-Controls-Manager_JR1535",
-      "posted_date": "Posted 6 Days Ago",
+      "posted_date": "Posted 7 Days Ago",
       "comp": "$180,000-$250,000 annually",
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1215,6 +1279,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1232,6 +1297,7 @@
       "flags": [
         "title-match"
       ],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1247,6 +1313,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1262,6 +1329,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1277,6 +1345,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1292,6 +1361,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1307,6 +1377,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1316,12 +1387,13 @@
       "title": "P6 Scheduler",
       "location": "US-CA-San Francisco Bay Area",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-CA-San-Francisco-Bay-Area/P6-Scheduler_JR1539",
-      "posted_date": "Posted 2 Days Ago",
+      "posted_date": "Posted 3 Days Ago",
       "comp": "$128,960 - $139,360 annually",
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1337,6 +1409,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1352,6 +1425,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1367,6 +1441,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1382,6 +1457,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1397,6 +1473,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1412,6 +1489,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1427,6 +1505,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1442,6 +1521,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1457,6 +1537,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1472,6 +1553,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1487,6 +1569,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1502,6 +1585,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1517,6 +1601,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1532,6 +1617,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1549,6 +1635,7 @@
       "flags": [
         "long-posted"
       ],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1566,6 +1653,7 @@
       "flags": [
         "long-posted"
       ],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1581,6 +1669,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1598,7 +1687,8 @@
       "flags": [
         "manual",
         "title-match"
-      ]
+      ],
+      "role": null
     },
     {
       "id": "9eefe0306bcb20f0",
@@ -1612,9 +1702,8 @@
       "tier": 2,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1629,9 +1718,8 @@
       "tier": 2,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1646,9 +1734,8 @@
       "tier": 2,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1663,9 +1750,8 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1674,15 +1760,14 @@
       "company": "LGL Technologies",
       "title": "Oracle Primavera Unifier Consultant",
       "location": "Texas, US",
-      "url": "https://www.adzuna.com/land/ad/5794406427?se=cLH7_JKM8RG8JMyxbRrc7Q&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=QniEot-M8RG8JMyxbRrc7Q&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
       "posted_date": "2026-07-09T15:01:35Z",
       "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1691,15 +1776,14 @@
       "company": "Randstad Digital",
       "title": "Testing & Training Lead (Oracle Primavera Unifier)",
       "location": "Glendale, Denver",
-      "url": "https://www.adzuna.com/land/ad/5804140363?se=cLH7_JKM8RG8JMyxbRrc7Q&utm_medium=api&utm_source=55569923&v=C1F881456D9E8D882D9851E80FCEB7B4888CB8CF",
+      "url": "https://www.adzuna.com/land/ad/5804140363?se=QniEot-M8RG8JMyxbRrc7Q&utm_medium=api&utm_source=55569923&v=C1F881456D9E8D882D9851E80FCEB7B4888CB8CF",
       "posted_date": "2026-07-16T21:44:52Z",
       "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1714,9 +1798,8 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
+      "role": null,
       "has_desc": true
     },
     {
@@ -1731,7 +1814,8 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-07-26",
-      "flags": []
+      "flags": [],
+      "role": null
     },
     {
       "id": "6e02d7daf784bb12",
@@ -1745,7 +1829,8 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "role": null
     },
     {
       "id": "6ac85c0bced38907",
@@ -1759,7 +1844,8 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-07-30",
-      "flags": []
+      "flags": [],
+      "role": null
     },
     {
       "id": "ee0169af2f3bdcab",
@@ -1773,7 +1859,8 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "role": null
     },
     {
       "id": "2902a33e73d6e258",
@@ -1787,7 +1874,8 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-07-23",
-      "flags": []
+      "flags": [],
+      "role": null
     },
     {
       "id": "7aa4d9f6e39cc91d",
@@ -1801,7 +1889,8 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-07-21",
-      "flags": []
+      "flags": [],
+      "role": null
     },
     {
       "id": "4b3437068a4a0562",
@@ -1815,7 +1904,8 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-07-29",
-      "flags": []
+      "flags": [],
+      "role": null
     },
     {
       "id": "e481e30b9d7b0836",
@@ -1829,7 +1919,8 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-07-21",
-      "flags": []
+      "flags": [],
+      "role": null
     },
     {
       "id": "4b337098b90c3295",
@@ -1843,7 +1934,8 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-07-24",
-      "flags": []
+      "flags": [],
+      "role": null
     },
     {
       "id": "3c178b344fb01f46",
@@ -1857,7 +1949,8 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-07-30",
-      "flags": []
+      "flags": [],
+      "role": null
     },
     {
       "id": "848162e79248819a",
@@ -1871,7 +1964,8 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-07-30",
-      "flags": []
+      "flags": [],
+      "role": null
     },
     {
       "id": "77b1303705e9ff5a",
@@ -1885,7 +1979,8 @@
       "tier": 2,
       "status": "gone",
       "gone_date": "2026-07-25",
-      "flags": []
+      "flags": [],
+      "role": null
     },
     {
       "id": "3b142657788b6f89",
@@ -1899,7 +1994,8 @@
       "tier": 2,
       "status": "gone",
       "gone_date": "2026-07-25",
-      "flags": []
+      "flags": [],
+      "role": null
     },
     {
       "id": "00bc51ac4273da77",
@@ -1913,7 +2009,8 @@
       "tier": 2,
       "status": "gone",
       "gone_date": "2026-07-25",
-      "flags": []
+      "flags": [],
+      "role": null
     },
     {
       "id": "8b73de58b0cbc936",
@@ -1927,7 +2024,8 @@
       "tier": 2,
       "status": "gone",
       "gone_date": "2026-07-25",
-      "flags": []
+      "flags": [],
+      "role": null
     },
     {
       "id": "24f3fb4d25193d5b",
@@ -1941,7 +2039,8 @@
       "tier": 2,
       "status": "gone",
       "gone_date": "2026-07-25",
-      "flags": []
+      "flags": [],
+      "role": null
     },
     {
       "id": "bc30456a904b0bd3",
@@ -1955,7 +2054,8 @@
       "tier": 2,
       "status": "gone",
       "gone_date": "2026-07-22",
-      "flags": []
+      "flags": [],
+      "role": null
     },
     {
       "id": "89e41c7d389ee458",
@@ -1971,7 +2071,8 @@
       "gone_date": "2026-07-22",
       "flags": [
         "long-posted"
-      ]
+      ],
+      "role": null
     },
     {
       "id": "a568dd487cbc25a3",
@@ -1985,7 +2086,8 @@
       "tier": 2,
       "status": "gone",
       "gone_date": "2026-07-30",
-      "flags": []
+      "flags": [],
+      "role": null
     },
     {
       "id": "069c9449c2b28123",
@@ -1999,7 +2101,8 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-07-30",
-      "flags": []
+      "flags": [],
+      "role": null
     },
     {
       "id": "bd8eabbb45e3534f",
@@ -2013,7 +2116,8 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-07-30",
-      "flags": []
+      "flags": [],
+      "role": null
     },
     {
       "id": "0aba6533f5d73407",
@@ -2027,7 +2131,8 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-07-30",
-      "flags": []
+      "flags": [],
+      "role": null
     },
     {
       "id": "567408d36e24d283",
@@ -2041,7 +2146,8 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-07-30",
-      "flags": []
+      "flags": [],
+      "role": null
     }
   ]
 }
