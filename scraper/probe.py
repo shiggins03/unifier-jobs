@@ -138,21 +138,34 @@ def main():
                         print(f"    {line.strip()[:150]}")
     show("maps", maps)
 
-    section("Is 4C on a public ATS? (name-based probes)")
-    def ats_guess():
-        for u in ("https://boards.greenhouse.io/4cteam",
-                  "https://boards.greenhouse.io/foreseeconsulting",
-                  "https://api.lever.co/v0/postings/4cteam?mode=json",
-                  "https://api.lever.co/v0/postings/foresee?mode=json",
-                  "https://4cteam.applytojob.com/apply",
-                  "https://foreseeconsulting.applytojob.com/apply"):
+    section("applytojob NEGATIVE CONTROL (round 14 gave 200 for BOTH names,"
+            " identical len — wildcard parking page?)")
+    def jazz_control():
+        for name in ("4cteam", "foreseeconsulting", "zzqnope999notreal"):
+            u = f"https://{name}.applytojob.com/apply"
             try:
                 r = requests.get(u, headers=BROWSER_UA, timeout=T,
                                  allow_redirects=True)
-                print(f"  {u} -> {r.status_code} len={len(r.text)}")
+                soup = BeautifulSoup(r.text, "html.parser")
+                title = (soup.title.get_text(strip=True) if soup.title else "")
+                body = soup.get_text(" ", strip=True)
+                print(f"  {name}: {r.status_code} len={len(r.text)} "
+                      f"final={r.url}")
+                print(f"    title={title[:90]!r}")
+                print(f"    body[:160]={body[:160]!r}")
             except Exception as e:
-                print(f"  {u} -> EXC {type(e).__name__}: {str(e)[:80]}")
-    show("ats_guess", ats_guess)
+                print(f"  {name}: EXC {type(e).__name__}: {str(e)[:80]}")
+    show("jazz_control", jazz_control)
+
+    section("4cteam /about/ — the #careers section verbatim")
+    def careers_text():
+        r = get("https://4cteam.com/about/")
+        soup = BeautifulSoup(r.text, "html.parser")
+        text = re.sub(r"\s+", " ", soup.get_text(" ", strip=True))
+        i = text.lower().find("careers")
+        if i >= 0:
+            print(f"    ...{text[i:i + 1400]}")
+    show("careers_text", careers_text)
     return
 
     # ---- previous round (Adzuna verification), kept for reference ----
