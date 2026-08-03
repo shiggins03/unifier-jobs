@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-02",
+  "updated": "2026-08-03",
   "warnings": [],
   "roster": [
     {
@@ -521,6 +521,27 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-08-02"
+    },
+    {
+      "company": "LGL Technologies",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=2J_eK0GP8RGPc5aOm974iw&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-03"
+    },
+    {
+      "company": "Randstad Digital",
+      "url": "https://www.adzuna.com/land/ad/5804140363?se=2J_eK0GP8RGPc5aOm974iw&utm_medium=api&utm_source=55569923&v=C1F881456D9E8D882D9851E80FCEB7B4888CB8CF",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-03"
+    },
+    {
+      "company": "AmmaluIT",
+      "url": "https://www.adzuna.com/land/ad/5822710299?se=Tgd0LEGP8RGPc5aOm974iw&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-03"
     }
   ],
   "jobs": [
@@ -531,7 +552,7 @@
       "title": "Primavera Unifier Solution Architect",
       "location": "US Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-Remote/Primavera-Unifier-Solution-Architect_JR1504",
-      "posted_date": "Posted 26 Days Ago",
+      "posted_date": "Posted 27 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -1263,7 +1284,7 @@
       "title": "Senior Cost Engineering Specialist",
       "location": "Dallas, Texas",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Dallas-Texas/Senior-Cost-Engineering-Specialist_JR5958",
-      "posted_date": "Posted 9 Days Ago",
+      "posted_date": "Posted 10 Days Ago",
       "comp": "$116,930.89 - $133,635.31",
       "tier": 1,
       "status": "active",
@@ -1279,7 +1300,7 @@
       "title": "Senior Program Controls Manager",
       "location": "US-WA-Seattle",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Seattle/Senior-Program-Controls-Manager_JR1535",
-      "posted_date": "Posted 9 Days Ago",
+      "posted_date": "Posted 10 Days Ago",
       "comp": "$180,000-$250,000 annually",
       "tier": 1,
       "status": "active",
@@ -1409,7 +1430,7 @@
       "title": "P6 Scheduler",
       "location": "US-CA-San Francisco Bay Area",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-CA-San-Francisco-Bay-Area/P6-Scheduler_JR1539",
-      "posted_date": "Posted 5 Days Ago",
+      "posted_date": "Posted 6 Days Ago",
       "comp": "$128,960 - $139,360 annually",
       "tier": 1,
       "status": "active",
@@ -1576,22 +1597,6 @@
       "gone_date": null,
       "flags": [],
       "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "87832dc1c24fd215",
-      "kind": "direct",
-      "company": "Amazon",
-      "title": "Executive Assistant, Amazon Ads - Demand Product ",
-      "location": "US, NY, New York",
-      "url": "https://www.amazon.jobs/en/jobs/10454651/executive-assistant-amazon-ads-demand-product",
-      "posted_date": "June 22, 2026",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "unclear",
       "has_desc": true
     },
     {
@@ -1782,7 +1787,7 @@
       "company": "LGL Technologies",
       "title": "Oracle Primavera Unifier Consultant",
       "location": "Texas, US",
-      "url": "https://www.adzuna.com/land/ad/5794406427?se=ojonM2qO8RGNzO_fQd9OLg&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=2J_eK0GP8RGPc5aOm974iw&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
       "posted_date": "2026-07-09T15:01:35Z",
       "comp": null,
       "tier": 1,
@@ -1798,7 +1803,7 @@
       "company": "Randstad Digital",
       "title": "Testing & Training Lead (Oracle Primavera Unifier)",
       "location": "Glendale, Denver",
-      "url": "https://www.adzuna.com/land/ad/5804140363?se=ojonM2qO8RGNzO_fQd9OLg&utm_medium=api&utm_source=55569923&v=C1F881456D9E8D882D9851E80FCEB7B4888CB8CF",
+      "url": "https://www.adzuna.com/land/ad/5804140363?se=2J_eK0GP8RGPc5aOm974iw&utm_medium=api&utm_source=55569923&v=C1F881456D9E8D882D9851E80FCEB7B4888CB8CF",
       "posted_date": "2026-07-16T21:44:52Z",
       "comp": null,
       "tier": 1,
@@ -1862,7 +1867,7 @@
       "company": "AmmaluIT",
       "title": "Oracle Integration Cloud (OIC) Developer",
       "location": "Indiana, Indiana County",
-      "url": "https://www.adzuna.com/land/ad/5822710299?se=iC1lNWqO8RGcV99e4Qko5g&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
+      "url": "https://www.adzuna.com/land/ad/5822710299?se=Tgd0LEGP8RGPc5aOm974iw&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
       "posted_date": "2026-07-31T17:21:41Z",
       "comp": null,
       "tier": 1,
@@ -2263,6 +2268,21 @@
       "gone_date": "2026-07-30",
       "flags": [],
       "role": "systems"
+    },
+    {
+      "id": "87832dc1c24fd215",
+      "kind": "direct",
+      "company": "Amazon",
+      "title": "Executive Assistant, Amazon Ads - Demand Product ",
+      "location": "US, NY, New York",
+      "url": "https://www.amazon.jobs/en/jobs/10454651/executive-assistant-amazon-ads-demand-product",
+      "posted_date": "June 22, 2026",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-08-03",
+      "flags": [],
+      "role": "unclear"
     }
   ]
 }
