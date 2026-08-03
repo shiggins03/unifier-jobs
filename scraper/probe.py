@@ -86,8 +86,76 @@ def sf_csb(base, label):
 
 
 def main():
-    # Verify Adzuna with REAL credentials before the daily run depends on it.
-    # Prints results and quota only — never the credentials.
+    # Round 14: Foresee Consulting (formerly 4C Team, 4cteam.com) — an Oracle
+    # Primavera PLATINUM partner whose whole practice is Unifier. Sandbox gets
+    # 403 on every path. Questions: (a) what roles do they actually list,
+    # (b) is there a scriptable endpoint or is it a mailto-only careers page?
+    section("FORESEE / 4C TEAM (4cteam.com)")
+
+    def sniff(url):
+        r = get(url)
+        if not r.ok:
+            return
+        soup = BeautifulSoup(r.text, "html.parser")
+        text = soup.get_text(" ", strip=True)
+        for term in ("unifier", "career", "hiring", "job openings", "resume",
+                     "@4cteam.com", "consultant"):
+            n = len(re.findall(re.escape(term), text, re.I))
+            if n:
+                print(f"    '{term}' x{n}")
+        # Any ATS the page links out to?
+        ats = ("greenhouse", "lever.co", "workday", "myworkdayjobs", "bamboohr",
+               "smartrecruiters", "jazzhr", "applytojob", "recruitee", "breezy",
+               "workable", "ziprecruiter", "indeed", "paylocity", "adp",
+               "successfactors", "icims", "careers")
+        links = {a["href"] for a in soup.find_all("a", href=True)}
+        for href in sorted(links):
+            if any(t in href.lower() for t in ats):
+                print(f"    LINK {href[:120]}")
+        for m in sorted(set(re.findall(r"[\w.+-]+@[\w.-]+", text)))[:6]:
+            print(f"    MAILTO {m}")
+        # Headings often carry the job titles on a simple careers page
+        for h in soup.find_all(["h1", "h2", "h3", "h4"])[:25]:
+            t = h.get_text(" ", strip=True)
+            if t:
+                print(f"    H: {t[:100]}")
+
+    for path in ("", "/careers/", "/career/", "/careers", "/about/",
+                 "/jobs/", "/contact/"):
+        show(f"4cteam{path}", lambda p=path: sniff(f"https://4cteam.com{p}"))
+
+    section("4cteam: robots/sitemap (find the real careers URL)")
+    def maps():
+        for u in ("https://4cteam.com/robots.txt",
+                  "https://4cteam.com/sitemap.xml",
+                  "https://4cteam.com/sitemap_index.xml",
+                  "https://4cteam.com/wp-sitemap.xml"):
+            r = requests.get(u, headers=BROWSER_UA, timeout=T)
+            print(f"  GET {u} -> {r.status_code} len={len(r.text)}")
+            if r.ok:
+                for line in r.text.splitlines():
+                    if re.search(r"career|job|hiring|position", line, re.I):
+                        print(f"    {line.strip()[:150]}")
+    show("maps", maps)
+
+    section("Is 4C on a public ATS? (name-based probes)")
+    def ats_guess():
+        for u in ("https://boards.greenhouse.io/4cteam",
+                  "https://boards.greenhouse.io/foreseeconsulting",
+                  "https://api.lever.co/v0/postings/4cteam?mode=json",
+                  "https://api.lever.co/v0/postings/foresee?mode=json",
+                  "https://4cteam.applytojob.com/apply",
+                  "https://foreseeconsulting.applytojob.com/apply"):
+            try:
+                r = requests.get(u, headers=BROWSER_UA, timeout=T,
+                                 allow_redirects=True)
+                print(f"  {u} -> {r.status_code} len={len(r.text)}")
+            except Exception as e:
+                print(f"  {u} -> EXC {type(e).__name__}: {str(e)[:80]}")
+    show("ats_guess", ats_guess)
+    return
+
+    # ---- previous round (Adzuna verification), kept for reference ----
     import os
     section("ADZUNA credential + search verification")
     app_id = os.environ.get("ADZUNA_APP_ID")
