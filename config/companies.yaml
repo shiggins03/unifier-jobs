@@ -376,3 +376,18 @@ companies:
     note: /careers/ redirects to homepage; full sitemap grep (335 pages,
       2026-07-18) found no careers/jobs page at all. Marketing copy mentions
       Unifier everywhere — permanent false positive. Rely on discovery.
+  - name: Foresee Consulting
+    tier: C
+    ats: generic_page
+    url: https://4cteam.com/about/
+    enabled: false
+    note: 'formerly 4C Team; Oracle Primavera PLATINUM partner, ~21 staff, Las
+      Vegas — the practice is built on Unifier, so a strong employer fit. But
+      they publish NO individual job listings anywhere (probe rounds 14-15,
+      2026-08-03): /careers/ 301s to /about/#careers, which is pitch copy only
+      ("Why Work For Us?", "Excellent Compensation") naming zero roles; the sole
+      apply route is mailto:careers@4cteam.com. Not on Greenhouse or Lever (both
+      404). CAUTION — *.applytojob.com answers 200 for ANY subdomain: a nonsense
+      name returned the byte-identical JazzHR marketing page, so that 200 is a
+      wildcard, NOT a board. Nothing to scrape; watch via discovery or apply by
+      email.'
