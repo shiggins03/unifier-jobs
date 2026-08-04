@@ -1,0 +1,11 @@
+Career Level : Manager / Senior Manager / Associate Director
+Vous êtes
+En tant que Lead AI Architect ou Principal AI Architect, vous serez la référence technique incontournable en matière d’architecture IA au sein des missions clients et de la practice. Vous serez responsable de l’architecture complète de plateformes et solutions d’IA avancées, couvrant le machine learning traditionnel, l’IA générative et les systèmes agentiques, en veillant à ce que chaque domaine de l’architecture soit conçu de manière cohérente, techniquement robuste et alignée sur les objectifs métiers du client ainsi que sur les standards d’une organisation de niveau entreprise (
+enterprise-grade
+).
+Une dimension essentielle de ce rôle est votre capacité à intervenir au niveau exécutif. Vous collaborerez étroitement avec des CIO, CTO et dirigeants métiers afin de définir et d’articuler la stratégie IA de l’entreprise. Vous ferez le lien entre les objectifs business, les priorités stratégiques et les programmes de transformation pour construire une vision technologique cohérente, garantissant que les investissements en IA soient réalisés de manière structurée, pertinente et créatrice d’avantages concurrentiels durables. Ce partenariat stratégique avec les dirigeants vous positionnera à la fois comme conseiller de confiance (
+trusted advisor
+) et architecte de référence.
+Dans ce rôle, vous piloterez et coordonnerez le travail de plusieurs architectes de domaine et experts spécialisés couvrant notamment le design d’applications agentiques, la sécurité et la confiance dans l’IA, les opérations IA et l’observabilité, l’ingénierie des données et de la connaissance, ainsi que les plateformes de modèles et d’inférence. Vous apporterez la vision d’architecture globale, la gouvernance technique et la cohérence transverse permettant d’unifier leurs contributions dans un système prêt pour l’entreprise. Vous définirez les orientations architecturales, arbitrerez les enjeux entre domaines et prendrez les déc
+
+[Truncated for this view — full text at the posting link]

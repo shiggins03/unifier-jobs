@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-03",
+  "updated": "2026-08-04",
   "warnings": [],
   "roster": [
     {
@@ -302,6 +302,13 @@
       "ats": "generic_page",
       "enabled": false,
       "note": "/careers/ redirects to homepage; full sitemap grep (335 pages, 2026-07-18) found no careers/jobs page at all. Marketing copy mentions Unifier everywhere — permanent false positive. Rely on discovery."
+    },
+    {
+      "name": "Foresee Consulting",
+      "tier": "C",
+      "ats": "generic_page",
+      "enabled": false,
+      "note": "formerly 4C Team; Oracle Primavera PLATINUM partner, ~21 staff, Las Vegas — the practice is built on Unifier, so a strong employer fit. But they publish NO individual job listings anywhere (probe rounds 14-15, 2026-08-03): /careers/ 301s to /about/#careers, which is pitch copy only (\"Why Work For Us?\", \"Excellent Compensation\") naming zero roles; the sole apply route is mailto:careers@4cteam.com. Not on Greenhouse or Lever (both 404). CAUTION — *.applytojob.com answers 200 for ANY subdomain: a nonsense name returned the byte-identical JazzHR marketing page, so that 200 is a wildcard, NOT a board. Nothing to scrape; watch via discovery or apply by email."
     }
   ],
   "triage": [
@@ -542,6 +549,27 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-08-03"
+    },
+    {
+      "company": "LGL Technologies",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=tCCO3QSQ8RGLoKoV5ifvLA&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-04"
+    },
+    {
+      "company": "Randstad Digital",
+      "url": "https://www.adzuna.com/land/ad/5804140363?se=tCCO3QSQ8RGLoKoV5ifvLA&utm_medium=api&utm_source=55569923&v=C1F881456D9E8D882D9851E80FCEB7B4888CB8CF",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-04"
+    },
+    {
+      "company": "AmmaluIT",
+      "url": "https://www.adzuna.com/land/ad/5822710299?se=jL0X3wSQ8RGUqtlRbYWT-w&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-04"
     }
   ],
   "jobs": [
@@ -552,7 +580,7 @@
       "title": "Primavera Unifier Solution Architect",
       "location": "US Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-Remote/Primavera-Unifier-Solution-Architect_JR1504",
-      "posted_date": "Posted 27 Days Ago",
+      "posted_date": "Posted 28 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -676,6 +704,22 @@
       "has_desc": true
     },
     {
+      "id": "6ac85c0bced38907",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "LOTO - Tagging Authority",
+      "location": "Battle Creek, Michigan, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296964&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-15T15:19:06.160+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
       "id": "5dadc3fda38289f4",
       "kind": "direct",
       "company": "Bechtel",
@@ -731,6 +775,22 @@
       "location": "Port Arthur, Texas, United States",
       "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296695&jobPipeline=PhenomCareerSite",
       "posted_date": "2026-07-07T12:16:54.733+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "e15720ff82817361",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Welding Superintendent",
+      "location": "Pecos, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296397&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-01T23:19:10.904+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -921,8 +981,8 @@
       "company": "Turner & Townsend",
       "title": "Senior Scheduler - CQV",
       "location": "Huntsville, Alabama, US",
-      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000134026279-senior-scheduler-cqv?oga=true",
-      "posted_date": "2026-06-24T20:07:55.207Z",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000141315669-senior-scheduler-cqv?oga=true",
+      "posted_date": "2026-08-03T17:10:49.370Z",
       "comp": null,
       "tier": 2,
       "status": "active",
@@ -1214,22 +1274,6 @@
       "has_desc": true
     },
     {
-      "id": "6005b160abf61af3",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Building Electrical Field Engineer",
-      "location": "Lake Charles, Louisiana, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297249&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-21T18:18:37.571+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
-      "has_desc": true
-    },
-    {
       "id": "1ff175a24c2e5f41",
       "kind": "direct",
       "company": "Bechtel",
@@ -1284,7 +1328,7 @@
       "title": "Senior Cost Engineering Specialist",
       "location": "Dallas, Texas",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Dallas-Texas/Senior-Cost-Engineering-Specialist_JR5958",
-      "posted_date": "Posted 10 Days Ago",
+      "posted_date": "Posted 11 Days Ago",
       "comp": "$116,930.89 - $133,635.31",
       "tier": 1,
       "status": "active",
@@ -1300,7 +1344,7 @@
       "title": "Senior Program Controls Manager",
       "location": "US-WA-Seattle",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Seattle/Senior-Program-Controls-Manager_JR1535",
-      "posted_date": "Posted 10 Days Ago",
+      "posted_date": "Posted 11 Days Ago",
       "comp": "$180,000-$250,000 annually",
       "tier": 1,
       "status": "active",
@@ -1430,7 +1474,7 @@
       "title": "P6 Scheduler",
       "location": "US-CA-San Francisco Bay Area",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-CA-San-Francisco-Bay-Area/P6-Scheduler_JR1539",
-      "posted_date": "Posted 6 Days Ago",
+      "posted_date": "Posted 7 Days Ago",
       "comp": "$128,960 - $139,360 annually",
       "tier": 1,
       "status": "active",
@@ -1787,7 +1831,7 @@
       "company": "LGL Technologies",
       "title": "Oracle Primavera Unifier Consultant",
       "location": "Texas, US",
-      "url": "https://www.adzuna.com/land/ad/5794406427?se=2J_eK0GP8RGPc5aOm974iw&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=tCCO3QSQ8RGLoKoV5ifvLA&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
       "posted_date": "2026-07-09T15:01:35Z",
       "comp": null,
       "tier": 1,
@@ -1803,7 +1847,7 @@
       "company": "Randstad Digital",
       "title": "Testing & Training Lead (Oracle Primavera Unifier)",
       "location": "Glendale, Denver",
-      "url": "https://www.adzuna.com/land/ad/5804140363?se=2J_eK0GP8RGPc5aOm974iw&utm_medium=api&utm_source=55569923&v=C1F881456D9E8D882D9851E80FCEB7B4888CB8CF",
+      "url": "https://www.adzuna.com/land/ad/5804140363?se=tCCO3QSQ8RGLoKoV5ifvLA&utm_medium=api&utm_source=55569923&v=C1F881456D9E8D882D9851E80FCEB7B4888CB8CF",
       "posted_date": "2026-07-16T21:44:52Z",
       "comp": null,
       "tier": 1,
@@ -1867,13 +1911,121 @@
       "company": "AmmaluIT",
       "title": "Oracle Integration Cloud (OIC) Developer",
       "location": "Indiana, Indiana County",
-      "url": "https://www.adzuna.com/land/ad/5822710299?se=Tgd0LEGP8RGPc5aOm974iw&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
+      "url": "https://www.adzuna.com/land/ad/5822710299?se=jL0X3wSQ8RGUqtlRbYWT-w&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
       "posted_date": "2026-07-31T17:21:41Z",
       "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "faa2c906be905c99",
+      "kind": "direct",
+      "company": "Accenture",
+      "title": "Custom Software Engineer",
+      "location": "Indore",
+      "url": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Indore/Custom-Software-Engineer_ATCI-5670709-S2057854-1",
+      "posted_date": "Posted Today",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "c7aa876a9af6c8c3",
+      "kind": "direct",
+      "company": "Accenture",
+      "title": "Custom Software Engineer",
+      "location": "Ahmedabad",
+      "url": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Ahmedabad/Cloud-Platform-Engineer_ATCI-5510357-S2009957-1",
+      "posted_date": "Posted Today",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "82ba79e6c3cdafd4",
+      "kind": "direct",
+      "company": "Accenture",
+      "title": "Lead Architecte IA & LLM (Architecte Principal)",
+      "location": "Paris",
+      "url": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Paris/Lead-Architecte-IA---LLM--Architecte-Principal-_R00346178",
+      "posted_date": "Posted 11 Days Ago",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "a218e61e84cfc5ff",
+      "kind": "direct",
+      "company": "Accenture",
+      "title": "Custom Software Engineer",
+      "location": "Kolkata",
+      "url": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Kolkata/Custom-Software-Engineer_ATCI-5423532-S2007024-1",
+      "posted_date": "Posted 30+ Days Ago",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "b9a49a02ecabf9eb",
+      "kind": "direct",
+      "company": "Accenture",
+      "title": "Intégrateur Senior Primavera F/H - Paris",
+      "location": "Paris",
+      "url": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Paris/Lead-Digital-Project-Controls-X0-F-H---Paris_R00339294",
+      "posted_date": "Posted 28 Days Ago",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "3999e3cb69afd1d7",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Digital Solutions Specialist",
+      "location": "Boston, Massachusetts",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
+      "posted_date": "Posted Yesterday",
+      "comp": "$114,345.69 - $130,680.78",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
       "role": "systems",
       "has_desc": true
     },
@@ -1906,21 +2058,6 @@
       "gone_date": "2026-07-24",
       "flags": [],
       "role": "controls"
-    },
-    {
-      "id": "6ac85c0bced38907",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "LOTO - Tagging Authority",
-      "location": "Battle Creek, Michigan, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296964&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-15T15:19:06.160+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-07-30",
-      "flags": [],
-      "role": "unclear"
     },
     {
       "id": "ee0169af2f3bdcab",
@@ -1994,21 +2131,6 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-07-21",
-      "flags": [],
-      "role": "field"
-    },
-    {
-      "id": "e15720ff82817361",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Welding Superintendent",
-      "location": "Pecos, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296397&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-01T23:19:10.904+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-07-31",
       "flags": [],
       "role": "field"
     },
@@ -2238,6 +2360,21 @@
       "gone_date": "2026-07-30",
       "flags": [],
       "role": "systems"
+    },
+    {
+      "id": "6005b160abf61af3",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Building Electrical Field Engineer",
+      "location": "Lake Charles, Louisiana, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297249&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-21T18:18:37.571+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-08-04",
+      "flags": [],
+      "role": "field"
     },
     {
       "id": "0aba6533f5d73407",

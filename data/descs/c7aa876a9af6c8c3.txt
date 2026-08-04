@@ -1,0 +1,33 @@
+Project Role : 
+Custom Software Engineer
+Project Role Description : 
+Develop custom software solutions to design, code, and enhance components across systems or applications. Use modern frameworks and agile practices to deliver scalable, high-performing solutions tailored to specific business needs.
+Must have skills : 
+Oracle Primavera Unifier
+Good to have skills : 
+NA
+Minimum 
+7.5
+ year(s) of experience is required
+Educational Qualification : 
+15 years full time education
+Summary: 
+As a Custom Software Engineer, a typical day involves creating tailored software solutions by designing, coding, and improving various components within systems or applications. The role requires working with contemporary development frameworks and following agile methodologies to ensure the delivery of scalable and efficient software that meets unique business requirements. Collaboration with different teams and continuous refinement of software elements are integral parts of the daily workflow, fostering innovation and responsiveness to evolving project demands.
+ 
+Roles & Responsibilities: 
+- Expected to be an SME, collaborate and manage the team to perform.
+- Responsible for team decisions.
+- Engage with multiple teams and contribute on key decisions.
+- Provide solutions to problems for their immediate team and across multiple teams.
+- Lead the implementation of best practices to enhance software quality and team productivity.
+- Mentor junior team members to support their professional growth and skill development.
+- Coordinate cross-functional efforts to align software development with organizational goals.
+ 
+Professional & Technical Skills: 
+- Must To Have Skills: Proficiency in Oracle Primavera Unifier.
+- Strong knowledge of software development life cycle and agile methodologies.
+- Experience in designing and developing scalable software components.
+- Ability to troubleshoot and resolve complex technical issues effectively.
+- Familiarity with integration of software modules and sys
+
+[Truncated for this view — full text at the posting link]
