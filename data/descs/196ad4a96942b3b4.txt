@@ -1,11 +1,11 @@
-Requisition ID: 294278
+Requisition ID: 297152
  
  
 Relocation Authorized: National - Single
  
 Telework Type: Full-Time Office/Project
  
-Work Location: Lake Charles,LA
+Work Location: Pecos, TX
  
 Extraordinary teams building inspiring projects:
  
@@ -20,9 +20,10 @@ Impact Report
 . 
 Project Overview:
  
-Louisiana LNG is located approximately 11 miles southwest of Lake Charles, Louisiana. The project includes a mid-scale, mixed-refrigerant Liquefied Natural Gas (LNG) production and export facility on the west side of the Calcasieu River. There are five identical process plants. Each process plant consists of one gas pre-treatment unit, one condensate stabilization unit, and four Chart heavy hydrocarbon (HHC) removal and liquefaction groups. The facility will include associated utilities, refrigerant storage, three 235,000m3 full-containment LNG storage tanks, and three marine berths.
+The rapid growth of AI and digitalization is fueling unprecedented demand for data centers that require large, reliable sources of energy. In response to this market trend, the Renewables & Clean Power (R&CP) team has signed an early works contract to build one of the largest gas fired power generation facilities in the U.S. Our team is helping the customer progress early-stage development, that would lead to the start of full EPC delivery in 2026.
+The successful candidate will mobilize on a long-term (camp) assignment to Pecos, Texas. This position is contingent upon project award.
 Job Summary:
  
-In this role, you will lead a team and supervise superintendents and/or craft professionals on a project. You will direct craft professional activities and work schedules, and coordinate subcontract work activitie
+Reporting to the Project Innovation and Information Manager (PIIM), the EPC Automation lead role is responsible for the implementation, configuration and support of jobsite digital/automation applications. You can expect
 
 [Truncated for this view — full text at the posting link]
