@@ -1,0 +1,19 @@
+The Senior Program Manager, Data Governance & Analytics establishes and leads the data governance, reporting, and analytics strategy for Global Program Controls. This role is accountable for ensuring that portfolio delivery data is consistently defined, accurately maintained, appropriately governed, and translated into actionable insights for senior leadership.
+
+As the recognized subject matter expert for program data and performance reporting, this individual will define the policies, standards, operating mechanisms, and analytical capabilities that enable trusted decision-making across the global portfolio. The role owns the authoritative delivery data framework, executive portfolio dashboards, operational reporting suite, data quality program, stewardship network, and reporting calendar.
+
+This position operates across multiple organizations and systems, including Jira, Primavera Cloud, Apex, Unifier, financial platforms, and business intelligence tools. The Senior Program Manager will influence senior leaders, program controls teams, technology partners, finance organizations, and functional stakeholders to establish consistent data practices and improve portfolio visibility.
+
+The successful candidate combines deep expertise in data governance, business intelligence, and program controls with strong executive communication and cross-functional leadership. This is a highly influential individual contributor role that leads enterprise-scale programs and processes through expertise, partnership, and strategic influence rather than direct people management.
+
+Key Responsibilities
+
+Data Governance Strategy and Leadership
+
+Establish and lead the Global Program Controls Data Governance program, including its strategy, policies, standards, operating model, controls, and performance measures.
+
+Develop the overarching data governance policy framework and ensure alignment with enterprise data, security, compliance, and technology requirements.
+
+Define decision rights, owners
+
+[Truncated for this view — full text at the posting link]
