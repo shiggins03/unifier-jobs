@@ -36,10 +36,10 @@
   "workday:Accenture": {
     "counts": [
       0,
-      0,
       6,
       6,
-      5
+      5,
+      0
     ],
     "fail_streak": 0,
     "last_run": "2026-08-06",
@@ -155,7 +155,7 @@
     ],
     "fail_streak": 0,
     "last_run": "2026-08-06",
-    "inventory": 62
+    "inventory": 64
   },
   "greenhouse:Luster National": {
     "counts": [
@@ -186,7 +186,7 @@
       2,
       2,
       2,
-      2,
+      3,
       3
     ],
     "fail_streak": 0,
@@ -198,7 +198,7 @@
       1,
       1,
       1,
-      1,
+      2,
       2
     ],
     "fail_streak": 0,
@@ -206,26 +206,26 @@
   },
   "phenom:Bechtel": {
     "counts": [
-      20,
       19,
       21,
       24,
-      21
+      21,
+      20
     ],
     "fail_streak": 0,
-    "inventory": 1019,
+    "inventory": 1035,
     "last_run": "2026-08-06"
   },
   "smartrecruiters:Turner & Townsend": {
     "counts": [
       37,
-      37,
+      34,
       34,
       34,
       34
     ],
     "fail_streak": 0,
-    "inventory": 2861,
+    "inventory": 2848,
     "last_run": "2026-08-06"
   },
   "workday:Mass General Brigham": {
@@ -254,13 +254,13 @@
   "workday:STV": {
     "counts": [
       5,
-      5,
       6,
+      7,
       7,
       7
     ],
     "fail_streak": 0,
-    "inventory": 363,
+    "inventory": 368,
     "last_run": "2026-08-06"
   },
   "oracle_orc:Hill International": {
@@ -290,7 +290,7 @@
   "amazon_jobs:Amazon": {
     "counts": [
       4,
-      4,
+      3,
       3,
       3,
       3
@@ -320,7 +320,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 2743,
+    "inventory": 2739,
     "last_run": "2026-08-06"
   },
   "workday:Intel": {
@@ -332,7 +332,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 665,
+    "inventory": 655,
     "last_run": "2026-08-06"
   },
   "workday:Pfizer": {
@@ -344,7 +344,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 530,
+    "inventory": 529,
     "last_run": "2026-08-06"
   },
   "workday:PwC": {
@@ -356,19 +356,19 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 4629,
+    "inventory": 4559,
     "last_run": "2026-08-06"
   },
   "phenom:Eli Lilly": {
     "counts": [
       4,
-      4,
+      3,
       3,
       3,
       3
     ],
     "fail_streak": 0,
-    "inventory": 663,
+    "inventory": 662,
     "last_run": "2026-08-06"
   },
   "workday:Johnson & Johnson": {
@@ -380,7 +380,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 1769,
+    "inventory": 1817,
     "last_run": "2026-08-06"
   },
   "seed:MTA": {
@@ -404,10 +404,18 @@
       4,
       4,
       4,
-      4,
+      6,
       6
     ],
     "fail_streak": 0,
+    "last_run": "2026-08-06"
+  },
+  "oracle_orc:Argano": {
+    "counts": [
+      1
+    ],
+    "fail_streak": 0,
+    "inventory": 2,
     "last_run": "2026-08-06"
   }
 }

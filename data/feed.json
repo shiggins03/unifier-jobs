@@ -164,6 +164,13 @@
       "note": "PM/construction-claims firm, heavy PMIS user. ORC endpoint found via links on hillintl.com/careers; verified 2026-07-20 (10 unifier-keyword reqs, global — US filter does real work)."
     },
     {
+      "name": "Argano",
+      "tier": "B",
+      "ats": "oracle_orc",
+      "enabled": true,
+      "note": "Oracle consultancy running Oracle Recruiting Cloud (ORC endpoint found via the \"Join our team\" link on argano.com/careers). Acquired American Process Management, an Oracle Primavera partner, April 2026. Verified 2026-08-06 — \"primavera\"/\"unifier\" both return their Oracle Cloud PPM Delivery Architect (US + Canada; US filter drops the Canadian twin)."
+    },
+    {
       "name": "Amtrak",
       "tier": "B",
       "ats": "successfactors",
@@ -619,6 +626,27 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-08-06"
+    },
+    {
+      "company": "LGL Technologies",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=kkclHNOR8RGs5OGOuqfOdQ&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-06"
+    },
+    {
+      "company": "Exl Neo Technologies",
+      "url": "https://www.adzuna.com/land/ad/5829524183?se=cGDEHNOR8RGUc4TlbGUL3A&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-06"
+    },
+    {
+      "company": "Exl Neo Technologies",
+      "url": "https://www.adzuna.com/land/ad/5829552670?se=cGDEHNOR8RGUc4TlbGUL3A&utm_medium=api&utm_source=55569923&v=38995F35BE2F4422B2D4DDF2DA718E30563EC4A0",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-06"
     }
   ],
   "jobs": [
@@ -830,6 +858,22 @@
       "gone_date": null,
       "flags": [],
       "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "7b4388aba54a69e3",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Project Engineer",
+      "location": "Ogden, Utah, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296014&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-06-23T12:15:48.413+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "unclear",
       "has_desc": true
     },
     {
@@ -1048,22 +1092,6 @@
       "location": "USA wide, US",
       "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000131685069-senior-cqv-scheduler?oga=true",
       "posted_date": "2026-06-11T14:04:40.267Z",
-      "comp": null,
-      "tier": 2,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "b93998f8ce02b557",
-      "kind": "direct",
-      "company": "Turner & Townsend",
-      "title": "Automation Scheduler",
-      "location": "Indianapolis, Indiana, US",
-      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000127745610-automation-scheduler?oga=true",
-      "posted_date": "2026-05-21T19:42:08.076Z",
       "comp": null,
       "tier": 2,
       "status": "active",
@@ -1378,8 +1406,8 @@
       "company": "Bechtel",
       "title": "Field Welding Engineer",
       "location": "Pecos, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297201&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-27T13:17:29.333+0000",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297409&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-27T13:17:29.331+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -1510,22 +1538,6 @@
       "location": "Port Arthur, Texas, United States",
       "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297474&jobPipeline=PhenomCareerSite",
       "posted_date": "2026-07-27T20:18:29.125+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
-      "has_desc": true
-    },
-    {
-      "id": "129d9dad97036d6d",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Subcontracts Formation Specialist",
-      "location": "Houston, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297361&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-29T16:20:43.325+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -1816,7 +1828,7 @@
       "company": "LGL Technologies",
       "title": "Oracle Primavera Unifier Consultant",
       "location": "Texas, US",
-      "url": "https://www.adzuna.com/land/ad/5794406427?se=nrCKVpaR8RGDk53ssYtCmg&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=kkclHNOR8RGs5OGOuqfOdQ&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
       "posted_date": "2026-07-09T15:01:35Z",
       "comp": null,
       "tier": 1,
@@ -1875,22 +1887,6 @@
       "has_desc": true
     },
     {
-      "id": "142c66678eb795e8",
-      "kind": "direct",
-      "company": "Turner & Townsend",
-      "title": "Associate Consultant, Scheduler - Data Center Construction",
-      "location": "Phoenix, Arizona, US",
-      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000140961279-associate-consultant-scheduler-data-center-construction?oga=true",
-      "posted_date": "2026-07-31T16:42:49.780Z",
-      "comp": null,
-      "tier": 2,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
       "id": "d38100d948cf087f",
       "kind": "board",
       "company": "AmmaluIT",
@@ -1914,22 +1910,6 @@
       "location": "Indore",
       "url": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Indore/Custom-Software-Engineer_ATCI-5670709-S2057854-1",
       "posted_date": "Posted 2 Days Ago",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
-      "id": "c7aa876a9af6c8c3",
-      "kind": "direct",
-      "company": "Accenture",
-      "title": "Custom Software Engineer",
-      "location": "Ahmedabad",
-      "url": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Ahmedabad/Cloud-Platform-Engineer_ATCI-5510357-S2009957-1",
-      "posted_date": "Posted Yesterday",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -2078,9 +2058,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -2096,9 +2074,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },
@@ -2114,9 +2090,7 @@
       "tier": 2,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -2126,15 +2100,13 @@
       "company": "Exl Neo Technologies",
       "title": "Solution Architect Oracle Unifier",
       "location": "Trammells, Harris County",
-      "url": "https://www.adzuna.com/land/ad/5829524183?se=REiIV5aR8RGDk53ssYtCmg&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
+      "url": "https://www.adzuna.com/land/ad/5829524183?se=cGDEHNOR8RGUc4TlbGUL3A&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
       "posted_date": "2026-08-05T17:45:43Z",
       "comp": "Pay range: $105-110/hr",
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },
@@ -2144,15 +2116,13 @@
       "company": "Exl Neo Technologies",
       "title": "Oracle Unifier SME/ Solution Architect",
       "location": "Trammells, Harris County",
-      "url": "https://www.adzuna.com/land/ad/5829552670?se=REiIV5aR8RGDk53ssYtCmg&utm_medium=api&utm_source=55569923&v=38995F35BE2F4422B2D4DDF2DA718E30563EC4A0",
+      "url": "https://www.adzuna.com/land/ad/5829552670?se=cGDEHNOR8RGUc4TlbGUL3A&utm_medium=api&utm_source=55569923&v=38995F35BE2F4422B2D4DDF2DA718E30563EC4A0",
       "posted_date": "2026-08-05T17:50:17Z",
       "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },
@@ -2168,10 +2138,44 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
+      "flags": [],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "3917a3632b9b36ed",
+      "kind": "direct",
+      "company": "Deloitte",
+      "title": "US E-Consulting Services – Consultant – S&T/Strategy/I&RE – Capital Projects (Tech - Procore) – FY27 – 361869 – OK",
+      "location": null,
+      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Consultant-Procore-Implementation/361869",
+      "posted_date": "Wed, 05 Aug 2026 00:00:00 +0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
       "flags": [
         "new"
       ],
       "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "2848cb78932006b7",
+      "kind": "direct",
+      "company": "Argano",
+      "title": "Oracle Cloud PPM Delivery Architect",
+      "location": "United States",
+      "url": "https://fa-eyau-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/1871",
+      "posted_date": "2026-08-05",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
       "has_desc": true
     },
     {
@@ -2325,21 +2329,6 @@
       "role": "field"
     },
     {
-      "id": "7b4388aba54a69e3",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Project Engineer",
-      "location": "Ogden, Utah, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296014&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-06-23T12:15:48.413+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-07-31",
-      "flags": [],
-      "role": "unclear"
-    },
-    {
       "id": "848162e79248819a",
       "kind": "direct",
       "company": "Turner & Townsend",
@@ -2456,6 +2445,21 @@
       "tier": 2,
       "status": "gone",
       "gone_date": "2026-07-22",
+      "flags": [],
+      "role": "controls"
+    },
+    {
+      "id": "b93998f8ce02b557",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Automation Scheduler",
+      "location": "Indianapolis, Indiana, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000127745610-automation-scheduler?oga=true",
+      "posted_date": "2026-05-21T19:42:08.076Z",
+      "comp": null,
+      "tier": 2,
+      "status": "gone",
+      "gone_date": "2026-08-06",
       "flags": [],
       "role": "controls"
     },
@@ -2584,6 +2588,21 @@
       "role": "systems"
     },
     {
+      "id": "129d9dad97036d6d",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Subcontracts Formation Specialist",
+      "location": "Houston, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297361&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-29T16:20:43.325+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-08-06",
+      "flags": [],
+      "role": "field"
+    },
+    {
       "id": "87832dc1c24fd215",
       "kind": "direct",
       "company": "Amazon",
@@ -2629,6 +2648,36 @@
         "long-posted"
       ],
       "role": "controls"
+    },
+    {
+      "id": "142c66678eb795e8",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Associate Consultant, Scheduler - Data Center Construction",
+      "location": "Phoenix, Arizona, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000140961279-associate-consultant-scheduler-data-center-construction?oga=true",
+      "posted_date": "2026-07-31T16:42:49.780Z",
+      "comp": null,
+      "tier": 2,
+      "status": "gone",
+      "gone_date": "2026-08-06",
+      "flags": [],
+      "role": "controls"
+    },
+    {
+      "id": "c7aa876a9af6c8c3",
+      "kind": "direct",
+      "company": "Accenture",
+      "title": "Custom Software Engineer",
+      "location": "Ahmedabad",
+      "url": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Ahmedabad/Cloud-Platform-Engineer_ATCI-5510357-S2009957-1",
+      "posted_date": "Posted Yesterday",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-08-06",
+      "flags": [],
+      "role": "systems"
     }
   ]
 }
