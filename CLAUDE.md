@@ -133,7 +133,17 @@ Actions log, iterate. `run_adapter()` exercises a real adapter end-to-end
 before trusting it in the daily run. Keep `main()` empty between
 investigations.
 
-## Current state (update this section when you change it) — as of 2026-07-30
+## Current state (update this section when you change it) — as of 2026-08-06
+
+- Added Argano (tier B, oracle_orc CX_1 on fa-eyau-saasfaprod1) — Oracle
+  consultancy that bought Oracle Primavera partner American Process Management
+  in Apr 2026. Endpoint verified end-to-end 2026-08-06: their Oracle Cloud PPM
+  Delivery Architect (US, posted 08-05) qualifies tier 1 (Unifier named under
+  requirements as a plus); the Canadian twin is dropped by the US filter.
+  Their ORC link is only exposed as the "Join our team" anchor on
+  argano.com/careers — the careers page itself has no ATS markers.
+
+## Previous state — as of 2026-07-30
 
 - Tier meaning changed: company tier is now GENERAL-MARKET PRESTIGE/COMP
   (see companies.yaml header), and it leads the sort inside each keyword

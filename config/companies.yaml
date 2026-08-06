@@ -225,6 +225,19 @@ companies:
     note: PM/construction-claims firm, heavy PMIS user. ORC endpoint found via
       links on hillintl.com/careers; verified 2026-07-20 (10 unifier-keyword
       reqs, global — US filter does real work).
+  - name: Argano
+    tier: B
+    ats: oracle_orc
+    url: https://fa-eyau-saasfaprod1.fa.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions
+    site_number: CX_1
+    job_url_base: https://fa-eyau-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job
+    search_query: primavera
+    enabled: true
+    note: Oracle consultancy running Oracle Recruiting Cloud (ORC endpoint found
+      via the "Join our team" link on argano.com/careers). Acquired American
+      Process Management, an Oracle Primavera partner, April 2026. Verified
+      2026-08-06 — "primavera"/"unifier" both return their Oracle Cloud PPM
+      Delivery Architect (US + Canada; US filter drops the Canadian twin).
   - name: Amtrak
     tier: B
     ats: successfactors
