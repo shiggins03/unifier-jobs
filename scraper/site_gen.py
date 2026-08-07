@@ -95,10 +95,23 @@ def generate(store, companies, cities, warnings, today):
                 city_rank(j.get("location"), cities), norm(j["company"]))
 
     active = [j for j in store.values() if j["status"] == "active"]
-    t1_direct = sorted((j for j in active if j["tier"] == 1 and j["kind"] == "direct"),
+
+    # Field/construction roles (welding engineers, superintendents) reach this
+    # board only because Unifier sits in their systems boilerplate — they are
+    # not what the owner does. The static page has no filter chips, so they get
+    # a collapsed section of their own instead: out of the way, never dropped.
+    # The artifact's equivalent is the "Hide field" chip, on by default.
+    def is_field(j):
+        return j.get("role") == "field"
+
+    t1_direct = sorted((j for j in active
+                        if j["tier"] == 1 and j["kind"] == "direct" and not is_field(j)),
                        key=sort_key)
-    t2_direct = sorted((j for j in active if j["tier"] == 2 and j["kind"] == "direct"),
+    t2_direct = sorted((j for j in active
+                        if j["tier"] == 2 and j["kind"] == "direct" and not is_field(j)),
                        key=sort_key)
+    field_direct = sorted((j for j in active if j["kind"] == "direct" and is_field(j)),
+                          key=sort_key)
     boards = sorted((j for j in active if j["kind"] == "board"), key=sort_key)
     gone = sorted((j for j in store.values() if j["status"] == "gone"),
                   key=lambda j: j.get("gone_date") or "", reverse=True)[:25]
@@ -147,6 +160,7 @@ def generate(store, companies, cities, warnings, today):
 {warn_html}
 {section("Unifier — direct listings", t1_direct)}
 {section("Related keywords (P6 / OPC / PIF / OIC) — direct listings", t2_direct)}
+{section("Field / construction roles (Unifier only in boilerplate)", field_direct, fold=True)}
 {section("Unresolved board finds (pending triage)", boards, fold=True)}
 {section("No longer listed", gone, fold=True)}
 {roster_section()}

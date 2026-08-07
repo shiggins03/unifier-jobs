@@ -104,6 +104,7 @@ footer{color:var(--muted);font-size:12px;margin:24px 0}
     <button type="button" class="chip" data-f="roles" data-v="controls" aria-pressed="false">Controls</button>
     <button type="button" class="chip" data-f="roles" data-v="field" aria-pressed="false">Field</button>
     <button type="button" class="chip" data-f="roles" data-v="unclear" aria-pressed="false">Unclear</button>
+    <button type="button" class="chip" data-f="hideroles" data-v="field" aria-pressed="false">Hide field</button>
   </span>
   <span class="fgroup"><span class="flabel">Applied</span>
     <button type="button" class="chip" data-f="applied" data-v="hide" aria-pressed="false">Hide applied</button>
@@ -149,7 +150,13 @@ const AUTHZ = ["needs_reauth","server_not_connected","selection_required",
   "blocked_by_policy","approval_required","not_granted"];
 
 const state = { data: {}, err: {}, storedAt: {}, pageError: null, unsubs: [], debug: [],
-  ui: { tiers: new Set(), match: new Set(), roles: new Set(), applied: new Set(),
+  // hideroles EXCLUDES a role kind (roles includes). Defaults to hiding
+  // "field" — the owner is a Unifier systems person, and Bechtel-style
+  // welding/field-engineer postings only reach this board because Unifier
+  // sits in their systems boilerplate. Nothing is dropped silently: the
+  // count line says how many are filtered out and the chip toggles off.
+  ui: { tiers: new Set(), match: new Set(), roles: new Set(),
+        hideroles: new Set(["field"]), applied: new Set(),
         company: "", sort: "best" },
   // job id -> ISO date the box was ticked. Job ids are a hash of
   // company|title|location, so a posting keeps its id across daily runs and
@@ -176,7 +183,8 @@ function saveUI() {
   try {
     localStorage.setItem(UI_KEY, JSON.stringify({
       tiers: [...state.ui.tiers], match: [...state.ui.match],
-      roles: [...state.ui.roles], applied: [...state.ui.applied],
+      roles: [...state.ui.roles], hideroles: [...state.ui.hideroles],
+      applied: [...state.ui.applied],
       company: state.ui.company, sort: state.ui.sort }));
   } catch (e) {}
 }
@@ -186,6 +194,9 @@ function loadUI() {
     if (Array.isArray(s.tiers)) state.ui.tiers = new Set(s.tiers);
     if (Array.isArray(s.match)) state.ui.match = new Set(s.match);
     if (Array.isArray(s.roles)) state.ui.roles = new Set(s.roles);
+    // Absent key = saved before this filter existed; keep the default ON so
+    // the field noise the owner asked about is gone on first load.
+    if (Array.isArray(s.hideroles)) state.ui.hideroles = new Set(s.hideroles);
     if (Array.isArray(s.applied)) state.ui.applied = new Set(s.applied);
     if (typeof s.company === "string") state.ui.company = s.company;
     if (["best", "date", "comp"].includes(s.sort)) state.ui.sort = s.sort;
@@ -351,13 +362,15 @@ function matchKind(j) {
 }
 function uiActive() {
   return state.ui.tiers.size > 0 || state.ui.match.size > 0 ||
-    state.ui.roles.size > 0 || state.ui.applied.size > 0 || !!state.ui.company;
+    state.ui.roles.size > 0 || state.ui.hideroles.size > 0 ||
+    state.ui.applied.size > 0 || !!state.ui.company;
 }
 function passesFilters(j, prestige) {
   const ui = state.ui;
   if (ui.tiers.size && !ui.tiers.has(prestige[norm(j.company)] || "?")) return false;
   if (ui.match.size && !ui.match.has(matchKind(j))) return false;
   if (ui.roles.size && !ui.roles.has(j.role || "unclear")) return false;
+  if (ui.hideroles.has(j.role || "unclear")) return false;
   const isApplied = !!state.applied[j.id];
   if (ui.applied.has("hide") && isApplied) return false;
   if (ui.applied.has("only") && !isApplied) return false;
@@ -491,6 +504,7 @@ function clearFilters() {
   state.ui.tiers.clear();
   state.ui.match.clear();
   state.ui.roles.clear();
+  state.ui.hideroles.clear();
   state.ui.applied.clear();
   state.ui.company = "";
   saveUI();
@@ -700,6 +714,10 @@ async function boot() {
     if (chip) {
       const set = state.ui[chip.dataset.f];
       set.has(chip.dataset.v) ? set.delete(chip.dataset.v) : set.add(chip.dataset.v);
+      // show-only and hide of the same role would render an empty list, so
+      // turning one on releases the other.
+      if (chip.dataset.f === "roles") state.ui.hideroles.delete(chip.dataset.v);
+      if (chip.dataset.f === "hideroles") state.ui.roles.delete(chip.dataset.v);
       saveUI();
       render();
       return;
