@@ -48,6 +48,14 @@ Runs daily at 11:00 UTC via GitHub Actions; publishes a static dashboard to GitH
   reads resource blocks + strips the SHA prefix — keep that parser, and keep the
   raw-event debug dump (20s timeout box) that diagnosed it.
 - Keep the page's sort/badges in sync with `scraper/site_gen.py` when either changes.
+- Role filtering: `ui.roles` is show-only, `ui.hideroles` is exclude. **`hideroles`
+  defaults to `["field"]`** — the owner is a systems person and asked for
+  welding/superintendent postings to be weeded out; the chip toggles it, "Clear
+  filters" releases it, and the count line always says how many are hidden, so
+  nothing is dropped silently. Turning on a role's show-only chip releases its
+  hide chip (and vice versa) so the two can't render an empty list. The static
+  dashboard has no chips, so `site_gen.py` gives field roles their own collapsed
+  section instead — keep the two surfaces equivalent.
 - Applied-tracking lives ONLY in the artifact (localStorage key
   `ujw-applied-v1`, job id -> ISO tick date). Job ids hash
   company|title|location, so a tick survives daily re-fetches. It is
