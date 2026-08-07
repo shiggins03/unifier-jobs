@@ -668,6 +668,27 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-08-07"
+    },
+    {
+      "company": "LGL Technologies",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=jurl72eS8RG9ks23jnlnsA&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-07"
+    },
+    {
+      "company": "Exl Neo Technologies",
+      "url": "https://www.adzuna.com/land/ad/5829524183?se=EjNk8GeS8RGg9aNvkrRziQ&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-07"
+    },
+    {
+      "company": "Exl Neo Technologies",
+      "url": "https://www.adzuna.com/land/ad/5829552670?se=EjNk8GeS8RGg9aNvkrRziQ&utm_medium=api&utm_source=55569923&v=38995F35BE2F4422B2D4DDF2DA718E30563EC4A0",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-07"
     }
   ],
   "jobs": [
@@ -1819,7 +1840,7 @@
       "company": "LGL Technologies",
       "title": "Oracle Primavera Unifier Consultant",
       "location": "Texas, US",
-      "url": "https://www.adzuna.com/land/ad/5794406427?se=4tSfglWS8RG09oxZPzmGSw&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=jurl72eS8RG9ks23jnlnsA&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
       "posted_date": "2026-07-09T15:01:35Z",
       "comp": null,
       "tier": 1,
@@ -1891,70 +1912,6 @@
       "gone_date": null,
       "flags": [],
       "role": "systems",
-      "has_desc": true
-    },
-    {
-      "id": "faa2c906be905c99",
-      "kind": "direct",
-      "company": "Accenture",
-      "title": "Custom Software Engineer",
-      "location": "Indore",
-      "url": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Indore/Custom-Software-Engineer_ATCI-5670709-S2057854-1",
-      "posted_date": "Posted 3 Days Ago",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
-      "id": "82ba79e6c3cdafd4",
-      "kind": "direct",
-      "company": "Accenture",
-      "title": "Lead Architecte IA & LLM (Architecte Principal)",
-      "location": "Paris",
-      "url": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Paris/Lead-Architecte-IA---LLM--Architecte-Principal-_R00346178",
-      "posted_date": "Posted 14 Days Ago",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
-      "id": "a218e61e84cfc5ff",
-      "kind": "direct",
-      "company": "Accenture",
-      "title": "Custom Software Engineer",
-      "location": "Kolkata",
-      "url": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Kolkata/Custom-Software-Engineer_ATCI-5423533-S2007023-1",
-      "posted_date": "Posted 14 Days Ago",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
-      "id": "b9a49a02ecabf9eb",
-      "kind": "direct",
-      "company": "Accenture",
-      "title": "Intégrateur Senior Primavera F/H - Paris",
-      "location": "Paris",
-      "url": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Paris/Lead-Digital-Project-Controls-X0-F-H---Paris_R00339294",
-      "posted_date": "Posted 30+ Days Ago",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "unclear",
       "has_desc": true
     },
     {
@@ -2075,7 +2032,7 @@
       "company": "Exl Neo Technologies",
       "title": "Solution Architect Oracle Unifier",
       "location": "Trammells, Harris County",
-      "url": "https://www.adzuna.com/land/ad/5829524183?se=Iltlg1WS8RGgbdIo7NYx3Q&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
+      "url": "https://www.adzuna.com/land/ad/5829524183?se=EjNk8GeS8RGg9aNvkrRziQ&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
       "posted_date": "2026-08-05T17:45:43Z",
       "comp": "Pay range: $105-110/hr",
       "tier": 1,
@@ -2091,7 +2048,7 @@
       "company": "Exl Neo Technologies",
       "title": "Oracle Unifier SME/ Solution Architect",
       "location": "Trammells, Harris County",
-      "url": "https://www.adzuna.com/land/ad/5829552670?se=Iltlg1WS8RGgbdIo7NYx3Q&utm_medium=api&utm_source=55569923&v=38995F35BE2F4422B2D4DDF2DA718E30563EC4A0",
+      "url": "https://www.adzuna.com/land/ad/5829552670?se=EjNk8GeS8RGg9aNvkrRziQ&utm_medium=api&utm_source=55569923&v=38995F35BE2F4422B2D4DDF2DA718E30563EC4A0",
       "posted_date": "2026-08-05T17:50:17Z",
       "comp": null,
       "tier": 1,
@@ -2150,24 +2107,6 @@
       "has_desc": true
     },
     {
-      "id": "3ae51fc1450729bb",
-      "kind": "direct",
-      "company": "Accenture",
-      "title": "Custom Software Engineer",
-      "location": "Gurugram",
-      "url": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Gurugram/Custom-Software-Engineer_ATCI-5670686-S2057855-1",
-      "posted_date": "Posted Today",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [
-        "new"
-      ],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
       "id": "3e493f1e69d3c077",
       "kind": "direct",
       "company": "Bechtel",
@@ -2179,9 +2118,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -2700,21 +2637,6 @@
       "gone_date": "2026-08-06",
       "flags": [],
       "role": "controls"
-    },
-    {
-      "id": "c7aa876a9af6c8c3",
-      "kind": "direct",
-      "company": "Accenture",
-      "title": "Custom Software Engineer",
-      "location": "Ahmedabad",
-      "url": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Ahmedabad/Cloud-Platform-Engineer_ATCI-5510357-S2009957-1",
-      "posted_date": "Posted Yesterday",
-      "comp": null,
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-08-06",
-      "flags": [],
-      "role": "systems"
     },
     {
       "id": "ba9670d4939d0b0f",
