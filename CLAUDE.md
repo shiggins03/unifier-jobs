@@ -63,6 +63,20 @@ Runs daily at 11:00 UTC via GitHub Actions; publishes a static dashboard to GitH
   the card in place rather than re-rendering, so an open description stays
   open — keep that if you touch the handler.
 
+## US-only scope filter (`filters.is_non_us`)
+
+Three layers: `NON_US` (unambiguous countries/metros — always foreign),
+`AMBIGUOUS_CITY` (names shared with US towns — foreign ONLY when no US marker
+is present), `US_MARKER` (states, abbreviations, "remote"). Both failure modes
+are costly: a missed metro puts out-of-scope jobs on the board, an over-broad
+pattern silently deletes real US jobs. **Never add a city to `NON_US` without
+checking for a US namesake** — Greece NY (pop 96k), Panama City FL, Vienna VA,
+Athens GA, Warsaw IN, Aberdeen SD all exist; those belong in `AMBIGUOUS_CITY`.
+`\b` boundaries matter: `india` must not match "Indiana".
+`python -m scraper.test_filters` asserts both directions — add a case for every
+pattern you add. Scope is re-applied to the whole store each run, so tightening
+the filter retroactively purges stored postings.
+
 ## Role classifier (`config/roles.yaml`)
 
 The owner is a Unifier SYSTEMS person (admin/config/integration/development),

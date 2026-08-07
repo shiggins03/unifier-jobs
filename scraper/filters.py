@@ -10,7 +10,34 @@ NON_US = re.compile(
     r"canada|toronto|vancouver|ontario|australia|sydney|melbourne|singapore|philippines|"
     r"malaysia|hyderabad|bangalore|bengaluru|chennai|mumbai|pune|noida|gurgaon|delhi|"
     r"ireland|germany|poland|romania|mexico|\bmx\b|brazil|colombia|"
-    r"argentina|buenos aires|chile|peru|santiago)\b", re.I)
+    r"argentina|buenos aires|chile|peru|santiago|"
+    # --- Indian metros beyond the first batch. Offshore delivery centers are
+    # the single biggest source of out-of-scope postings; "Kolkata" (Accenture)
+    # slipped through on 2026-08-06. gurugram = modern spelling of gurgaon.
+    r"kolkata|calcutta|gurugram|ahmedabad|jaipur|coimbatore|kochi|cochin|"
+    r"trivandrum|thiruvananthapuram|mysuru|mysore|nagpur|indore|chandigarh|"
+    r"vadodara|surat|bhubaneswar|visakhapatnam|madurai|lucknow|thane|"
+    r"navi mumbai|\bgoa\b|karnataka|maharashtra|telangana|tamil nadu|kerala|"
+    r"gujarat|haryana|uttar pradesh|west bengal|andhra pradesh|"
+    # --- other common offshore/delivery hubs, country names first
+    r"sri lanka|colombo|bangladesh|dhaka|nepal|kathmandu|pakistan|karachi|lahore|"
+    r"vietnam|viet nam|hanoi|ho chi minh|indonesia|jakarta|thailand|bangkok|"
+    r"kuala lumpur|manila|quezon city|makati|taguig|cebu|"
+    r"shanghai|beijing|shenzhen|guangzhou|hong kong|taiwan|taipei|"
+    r"japan|tokyo|osaka|south korea|seoul|"
+    r"turkey|turkiye|istanbul|ankara|ukraine|kyiv|kiev|lviv|belarus|minsk|"
+    r"bulgaria|serbia|croatia|zagreb|czech|czechia|slovakia|bratislava|"
+    r"hungary|budapest|bucharest|estonia|tallinn|latvia|riga|slovenia|"
+    r"portugal|porto|spain|barcelona|netherlands|belgium|"
+    r"switzerland|zurich|austria|sweden|norway|denmark|finland|"
+    r"morocco|casablanca|tunisia|nigeria|kenya|nairobi|ghana|"
+    r"south africa|johannesburg|cape town|durban|pretoria|"
+    r"new zealand|auckland|israel|tel aviv|jerusalem|"
+    r"costa rica|guatemala|ecuador|uruguay|paraguay|bolivia|"
+    r"venezuela|dominican republic|honduras|el salvador|nicaragua|"
+    r"puerto vallarta|guadalajara|monterrey|tijuana|queretaro|"
+    r"bogota|medellin|lima peru|sao paulo|rio de janeiro|"
+    r"emea|apac|latam)\b", re.I)
 
 # Cities that name both a foreign metro and a US town (Cairo IL, Athens GA,
 # Moscow ID...). Treated as non-US ONLY when the location carries no US
@@ -18,8 +45,15 @@ NON_US = re.compile(
 # delivery center) slipped onto the board.
 # london/dublin live here rather than in NON_US because London OH and
 # Dublin OH are real US job locations; their country names still match above.
+# china/greece/italy/panama city are countries-or-US-towns (China TX, Greece NY
+# pop 96k, Italy TX, Panama City FL) so they must never be unconditional.
 AMBIGUOUS_CITY = re.compile(r"\b(cairo|athens|moscow|lima|dublin|london|"
-                            r"manchester|birmingham|naples|odessa|versailles)\b",
+                            r"manchester|birmingham|naples|odessa|versailles|"
+                            r"china|greece|italy|panama city|belgrade|warsaw|"
+                            r"aberdeen|wellington|glasgow|bristol|oxford|"
+                            r"amsterdam|vienna|berlin|geneva|paris|rome|milan|"
+                            r"florence|hamburg|lisbon|madrid|prague|toledo|"
+                            r"stockholm|belfast|sofia|st petersburg)\b",
                             re.I)
 US_MARKER = re.compile(
     r"\b(united states|u\.?s\.?a?|remote|"
