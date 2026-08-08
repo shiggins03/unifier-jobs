@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-07",
+  "updated": "2026-08-08",
   "warnings": [],
   "roster": [
     {
@@ -689,6 +689,41 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-08-07"
+    },
+    {
+      "company": "LGL Technologies",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=NIpWTRyT8RGWPoJqQXFPnw&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-08"
+    },
+    {
+      "company": "Exl Neo Technologies",
+      "url": "https://www.adzuna.com/land/ad/5829524183?se=sGP2TRyT8RGmyYMpHavFCw&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-08"
+    },
+    {
+      "company": "Exl Neo Technologies",
+      "url": "https://www.adzuna.com/land/ad/5829552670?se=sGP2TRyT8RGmyYMpHavFCw&utm_medium=api&utm_source=55569923&v=38995F35BE2F4422B2D4DDF2DA718E30563EC4A0",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-08"
+    },
+    {
+      "company": "ISite Technologies Inc",
+      "url": "https://www.adzuna.com/land/ad/5832186825?se=sGP2TRyT8RGmyYMpHavFCw&utm_medium=api&utm_source=55569923&v=236DD9C375A185E6EF40A9CE54E3AD7E9C052094",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-08"
+    },
+    {
+      "company": "ISite Technologies Inc",
+      "url": "https://www.adzuna.com/land/ad/5832186827?se=sGP2TRyT8RGmyYMpHavFCw&utm_medium=api&utm_source=55569923&v=32835083C5996C27DB2E0AD84EEC92F2C0C12A58",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-08"
     }
   ],
   "jobs": [
@@ -1387,7 +1422,7 @@
       "title": "Senior Cost Engineering Specialist",
       "location": "Dallas, Texas",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Dallas-Texas/Senior-Cost-Engineering-Specialist_JR5958",
-      "posted_date": "Posted 14 Days Ago",
+      "posted_date": "Posted 15 Days Ago",
       "comp": "$116,930.89 - $133,635.31",
       "tier": 1,
       "status": "active",
@@ -1403,7 +1438,7 @@
       "title": "Senior Program Controls Manager",
       "location": "US-WA-Seattle",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Seattle/Senior-Program-Controls-Manager_JR1535",
-      "posted_date": "Posted 14 Days Ago",
+      "posted_date": "Posted 15 Days Ago",
       "comp": "$180,000-$250,000 annually",
       "tier": 1,
       "status": "active",
@@ -1533,7 +1568,7 @@
       "title": "P6 Scheduler",
       "location": "US-CA-San Francisco Bay Area",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-CA-San-Francisco-Bay-Area/P6-Scheduler_JR1539",
-      "posted_date": "Posted 10 Days Ago",
+      "posted_date": "Posted 11 Days Ago",
       "comp": "$128,960 - $139,360 annually",
       "tier": 1,
       "status": "active",
@@ -1840,7 +1875,7 @@
       "company": "LGL Technologies",
       "title": "Oracle Primavera Unifier Consultant",
       "location": "Texas, US",
-      "url": "https://www.adzuna.com/land/ad/5794406427?se=jurl72eS8RG9ks23jnlnsA&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=NIpWTRyT8RGWPoJqQXFPnw&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
       "posted_date": "2026-07-09T15:01:35Z",
       "comp": null,
       "tier": 1,
@@ -1921,7 +1956,7 @@
       "title": "Digital Solutions Specialist",
       "location": "Boston, Massachusetts",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
-      "posted_date": "Posted 4 Days Ago",
+      "posted_date": "Posted 5 Days Ago",
       "comp": "$114,345.69 - $130,680.78",
       "tier": 1,
       "status": "active",
@@ -2032,7 +2067,7 @@
       "company": "Exl Neo Technologies",
       "title": "Solution Architect Oracle Unifier",
       "location": "Trammells, Harris County",
-      "url": "https://www.adzuna.com/land/ad/5829524183?se=EjNk8GeS8RGg9aNvkrRziQ&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
+      "url": "https://www.adzuna.com/land/ad/5829524183?se=sGP2TRyT8RGmyYMpHavFCw&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
       "posted_date": "2026-08-05T17:45:43Z",
       "comp": "Pay range: $105-110/hr",
       "tier": 1,
@@ -2048,7 +2083,7 @@
       "company": "Exl Neo Technologies",
       "title": "Oracle Unifier SME/ Solution Architect",
       "location": "Trammells, Harris County",
-      "url": "https://www.adzuna.com/land/ad/5829552670?se=EjNk8GeS8RGg9aNvkrRziQ&utm_medium=api&utm_source=55569923&v=38995F35BE2F4422B2D4DDF2DA718E30563EC4A0",
+      "url": "https://www.adzuna.com/land/ad/5829552670?se=sGP2TRyT8RGmyYMpHavFCw&utm_medium=api&utm_source=55569923&v=38995F35BE2F4422B2D4DDF2DA718E30563EC4A0",
       "posted_date": "2026-08-05T17:50:17Z",
       "comp": null,
       "tier": 1,
@@ -2119,6 +2154,60 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "f07af0fde4689ba5",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "PMIS Configuration Consultant",
+      "location": "Oakland, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5383172008",
+      "posted_date": "2026-08-07T16:48:16-04:00",
+      "comp": "Salary: $130k-$160k/year ($63-$77/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "93c0415a78e1dd82",
+      "kind": "board",
+      "company": "ISite Technologies Inc",
+      "title": "Data Migration",
+      "location": "US",
+      "url": "https://www.adzuna.com/land/ad/5832186825?se=sGP2TRyT8RGmyYMpHavFCw&utm_medium=api&utm_source=55569923&v=236DD9C375A185E6EF40A9CE54E3AD7E9C052094",
+      "posted_date": "2026-08-07T11:54:50Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "37363c89fb037cd3",
+      "kind": "board",
+      "company": "ISite Technologies Inc",
+      "title": "Data Migration Consultant",
+      "location": "US",
+      "url": "https://www.adzuna.com/land/ad/5832186827?se=sGP2TRyT8RGmyYMpHavFCw&utm_medium=api&utm_source=55569923&v=32835083C5996C27DB2E0AD84EEC92F2C0C12A58",
+      "posted_date": "2026-08-07T11:54:50Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
       "role": "unclear",
       "has_desc": true
     },
