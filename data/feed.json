@@ -1,6 +1,8 @@
 {
-  "updated": "2026-08-08",
-  "warnings": [],
+  "updated": "2026-08-09",
+  "warnings": [
+    "workday:Accenture: zero results for 3+ runs (was returning data)"
+  ],
   "roster": [
     {
       "name": "Meta",
@@ -724,6 +726,48 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-08-08"
+    },
+    {
+      "company": "LGL Technologies",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=mPCmkOWT8RG9ks23jnlnsA&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-09"
+    },
+    {
+      "company": "Exl Neo Technologies",
+      "url": "https://www.adzuna.com/land/ad/5829524183?se=XPBVkeWT8RG9ks23jnlnsA&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-09"
+    },
+    {
+      "company": "Exl Neo Technologies",
+      "url": "https://www.adzuna.com/land/ad/5829552670?se=XPBVkeWT8RG9ks23jnlnsA&utm_medium=api&utm_source=55569923&v=38995F35BE2F4422B2D4DDF2DA718E30563EC4A0",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-09"
+    },
+    {
+      "company": "ISite Technologies Inc",
+      "url": "https://www.adzuna.com/land/ad/5832186825?se=XPBVkeWT8RG9ks23jnlnsA&utm_medium=api&utm_source=55569923&v=236DD9C375A185E6EF40A9CE54E3AD7E9C052094",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-09"
+    },
+    {
+      "company": "ISite Technologies Inc",
+      "url": "https://www.adzuna.com/land/ad/5832186827?se=XPBVkeWT8RG9ks23jnlnsA&utm_medium=api&utm_source=55569923&v=32835083C5996C27DB2E0AD84EEC92F2C0C12A58",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-09"
+    },
+    {
+      "company": "Openkyber",
+      "url": "https://www.adzuna.com/details/5834167835?utm_medium=api&utm_source=55569923",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-09"
     }
   ],
   "jobs": [
@@ -1254,24 +1298,6 @@
       "has_desc": true
     },
     {
-      "id": "d5ce8fd863feda62",
-      "kind": "direct",
-      "company": "Turner & Townsend",
-      "title": "Senior Scheduler - Data Center Construction",
-      "location": "West Memphis, United States, US",
-      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000105951075-senior-scheduler-data-center-construction?oga=true",
-      "posted_date": "2026-01-27T20:49:15.457Z",
-      "comp": null,
-      "tier": 2,
-      "status": "active",
-      "gone_date": null,
-      "flags": [
-        "long-posted"
-      ],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
       "id": "da57f856338cc9bf",
       "kind": "direct",
       "company": "STV",
@@ -1422,7 +1448,7 @@
       "title": "Senior Cost Engineering Specialist",
       "location": "Dallas, Texas",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Dallas-Texas/Senior-Cost-Engineering-Specialist_JR5958",
-      "posted_date": "Posted 15 Days Ago",
+      "posted_date": "Posted 16 Days Ago",
       "comp": "$116,930.89 - $133,635.31",
       "tier": 1,
       "status": "active",
@@ -1438,7 +1464,7 @@
       "title": "Senior Program Controls Manager",
       "location": "US-WA-Seattle",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Seattle/Senior-Program-Controls-Manager_JR1535",
-      "posted_date": "Posted 15 Days Ago",
+      "posted_date": "Posted 16 Days Ago",
       "comp": "$180,000-$250,000 annually",
       "tier": 1,
       "status": "active",
@@ -1568,7 +1594,7 @@
       "title": "P6 Scheduler",
       "location": "US-CA-San Francisco Bay Area",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-CA-San-Francisco-Bay-Area/P6-Scheduler_JR1539",
-      "posted_date": "Posted 11 Days Ago",
+      "posted_date": "Posted 12 Days Ago",
       "comp": "$128,960 - $139,360 annually",
       "tier": 1,
       "status": "active",
@@ -1875,24 +1901,8 @@
       "company": "LGL Technologies",
       "title": "Oracle Primavera Unifier Consultant",
       "location": "Texas, US",
-      "url": "https://www.adzuna.com/land/ad/5794406427?se=NIpWTRyT8RGWPoJqQXFPnw&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=mPCmkOWT8RG9ks23jnlnsA&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
       "posted_date": "2026-07-09T15:01:35Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
-      "id": "bba8ac8c54adb7fe",
-      "kind": "board",
-      "company": "Randstad Digital",
-      "title": "Testing & Training Lead (Oracle Primavera Unifier)",
-      "location": "Glendale, Denver",
-      "url": "https://www.adzuna.com/land/ad/5804140363?se=tCCO3QSQ8RGLoKoV5ifvLA&utm_medium=api&utm_source=55569923&v=C1F881456D9E8D882D9851E80FCEB7B4888CB8CF",
-      "posted_date": "2026-07-16T21:44:52Z",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -1918,22 +1928,6 @@
       "has_desc": true
     },
     {
-      "id": "89a32eee24ea924d",
-      "kind": "direct",
-      "company": "Eli Lilly",
-      "title": "Project Controls Director, Global Facilities Delivery",
-      "location": "Allentown, Pennsylvania, United States of America",
-      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Allentown-PA/Project-Controls-Director--Global-Facilities-Delivery_R-109212-1/apply",
-      "posted_date": "2026-07-31T16:06:08.092+0000",
-      "comp": "$129,000 - $209,000",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
       "id": "d38100d948cf087f",
       "kind": "board",
       "company": "AmmaluIT",
@@ -1956,7 +1950,7 @@
       "title": "Digital Solutions Specialist",
       "location": "Boston, Massachusetts",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
-      "posted_date": "Posted 5 Days Ago",
+      "posted_date": "Posted 6 Days Ago",
       "comp": "$114,345.69 - $130,680.78",
       "tier": 1,
       "status": "active",
@@ -1998,29 +1992,13 @@
       "has_desc": true
     },
     {
-      "id": "8a7a67915271cc6b",
-      "kind": "direct",
-      "company": "STV",
-      "title": "Project Controls Coordinator",
-      "location": "Empire State Building, New York, New York",
-      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Empire-State-Building-New-York-New-York/Project-Controls-Coordinator_JR5995",
-      "posted_date": "Posted 3 Days Ago",
-      "comp": "$60,291.00 - $68,512.00",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
       "id": "defcb08ab671e2ce",
       "kind": "board",
       "company": "Openkyber",
       "title": "Oracle Cloud ERP Architect",
       "location": "Alaska, US",
-      "url": "https://www.adzuna.com/details/5828559231?utm_medium=api&utm_source=55569923",
-      "posted_date": "2026-08-04T21:20:33Z",
+      "url": "https://www.adzuna.com/details/5834167835?utm_medium=api&utm_source=55569923",
+      "posted_date": "2026-08-08T21:19:54Z",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -2067,7 +2045,7 @@
       "company": "Exl Neo Technologies",
       "title": "Solution Architect Oracle Unifier",
       "location": "Trammells, Harris County",
-      "url": "https://www.adzuna.com/land/ad/5829524183?se=sGP2TRyT8RGmyYMpHavFCw&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
+      "url": "https://www.adzuna.com/land/ad/5829524183?se=XPBVkeWT8RG9ks23jnlnsA&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
       "posted_date": "2026-08-05T17:45:43Z",
       "comp": "Pay range: $105-110/hr",
       "tier": 1,
@@ -2083,7 +2061,7 @@
       "company": "Exl Neo Technologies",
       "title": "Oracle Unifier SME/ Solution Architect",
       "location": "Trammells, Harris County",
-      "url": "https://www.adzuna.com/land/ad/5829552670?se=sGP2TRyT8RGmyYMpHavFCw&utm_medium=api&utm_source=55569923&v=38995F35BE2F4422B2D4DDF2DA718E30563EC4A0",
+      "url": "https://www.adzuna.com/land/ad/5829552670?se=XPBVkeWT8RG9ks23jnlnsA&utm_medium=api&utm_source=55569923&v=38995F35BE2F4422B2D4DDF2DA718E30563EC4A0",
       "posted_date": "2026-08-05T17:50:17Z",
       "comp": null,
       "tier": 1,
@@ -2169,9 +2147,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },
@@ -2181,15 +2157,13 @@
       "company": "ISite Technologies Inc",
       "title": "Data Migration",
       "location": "US",
-      "url": "https://www.adzuna.com/land/ad/5832186825?se=sGP2TRyT8RGmyYMpHavFCw&utm_medium=api&utm_source=55569923&v=236DD9C375A185E6EF40A9CE54E3AD7E9C052094",
+      "url": "https://www.adzuna.com/land/ad/5832186825?se=XPBVkeWT8RG9ks23jnlnsA&utm_medium=api&utm_source=55569923&v=236DD9C375A185E6EF40A9CE54E3AD7E9C052094",
       "posted_date": "2026-08-07T11:54:50Z",
       "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -2199,15 +2173,13 @@
       "company": "ISite Technologies Inc",
       "title": "Data Migration Consultant",
       "location": "US",
-      "url": "https://www.adzuna.com/land/ad/5832186827?se=sGP2TRyT8RGmyYMpHavFCw&utm_medium=api&utm_source=55569923&v=32835083C5996C27DB2E0AD84EEC92F2C0C12A58",
+      "url": "https://www.adzuna.com/land/ad/5832186827?se=XPBVkeWT8RG9ks23jnlnsA&utm_medium=api&utm_source=55569923&v=32835083C5996C27DB2E0AD84EEC92F2C0C12A58",
       "posted_date": "2026-08-07T11:54:50Z",
       "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -2529,6 +2501,23 @@
       "role": "controls"
     },
     {
+      "id": "d5ce8fd863feda62",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Senior Scheduler - Data Center Construction",
+      "location": "West Memphis, United States, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000105951075-senior-scheduler-data-center-construction?oga=true",
+      "posted_date": "2026-01-27T20:49:15.457Z",
+      "comp": null,
+      "tier": 2,
+      "status": "gone",
+      "gone_date": "2026-08-09",
+      "flags": [
+        "long-posted"
+      ],
+      "role": "controls"
+    },
+    {
       "id": "89e41c7d389ee458",
       "kind": "direct",
       "company": "Turner & Townsend",
@@ -2713,6 +2702,36 @@
       "role": "controls"
     },
     {
+      "id": "bba8ac8c54adb7fe",
+      "kind": "board",
+      "company": "Randstad Digital",
+      "title": "Testing & Training Lead (Oracle Primavera Unifier)",
+      "location": "Glendale, Denver",
+      "url": "https://www.adzuna.com/land/ad/5804140363?se=tCCO3QSQ8RGLoKoV5ifvLA&utm_medium=api&utm_source=55569923&v=C1F881456D9E8D882D9851E80FCEB7B4888CB8CF",
+      "posted_date": "2026-07-16T21:44:52Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-08-09",
+      "flags": [],
+      "role": "systems"
+    },
+    {
+      "id": "89a32eee24ea924d",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Project Controls Director, Global Facilities Delivery",
+      "location": "Allentown, Pennsylvania, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Allentown-PA/Project-Controls-Director--Global-Facilities-Delivery_R-109212-1/apply",
+      "posted_date": "2026-07-31T16:06:08.092+0000",
+      "comp": "$129,000 - $209,000",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-08-09",
+      "flags": [],
+      "role": "controls"
+    },
+    {
       "id": "142c66678eb795e8",
       "kind": "direct",
       "company": "Turner & Townsend",
@@ -2724,6 +2743,21 @@
       "tier": 2,
       "status": "gone",
       "gone_date": "2026-08-06",
+      "flags": [],
+      "role": "controls"
+    },
+    {
+      "id": "8a7a67915271cc6b",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Project Controls Coordinator",
+      "location": "Empire State Building, New York, New York",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Empire-State-Building-New-York-New-York/Project-Controls-Coordinator_JR5995",
+      "posted_date": "Posted 3 Days Ago",
+      "comp": "$60,291.00 - $68,512.00",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-08-09",
       "flags": [],
       "role": "controls"
     },
