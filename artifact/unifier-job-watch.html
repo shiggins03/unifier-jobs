@@ -97,7 +97,6 @@ footer{color:var(--muted);font-size:12px;margin:24px 0}
   <span class="fgroup"><span class="flabel">Unifier</span>
     <button type="button" class="chip" data-f="match" data-v="title" aria-pressed="false">In title</button>
     <button type="button" class="chip" data-f="match" data-v="desc" aria-pressed="false">In description</button>
-    <button type="button" class="chip" data-f="match" data-v="related" aria-pressed="false">Related (P6/OPC&hellip;)</button>
   </span>
   <span class="fgroup"><span class="flabel">Role</span>
     <button type="button" class="chip" data-f="roles" data-v="systems" aria-pressed="false">Systems</button>
@@ -358,7 +357,7 @@ function dateSortValue(pd, refMs) {
 }
 function matchKind(j) {
   if ((j.flags || []).includes("title-match")) return "title";
-  return j.tier === 1 ? "desc" : "related";
+  return "desc";  // tier 2 (P6/OPC/PIF/OIC) removed from the board 2026-08-07
 }
 function uiActive() {
   return state.ui.tiers.size > 0 || state.ui.match.size > 0 ||
@@ -535,7 +534,11 @@ function render() {
   }
   if (!feed) return; // still loading
 
-  const jobs = Array.isArray(feed.jobs) ? feed.jobs : [];
+  // Unifier-only board (tier 2 removed 2026-08-07). The pipeline purges
+  // tier-2 postings from the store, so a current feed has none — this guard
+  // keeps a cached/stale feed from leaking them into the board-finds and
+  // no-longer-listed sections, which filter on kind rather than tier.
+  const jobs = (Array.isArray(feed.jobs) ? feed.jobs : []).filter((j) => j.tier === 1);
   const companies = Array.isArray(feed.roster) ? feed.roster : [];
   const prestige = {};
   for (const c of companies) if (c.tier) prestige[norm(c.name)] = c.tier;
@@ -553,7 +556,6 @@ function render() {
   renderControls(activeDirect, prestige);
   const shown = active.filter((j) => passesFilters(j, prestige));
   const t1 = shown.filter((j) => j.tier === 1 && j.kind === "direct").sort(cmp);
-  const t2 = shown.filter((j) => j.tier === 2 && j.kind === "direct").sort(cmp);
   const boards = shown.filter((j) => j.kind === "board").sort(cmp);
   const gone = jobs.filter((j) => j.status === "gone" && passesFilters(j, prestige))
     .sort((a, b) => (b.gone_date || "").localeCompare(a.gone_date || ""))
@@ -563,13 +565,13 @@ function render() {
 
   const updated = feed.updated || "";
   const filterNote = uiActive()
-    ? ` &middot; filters: showing ${t1.length + t2.length + boards.length} of ` +
+    ? ` &middot; filters: showing ${t1.length + boards.length} of ` +
       `${active.length}` : "";
   state.activeIds = new Set(active.map((j) => j.id));
   const appliedCount = active.filter((j) => state.applied[j.id]).length;
   const appliedNote = appliedCount ? ` &middot; ${appliedCount} applied` : "";
   sub.innerHTML = `${updated ? "Updated " + esc(updated) + " &middot; " : ""}` +
-    `${t1.length + t2.length} direct listings &middot; ${boards.length} unresolved ` +
+    `${t1.length} direct listings &middot; ${boards.length} unresolved ` +
     `board finds &middot; ${newCount} new this run` +
     `<span id="applied-note">${appliedNote}</span>${filterNote}`;
 
@@ -589,9 +591,7 @@ function render() {
   }
   html += section("t1", "Unifier — direct listings",
     t1.map((j) => jobCard(j, prestige)).join("\n"), t1.length, false, openSet);
-  html += section("t2", "Related keywords (P6 / OPC / PIF / OIC) — direct listings",
-    t2.map((j) => jobCard(j, prestige)).join("\n"), t2.length, false, openSet);
-  if (!t1.length && !t2.length) {
+  if (!t1.length) {
     if (uiActive()) {
       html += `<div class="notice">No direct listings match the current filters
  &mdash; <button type="button" class="clearbtn" data-clear>clear filters</button>

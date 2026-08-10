@@ -65,6 +65,17 @@ def run():
     dropped_scope = [k for k, j in store.items() if is_non_us(j.get("location"))]
     for k in dropped_scope:
         del store[k]
+    # Same reasoning for keyword scope: tier 2 (P6/OPC/PIF/OIC) was removed
+    # 2026-08-07, so stored tier-2 postings leave the board immediately rather
+    # than lingering until they age out as "gone" — they are still listed by
+    # the employer, just not relevant to this search. Keyed off the STORED
+    # tier, deliberately not re-derived: a tier-1 job whose description failed
+    # to fetch, or a manual seed that declared its tier, must not be purged
+    # just because the text isn't re-checkable this run.
+    live_tiers = {1} if not kw.get("tier2") else {1, 2}
+    dropped_kw = [k for k, j in store.items() if j.get("tier") not in live_tiers]
+    for k in dropped_kw:
+        del store[k]
     for j in store.values():
         j["flags"] = [f for f in j["flags"] if f != "new"]
     # Derived tags are recomputed across the WHOLE store every run, not just

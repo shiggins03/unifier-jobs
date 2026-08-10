@@ -225,6 +225,20 @@ companies:
     note: PM/construction-claims firm, heavy PMIS user. ORC endpoint found via
       links on hillintl.com/careers; verified 2026-07-20 (10 unifier-keyword
       reqs, global — US filter does real work).
+  - name: Moss
+    tier: B
+    ats: workday
+    workday_host: mosscm.wd1.myworkdayjobs.com
+    workday_tenant: mosscm
+    workday_site: Moss_Careers
+    enabled: true
+    note: >-
+      ENR top-65 GC / #3 solar EPC, Fort Lauderdale. Found by the owner
+      2026-08-07 from a LinkedIn-sourced posting. They are standing up an
+      in-house Oracle team (Functional Architect OPC/P6, Fusion Architect,
+      Technology Architect, Construction Tech Integrations) — exactly the
+      systems-side profile. cxs verified 2026-08-07 — inventory 101, nonsense
+      query returns 0 (real search), oracle 9 hits / primavera 4 / unifier 1.
   - name: Argano
     tier: B
     ats: oracle_orc

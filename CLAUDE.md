@@ -1,7 +1,10 @@
 # unifier-jobs
 
-Aggregates job postings mentioning Oracle Primavera **Unifier** (secondary: P6/OPC/PIF/OIC,
-only when Primavera/Oracle/project-controls context appears in the same posting).
+Aggregates job postings mentioning Oracle Primavera **Unifier**. A posting must
+say "Unifier" — nothing else qualifies. The old tier-2 keywords (P6/OPC/PIF/OIC)
+were removed 2026-08-07 by owner decision: "I don't want it if it doesn't
+specifically call out unifier." Do not re-add them without asking; see the note
+in `config/keywords.yaml` for how, and why it was dropped.
 Runs daily at 11:00 UTC via GitHub Actions; publishes a static dashboard to GitHub Pages
 (https://shiggins03.github.io/unifier-jobs/). Owner: shiggins03 (solo project).
 
@@ -155,7 +158,25 @@ Actions log, iterate. `run_adapter()` exercises a real adapter end-to-end
 before trusting it in the daily run. Keep `main()` empty between
 investigations.
 
-## Current state (update this section when you change it) — as of 2026-08-06
+## Current state (update this section when you change it) — as of 2026-08-07
+
+- **Unifier-only board.** Tier 2 removed: `keywords.yaml` has no `tier2:` block,
+  `keyword_tier()` treats it as optional, `main.run()` purges stored postings
+  whose tier isn't live (keyed off the STORED tier, never re-derived — a
+  tier-1 job whose description failed to fetch, or a manual seed that declared
+  its tier, must survive). Dropped ~30 postings, mostly Turner & Townsend.
+  Both surfaces lost their "Related keywords" section and the artifact its
+  "Related (P6/OPC…)" chip; the artifact also filters the feed to `tier === 1`
+  so a cached feed can't leak tier-2 into the board-finds/gone sections.
+- Direct monitors still search "unifier" only. Widening them to also query
+  "primavera" was tried and reverted the same day — it surfaced OPC/P6 roles
+  that are now out of scope by definition.
+- Added Moss (tier B, workday mosscm/Moss_Careers) — ENR top-65 GC building an
+  in-house Oracle team. Note: under Unifier-only rules they currently have
+  **zero** qualifying postings; kept on the roster because they are an active
+  Oracle/Primavera shop likely to post one.
+
+## Previous state — as of 2026-08-06
 
 - Added Argano (tier B, oracle_orc CX_1 on fa-eyau-saasfaprod1) — Oracle
   consultancy that bought Oracle Primavera partner American Process Management

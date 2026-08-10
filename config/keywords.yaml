@@ -2,12 +2,22 @@
 # context term also appears somewhere in the posting (title or body).
 tier1:
   - unifier
-tier2:
-  tokens: [P6, OPC, PIF, OIC]
-  context_required: [primavera, oracle, project controls]
+# TIER 2 REMOVED 2026-08-07 by owner decision — do not re-add without asking.
+# P6/OPC/PIF/OIC postings are out of scope: "I don't want it if it doesn't
+# specifically call out unifier." The trigger was Moss's "Oracle Functional
+# Architect" (pure Oracle Primavera Cloud/P6, never says Unifier) — the owner
+# saw that even a good-looking OPC role brings preconstruction-PM noise with
+# it, and chose a smaller, all-Unifier board over reach.
+# To restore: re-add a `tier2:` block with `tokens:` and `context_required:`;
+# keyword_tier() already handles it being present or absent.
 # Aggregator queries — both are phrase searches. Adzuna's what_phrase on the
 # unquoted 'Oracle Unifier' matched the word Oracle alone (Linux engineers,
 # LDAP admins): 346 hits, nearly all noise. Verified 2026-07-30.
 discovery_queries:
   - '"Primavera Unifier"'
   - '"Oracle Unifier"'
+# Direct monitors search "unifier" only (kw.tier1[0]). Widening them to
+# "primavera" was tried on 2026-08-07 and reverted with the tier-2 removal:
+# it surfaced OPC/P6 roles the owner does not want. Per-company overrides
+# still exist via `search_query:` in companies.yaml (Oracle ORC needs one
+# because its fuzzy keyword match returns the whole site for "unifier").

@@ -89,9 +89,14 @@ def keyword_tier(title, body, kw):
     for t in kw["tier1"]:
         if re.search(rf"\b{re.escape(t.casefold())}\b", low):
             return 1
-    ctx = any(c.casefold() in low for c in kw["tier2"]["context_required"])
+    # tier2 is optional — removed from keywords.yaml 2026-08-07 (Unifier-only
+    # board). Absent block => nothing but tier 1 qualifies.
+    t2 = kw.get("tier2")
+    if not t2:
+        return None
+    ctx = any(c.casefold() in low for c in t2["context_required"])
     if ctx:
-        for t in kw["tier2"]["tokens"]:
+        for t in t2["tokens"]:
             if re.search(rf"\b{re.escape(t)}\b", text):  # case-sensitive: P6 not p6-ish words
                 return 2
     return None

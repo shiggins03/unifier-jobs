@@ -107,9 +107,6 @@ def generate(store, companies, cities, warnings, today):
     t1_direct = sorted((j for j in active
                         if j["tier"] == 1 and j["kind"] == "direct" and not is_field(j)),
                        key=sort_key)
-    t2_direct = sorted((j for j in active
-                        if j["tier"] == 2 and j["kind"] == "direct" and not is_field(j)),
-                       key=sort_key)
     field_direct = sorted((j for j in active if j["kind"] == "direct" and is_field(j)),
                           key=sort_key)
     boards = sorted((j for j in active if j["kind"] == "board"), key=sort_key)
@@ -155,11 +152,10 @@ def generate(store, companies, cities, warnings, today):
     new_count = sum(1 for j in active if "new" in j["flags"])
     body = f"""<main>
 <h1>Unifier job watch</h1>
-<div class="sub">Updated {esc(today)} &middot; {len(t1_direct) + len(t2_direct)} direct listings
+<div class="sub">Updated {esc(today)} &middot; {len(t1_direct)} direct listings
  &middot; {len(boards)} unresolved board finds &middot; {new_count} new this run</div>
 {warn_html}
 {section("Unifier — direct listings", t1_direct)}
-{section("Related keywords (P6 / OPC / PIF / OIC) — direct listings", t2_direct)}
 {section("Field / construction roles (Unifier only in boilerplate)", field_direct, fold=True)}
 {section("Unresolved board finds (pending triage)", boards, fold=True)}
 {section("No longer listed", gone, fold=True)}
