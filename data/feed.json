@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-10",
+  "updated": "2026-08-11",
   "warnings": [
     "generic_page:City of New York: zero results for 3+ runs (was returning data)"
   ],
@@ -845,6 +845,41 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-08-10"
+    },
+    {
+      "company": "LGL Technologies",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=dM9SDHqV8RGHvZpTA2qYuA&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-11"
+    },
+    {
+      "company": "Exl Neo Technologies",
+      "url": "https://www.adzuna.com/land/ad/5835865858?se=oAkFDXqV8RGiYpuj0Q3xbQ&utm_medium=api&utm_source=55569923&v=1CDDCD7F22BEC207D9AC0486F0AA0FE6B4B09772",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-11"
+    },
+    {
+      "company": "Exl Neo Technologies",
+      "url": "https://www.adzuna.com/land/ad/5829524183?se=oAkFDXqV8RGiYpuj0Q3xbQ&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-11"
+    },
+    {
+      "company": "Exl Neo Technologies",
+      "url": "https://www.adzuna.com/land/ad/5829552670?se=oAkFDXqV8RGiYpuj0Q3xbQ&utm_medium=api&utm_source=55569923&v=38995F35BE2F4422B2D4DDF2DA718E30563EC4A0",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-11"
+    },
+    {
+      "company": "ISite Technologies Inc",
+      "url": "https://www.adzuna.com/land/ad/5832186825?se=oAkFDXqV8RGiYpuj0Q3xbQ&utm_medium=api&utm_source=55569923&v=236DD9C375A185E6EF40A9CE54E3AD7E9C052094",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-11"
     }
   ],
   "jobs": [
@@ -1093,22 +1128,6 @@
       "has_desc": true
     },
     {
-      "id": "5dce2d2cd9d7b880",
-      "kind": "direct",
-      "company": "Turner & Townsend",
-      "title": "Associate Director Digital Consultant – Systems, Data & Analytics (Construction)",
-      "location": "Los Angeles, California, US",
-      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000134884620-associate-director-digital-consultant-systems-data-analytics-construction-?oga=true",
-      "posted_date": "2026-06-29T21:52:49.090Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
       "id": "cc9f370601d147e1",
       "kind": "direct",
       "company": "Turner & Townsend",
@@ -1243,7 +1262,7 @@
       "title": "Senior Cost Engineering Specialist",
       "location": "Dallas, Texas",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Dallas-Texas/Senior-Cost-Engineering-Specialist_JR5958",
-      "posted_date": "Posted 17 Days Ago",
+      "posted_date": "Posted 18 Days Ago",
       "comp": "$116,930.89 - $133,635.31",
       "tier": 1,
       "status": "active",
@@ -1259,7 +1278,7 @@
       "title": "Senior Program Controls Manager",
       "location": "US-WA-Seattle",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Seattle/Senior-Program-Controls-Manager_JR1535",
-      "posted_date": "Posted 17 Days Ago",
+      "posted_date": "Posted 18 Days Ago",
       "comp": "$180,000-$250,000 annually",
       "tier": 1,
       "status": "active",
@@ -1389,7 +1408,7 @@
       "title": "P6 Scheduler",
       "location": "US-CA-San Francisco Bay Area",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-CA-San-Francisco-Bay-Area/P6-Scheduler_JR1539",
-      "posted_date": "Posted 13 Days Ago",
+      "posted_date": "Posted 14 Days Ago",
       "comp": "$128,960 - $139,360 annually",
       "tier": 1,
       "status": "active",
@@ -1520,7 +1539,7 @@
       "company": "LGL Technologies",
       "title": "Oracle Primavera Unifier Consultant",
       "location": "Texas, US",
-      "url": "https://www.adzuna.com/land/ad/5794406427?se=DOUzfhCV8RG7ILaWj3cC-A&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=dM9SDHqV8RGHvZpTA2qYuA&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
       "posted_date": "2026-07-09T15:01:35Z",
       "comp": null,
       "tier": 1,
@@ -1553,7 +1572,7 @@
       "title": "Digital Solutions Specialist",
       "location": "Boston, Massachusetts",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
-      "posted_date": "Posted 7 Days Ago",
+      "posted_date": "Posted 8 Days Ago",
       "comp": "$114,345.69 - $130,680.78",
       "tier": 1,
       "status": "active",
@@ -1632,7 +1651,7 @@
       "company": "Exl Neo Technologies",
       "title": "Solution Architect Oracle Unifier",
       "location": "Trammells, Harris County",
-      "url": "https://www.adzuna.com/land/ad/5829524183?se=XmLmfhCV8RGdB7OHFpXAeQ&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
+      "url": "https://www.adzuna.com/land/ad/5829524183?se=oAkFDXqV8RGiYpuj0Q3xbQ&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
       "posted_date": "2026-08-05T17:45:43Z",
       "comp": "Pay range: $105-110/hr",
       "tier": 1,
@@ -1648,7 +1667,7 @@
       "company": "Exl Neo Technologies",
       "title": "Oracle Unifier SME/ Solution Architect",
       "location": "Trammells, Harris County",
-      "url": "https://www.adzuna.com/land/ad/5829552670?se=XmLmfhCV8RGdB7OHFpXAeQ&utm_medium=api&utm_source=55569923&v=38995F35BE2F4422B2D4DDF2DA718E30563EC4A0",
+      "url": "https://www.adzuna.com/land/ad/5829552670?se=oAkFDXqV8RGiYpuj0Q3xbQ&utm_medium=api&utm_source=55569923&v=38995F35BE2F4422B2D4DDF2DA718E30563EC4A0",
       "posted_date": "2026-08-05T17:50:17Z",
       "comp": null,
       "tier": 1,
@@ -1744,7 +1763,7 @@
       "company": "ISite Technologies Inc",
       "title": "Data Migration",
       "location": "US",
-      "url": "https://www.adzuna.com/land/ad/5832186825?se=XmLmfhCV8RGdB7OHFpXAeQ&utm_medium=api&utm_source=55569923&v=236DD9C375A185E6EF40A9CE54E3AD7E9C052094",
+      "url": "https://www.adzuna.com/land/ad/5832186825?se=oAkFDXqV8RGiYpuj0Q3xbQ&utm_medium=api&utm_source=55569923&v=236DD9C375A185E6EF40A9CE54E3AD7E9C052094",
       "posted_date": "2026-08-07T11:54:50Z",
       "comp": null,
       "tier": 1,
@@ -1776,15 +1795,13 @@
       "company": "Exl Neo Technologies",
       "title": "Oracle Unifier SME",
       "location": "Trammells, Harris County",
-      "url": "https://www.adzuna.com/land/ad/5835865858?se=XmLmfhCV8RGdB7OHFpXAeQ&utm_medium=api&utm_source=55569923&v=1CDDCD7F22BEC207D9AC0486F0AA0FE6B4B09772",
+      "url": "https://www.adzuna.com/land/ad/5835865858?se=oAkFDXqV8RGiYpuj0Q3xbQ&utm_medium=api&utm_source=55569923&v=1CDDCD7F22BEC207D9AC0486F0AA0FE6B4B09772",
       "posted_date": "2026-08-10T14:05:42Z",
       "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },
@@ -1965,6 +1982,21 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-07-30",
+      "flags": [],
+      "role": "systems"
+    },
+    {
+      "id": "5dce2d2cd9d7b880",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Associate Director Digital Consultant – Systems, Data & Analytics (Construction)",
+      "location": "Los Angeles, California, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000134884620-associate-director-digital-consultant-systems-data-analytics-construction-?oga=true",
+      "posted_date": "2026-06-29T21:52:49.090Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-08-11",
       "flags": [],
       "role": "systems"
     },
