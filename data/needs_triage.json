@@ -20,7 +20,9 @@
     "url": "https://www.projectp.com/company/careers.php",
     "note": "careers page mentions \"unifier\" — extract the actual posting",
     "source": "generic_page:Project Partners",
-    "first_seen": "2026-07-17"
+    "first_seen": "2026-07-17",
+    "status": "handled",
+    "status_note": "superseded 2026-08-11 — hrmdirect adapter now reads the real board (projectp.hrmdirect.com); the careers page hit was marketing copy behind an iframe"
   },
   {
     "company": "Meta",
@@ -149,21 +151,27 @@
     "url": "https://www.metacareers.com/jobs/27528811270095196/",
     "note": "employer's own search matched 'unifier' but posting text unavailable — verify: System Architecture Engineer",
     "source": "meta_graphql:Meta",
-    "first_seen": "2026-07-21"
+    "first_seen": "2026-07-21",
+    "status": "handled",
+    "status_note": "superseded 2026-08-11 — meta_graphql now fetches job_details descriptions, so postings are keyword-tested instead of queued"
   },
   {
     "company": "Meta",
     "url": "https://www.metacareers.com/jobs/1525571325609177/",
     "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Senior Data Architect - Supply Chain",
     "source": "meta_graphql:Meta",
-    "first_seen": "2026-07-22"
+    "first_seen": "2026-07-22",
+    "status": "handled",
+    "status_note": "superseded 2026-08-11 — meta_graphql now fetches job_details descriptions, so postings are keyword-tested instead of queued"
   },
   {
     "company": "Meta",
     "url": "https://www.metacareers.com/jobs/1012709678418823/",
     "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Systems Architect, Data Center Design and Construction",
     "source": "meta_graphql:Meta",
-    "first_seen": "2026-07-30"
+    "first_seen": "2026-07-30",
+    "status": "handled",
+    "status_note": "superseded 2026-08-11 — meta_graphql now fetches job_details descriptions, so postings are keyword-tested instead of queued"
   },
   {
     "company": "LGL Technologies",

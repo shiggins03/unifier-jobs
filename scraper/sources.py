@@ -453,6 +453,65 @@ def fetch_jooble(queries):
     return out, ok
 
 
+def _json_str_at(text, key, start=0):
+    """Value of a JSON string field in raw page source, honouring escapes.
+    Meta embeds the posting as JSON in the job_details HTML; a plain regex
+    trips over the escaped quotes inside the description."""
+    tag = '"%s":"' % key
+    i = text.find(tag, start)
+    if i < 0:
+        return None
+    j = i + len(tag)
+    out = []
+    while j < len(text):
+        c = text[j]
+        if c == "\\":
+            out.append(text[j:j + 2])
+            j += 2
+            continue
+        if c == '"':
+            break
+        out.append(c)
+        j += 1
+    try:
+        return json.loads('"' + "".join(out) + '"')
+    except Exception:
+        return None
+
+
+def _meta_job_text(session, job_id):
+    """Full posting text for one Meta job. The search API returns titles only,
+    so without this every Meta posting arrives description-less and can never
+    match a keyword that lives in the body — which is where "Unifier" always
+    is (their titles say "Systems Architect"). Read the description/
+    responsibilities/qualifications FIELDS, never the whole page: the page
+    source also carries a third-party vendor allowlist that literally contains
+    the word "unifier", which is what made the old page-scrape monitor report
+    a false positive for every query."""
+    try:
+        r = session.get(
+            f"https://www.metacareers.com/profile/job_details/{job_id}/",
+            timeout=TIMEOUT)
+        if not r.ok:
+            return None
+        t = r.text
+    except Exception:
+        return None
+    parts = []
+    desc = _json_str_at(t, "description")
+    if desc:
+        parts.append(desc)
+    for key in ("responsibilities", "qualifications"):
+        m = re.search('"' + key + r'":\[(.*?)\]', t, re.S)
+        if m:
+            try:
+                items = json.loads("[" + m.group(1) + "]")
+                parts.extend(x for x in items if isinstance(x, str))
+            except Exception:
+                pass
+    return "\n".join(parts).strip() or None
+
+
 def fetch_meta_graphql(co, query):
     """Meta careers CPJobSearchSourceQuery — shape captured from live site
     2026-07-17. lsd token is per-pagefetch; doc_id is long-lived."""
@@ -471,7 +530,11 @@ def fetch_meta_graphql(co, query):
             "av": "0", "__user": "0", "__a": "1", "__comet_req": "31", "lsd": lsd,
             "jazoest": jazoest, "fb_api_caller_class": "RelayModern",
             "fb_api_req_friendly_name": "CPJobSearchSourceQuery",
-            "variables": json.dumps({"search_input": {"q": q, "results_per_page": "FIVE"}}),
+            # FIFTY, not FIVE: the search is relevance-ranked but real matches
+            # are not always in the top 5, and "TWENTY" is not a valid enum
+            # (it returns null). Irrelevant extras are dropped by the keyword
+            # filter once their descriptions are fetched.
+            "variables": json.dumps({"search_input": {"q": q, "results_per_page": "FIFTY"}}),
             "server_timestamps": "true", "doc_id": doc_id},
             headers={"x-fb-lsd": lsd,
                      "Content-Type": "application/x-www-form-urlencoded"},
@@ -497,8 +560,9 @@ def fetch_meta_graphql(co, query):
                 out.append({
                     "company": co["name"], "title": j.get("title"),
                     "location": "; ".join(j.get("locations") or []) or None,
-                    "url": f"https://www.metacareers.com/jobs/{jid}/",
-                    "posted_date": None, "description": None,
+                    "url": f"https://www.metacareers.com/profile/job_details/{jid}/",
+                    "posted_date": None,
+                    "description": _meta_job_text(s, jid),
                     "search_matched": True,
                 })
         inventory = len(search("engineer") or [])  # aliveness: common term
@@ -597,7 +661,66 @@ def fetch_phenom(co, query):
     return out, True, inventory
 
 
+def fetch_hrmdirect(co, query):
+    """HRM Direct / ClearCompany boards (Project Partners). The company's own
+    careers page just iframes this, and that iframe is why a generic_page
+    monitor could never see the jobs — the outer page is byte-identical for
+    every jobId. `?search=true` renders the full req table server-side.
+
+    One req fans out into a row per location (their India posting has ~30), so
+    rows are grouped by req id and the US row is preferred; the scope filter
+    then drops reqs that are foreign-only."""
+    host = co["hrmdirect_host"]
+    try:
+        r = requests.get(f"https://{host}/employment/job-openings.php",
+                         params={"search": "true", "nohd": ""},
+                         headers=UA, timeout=TIMEOUT)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, "html.parser")
+    except Exception:
+        return [], False, None
+
+    reqs = {}
+    for tr in soup.select("tr[data-req-id]"):
+        req = tr.get("data-req-id")
+        a = tr.select_one("td.posTitle a")
+        if not (req and a):
+            continue
+        title = a.get_text(" ", strip=True)
+        country = (tr.select_one("td.countries") or a).get_text(" ", strip=True)
+        office = (tr.select_one("td.offices") or a).get_text(" ", strip=True)
+        href = a.get("href") or ""
+        row = {"title": title, "country": country, "office": office, "href": href}
+        cur = reqs.get(req)
+        if cur is None or ("united states" in country.casefold()
+                           and "united states" not in cur["country"].casefold()):
+            reqs[req] = row
+
+    out = []
+    for req, row in reqs.items():
+        href = html.unescape(row["href"]).lstrip("/")
+        url = f"https://{host}/employment/{href}" if href else \
+              f"https://{host}/employment/job-opening.php?req={req}"
+        desc = None
+        try:
+            d = requests.get(url, headers=UA, timeout=TIMEOUT)
+            if d.ok:
+                node = BeautifulSoup(d.text, "html.parser").body
+                if node:
+                    desc = re.sub(r"\n{3,}", "\n\n",
+                                  node.get_text("\n", strip=True)).strip() or None
+        except Exception:
+            pass
+        loc = ", ".join(x for x in (row["office"], row["country"]) if x) or None
+        out.append({
+            "company": co["name"], "title": row["title"], "location": loc,
+            "url": url, "posted_date": None, "description": desc,
+        })
+    return out, True, len(reqs)
+
+
 DIRECT_ADAPTERS = {
+    "hrmdirect": fetch_hrmdirect,
     "workday": fetch_workday,
     "google_careers": fetch_google_careers,
     "oracle_orc": fetch_oracle_orc,

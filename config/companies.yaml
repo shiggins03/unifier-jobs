@@ -374,10 +374,15 @@ companies:
     enabled: true
   - name: Project Partners
     tier: C
-    ats: generic_page
-    url: https://www.projectp.com/company/careers.php
+    ats: hrmdirect
+    hrmdirect_host: projectp.hrmdirect.com
     enabled: true
-    note: marketing text mentions Unifier — first triage entry will be a false alarm; mark it ignored
+    note: >-
+      careers.php only iframes their HRM Direct board, so the old generic_page
+      monitor saw marketing copy (permanent "unifier" false positive) and never
+      the jobs — fixed 2026-08-11 after the owner found their "Oracle Primavera
+      Unifier Implementation Consultant" by hand. Board is branded Broadpin.
+      Detail pages carry stated salary.
   - name: EPMA
     tier: C
     ats: generic_page
