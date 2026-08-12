@@ -978,6 +978,41 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-08-12"
+    },
+    {
+      "company": "LGL Technologies",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=mnSjtPGV8RGhUM29z86DVg&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-12"
+    },
+    {
+      "company": "Exl Neo Technologies",
+      "url": "https://www.adzuna.com/land/ad/5835865858?se=LEwsuPGV8RGlJYh5J4c_iQ&utm_medium=api&utm_source=55569923&v=1CDDCD7F22BEC207D9AC0486F0AA0FE6B4B09772",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-12"
+    },
+    {
+      "company": "Exl Neo Technologies",
+      "url": "https://www.adzuna.com/land/ad/5829524183?se=LEwsuPGV8RGlJYh5J4c_iQ&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-12"
+    },
+    {
+      "company": "Exl Neo Technologies",
+      "url": "https://www.adzuna.com/land/ad/5829552670?se=LEwsuPGV8RGlJYh5J4c_iQ&utm_medium=api&utm_source=55569923&v=38995F35BE2F4422B2D4DDF2DA718E30563EC4A0",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-12"
+    },
+    {
+      "company": "AmmaluIT",
+      "url": "https://www.adzuna.com/land/ad/5822710299?se=LEwsuPGV8RGlJYh5J4c_iQ&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-12"
     }
   ],
   "jobs": [
@@ -1370,22 +1405,6 @@
       "has_desc": true
     },
     {
-      "id": "03dc50c63fd3d917",
-      "kind": "direct",
-      "company": "Consertus",
-      "title": "Senior Program Controls Manager",
-      "location": "US-WA-Seattle",
-      "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Seattle/Senior-Program-Controls-Manager_JR1535",
-      "posted_date": "Posted 18 Days Ago",
-      "comp": "$180,000-$250,000 annually",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
       "id": "17621fbddf63fd59",
       "kind": "direct",
       "company": "Bechtel",
@@ -1621,7 +1640,7 @@
       "company": "LGL Technologies",
       "title": "Oracle Primavera Unifier Consultant",
       "location": "Texas, US",
-      "url": "https://www.adzuna.com/land/ad/5794406427?se=JosYs-qV8RGWt6-cE-SGCg&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=mnSjtPGV8RGhUM29z86DVg&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
       "posted_date": "2026-07-09T15:01:35Z",
       "comp": null,
       "tier": 1,
@@ -1637,7 +1656,7 @@
       "company": "AmmaluIT",
       "title": "Oracle Integration Cloud (OIC) Developer",
       "location": "Indiana, Indiana County",
-      "url": "https://www.adzuna.com/land/ad/5822710299?se=ELQ2tOqV8RGlJYh5J4c_iQ&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
+      "url": "https://www.adzuna.com/land/ad/5822710299?se=LEwsuPGV8RGlJYh5J4c_iQ&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
       "posted_date": "2026-07-31T17:21:41Z",
       "comp": null,
       "tier": 1,
@@ -1733,7 +1752,7 @@
       "company": "Exl Neo Technologies",
       "title": "Solution Architect Oracle Unifier",
       "location": "Trammells, Harris County",
-      "url": "https://www.adzuna.com/land/ad/5829524183?se=ELQ2tOqV8RGlJYh5J4c_iQ&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
+      "url": "https://www.adzuna.com/land/ad/5829524183?se=LEwsuPGV8RGlJYh5J4c_iQ&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
       "posted_date": "2026-08-05T17:45:43Z",
       "comp": "Pay range: $105-110/hr",
       "tier": 1,
@@ -1749,7 +1768,7 @@
       "company": "Exl Neo Technologies",
       "title": "Oracle Unifier SME/ Solution Architect",
       "location": "Trammells, Harris County",
-      "url": "https://www.adzuna.com/land/ad/5829552670?se=ELQ2tOqV8RGlJYh5J4c_iQ&utm_medium=api&utm_source=55569923&v=38995F35BE2F4422B2D4DDF2DA718E30563EC4A0",
+      "url": "https://www.adzuna.com/land/ad/5829552670?se=LEwsuPGV8RGlJYh5J4c_iQ&utm_medium=api&utm_source=55569923&v=38995F35BE2F4422B2D4DDF2DA718E30563EC4A0",
       "posted_date": "2026-08-05T17:50:17Z",
       "comp": null,
       "tier": 1,
@@ -1877,7 +1896,7 @@
       "company": "Exl Neo Technologies",
       "title": "Oracle Unifier SME",
       "location": "Trammells, Harris County",
-      "url": "https://www.adzuna.com/land/ad/5835865858?se=ELQ2tOqV8RGlJYh5J4c_iQ&utm_medium=api&utm_source=55569923&v=1CDDCD7F22BEC207D9AC0486F0AA0FE6B4B09772",
+      "url": "https://www.adzuna.com/land/ad/5835865858?se=LEwsuPGV8RGlJYh5J4c_iQ&utm_medium=api&utm_source=55569923&v=1CDDCD7F22BEC207D9AC0486F0AA0FE6B4B09772",
       "posted_date": "2026-08-10T14:05:42Z",
       "comp": null,
       "tier": 1,
@@ -1894,15 +1913,15 @@
       "title": "Systems Architect, Data Center Design and Construction",
       "location": "Reston, VA; Menlo Park, CA; San Francisco, CA",
       "url": "https://www.metacareers.com/profile/job_details/1012709678418823/",
-      "posted_date": null,
-      "comp": null,
+      "posted_date": "2026-07-22T16:51:16-07:00",
+      "comp": "United States of America: $150,000/year to $209,000/year + bonus + equity + benefits",
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [
-        "new"
+        "comp-manual"
       ],
-      "role": "unclear",
+      "role": "systems",
       "has_desc": true
     },
     {
@@ -1917,9 +1936,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -1935,9 +1952,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -1953,9 +1968,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -1972,7 +1985,24 @@
       "status": "active",
       "gone_date": null,
       "flags": [
-        "title-match",
+        "title-match"
+      ],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "e0fa3a97533e4ebf",
+      "kind": "direct",
+      "company": "Meta",
+      "title": "Schedule & Technical Integration Manager, Data Centers",
+      "location": "Menlo Park, CA",
+      "url": "https://www.metacareers.com/profile/job_details/1565674545076717/",
+      "posted_date": "2026-06-23T06:45:55-07:00",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
         "new"
       ],
       "role": "systems",
@@ -2232,6 +2262,21 @@
       "gone_date": "2026-08-07",
       "flags": [],
       "role": "field"
+    },
+    {
+      "id": "03dc50c63fd3d917",
+      "kind": "direct",
+      "company": "Consertus",
+      "title": "Senior Program Controls Manager",
+      "location": "US-WA-Seattle",
+      "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Seattle/Senior-Program-Controls-Manager_JR1535",
+      "posted_date": "Posted 18 Days Ago",
+      "comp": "$180,000-$250,000 annually",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-08-12",
+      "flags": [],
+      "role": "controls"
     },
     {
       "id": "0aba6533f5d73407",

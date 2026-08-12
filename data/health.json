@@ -152,7 +152,7 @@
       3,
       3,
       3,
-      3,
+      2,
       2
     ],
     "fail_streak": 0,
@@ -169,15 +169,15 @@
     ],
     "fail_streak": 0,
     "last_run": "2026-08-12",
-    "inventory": 24
+    "inventory": 23
   },
   "meta_graphql:Meta": {
     "counts": [
       0,
       0,
       0,
-      0,
-      1
+      1,
+      2
     ],
     "fail_streak": 0,
     "inventory": 50,
@@ -209,25 +209,25 @@
   "phenom:Bechtel": {
     "counts": [
       21,
-      21,
       20,
       18,
+      19,
       19
     ],
     "fail_streak": 0,
-    "inventory": 1065,
+    "inventory": 1066,
     "last_run": "2026-08-12"
   },
   "smartrecruiters:Turner & Townsend": {
     "counts": [
-      33,
       34,
+      6,
       6,
       6,
       6
     ],
     "fail_streak": 0,
-    "inventory": 2875,
+    "inventory": 2873,
     "last_run": "2026-08-12"
   },
   "workday:Mass General Brigham": {
@@ -258,7 +258,7 @@
       6,
       6,
       6,
-      6,
+      9,
       9
     ],
     "fail_streak": 0,
@@ -280,7 +280,7 @@
   "successfactors:Amtrak": {
     "counts": [
       3,
-      3,
+      0,
       0,
       0,
       0
@@ -292,7 +292,7 @@
   "amazon_jobs:Amazon": {
     "counts": [
       3,
-      3,
+      1,
       1,
       1,
       1
@@ -322,7 +322,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 2699,
+    "inventory": 2700,
     "last_run": "2026-08-12"
   },
   "workday:Intel": {
@@ -334,7 +334,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 653,
+    "inventory": 652,
     "last_run": "2026-08-12"
   },
   "workday:Pfizer": {
@@ -428,6 +428,7 @@
     "counts": [
       0,
       0,
+      0,
       0
     ],
     "fail_streak": 0,
@@ -436,6 +437,7 @@
   },
   "hrmdirect:Project Partners": {
     "counts": [
+      1,
       1
     ],
     "fail_streak": 0,
