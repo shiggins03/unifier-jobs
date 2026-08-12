@@ -1,7 +1,7 @@
 {
-  "updated": "2026-08-11",
+  "updated": "2026-08-12",
   "warnings": [
-    "generic_page:City of New York: zero results for 3+ runs (was returning data)"
+    "successfactors:Amtrak: zero results for 3+ runs (was returning data)"
   ],
   "roster": [
     {
@@ -287,9 +287,9 @@
     {
       "name": "Project Partners",
       "tier": "C",
-      "ats": "generic_page",
+      "ats": "hrmdirect",
       "enabled": true,
-      "note": "marketing text mentions Unifier — first triage entry will be a false alarm; mark it ignored"
+      "note": "careers.php only iframes their HRM Direct board, so the old generic_page monitor saw marketing copy (permanent \"unifier\" false positive) and never the jobs — fixed 2026-08-11 after the owner found their \"Oracle Primavera Unifier Implementation Consultant\" by hand. Board is branded Broadpin. Detail pages carry stated salary."
     },
     {
       "name": "EPMA",
@@ -333,13 +333,6 @@
       "url": "https://www.drmcnatty.com/careers",
       "note": "careers page mentions \"unifier\" — extract the actual posting",
       "source": "generic_page:DRMcNatty & Associates",
-      "first_seen": "2026-07-17"
-    },
-    {
-      "company": "Project Partners",
-      "url": "https://www.projectp.com/company/careers.php",
-      "note": "careers page mentions \"unifier\" — extract the actual posting",
-      "source": "generic_page:Project Partners",
       "first_seen": "2026-07-17"
     },
     {
@@ -418,27 +411,6 @@
       "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Digital Twin Specialist",
       "source": "oracle_orc:Hill International",
       "first_seen": "2026-07-20"
-    },
-    {
-      "company": "Meta",
-      "url": "https://www.metacareers.com/jobs/27528811270095196/",
-      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: System Architecture Engineer",
-      "source": "meta_graphql:Meta",
-      "first_seen": "2026-07-21"
-    },
-    {
-      "company": "Meta",
-      "url": "https://www.metacareers.com/jobs/1525571325609177/",
-      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Senior Data Architect - Supply Chain",
-      "source": "meta_graphql:Meta",
-      "first_seen": "2026-07-22"
-    },
-    {
-      "company": "Meta",
-      "url": "https://www.metacareers.com/jobs/1012709678418823/",
-      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Systems Architect, Data Center Design and Construction",
-      "source": "meta_graphql:Meta",
-      "first_seen": "2026-07-30"
     },
     {
       "company": "LGL Technologies",
@@ -880,6 +852,132 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-08-11"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/profile/job_details/1525571325609177/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Senior Data Architect - Supply Chain",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-08-12"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/profile/job_details/1565674545076717/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Schedule & Technical Integration Manager, Data Centers",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-08-12"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/profile/job_details/1670149234051960/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Software Developer, GO Systems",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-08-12"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/profile/job_details/806895615747338/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Equipment and Inventory Planner, Data Center Construction",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-08-12"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/profile/job_details/1326784526233147/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Brand Strategist",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-08-12"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/profile/job_details/3481968971967785/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Telecom Conveyance Engineer, Data Center Infrastructure",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-08-12"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/profile/job_details/1381946710704218/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Public Affairs Manager, Events - AI Campaign",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-08-12"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/profile/job_details/3039795209555760/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: State Campaign Manager, Public Affairs - AI Campaign",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-08-12"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/profile/job_details/1084428050580464/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Product Designer",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-08-12"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/profile/job_details/2153803492149585/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Product Designer, Human Interface",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-08-12"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/profile/job_details/1522951515968364/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Industrial Designer",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-08-12"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/profile/job_details/27034262962921676/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: IC8 Data Scientist, Product Analytics - CP New Revenue Bets",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-08-12"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/profile/job_details/968722059080516/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: AI Research Scientist —Generative AI for Materials Discovery",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-08-12"
+    },
+    {
+      "company": "LGL Technologies",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=JosYs-qV8RGWt6-cE-SGCg&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-12"
+    },
+    {
+      "company": "Exl Neo Technologies",
+      "url": "https://www.adzuna.com/land/ad/5835865858?se=ELQ2tOqV8RGlJYh5J4c_iQ&utm_medium=api&utm_source=55569923&v=1CDDCD7F22BEC207D9AC0486F0AA0FE6B4B09772",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-12"
+    },
+    {
+      "company": "Exl Neo Technologies",
+      "url": "https://www.adzuna.com/land/ad/5829524183?se=ELQ2tOqV8RGlJYh5J4c_iQ&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-12"
+    },
+    {
+      "company": "Exl Neo Technologies",
+      "url": "https://www.adzuna.com/land/ad/5829552670?se=ELQ2tOqV8RGlJYh5J4c_iQ&utm_medium=api&utm_source=55569923&v=38995F35BE2F4422B2D4DDF2DA718E30563EC4A0",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-12"
+    },
+    {
+      "company": "AmmaluIT",
+      "url": "https://www.adzuna.com/land/ad/5822710299?se=ELQ2tOqV8RGlJYh5J4c_iQ&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-12"
     }
   ],
   "jobs": [
@@ -1322,22 +1420,6 @@
       "has_desc": true
     },
     {
-      "id": "91119a33edfa85ad",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Deputy Project Engineering Manager",
-      "location": "Ogden, Utah, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297120&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-27T19:17:51.676+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
       "id": "9b450b2863b5d6aa",
       "kind": "direct",
       "company": "Bechtel",
@@ -1539,7 +1621,7 @@
       "company": "LGL Technologies",
       "title": "Oracle Primavera Unifier Consultant",
       "location": "Texas, US",
-      "url": "https://www.adzuna.com/land/ad/5794406427?se=dM9SDHqV8RGHvZpTA2qYuA&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=JosYs-qV8RGWt6-cE-SGCg&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
       "posted_date": "2026-07-09T15:01:35Z",
       "comp": null,
       "tier": 1,
@@ -1550,13 +1632,13 @@
       "has_desc": true
     },
     {
-      "id": "4812275502cd5be3",
+      "id": "d38100d948cf087f",
       "kind": "board",
-      "company": "NewYork-Presbyterian Hospital",
-      "title": "Program Manager – Facilities Systems (Oracle Unifier Program Manager)",
-      "location": "US",
-      "url": "https://www.adzuna.com/details/5820911122?utm_medium=api&utm_source=55569923",
-      "posted_date": "2026-07-30T04:56:27Z",
+      "company": "AmmaluIT",
+      "title": "Oracle Integration Cloud (OIC) Developer",
+      "location": "Indiana, Indiana County",
+      "url": "https://www.adzuna.com/land/ad/5822710299?se=ELQ2tOqV8RGlJYh5J4c_iQ&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
+      "posted_date": "2026-07-31T17:21:41Z",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -1587,8 +1669,8 @@
       "company": "Bechtel",
       "title": "Construction Automation Specialist",
       "location": "New Albany, Ohio, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297583&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-08-04T17:19:49.040+0000",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297566&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-08-11T19:17:20.690+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -1651,7 +1733,7 @@
       "company": "Exl Neo Technologies",
       "title": "Solution Architect Oracle Unifier",
       "location": "Trammells, Harris County",
-      "url": "https://www.adzuna.com/land/ad/5829524183?se=oAkFDXqV8RGiYpuj0Q3xbQ&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
+      "url": "https://www.adzuna.com/land/ad/5829524183?se=ELQ2tOqV8RGlJYh5J4c_iQ&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
       "posted_date": "2026-08-05T17:45:43Z",
       "comp": "Pay range: $105-110/hr",
       "tier": 1,
@@ -1667,7 +1749,7 @@
       "company": "Exl Neo Technologies",
       "title": "Oracle Unifier SME/ Solution Architect",
       "location": "Trammells, Harris County",
-      "url": "https://www.adzuna.com/land/ad/5829552670?se=oAkFDXqV8RGiYpuj0Q3xbQ&utm_medium=api&utm_source=55569923&v=38995F35BE2F4422B2D4DDF2DA718E30563EC4A0",
+      "url": "https://www.adzuna.com/land/ad/5829552670?se=ELQ2tOqV8RGlJYh5J4c_iQ&utm_medium=api&utm_source=55569923&v=38995F35BE2F4422B2D4DDF2DA718E30563EC4A0",
       "posted_date": "2026-08-05T17:50:17Z",
       "comp": null,
       "tier": 1,
@@ -1795,13 +1877,104 @@
       "company": "Exl Neo Technologies",
       "title": "Oracle Unifier SME",
       "location": "Trammells, Harris County",
-      "url": "https://www.adzuna.com/land/ad/5835865858?se=oAkFDXqV8RGiYpuj0Q3xbQ&utm_medium=api&utm_source=55569923&v=1CDDCD7F22BEC207D9AC0486F0AA0FE6B4B09772",
+      "url": "https://www.adzuna.com/land/ad/5835865858?se=ELQ2tOqV8RGlJYh5J4c_iQ&utm_medium=api&utm_source=55569923&v=1CDDCD7F22BEC207D9AC0486F0AA0FE6B4B09772",
       "posted_date": "2026-08-10T14:05:42Z",
       "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "98d913517a44be5e",
+      "kind": "direct",
+      "company": "Meta",
+      "title": "Systems Architect, Data Center Design and Construction",
+      "location": "Reston, VA; Menlo Park, CA; San Francisco, CA",
+      "url": "https://www.metacareers.com/profile/job_details/1012709678418823/",
+      "posted_date": null,
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "1c2472c169693a27",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Project Controls Coordinator",
+      "location": "South Flower Street, Los Angeles, California",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/South-Flower-Street-Los-Angeles-California/Project-Controls-Coordinator_JR6022",
+      "posted_date": "Posted Today",
+      "comp": "$57,779.00 - $65,658.00",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "140c112c0d1c1c24",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Cost Engineering Specialist",
+      "location": "Empire State Building, New York, New York",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Empire-State-Building-New-York-New-York/Cost-Engineering-Specialist_JR6020",
+      "posted_date": "Posted Today",
+      "comp": "$95,975.90 - $109,686.74",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "7545496e86bd1625",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Project Controls Specialist",
+      "location": "Empire State Building, New York, New York",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Empire-State-Building-New-York-New-York/Project-Controls-Specialist_JR6021-1",
+      "posted_date": "Posted Today",
+      "comp": "$86,464.77 - $98,816.88",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "488da78c09368adc",
+      "kind": "direct",
+      "company": "Project Partners",
+      "title": "Oracle Primavera Unifier Implementation Consultant - US Based",
+      "location": "Remote - US Based, United States",
+      "url": "https://projectp.hrmdirect.com/employment/job-opening.php?req=3707233&req_loc=1313708&&&nohd#job",
+      "posted_date": null,
+      "comp": "$100000 - $130000 Per Year",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "title-match",
+        "new"
+      ],
       "role": "systems",
       "has_desc": true
     },
@@ -2076,6 +2249,21 @@
       "role": "field"
     },
     {
+      "id": "91119a33edfa85ad",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Deputy Project Engineering Manager",
+      "location": "Ogden, Utah, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297120&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-27T19:17:51.676+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-08-12",
+      "flags": [],
+      "role": "unclear"
+    },
+    {
       "id": "567408d36e24d283",
       "kind": "direct",
       "company": "Deloitte",
@@ -2153,6 +2341,21 @@
       "role": "systems"
     },
     {
+      "id": "4812275502cd5be3",
+      "kind": "board",
+      "company": "NewYork-Presbyterian Hospital",
+      "title": "Program Manager – Facilities Systems (Oracle Unifier Program Manager)",
+      "location": "US",
+      "url": "https://www.adzuna.com/details/5820911122?utm_medium=api&utm_source=55569923",
+      "posted_date": "2026-07-30T04:56:27Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-08-12",
+      "flags": [],
+      "role": "systems"
+    },
+    {
       "id": "89a32eee24ea924d",
       "kind": "direct",
       "company": "Eli Lilly",
@@ -2166,21 +2369,6 @@
       "gone_date": "2026-08-09",
       "flags": [],
       "role": "controls"
-    },
-    {
-      "id": "d38100d948cf087f",
-      "kind": "board",
-      "company": "AmmaluIT",
-      "title": "Oracle Integration Cloud (OIC) Developer",
-      "location": "Indiana, Indiana County",
-      "url": "https://www.adzuna.com/land/ad/5822710299?se=0BuwkMyQ8RGn9OUFxU2LNA&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
-      "posted_date": "2026-07-31T17:21:41Z",
-      "comp": null,
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-08-10",
-      "flags": [],
-      "role": "systems"
     },
     {
       "id": "8a7a67915271cc6b",
