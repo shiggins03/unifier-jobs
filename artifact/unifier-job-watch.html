@@ -399,7 +399,10 @@ function jobCard(j, prestige) {
     ? ' <span class="badge" title="added by hand from a direct link — this employer blocks automated access">manual</span>' : "";
   const tm = (j.tier === 1 && !flags.includes("title-match"))
     ? ' <span class="badge" style="opacity:.7">mentions Unifier</span>' : "";
-  const comp = j.comp ? esc(j.comp) : '<span style="color:var(--muted)">Not listed</span>';
+  const comp = (j.comp ? esc(j.comp) : '<span style="color:var(--muted)">Not listed</span>')
+    + (flags.includes("comp-manual")
+       ? ' <span class="badge" title="this employer renders pay client-side, so it was'
+         + ' copied verbatim from the live posting by hand">comp copied by hand</span>' : "");
   const posted = j.posted_date ? esc(j.posted_date) : "Not listed";
   const loc = j.location ? esc(j.location) : "Not listed";
   const desc = j.has_desc

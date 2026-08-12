@@ -1,0 +1,24 @@
+# Verbatim compensation for postings whose pay range is rendered CLIENT-SIDE
+# and therefore appears in no server response (Meta is the known case: its
+# "$150,000/year to $209,000/year + bonus + equity" block is absent from the
+# job_details HTML and from the schema.org JSON-LD, which carries no
+# baseSalary).
+#
+# HARD RULE #1 STILL APPLIES, and this file is the narrowest possible exception
+# to how comp is obtained, not to what may be shown:
+#   * COPY the string verbatim from the live posting. Never estimate, never
+#     round, never reformat, never infer from a similar role.
+#   * If you cannot see the posting right now, leave it out — "Not listed" is
+#     always the correct fallback.
+#   * An override only fills a field the scraper found EMPTY. It can never
+#     replace or contradict a value the employer's own feed provided.
+#   * Delete the entry when the posting closes; a stale override would outlive
+#     its source.
+#
+# Matching is by URL substring, so use the stable job id rather than the whole
+# URL. Cards rendered from an override are badged "comp copied by hand".
+overrides:
+  - url_contains: "job_details/1012709678418823"
+    comp: "United States of America: $150,000/year to $209,000/year + bonus + equity + benefits"
+    note: Meta Systems Architect, Data Center Design and Construction
+    checked: 2026-08-12

@@ -111,6 +111,19 @@ field / unclear, surfaced as artifact filter chips and a muted card badge.
   whole store old-config-vs-new before committing a term-list change — a
   broad term can silently migrate whole employers between kinds.
 
+## Hand-copied comp (`config/comp_overrides.yaml`)
+
+Meta renders its pay range client-side: it is in neither the job_details HTML
+nor the schema.org JSON-LD (which has no `baseSalary`), so no server fetch can
+ever see it. An override supplies that string, COPIED VERBATIM from the live
+posting, keyed by URL substring. It fills an empty comp only — it can never
+replace or contradict what a feed reported — and the card is badged "comp
+copied by hand" on both surfaces so provenance is never ambiguous. Hard rule #1
+is intact: the exception is to how the string is obtained, not to what may be
+shown. Delete entries when postings close. Does not scale to every Meta job by
+hand; the scalable fix would be rendering their pages with a headless browser,
+which nobody has asked for yet.
+
 ## Adding a job from a direct link (`config/seed_jobs.yaml`)
 
 The escape hatch for employers whose sites refuse automated clients (MTA,

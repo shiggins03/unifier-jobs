@@ -61,6 +61,10 @@ def _card(j, prestige):
     tm = ('' if "title-match" in j["flags"] or j["tier"] != 1
           else ' <span class="badge" style="opacity:.7">mentions Unifier</span>')
     comp = esc(j.get("comp")) or '<span style="color:var(--muted)">Not listed</span>'
+    if "comp-manual" in j["flags"]:
+        comp += ('<span class="badge" title="this employer renders pay client-side, '
+                 'so it was copied verbatim from the live posting by hand">'
+                 'comp copied by hand</span>')
     posted = esc(j.get("posted_date")) or "Not listed"
     loc = esc(j.get("location")) or "Not listed"
     desc = ""

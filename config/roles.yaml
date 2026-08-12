@@ -32,6 +32,20 @@ kinds:
       - unifier analyst
       - unifier architect
       - solution architect
+      # Architect variants, added 2026-08-12: Meta's "Systems Architect, Data
+      # Center Design and Construction" (requires Unifier + P6) scored 1 and
+      # fell to "unclear" because only "solution architect" was listed.
+      # Deliberately NOT bare "architect" — in this industry that collides
+      # with building architects (Project Architect, Design Architect).
+      - systems architect
+      - system architect
+      - technical architect
+      - enterprise architect
+      - platform architect
+      - integration architect
+      - application architect
+      - data architect
+      - functional architect
       - software engineer
       - systems analyst
       - systems administrator

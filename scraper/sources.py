@@ -479,37 +479,57 @@ def _json_str_at(text, key, start=0):
         return None
 
 
-def _meta_job_text(session, job_id):
-    """Full posting text for one Meta job. The search API returns titles only,
-    so without this every Meta posting arrives description-less and can never
-    match a keyword that lives in the body — which is where "Unifier" always
-    is (their titles say "Systems Architect"). Read the description/
-    responsibilities/qualifications FIELDS, never the whole page: the page
-    source also carries a third-party vendor allowlist that literally contains
-    the word "unifier", which is what made the old page-scrape monitor report
-    a false positive for every query."""
+def _meta_job_detail(session, job_id):
+    """Posting text + posted date for one Meta job, from the schema.org
+    JobPosting JSON-LD embedded in job_details. The search API returns titles
+    only, so without this every Meta posting arrives description-less and can
+    never match a keyword that lives in the body — and "Unifier" is always in
+    the body (their titles say "Systems Architect").
+
+    Read the JSON-LD, never the page text: the raw page also carries a
+    third-party vendor allowlist containing the literal word "unifier", which
+    is what made the old page-scrape monitor fire for every query.
+
+    NOTE: the JSON-LD has no baseSalary, and Meta renders its pay range
+    ("$150,000/year to $209,000/year + bonus + equity") client-side only — it
+    is in no server response, so comp stays "Not listed" for Meta.
+    """
     try:
         r = session.get(
             f"https://www.metacareers.com/profile/job_details/{job_id}/",
             timeout=TIMEOUT)
         if not r.ok:
-            return None
+            return None, None
         t = r.text
     except Exception:
-        return None
+        return None, None
+    # The block is a <script type="application/ld+json">, and Meta escapes the
+    # "@" as @ in the raw source — so find it by tag and let json decode
+    # the escapes, never by searching for the literal "@type" text.
+    o = None
+    for tag in BeautifulSoup(t, "html.parser").find_all(
+            "script", attrs={"type": "application/ld+json"}):
+        try:
+            cand = json.loads(tag.string or "")
+        except Exception:
+            continue
+        for c in (cand if isinstance(cand, list) else [cand]):
+            if isinstance(c, dict) and c.get("@type") == "JobPosting":
+                o = c
+                break
+        if o:
+            break
+    if o is None:
+        return None, None
     parts = []
-    desc = _json_str_at(t, "description")
-    if desc:
-        parts.append(desc)
-    for key in ("responsibilities", "qualifications"):
-        m = re.search('"' + key + r'":\[(.*?)\]', t, re.S)
-        if m:
-            try:
-                items = json.loads("[" + m.group(1) + "]")
-                parts.extend(x for x in items if isinstance(x, str))
-            except Exception:
-                pass
-    return "\n".join(parts).strip() or None
+    for key in ("description", "responsibilities", "qualifications"):
+        v = o.get(key)
+        if isinstance(v, str) and v.strip():
+            parts.append(v.strip())
+        elif isinstance(v, list):
+            parts.extend(x for x in v if isinstance(x, str))
+    text = _clean_html("\n".join(parts)) if parts else None
+    return text, o.get("datePosted")
 
 
 def fetch_meta_graphql(co, query):
@@ -557,12 +577,13 @@ def fetch_meta_graphql(co, query):
                 if not jid or jid in seen or jid in noise:
                     continue
                 seen.add(jid)
+                desc, posted = _meta_job_detail(s, jid)
                 out.append({
                     "company": co["name"], "title": j.get("title"),
                     "location": "; ".join(j.get("locations") or []) or None,
                     "url": f"https://www.metacareers.com/profile/job_details/{jid}/",
-                    "posted_date": None,
-                    "description": _meta_job_text(s, jid),
+                    "posted_date": posted,
+                    "description": desc,
                     "search_matched": True,
                 })
         inventory = len(search("engineer") or [])  # aliveness: common term

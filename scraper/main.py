@@ -54,6 +54,16 @@ def run():
     bl = load_yaml("blocklist.yaml")
     cities = load_yaml("cities.yaml")
     roles = load_yaml("roles.yaml")
+    # Hand-copied comp for postings that render their pay client-side (Meta).
+    # Fills an EMPTY comp only — never overrides what a feed reported.
+    comp_overrides = (load_yaml("comp_overrides.yaml") or {}).get("overrides") or []
+
+    def comp_override_for(url):
+        for o in comp_overrides:
+            frag, val = o.get("url_contains"), o.get("comp")
+            if frag and val and frag in (url or ""):
+                return val
+        return None
 
     store = models.load_jobs()
     baseline = not store
@@ -138,12 +148,15 @@ def run():
                                f"text unavailable — verify: {r.get('title')}", src)
                 continue
             comp = r.get("comp") or extract_stated_comp(r.get("description"))
+            hand_comp = None if comp else comp_override_for(r.get("url"))
             job = models.make_job(
                 source=src, kind="direct", company=r["company"], title=r["title"],
                 location=r.get("location"), url=r["url"],
-                posted_date=r.get("posted_date"), comp=comp,
+                posted_date=r.get("posted_date"), comp=comp or hand_comp,
                 description=r.get("description"), tier=tier, today=today)
             job["role"] = classify_role(r.get("title"), r.get("description"), roles)
+            if hand_comp:
+                job["flags"].append("comp-manual")
             if tier == 1 and title_match(r.get("title"), kw):
                 job["flags"].append("title-match")
             _merge(store, job, today, baseline)
@@ -355,8 +368,13 @@ def _merge(store, job, today, baseline):
         # otherwise tuning roles.yaml (or adding the classifier at all) never
         # reaches the ~all postings that already exist in the store.
         old["role"] = job.get("role")
-        if "title-match" in job["flags"] and "title-match" not in old["flags"]:
-            old["flags"].append("title-match")
+        # Derived flags must follow their field onto the stored record,
+        # otherwise a re-run keeps the value but loses its provenance badge.
+        for f in ("title-match", "comp-manual"):
+            if f in job["flags"] and f not in old["flags"]:
+                old["flags"].append(f)
+        if "comp-manual" not in job["flags"] and "comp-manual" in old["flags"]:
+            old["flags"].remove("comp-manual")   # employer started stating it
     else:
         if not baseline:
             job["flags"].append("new")
