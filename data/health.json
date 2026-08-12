@@ -144,14 +144,12 @@
     "fail_streak": 0,
     "last_run": "2026-07-17"
   },
-  "_warnings": [
-    "successfactors:Amtrak: zero results for 3+ runs (was returning data)"
-  ],
+  "_warnings": [],
   "workday:Consertus": {
     "counts": [
       3,
       3,
-      3,
+      2,
       2,
       2
     ],
@@ -175,8 +173,8 @@
     "counts": [
       0,
       0,
-      0,
       1,
+      2,
       2
     ],
     "fail_streak": 0,
@@ -201,33 +199,33 @@
       2,
       2,
       2,
-      2
+      1
     ],
     "fail_streak": 0,
     "last_run": "2026-08-12"
   },
   "phenom:Bechtel": {
     "counts": [
-      21,
       20,
       18,
+      19,
       19,
       19
     ],
     "fail_streak": 0,
-    "inventory": 1066,
+    "inventory": 1061,
     "last_run": "2026-08-12"
   },
   "smartrecruiters:Turner & Townsend": {
     "counts": [
-      34,
+      6,
       6,
       6,
       6,
       6
     ],
     "fail_streak": 0,
-    "inventory": 2873,
+    "inventory": 2886,
     "last_run": "2026-08-12"
   },
   "workday:Mass General Brigham": {
@@ -257,7 +255,7 @@
     "counts": [
       6,
       6,
-      6,
+      9,
       9,
       9
     ],
@@ -274,12 +272,12 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 11,
+    "inventory": 13,
     "last_run": "2026-08-12"
   },
   "successfactors:Amtrak": {
     "counts": [
-      3,
+      0,
       0,
       0,
       0,
@@ -291,7 +289,7 @@
   },
   "amazon_jobs:Amazon": {
     "counts": [
-      3,
+      1,
       1,
       1,
       1,
@@ -322,7 +320,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 2700,
+    "inventory": 2685,
     "last_run": "2026-08-12"
   },
   "workday:Intel": {
@@ -334,7 +332,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 652,
+    "inventory": 647,
     "last_run": "2026-08-12"
   },
   "workday:Pfizer": {
@@ -346,7 +344,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 541,
+    "inventory": 553,
     "last_run": "2026-08-12"
   },
   "workday:PwC": {
@@ -358,7 +356,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 4542,
+    "inventory": 4554,
     "last_run": "2026-08-12"
   },
   "phenom:Eli Lilly": {
@@ -370,7 +368,7 @@
       2
     ],
     "fail_streak": 0,
-    "inventory": 650,
+    "inventory": 651,
     "last_run": "2026-08-12"
   },
   "workday:Johnson & Johnson": {
@@ -382,7 +380,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 1830,
+    "inventory": 1818,
     "last_run": "2026-08-12"
   },
   "seed:MTA": {
@@ -429,6 +427,7 @@
       0,
       0,
       0,
+      0,
       0
     ],
     "fail_streak": 0,
@@ -437,6 +436,7 @@
   },
   "hrmdirect:Project Partners": {
     "counts": [
+      1,
       1,
       1
     ],
