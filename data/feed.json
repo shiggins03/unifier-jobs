@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-12",
+  "updated": "2026-08-13",
   "warnings": [],
   "roster": [
     {
@@ -1046,6 +1046,27 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-08-12"
+    },
+    {
+      "company": "LGL Technologies",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=pL6_kQyX8RGEb7TtygE8KQ&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-13"
+    },
+    {
+      "company": "Exl Neo Technologies",
+      "url": "https://www.adzuna.com/land/ad/5835865858?se=2pylkgyX8RGQXPOI4cUHbQ&utm_medium=api&utm_source=55569923&v=1CDDCD7F22BEC207D9AC0486F0AA0FE6B4B09772",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-13"
+    },
+    {
+      "company": "Exl Neo Technologies",
+      "url": "https://www.adzuna.com/land/ad/5829524183?se=2pylkgyX8RGQXPOI4cUHbQ&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-13"
     }
   ],
   "jobs": [
@@ -1428,7 +1449,7 @@
       "title": "Senior Cost Engineering Specialist",
       "location": "Dallas, Texas",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Dallas-Texas/Senior-Cost-Engineering-Specialist_JR5958",
-      "posted_date": "Posted 19 Days Ago",
+      "posted_date": "Posted 20 Days Ago",
       "comp": "$116,930.89 - $133,635.31",
       "tier": 1,
       "status": "active",
@@ -1542,7 +1563,7 @@
       "title": "P6 Scheduler",
       "location": "US-CA-San Francisco Bay Area",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-CA-San-Francisco-Bay-Area/P6-Scheduler_JR1539",
-      "posted_date": "Posted 15 Days Ago",
+      "posted_date": "Posted 16 Days Ago",
       "comp": "$128,960 - $139,360 annually",
       "tier": 1,
       "status": "active",
@@ -1673,7 +1694,7 @@
       "company": "LGL Technologies",
       "title": "Oracle Primavera Unifier Consultant",
       "location": "Texas, US",
-      "url": "https://www.adzuna.com/land/ad/5794406427?se=1JlDbUOW8RGZjegz1di2Mg&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=pL6_kQyX8RGEb7TtygE8KQ&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
       "posted_date": "2026-07-09T15:01:35Z",
       "comp": null,
       "tier": 1,
@@ -1706,7 +1727,7 @@
       "title": "Digital Solutions Specialist",
       "location": "Boston, Massachusetts",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
-      "posted_date": "Posted 9 Days Ago",
+      "posted_date": "Posted 10 Days Ago",
       "comp": "$114,345.69 - $130,680.78",
       "tier": 1,
       "status": "active",
@@ -1785,7 +1806,7 @@
       "company": "Exl Neo Technologies",
       "title": "Solution Architect Oracle Unifier",
       "location": "Trammells, Harris County",
-      "url": "https://www.adzuna.com/land/ad/5829524183?se=lPvpbUOW8RGZjegz1di2Mg&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
+      "url": "https://www.adzuna.com/land/ad/5829524183?se=2pylkgyX8RGQXPOI4cUHbQ&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
       "posted_date": "2026-08-05T17:45:43Z",
       "comp": "Pay range: $105-110/hr",
       "tier": 1,
@@ -1819,22 +1840,6 @@
       "location": "Texas, US",
       "url": "https://www.adzuna.com/details/5829822036?utm_medium=api&utm_source=55569923",
       "posted_date": "2026-08-05T21:17:11Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
-      "id": "3917a3632b9b36ed",
-      "kind": "direct",
-      "company": "Deloitte",
-      "title": "US E-Consulting Services – Consultant – S&T/Strategy/I&RE – Capital Projects (Tech - Procore) – FY27 – 361869 – OK",
-      "location": null,
-      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Consultant-Procore-Implementation/361869",
-      "posted_date": "Wed, 05 Aug 2026 00:00:00 +0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -1929,7 +1934,7 @@
       "company": "Exl Neo Technologies",
       "title": "Oracle Unifier SME",
       "location": "Trammells, Harris County",
-      "url": "https://www.adzuna.com/land/ad/5835865858?se=lPvpbUOW8RGZjegz1di2Mg&utm_medium=api&utm_source=55569923&v=1CDDCD7F22BEC207D9AC0486F0AA0FE6B4B09772",
+      "url": "https://www.adzuna.com/land/ad/5835865858?se=2pylkgyX8RGQXPOI4cUHbQ&utm_medium=api&utm_source=55569923&v=1CDDCD7F22BEC207D9AC0486F0AA0FE6B4B09772",
       "posted_date": "2026-08-10T14:05:42Z",
       "comp": null,
       "tier": 1,
@@ -1980,7 +1985,7 @@
       "title": "Cost Engineering Specialist",
       "location": "Empire State Building, New York, New York",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Empire-State-Building-New-York-New-York/Cost-Engineering-Specialist_JR6020",
-      "posted_date": "Posted Yesterday",
+      "posted_date": "Posted 2 Days Ago",
       "comp": "$95,975.90 - $109,686.74",
       "tier": 1,
       "status": "active",
@@ -1996,7 +2001,7 @@
       "title": "Project Controls Specialist",
       "location": "Empire State Building, New York, New York",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Empire-State-Building-New-York-New-York/Project-Controls-Specialist_JR6021-1",
-      "posted_date": "Posted Yesterday",
+      "posted_date": "Posted 2 Days Ago",
       "comp": "$86,464.77 - $98,816.88",
       "tier": 1,
       "status": "active",
@@ -2037,6 +2042,60 @@
       "gone_date": null,
       "flags": [],
       "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "5e4242b5b90acc5b",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Project Controls Director, Global Facilities Delivery",
+      "location": "Pleasant Prairie, Wisconsin, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Pleasant-Prairie-WI/Project-Controls-Director--Global-Facilities-Delivery_R-109869/apply",
+      "posted_date": "2026-08-13T00:21:47.083+0000",
+      "comp": "$129,000 - $209,000",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "f2644f76f383f0f3",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Project Controls Specialist",
+      "location": "South Flower Street, Los Angeles, California",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/South-Flower-Street-Los-Angeles-California/Project-Controls-Coordinator_JR6022",
+      "posted_date": "Posted Yesterday",
+      "comp": "$82,862.07 - $94,699.51",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "0c4d71df52f90061",
+      "kind": "direct",
+      "company": "Project Partners",
+      "title": "Oracle Primavera P6 EPPM and Oracle Primavera Cloud (OPC) Consultant - US Based",
+      "location": "Remote - US Based, United States",
+      "url": "https://projectp.hrmdirect.com/employment/job-opening.php?req=3776777&req_loc=1414124&&&nohd#job",
+      "posted_date": null,
+      "comp": "$100000 - $130000",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
       "has_desc": true
     },
     {
@@ -2473,6 +2532,21 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-08-07",
+      "flags": [],
+      "role": "systems"
+    },
+    {
+      "id": "3917a3632b9b36ed",
+      "kind": "direct",
+      "company": "Deloitte",
+      "title": "US E-Consulting Services – Consultant – S&T/Strategy/I&RE – Capital Projects (Tech - Procore) – FY27 – 361869 – OK",
+      "location": null,
+      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Consultant-Procore-Implementation/361869",
+      "posted_date": "Wed, 05 Aug 2026 00:00:00 +0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-08-13",
       "flags": [],
       "role": "systems"
     }
