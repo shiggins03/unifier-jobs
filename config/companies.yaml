@@ -239,6 +239,29 @@ companies:
       Technology Architect, Construction Tech Integrations) — exactly the
       systems-side profile. cxs verified 2026-08-07 — inventory 101, nonsense
       query returns 0 (real search), oracle 9 hits / primavera 4 / unifier 1.
+  - name: Duke Energy
+    tier: B
+    ats: workday
+    workday_host: dukeenergy.wd1.myworkdayjobs.com
+    workday_tenant: dukeenergy
+    workday_site: search
+    enabled: true
+    note: >-
+      Large utility capital program. cxs verified 2026-08-12 — inventory 61,
+      nonsense query returns 0 (real search), 0 unifier hits today. Monitoring
+      for when one appears.
+  - name: Con Edison
+    tier: B
+    ats: oracle_orc
+    url: https://ejcu.fa.us6.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions
+    site_number: CX_1033
+    job_url_base: https://ejcu.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1033/job
+    enabled: true
+    note: >-
+      NYC utility running a large capital program — top metro for this search.
+      ORC endpoint found via the careers page 2026-08-12; verified 46 reqs for
+      "engineer", and unlike Oracle's own site the "unifier" keyword is precise
+      here (1 hit), so no search_query override is needed.
   - name: Argano
     tier: B
     ats: oracle_orc
@@ -385,9 +408,14 @@ companies:
       Detail pages carry stated salary.
   - name: EPMA
     tier: C
-    ats: generic_page
-    url: https://www.epmainc.com/careers
+    ats: jobvite
+    jobvite_company: epma
     enabled: true
+    note: >-
+      epmainc.com/careers only iframes jobs.jobvite.com/epma, so the old
+      generic_page monitor was blind (same class of bug as Project Partners).
+      Rewired 2026-08-12; their Jobvite job pages carry full schema.org
+      JobPosting incl. baseSalary.
   - name: CDP Inc.
     tier: C
     ats: generic_page

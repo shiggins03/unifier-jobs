@@ -104,9 +104,21 @@ def fetch_oracle_orc(co, query):
         r.raise_for_status()
         items = r.json().get("items", [])
         reqs = items[0].get("requisitionList", []) if items else []
-        inventory = items[0].get("TotalJobsCount") if items else None
     except Exception:
         return [], False, None
+    # Aliveness must come from an UNFILTERED count. Reporting the keyword hit
+    # count as inventory made a legitimate zero-match day look like a dead
+    # endpoint and would fire the "monitor may be blind" warning every time.
+    inventory = None
+    try:
+        inv = requests.get(base, params={"onlyData": "true",
+                                         "finder": f'findReqs;siteNumber={site},limit=1'},
+                           headers=UA, timeout=TIMEOUT)
+        if inv.ok:
+            ii = inv.json().get("items", [])
+            inventory = ii[0].get("TotalJobsCount") if ii else None
+    except Exception:
+        pass
     out = []
     for q in reqs:
         rid = q.get("Id")
@@ -479,6 +491,121 @@ def _json_str_at(text, key, start=0):
         return None
 
 
+def _ld_jobposting(text):
+    """The schema.org JobPosting from a page's ld+json, or None. Find it by
+    script tag and let json decode escapes — Meta writes "@type" as
+    "\\u0040type", so any search for the literal string misses."""
+    try:
+        tags = BeautifulSoup(text, "html.parser").find_all(
+            "script", attrs={"type": "application/ld+json"})
+    except Exception:
+        return None
+    for tag in tags:
+        try:
+            cand = json.loads(tag.string or "")
+        except Exception:
+            continue
+        for c in (cand if isinstance(cand, list) else [cand]):
+            if isinstance(c, dict) and c.get("@type") == "JobPosting":
+                return c
+    return None
+
+
+def _ld_text(o):
+    """description + responsibilities + qualifications, flattened."""
+    parts = []
+    for key in ("description", "responsibilities", "qualifications"):
+        v = o.get(key)
+        if isinstance(v, str) and v.strip():
+            parts.append(v.strip())
+        elif isinstance(v, list):
+            parts.extend(x for x in v if isinstance(x, str))
+    return _clean_html("\n".join(parts)) if parts else None
+
+
+def _ld_location(o):
+    locs = o.get("jobLocation")
+    if isinstance(locs, dict):
+        locs = [locs]
+    if not isinstance(locs, list):
+        return None
+    out = []
+    for l in locs:
+        addr = (l or {}).get("address") or {}
+        bits = [addr.get("addressLocality"), addr.get("addressRegion"),
+                addr.get("addressCountry")]
+        if isinstance(bits[2], dict):
+            bits[2] = bits[2].get("name")
+        s = ", ".join(str(b) for b in bits if b)
+        if s:
+            out.append(s)
+    return "; ".join(dict.fromkeys(out)) or None
+
+
+def _ld_salary(o):
+    """Employer-published baseSalary rendered plainly. These are the
+    employer's own numbers (same provenance as the min/max fields the
+    aggregator adapters already use) — nothing inferred or averaged."""
+    b = o.get("baseSalary")
+    if not isinstance(b, dict):
+        return None
+    v = b.get("value")
+    if not isinstance(v, dict):
+        return None
+    lo, hi = v.get("minValue"), v.get("maxValue")
+    unit = (v.get("unitText") or "").lower()
+    cur = "$" if (b.get("currency") or "USD").upper() == "USD" else ""
+    def fmt(x):
+        try:
+            return f"{cur}{float(x):,.0f}"
+        except Exception:
+            return None
+    lo_s, hi_s = fmt(lo), fmt(hi)
+    if not (lo_s or hi_s):
+        return None
+    span = f"{lo_s} - {hi_s}" if lo_s and hi_s and lo_s != hi_s else (lo_s or hi_s)
+    return f"{span} per {unit}" if unit else span
+
+
+def fetch_jobvite(co, query):
+    """Jobvite career sites. Their job pages carry a full schema.org
+    JobPosting (description, datePosted, jobLocation, often baseSalary), so
+    only the board listing needs scraping."""
+    company = co["jobvite_company"]
+    base = f"https://jobs.jobvite.com/{company}"
+    try:
+        r = requests.get(base, headers=UA, timeout=TIMEOUT)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, "html.parser")
+    except Exception:
+        return [], False, None
+    hrefs = []
+    for a in soup.find_all("a", href=True):
+        h = a["href"]
+        if "/job/" in h:
+            hrefs.append(h if h.startswith("http")
+                         else "https://jobs.jobvite.com" + h)
+    hrefs = list(dict.fromkeys(hrefs))
+    out = []
+    for u in hrefs:
+        try:
+            d = requests.get(u, headers=UA, timeout=TIMEOUT)
+            if not d.ok:
+                continue
+            o = _ld_jobposting(d.text)
+        except Exception:
+            continue
+        if not o:
+            continue
+        out.append({
+            "company": co["name"], "title": o.get("title"),
+            "location": _ld_location(o), "url": u,
+            "posted_date": o.get("datePosted"),
+            "comp": _ld_salary(o), "description": _ld_text(o),
+        })
+    return out, True, len(hrefs)
+
+
 def _meta_job_detail(session, job_id):
     """Posting text + posted date for one Meta job, from the schema.org
     JobPosting JSON-LD embedded in job_details. The search API returns titles
@@ -503,33 +630,10 @@ def _meta_job_detail(session, job_id):
         t = r.text
     except Exception:
         return None, None
-    # The block is a <script type="application/ld+json">, and Meta escapes the
-    # "@" as @ in the raw source — so find it by tag and let json decode
-    # the escapes, never by searching for the literal "@type" text.
-    o = None
-    for tag in BeautifulSoup(t, "html.parser").find_all(
-            "script", attrs={"type": "application/ld+json"}):
-        try:
-            cand = json.loads(tag.string or "")
-        except Exception:
-            continue
-        for c in (cand if isinstance(cand, list) else [cand]):
-            if isinstance(c, dict) and c.get("@type") == "JobPosting":
-                o = c
-                break
-        if o:
-            break
+    o = _ld_jobposting(t)
     if o is None:
         return None, None
-    parts = []
-    for key in ("description", "responsibilities", "qualifications"):
-        v = o.get(key)
-        if isinstance(v, str) and v.strip():
-            parts.append(v.strip())
-        elif isinstance(v, list):
-            parts.extend(x for x in v if isinstance(x, str))
-    text = _clean_html("\n".join(parts)) if parts else None
-    return text, o.get("datePosted")
+    return _ld_text(o), o.get("datePosted")
 
 
 def fetch_meta_graphql(co, query):
@@ -742,6 +846,7 @@ def fetch_hrmdirect(co, query):
 
 DIRECT_ADAPTERS = {
     "hrmdirect": fetch_hrmdirect,
+    "jobvite": fetch_jobvite,
     "workday": fetch_workday,
     "google_careers": fetch_google_careers,
     "oracle_orc": fetch_oracle_orc,

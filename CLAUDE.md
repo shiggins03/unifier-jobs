@@ -171,7 +171,31 @@ Actions log, iterate. `run_adapter()` exercises a real adapter end-to-end
 before trusting it in the daily run. Keep `main()` empty between
 investigations.
 
-## Current state (update this section when you change it) — as of 2026-08-07
+## Current state (update this section when you change it) — as of 2026-08-12
+
+- 32 of 48 enabled. Added Con Edison (oracle_orc ejcu/CX_1033 — NYC utility,
+  top metro), Duke Energy (workday dukeenergy/search, inventory 61, 0 matches
+  today), Moss, Argano.
+- EPMA rewired generic_page -> new `jobvite` adapter: epmainc.com only iframes
+  jobs.jobvite.com/epma, so it had been blind. Jobvite job pages carry full
+  schema.org JobPosting incl. baseSalary. Now reads all 9 of their reqs.
+- **The iframe class of bug has now bitten three times** (Consertus/Workday,
+  Project Partners/HRM Direct, EPMA/Jobvite). When a `generic_page` monitor
+  looks quiet, grep the careers page for an `<iframe>` and for ATS hostnames
+  BEFORE believing it.
+- Shared schema.org helpers `_ld_jobposting/_ld_text/_ld_location/_ld_salary`
+  in sources.py — reuse them for any new ATS that publishes JSON-LD.
+- oracle_orc inventory now comes from an UNFILTERED count. It previously
+  reported the keyword hit count, so a legitimate zero-match day looked like a
+  dead endpoint and would have fired a false "monitor may be blind" warning on
+  all four ORC monitors.
+- Known Unifier employer NOT yet monitored: State of Mississippi Dept. of
+  Finance & Administration (runs Unifier 21.12.4+). Their contract roles reach
+  the market through body shops (Accord, SR International, Info Origin, HCL
+  Global — all blocklist candidates); governmentjobs.com/careers/mississippi
+  showed 0 unifier hits, so there is no direct posting to scrape today.
+
+## Previous state — as of 2026-08-07
 
 - **Unifier-only board.** Tier 2 removed: `keywords.yaml` has no `tier2:` block,
   `keyword_tier()` treats it as optional, `main.run()` purges stored postings
