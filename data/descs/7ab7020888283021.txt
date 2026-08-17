@@ -1,7 +1,7 @@
-Requisition ID: 297566
+Requisition ID: 297583
  
  
-Relocation Authorized: National - Accompanied
+Relocation Authorized: National - Single
  
 Telework Type: Full-Time Office/Project
  
@@ -22,9 +22,9 @@ Project Overview:
  
 Bechtel Manufacturing and Technology (M&T) is an exciting and growing business that serves the increasing demand of EPC services for customers in the semiconductor (manufacturing facilities and supply chain); electric vehicle (batteries, charging infrastructure, and production); synthetic materials; and data center markets.
 M&T strives to exceed our customer objectives through utilizing our agility, innovative technologies, and world class talent. M&T will solve the industries toughest challenges, building both our company and the world for the future.
-Headquartered in Reston, Virginia, the M&T global business unit also includes colleagues working in Arizona, Ohio, Texas, India, and additional project locations around the world.
+Headquartered in Reston, Virginia, the M&T global business unit also includes colleagues working in Arizona, Ohio, Texas, India, and additional project locations around the world. 
 Job Summary:
  
-The Construction Automation Specialist supports the day-to-da
+The Construction Automation Specialist supports the day-to-day op
 
 [Truncated for this view — full text at the posting link]
