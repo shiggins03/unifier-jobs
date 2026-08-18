@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17",
+  "updated": "2026-08-18",
   "warnings": [],
   "roster": [
     {
@@ -1193,6 +1193,41 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-08-17"
+    },
+    {
+      "company": "LGL Technologies",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=mgBQmfea8RGzjIpb3TK8Kg&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-18"
+    },
+    {
+      "company": "Crystal Management",
+      "url": "https://www.adzuna.com/details/5846275064?utm_medium=api&utm_source=55569923",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-18"
+    },
+    {
+      "company": "Exl Neo Technologies",
+      "url": "https://www.adzuna.com/land/ad/5835865858?se=sL0Smvea8RGLXOy3jHjydA&utm_medium=api&utm_source=55569923&v=1CDDCD7F22BEC207D9AC0486F0AA0FE6B4B09772",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-18"
+    },
+    {
+      "company": "Exl Neo Technologies",
+      "url": "https://www.adzuna.com/land/ad/5829524183?se=sL0Smvea8RGLXOy3jHjydA&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-18"
+    },
+    {
+      "company": "AmmaluIT",
+      "url": "https://www.adzuna.com/land/ad/5822710299?se=sL0Smvea8RGLXOy3jHjydA&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-18"
     }
   ],
   "jobs": [
@@ -1511,7 +1546,7 @@
       "title": "Senior Cost Engineering Specialist",
       "location": "Dallas, Texas",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Dallas-Texas/Senior-Cost-Engineering-Specialist_JR5958",
-      "posted_date": "Posted 24 Days Ago",
+      "posted_date": "Posted 25 Days Ago",
       "comp": "$116,930.89 - $133,635.31",
       "tier": 1,
       "status": "active",
@@ -1625,7 +1660,7 @@
       "title": "P6 Scheduler",
       "location": "US-CA-San Francisco Bay Area",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-CA-San-Francisco-Bay-Area/P6-Scheduler_JR1539",
-      "posted_date": "Posted 20 Days Ago",
+      "posted_date": "Posted 21 Days Ago",
       "comp": "$128,960 - $139,360 annually",
       "tier": 1,
       "status": "active",
@@ -1756,7 +1791,7 @@
       "company": "LGL Technologies",
       "title": "Oracle Primavera Unifier Consultant",
       "location": "Texas, US",
-      "url": "https://www.adzuna.com/land/ad/5794406427?se=zBjjaj-a8RGMpog2-xXM0Q&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=mgBQmfea8RGzjIpb3TK8Kg&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
       "posted_date": "2026-07-09T15:01:35Z",
       "comp": null,
       "tier": 1,
@@ -1772,7 +1807,7 @@
       "company": "AmmaluIT",
       "title": "Oracle Integration Cloud (OIC) Developer",
       "location": "Indiana, Indiana County",
-      "url": "https://www.adzuna.com/land/ad/5822710299?se=lPvpbUOW8RGZjegz1di2Mg&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
+      "url": "https://www.adzuna.com/land/ad/5822710299?se=sL0Smvea8RGLXOy3jHjydA&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
       "posted_date": "2026-07-31T17:21:41Z",
       "comp": null,
       "tier": 1,
@@ -1789,7 +1824,7 @@
       "title": "Digital Solutions Specialist",
       "location": "Boston, Massachusetts",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
-      "posted_date": "Posted 14 Days Ago",
+      "posted_date": "Posted 15 Days Ago",
       "comp": "$114,345.69 - $130,680.78",
       "tier": 1,
       "status": "active",
@@ -1868,25 +1903,9 @@
       "company": "Exl Neo Technologies",
       "title": "Solution Architect Oracle Unifier",
       "location": "Trammells, Harris County",
-      "url": "https://www.adzuna.com/land/ad/5829524183?se=Wv2raz-a8RGV7p4RB5T3xg&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
+      "url": "https://www.adzuna.com/land/ad/5829524183?se=sL0Smvea8RGLXOy3jHjydA&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
       "posted_date": "2026-08-05T17:45:43Z",
       "comp": "Pay range: $105-110/hr",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
-      "id": "a1d52dd9074012b5",
-      "kind": "board",
-      "company": "Exl Neo Technologies",
-      "title": "Oracle Unifier SME/ Solution Architect",
-      "location": "Trammells, Harris County",
-      "url": "https://www.adzuna.com/land/ad/5829552670?se=lPvpbUOW8RGZjegz1di2Mg&utm_medium=api&utm_source=55569923&v=38995F35BE2F4422B2D4DDF2DA718E30563EC4A0",
-      "posted_date": "2026-08-05T17:50:17Z",
-      "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -1980,7 +1999,7 @@
       "company": "Exl Neo Technologies",
       "title": "Oracle Unifier SME",
       "location": "Trammells, Harris County",
-      "url": "https://www.adzuna.com/land/ad/5835865858?se=Wv2raz-a8RGV7p4RB5T3xg&utm_medium=api&utm_source=55569923&v=1CDDCD7F22BEC207D9AC0486F0AA0FE6B4B09772",
+      "url": "https://www.adzuna.com/land/ad/5835865858?se=sL0Smvea8RGLXOy3jHjydA&utm_medium=api&utm_source=55569923&v=1CDDCD7F22BEC207D9AC0486F0AA0FE6B4B09772",
       "posted_date": "2026-08-10T14:05:42Z",
       "comp": null,
       "tier": 1,
@@ -2015,7 +2034,7 @@
       "title": "Cost Engineering Specialist",
       "location": "Empire State Building, New York, New York",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Empire-State-Building-New-York-New-York/Cost-Engineering-Specialist_JR6020",
-      "posted_date": "Posted 6 Days Ago",
+      "posted_date": "Posted 7 Days Ago",
       "comp": "$95,975.90 - $109,686.74",
       "tier": 1,
       "status": "active",
@@ -2031,7 +2050,7 @@
       "title": "Project Controls Specialist",
       "location": "Empire State Building, New York, New York",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Empire-State-Building-New-York-New-York/Project-Controls-Specialist_JR6021-1",
-      "posted_date": "Posted 6 Days Ago",
+      "posted_date": "Posted 7 Days Ago",
       "comp": "$86,464.77 - $98,816.88",
       "tier": 1,
       "status": "active",
@@ -2097,7 +2116,7 @@
       "title": "Project Controls Specialist",
       "location": "South Flower Street, Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/South-Flower-Street-Los-Angeles-California/Project-Controls-Coordinator_JR6022",
-      "posted_date": "Posted 5 Days Ago",
+      "posted_date": "Posted 6 Days Ago",
       "comp": "$82,862.07 - $94,699.51",
       "tier": 1,
       "status": "active",
@@ -2151,6 +2170,78 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "516d9c1dcb319218",
+      "kind": "direct",
+      "company": "Deloitte",
+      "title": "US E-Consulting Services – Sr. Consultant – S&T/Strategy/I&RE – Capital Projects (DBA) – FY27 – 354006 – OK",
+      "location": null,
+      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Senior-Consultant-DBA-PWA/354006",
+      "posted_date": "Fri, 29 May 2026 00:00:00 +0000",
+      "comp": "range is $110,700 to $218,300",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "d87450a0edc1f570",
+      "kind": "direct",
+      "company": "Deloitte",
+      "title": "US E-Consulting Services – Sr. Consultant – S&T/Strategy/I&RE – Capital Projects (Utilities) – FY27 – 363272 – OK",
+      "location": null,
+      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Senior-Consultant-Utilities/363272",
+      "posted_date": "Mon, 17 Aug 2026 00:00:00 +0000",
+      "comp": "range is $110,700 to $218,300",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "82275c7b5b616475",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Lead Workface Planner",
+      "location": "United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297774&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-08-17T17:23:14.436+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "f9ff7d292d91fc13",
+      "kind": "board",
+      "company": "Crystal Management",
+      "title": "Oracle Primavera Unifier Consultant",
+      "location": "Wolf Trap, Halifax County",
+      "url": "https://www.adzuna.com/details/5846275064?utm_medium=api&utm_source=55569923",
+      "posted_date": "2026-08-18T03:32:18Z",
+      "comp": "$101,600 - $152,400",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
       "role": "systems",
       "has_desc": true
     },
@@ -2648,6 +2739,21 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-08-07",
+      "flags": [],
+      "role": "systems"
+    },
+    {
+      "id": "a1d52dd9074012b5",
+      "kind": "board",
+      "company": "Exl Neo Technologies",
+      "title": "Oracle Unifier SME/ Solution Architect",
+      "location": "Trammells, Harris County",
+      "url": "https://www.adzuna.com/land/ad/5829552670?se=lPvpbUOW8RGZjegz1di2Mg&utm_medium=api&utm_source=55569923&v=38995F35BE2F4422B2D4DDF2DA718E30563EC4A0",
+      "posted_date": "2026-08-05T17:50:17Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-08-18",
       "flags": [],
       "role": "systems"
     },
