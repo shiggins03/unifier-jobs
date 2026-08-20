@@ -1,11 +1,8 @@
-Requisition ID: 297152
- 
- 
-Relocation Authorized: National - Single
- 
-Telework Type: Full-Time Office/Project
- 
-Work Location: Pecos, TX
+Requisition ID:  294763
+Relocation Authorized:  National - Family
+Telework Type: Full-Time Office/Project 
+Work Location: Clay, NY
+Salary Range: $105,000- $160,200 annually (salary range is based on market data; final salary offered is determined by education, experience, and qualifications of the applicant.)
  
 Extraordinary teams building inspiring projects:
  
@@ -20,10 +17,9 @@ Impact Report
 . 
 Project Overview:
  
-The rapid growth of AI and digitalization is fueling unprecedented demand for data centers that require large, reliable sources of energy. In response to this market trend, the Renewables & Clean Power (R&CP) team has signed an early works contract to build one of the largest gas fired power generation facilities in the U.S. Our team is helping the customer progress early-stage development, that would lead to the start of full EPC delivery in 2026.
-The successful candidate will mobilize on a long-term (camp) assignment to Pecos, Texas. This position is contingent upon project award.
+Bechtel’s Manufacturing and Technology (M&T) is an exciting and growing business unit that serves customers in the semiconductor, electric vehicle, and datacenter markets. M&T strives to exceed our customer objectives through utilizing our agility, innovative technologies, and world class talent. M&T solves the industry's toughest challenges, building both our company and the world for the future. 
 Job Summary:
  
-Reporting to the Project Innovation and Information Manager (PIIM), the EPC Automation lead role is responsible for the implementation, configuration and support of jobsite digital/automation applications. You can expect
+Provides engineering assistance to superintendents, directs assigned personnel in meeting cost and time schedules, verifies materials, equipment, and quality and assures results meet design requirements. We will be pouring a lot of co
 
 [Truncated for this view — full text at the posting link]
