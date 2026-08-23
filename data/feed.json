@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-22",
+  "updated": "2026-08-23",
   "warnings": [],
   "roster": [
     {
@@ -1291,6 +1291,20 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-08-22"
+    },
+    {
+      "company": "LGL Technologies",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=3tFdvOSe8RG2Ab_qbItNEw&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-23"
+    },
+    {
+      "company": "AmmaluIT",
+      "url": "https://www.adzuna.com/land/ad/5822710299?se=8NE7veSe8RGSb8VpDRDiVA&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-23"
     }
   ],
   "jobs": [
@@ -1577,7 +1591,7 @@
       "title": "Senior Cost Engineering Specialist",
       "location": "Dallas, Texas",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Dallas-Texas/Senior-Cost-Engineering-Specialist_JR5958",
-      "posted_date": "Posted 29 Days Ago",
+      "posted_date": "Posted 30 Days Ago",
       "comp": "$116,930.89 - $133,635.31",
       "tier": 1,
       "status": "active",
@@ -1691,7 +1705,7 @@
       "title": "P6 Scheduler",
       "location": "US-CA-San Francisco Bay Area",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-CA-San-Francisco-Bay-Area/P6-Scheduler_JR1539",
-      "posted_date": "Posted 25 Days Ago",
+      "posted_date": "Posted 26 Days Ago",
       "comp": "$128,960 - $139,360 annually",
       "tier": 1,
       "status": "active",
@@ -1806,7 +1820,7 @@
       "company": "LGL Technologies",
       "title": "Oracle Primavera Unifier Consultant",
       "location": "Texas, US",
-      "url": "https://www.adzuna.com/land/ad/5794406427?se=pHWVoxue8RGSb8VpDRDiVA&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=3tFdvOSe8RG2Ab_qbItNEw&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
       "posted_date": "2026-07-09T15:01:35Z",
       "comp": null,
       "tier": 1,
@@ -1822,25 +1836,9 @@
       "company": "AmmaluIT",
       "title": "Oracle Integration Cloud (OIC) Developer",
       "location": "Indiana, Indiana County",
-      "url": "https://www.adzuna.com/land/ad/5822710299?se=zMAwpBue8RGRs_WofmWTvg&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
+      "url": "https://www.adzuna.com/land/ad/5822710299?se=8NE7veSe8RGSb8VpDRDiVA&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
       "posted_date": "2026-07-31T17:21:41Z",
       "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
-      "id": "3999e3cb69afd1d7",
-      "kind": "direct",
-      "company": "STV",
-      "title": "Digital Solutions Specialist",
-      "location": "Boston, Massachusetts",
-      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
-      "posted_date": "Posted 18 Days Ago",
-      "comp": "$114,345.69 - $130,680.78",
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -1929,22 +1927,6 @@
       "has_desc": true
     },
     {
-      "id": "3e493f1e69d3c077",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Automation Engineer",
-      "location": "Kemmerer, Wyoming, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297531&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-08-07T02:54:48.749+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
       "id": "f07af0fde4689ba5",
       "kind": "direct",
       "company": "Luster National",
@@ -1992,38 +1974,6 @@
         "comp-manual"
       ],
       "role": "systems",
-      "has_desc": true
-    },
-    {
-      "id": "140c112c0d1c1c24",
-      "kind": "direct",
-      "company": "STV",
-      "title": "Cost Engineering Specialist",
-      "location": "Empire State Building, New York, New York",
-      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Empire-State-Building-New-York-New-York/Cost-Engineering-Specialist_JR6020",
-      "posted_date": "Posted 10 Days Ago",
-      "comp": "$95,975.90 - $109,686.74",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "7545496e86bd1625",
-      "kind": "direct",
-      "company": "STV",
-      "title": "Project Controls Specialist",
-      "location": "Empire State Building, New York, New York",
-      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Empire-State-Building-New-York-New-York/Project-Controls-Specialist_JR6021-1",
-      "posted_date": "Posted 10 Days Ago",
-      "comp": "$86,464.77 - $98,816.88",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
       "has_desc": true
     },
     {
@@ -2083,7 +2033,7 @@
       "title": "Project Controls Specialist",
       "location": "South Flower Street, Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/South-Flower-Street-Los-Angeles-California/Project-Controls-Coordinator_JR6022",
-      "posted_date": "Posted 10 Days Ago",
+      "posted_date": "Posted 11 Days Ago",
       "comp": "$82,862.07 - $94,699.51",
       "tier": 1,
       "status": "active",
@@ -2243,14 +2193,12 @@
       "title": "PMIS Implementation Specialist",
       "location": "Boston, Massachusetts",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
-      "posted_date": "Posted Yesterday",
+      "posted_date": "Posted 2 Days Ago",
       "comp": "$114,345.69 - $130,680.78",
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },
@@ -2261,14 +2209,12 @@
       "title": "Cost Engineering Manager",
       "location": "Empire State Building, New York, New York",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Empire-State-Building-New-York-New-York/Cost-Engineering-Specialist_JR6020",
-      "posted_date": "Posted Yesterday",
+      "posted_date": "Posted 2 Days Ago",
       "comp": "$149,671.54 - $171,053.19",
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -2785,6 +2731,21 @@
       "role": "controls"
     },
     {
+      "id": "3999e3cb69afd1d7",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Digital Solutions Specialist",
+      "location": "Boston, Massachusetts",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
+      "posted_date": "Posted 18 Days Ago",
+      "comp": "$114,345.69 - $130,680.78",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-08-23",
+      "flags": [],
+      "role": "systems"
+    },
+    {
       "id": "196ad4a96942b3b4",
       "kind": "direct",
       "company": "Bechtel",
@@ -2875,6 +2836,21 @@
       "role": "systems"
     },
     {
+      "id": "3e493f1e69d3c077",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Automation Engineer",
+      "location": "Kemmerer, Wyoming, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297531&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-08-07T02:54:48.749+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-08-23",
+      "flags": [],
+      "role": "unclear"
+    },
+    {
       "id": "93c0415a78e1dd82",
       "kind": "board",
       "company": "ISite Technologies Inc",
@@ -2916,6 +2892,36 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-08-14",
+      "flags": [],
+      "role": "controls"
+    },
+    {
+      "id": "140c112c0d1c1c24",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Cost Engineering Specialist",
+      "location": "Empire State Building, New York, New York",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Empire-State-Building-New-York-New-York/Cost-Engineering-Specialist_JR6020",
+      "posted_date": "Posted 10 Days Ago",
+      "comp": "$95,975.90 - $109,686.74",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-08-23",
+      "flags": [],
+      "role": "controls"
+    },
+    {
+      "id": "7545496e86bd1625",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Project Controls Specialist",
+      "location": "Empire State Building, New York, New York",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Empire-State-Building-New-York-New-York/Project-Controls-Specialist_JR6021-1",
+      "posted_date": "Posted 10 Days Ago",
+      "comp": "$86,464.77 - $98,816.88",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-08-23",
       "flags": [],
       "role": "controls"
     },
