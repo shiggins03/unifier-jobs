@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-24",
+  "updated": "2026-08-25",
   "warnings": [],
   "roster": [
     {
@@ -1319,6 +1319,20 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-08-24"
+    },
+    {
+      "company": "LGL Technologies",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=VEVYAnig8RGJYsKyzXMo8A&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-25"
+    },
+    {
+      "company": "AmmaluIT",
+      "url": "https://www.adzuna.com/land/ad/5822710299?se=ygADA3ig8RGuhIqoD7Sx7g&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-25"
     }
   ],
   "jobs": [
@@ -1399,6 +1413,22 @@
       "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=294763&jobPipeline=PhenomCareerSite",
       "posted_date": "2026-06-29T11:16:32.799+0000",
       "comp": "Salary Range: $105,000- $160,200 annually (salary range is based on market data;",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "0d8ba802b86c1207",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Civil/Structural Field Engineer",
+      "location": "New Albany, Ohio, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=291386&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-06-18T19:14:53.566+0000",
+      "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -1719,7 +1749,7 @@
       "title": "P6 Scheduler",
       "location": "US-CA-San Francisco Bay Area",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-CA-San-Francisco-Bay-Area/P6-Scheduler_JR1539",
-      "posted_date": "Posted 27 Days Ago",
+      "posted_date": "Posted 28 Days Ago",
       "comp": "$128,960 - $139,360 annually",
       "tier": 1,
       "status": "active",
@@ -1834,7 +1864,7 @@
       "company": "LGL Technologies",
       "title": "Oracle Primavera Unifier Consultant",
       "location": "Texas, US",
-      "url": "https://www.adzuna.com/land/ad/5794406427?se=FB8q8q6f8RGx9Nva6MX-Eg&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=VEVYAnig8RGJYsKyzXMo8A&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
       "posted_date": "2026-07-09T15:01:35Z",
       "comp": null,
       "tier": 1,
@@ -1850,7 +1880,7 @@
       "company": "AmmaluIT",
       "title": "Oracle Integration Cloud (OIC) Developer",
       "location": "Indiana, Indiana County",
-      "url": "https://www.adzuna.com/land/ad/5822710299?se=QAbV8q6f8RG9Ho4QOArOpg&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
+      "url": "https://www.adzuna.com/land/ad/5822710299?se=ygADA3ig8RGuhIqoD7Sx7g&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
       "posted_date": "2026-07-31T17:21:41Z",
       "comp": null,
       "tier": 1,
@@ -1893,22 +1923,6 @@
       "has_desc": true
     },
     {
-      "id": "d77d2f10d2c5950b",
-      "kind": "board",
-      "company": "Exl Neo Technologies",
-      "title": "Solution Architect Oracle Unifier",
-      "location": "Trammells, Harris County",
-      "url": "https://www.adzuna.com/land/ad/5829524183?se=sL0Smvea8RGLXOy3jHjydA&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
-      "posted_date": "2026-08-05T17:45:43Z",
-      "comp": "Pay range: $105-110/hr",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
       "id": "2848cb78932006b7",
       "kind": "direct",
       "company": "Argano",
@@ -1933,22 +1947,6 @@
       "url": "https://job-boards.greenhouse.io/lusternational/jobs/5383172008",
       "posted_date": "2026-08-07T16:48:16-04:00",
       "comp": "Salary: $130k-$160k/year ($63-$77/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
-      "id": "15421fec7f708022",
-      "kind": "board",
-      "company": "Exl Neo Technologies",
-      "title": "Oracle Unifier SME",
-      "location": "Trammells, Harris County",
-      "url": "https://www.adzuna.com/land/ad/5835865858?se=sL0Smvea8RGLXOy3jHjydA&utm_medium=api&utm_source=55569923&v=1CDDCD7F22BEC207D9AC0486F0AA0FE6B4B09772",
-      "posted_date": "2026-08-10T14:05:42Z",
-      "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -2031,7 +2029,7 @@
       "title": "Project Controls Specialist",
       "location": "South Flower Street, Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/South-Flower-Street-Los-Angeles-California/Project-Controls-Coordinator_JR6022",
-      "posted_date": "Posted 12 Days Ago",
+      "posted_date": "Posted 13 Days Ago",
       "comp": "$82,862.07 - $94,699.51",
       "tier": 1,
       "status": "active",
@@ -2191,7 +2189,7 @@
       "title": "PMIS Implementation Specialist",
       "location": "Boston, Massachusetts",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
-      "posted_date": "Posted 3 Days Ago",
+      "posted_date": "Posted Yesterday",
       "comp": "$114,345.69 - $130,680.78",
       "tier": 1,
       "status": "active",
@@ -2207,13 +2205,31 @@
       "title": "Cost Engineering Manager",
       "location": "Empire State Building, New York, New York",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Empire-State-Building-New-York-New-York/Cost-Engineering-Specialist_JR6020",
-      "posted_date": "Posted 3 Days Ago",
+      "posted_date": "Posted 4 Days Ago",
       "comp": "$149,671.54 - $171,053.19",
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
       "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "214f42b719ba0923",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Senior Program C&Q Lead",
+      "location": "Huntsville, Alabama, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Huntsville-AL/Commissioning---Qualification--C-Q--Lead_R-110337/apply",
+      "posted_date": "2026-08-24T18:21:46.129+0000",
+      "comp": "$159,000 - $233,200",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
       "has_desc": true
     },
     {
@@ -2269,21 +2285,6 @@
       "location": "Cheyenne, Wyoming, United States",
       "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296999&jobPipeline=PhenomCareerSite",
       "posted_date": "2026-07-17T16:18:14.609+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-08-15",
-      "flags": [],
-      "role": "field"
-    },
-    {
-      "id": "0d8ba802b86c1207",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Civil/Structural Field Engineer",
-      "location": "New Albany, Ohio, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296422&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-01T14:18:48.996+0000",
       "comp": null,
       "tier": 1,
       "status": "gone",
@@ -2804,6 +2805,21 @@
       "role": "systems"
     },
     {
+      "id": "d77d2f10d2c5950b",
+      "kind": "board",
+      "company": "Exl Neo Technologies",
+      "title": "Solution Architect Oracle Unifier",
+      "location": "Trammells, Harris County",
+      "url": "https://www.adzuna.com/land/ad/5829524183?se=sL0Smvea8RGLXOy3jHjydA&utm_medium=api&utm_source=55569923&v=199E14B37E6E4FDEFB8E2D210627A4C0159750A6",
+      "posted_date": "2026-08-05T17:45:43Z",
+      "comp": "Pay range: $105-110/hr",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-08-25",
+      "flags": [],
+      "role": "systems"
+    },
+    {
       "id": "a1d52dd9074012b5",
       "kind": "board",
       "company": "Exl Neo Technologies",
@@ -2892,6 +2908,21 @@
       "gone_date": "2026-08-14",
       "flags": [],
       "role": "unclear"
+    },
+    {
+      "id": "15421fec7f708022",
+      "kind": "board",
+      "company": "Exl Neo Technologies",
+      "title": "Oracle Unifier SME",
+      "location": "Trammells, Harris County",
+      "url": "https://www.adzuna.com/land/ad/5835865858?se=sL0Smvea8RGLXOy3jHjydA&utm_medium=api&utm_source=55569923&v=1CDDCD7F22BEC207D9AC0486F0AA0FE6B4B09772",
+      "posted_date": "2026-08-10T14:05:42Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-08-25",
+      "flags": [],
+      "role": "systems"
     },
     {
       "id": "1c2472c169693a27",

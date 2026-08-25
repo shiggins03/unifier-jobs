@@ -19,7 +19,7 @@
       0
     ],
     "fail_streak": 0,
-    "last_run": "2026-08-24"
+    "last_run": "2026-08-25"
   },
   "workday:JLL": {
     "counts": [
@@ -30,7 +30,7 @@
       0
     ],
     "fail_streak": 0,
-    "last_run": "2026-08-24",
+    "last_run": "2026-08-25",
     "inventory": 2000
   },
   "workday:Accenture": {
@@ -42,7 +42,7 @@
       0
     ],
     "fail_streak": 0,
-    "last_run": "2026-08-24",
+    "last_run": "2026-08-25",
     "inventory": 2000
   },
   "generic_page:Bechtel": {
@@ -76,7 +76,7 @@
       0
     ],
     "fail_streak": 0,
-    "last_run": "2026-08-24"
+    "last_run": "2026-08-25"
   },
   "generic_page:DRMcNatty & Associates": {
     "counts": [
@@ -87,7 +87,7 @@
       1
     ],
     "fail_streak": 0,
-    "last_run": "2026-08-24"
+    "last_run": "2026-08-25"
   },
   "generic_page:OnIndus": {
     "counts": [
@@ -98,7 +98,7 @@
       0
     ],
     "fail_streak": 0,
-    "last_run": "2026-08-24"
+    "last_run": "2026-08-25"
   },
   "generic_page:Project Partners": {
     "counts": [
@@ -154,19 +154,19 @@
       2
     ],
     "fail_streak": 0,
-    "last_run": "2026-08-24",
-    "inventory": 58
+    "last_run": "2026-08-25",
+    "inventory": 59
   },
   "greenhouse:Luster National": {
     "counts": [
-      6,
+      5,
       5,
       5,
       5,
       5
     ],
     "fail_streak": 0,
-    "last_run": "2026-08-24",
+    "last_run": "2026-08-25",
     "inventory": 29
   },
   "meta_graphql:Meta": {
@@ -179,19 +179,19 @@
     ],
     "fail_streak": 0,
     "inventory": 50,
-    "last_run": "2026-08-24"
+    "last_run": "2026-08-25"
   },
   "oracle_orc:Oracle": {
     "counts": [
-      3,
+      4,
       4,
       4,
       4,
       4
     ],
     "fail_streak": 0,
-    "last_run": "2026-08-24",
-    "inventory": 2098
+    "last_run": "2026-08-25",
+    "inventory": 2046
   },
   "avature_feed:Deloitte": {
     "counts": [
@@ -202,19 +202,19 @@
       2
     ],
     "fail_streak": 0,
-    "last_run": "2026-08-24"
+    "last_run": "2026-08-25"
   },
   "phenom:Bechtel": {
     "counts": [
-      17,
       16,
       15,
       15,
-      15
+      15,
+      14
     ],
     "fail_streak": 0,
-    "inventory": 1073,
-    "last_run": "2026-08-24"
+    "inventory": 1042,
+    "last_run": "2026-08-25"
   },
   "smartrecruiters:Turner & Townsend": {
     "counts": [
@@ -225,8 +225,8 @@
       7
     ],
     "fail_streak": 0,
-    "inventory": 2908,
-    "last_run": "2026-08-24"
+    "inventory": 2916,
+    "last_run": "2026-08-25"
   },
   "workday:Mass General Brigham": {
     "counts": [
@@ -238,30 +238,30 @@
     ],
     "fail_streak": 0,
     "inventory": 2000,
-    "last_run": "2026-08-24"
+    "last_run": "2026-08-25"
   },
   "generic_page:City of New York": {
     "counts": [
       0,
-      0,
+      1,
       1,
       1,
       1
     ],
     "fail_streak": 0,
-    "last_run": "2026-08-24"
+    "last_run": "2026-08-25"
   },
   "workday:STV": {
     "counts": [
       8,
-      8,
+      7,
       7,
       7,
       7
     ],
     "fail_streak": 0,
-    "inventory": 355,
-    "last_run": "2026-08-24"
+    "inventory": 351,
+    "last_run": "2026-08-25"
   },
   "oracle_orc:Hill International": {
     "counts": [
@@ -272,8 +272,8 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 273,
-    "last_run": "2026-08-24"
+    "inventory": 277,
+    "last_run": "2026-08-25"
   },
   "successfactors:Amtrak": {
     "counts": [
@@ -285,7 +285,7 @@
     ],
     "fail_streak": 0,
     "inventory": 25,
-    "last_run": "2026-08-24"
+    "last_run": "2026-08-25"
   },
   "amazon_jobs:Amazon": {
     "counts": [
@@ -297,7 +297,7 @@
     ],
     "fail_streak": 0,
     "inventory": 10000,
-    "last_run": "2026-08-24"
+    "last_run": "2026-08-25"
   },
   "workday:NVIDIA": {
     "counts": [
@@ -309,7 +309,7 @@
     ],
     "fail_streak": 0,
     "inventory": 2000,
-    "last_run": "2026-08-24"
+    "last_run": "2026-08-25"
   },
   "workday:Micron": {
     "counts": [
@@ -320,8 +320,8 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 2730,
-    "last_run": "2026-08-24"
+    "inventory": 2757,
+    "last_run": "2026-08-25"
   },
   "workday:Intel": {
     "counts": [
@@ -332,8 +332,8 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 646,
-    "last_run": "2026-08-24"
+    "inventory": 632,
+    "last_run": "2026-08-25"
   },
   "workday:Pfizer": {
     "counts": [
@@ -344,8 +344,8 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 561,
-    "last_run": "2026-08-24"
+    "inventory": 550,
+    "last_run": "2026-08-25"
   },
   "workday:PwC": {
     "counts": [
@@ -356,8 +356,8 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 4279,
-    "last_run": "2026-08-24"
+    "inventory": 4256,
+    "last_run": "2026-08-25"
   },
   "phenom:Eli Lilly": {
     "counts": [
@@ -365,11 +365,11 @@
       3,
       3,
       3,
-      3
+      4
     ],
     "fail_streak": 0,
-    "inventory": 578,
-    "last_run": "2026-08-24"
+    "inventory": 621,
+    "last_run": "2026-08-25"
   },
   "workday:Johnson & Johnson": {
     "counts": [
@@ -380,8 +380,8 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 1678,
-    "last_run": "2026-08-24"
+    "inventory": 1742,
+    "last_run": "2026-08-25"
   },
   "seed:MTA": {
     "counts": [
@@ -392,7 +392,7 @@
       1
     ],
     "fail_streak": 0,
-    "last_run": "2026-08-24"
+    "last_run": "2026-08-25"
   },
   "jsearch": {
     "counts": [],
@@ -408,7 +408,7 @@
       3
     ],
     "fail_streak": 0,
-    "last_run": "2026-08-24"
+    "last_run": "2026-08-25"
   },
   "oracle_orc:Argano": {
     "counts": [
@@ -419,8 +419,8 @@
       1
     ],
     "fail_streak": 0,
-    "inventory": 65,
-    "last_run": "2026-08-24"
+    "inventory": 73,
+    "last_run": "2026-08-25"
   },
   "workday:Moss": {
     "counts": [
@@ -432,7 +432,7 @@
     ],
     "fail_streak": 0,
     "inventory": 107,
-    "last_run": "2026-08-24"
+    "last_run": "2026-08-25"
   },
   "hrmdirect:Project Partners": {
     "counts": [
@@ -444,7 +444,7 @@
     ],
     "fail_streak": 0,
     "inventory": 3,
-    "last_run": "2026-08-24"
+    "last_run": "2026-08-25"
   },
   "workday:Duke Energy": {
     "counts": [
@@ -455,8 +455,8 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 77,
-    "last_run": "2026-08-24"
+    "inventory": 75,
+    "last_run": "2026-08-25"
   },
   "oracle_orc:Con Edison": {
     "counts": [
@@ -467,8 +467,8 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 55,
-    "last_run": "2026-08-24"
+    "inventory": 53,
+    "last_run": "2026-08-25"
   },
   "jobvite:EPMA": {
     "counts": [
@@ -480,6 +480,6 @@
     ],
     "fail_streak": 0,
     "inventory": 14,
-    "last_run": "2026-08-24"
+    "last_run": "2026-08-25"
   }
 }
