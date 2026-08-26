@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-25",
+  "updated": "2026-08-26",
   "warnings": [],
   "roster": [
     {
@@ -1333,6 +1333,27 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-08-25"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/profile/job_details/1737658657562156/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Research Scientist,Meta Recommendation System Core modeling",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-08-26"
+    },
+    {
+      "company": "LGL Technologies",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=MFFChEGh8RG-NqkAdls7KA&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-26"
+    },
+    {
+      "company": "AmmaluIT",
+      "url": "https://www.adzuna.com/land/ad/5822710299?se=6ATQhUGh8RGfOKiU692Z2g&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-26"
     }
   ],
   "jobs": [
@@ -1437,22 +1458,6 @@
       "has_desc": true
     },
     {
-      "id": "6ac85c0bced38907",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "LOTO - Tagging Authority",
-      "location": "Battle Creek, Michigan, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296964&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-15T15:19:06.160+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
       "id": "e90f20f280d14e0a",
       "kind": "direct",
       "company": "Bechtel",
@@ -1474,8 +1479,24 @@
       "company": "Bechtel",
       "title": "Piping Superintendent",
       "location": "Lake Charles, Louisiana, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=294278&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-14T17:01:26.386+0000",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297241&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-21T19:18:37.208+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "e15720ff82817361",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Welding Superintendent",
+      "location": "Pecos, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296397&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-01T23:19:10.904+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -1749,7 +1770,7 @@
       "title": "P6 Scheduler",
       "location": "US-CA-San Francisco Bay Area",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-CA-San-Francisco-Bay-Area/P6-Scheduler_JR1539",
-      "posted_date": "Posted 28 Days Ago",
+      "posted_date": "Posted 29 Days Ago",
       "comp": "$128,960 - $139,360 annually",
       "tier": 1,
       "status": "active",
@@ -1864,7 +1885,7 @@
       "company": "LGL Technologies",
       "title": "Oracle Primavera Unifier Consultant",
       "location": "Texas, US",
-      "url": "https://www.adzuna.com/land/ad/5794406427?se=VEVYAnig8RGJYsKyzXMo8A&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=MFFChEGh8RG-NqkAdls7KA&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
       "posted_date": "2026-07-09T15:01:35Z",
       "comp": null,
       "tier": 1,
@@ -1880,7 +1901,7 @@
       "company": "AmmaluIT",
       "title": "Oracle Integration Cloud (OIC) Developer",
       "location": "Indiana, Indiana County",
-      "url": "https://www.adzuna.com/land/ad/5822710299?se=ygADA3ig8RGuhIqoD7Sx7g&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
+      "url": "https://www.adzuna.com/land/ad/5822710299?se=6ATQhUGh8RGfOKiU692Z2g&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
       "posted_date": "2026-07-31T17:21:41Z",
       "comp": null,
       "tier": 1,
@@ -2029,7 +2050,7 @@
       "title": "Project Controls Specialist",
       "location": "South Flower Street, Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/South-Flower-Street-Los-Angeles-California/Project-Controls-Coordinator_JR6022",
-      "posted_date": "Posted 13 Days Ago",
+      "posted_date": "Posted 14 Days Ago",
       "comp": "$82,862.07 - $94,699.51",
       "tier": 1,
       "status": "active",
@@ -2135,22 +2156,6 @@
       "has_desc": true
     },
     {
-      "id": "c104adcaa908b5f1",
-      "kind": "board",
-      "company": "AtkinsRéalis",
-      "title": "Systems Consultant",
-      "location": "Tampa, Hillsborough County",
-      "url": "https://www.adzuna.com/land/ad/5847218895?se=0BzWycCb8RGJlOSIAyUCLQ&utm_medium=api&utm_source=55569923&v=A09A59F257031141E934BEB5282C545DA3F26506",
-      "posted_date": "2026-08-18T16:20:06Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
       "id": "69da548ef9f94560",
       "kind": "direct",
       "company": "Turner & Townsend",
@@ -2189,7 +2194,7 @@
       "title": "PMIS Implementation Specialist",
       "location": "Boston, Massachusetts",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
-      "posted_date": "Posted Yesterday",
+      "posted_date": "Posted 2 Days Ago",
       "comp": "$114,345.69 - $130,680.78",
       "tier": 1,
       "status": "active",
@@ -2205,7 +2210,7 @@
       "title": "Cost Engineering Manager",
       "location": "Empire State Building, New York, New York",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Empire-State-Building-New-York-New-York/Cost-Engineering-Specialist_JR6020",
-      "posted_date": "Posted 4 Days Ago",
+      "posted_date": "Posted 5 Days Ago",
       "comp": "$149,671.54 - $171,053.19",
       "tier": 1,
       "status": "active",
@@ -2226,9 +2231,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -2291,6 +2294,21 @@
       "gone_date": "2026-08-15",
       "flags": [],
       "role": "field"
+    },
+    {
+      "id": "6ac85c0bced38907",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "LOTO - Tagging Authority",
+      "location": "Battle Creek, Michigan, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296964&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-15T15:19:06.160+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-08-26",
+      "flags": [],
+      "role": "unclear"
     },
     {
       "id": "5dadc3fda38289f4",
@@ -2394,21 +2412,6 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-07-21",
-      "flags": [],
-      "role": "field"
-    },
-    {
-      "id": "e15720ff82817361",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Welding Superintendent",
-      "location": "Pecos, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296397&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-01T23:19:10.904+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-08-19",
       "flags": [],
       "role": "field"
     },
@@ -2983,6 +2986,21 @@
       "gone_date": "2026-08-20",
       "flags": [],
       "role": "systems"
+    },
+    {
+      "id": "c104adcaa908b5f1",
+      "kind": "board",
+      "company": "AtkinsRéalis",
+      "title": "Systems Consultant",
+      "location": "Tampa, Hillsborough County",
+      "url": "https://www.adzuna.com/land/ad/5847218895?se=0BzWycCb8RGJlOSIAyUCLQ&utm_medium=api&utm_source=55569923&v=A09A59F257031141E934BEB5282C545DA3F26506",
+      "posted_date": "2026-08-18T16:20:06Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-08-26",
+      "flags": [],
+      "role": "unclear"
     }
   ]
 }
