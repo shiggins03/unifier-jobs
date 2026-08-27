@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-26",
+  "updated": "2026-08-27",
   "warnings": [],
   "roster": [
     {
@@ -1354,6 +1354,13 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-08-26"
+    },
+    {
+      "company": "LGL Technologies",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=NGyL2lmi8RGfx5bEd-nhPg&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-27"
     }
   ],
   "jobs": [
@@ -1447,8 +1454,8 @@
       "company": "Bechtel",
       "title": "Civil/Structural Field Engineer",
       "location": "New Albany, Ohio, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=291386&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-06-18T19:14:53.566+0000",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=298278&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-08-26T13:17:09.590+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -1732,22 +1739,6 @@
       "has_desc": true
     },
     {
-      "id": "9d320a4f45dd8ef5",
-      "kind": "direct",
-      "company": "Turner & Townsend",
-      "title": "Senior Digital Consultant – Systems, Data & Analytics (Construction)",
-      "location": "Indianapolis, Indiana, US",
-      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000140344389-senior-digital-consultant-systems-data-analytics-construction-?oga=true",
-      "posted_date": "2026-07-28T22:21:42.006Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
       "id": "827308f08705f2d8",
       "kind": "direct",
       "company": "Turner & Townsend",
@@ -1770,7 +1761,7 @@
       "title": "P6 Scheduler",
       "location": "US-CA-San Francisco Bay Area",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-CA-San-Francisco-Bay-Area/P6-Scheduler_JR1539",
-      "posted_date": "Posted 29 Days Ago",
+      "posted_date": "Posted 30 Days Ago",
       "comp": "$128,960 - $139,360 annually",
       "tier": 1,
       "status": "active",
@@ -1885,7 +1876,7 @@
       "company": "LGL Technologies",
       "title": "Oracle Primavera Unifier Consultant",
       "location": "Texas, US",
-      "url": "https://www.adzuna.com/land/ad/5794406427?se=MFFChEGh8RG-NqkAdls7KA&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=NGyL2lmi8RGfx5bEd-nhPg&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
       "posted_date": "2026-07-09T15:01:35Z",
       "comp": null,
       "tier": 1,
@@ -2050,7 +2041,7 @@
       "title": "Project Controls Specialist",
       "location": "South Flower Street, Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/South-Flower-Street-Los-Angeles-California/Project-Controls-Coordinator_JR6022",
-      "posted_date": "Posted 14 Days Ago",
+      "posted_date": "Posted 15 Days Ago",
       "comp": "$82,862.07 - $94,699.51",
       "tier": 1,
       "status": "active",
@@ -2194,7 +2185,7 @@
       "title": "PMIS Implementation Specialist",
       "location": "Boston, Massachusetts",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
-      "posted_date": "Posted 2 Days Ago",
+      "posted_date": "Posted 3 Days Ago",
       "comp": "$114,345.69 - $130,680.78",
       "tier": 1,
       "status": "active",
@@ -2210,7 +2201,7 @@
       "title": "Cost Engineering Manager",
       "location": "Empire State Building, New York, New York",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Empire-State-Building-New-York-New-York/Cost-Engineering-Specialist_JR6020",
-      "posted_date": "Posted 5 Days Ago",
+      "posted_date": "Posted 6 Days Ago",
       "comp": "$149,671.54 - $171,053.19",
       "tier": 1,
       "status": "active",
@@ -2233,6 +2224,42 @@
       "gone_date": null,
       "flags": [],
       "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "18ef3629470b462d",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Associate Director - Program PMO Lead",
+      "location": "Indianapolis, Indiana, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Indianapolis-IN/Associate-Director---Program-PMO-Lead_R-110890/apply",
+      "posted_date": "2026-08-27T20:25:54.183+0000",
+      "comp": "$117,000 - $171,600",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "92e401d8a3446284",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Advisor, Project Controls - GFD",
+      "location": "CAROLINA, Puerto Rico",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/Puerto-Rico-Carolina/Advisor--Project-Controls---GFD_R-110199-1/apply",
+      "posted_date": "2026-08-26T18:21:55.769+0000",
+      "comp": "$114,000 - $180,400",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -2622,6 +2649,21 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-07-30",
+      "flags": [],
+      "role": "systems"
+    },
+    {
+      "id": "9d320a4f45dd8ef5",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Senior Digital Consultant – Systems, Data & Analytics (Construction)",
+      "location": "Indianapolis, Indiana, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000140344389-senior-digital-consultant-systems-data-analytics-construction-?oga=true",
+      "posted_date": "2026-07-28T22:21:42.006Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-08-27",
       "flags": [],
       "role": "systems"
     },
