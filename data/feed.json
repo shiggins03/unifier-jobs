@@ -1,6 +1,8 @@
 {
-  "updated": "2026-08-28",
-  "warnings": [],
+  "updated": "2026-08-29",
+  "warnings": [
+    "jobvite:EPMA: source reports 0 total jobs — monitor may be blind or endpoint changed"
+  ],
   "roster": [
     {
       "name": "Meta",
@@ -1389,6 +1391,20 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-08-28"
+    },
+    {
+      "company": "LGL Technologies",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=JCuqxL6j8RGxSf1iGXKoQA&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-29"
+    },
+    {
+      "company": "AmmaluIT",
+      "url": "https://www.adzuna.com/land/ad/5822710299?se=RB5Gxb6j8RGxSf1iGXKoQA&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-29"
     }
   ],
   "jobs": [
@@ -1514,8 +1530,8 @@
       "company": "Bechtel",
       "title": "Piping Superintendent",
       "location": "Lake Charles, Louisiana, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=298566&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-08-26T19:17:35.593+0000",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297241&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-21T19:18:37.208+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -1904,7 +1920,7 @@
       "company": "LGL Technologies",
       "title": "Oracle Primavera Unifier Consultant",
       "location": "Texas, US",
-      "url": "https://www.adzuna.com/land/ad/5794406427?se=JPLUeiaj8RG2KeasH0Kubw&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=JCuqxL6j8RGxSf1iGXKoQA&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
       "posted_date": "2026-07-09T15:01:35Z",
       "comp": null,
       "tier": 1,
@@ -1920,7 +1936,7 @@
       "company": "AmmaluIT",
       "title": "Oracle Integration Cloud (OIC) Developer",
       "location": "Indiana, Indiana County",
-      "url": "https://www.adzuna.com/land/ad/5822710299?se=hKnaeyaj8RG2KeasH0Kubw&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
+      "url": "https://www.adzuna.com/land/ad/5822710299?se=RB5Gxb6j8RGxSf1iGXKoQA&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
       "posted_date": "2026-07-31T17:21:41Z",
       "comp": null,
       "tier": 1,
@@ -2069,7 +2085,7 @@
       "title": "Project Controls Specialist",
       "location": "South Flower Street, Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/South-Flower-Street-Los-Angeles-California/Project-Controls-Coordinator_JR6022",
-      "posted_date": "Posted 16 Days Ago",
+      "posted_date": "Posted 17 Days Ago",
       "comp": "$82,862.07 - $94,699.51",
       "tier": 1,
       "status": "active",
@@ -2191,29 +2207,13 @@
       "has_desc": true
     },
     {
-      "id": "2e383eaf5747b7e8",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Lead Welding Field Engineer",
-      "location": "Millersport, Ohio, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296819&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-09T13:19:19.766+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
-      "has_desc": true
-    },
-    {
       "id": "9eb7b43b434f3bb9",
       "kind": "direct",
       "company": "STV",
       "title": "PMIS Implementation Specialist",
       "location": "Boston, Massachusetts",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
-      "posted_date": "Posted 4 Days Ago",
+      "posted_date": "Posted 5 Days Ago",
       "comp": "$114,345.69 - $130,680.78",
       "tier": 1,
       "status": "active",
@@ -2229,7 +2229,7 @@
       "title": "Cost Engineering Manager",
       "location": "Empire State Building, New York, New York",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Empire-State-Building-New-York-New-York/Cost-Engineering-Specialist_JR6020",
-      "posted_date": "Posted 7 Days Ago",
+      "posted_date": "Posted 8 Days Ago",
       "comp": "$149,671.54 - $171,053.19",
       "tier": 1,
       "status": "active",
@@ -2298,9 +2298,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -2316,9 +2314,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -2334,9 +2330,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },
@@ -2349,6 +2343,22 @@
       "url": "https://job-boards.greenhouse.io/lusternational/jobs/5389899008",
       "posted_date": "2026-08-28T13:35:53-04:00",
       "comp": "Salary: $90k-$150k/year ($43-$72/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "40727c8a847899ad",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "DSCS Data Analyst",
+      "location": "Houston, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=298570&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-08-28T21:42:08.074+0000",
+      "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -3139,6 +3149,21 @@
       "gone_date": "2026-08-26",
       "flags": [],
       "role": "unclear"
+    },
+    {
+      "id": "2e383eaf5747b7e8",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Lead Welding Field Engineer",
+      "location": "Millersport, Ohio, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296819&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-09T13:19:19.766+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-08-29",
+      "flags": [],
+      "role": "field"
     }
   ]
 }
