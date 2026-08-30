@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-29",
+  "updated": "2026-08-30",
   "warnings": [
     "jobvite:EPMA: source reports 0 total jobs — monitor may be blind or endpoint changed"
   ],
@@ -1405,6 +1405,20 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-08-29"
+    },
+    {
+      "company": "LGL Technologies",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=quvILoWk8RG9U4bouzEBWw&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-30"
+    },
+    {
+      "company": "AmmaluIT",
+      "url": "https://www.adzuna.com/land/ad/5822710299?se=VAOTL4Wk8RGxSf1iGXKoQA&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-08-30"
     }
   ],
   "jobs": [
@@ -1645,22 +1659,6 @@
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Project-Controls-Manager_JR5055",
       "posted_date": "Posted 30+ Days Ago",
       "comp": "$91,976.90 - $105,116.46",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "909411d8fd156e3b",
-      "kind": "direct",
-      "company": "STV",
-      "title": "Project Controls Specialist",
-      "location": "Dallas, Texas",
-      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Dallas-Texas/Project-Controls-Specialist_JR5845",
-      "posted_date": "Posted 30+ Days Ago",
-      "comp": "$83,978.91 - $95,975.90",
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -1920,7 +1918,7 @@
       "company": "LGL Technologies",
       "title": "Oracle Primavera Unifier Consultant",
       "location": "Texas, US",
-      "url": "https://www.adzuna.com/land/ad/5794406427?se=JCuqxL6j8RGxSf1iGXKoQA&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=quvILoWk8RG9U4bouzEBWw&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
       "posted_date": "2026-07-09T15:01:35Z",
       "comp": null,
       "tier": 1,
@@ -1936,7 +1934,7 @@
       "company": "AmmaluIT",
       "title": "Oracle Integration Cloud (OIC) Developer",
       "location": "Indiana, Indiana County",
-      "url": "https://www.adzuna.com/land/ad/5822710299?se=RB5Gxb6j8RGxSf1iGXKoQA&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
+      "url": "https://www.adzuna.com/land/ad/5822710299?se=VAOTL4Wk8RGxSf1iGXKoQA&utm_medium=api&utm_source=55569923&v=6C54799D3ED955EE1206F698BAC0BA0B1FF457F5",
       "posted_date": "2026-07-31T17:21:41Z",
       "comp": null,
       "tier": 1,
@@ -2085,7 +2083,7 @@
       "title": "Project Controls Specialist",
       "location": "South Flower Street, Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/South-Flower-Street-Los-Angeles-California/Project-Controls-Coordinator_JR6022",
-      "posted_date": "Posted 17 Days Ago",
+      "posted_date": "Posted 18 Days Ago",
       "comp": "$82,862.07 - $94,699.51",
       "tier": 1,
       "status": "active",
@@ -2213,7 +2211,7 @@
       "title": "PMIS Implementation Specialist",
       "location": "Boston, Massachusetts",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
-      "posted_date": "Posted 5 Days Ago",
+      "posted_date": "Posted 6 Days Ago",
       "comp": "$114,345.69 - $130,680.78",
       "tier": 1,
       "status": "active",
@@ -2229,7 +2227,7 @@
       "title": "Cost Engineering Manager",
       "location": "Empire State Building, New York, New York",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Empire-State-Building-New-York-New-York/Cost-Engineering-Specialist_JR6020",
-      "posted_date": "Posted 8 Days Ago",
+      "posted_date": "Posted 9 Days Ago",
       "comp": "$149,671.54 - $171,053.19",
       "tier": 1,
       "status": "active",
@@ -2362,9 +2360,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },
@@ -2637,6 +2633,21 @@
       "gone_date": "2026-08-11",
       "flags": [],
       "role": "systems"
+    },
+    {
+      "id": "909411d8fd156e3b",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Project Controls Specialist",
+      "location": "Dallas, Texas",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Dallas-Texas/Project-Controls-Specialist_JR5845",
+      "posted_date": "Posted 30+ Days Ago",
+      "comp": "$83,978.91 - $95,975.90",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-08-30",
+      "flags": [],
+      "role": "controls"
     },
     {
       "id": "11dfbc72345ed17b",
