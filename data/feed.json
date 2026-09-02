@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-01",
+  "updated": "2026-09-02",
   "warnings": [],
   "roster": [
     {
@@ -1583,6 +1583,22 @@
       "has_desc": true
     },
     {
+      "id": "3c178b344fb01f46",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "LOTO Authority",
+      "location": "Chandler, Arizona, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296771&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-07T22:16:49.503+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
       "id": "13d0175cc88b6c9d",
       "kind": "direct",
       "company": "Oracle",
@@ -2079,7 +2095,7 @@
       "title": "Project Controls Specialist",
       "location": "South Flower Street, Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/South-Flower-Street-Los-Angeles-California/Project-Controls-Coordinator_JR6022",
-      "posted_date": "Posted 20 Days Ago",
+      "posted_date": "Posted 21 Days Ago",
       "comp": "$82,862.07 - $94,699.51",
       "tier": 1,
       "status": "active",
@@ -2121,22 +2137,6 @@
       "has_desc": true
     },
     {
-      "id": "82275c7b5b616475",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Lead Workface Planner",
-      "location": "United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297774&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-08-17T17:23:14.436+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
       "id": "f9ff7d292d91fc13",
       "kind": "board",
       "company": "Crystal Management",
@@ -2175,7 +2175,7 @@
       "title": "PMIS Implementation Specialist",
       "location": "Boston, Massachusetts",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
-      "posted_date": "Posted 8 Days Ago",
+      "posted_date": "Posted 9 Days Ago",
       "comp": "$114,345.69 - $130,680.78",
       "tier": 1,
       "status": "active",
@@ -2356,9 +2356,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },
@@ -2374,9 +2372,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },
@@ -2392,9 +2388,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },
@@ -2410,9 +2404,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "field",
       "has_desc": true
     },
@@ -2428,9 +2420,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "field",
       "has_desc": true
     },
@@ -2442,6 +2432,76 @@
       "location": "Pecos, Texas, United States",
       "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=298427&jobPipeline=PhenomCareerSite",
       "posted_date": "2026-08-31T19:16:29.169+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "5ee65b476fa25009",
+      "kind": "direct",
+      "company": "Accenture",
+      "title": "Global Network - Supply Chain and Engineering - Infrastructure & Capital Projects Analyst/ Consultant",
+      "location": "San Jose, Plaza Real Cariari",
+      "url": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/San-Jose-Plaza-Real-Cariari/Global-Network---Supply-Chain-and-Engineering---Capital-Project-Analyst--Consultant_R00352523",
+      "posted_date": "Posted 9 Days Ago",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "446a63160ea74de7",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "HVAC/Process Duct - Subcontract Technical Representative - Jungle Gym",
+      "location": "New Albany, Ohio, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=298724&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-02T04:16:23.580+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "68c0cac114a3b1d8",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "HVAC/Process Duct Subcontract Technical Representative (STR)",
+      "location": "New Albany, Ohio, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=298723&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-01T23:17:04.984+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "f41115a3b8a7026f",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Fire Protection & Life Safety Systems Subcontract Technical Representative - STR",
+      "location": "New Albany, Ohio, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=298725&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-01T23:17:04.982+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -2674,21 +2734,6 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-08-22",
-      "flags": [],
-      "role": "unclear"
-    },
-    {
-      "id": "3c178b344fb01f46",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "LOTO Authority",
-      "location": "Chandler, Arizona, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296771&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-07T22:16:49.503+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-08-20",
       "flags": [],
       "role": "unclear"
     },
@@ -3278,6 +3323,21 @@
       "gone_date": "2026-09-01",
       "flags": [],
       "role": "systems"
+    },
+    {
+      "id": "82275c7b5b616475",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Lead Workface Planner",
+      "location": "United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297774&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-08-17T17:23:14.436+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-02",
+      "flags": [],
+      "role": "controls"
     },
     {
       "id": "c104adcaa908b5f1",
