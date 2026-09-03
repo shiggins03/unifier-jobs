@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-02",
+  "updated": "2026-09-03",
   "warnings": [],
   "roster": [
     {
@@ -1431,6 +1431,20 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-09-01"
+    },
+    {
+      "company": "LGL Technologies",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=JqpLb6en8RGdG9AZ6bbuVw&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-09-03"
+    },
+    {
+      "company": "Cloudspace LLC",
+      "url": "https://www.adzuna.com/details/5868081079?utm_medium=api&utm_source=55569923",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-09-03"
     }
   ],
   "jobs": [
@@ -1524,8 +1538,8 @@
       "company": "Bechtel",
       "title": "Civil/Structural Field Engineer",
       "location": "New Albany, Ohio, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296422&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-01T14:18:48.996+0000",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=291386&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-06-18T19:14:53.566+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -1658,7 +1672,9 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [],
+      "flags": [
+        "long-posted"
+      ],
       "role": "controls",
       "has_desc": true
     },
@@ -1674,7 +1690,9 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [],
+      "flags": [
+        "long-posted"
+      ],
       "role": "controls",
       "has_desc": true
     },
@@ -1902,7 +1920,9 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [],
+      "flags": [
+        "long-posted"
+      ],
       "role": "controls",
       "has_desc": true
     },
@@ -1946,7 +1966,7 @@
       "company": "LGL Technologies",
       "title": "Oracle Primavera Unifier Consultant",
       "location": "Texas, US",
-      "url": "https://www.adzuna.com/land/ad/5794406427?se=iv5vaBmm8RGIHueiKMFZRw&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=JqpLb6en8RGdG9AZ6bbuVw&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
       "posted_date": "2026-07-09T15:01:35Z",
       "comp": null,
       "tier": 1,
@@ -2095,7 +2115,7 @@
       "title": "Project Controls Specialist",
       "location": "South Flower Street, Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/South-Flower-Street-Los-Angeles-California/Project-Controls-Coordinator_JR6022",
-      "posted_date": "Posted 21 Days Ago",
+      "posted_date": "Posted 22 Days Ago",
       "comp": "$82,862.07 - $94,699.51",
       "tier": 1,
       "status": "active",
@@ -2175,29 +2195,13 @@
       "title": "PMIS Implementation Specialist",
       "location": "Boston, Massachusetts",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
-      "posted_date": "Posted 9 Days Ago",
+      "posted_date": "Posted 10 Days Ago",
       "comp": "$114,345.69 - $130,680.78",
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
       "role": "systems",
-      "has_desc": true
-    },
-    {
-      "id": "ba055ce28ccfe2a4",
-      "kind": "direct",
-      "company": "STV",
-      "title": "Cost Engineering Manager",
-      "location": "Empire State Building, New York, New York",
-      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Empire-State-Building-New-York-New-York/Cost-Engineering-Specialist_JR6020",
-      "posted_date": "Posted 11 Days Ago",
-      "comp": "$149,671.54 - $171,053.19",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
       "has_desc": true
     },
     {
@@ -2230,22 +2234,6 @@
       "gone_date": null,
       "flags": [],
       "role": "unclear",
-      "has_desc": true
-    },
-    {
-      "id": "92e401d8a3446284",
-      "kind": "direct",
-      "company": "Eli Lilly",
-      "title": "Advisor, Project Controls - GFD",
-      "location": "CAROLINA, Puerto Rico",
-      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/Puerto-Rico-Carolina/Advisor--Project-Controls---GFD_R-110199-1/apply",
-      "posted_date": "2026-08-26T18:21:55.769+0000",
-      "comp": "$114,000 - $180,400",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
       "has_desc": true
     },
     {
@@ -2452,9 +2440,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },
@@ -2470,9 +2456,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -2488,9 +2472,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -2506,10 +2488,44 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
+      "flags": [],
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "56fc1c7c24e51e26",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Geotechnical Field Engineer",
+      "location": "Atlanta, Georgia, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5414315008",
+      "posted_date": "2026-09-02T16:20:08-04:00",
+      "comp": "Salary: $72k-$85k/year ($35-$41/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
       "flags": [
         "new"
       ],
       "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "738b1019de2e8cc2",
+      "kind": "board",
+      "company": "Cloudspace LLC",
+      "title": "IT - Principal Consultant | Oracle Edge Applications | Oracle Unifier",
+      "location": "Jersey Village, Harris County",
+      "url": "https://www.adzuna.com/details/5868081079?utm_medium=api&utm_source=55569923",
+      "posted_date": "2026-09-02T21:08:32Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "systems",
       "has_desc": true
     },
     {
@@ -3368,6 +3384,36 @@
       "gone_date": "2026-08-29",
       "flags": [],
       "role": "field"
+    },
+    {
+      "id": "ba055ce28ccfe2a4",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Cost Engineering Manager",
+      "location": "Empire State Building, New York, New York",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Empire-State-Building-New-York-New-York/Cost-Engineering-Specialist_JR6020",
+      "posted_date": "Posted 11 Days Ago",
+      "comp": "$149,671.54 - $171,053.19",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-03",
+      "flags": [],
+      "role": "controls"
+    },
+    {
+      "id": "92e401d8a3446284",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Advisor, Project Controls - GFD",
+      "location": "CAROLINA, Puerto Rico",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/Puerto-Rico-Carolina/Advisor--Project-Controls---GFD_R-110199-1/apply",
+      "posted_date": "2026-08-26T18:21:55.769+0000",
+      "comp": "$114,000 - $180,400",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-03",
+      "flags": [],
+      "role": "controls"
     },
     {
       "id": "5958310f5c15debf",
