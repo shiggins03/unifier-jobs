@@ -1,11 +1,11 @@
-Requisition ID: 298570
+Requisition ID: 297774
  
  
 Relocation Authorized: None
  
-Telework Type: Part-Time Telework
+Telework Type: Full-Time Office/Project
  
-Work Location: Houston, TX
+Work Location: Various Work Locations USA
  
 Extraordinary teams building inspiring projects:
  
@@ -18,9 +18,11 @@ extraordinary teams building inspiring projects
  in our 
 Impact Report
 . 
-Job Summary:
+Project Overview:
  
-The DSCS Data Analyst supports Digital Supply Chain Systems (DSCS) initiatives by helping collect, analyze, and visualize data that supports Engineering, Procurement, Supply Chain, Logistics, and Construction functions. This role assists with maintaining data quality, developing dashboards and reports, monitoring key performance metrics, and supporting digital supply chain tools. Working closely with senior analysts and business stakeholders, the position contributes to improved project visibility, operational efficiency, and data-driven decision-making.
-"This position is designated as part-time telework per our global telework policy and will require at least three days of in-person attendance per week at the assigned office or project. Weekly in-person schedules will be determined by the individual and their supervisor, in consultati
+The project is a 1.3 GW simple-cycle power generation facility located in Millersport, Ohio, being constructed adjacent to a hyperscale data center campus. The facility includes multiple power generation technologies consisting of Solar Titan 130 gas turbines, Siemens SGT800 gas turbines, reciprocating engines, battery energy storage systems (BESS), substations, and associated balance of plant infrastructure.
+ 
+The scope includes major civil, mechanical, electrical, structural, underground utility, control systems, and commissioning works required to support phased energization and turnover of the facility. Construction will be executed through a combination of direct hire and subcontracted labor supported by modularization, pre-assembly, offsite warehousing, and advanced work packaging methodologies.
+Job Summ
 
 [Truncated for this view — full text at the posting link]

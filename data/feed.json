@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-03",
+  "updated": "2026-09-04",
   "warnings": [],
   "roster": [
     {
@@ -1445,6 +1445,20 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-09-03"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/profile/job_details/1522951836305627/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Director, Security Risk Program",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-09-04"
+    },
+    {
+      "company": "LGL Technologies",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=OLY39m-o8RGJzb8cChfJbA&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-09-04"
     }
   ],
   "jobs": [
@@ -1618,8 +1632,8 @@
       "company": "Oracle",
       "title": "Senior Principal Consultant",
       "location": "Austin, TX, United States",
-      "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/job/338444",
-      "posted_date": "2026-06-26",
+      "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/job/343577",
+      "posted_date": "2026-08-20",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -1811,22 +1825,6 @@
       "has_desc": true
     },
     {
-      "id": "94809f719eb442f3",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Welding Field Engineer",
-      "location": "Clay, New York, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297472&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-28T13:17:33.900+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
-      "has_desc": true
-    },
-    {
       "id": "827308f08705f2d8",
       "kind": "direct",
       "company": "Turner & Townsend",
@@ -1966,7 +1964,7 @@
       "company": "LGL Technologies",
       "title": "Oracle Primavera Unifier Consultant",
       "location": "Texas, US",
-      "url": "https://www.adzuna.com/land/ad/5794406427?se=JqpLb6en8RGdG9AZ6bbuVw&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=OLY39m-o8RGJzb8cChfJbA&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
       "posted_date": "2026-07-09T15:01:35Z",
       "comp": null,
       "tier": 1,
@@ -2115,7 +2113,7 @@
       "title": "Project Controls Specialist",
       "location": "South Flower Street, Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/South-Flower-Street-Los-Angeles-California/Project-Controls-Coordinator_JR6022",
-      "posted_date": "Posted 22 Days Ago",
+      "posted_date": "Posted 23 Days Ago",
       "comp": "$82,862.07 - $94,699.51",
       "tier": 1,
       "status": "active",
@@ -2157,6 +2155,22 @@
       "has_desc": true
     },
     {
+      "id": "82275c7b5b616475",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Lead Workface Planner",
+      "location": "United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297774&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-08-17T17:23:14.436+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
       "id": "f9ff7d292d91fc13",
       "kind": "board",
       "company": "Crystal Management",
@@ -2195,7 +2209,7 @@
       "title": "PMIS Implementation Specialist",
       "location": "Boston, Massachusetts",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
-      "posted_date": "Posted 10 Days Ago",
+      "posted_date": "Posted 11 Days Ago",
       "comp": "$114,345.69 - $130,680.78",
       "tier": 1,
       "status": "active",
@@ -2234,22 +2248,6 @@
       "gone_date": null,
       "flags": [],
       "role": "unclear",
-      "has_desc": true
-    },
-    {
-      "id": "40727c8a847899ad",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "DSCS Data Analyst",
-      "location": "Houston, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=298570&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-08-28T21:42:08.074+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
       "has_desc": true
     },
     {
@@ -2435,7 +2433,7 @@
       "title": "Global Network - Supply Chain and Engineering - Infrastructure & Capital Projects Analyst/ Consultant",
       "location": "San Jose, Plaza Real Cariari",
       "url": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/San-Jose-Plaza-Real-Cariari/Global-Network---Supply-Chain-and-Engineering---Capital-Project-Analyst--Consultant_R00352523",
-      "posted_date": "Posted 9 Days Ago",
+      "posted_date": "Posted 11 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -2504,9 +2502,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "field",
       "has_desc": true
     },
@@ -2522,10 +2518,26 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
+      "flags": [],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "3a24ae1f1a4fe701",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Fab Clean Room - Subcontract Technical Representative (STR)",
+      "location": "New Albany, Ohio, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=298758&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-04T03:20:03.857+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
       "flags": [
         "new"
       ],
-      "role": "systems",
+      "role": "unclear",
       "has_desc": true
     },
     {
@@ -2917,6 +2929,21 @@
       "gone_date": "2026-07-30",
       "flags": [],
       "role": "systems"
+    },
+    {
+      "id": "94809f719eb442f3",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Welding Field Engineer",
+      "location": "Clay, New York, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297472&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-28T13:17:33.900+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-04",
+      "flags": [],
+      "role": "field"
     },
     {
       "id": "9d320a4f45dd8ef5",
@@ -3341,21 +3368,6 @@
       "role": "systems"
     },
     {
-      "id": "82275c7b5b616475",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Lead Workface Planner",
-      "location": "United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297774&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-08-17T17:23:14.436+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-09-02",
-      "flags": [],
-      "role": "controls"
-    },
-    {
       "id": "c104adcaa908b5f1",
       "kind": "board",
       "company": "AtkinsRéalis",
@@ -3472,6 +3484,21 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-09-01",
+      "flags": [],
+      "role": "systems"
+    },
+    {
+      "id": "40727c8a847899ad",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "DSCS Data Analyst",
+      "location": "Houston, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=298570&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-08-28T21:42:08.074+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-04",
       "flags": [],
       "role": "systems"
     }
