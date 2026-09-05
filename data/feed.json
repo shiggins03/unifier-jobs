@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04",
+  "updated": "2026-09-05",
   "warnings": [],
   "roster": [
     {
@@ -1531,29 +1531,13 @@
       "has_desc": true
     },
     {
-      "id": "c56496bf7fb8c5d7",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Concrete Field Engineer",
-      "location": "Clay, New York, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=294763&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-06-29T11:16:32.799+0000",
-      "comp": "Salary Range: $105,000- $160,200 annually (salary range is based on market data;",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
-      "has_desc": true
-    },
-    {
       "id": "0d8ba802b86c1207",
       "kind": "direct",
       "company": "Bechtel",
       "title": "Civil/Structural Field Engineer",
       "location": "New Albany, Ohio, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=291386&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-06-18T19:14:53.566+0000",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296422&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-01T14:18:48.996+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -1775,22 +1759,6 @@
       "has_desc": true
     },
     {
-      "id": "17621fbddf63fd59",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Field Welding Engineer",
-      "location": "Pecos, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297409&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-27T13:17:29.331+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
-      "has_desc": true
-    },
-    {
       "id": "b605fa2dadddbf1c",
       "kind": "direct",
       "company": "Oracle",
@@ -1897,24 +1865,6 @@
       "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Indianapolis-IN/Project-Controls-Advisor--Global-Facilities-Delivery_R-95938-1/apply",
       "posted_date": "2025-11-06T14:17:47.203+0000",
       "comp": "$117,000 - $171,600",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [
-        "long-posted"
-      ],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "e2b09eea06d5a92b",
-      "kind": "direct",
-      "company": "Eli Lilly",
-      "title": "Project Controls Lead",
-      "location": "Houston, Texas, United States of America",
-      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Houston-TX/Deputy-Project-Controls-Lead_R-106580-1/apply",
-      "posted_date": "2026-06-04T12:46:46.536+0000",
-      "comp": "$66,000 - $171,600",
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -2113,7 +2063,7 @@
       "title": "Project Controls Specialist",
       "location": "South Flower Street, Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/South-Flower-Street-Los-Angeles-California/Project-Controls-Coordinator_JR6022",
-      "posted_date": "Posted 23 Days Ago",
+      "posted_date": "Posted 24 Days Ago",
       "comp": "$82,862.07 - $94,699.51",
       "tier": 1,
       "status": "active",
@@ -2209,7 +2159,7 @@
       "title": "PMIS Implementation Specialist",
       "location": "Boston, Massachusetts",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
-      "posted_date": "Posted 11 Days Ago",
+      "posted_date": "Posted 12 Days Ago",
       "comp": "$114,345.69 - $130,680.78",
       "tier": 1,
       "status": "active",
@@ -2534,6 +2484,40 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
+      "flags": [],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "6d8c4aa15d5b2138",
+      "kind": "direct",
+      "company": "Meta",
+      "title": "Senior Project Controls & Risk Strategist, Data Center Development",
+      "location": "Menlo Park, CA",
+      "url": "https://www.metacareers.com/profile/job_details/2502850056895620/",
+      "posted_date": "2026-08-07T23:38:52-07:00",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "d32ca8aca6adc1b2",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Construction Inspector",
+      "location": "Seattle, Washington, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5389977008",
+      "posted_date": "2026-09-04T17:02:48-04:00",
+      "comp": "Salary: $85k-$150k/year ($41-$72/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
       "flags": [
         "new"
       ],
@@ -2584,6 +2568,21 @@
       "gone_date": "2026-08-15",
       "flags": [],
       "role": "systems"
+    },
+    {
+      "id": "c56496bf7fb8c5d7",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Concrete Field Engineer",
+      "location": "Clay, New York, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=294763&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-06-29T11:16:32.799+0000",
+      "comp": "Salary Range: $105,000- $160,200 annually (salary range is based on market data;",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-05",
+      "flags": [],
+      "role": "field"
     },
     {
       "id": "1c90c19778c8df5a",
@@ -2886,6 +2885,21 @@
       "role": "controls"
     },
     {
+      "id": "17621fbddf63fd59",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Field Welding Engineer",
+      "location": "Pecos, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297409&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-27T13:17:29.331+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-05",
+      "flags": [],
+      "role": "field"
+    },
+    {
       "id": "0aba6533f5d73407",
       "kind": "direct",
       "company": "Bechtel",
@@ -3017,6 +3031,23 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-08-05",
+      "flags": [
+        "long-posted"
+      ],
+      "role": "controls"
+    },
+    {
+      "id": "e2b09eea06d5a92b",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Project Controls Lead",
+      "location": "Houston, Texas, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Houston-TX/Deputy-Project-Controls-Lead_R-106580-1/apply",
+      "posted_date": "2026-06-04T12:46:46.536+0000",
+      "comp": "$66,000 - $171,600",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-05",
       "flags": [
         "long-posted"
       ],
