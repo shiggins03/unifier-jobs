@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-05",
+  "updated": "2026-09-06",
   "warnings": [],
   "roster": [
     {
@@ -1536,8 +1536,8 @@
       "company": "Bechtel",
       "title": "Civil/Structural Field Engineer",
       "location": "New Albany, Ohio, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296422&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-01T14:18:48.996+0000",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=291386&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-06-18T19:14:53.566+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -1893,22 +1893,6 @@
       "role": "systems"
     },
     {
-      "id": "c0516ae01e0c20d3",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Roadway, Bridge and Guideway Engineer",
-      "location": "Fresno, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5375443008",
-      "posted_date": "2026-07-30T17:09:45-04:00",
-      "comp": "Salary: $120k-$190k/year ($57-$91/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
-      "has_desc": true
-    },
-    {
       "id": "5b2fe5d1ac13221c",
       "kind": "board",
       "company": "LGL Technologies",
@@ -2063,7 +2047,7 @@
       "title": "Project Controls Specialist",
       "location": "South Flower Street, Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/South-Flower-Street-Los-Angeles-California/Project-Controls-Coordinator_JR6022",
-      "posted_date": "Posted 24 Days Ago",
+      "posted_date": "Posted 25 Days Ago",
       "comp": "$82,862.07 - $94,699.51",
       "tier": 1,
       "status": "active",
@@ -2159,7 +2143,7 @@
       "title": "PMIS Implementation Specialist",
       "location": "Boston, Massachusetts",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
-      "posted_date": "Posted 12 Days Ago",
+      "posted_date": "Posted 13 Days Ago",
       "comp": "$114,345.69 - $130,680.78",
       "tier": 1,
       "status": "active",
@@ -2377,22 +2361,6 @@
       "has_desc": true
     },
     {
-      "id": "5ee65b476fa25009",
-      "kind": "direct",
-      "company": "Accenture",
-      "title": "Global Network - Supply Chain and Engineering - Infrastructure & Capital Projects Analyst/ Consultant",
-      "location": "San Jose, Plaza Real Cariari",
-      "url": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/San-Jose-Plaza-Real-Cariari/Global-Network---Supply-Chain-and-Engineering---Capital-Project-Analyst--Consultant_R00352523",
-      "posted_date": "Posted 11 Days Ago",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
       "id": "446a63160ea74de7",
       "kind": "direct",
       "company": "Bechtel",
@@ -2500,9 +2468,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -2518,9 +2484,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -3054,6 +3018,21 @@
       "role": "controls"
     },
     {
+      "id": "c0516ae01e0c20d3",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Roadway, Bridge and Guideway Engineer",
+      "location": "Fresno, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5375443008",
+      "posted_date": "2026-07-30T17:09:45-04:00",
+      "comp": "Salary: $120k-$190k/year ($57-$91/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-06",
+      "flags": [],
+      "role": "field"
+    },
+    {
       "id": "bba8ac8c54adb7fe",
       "kind": "board",
       "company": "Randstad Digital",
@@ -3530,6 +3509,21 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-09-04",
+      "flags": [],
+      "role": "systems"
+    },
+    {
+      "id": "5ee65b476fa25009",
+      "kind": "direct",
+      "company": "Accenture",
+      "title": "Global Network - Supply Chain and Engineering - Infrastructure & Capital Projects Analyst/ Consultant",
+      "location": "San Jose, Plaza Real Cariari",
+      "url": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/San-Jose-Plaza-Real-Cariari/Global-Network---Supply-Chain-and-Engineering---Capital-Project-Analyst--Consultant_R00352523",
+      "posted_date": "Posted 11 Days Ago",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-06",
       "flags": [],
       "role": "systems"
     }
