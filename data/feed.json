@@ -1,8 +1,6 @@
 {
-  "updated": "2026-09-07",
-  "warnings": [
-    "workday:Accenture: zero results for 3+ runs (was returning data)"
-  ],
+  "updated": "2026-09-08",
+  "warnings": [],
   "roster": [
     {
       "name": "Meta",
@@ -1656,7 +1654,9 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [],
+      "flags": [
+        "long-posted"
+      ],
       "role": "controls",
       "has_desc": true
     },
@@ -2033,7 +2033,7 @@
       "title": "Project Controls Specialist",
       "location": "South Flower Street, Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/South-Flower-Street-Los-Angeles-California/Project-Controls-Coordinator_JR6022",
-      "posted_date": "Posted 26 Days Ago",
+      "posted_date": "Posted 27 Days Ago",
       "comp": "$82,862.07 - $94,699.51",
       "tier": 1,
       "status": "active",
@@ -2129,7 +2129,7 @@
       "title": "PMIS Implementation Specialist",
       "location": "Boston, Massachusetts",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
-      "posted_date": "Posted 14 Days Ago",
+      "posted_date": "Posted 15 Days Ago",
       "comp": "$114,345.69 - $130,680.78",
       "tier": 1,
       "status": "active",
@@ -2344,6 +2344,22 @@
       "gone_date": null,
       "flags": [],
       "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "5ee65b476fa25009",
+      "kind": "direct",
+      "company": "Accenture",
+      "title": "Global Network - Supply Chain and Engineering - Infrastructure & Capital Projects Analyst/ Consultant",
+      "location": "San Jose, Plaza Real Cariari",
+      "url": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/San-Jose-Plaza-Real-Cariari/Global-Network---Supply-Chain-and-Engineering---Capital-Project-Analyst--Consultant_R00352523",
+      "posted_date": "Posted 15 Days Ago",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "systems",
       "has_desc": true
     },
     {
@@ -3510,21 +3526,6 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-09-04",
-      "flags": [],
-      "role": "systems"
-    },
-    {
-      "id": "5ee65b476fa25009",
-      "kind": "direct",
-      "company": "Accenture",
-      "title": "Global Network - Supply Chain and Engineering - Infrastructure & Capital Projects Analyst/ Consultant",
-      "location": "San Jose, Plaza Real Cariari",
-      "url": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/San-Jose-Plaza-Real-Cariari/Global-Network---Supply-Chain-and-Engineering---Capital-Project-Analyst--Consultant_R00352523",
-      "posted_date": "Posted 11 Days Ago",
-      "comp": null,
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-09-06",
       "flags": [],
       "role": "systems"
     }
