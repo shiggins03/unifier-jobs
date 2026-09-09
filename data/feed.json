@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-08",
+  "updated": "2026-09-09",
   "warnings": [],
   "roster": [
     {
@@ -1459,6 +1459,13 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-09-04"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/profile/job_details/939208228624316/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: LINCS Security Engineer",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-09-09"
     }
   ],
   "jobs": [
@@ -1528,6 +1535,22 @@
       "gone_date": null,
       "flags": [],
       "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "c56496bf7fb8c5d7",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Concrete Field Engineer",
+      "location": "Clay, New York, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=294763&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-06-29T11:16:32.799+0000",
+      "comp": "Salary Range: $105,000- $160,200 annually (salary range is based on market data;",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "field",
       "has_desc": true
     },
     {
@@ -1843,6 +1866,22 @@
       "has_desc": true
     },
     {
+      "id": "129d9dad97036d6d",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Subcontracts Formation Specialist",
+      "location": "Houston, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297361&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-29T16:20:43.325+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "field",
+      "has_desc": true
+    },
+    {
       "id": "0b8287d0a22b0605",
       "kind": "direct",
       "company": "Amazon",
@@ -2033,7 +2072,7 @@
       "title": "Project Controls Specialist",
       "location": "South Flower Street, Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/South-Flower-Street-Los-Angeles-California/Project-Controls-Coordinator_JR6022",
-      "posted_date": "Posted 27 Days Ago",
+      "posted_date": "Posted 28 Days Ago",
       "comp": "$82,862.07 - $94,699.51",
       "tier": 1,
       "status": "active",
@@ -2129,7 +2168,7 @@
       "title": "PMIS Implementation Specialist",
       "location": "Boston, Massachusetts",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
-      "posted_date": "Posted 15 Days Ago",
+      "posted_date": "Posted 16 Days Ago",
       "comp": "$114,345.69 - $130,680.78",
       "tier": 1,
       "status": "active",
@@ -2491,6 +2530,60 @@
       "has_desc": true
     },
     {
+      "id": "3368d32699f04f06",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Work Control Coordinator / Permit Writer",
+      "location": "Brownsville, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299014&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-09T14:15:08.310+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "b219469fd4c03f4b",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Senior Change Manager",
+      "location": "Los Angeles, California",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Change-Manager_JR6193",
+      "posted_date": "Posted Yesterday",
+      "comp": "$128,067.17 - $146,362.48",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "90d7eef4aaecf94e",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Construction Manager",
+      "location": "San Francisco Bay Area",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5418953008",
+      "posted_date": "2026-09-09T01:46:51-04:00",
+      "comp": "Salary: $160k-$200k/year ($77-$96/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "field",
+      "has_desc": true
+    },
+    {
       "id": "9b3c43692c548d44",
       "kind": "direct",
       "company": "Consertus",
@@ -2534,21 +2627,6 @@
       "gone_date": "2026-08-15",
       "flags": [],
       "role": "systems"
-    },
-    {
-      "id": "c56496bf7fb8c5d7",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Concrete Field Engineer",
-      "location": "Clay, New York, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=294763&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-06-29T11:16:32.799+0000",
-      "comp": "Salary Range: $105,000- $160,200 annually (salary range is based on market data;",
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-09-05",
-      "flags": [],
-      "role": "field"
     },
     {
       "id": "1c90c19778c8df5a",
@@ -2939,21 +3017,6 @@
       "gone_date": "2026-08-27",
       "flags": [],
       "role": "systems"
-    },
-    {
-      "id": "129d9dad97036d6d",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Subcontracts Formation Specialist",
-      "location": "Houston, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297361&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-29T16:20:43.325+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-08-06",
-      "flags": [],
-      "role": "field"
     },
     {
       "id": "d824dabe45e41c09",
