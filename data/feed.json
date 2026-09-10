@@ -185,6 +185,20 @@
       "note": "NYC utility running a large capital program — top metro for this search. ORC endpoint found via the careers page 2026-08-12; verified 46 reqs for \"engineer\", and unlike Oracle's own site the \"unifier\" keyword is precise here (1 hit), so no search_query override is needed."
     },
     {
+      "name": "Peloton Consulting Group",
+      "tier": "B",
+      "ats": "oracle_orc",
+      "enabled": true,
+      "note": "Oracle specialist consultancy (~860 staff, Inc 5000). Found 2026-09-10 from the owner's TheirStack link. Their pelotongroup.com is Cloudflare- walled (403) and their Jobvite board is JS-rendered, but their Oracle Recruiting Cloud answers fine — inventory 46. First run picks up \"Oracle Primavera Lead\" (US), a real Unifier systems role. Global firm, so the US filter does real work (their Sao Paulo Unifier req is dropped)."
+    },
+    {
+      "name": "Metropolitan Airports Commission",
+      "tier": "B",
+      "ats": "generic_page",
+      "enabled": false,
+      "note": "FINAL (2026-09-10) — NEOGOV/governmentjobs is a knockout SPA: identical HTML for any keyword incl. nonsense, zero job links in source, no embedded JSON, no public API (api.neogov.com 401, /jobs.json 404). Same verdict independently confirms LA Metro. Do not re-probe NEOGOV agencies without a new angle; use seed_jobs.yaml for a specific posting instead."
+    },
+    {
       "name": "Argano",
       "tier": "B",
       "ats": "oracle_orc",
@@ -1466,6 +1480,13 @@
       "note": "employer's own search matched 'unifier' but posting text unavailable — verify: LINCS Security Engineer",
       "source": "meta_graphql:Meta",
       "first_seen": "2026-09-09"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/profile/job_details/27362141263462210/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Software Developer, GO Systems",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-09-10"
     }
   ],
   "jobs": [
@@ -1591,8 +1612,8 @@
       "company": "Bechtel",
       "title": "Piping Superintendent",
       "location": "Lake Charles, Louisiana, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296721&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-08T17:12:12.191+0000",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297241&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-21T19:18:37.208+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -1733,22 +1754,6 @@
       "gone_date": null,
       "flags": [],
       "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "bd8eabbb45e3534f",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Construction Automation Specialist",
-      "location": "Houston, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297161&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-21T13:17:35.728+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
       "has_desc": true
     },
     {
@@ -1918,29 +1923,13 @@
       "role": "systems"
     },
     {
-      "id": "5b2fe5d1ac13221c",
-      "kind": "board",
-      "company": "LGL Technologies",
-      "title": "Oracle Primavera Unifier Consultant",
-      "location": "Texas, US",
-      "url": "https://www.adzuna.com/land/ad/5794406427?se=OLY39m-o8RGJzb8cChfJbA&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
-      "posted_date": "2026-07-09T15:01:35Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
       "id": "7ab7020888283021",
       "kind": "direct",
       "company": "Bechtel",
       "title": "Construction Automation Specialist",
       "location": "New Albany, Ohio, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297583&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-08-04T17:19:49.040+0000",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297566&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-08-11T19:17:20.690+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -2199,9 +2188,9 @@
       "company": "Luster National",
       "title": "Contracts and Claims Specialist",
       "location": "California, USA",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5389884008",
-      "posted_date": "2026-08-28T13:34:33-04:00",
-      "comp": "Salary: $90k-$140k/year ($43-$67/hour)",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5417179008",
+      "posted_date": "2026-09-10T11:04:34-04:00",
+      "comp": "Salary: $90k-$155k/year ($43-$75/hour)",
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -2514,22 +2503,6 @@
       "has_desc": true
     },
     {
-      "id": "b219469fd4c03f4b",
-      "kind": "direct",
-      "company": "STV",
-      "title": "Senior Change Manager",
-      "location": "Los Angeles, California",
-      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Change-Manager_JR6193",
-      "posted_date": "Posted Yesterday",
-      "comp": "$128,067.17 - $146,362.48",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
       "id": "90d7eef4aaecf94e",
       "kind": "direct",
       "company": "Luster National",
@@ -2557,9 +2530,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },
@@ -2575,9 +2546,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -2593,10 +2562,296 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
+      "flags": [],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "a71c19a0cabf2369",
+      "kind": "direct",
+      "company": "Peloton Consulting Group",
+      "title": "Oracle Primavera Lead",
+      "location": "United States",
+      "url": "https://edjd.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/173",
+      "posted_date": "2026-07-27",
+      "comp": "range is $140,000 to $220,000 (Base Compensation)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
       "flags": [
         "new"
       ],
       "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "b4a9653352929ffc",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Change Manager",
+      "location": "New Jersey, USA; New York, USA; Washington, District of Columbia, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5417172008",
+      "posted_date": "2026-09-10T11:01:58-04:00",
+      "comp": "Salary: $125k-$190k/year ($60-$91/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "5d941eb45d6da974",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Change Manager",
+      "location": "California, USA",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5417166008",
+      "posted_date": "2026-09-10T11:01:29-04:00",
+      "comp": "Salary: $125k-$190k/year ($60-$91/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "8d73e142acc99184",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Construction Manager",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5418953008",
+      "posted_date": "2026-09-09T01:46:51-04:00",
+      "comp": "Salary: $160k-$200k/year ($77-$96/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "1d1793ab8987f727",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Document Control Manager",
+      "location": "California, USA",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5417190008",
+      "posted_date": "2026-09-10T11:04:08-04:00",
+      "comp": "Salary: $110k-$175k/year ($53-$84/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "0c1fd50e18d48952",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Document Control Manager",
+      "location": "Maryland, USA; New Jersey, USA; New York, USA; Washington, District of Columbia, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5417192008",
+      "posted_date": "2026-09-10T11:03:34-04:00",
+      "comp": "Salary: $110k-$175k/year ($53-$84/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "e8dc825c8a54c683",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Document Control Specialist ",
+      "location": "Sacramento, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5421040008",
+      "posted_date": "2026-09-10T14:51:55-04:00",
+      "comp": "Salary: $68k-$117k/year ($33-$56/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "23d5d4afa7226ab6",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Project Controls Manager",
+      "location": "California, USA",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5417175008",
+      "posted_date": "2026-09-10T11:14:18-04:00",
+      "comp": "Salary: $130k-$205k/year ($63-$99/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "7c2d0043b5f9bf58",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Project Controls Manager",
+      "location": "New Jersey, USA; New York, USA",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5417138008",
+      "posted_date": "2026-09-10T11:10:47-04:00",
+      "comp": "Salary: $130k-$205k/year ($63-$99/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "a0c0c8165710fbde",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Project Manager",
+      "location": "California, USA",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5417085008",
+      "posted_date": "2026-09-10T11:01:00-04:00",
+      "comp": "Salary: $115k-$210k/year ($55-$101/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "a9f549071b4f8bac",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Project Manager",
+      "location": "New York, New York, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5417090008",
+      "posted_date": "2026-09-10T11:00:24-04:00",
+      "comp": "Salary: $115k-$210k/year ($55-$101/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "9b423d341322d2db",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Quality Manager",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5417242008",
+      "posted_date": "2026-09-10T11:05:21-04:00",
+      "comp": "Salary: $110k-$185k/year ($53-$89/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "be5e34f47611fb8e",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Quality Manager",
+      "location": "New York, New York, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5417236008",
+      "posted_date": "2026-09-10T11:05:53-04:00",
+      "comp": "Salary: $110k-$185k/year ($53-$89/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "c96fbd6eb2cddf8d",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Resident Engineer",
+      "location": "Fresno, California, United States; Los Angeles, California, United States; Sacramento, California, United States; San Francisco, California, United States; Seattle, Washington, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5389932008",
+      "posted_date": "2026-08-13T19:53:20-04:00",
+      "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "609e6de7658a2eb9",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Resident Engineer",
+      "location": "Washington, USA",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5417197008",
+      "posted_date": "2026-09-10T11:02:24-04:00",
+      "comp": "Salary: $125k-$165k/year ($60-$79/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "89a236e6e36267ed",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Senior Document Control Specialist",
+      "location": "Sacramento, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5421011008",
+      "posted_date": "2026-09-10T15:34:21-04:00",
+      "comp": "Salary: $80k-$130k/year ($38-$63/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -2915,6 +3170,21 @@
       "role": "field"
     },
     {
+      "id": "bd8eabbb45e3534f",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Construction Automation Specialist",
+      "location": "Houston, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297161&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-21T13:17:35.728+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-10",
+      "flags": [],
+      "role": "systems"
+    },
+    {
       "id": "6005b160abf61af3",
       "kind": "direct",
       "company": "Bechtel",
@@ -3127,6 +3397,21 @@
       "gone_date": "2026-09-06",
       "flags": [],
       "role": "field"
+    },
+    {
+      "id": "5b2fe5d1ac13221c",
+      "kind": "board",
+      "company": "LGL Technologies",
+      "title": "Oracle Primavera Unifier Consultant",
+      "location": "Texas, US",
+      "url": "https://www.adzuna.com/land/ad/5794406427?se=OLY39m-o8RGJzb8cChfJbA&utm_medium=api&utm_source=55569923&v=25077FA1F92ECFD9E3562686CD4E804D963ACEB6",
+      "posted_date": "2026-07-09T15:01:35Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-10",
+      "flags": [],
+      "role": "systems"
     },
     {
       "id": "bba8ac8c54adb7fe",
@@ -3637,6 +3922,21 @@
       "gone_date": "2026-09-04",
       "flags": [],
       "role": "systems"
+    },
+    {
+      "id": "b219469fd4c03f4b",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Senior Change Manager",
+      "location": "Los Angeles, California",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Change-Manager_JR6193",
+      "posted_date": "Posted Yesterday",
+      "comp": "$128,067.17 - $146,362.48",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-10",
+      "flags": [],
+      "role": "unclear"
     }
   ]
 }

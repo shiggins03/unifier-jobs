@@ -36,10 +36,10 @@
   "workday:Accenture": {
     "counts": [
       0,
-      0,
       1,
       0,
-      1
+      1,
+      0
     ],
     "fail_streak": 0,
     "last_run": "2026-09-10",
@@ -155,19 +155,19 @@
     ],
     "fail_streak": 0,
     "last_run": "2026-09-10",
-    "inventory": 67
+    "inventory": 71
   },
   "greenhouse:Luster National": {
     "counts": [
       11,
       11,
-      11,
       12,
-      13
+      13,
+      29
     ],
     "fail_streak": 0,
     "last_run": "2026-09-10",
-    "inventory": 45
+    "inventory": 65
   },
   "meta_graphql:Meta": {
     "counts": [
@@ -191,14 +191,14 @@
     ],
     "fail_streak": 0,
     "last_run": "2026-09-10",
-    "inventory": 2220
+    "inventory": 2209
   },
   "avature_feed:Deloitte": {
     "counts": [
       3,
       3,
       3,
-      3,
+      4,
       4
     ],
     "fail_streak": 0,
@@ -208,24 +208,24 @@
     "counts": [
       21,
       21,
-      21,
       24,
-      23
+      23,
+      20
     ],
     "fail_streak": 0,
-    "inventory": 962,
+    "inventory": 974,
     "last_run": "2026-09-10"
   },
   "smartrecruiters:Turner & Townsend": {
     "counts": [
       6,
       6,
-      6,
+      5,
       5,
       5
     ],
     "fail_streak": 0,
-    "inventory": 3065,
+    "inventory": 3080,
     "last_run": "2026-09-10"
   },
   "workday:Mass General Brigham": {
@@ -255,12 +255,12 @@
     "counts": [
       5,
       5,
-      5,
+      6,
       6,
       6
     ],
     "fail_streak": 0,
-    "inventory": 378,
+    "inventory": 376,
     "last_run": "2026-09-10"
   },
   "oracle_orc:Hill International": {
@@ -272,7 +272,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 291,
+    "inventory": 294,
     "last_run": "2026-09-10"
   },
   "successfactors:Amtrak": {
@@ -320,7 +320,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 2919,
+    "inventory": 2925,
     "last_run": "2026-09-10"
   },
   "workday:Intel": {
@@ -332,7 +332,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 572,
+    "inventory": 579,
     "last_run": "2026-09-10"
   },
   "workday:Pfizer": {
@@ -344,7 +344,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 576,
+    "inventory": 580,
     "last_run": "2026-09-10"
   },
   "workday:PwC": {
@@ -356,7 +356,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 4691,
+    "inventory": 4636,
     "last_run": "2026-09-10"
   },
   "phenom:Eli Lilly": {
@@ -380,7 +380,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 1729,
+    "inventory": 1740,
     "last_run": "2026-09-10"
   },
   "seed:MTA": {
@@ -419,7 +419,7 @@
       1
     ],
     "fail_streak": 0,
-    "inventory": 88,
+    "inventory": 90,
     "last_run": "2026-09-10"
   },
   "workday:Moss": {
@@ -431,7 +431,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 113,
+    "inventory": 114,
     "last_run": "2026-09-10"
   },
   "hrmdirect:Project Partners": {
@@ -455,7 +455,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 102,
+    "inventory": 107,
     "last_run": "2026-09-10"
   },
   "oracle_orc:Con Edison": {
@@ -467,7 +467,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 56,
+    "inventory": 57,
     "last_run": "2026-09-10"
   },
   "jobvite:EPMA": {
@@ -480,6 +480,14 @@
     ],
     "fail_streak": 0,
     "inventory": 14,
+    "last_run": "2026-09-10"
+  },
+  "oracle_orc:Peloton Consulting Group": {
+    "counts": [
+      1
+    ],
+    "fail_streak": 0,
+    "inventory": 46,
     "last_run": "2026-09-10"
   }
 }

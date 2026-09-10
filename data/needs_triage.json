@@ -1215,5 +1215,12 @@
     "note": "employer's own search matched 'unifier' but posting text unavailable — verify: LINCS Security Engineer",
     "source": "meta_graphql:Meta",
     "first_seen": "2026-09-09"
+  },
+  {
+    "company": "Meta",
+    "url": "https://www.metacareers.com/profile/job_details/27362141263462210/",
+    "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Software Developer, GO Systems",
+    "source": "meta_graphql:Meta",
+    "first_seen": "2026-09-10"
   }
 ]
