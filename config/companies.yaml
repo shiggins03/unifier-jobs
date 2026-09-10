@@ -262,6 +262,31 @@ companies:
       ORC endpoint found via the careers page 2026-08-12; verified 46 reqs for
       "engineer", and unlike Oracle's own site the "unifier" keyword is precise
       here (1 hit), so no search_query override is needed.
+  - name: Peloton Consulting Group
+    tier: B
+    ats: oracle_orc
+    url: https://edjd.fa.us2.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions
+    site_number: CX
+    job_url_base: https://edjd.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job
+    enabled: true
+    note: >-
+      Oracle specialist consultancy (~860 staff, Inc 5000). Found 2026-09-10
+      from the owner's TheirStack link. Their pelotongroup.com is Cloudflare-
+      walled (403) and their Jobvite board is JS-rendered, but their Oracle
+      Recruiting Cloud answers fine — inventory 46. First run picks up "Oracle
+      Primavera Lead" (US), a real Unifier systems role. Global firm, so the
+      US filter does real work (their Sao Paulo Unifier req is dropped).
+  - name: Metropolitan Airports Commission
+    tier: B
+    ats: generic_page
+    url: https://www.governmentjobs.com/careers/mac
+    enabled: false
+    note: >-
+      FINAL (2026-09-10) — NEOGOV/governmentjobs is a knockout SPA: identical
+      HTML for any keyword incl. nonsense, zero job links in source, no
+      embedded JSON, no public API (api.neogov.com 401, /jobs.json 404). Same
+      verdict independently confirms LA Metro. Do not re-probe NEOGOV agencies
+      without a new angle; use seed_jobs.yaml for a specific posting instead.
   - name: Argano
     tier: B
     ats: oracle_orc

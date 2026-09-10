@@ -162,6 +162,32 @@ Hunted a zero-key, zero-human route for the Cloudflare-walled employers
 The coded JSearch/Adzuna/Jooble adapters remain the only automated route,
 and each needs one free API key in repo secrets.
 
+## TheirStack as a discovery source (evaluated 2026-09-10)
+
+theirstack.com/en/technology/oracle-primavera-unifier lists companies whose
+job postings mention Unifier. Legitimate vendor, but: their data SOURCE is
+"career sites, ATSs and job boards" — the same postings this pipeline already
+reads — so paying them buys a rebadged view of our own input, plus company
+names. Free page shows 10 of 128 North America names; the rest needs an
+account and credits ($109 one-time / $49 mo). Not worth it, and account
+creation is the owner's to do, not Claude's. Re-read the free page
+periodically for NEW NAMES only — that is the part we cannot generate.
+
+Names checked from that page (2026-09-10): OnIndus and Luster National were
+already on the roster; LA Metro already a dead end; PharmEng is Canada.
+Peloton Consulting Group ADDED. Failed, with reason — Gaea Global and WVU
+(careers pages reachable but no ATS of any kind), CWA (careers URLs 404),
+Brio Solutions (403/522, 3 employees), Metropolitan Airports Commission
+(NEOGOV, see below).
+
+## NEOGOV / governmentjobs.com is closed to scripts (FINAL 2026-09-10)
+
+Confirmed on the MAC agency: identical HTML for any keyword including a
+nonsense string, zero job links in source, no embedded JSON, `/jobs.json`
+404, `api.neogov.com` 401. This independently reproduces the LA Metro
+verdict. Do not spend probe time on NEOGOV agencies; use `seed_jobs.yaml`
+for a specific posting instead.
+
 ## Diagnosing endpoints (the probe workflow)
 
 Claude-session sandboxes usually can't reach career sites (proxy policy), but
