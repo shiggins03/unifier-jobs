@@ -25,6 +25,13 @@ kinds:
       # Primavera Unifier)" and NYP's "Facilities Systems (Oracle Unifier)"
       # all fell through to "unclear" without it.
       - unifier
+      # Same logic as "unifier" above: a title naming the PRODUCT is a job
+      # about the product. Added 2026-09-11 for Peloton's "Oracle Primavera
+      # Lead" and Project Partners' "Oracle Primavera P6 EPPM and OPC
+      # Consultant", both of which sat in "unclear". Safe against the
+      # scheduler case: "Primavera P6 Scheduler" would hit systems AND
+      # controls, and a tie resolves to "unclear" rather than a wrong bucket.
+      - primavera
       - unifier administrator
       - unifier admin
       - unifier developer
@@ -46,6 +53,12 @@ kinds:
       - application architect
       - data architect
       - functional architect
+      - solutions architect
+      - delivery architect
+      # Names a technology FUNCTION, not a construction one (T&T "Director,
+      # Construction Technologies"; Moss "Construction Technologies
+      # Integrations Engineer"). Matches Technology and Technologies.
+      - construction technolog
       - software engineer
       - systems analyst
       - systems administrator
@@ -95,16 +108,23 @@ kinds:
       - rollout of systems
       - system implementation
       - systems implementation
-      # Naming SIBLING PMIS platforms means the job is about running these
-      # systems. Counter-intuitive but correct: a posting only reaches this
-      # board by matching Unifier/P6 in the first place, so a competitor list
-      # marks platform work, NOT a false match.
-      - kahua
-      - ecosys
-      - procore
-      - e-builder
-      - ebuilder
-      - aconex
+      # Unifier's own vocabulary — no construction role uses these words.
+      - dynamic data set
+      - unifier accelerator
+      - custom print
+      - data view
+      #
+      # REMOVED 2026-09-11 — bare sibling-platform names (kahua, ecosys,
+      # procore, e-builder, aconex). The old note claimed a competitor list
+      # marks platform work; that holds for an implementation consultancy but
+      # is FALSE for owner's-rep / CM firms, where those tools are the
+      # software site staff USE. Luster's Office Engineer, Change Manager and
+      # Resident Engineer each named three of them and tipped straight to the
+      # min_score of 3, landing construction jobs in "systems" — the exact
+      # thing the owner flagged. The Deloitte case the names were added for
+      # does NOT depend on them: it scores on "pmis" + "project management
+      # information system" + "configuration and implementation". Do not
+      # re-add bare platform names; pair them with build language instead.
 
   # Construction execution in the field — not the owner's work.
   field:
@@ -132,6 +152,17 @@ kinds:
       - construction manager
       - site manager
       - subcontracts
+      # Added 2026-09-11. These are construction-execution titles that were
+      # landing in "systems" (on platform-name hits) or "unclear". A title hit
+      # is worth title_weight, so it decides the bucket outright.
+      - resident engineer
+      - construction inspector
+      - utilities coordinator
+      - quality manager
+      - work control
+      - permit writer
+      - loto
+      - subcontract technical representative
     body:
       - jobsite
       - job site
@@ -157,6 +188,12 @@ kinds:
       - claims
       - change specialist
       - document control
+      # Construction "change" work is contract/change-order control, and an
+      # Office Engineer runs submittals, RFIs and documentation — both are
+      # controls, not systems. (An ITIL "Change Manager" would land here too;
+      # on this board that is far rarer than the construction sense.)
+      - change manager
+      - office engineer
     body:
       - critical path method
       - earned value

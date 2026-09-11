@@ -96,17 +96,27 @@ field / unclear, surfaced as artifact filter chips and a muted card badge.
 - Highest-precision signal is `unifier` in the TITLE => systems. Without it
   Oracle's "Senior Principal Consultant-Oracle Primavera Unifier" and NYP's
   "Facilities Systems (Oracle Unifier)" both fell through to unclear.
-- COUNTER-INTUITIVE, do not "fix" it: naming SIBLING PMIS platforms (Kahua,
-  EcoSys, Procore, e-Builder, Aconex) in the body is a POSITIVE systems
-  signal, not a false match. A posting only reaches this board by matching
-  Unifier/P6 first, so a competitor list marks platform work. Added 2026-07-31
-  for Deloitte's "Sr. Consultant – Capital Projects", a role the owner applied
-  to IRL whose generic title left it "unclear"; its systems signal was
-  body-only ("configuration and implementation of Project Management
-  Information Systems (PMIS)"). Verified as the ONLY reclassification across
-  all 83 active jobs. Construction postings do pick up these terms (Bechtel
-  +aconex, STV/T&T +ecosys) but title_weight holds them in place — narrowest
-  margin was STV "Senior Cost Engineering Specialist", ctl=7 vs sys=4.
+- REVERSED 2026-09-11 — bare sibling-platform names (Kahua, EcoSys, Procore,
+  e-Builder, Aconex) are NO LONGER a systems signal, and must not be re-added.
+  The old rule assumed a competitor list marks platform work. True for an
+  implementation consultancy; FALSE for owner's-rep / CM firms, where those
+  tools are simply the software site staff USE. Luster's Office Engineer,
+  Change Manager and Resident Engineer each named three of them, hit the
+  min_score of 3 on tool names alone, and landed in "systems" — construction
+  jobs tagged as the owner's target work, which is exactly what the tag
+  exists to prevent. The Deloitte role the names were added for is unharmed:
+  it scores 7 on real implementation language (pmis + project management
+  information system + configuration and implementation + system
+  implementation). Two OTHER Deloitte reqs correctly fell to "unclear" —
+  they name Procore/Kahua only in a passing tool list.
+- A title naming the PRODUCT (`unifier`, `primavera`) is the strongest signal
+  and beats body accumulation. Safe against "Primavera P6 Scheduler": it hits
+  systems AND controls, and a tie resolves to "unclear", never a wrong bucket.
+- Construction-execution titles are enumerated in `field` (resident engineer,
+  construction inspector, quality manager, utilities coordinator, work
+  control, permit writer, loto, subcontract technical representative) and
+  contract/doc work in `controls` (office engineer, change manager), so a
+  title hit decides the bucket outright instead of leaving them to body noise.
 - Tune the term lists in roles.yaml; no code change needed. ALWAYS diff the
   whole store old-config-vs-new before committing a term-list change — a
   broad term can silently migrate whole employers between kinds.
