@@ -188,6 +188,33 @@ nonsense string, zero job links in source, no embedded JSON, `/jobs.json`
 verdict. Do not spend probe time on NEOGOV agencies; use `seed_jobs.yaml`
 for a specific posting instead.
 
+## Candidate sweep from an LLM-generated list (2026-09-10)
+
+The owner supplied a Gemini list of ~54 claimed Unifier users. Treat such a
+list as CANDIDATE NAMES ONLY — the "uses Unifier" claim is unverified and
+several entries were wrong or duplicates (Broadpin IS Project Partners
+rebranded). It does not matter: the keyword filter is the arbiter, so the only
+question per name is "is there a scriptable endpoint".
+
+22 were already on the roster. Of the 32 new names, probed and resolved:
+- ADDED: NewYork-Presbyterian (phenom), AT&T (workday att/ATTGeneral),
+  Cleveland Clinic (workday ccf/ClevelandClinicCareers).
+- SKIPPED, Mayo Clinic (oracle_orc fa-euwp CX_1, inventory 1415): its
+  "unifier" keyword returns 23 unrelated clinician roles (ophthalmologist,
+  optometrist, surgeon) — pure ORC fuzz costing 23 detail fetches a day for a
+  speculative claim. If revisited, use `search_query: primavera` (returns 0
+  today, so no noise). Note CX_1003/CX_1001 return total=0; CX_1 is correct.
+- NOT SCRIPTABLE / no ATS markers: AECOM, Skanska USA, Kiewit, KPMG,
+  Cognizant, Capgemini, Chevron, Shell US, Qualcomm, LoadSpring.
+  Jacobs 202, HCA 403, LAWA + Stellar Services 404, Ten Six SSL error,
+  Hitachi Vantara + Southern Company connection errors.
+- ATS found but NO ADAPTER (future work, in rough value order): Fluor and
+  ExxonMobil (successfactors — deliberately skipped, the EY note above
+  explains why that adapter floods triage until it gets a description
+  selector), Kaiser Permanente (avature/taleo), Chicago Transit Authority
+  (taleo), Gilbane (icims — note MARTA's icims returned 405 "Human
+  Verification", so expect the same), Balfour Beatty US (dayforcehcm).
+
 ## Diagnosing endpoints (the probe workflow)
 
 Claude-session sandboxes usually can't reach career sites (proxy policy), but

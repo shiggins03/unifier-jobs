@@ -262,6 +262,39 @@ companies:
       ORC endpoint found via the careers page 2026-08-12; verified 46 reqs for
       "engineer", and unlike Oracle's own site the "unifier" keyword is precise
       here (1 hit), so no search_query override is needed.
+  - name: NewYork-Presbyterian
+    tier: B
+    ats: phenom
+    phenom_host: careers.nyp.org
+    enabled: true
+    note: >-
+      CONFIRMED Unifier employer and top metro — their "Program Manager -
+      Facilities Systems (Oracle Unifier Program Manager)" sat on this board
+      2026-07-31 to 08-12, but only via an Adzuna redirect. Direct phenom
+      monitor added 2026-09-10 so the next one arrives with a canonical link
+      and full description. Verified inventory 340.
+  - name: AT&T
+    tier: A
+    ats: workday
+    workday_host: att.wd1.myworkdayjobs.com
+    workday_tenant: att
+    workday_site: ATTGeneral
+    enabled: true
+    note: >-
+      Network/facilities capital portfolio. cxs verified 2026-09-10 —
+      inventory 1216, nonsense query 0 (real search). The single "unifier"
+      hit today is Workday fuzz (a Cisco Collaboration engineer) and the
+      keyword filter drops it; expected noise, not breakage.
+  - name: Cleveland Clinic
+    tier: B
+    ats: workday
+    workday_host: ccf.wd1.myworkdayjobs.com
+    workday_tenant: ccf
+    workday_site: ClevelandClinicCareers
+    enabled: true
+    note: >-
+      Health-system capital programs. cxs verified 2026-09-10 — inventory
+      2180, nonsense query 0, 0 unifier hits today.
   - name: Peloton Consulting Group
     tier: B
     ats: oracle_orc
