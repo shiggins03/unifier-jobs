@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-10",
+  "updated": "2026-09-11",
   "warnings": [],
   "roster": [
     {
@@ -183,6 +183,27 @@
       "ats": "oracle_orc",
       "enabled": true,
       "note": "NYC utility running a large capital program — top metro for this search. ORC endpoint found via the careers page 2026-08-12; verified 46 reqs for \"engineer\", and unlike Oracle's own site the \"unifier\" keyword is precise here (1 hit), so no search_query override is needed."
+    },
+    {
+      "name": "NewYork-Presbyterian",
+      "tier": "B",
+      "ats": "phenom",
+      "enabled": true,
+      "note": "CONFIRMED Unifier employer and top metro — their \"Program Manager - Facilities Systems (Oracle Unifier Program Manager)\" sat on this board 2026-07-31 to 08-12, but only via an Adzuna redirect. Direct phenom monitor added 2026-09-10 so the next one arrives with a canonical link and full description. Verified inventory 340."
+    },
+    {
+      "name": "AT&T",
+      "tier": "A",
+      "ats": "workday",
+      "enabled": true,
+      "note": "Network/facilities capital portfolio. cxs verified 2026-09-10 — inventory 1216, nonsense query 0 (real search). The single \"unifier\" hit today is Workday fuzz (a Cisco Collaboration engineer) and the keyword filter drops it; expected noise, not breakage."
+    },
+    {
+      "name": "Cleveland Clinic",
+      "tier": "B",
+      "ats": "workday",
+      "enabled": true,
+      "note": "Health-system capital programs. cxs verified 2026-09-10 — inventory 2180, nonsense query 0, 0 unifier hits today."
     },
     {
       "name": "Peloton Consulting Group",
@@ -1623,22 +1644,6 @@
       "has_desc": true
     },
     {
-      "id": "e15720ff82817361",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Welding Superintendent",
-      "location": "Pecos, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296397&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-01T23:19:10.904+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
-      "has_desc": true
-    },
-    {
       "id": "3c178b344fb01f46",
       "kind": "direct",
       "company": "Bechtel",
@@ -1788,22 +1793,6 @@
         "title-match"
       ],
       "role": "systems",
-      "has_desc": true
-    },
-    {
-      "id": "9b450b2863b5d6aa",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Lead Welding Field Engineer",
-      "location": "Clay, New York, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297471&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-28T13:17:33.897+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
       "has_desc": true
     },
     {
@@ -2071,22 +2060,6 @@
       "has_desc": true
     },
     {
-      "id": "facd2cb88187d0a7",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Resident Engineer",
-      "location": "Fresno, California, United States; Los Angeles, California, United States; Sacramento, California, United States; San Francisco Bay Area; Seattle, Washington, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5389932008",
-      "posted_date": "2026-08-13T19:53:20-04:00",
-      "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
       "id": "82275c7b5b616475",
       "kind": "direct",
       "company": "Bechtel",
@@ -2343,22 +2316,6 @@
       "has_desc": true
     },
     {
-      "id": "5ee65b476fa25009",
-      "kind": "direct",
-      "company": "Accenture",
-      "title": "Global Network - Supply Chain and Engineering - Infrastructure & Capital Projects Analyst/ Consultant",
-      "location": "San Jose, Plaza Real Cariari",
-      "url": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/San-Jose-Plaza-Real-Cariari/Global-Network---Supply-Chain-and-Engineering---Capital-Project-Analyst--Consultant_R00352523",
-      "posted_date": "Posted 17 Days Ago",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
       "id": "446a63160ea74de7",
       "kind": "direct",
       "company": "Bechtel",
@@ -2503,22 +2460,6 @@
       "has_desc": true
     },
     {
-      "id": "90d7eef4aaecf94e",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Construction Manager",
-      "location": "San Francisco Bay Area",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5418953008",
-      "posted_date": "2026-09-09T01:46:51-04:00",
-      "comp": "Salary: $160k-$200k/year ($77-$96/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
-      "has_desc": true
-    },
-    {
       "id": "10c33571feebe917",
       "kind": "direct",
       "company": "Deloitte",
@@ -2578,9 +2519,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -2596,9 +2535,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },
@@ -2614,9 +2551,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },
@@ -2632,9 +2567,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "field",
       "has_desc": true
     },
@@ -2650,9 +2583,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -2668,9 +2599,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -2686,9 +2615,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -2704,9 +2631,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -2722,9 +2647,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -2740,9 +2663,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -2758,9 +2679,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -2776,9 +2695,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -2794,9 +2711,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -2812,9 +2727,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },
@@ -2830,9 +2743,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -2848,9 +2759,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -3031,6 +2940,21 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-07-21",
+      "flags": [],
+      "role": "field"
+    },
+    {
+      "id": "e15720ff82817361",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Welding Superintendent",
+      "location": "Pecos, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296397&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-01T23:19:10.904+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-11",
       "flags": [],
       "role": "field"
     },
@@ -3288,6 +3212,21 @@
       "gone_date": "2026-07-30",
       "flags": [],
       "role": "systems"
+    },
+    {
+      "id": "9b450b2863b5d6aa",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Lead Welding Field Engineer",
+      "location": "Clay, New York, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297471&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-28T13:17:33.897+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-11",
+      "flags": [],
+      "role": "field"
     },
     {
       "id": "94809f719eb442f3",
@@ -3729,6 +3668,21 @@
       "role": "controls"
     },
     {
+      "id": "facd2cb88187d0a7",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Resident Engineer",
+      "location": "Fresno, California, United States; Los Angeles, California, United States; Sacramento, California, United States; San Francisco Bay Area; Seattle, Washington, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5389932008",
+      "posted_date": "2026-08-13T19:53:20-04:00",
+      "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-11",
+      "flags": [],
+      "role": "systems"
+    },
+    {
       "id": "d2c30f1efd4a959a",
       "kind": "board",
       "company": "Exl Neo Technologies",
@@ -3924,6 +3878,21 @@
       "role": "systems"
     },
     {
+      "id": "5ee65b476fa25009",
+      "kind": "direct",
+      "company": "Accenture",
+      "title": "Global Network - Supply Chain and Engineering - Infrastructure & Capital Projects Analyst/ Consultant",
+      "location": "San Jose, Plaza Real Cariari",
+      "url": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/San-Jose-Plaza-Real-Cariari/Global-Network---Supply-Chain-and-Engineering---Capital-Project-Analyst--Consultant_R00352523",
+      "posted_date": "Posted 17 Days Ago",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-11",
+      "flags": [],
+      "role": "systems"
+    },
+    {
       "id": "b219469fd4c03f4b",
       "kind": "direct",
       "company": "STV",
@@ -3937,6 +3906,21 @@
       "gone_date": "2026-09-10",
       "flags": [],
       "role": "unclear"
+    },
+    {
+      "id": "90d7eef4aaecf94e",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Construction Manager",
+      "location": "San Francisco Bay Area",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5418953008",
+      "posted_date": "2026-09-09T01:46:51-04:00",
+      "comp": "Salary: $160k-$200k/year ($77-$96/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-11",
+      "flags": [],
+      "role": "field"
     }
   ]
 }
