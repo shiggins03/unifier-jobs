@@ -35,9 +35,9 @@
   },
   "workday:Accenture": {
     "counts": [
-      1,
       0,
       1,
+      0,
       0,
       0
     ],
@@ -144,7 +144,9 @@
     "fail_streak": 0,
     "last_run": "2026-07-17"
   },
-  "_warnings": [],
+  "_warnings": [
+    "workday:Accenture: zero results for 3+ runs (was returning data)"
+  ],
   "workday:Consertus": {
     "counts": [
       2,
@@ -159,9 +161,9 @@
   },
   "greenhouse:Luster National": {
     "counts": [
-      11,
       12,
       13,
+      29,
       29,
       29
     ],
@@ -191,12 +193,12 @@
     ],
     "fail_streak": 0,
     "last_run": "2026-09-11",
-    "inventory": 2208
+    "inventory": 2203
   },
   "avature_feed:Deloitte": {
     "counts": [
       3,
-      3,
+      4,
       4,
       4,
       4
@@ -206,9 +208,9 @@
   },
   "phenom:Bechtel": {
     "counts": [
-      21,
       24,
       23,
+      20,
       20,
       20
     ],
@@ -218,7 +220,7 @@
   },
   "smartrecruiters:Turner & Townsend": {
     "counts": [
-      6,
+      5,
       5,
       5,
       5,
@@ -253,7 +255,7 @@
   },
   "workday:STV": {
     "counts": [
-      5,
+      6,
       6,
       6,
       6,
@@ -368,7 +370,7 @@
       4
     ],
     "fail_streak": 0,
-    "inventory": 677,
+    "inventory": 676,
     "last_run": "2026-09-11"
   },
   "workday:Johnson & Johnson": {
@@ -380,7 +382,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 1741,
+    "inventory": 1742,
     "last_run": "2026-09-11"
   },
   "seed:MTA": {
@@ -485,6 +487,7 @@
   "oracle_orc:Peloton Consulting Group": {
     "counts": [
       1,
+      1,
       1
     ],
     "fail_streak": 0,
@@ -493,6 +496,7 @@
   },
   "phenom:NewYork-Presbyterian": {
     "counts": [
+      0,
       0
     ],
     "fail_streak": 0,
@@ -501,6 +505,7 @@
   },
   "workday:AT&T": {
     "counts": [
+      0,
       0
     ],
     "fail_streak": 0,
@@ -509,10 +514,11 @@
   },
   "workday:Cleveland Clinic": {
     "counts": [
+      0,
       0
     ],
     "fail_streak": 0,
-    "inventory": 2180,
+    "inventory": 2177,
     "last_run": "2026-09-11"
   }
 }
