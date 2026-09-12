@@ -1222,5 +1222,19 @@
     "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Software Developer, GO Systems",
     "source": "meta_graphql:Meta",
     "first_seen": "2026-09-10"
+  },
+  {
+    "company": "Meta",
+    "url": "https://www.metacareers.com/profile/job_details/1967414873947303/",
+    "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Embedded Software Engineer, Connectivity/Wireless",
+    "source": "meta_graphql:Meta",
+    "first_seen": "2026-09-12"
+  },
+  {
+    "company": "Crystal Management",
+    "url": "https://www.adzuna.com/details/5880812412?utm_medium=api&utm_source=55569923",
+    "note": "unknown employer — find direct posting, propose tier",
+    "source": "adzuna",
+    "first_seen": "2026-09-12"
   }
 ]

@@ -1,8 +1,6 @@
 {
-  "updated": "2026-09-11",
-  "warnings": [
-    "workday:Accenture: zero results for 3+ runs (was returning data)"
-  ],
+  "updated": "2026-09-12",
+  "warnings": [],
   "roster": [
     {
       "name": "Meta",
@@ -1510,6 +1508,20 @@
       "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Software Developer, GO Systems",
       "source": "meta_graphql:Meta",
       "first_seen": "2026-09-10"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/profile/job_details/1967414873947303/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Embedded Software Engineer, Connectivity/Wireless",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-09-12"
+    },
+    {
+      "company": "Crystal Management",
+      "url": "https://www.adzuna.com/details/5880812412?utm_medium=api&utm_source=55569923",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-09-12"
     }
   ],
   "jobs": [
@@ -1820,7 +1832,7 @@
       "title": "P6 Scheduler",
       "location": "US-CA-San Francisco Bay Area",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-CA-San-Francisco-Bay-Area/P6-Scheduler_JR1539",
-      "posted_date": "Posted 30+ Days Ago",
+      "posted_date": "Posted Yesterday",
       "comp": "$128,960 - $139,360 annually",
       "tier": 1,
       "status": "active",
@@ -2036,7 +2048,7 @@
       "title": "Project Controls Specialist",
       "location": "South Flower Street, Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/South-Flower-Street-Los-Angeles-California/Project-Controls-Coordinator_JR6022",
-      "posted_date": "Posted 30 Days Ago",
+      "posted_date": "Posted 30+ Days Ago",
       "comp": "$82,862.07 - $94,699.51",
       "tier": 1,
       "status": "active",
@@ -2078,6 +2090,22 @@
       "has_desc": true
     },
     {
+      "id": "f9ff7d292d91fc13",
+      "kind": "board",
+      "company": "Crystal Management",
+      "title": "Oracle Primavera Unifier Consultant",
+      "location": "Wolf Trap, Halifax County",
+      "url": "https://www.adzuna.com/details/5880812412?utm_medium=api&utm_source=55569923",
+      "posted_date": "2026-09-12T05:27:08Z",
+      "comp": "$101,600 - $152,400",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
       "id": "69da548ef9f94560",
       "kind": "direct",
       "company": "Turner & Townsend",
@@ -2100,7 +2128,7 @@
       "title": "PMIS Implementation Specialist",
       "location": "Boston, Massachusetts",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
-      "posted_date": "Posted 18 Days Ago",
+      "posted_date": "Posted 19 Days Ago",
       "comp": "$114,345.69 - $130,680.78",
       "tier": 1,
       "status": "active",
@@ -2366,22 +2394,6 @@
       "has_desc": true
     },
     {
-      "id": "56fc1c7c24e51e26",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Geotechnical Field Engineer",
-      "location": "Atlanta, Georgia, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5414315008",
-      "posted_date": "2026-09-02T16:20:08-04:00",
-      "comp": "Salary: $72k-$85k/year ($35-$41/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
-      "has_desc": true
-    },
-    {
       "id": "738b1019de2e8cc2",
       "kind": "board",
       "company": "Cloudspace LLC",
@@ -2484,7 +2496,7 @@
       "title": "Senior Change Manager - Aviation",
       "location": "Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Change-Manager_JR6193",
-      "posted_date": "Posted 2 Days Ago",
+      "posted_date": "Posted 3 Days Ago",
       "comp": "$128,067.17 - $146,362.48",
       "tier": 1,
       "status": "active",
@@ -3730,21 +3742,6 @@
       "role": "unclear"
     },
     {
-      "id": "f9ff7d292d91fc13",
-      "kind": "board",
-      "company": "Crystal Management",
-      "title": "Oracle Primavera Unifier Consultant",
-      "location": "Wolf Trap, Halifax County",
-      "url": "https://www.adzuna.com/details/5846275064?utm_medium=api&utm_source=55569923",
-      "posted_date": "2026-08-18T03:32:18Z",
-      "comp": "$101,600 - $152,400",
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-09-10",
-      "flags": [],
-      "role": "systems"
-    },
-    {
       "id": "c104adcaa908b5f1",
       "kind": "board",
       "company": "AtkinsRéalis",
@@ -3893,6 +3890,21 @@
       "gone_date": "2026-09-11",
       "flags": [],
       "role": "unclear"
+    },
+    {
+      "id": "56fc1c7c24e51e26",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Geotechnical Field Engineer",
+      "location": "Atlanta, Georgia, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5414315008",
+      "posted_date": "2026-09-02T16:20:08-04:00",
+      "comp": "Salary: $72k-$85k/year ($35-$41/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-12",
+      "flags": [],
+      "role": "field"
     },
     {
       "id": "b219469fd4c03f4b",
