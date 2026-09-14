@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-13",
+  "updated": "2026-09-14",
   "warnings": [],
   "roster": [
     {
@@ -1626,6 +1626,22 @@
       "has_desc": true
     },
     {
+      "id": "6ac85c0bced38907",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "LOTO - Tagging Authority",
+      "location": "Battle Creek, Michigan, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296964&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-15T15:19:06.160+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "field",
+      "has_desc": true
+    },
+    {
       "id": "e90f20f280d14e0a",
       "kind": "direct",
       "company": "Bechtel",
@@ -1647,8 +1663,8 @@
       "company": "Bechtel",
       "title": "Piping Superintendent",
       "location": "Lake Charles, Louisiana, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297241&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-21T19:18:37.208+0000",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296721&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-08T17:12:12.191+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -1832,7 +1848,7 @@
       "title": "P6 Scheduler",
       "location": "US-CA-San Francisco Bay Area",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-CA-San-Francisco-Bay-Area/P6-Scheduler_JR1539",
-      "posted_date": "Posted 2 Days Ago",
+      "posted_date": "Posted 3 Days Ago",
       "comp": "$128,960 - $139,360 annually",
       "tier": 1,
       "status": "active",
@@ -1924,6 +1940,22 @@
         "title-match"
       ],
       "role": "systems"
+    },
+    {
+      "id": "7ab7020888283021",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Construction Automation Specialist",
+      "location": "New Albany, Ohio, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297566&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-08-11T19:17:20.690+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "unclear",
+      "has_desc": true
     },
     {
       "id": "ae6d743fe314229a",
@@ -2112,7 +2144,7 @@
       "title": "PMIS Implementation Specialist",
       "location": "Boston, Massachusetts",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
-      "posted_date": "Posted 20 Days Ago",
+      "posted_date": "Posted 21 Days Ago",
       "comp": "$114,345.69 - $130,680.78",
       "tier": 1,
       "status": "active",
@@ -2314,6 +2346,22 @@
       "has_desc": true
     },
     {
+      "id": "d46130a734391356",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Welding Field Engineer",
+      "location": "Pecos, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=298427&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-08-31T19:16:29.169+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "field",
+      "has_desc": true
+    },
+    {
       "id": "446a63160ea74de7",
       "kind": "direct",
       "company": "Bechtel",
@@ -2378,6 +2426,22 @@
       "has_desc": true
     },
     {
+      "id": "3a24ae1f1a4fe701",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Fab Clean Room - Subcontract Technical Representative (STR)",
+      "location": "New Albany, Ohio, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=298758&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-04T03:20:03.857+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "field",
+      "has_desc": true
+    },
+    {
       "id": "6d8c4aa15d5b2138",
       "kind": "direct",
       "company": "Meta",
@@ -2410,13 +2474,29 @@
       "has_desc": true
     },
     {
+      "id": "3368d32699f04f06",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Work Control Coordinator / Permit Writer",
+      "location": "Brownsville, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299014&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-09T14:15:08.310+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "field",
+      "has_desc": true
+    },
+    {
       "id": "f12d85de5e10bab4",
       "kind": "direct",
       "company": "STV",
       "title": "Senior Change Manager - Aviation",
       "location": "Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Change-Manager_JR6193",
-      "posted_date": "Posted 4 Days Ago",
+      "posted_date": "Posted 5 Days Ago",
       "comp": "$128,067.17 - $146,362.48",
       "tier": 1,
       "status": "active",
@@ -2698,6 +2778,24 @@
       "has_desc": true
     },
     {
+      "id": "365043d9ca1c0aa7",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Construction Automation Engineer",
+      "location": "Lake Charles, Louisiana, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299159&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-14T12:16:40.126+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
       "id": "9b3c43692c548d44",
       "kind": "direct",
       "company": "Consertus",
@@ -2754,21 +2852,6 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-08-15",
-      "flags": [],
-      "role": "field"
-    },
-    {
-      "id": "6ac85c0bced38907",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "LOTO - Tagging Authority",
-      "location": "Battle Creek, Michigan, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296964&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-15T15:19:06.160+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-08-26",
       "flags": [],
       "role": "field"
     },
@@ -3362,21 +3445,6 @@
       "role": "unclear"
     },
     {
-      "id": "7ab7020888283021",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Construction Automation Specialist",
-      "location": "New Albany, Ohio, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297566&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-08-11T19:17:20.690+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-09-13",
-      "flags": [],
-      "role": "unclear"
-    },
-    {
       "id": "196ad4a96942b3b4",
       "kind": "direct",
       "company": "Bechtel",
@@ -3812,21 +3880,6 @@
       "role": "systems"
     },
     {
-      "id": "d46130a734391356",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Welding Field Engineer",
-      "location": "Pecos, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=298427&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-08-31T19:16:29.169+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-09-13",
-      "flags": [],
-      "role": "field"
-    },
-    {
       "id": "5ee65b476fa25009",
       "kind": "direct",
       "company": "Accenture",
@@ -3853,36 +3906,6 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-09-12",
-      "flags": [],
-      "role": "field"
-    },
-    {
-      "id": "3a24ae1f1a4fe701",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Fab Clean Room - Subcontract Technical Representative (STR)",
-      "location": "New Albany, Ohio, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=298758&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-09-04T03:20:03.857+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-09-13",
-      "flags": [],
-      "role": "field"
-    },
-    {
-      "id": "3368d32699f04f06",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Work Control Coordinator / Permit Writer",
-      "location": "Brownsville, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299014&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-09-09T14:15:08.310+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-09-13",
       "flags": [],
       "role": "field"
     },
