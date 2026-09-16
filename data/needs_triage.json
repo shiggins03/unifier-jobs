@@ -1250,5 +1250,26 @@
     "note": "unknown employer — find direct posting, propose tier",
     "source": "adzuna",
     "first_seen": "2026-09-15"
+  },
+  {
+    "company": "Meta",
+    "url": "https://www.metacareers.com/profile/job_details/2010995136240732/",
+    "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Research Scientist, Multi-Modal Understanding & Synthesis",
+    "source": "meta_graphql:Meta",
+    "first_seen": "2026-09-16"
+  },
+  {
+    "company": "Oraapps Inc",
+    "url": "https://www.adzuna.com/land/ad/5883866909?se=GOJNceKx8RGRsJriD9fyEw&utm_medium=api&utm_source=55569923&v=6455E346438FDC6514125969895139740275D0FF",
+    "note": "unknown employer — find direct posting, propose tier",
+    "source": "adzuna",
+    "first_seen": "2026-09-16"
+  },
+  {
+    "company": "Booz Allen Hamilton",
+    "url": "https://www.adzuna.com/land/ad/5884745983?se=hKniceKx8RGYnY5ccmTf7w&utm_medium=api&utm_source=55569923&v=44261E6909A37B928A3D8A1D54F572F375CA4162",
+    "note": "unknown employer — find direct posting, propose tier",
+    "source": "adzuna",
+    "first_seen": "2026-09-16"
   }
 ]

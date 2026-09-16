@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-15",
+  "updated": "2026-09-16",
   "warnings": [],
   "roster": [
     {
@@ -1536,6 +1536,27 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-09-15"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/profile/job_details/2010995136240732/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Research Scientist, Multi-Modal Understanding & Synthesis",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-09-16"
+    },
+    {
+      "company": "Oraapps Inc",
+      "url": "https://www.adzuna.com/land/ad/5883866909?se=GOJNceKx8RGRsJriD9fyEw&utm_medium=api&utm_source=55569923&v=6455E346438FDC6514125969895139740275D0FF",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-09-16"
+    },
+    {
+      "company": "Booz Allen Hamilton",
+      "url": "https://www.adzuna.com/land/ad/5884745983?se=hKniceKx8RGYnY5ccmTf7w&utm_medium=api&utm_source=55569923&v=44261E6909A37B928A3D8A1D54F572F375CA4162",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-09-16"
     }
   ],
   "jobs": [
@@ -1569,7 +1590,9 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [],
+      "flags": [
+        "long-posted"
+      ],
       "role": "controls",
       "has_desc": true
     },
@@ -1862,7 +1885,7 @@
       "title": "P6 Scheduler",
       "location": "US-CA-San Francisco Bay Area",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-CA-San-Francisco-Bay-Area/P6-Scheduler_JR1539",
-      "posted_date": "Posted 4 Days Ago",
+      "posted_date": "Posted 5 Days Ago",
       "comp": "$128,960 - $139,360 annually",
       "tier": 1,
       "status": "active",
@@ -2158,7 +2181,7 @@
       "title": "PMIS Implementation Specialist",
       "location": "Boston, Massachusetts",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
-      "posted_date": "Posted 22 Days Ago",
+      "posted_date": "Posted 23 Days Ago",
       "comp": "$114,345.69 - $130,680.78",
       "tier": 1,
       "status": "active",
@@ -2176,22 +2199,6 @@
       "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Huntsville-AL/Commissioning---Qualification--C-Q--Lead_R-110337/apply",
       "posted_date": "2026-08-24T18:21:46.129+0000",
       "comp": "$159,000 - $233,200",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
-      "id": "18ef3629470b462d",
-      "kind": "direct",
-      "company": "Eli Lilly",
-      "title": "Associate Director - Program PMO Lead",
-      "location": "Indianapolis, Indiana, United States of America",
-      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Indianapolis-IN/Associate-Director---Program-PMO-Lead_R-110890/apply",
-      "posted_date": "2026-08-27T20:25:54.183+0000",
-      "comp": "$117,000 - $171,600",
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -2510,7 +2517,7 @@
       "title": "Senior Change Manager - Aviation",
       "location": "Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Change-Manager_JR6193",
-      "posted_date": "Posted 6 Days Ago",
+      "posted_date": "Posted 7 Days Ago",
       "comp": "$128,067.17 - $146,362.48",
       "tier": 1,
       "status": "active",
@@ -2744,22 +2751,6 @@
       "has_desc": true
     },
     {
-      "id": "c96fbd6eb2cddf8d",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Resident Engineer",
-      "location": "Fresno, California, United States; Los Angeles, California, United States; Sacramento, California, United States; San Francisco, California, United States; Seattle, Washington, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5389932008",
-      "posted_date": "2026-08-13T19:53:20-04:00",
-      "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
-      "has_desc": true
-    },
-    {
       "id": "609e6de7658a2eb9",
       "kind": "direct",
       "company": "Luster National",
@@ -2819,9 +2810,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "field",
       "has_desc": true
     },
@@ -2837,9 +2826,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -2855,9 +2842,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "field",
       "has_desc": true
     },
@@ -2867,15 +2852,13 @@
       "company": "Oraapps Inc",
       "title": "Oracle Primavera Unifier Technical Consultant",
       "location": "US",
-      "url": "https://www.adzuna.com/land/ad/5883866909?se=4MByUBqx8RGo-apHcns3UQ&utm_medium=api&utm_source=55569923&v=6455E346438FDC6514125969895139740275D0FF",
+      "url": "https://www.adzuna.com/land/ad/5883866909?se=GOJNceKx8RGRsJriD9fyEw&utm_medium=api&utm_source=55569923&v=6455E346438FDC6514125969895139740275D0FF",
       "posted_date": "2026-09-14T16:02:06Z",
       "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },
@@ -2885,15 +2868,13 @@
       "company": "Booz Allen Hamilton",
       "title": "Program Support Analyst, Senior",
       "location": "Norfolk, Norfolk City",
-      "url": "https://www.adzuna.com/land/ad/5884745983?se=ppVUURqx8RGwUL-VngByjQ&utm_medium=api&utm_source=55569923&v=44261E6909A37B928A3D8A1D54F572F375CA4162",
+      "url": "https://www.adzuna.com/land/ad/5884745983?se=hKniceKx8RGYnY5ccmTf7w&utm_medium=api&utm_source=55569923&v=44261E6909A37B928A3D8A1D54F572F375CA4162",
       "posted_date": "2026-09-15T11:18:44Z",
       "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },
@@ -3892,6 +3873,21 @@
       "role": "controls"
     },
     {
+      "id": "18ef3629470b462d",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Associate Director - Program PMO Lead",
+      "location": "Indianapolis, Indiana, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Indianapolis-IN/Associate-Director---Program-PMO-Lead_R-110890/apply",
+      "posted_date": "2026-08-27T20:25:54.183+0000",
+      "comp": "$117,000 - $171,600",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-16",
+      "flags": [],
+      "role": "unclear"
+    },
+    {
       "id": "92e401d8a3446284",
       "kind": "direct",
       "company": "Eli Lilly",
@@ -4055,6 +4051,21 @@
       "gone_date": "2026-09-13",
       "flags": [],
       "role": "systems"
+    },
+    {
+      "id": "c96fbd6eb2cddf8d",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Resident Engineer",
+      "location": "Fresno, California, United States; Los Angeles, California, United States; Sacramento, California, United States; San Francisco, California, United States; Seattle, Washington, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5389932008",
+      "posted_date": "2026-08-13T19:53:20-04:00",
+      "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-16",
+      "flags": [],
+      "role": "field"
     }
   ]
 }
