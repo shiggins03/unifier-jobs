@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-16",
+  "updated": "2026-09-17",
   "warnings": [],
   "roster": [
     {
@@ -1557,6 +1557,20 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-09-16"
+    },
+    {
+      "company": "Oraapps Inc",
+      "url": "https://www.adzuna.com/land/ad/5883866909?se=7nBlf6yy8RG51dr89L8inQ&utm_medium=api&utm_source=55569923&v=6455E346438FDC6514125969895139740275D0FF",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-09-17"
+    },
+    {
+      "company": "Booz Allen Hamilton",
+      "url": "https://www.adzuna.com/land/ad/5884745983?se=Dv35f6yy8RG51dr89L8inQ&utm_medium=api&utm_source=55569923&v=44261E6909A37B928A3D8A1D54F572F375CA4162",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-09-17"
     }
   ],
   "jobs": [
@@ -1686,22 +1700,6 @@
       "location": "Lake Charles, Louisiana, United States",
       "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=298315&jobPipeline=PhenomCareerSite",
       "posted_date": "2026-08-19T17:19:43.337+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
-      "has_desc": true
-    },
-    {
-      "id": "b5ce6adecc757d68",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Piping Superintendent",
-      "location": "Lake Charles, Louisiana, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297241&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-21T19:18:37.208+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -1863,6 +1861,22 @@
       "has_desc": true
     },
     {
+      "id": "567408d36e24d283",
+      "kind": "direct",
+      "company": "Deloitte",
+      "title": "US E-Consulting Services – Manager – S&T/Strategy/I&RE – Capital Projects (Project Delivery) – FY27 – 354009 – OK",
+      "location": null,
+      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Manager-Project-Delivery/354009",
+      "posted_date": "Fri, 29 May 2026 00:00:00 +0000",
+      "comp": "range is $134,500 to $265,100",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
       "id": "827308f08705f2d8",
       "kind": "direct",
       "company": "Turner & Townsend",
@@ -1885,7 +1899,7 @@
       "title": "P6 Scheduler",
       "location": "US-CA-San Francisco Bay Area",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-CA-San-Francisco-Bay-Area/P6-Scheduler_JR1539",
-      "posted_date": "Posted 5 Days Ago",
+      "posted_date": "Posted 6 Days Ago",
       "comp": "$128,960 - $139,360 annually",
       "tier": 1,
       "status": "active",
@@ -1939,24 +1953,6 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "a82018d7a4a03839",
-      "kind": "direct",
-      "company": "Eli Lilly",
-      "title": "Associate Director - Project Controls - GFD",
-      "location": "Indianapolis, Indiana, United States of America",
-      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Indianapolis-IN/Project-Controls-Advisor--Global-Facilities-Delivery_R-95938-1/apply",
-      "posted_date": "2025-11-06T14:17:47.203+0000",
-      "comp": "$117,000 - $171,600",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [
-        "long-posted"
-      ],
       "role": "controls",
       "has_desc": true
     },
@@ -2127,22 +2123,6 @@
       "has_desc": true
     },
     {
-      "id": "82275c7b5b616475",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Lead Workface Planner",
-      "location": "United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297774&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-08-17T17:23:14.436+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
       "id": "f9ff7d292d91fc13",
       "kind": "board",
       "company": "Crystal Management",
@@ -2181,7 +2161,7 @@
       "title": "PMIS Implementation Specialist",
       "location": "Boston, Massachusetts",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
-      "posted_date": "Posted 23 Days Ago",
+      "posted_date": "Posted 24 Days Ago",
       "comp": "$114,345.69 - $130,680.78",
       "tier": 1,
       "status": "active",
@@ -2351,22 +2331,6 @@
       "has_desc": true
     },
     {
-      "id": "06b43bd780dd640f",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Corporate Welding Engineer",
-      "location": "Houston, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=298742&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-08-31T19:16:29.170+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
-      "has_desc": true
-    },
-    {
       "id": "d46130a734391356",
       "kind": "direct",
       "company": "Bechtel",
@@ -2431,22 +2395,6 @@
       "has_desc": true
     },
     {
-      "id": "738b1019de2e8cc2",
-      "kind": "board",
-      "company": "Cloudspace LLC",
-      "title": "IT - Principal Consultant | Oracle Edge Applications | Oracle Unifier",
-      "location": "Jersey Village, Harris County",
-      "url": "https://www.adzuna.com/details/5868081079?utm_medium=api&utm_source=55569923",
-      "posted_date": "2026-09-02T21:08:32Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
       "id": "3a24ae1f1a4fe701",
       "kind": "direct",
       "company": "Bechtel",
@@ -2495,19 +2443,19 @@
       "has_desc": true
     },
     {
-      "id": "3368d32699f04f06",
+      "id": "10c33571feebe917",
       "kind": "direct",
-      "company": "Bechtel",
-      "title": "Work Control Coordinator / Permit Writer",
-      "location": "Brownsville, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299014&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-09-09T14:15:08.310+0000",
+      "company": "Deloitte",
+      "title": "US E-Consulting Services – Consultant – S&T/Strategy/I&RE – Capital Projects (Procore) – 361869 – OK",
+      "location": null,
+      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Consultant-Procore-Implementation/361869",
+      "posted_date": "Wed, 05 Aug 2026 00:00:00 +0000",
       "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": "field",
+      "role": "systems",
       "has_desc": true
     },
     {
@@ -2517,7 +2465,7 @@
       "title": "Senior Change Manager - Aviation",
       "location": "Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Change-Manager_JR6193",
-      "posted_date": "Posted 7 Days Ago",
+      "posted_date": "Posted 8 Days Ago",
       "comp": "$128,067.17 - $146,362.48",
       "tier": 1,
       "status": "active",
@@ -2852,7 +2800,7 @@
       "company": "Oraapps Inc",
       "title": "Oracle Primavera Unifier Technical Consultant",
       "location": "US",
-      "url": "https://www.adzuna.com/land/ad/5883866909?se=GOJNceKx8RGRsJriD9fyEw&utm_medium=api&utm_source=55569923&v=6455E346438FDC6514125969895139740275D0FF",
+      "url": "https://www.adzuna.com/land/ad/5883866909?se=7nBlf6yy8RG51dr89L8inQ&utm_medium=api&utm_source=55569923&v=6455E346438FDC6514125969895139740275D0FF",
       "posted_date": "2026-09-14T16:02:06Z",
       "comp": null,
       "tier": 1,
@@ -2868,7 +2816,7 @@
       "company": "Booz Allen Hamilton",
       "title": "Program Support Analyst, Senior",
       "location": "Norfolk, Norfolk City",
-      "url": "https://www.adzuna.com/land/ad/5884745983?se=hKniceKx8RGYnY5ccmTf7w&utm_medium=api&utm_source=55569923&v=44261E6909A37B928A3D8A1D54F572F375CA4162",
+      "url": "https://www.adzuna.com/land/ad/5884745983?se=Dv35f6yy8RG51dr89L8inQ&utm_medium=api&utm_source=55569923&v=44261E6909A37B928A3D8A1D54F572F375CA4162",
       "posted_date": "2026-09-15T11:18:44Z",
       "comp": null,
       "tier": 1,
@@ -2876,6 +2824,60 @@
       "gone_date": null,
       "flags": [],
       "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "f1eb4b539fc2efd4",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Area Lead Architectural Field Engineer",
+      "location": "New Albany, Ohio, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299076&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-16T19:16:15.288+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "5005eee5b0512c29",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Area Lead Piping Field Engineer - Undergrounds",
+      "location": "New Albany, Ohio, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299181&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-16T20:41:55.126+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "eee3d2074cdf7f5b",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Document Control Specialist",
+      "location": "California, USA",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5422725008",
+      "posted_date": "2026-09-16T18:48:14-04:00",
+      "comp": "Salary: $80k-$140k/year ($38-$67/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -2965,6 +2967,21 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-07-24",
+      "flags": [],
+      "role": "field"
+    },
+    {
+      "id": "b5ce6adecc757d68",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Piping Superintendent",
+      "location": "Lake Charles, Louisiana, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297241&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-21T19:18:37.208+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-17",
       "flags": [],
       "role": "field"
     },
@@ -3299,21 +3316,6 @@
       "role": "unclear"
     },
     {
-      "id": "567408d36e24d283",
-      "kind": "direct",
-      "company": "Deloitte",
-      "title": "US E-Consulting Services – Manager – S&T/Strategy/I&RE – Capital Projects (Project Delivery) – FY27 – 354009 – OK",
-      "location": null,
-      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Manager-Project-Delivery/354009",
-      "posted_date": "Fri, 29 May 2026 00:00:00 +0000",
-      "comp": "range is $134,500 to $265,100",
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-07-30",
-      "flags": [],
-      "role": "unclear"
-    },
-    {
       "id": "9b450b2863b5d6aa",
       "kind": "direct",
       "company": "Bechtel",
@@ -3400,6 +3402,23 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-08-05",
+      "flags": [
+        "long-posted"
+      ],
+      "role": "controls"
+    },
+    {
+      "id": "a82018d7a4a03839",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Associate Director - Project Controls - GFD",
+      "location": "Indianapolis, Indiana, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Indianapolis-IN/Project-Controls-Advisor--Global-Facilities-Delivery_R-95938-1/apply",
+      "posted_date": "2025-11-06T14:17:47.203+0000",
+      "comp": "$117,000 - $171,600",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-17",
       "flags": [
         "long-posted"
       ],
@@ -3828,6 +3847,21 @@
       "role": "unclear"
     },
     {
+      "id": "82275c7b5b616475",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Lead Workface Planner",
+      "location": "United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297774&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-08-17T17:23:14.436+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-17",
+      "flags": [],
+      "role": "controls"
+    },
+    {
       "id": "c104adcaa908b5f1",
       "kind": "board",
       "company": "AtkinsRéalis",
@@ -3978,6 +4012,21 @@
       "role": "systems"
     },
     {
+      "id": "06b43bd780dd640f",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Corporate Welding Engineer",
+      "location": "Houston, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=298742&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-08-31T19:16:29.170+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-17",
+      "flags": [],
+      "role": "field"
+    },
+    {
       "id": "5ee65b476fa25009",
       "kind": "direct",
       "company": "Accenture",
@@ -4004,6 +4053,36 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-09-12",
+      "flags": [],
+      "role": "field"
+    },
+    {
+      "id": "738b1019de2e8cc2",
+      "kind": "board",
+      "company": "Cloudspace LLC",
+      "title": "IT - Principal Consultant | Oracle Edge Applications | Oracle Unifier",
+      "location": "Jersey Village, Harris County",
+      "url": "https://www.adzuna.com/details/5868081079?utm_medium=api&utm_source=55569923",
+      "posted_date": "2026-09-02T21:08:32Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-17",
+      "flags": [],
+      "role": "systems"
+    },
+    {
+      "id": "3368d32699f04f06",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Work Control Coordinator / Permit Writer",
+      "location": "Brownsville, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299014&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-09T14:15:08.310+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-17",
       "flags": [],
       "role": "field"
     },
@@ -4036,21 +4115,6 @@
       "gone_date": "2026-09-11",
       "flags": [],
       "role": "field"
-    },
-    {
-      "id": "10c33571feebe917",
-      "kind": "direct",
-      "company": "Deloitte",
-      "title": "US E-Consulting Services – Consultant – S&T/Strategy/I&RE – Capital Projects (Procore) – 361869 – OK",
-      "location": null,
-      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Consultant-Procore-Implementation/361869",
-      "posted_date": "Wed, 05 Aug 2026 00:00:00 +0000",
-      "comp": null,
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-09-13",
-      "flags": [],
-      "role": "systems"
     },
     {
       "id": "c96fbd6eb2cddf8d",
