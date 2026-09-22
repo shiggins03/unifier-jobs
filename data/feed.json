@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-21",
+  "updated": "2026-09-22",
   "warnings": [
     "generic_page:City of New York: zero results for 3+ runs (was returning data)",
     "oracle_orc:Peloton Consulting Group: zero results for 3+ runs (was returning data)"
@@ -1658,6 +1658,34 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-09-21"
+    },
+    {
+      "company": "Oraapps Inc",
+      "url": "https://www.adzuna.com/land/ad/5883866909?se=lkkhLpq28RG4atINPhkN_w&utm_medium=api&utm_source=55569923&v=6455E346438FDC6514125969895139740275D0FF",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-09-22"
+    },
+    {
+      "company": "Booz Allen Hamilton",
+      "url": "https://www.adzuna.com/land/ad/5889694569?se=gDAOL5q28RGP9pI-TYx0qg&utm_medium=api&utm_source=55569923&v=15934D2C54980697D074F8C14678B9B59336EEE1",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-09-22"
+    },
+    {
+      "company": "Booz Allen Hamilton",
+      "url": "https://www.adzuna.com/land/ad/5893684249?se=gDAOL5q28RGP9pI-TYx0qg&utm_medium=api&utm_source=55569923&v=3A02C4A34CFCA133D32E4C0530E78FE913A0CBCF",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-09-22"
+    },
+    {
+      "company": "Booz Allen Hamilton",
+      "url": "https://www.adzuna.com/land/ad/5886144100?se=gDAOL5q28RGP9pI-TYx0qg&utm_medium=api&utm_source=55569923&v=77DA0242CF66111CE3BA349F9EE9C237D6404219",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-09-22"
     }
   ],
   "jobs": [
@@ -1970,7 +1998,7 @@
       "title": "P6 Scheduler",
       "location": "US-CA-San Francisco Bay Area",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-CA-San-Francisco-Bay-Area/P6-Scheduler_JR1539",
-      "posted_date": "Posted 10 Days Ago",
+      "posted_date": "Posted 11 Days Ago",
       "comp": "$128,960 - $139,360 annually",
       "tier": 1,
       "status": "active",
@@ -2141,7 +2169,9 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [],
+      "flags": [
+        "long-posted"
+      ],
       "role": "systems",
       "has_desc": true
     },
@@ -2232,7 +2262,7 @@
       "title": "PMIS Implementation Specialist",
       "location": "Boston, Massachusetts",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
-      "posted_date": "Posted 28 Days Ago",
+      "posted_date": "Posted 29 Days Ago",
       "comp": "$114,345.69 - $130,680.78",
       "tier": 1,
       "status": "active",
@@ -2322,22 +2352,6 @@
       "has_desc": true
     },
     {
-      "id": "3e9bcb8d9f9f341f",
-      "kind": "direct",
-      "company": "Deloitte",
-      "title": "US E-Consulting Services – Sr. Consultant – S&T/Strategy/I&RE – Capital Projects (DBA) – 354006 – OK",
-      "location": null,
-      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Senior-Consultant-DBA-PWA/354006",
-      "posted_date": "Fri, 29 May 2026 00:00:00 +0000",
-      "comp": "range is $110,700 to $218,300",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
       "id": "7502be7141f16ad9",
       "kind": "direct",
       "company": "Deloitte",
@@ -2351,22 +2365,6 @@
       "gone_date": null,
       "flags": [],
       "role": "systems",
-      "has_desc": true
-    },
-    {
-      "id": "6e695f7c7a2ba0e0",
-      "kind": "direct",
-      "company": "Deloitte",
-      "title": "US E-Consulting Services – Sr. Consultant – S&T/Strategy/I&RE – Capital Projects (Utilities) – 363272 – OK",
-      "location": null,
-      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Senior-Consultant-Utilities/363272",
-      "posted_date": "Mon, 17 Aug 2026 00:00:00 +0000",
-      "comp": "range is $110,700 to $218,300",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "unclear",
       "has_desc": true
     },
     {
@@ -2482,29 +2480,13 @@
       "has_desc": true
     },
     {
-      "id": "10c33571feebe917",
-      "kind": "direct",
-      "company": "Deloitte",
-      "title": "US E-Consulting Services – Consultant – S&T/Strategy/I&RE – Capital Projects (Procore) – 361869 – OK",
-      "location": null,
-      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Consultant-Procore-Implementation/361869",
-      "posted_date": "Wed, 05 Aug 2026 00:00:00 +0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
       "id": "f12d85de5e10bab4",
       "kind": "direct",
       "company": "STV",
       "title": "Senior Change Manager - Aviation",
       "location": "Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Change-Manager_JR6193",
-      "posted_date": "Posted 12 Days Ago",
+      "posted_date": "Posted 13 Days Ago",
       "comp": "$128,067.17 - $146,362.48",
       "tier": 1,
       "status": "active",
@@ -2823,7 +2805,7 @@
       "company": "Oraapps Inc",
       "title": "Oracle Primavera Unifier Technical Consultant",
       "location": "US",
-      "url": "https://www.adzuna.com/land/ad/5883866909?se=9DAlhdy18RGyxqEDqklCVQ&utm_medium=api&utm_source=55569923&v=6455E346438FDC6514125969895139740275D0FF",
+      "url": "https://www.adzuna.com/land/ad/5883866909?se=lkkhLpq28RG4atINPhkN_w&utm_medium=api&utm_source=55569923&v=6455E346438FDC6514125969895139740275D0FF",
       "posted_date": "2026-09-14T16:02:06Z",
       "comp": null,
       "tier": 1,
@@ -2839,7 +2821,7 @@
       "company": "Booz Allen Hamilton",
       "title": "Program Support Analyst, Senior",
       "location": "Norfolk, Norfolk City",
-      "url": "https://www.adzuna.com/land/ad/5886144100?se=RgNBhty18RGVK77OOimlQQ&utm_medium=api&utm_source=55569923&v=77DA0242CF66111CE3BA349F9EE9C237D6404219",
+      "url": "https://www.adzuna.com/land/ad/5886144100?se=gDAOL5q28RGP9pI-TYx0qg&utm_medium=api&utm_source=55569923&v=77DA0242CF66111CE3BA349F9EE9C237D6404219",
       "posted_date": "2026-09-16T08:23:22Z",
       "comp": "$77,500 - $176,000",
       "tier": 1,
@@ -2983,7 +2965,7 @@
       "company": "Booz Allen Hamilton",
       "title": "Program Support Analyst, Senior with Security Clearance",
       "location": "Norfolk, Norfolk City",
-      "url": "https://www.adzuna.com/land/ad/5889694569?se=RgNBhty18RGVK77OOimlQQ&utm_medium=api&utm_source=55569923&v=15934D2C54980697D074F8C14678B9B59336EEE1",
+      "url": "https://www.adzuna.com/land/ad/5889694569?se=gDAOL5q28RGP9pI-TYx0qg&utm_medium=api&utm_source=55569923&v=15934D2C54980697D074F8C14678B9B59336EEE1",
       "posted_date": "2026-09-18T14:04:27Z",
       "comp": null,
       "tier": 1,
@@ -3022,6 +3004,60 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "38db547bdcd3cbd2",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Instrumentation Field Engineer",
+      "location": "United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299356&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-21T19:16:40.268+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "47733dfa77659518",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Workface Planner (E&I)",
+      "location": "Lake Charles, Louisiana, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299447&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-21T20:53:59.114+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "d35d6b0f711df1e4",
+      "kind": "board",
+      "company": "Booz Allen Hamilton",
+      "title": "Program Support Analyst, Mid with Security Clearance",
+      "location": "Norfolk, Norfolk City",
+      "url": "https://www.adzuna.com/land/ad/5893684249?se=gDAOL5q28RGP9pI-TYx0qg&utm_medium=api&utm_source=55569923&v=3A02C4A34CFCA133D32E4C0530E78FE913A0CBCF",
+      "posted_date": "2026-09-22T02:45:12Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
       "role": "unclear",
       "has_desc": true
     },
@@ -4187,6 +4223,36 @@
       "role": "systems"
     },
     {
+      "id": "3e9bcb8d9f9f341f",
+      "kind": "direct",
+      "company": "Deloitte",
+      "title": "US E-Consulting Services – Sr. Consultant – S&T/Strategy/I&RE – Capital Projects (DBA) – 354006 – OK",
+      "location": null,
+      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Senior-Consultant-DBA-PWA/354006",
+      "posted_date": "Fri, 29 May 2026 00:00:00 +0000",
+      "comp": "range is $110,700 to $218,300",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-22",
+      "flags": [],
+      "role": "unclear"
+    },
+    {
+      "id": "6e695f7c7a2ba0e0",
+      "kind": "direct",
+      "company": "Deloitte",
+      "title": "US E-Consulting Services – Sr. Consultant – S&T/Strategy/I&RE – Capital Projects (Utilities) – 363272 – OK",
+      "location": null,
+      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Senior-Consultant-Utilities/363272",
+      "posted_date": "Mon, 17 Aug 2026 00:00:00 +0000",
+      "comp": "range is $110,700 to $218,300",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-22",
+      "flags": [],
+      "role": "unclear"
+    },
+    {
       "id": "06b43bd780dd640f",
       "kind": "direct",
       "company": "Bechtel",
@@ -4305,6 +4371,21 @@
       "gone_date": "2026-09-11",
       "flags": [],
       "role": "field"
+    },
+    {
+      "id": "10c33571feebe917",
+      "kind": "direct",
+      "company": "Deloitte",
+      "title": "US E-Consulting Services – Consultant – S&T/Strategy/I&RE – Capital Projects (Procore) – 361869 – OK",
+      "location": null,
+      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Consultant-Procore-Implementation/361869",
+      "posted_date": "Wed, 05 Aug 2026 00:00:00 +0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-22",
+      "flags": [],
+      "role": "systems"
     },
     {
       "id": "a71c19a0cabf2369",
