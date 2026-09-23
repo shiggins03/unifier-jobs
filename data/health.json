@@ -19,7 +19,7 @@
       0
     ],
     "fail_streak": 0,
-    "last_run": "2026-09-22"
+    "last_run": "2026-09-23"
   },
   "workday:JLL": {
     "counts": [
@@ -30,7 +30,7 @@
       0
     ],
     "fail_streak": 0,
-    "last_run": "2026-09-22",
+    "last_run": "2026-09-23",
     "inventory": 2000
   },
   "workday:Accenture": {
@@ -42,7 +42,7 @@
       0
     ],
     "fail_streak": 0,
-    "last_run": "2026-09-22",
+    "last_run": "2026-09-23",
     "inventory": 2000
   },
   "generic_page:Bechtel": {
@@ -76,7 +76,7 @@
       0
     ],
     "fail_streak": 0,
-    "last_run": "2026-09-22"
+    "last_run": "2026-09-23"
   },
   "generic_page:DRMcNatty & Associates": {
     "counts": [
@@ -87,7 +87,7 @@
       1
     ],
     "fail_streak": 0,
-    "last_run": "2026-09-22"
+    "last_run": "2026-09-23"
   },
   "generic_page:OnIndus": {
     "counts": [
@@ -98,7 +98,7 @@
       0
     ],
     "fail_streak": 0,
-    "last_run": "2026-09-22"
+    "last_run": "2026-09-23"
   },
   "generic_page:Project Partners": {
     "counts": [
@@ -144,10 +144,7 @@
     "fail_streak": 0,
     "last_run": "2026-07-17"
   },
-  "_warnings": [
-    "generic_page:City of New York: zero results for 3+ runs (was returning data)",
-    "oracle_orc:Peloton Consulting Group: zero results for 3+ runs (was returning data)"
-  ],
+  "_warnings": [],
   "workday:Consertus": {
     "counts": [
       2,
@@ -157,20 +154,20 @@
       2
     ],
     "fail_streak": 0,
-    "last_run": "2026-09-22",
-    "inventory": 65
+    "last_run": "2026-09-23",
+    "inventory": 63
   },
   "greenhouse:Luster National": {
     "counts": [
-      29,
       31,
       31,
       31,
-      31
+      31,
+      33
     ],
     "fail_streak": 0,
-    "last_run": "2026-09-22",
-    "inventory": 55
+    "last_run": "2026-09-23",
+    "inventory": 61
   },
   "meta_graphql:Meta": {
     "counts": [
@@ -182,7 +179,7 @@
     ],
     "fail_streak": 0,
     "inventory": 50,
-    "last_run": "2026-09-22"
+    "last_run": "2026-09-23"
   },
   "oracle_orc:Oracle": {
     "counts": [
@@ -193,19 +190,19 @@
       3
     ],
     "fail_streak": 0,
-    "last_run": "2026-09-22",
-    "inventory": 2220
+    "last_run": "2026-09-23",
+    "inventory": 2236
   },
   "avature_feed:Deloitte": {
     "counts": [
-      5,
       4,
       4,
+      1,
       1,
       1
     ],
     "fail_streak": 0,
-    "last_run": "2026-09-22"
+    "last_run": "2026-09-23"
   },
   "phenom:Bechtel": {
     "counts": [
@@ -213,11 +210,11 @@
       20,
       20,
       20,
-      20
+      23
     ],
     "fail_streak": 0,
-    "inventory": 1056,
-    "last_run": "2026-09-22"
+    "inventory": 1082,
+    "last_run": "2026-09-23"
   },
   "smartrecruiters:Turner & Townsend": {
     "counts": [
@@ -228,8 +225,8 @@
       5
     ],
     "fail_streak": 0,
-    "inventory": 3272,
-    "last_run": "2026-09-22"
+    "inventory": 3273,
+    "last_run": "2026-09-23"
   },
   "workday:Mass General Brigham": {
     "counts": [
@@ -241,18 +238,18 @@
     ],
     "fail_streak": 0,
     "inventory": 2000,
-    "last_run": "2026-09-22"
+    "last_run": "2026-09-23"
   },
   "generic_page:City of New York": {
     "counts": [
-      1,
+      0,
       0,
       0,
       0,
       0
     ],
     "fail_streak": 0,
-    "last_run": "2026-09-22"
+    "last_run": "2026-09-23"
   },
   "workday:STV": {
     "counts": [
@@ -263,8 +260,8 @@
       6
     ],
     "fail_streak": 0,
-    "inventory": 396,
-    "last_run": "2026-09-22"
+    "inventory": 398,
+    "last_run": "2026-09-23"
   },
   "oracle_orc:Hill International": {
     "counts": [
@@ -275,8 +272,8 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 315,
-    "last_run": "2026-09-22"
+    "inventory": 316,
+    "last_run": "2026-09-23"
   },
   "successfactors:Amtrak": {
     "counts": [
@@ -288,7 +285,7 @@
     ],
     "fail_streak": 0,
     "inventory": 25,
-    "last_run": "2026-09-22"
+    "last_run": "2026-09-23"
   },
   "amazon_jobs:Amazon": {
     "counts": [
@@ -300,7 +297,7 @@
     ],
     "fail_streak": 0,
     "inventory": 10000,
-    "last_run": "2026-09-22"
+    "last_run": "2026-09-23"
   },
   "workday:NVIDIA": {
     "counts": [
@@ -312,7 +309,7 @@
     ],
     "fail_streak": 0,
     "inventory": 2000,
-    "last_run": "2026-09-22"
+    "last_run": "2026-09-23"
   },
   "workday:Micron": {
     "counts": [
@@ -323,8 +320,8 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 3055,
-    "last_run": "2026-09-22"
+    "inventory": 3052,
+    "last_run": "2026-09-23"
   },
   "workday:Intel": {
     "counts": [
@@ -335,8 +332,8 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 605,
-    "last_run": "2026-09-22"
+    "inventory": 609,
+    "last_run": "2026-09-23"
   },
   "workday:Pfizer": {
     "counts": [
@@ -347,8 +344,8 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 542,
-    "last_run": "2026-09-22"
+    "inventory": 549,
+    "last_run": "2026-09-23"
   },
   "workday:PwC": {
     "counts": [
@@ -359,8 +356,8 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 4037,
-    "last_run": "2026-09-22"
+    "inventory": 3991,
+    "last_run": "2026-09-23"
   },
   "phenom:Eli Lilly": {
     "counts": [
@@ -371,8 +368,8 @@
       2
     ],
     "fail_streak": 0,
-    "inventory": 666,
-    "last_run": "2026-09-22"
+    "inventory": 676,
+    "last_run": "2026-09-23"
   },
   "workday:Johnson & Johnson": {
     "counts": [
@@ -383,8 +380,8 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 1947,
-    "last_run": "2026-09-22"
+    "inventory": 1992,
+    "last_run": "2026-09-23"
   },
   "seed:MTA": {
     "counts": [
@@ -395,7 +392,7 @@
       1
     ],
     "fail_streak": 0,
-    "last_run": "2026-09-22"
+    "last_run": "2026-09-23"
   },
   "jsearch": {
     "counts": [],
@@ -404,14 +401,14 @@
   },
   "adzuna": {
     "counts": [
-      2,
       6,
       6,
       6,
-      7
+      7,
+      4
     ],
     "fail_streak": 0,
-    "last_run": "2026-09-22"
+    "last_run": "2026-09-23"
   },
   "oracle_orc:Argano": {
     "counts": [
@@ -422,8 +419,8 @@
       1
     ],
     "fail_streak": 0,
-    "inventory": 87,
-    "last_run": "2026-09-22"
+    "inventory": 88,
+    "last_run": "2026-09-23"
   },
   "workday:Moss": {
     "counts": [
@@ -434,8 +431,8 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 108,
-    "last_run": "2026-09-22"
+    "inventory": 110,
+    "last_run": "2026-09-23"
   },
   "hrmdirect:Project Partners": {
     "counts": [
@@ -447,7 +444,7 @@
     ],
     "fail_streak": 0,
     "inventory": 3,
-    "last_run": "2026-09-22"
+    "last_run": "2026-09-23"
   },
   "workday:Duke Energy": {
     "counts": [
@@ -458,8 +455,8 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 115,
-    "last_run": "2026-09-22"
+    "inventory": 119,
+    "last_run": "2026-09-23"
   },
   "oracle_orc:Con Edison": {
     "counts": [
@@ -471,7 +468,7 @@
     ],
     "fail_streak": 0,
     "inventory": 56,
-    "last_run": "2026-09-22"
+    "last_run": "2026-09-23"
   },
   "jobvite:EPMA": {
     "counts": [
@@ -483,19 +480,19 @@
     ],
     "fail_streak": 0,
     "inventory": 10,
-    "last_run": "2026-09-22"
+    "last_run": "2026-09-23"
   },
   "oracle_orc:Peloton Consulting Group": {
     "counts": [
-      1,
+      0,
       0,
       0,
       0,
       0
     ],
     "fail_streak": 0,
-    "inventory": 42,
-    "last_run": "2026-09-22"
+    "inventory": 41,
+    "last_run": "2026-09-23"
   },
   "phenom:NewYork-Presbyterian": {
     "counts": [
@@ -506,8 +503,8 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 330,
-    "last_run": "2026-09-22"
+    "inventory": 348,
+    "last_run": "2026-09-23"
   },
   "workday:AT&T": {
     "counts": [
@@ -518,8 +515,8 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 1229,
-    "last_run": "2026-09-22"
+    "inventory": 1262,
+    "last_run": "2026-09-23"
   },
   "workday:Cleveland Clinic": {
     "counts": [
@@ -530,7 +527,15 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 2130,
-    "last_run": "2026-09-22"
+    "inventory": 2161,
+    "last_run": "2026-09-23"
+  },
+  "workday:Booz Allen Hamilton": {
+    "counts": [
+      3
+    ],
+    "fail_streak": 0,
+    "inventory": 2000,
+    "last_run": "2026-09-23"
   }
 }

@@ -1,9 +1,6 @@
 {
-  "updated": "2026-09-22",
-  "warnings": [
-    "generic_page:City of New York: zero results for 3+ runs (was returning data)",
-    "oracle_orc:Peloton Consulting Group: zero results for 3+ runs (was returning data)"
-  ],
+  "updated": "2026-09-23",
+  "warnings": [],
   "roster": [
     {
       "name": "Meta",
@@ -186,6 +183,13 @@
       "ats": "oracle_orc",
       "enabled": true,
       "note": "NYC utility running a large capital program — top metro for this search. ORC endpoint found via the careers page 2026-08-12; verified 46 reqs for \"engineer\", and unlike Oracle's own site the \"unifier\" keyword is precise here (1 hit), so no search_query override is needed."
+    },
+    {
+      "name": "Booz Allen Hamilton",
+      "tier": "B",
+      "ats": "workday",
+      "enabled": true,
+      "note": "Found 2026-09-22 by the discovery net (Adzuna surfaced their \"Program Support Analyst, Mid\" in Norfolk), so they post Unifier-adjacent work. cxs verified — inventory 2000+, nonsense query 0 (real search). Tier B not A: major brand, but government-consulting comp bands sit below the Big-4 advisory roles already tiered A here. Their \"unifier\" search is fuzzy (42 hits incl. CUCM Engineer); the keyword filter drops them."
     },
     {
       "name": "NewYork-Presbyterian",
@@ -1686,6 +1690,13 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-09-22"
+    },
+    {
+      "company": "Oraapps Inc",
+      "url": "https://www.adzuna.com/land/ad/5883866909?se=fJxTfu228RGfPOmPmpOEVg&utm_medium=api&utm_source=55569923&v=6455E346438FDC6514125969895139740275D0FF",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-09-23"
     }
   ],
   "jobs": [
@@ -1783,22 +1794,6 @@
       "location": "New Albany, Ohio, United States",
       "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296422&jobPipeline=PhenomCareerSite",
       "posted_date": "2026-07-01T14:18:48.996+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
-      "has_desc": true
-    },
-    {
-      "id": "6ac85c0bced38907",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "LOTO - Tagging Authority",
-      "location": "Battle Creek, Michigan, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296964&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-15T15:19:06.160+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -2805,7 +2800,7 @@
       "company": "Oraapps Inc",
       "title": "Oracle Primavera Unifier Technical Consultant",
       "location": "US",
-      "url": "https://www.adzuna.com/land/ad/5883866909?se=lkkhLpq28RG4atINPhkN_w&utm_medium=api&utm_source=55569923&v=6455E346438FDC6514125969895139740275D0FF",
+      "url": "https://www.adzuna.com/land/ad/5883866909?se=fJxTfu228RGfPOmPmpOEVg&utm_medium=api&utm_source=55569923&v=6455E346438FDC6514125969895139740275D0FF",
       "posted_date": "2026-09-14T16:02:06Z",
       "comp": null,
       "tier": 1,
@@ -3019,9 +3014,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "field",
       "has_desc": true
     },
@@ -3037,9 +3030,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -3055,10 +3046,134 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
+      "flags": [],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "7ac4cab7ae2b46c1",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Construction Automation",
+      "location": "",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299353&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-22T21:16:57.605+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
       "flags": [
         "new"
       ],
       "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "a4ea5ff673bfb718",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Indirects Field Engineer",
+      "location": "",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299355&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-22T21:16:57.599+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "24508b42fdd0e730",
+      "kind": "direct",
+      "company": "Booz Allen Hamilton",
+      "title": "Program Support Analyst, Senior",
+      "location": "Norfolk, VA",
+      "url": "https://bah.wd1.myworkdayjobs.com/en-US/BAH_Jobs/job/Norfolk-VA/Program-Support-Analyst--Senior_R0249344",
+      "posted_date": "Posted 5 Days Ago",
+      "comp": "compensation range for this position is $77,500.00 to $176,000.00 (annualized USD)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "76dc737266f815c3",
+      "kind": "direct",
+      "company": "Booz Allen Hamilton",
+      "title": "Program Support Analyst, Mid",
+      "location": "Norfolk, VA",
+      "url": "https://bah.wd1.myworkdayjobs.com/en-US/BAH_Jobs/job/Norfolk-VA/Program-Support-Analyst--Mid_R0249968",
+      "posted_date": "Posted Yesterday",
+      "comp": "compensation range for this position is $55,200.00 to $126,000.00 (annualized USD)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "ed533c1872711625",
+      "kind": "direct",
+      "company": "Booz Allen Hamilton",
+      "title": "Program Support Manager, Senior",
+      "location": "Norfolk, VA",
+      "url": "https://bah.wd1.myworkdayjobs.com/en-US/BAH_Jobs/job/Norfolk-VA/Program-Support-Manager--Senior_R0249341",
+      "posted_date": "Posted 5 Days Ago",
+      "comp": "compensation range for this position is $77,500.00 to $176,000.00 (annualized USD)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "f2e4c258cbb435ba",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "PMIS Configuration Consultant",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5431368008",
+      "posted_date": "2026-09-22T15:32:59-04:00",
+      "comp": "Salary: $130k-$160k/year ($63-$77/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "1b7d0001046df5a6",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "PMIS Configuration Consultant",
+      "location": "Phoenix, Arizona, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5431520008",
+      "posted_date": "2026-09-22T15:33:35-04:00",
+      "comp": "Salary: $130k-$160k/year ($63-$77/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "systems",
       "has_desc": true
     },
     {
@@ -3118,6 +3233,21 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-08-15",
+      "flags": [],
+      "role": "field"
+    },
+    {
+      "id": "6ac85c0bced38907",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "LOTO - Tagging Authority",
+      "location": "Battle Creek, Michigan, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296964&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-15T15:19:06.160+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-23",
       "flags": [],
       "role": "field"
     },
