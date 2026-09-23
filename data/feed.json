@@ -1697,6 +1697,13 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-09-23"
+    },
+    {
+      "company": "Oraapps Inc",
+      "url": "https://www.adzuna.com/land/ad/5883866909?se=hPpCwPG28RG17I8Hj0wZow&utm_medium=api&utm_source=55569923&v=6455E346438FDC6514125969895139740275D0FF",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-09-23"
     }
   ],
   "jobs": [
@@ -2800,25 +2807,9 @@
       "company": "Oraapps Inc",
       "title": "Oracle Primavera Unifier Technical Consultant",
       "location": "US",
-      "url": "https://www.adzuna.com/land/ad/5883866909?se=fJxTfu228RGfPOmPmpOEVg&utm_medium=api&utm_source=55569923&v=6455E346438FDC6514125969895139740275D0FF",
+      "url": "https://www.adzuna.com/land/ad/5883866909?se=hPpCwPG28RG17I8Hj0wZow&utm_medium=api&utm_source=55569923&v=6455E346438FDC6514125969895139740275D0FF",
       "posted_date": "2026-09-14T16:02:06Z",
       "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
-      "id": "9a08e7b815e8cdeb",
-      "kind": "board",
-      "company": "Booz Allen Hamilton",
-      "title": "Program Support Analyst, Senior",
-      "location": "Norfolk, Norfolk City",
-      "url": "https://www.adzuna.com/land/ad/5886144100?se=gDAOL5q28RGP9pI-TYx0qg&utm_medium=api&utm_source=55569923&v=77DA0242CF66111CE3BA349F9EE9C237D6404219",
-      "posted_date": "2026-09-16T08:23:22Z",
-      "comp": "$77,500 - $176,000",
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -2955,22 +2946,6 @@
       "has_desc": true
     },
     {
-      "id": "ab32053d82402d84",
-      "kind": "board",
-      "company": "Booz Allen Hamilton",
-      "title": "Program Support Analyst, Senior with Security Clearance",
-      "location": "Norfolk, Norfolk City",
-      "url": "https://www.adzuna.com/land/ad/5889694569?se=gDAOL5q28RGP9pI-TYx0qg&utm_medium=api&utm_source=55569923&v=15934D2C54980697D074F8C14678B9B59336EEE1",
-      "posted_date": "2026-09-18T14:04:27Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
       "id": "7b83017148c54dee",
       "kind": "board",
       "company": "PMA Consultants Careers",
@@ -3035,22 +3010,6 @@
       "has_desc": true
     },
     {
-      "id": "d35d6b0f711df1e4",
-      "kind": "board",
-      "company": "Booz Allen Hamilton",
-      "title": "Program Support Analyst, Mid with Security Clearance",
-      "location": "Norfolk, Norfolk City",
-      "url": "https://www.adzuna.com/land/ad/5893684249?se=gDAOL5q28RGP9pI-TYx0qg&utm_medium=api&utm_source=55569923&v=3A02C4A34CFCA133D32E4C0530E78FE913A0CBCF",
-      "posted_date": "2026-09-22T02:45:12Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
       "id": "7ac4cab7ae2b46c1",
       "kind": "direct",
       "company": "Bechtel",
@@ -3062,9 +3021,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -3080,9 +3037,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "field",
       "has_desc": true
     },
@@ -3098,9 +3053,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },
@@ -3116,9 +3069,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },
@@ -3134,9 +3085,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -3152,9 +3101,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },
@@ -3170,9 +3117,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },

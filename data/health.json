@@ -162,7 +162,7 @@
       31,
       31,
       31,
-      31,
+      33,
       33
     ],
     "fail_streak": 0,
@@ -191,12 +191,12 @@
     ],
     "fail_streak": 0,
     "last_run": "2026-09-23",
-    "inventory": 2236
+    "inventory": 2235
   },
   "avature_feed:Deloitte": {
     "counts": [
       4,
-      4,
+      1,
       1,
       1,
       1
@@ -209,7 +209,7 @@
       20,
       20,
       20,
-      20,
+      23,
       23
     ],
     "fail_streak": 0,
@@ -320,7 +320,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 3052,
+    "inventory": 3053,
     "last_run": "2026-09-23"
   },
   "workday:Intel": {
@@ -332,7 +332,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 609,
+    "inventory": 611,
     "last_run": "2026-09-23"
   },
   "workday:Pfizer": {
@@ -344,7 +344,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 549,
+    "inventory": 547,
     "last_run": "2026-09-23"
   },
   "workday:PwC": {
@@ -380,7 +380,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 1992,
+    "inventory": 1993,
     "last_run": "2026-09-23"
   },
   "seed:MTA": {
@@ -403,8 +403,8 @@
     "counts": [
       6,
       6,
-      6,
       7,
+      4,
       4
     ],
     "fail_streak": 0,
@@ -515,7 +515,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 1262,
+    "inventory": 1263,
     "last_run": "2026-09-23"
   },
   "workday:Cleveland Clinic": {
@@ -527,11 +527,12 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 2161,
+    "inventory": 2160,
     "last_run": "2026-09-23"
   },
   "workday:Booz Allen Hamilton": {
     "counts": [
+      3,
       3
     ],
     "fail_streak": 0,
