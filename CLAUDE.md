@@ -234,7 +234,30 @@ Actions log, iterate. `run_adapter()` exercises a real adapter end-to-end
 before trusting it in the daily run. Keep `main()` empty between
 investigations.
 
-## Current state (update this section when you change it) — as of 2026-08-12
+## Current state (update this section when you change it) — as of 2026-09-23
+
+- Added Booz Allen Hamilton (workday bah/BAH_Jobs) — found by the discovery
+  net, 3 Norfolk roles with stated comp. NewYork-Presbyterian, AT&T, Cleveland
+  Clinic added 09-10; Peloton's $140-220k req closed 09-20 (owner applied, was
+  rejected — the closure is expected, not a monitor fault).
+- **Hard rule #4 now applies to the STORE, not just incoming records.** Active
+  board-sourced jobs are purged at store load once their employer becomes an
+  enabled monitor. Previously the check only rejected new arrivals, so copies
+  captured before an employer joined lingered ~7 runs — Booz Allen showed 6
+  entries for 3 jobs because Adzuna titles them "...with Security Clearance"
+  and locates them "Norfolk, Norfolk City" vs Workday's "Norfolk, VA", so the
+  company|title|location id never matched. CLOSED board copies are kept
+  deliberately: they are capped in the "no longer listed" section and serve as
+  evidence — NYP earned its monitor off exactly such a record.
+- **The "zero results for 3+ runs" warning now requires `inventory is None`.**
+  A source reporting healthy inventory with zero keyword matches is just a
+  listing being filled; it fired for Peloton while the endpoint served 42
+  reqs. Warning on the normal life cycle trains the owner to ignore the
+  banner. `inventory == 0` and `fail_streak >= 3` still warn, and
+  inventory-less sources (generic_page and friends) still warn because there
+  "quiet" and "broken" are genuinely indistinguishable.
+
+## Previous state — as of 2026-08-12
 
 - 32 of 48 enabled. Added Con Edison (oracle_orc ejcu/CX_1033 — NYC utility,
   top metro), Duke Energy (workday dukeenergy/search, inventory 61, 0 matches

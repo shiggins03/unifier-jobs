@@ -86,6 +86,23 @@ def run():
     dropped_kw = [k for k, j in store.items() if j.get("tier") not in live_tiers]
     for k in dropped_kw:
         del store[k]
+    # Hard rule #4 (direct listings are the product) applied to the STORE, not
+    # just to incoming records. The board-copy check in the discovery loop only
+    # rejects new arrivals, so copies captured BEFORE an employer joined the
+    # roster used to linger ~7 runs until they aged out — Booz Allen went live
+    # 2026-09-22 showing 6 entries for 3 jobs, because Adzuna titles them
+    # "...with Security Clearance" and locates them "Norfolk, Norfolk City"
+    # against Workday's "Norfolk, VA", so the id hash never matched.
+    roster_norms = {models.norm(c["name"]): c for c in companies}
+    # ACTIVE copies only. A closed board copy is harmless (it sits in the
+    # capped "no longer listed" section) and is worth keeping as evidence —
+    # NewYork-Presbyterian earned its direct monitor precisely because an old
+    # Adzuna record proved they post Unifier roles.
+    superseded = [k for k, j in store.items()
+                  if j.get("kind") == "board" and j.get("status") == "active"
+                  and (roster_match(j.get("company"), roster_norms) or {}).get("enabled")]
+    for k in superseded:
+        del store[k]
     for j in store.values():
         j["flags"] = [f for f in j["flags"] if f != "new"]
     # Derived tags are recomputed across the WHOLE store every run, not just
@@ -98,7 +115,6 @@ def run():
     triage = models.load_json(models.TRIAGE, [])
     triage_keys = {(t.get("company"), t.get("url")) for t in triage}
     health = models.load_json(models.HEALTH, {})
-    roster_norms = {models.norm(c["name"]): c for c in companies}
     query = kw["tier1"][0]
 
     def record_health(name, count, ok, inventory=None):
@@ -297,7 +313,16 @@ def run():
         elif h.get("inventory") == 0:
             warnings.append(f"{name}: source reports 0 total jobs — monitor may be "
                             f"blind or endpoint changed")
-        elif len(h.get("counts", [])) >= 3 and all(c == 0 for c in h["counts"][-3:]) \
+        # Only when the source CANNOT prove it is alive. A monitor reporting
+        # healthy inventory and zero keyword matches is the normal life cycle
+        # of a listing being filled — Peloton's $140-220k req closed on
+        # 2026-09-20 and this fired while the endpoint still served 42 reqs.
+        # Warning on that trains the owner to ignore the banner, which is
+        # worse than no banner. inventory == 0 is already caught above;
+        # inventory None (generic_page and friends) still warns, because
+        # there we genuinely cannot tell "quiet" from "broken".
+        elif h.get("inventory") is None \
+                and len(h.get("counts", [])) >= 3 and all(c == 0 for c in h["counts"][-3:]) \
                 and any(c > 0 for c in h["counts"][:-3]):
             warnings.append(f"{name}: zero results for 3+ runs (was returning data)")
     health["_warnings"] = warnings
