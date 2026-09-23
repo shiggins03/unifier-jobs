@@ -262,6 +262,20 @@ companies:
       ORC endpoint found via the careers page 2026-08-12; verified 46 reqs for
       "engineer", and unlike Oracle's own site the "unifier" keyword is precise
       here (1 hit), so no search_query override is needed.
+  - name: Booz Allen Hamilton
+    tier: B
+    ats: workday
+    workday_host: bah.wd1.myworkdayjobs.com
+    workday_tenant: bah
+    workday_site: BAH_Jobs
+    enabled: true
+    note: >-
+      Found 2026-09-22 by the discovery net (Adzuna surfaced their "Program
+      Support Analyst, Mid" in Norfolk), so they post Unifier-adjacent work.
+      cxs verified — inventory 2000+, nonsense query 0 (real search). Tier B
+      not A: major brand, but government-consulting comp bands sit below the
+      Big-4 advisory roles already tiered A here. Their "unifier" search is
+      fuzzy (42 hits incl. CUCM Engineer); the keyword filter drops them.
   - name: NewYork-Presbyterian
     tier: B
     ats: phenom
