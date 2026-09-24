@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-23",
+  "updated": "2026-09-24",
   "warnings": [
     "jobvite:EPMA: source reports 0 total jobs — monitor may be blind or endpoint changed"
   ],
@@ -1713,6 +1713,13 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-09-23"
+    },
+    {
+      "company": "AtkinsRéalis",
+      "url": "https://www.adzuna.com/land/ad/5895715282?se=VAgxCy-48RG_LevdjZ8dqA&utm_medium=api&utm_source=55569923&v=15E641876E8825078CE416C08846F6AE94C6836C",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-09-24"
     }
   ],
   "jobs": [
@@ -2009,7 +2016,7 @@
       "title": "P6 Scheduler",
       "location": "US-CA-San Francisco Bay Area",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-CA-San-Francisco-Bay-Area/P6-Scheduler_JR1539",
-      "posted_date": "Posted 12 Days Ago",
+      "posted_date": "Posted 13 Days Ago",
       "comp": "$128,960 - $139,360 annually",
       "tier": 1,
       "status": "active",
@@ -2273,7 +2280,7 @@
       "title": "PMIS Implementation Specialist",
       "location": "Boston, Massachusetts",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Boston-Massachusetts/Digital-Solutions-Specialist_JR5986",
-      "posted_date": "Posted 30 Days Ago",
+      "posted_date": "Posted 30+ Days Ago",
       "comp": "$114,345.69 - $130,680.78",
       "tier": 1,
       "status": "active",
@@ -2379,6 +2386,22 @@
       "has_desc": true
     },
     {
+      "id": "6e695f7c7a2ba0e0",
+      "kind": "direct",
+      "company": "Deloitte",
+      "title": "US E-Consulting Services – Sr. Consultant – S&T/Strategy/I&RE – Capital Projects (Utilities) – 363272 – OK",
+      "location": null,
+      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Senior-Consultant-Utilities/363272",
+      "posted_date": "Mon, 17 Aug 2026 00:00:00 +0000",
+      "comp": "range is $110,700 to $218,300",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
       "id": "286162f7cbcf4e7c",
       "kind": "direct",
       "company": "Bechtel",
@@ -2480,9 +2503,9 @@
       "company": "Luster National",
       "title": "Construction Inspector",
       "location": "Seattle, Washington, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5420014008",
-      "posted_date": "2026-09-10T10:55:06-04:00",
-      "comp": "Salary: $75k-$135k/year ($36-$65/hour)",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5389977008",
+      "posted_date": "2026-09-04T17:02:48-04:00",
+      "comp": "Salary: $85k-$150k/year ($41-$72/hour)",
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -2497,7 +2520,7 @@
       "title": "Senior Change Manager - Aviation",
       "location": "Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Change-Manager_JR6193",
-      "posted_date": "Posted 14 Days Ago",
+      "posted_date": "Posted 15 Days Ago",
       "comp": "$128,067.17 - $146,362.48",
       "tier": 1,
       "status": "active",
@@ -3142,10 +3165,134 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
+      "flags": [],
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "b526eb3425baae32",
+      "kind": "direct",
+      "company": "Oracle",
+      "title": "Principal Program Manager, Data Governance & Analytics",
+      "location": "United States",
+      "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/job/342017",
+      "posted_date": "2026-08-05",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "465bc76823bb2646",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Field DSCS Coordinator",
+      "location": "Pecos, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=294338&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-24T14:17:45.522+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "6d71bc1e11329039",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "LOTO Tagging Authority",
+      "location": "Brownsville, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299581&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-23T19:17:15.364+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
       "flags": [
         "new"
       ],
       "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "22424415f4adf194",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Field Welding Engineer",
+      "location": "Millersport, Ohio, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299560&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-23T16:16:28.907+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "ed5b1e162d6d594b",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "PMIS Configuration Consultant",
+      "location": "Los Angeles, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5431596008",
+      "posted_date": "2026-09-23T16:40:48-04:00",
+      "comp": "Salary: $130k-$160k/year ($63-$77/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "1170e234d95e771e",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Utility Coordinator",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5432887008",
+      "posted_date": "2026-09-23T11:52:40-04:00",
+      "comp": "Salary: $115k-$165k/year ($55-$79/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "89549d0ad8321b96",
+      "kind": "board",
+      "company": "AtkinsRéalis",
+      "title": "Systems Consultant",
+      "location": "Austin, Travis County",
+      "url": "https://www.adzuna.com/land/ad/5895715282?se=VAgxCy-48RG_LevdjZ8dqA&utm_medium=api&utm_source=55569923&v=15E641876E8825078CE416C08846F6AE94C6836C",
+      "posted_date": "2026-09-23T17:50:26Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
       "has_desc": true
     },
     {
@@ -4332,21 +4479,6 @@
       "location": null,
       "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Senior-Consultant-DBA-PWA/354006",
       "posted_date": "Fri, 29 May 2026 00:00:00 +0000",
-      "comp": "range is $110,700 to $218,300",
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-09-22",
-      "flags": [],
-      "role": "unclear"
-    },
-    {
-      "id": "6e695f7c7a2ba0e0",
-      "kind": "direct",
-      "company": "Deloitte",
-      "title": "US E-Consulting Services – Sr. Consultant – S&T/Strategy/I&RE – Capital Projects (Utilities) – 363272 – OK",
-      "location": null,
-      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Senior-Consultant-Utilities/363272",
-      "posted_date": "Mon, 17 Aug 2026 00:00:00 +0000",
       "comp": "range is $110,700 to $218,300",
       "tier": 1,
       "status": "gone",
