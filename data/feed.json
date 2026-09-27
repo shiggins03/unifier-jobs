@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "warnings": [
     "jobvite:EPMA: source reports 0 total jobs — monitor may be blind or endpoint changed"
   ],
@@ -2006,29 +2006,13 @@
       "has_desc": true
     },
     {
-      "id": "827308f08705f2d8",
-      "kind": "direct",
-      "company": "Turner & Townsend",
-      "title": "Senior Digital Consultant – Systems, Data & Analytics (Construction)",
-      "location": "New York, New York, US",
-      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000140344104-senior-digital-consultant-systems-data-analytics-construction-?oga=true",
-      "posted_date": "2026-07-28T22:18:49.966Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
       "id": "893a6bc8d7c72f07",
       "kind": "direct",
       "company": "Consertus",
       "title": "P6 Scheduler",
       "location": "US-CA-San Francisco Bay Area",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-CA-San-Francisco-Bay-Area/P6-Scheduler_JR1539",
-      "posted_date": "Posted 15 Days Ago",
+      "posted_date": "Posted 16 Days Ago",
       "comp": "$128,960 - $139,360 annually",
       "tier": 1,
       "status": "active",
@@ -2500,7 +2484,7 @@
       "title": "Senior Change Manager - Aviation",
       "location": "Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Change-Manager_JR6193",
-      "posted_date": "Posted 17 Days Ago",
+      "posted_date": "Posted 18 Days Ago",
       "comp": "$128,067.17 - $146,362.48",
       "tier": 1,
       "status": "active",
@@ -3289,9 +3273,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },
@@ -3307,9 +3289,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },
@@ -3325,10 +3305,26 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
+      "flags": [],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "5d5c3d90529fd48f",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Site Lead CSA Field Engineer",
+      "location": "New Albany, Ohio, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299406&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-26T19:08:22.485+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
       "flags": [
         "new"
       ],
-      "role": "systems",
+      "role": "field",
       "has_desc": true
     },
     {
@@ -3840,6 +3836,21 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-08-27",
+      "flags": [],
+      "role": "systems"
+    },
+    {
+      "id": "827308f08705f2d8",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Senior Digital Consultant – Systems, Data & Analytics (Construction)",
+      "location": "New York, New York, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000140344104-senior-digital-consultant-systems-data-analytics-construction-?oga=true",
+      "posted_date": "2026-07-28T22:18:49.966Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-09-27",
       "flags": [],
       "role": "systems"
     },
