@@ -482,12 +482,15 @@ companies:
     tier: C
     ats: jobvite
     jobvite_company: epma
-    enabled: true
+    enabled: false
     note: >-
-      epmainc.com/careers only iframes jobs.jobvite.com/epma, so the old
-      generic_page monitor was blind (same class of bug as Project Partners).
-      Rewired 2026-08-12; their Jobvite job pages carry full schema.org
-      JobPosting incl. baseSalary.
+      DISABLED 2026-09-28 — jobs.jobvite.com/epma now redirects to Jobvite's
+      support page with ?invalid=1: their career site no longer exists, though
+      epmainc.com/careers still iframes the dead link. No replacement ATS found
+      (jobs still appear on ZipRecruiter/Glassdoor, which the discovery net
+      covers). Poor fit regardless: EPMA is a Microsoft PPM partner, not an
+      Oracle shop, and 0 of the 9 reqs ever read from them mentioned Unifier.
+      The health check fired "0 total jobs" daily — that warning was correct.
   - name: CDP Inc.
     tier: C
     ats: generic_page
