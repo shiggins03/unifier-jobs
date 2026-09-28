@@ -155,11 +155,11 @@
     ],
     "fail_streak": 0,
     "last_run": "2026-09-28",
-    "inventory": 71
+    "inventory": 70
   },
   "greenhouse:Luster National": {
     "counts": [
-      36,
+      37,
       37,
       37,
       37,
@@ -191,7 +191,7 @@
     ],
     "fail_streak": 0,
     "last_run": "2026-09-28",
-    "inventory": 2208
+    "inventory": 2194
   },
   "avature_feed:Deloitte": {
     "counts": [
@@ -207,13 +207,13 @@
   "phenom:Bechtel": {
     "counts": [
       28,
-      28,
+      29,
       29,
       29,
       29
     ],
     "fail_streak": 0,
-    "inventory": 1143,
+    "inventory": 1154,
     "last_run": "2026-09-28"
   },
   "smartrecruiters:Turner & Townsend": {
@@ -225,7 +225,7 @@
       5
     ],
     "fail_streak": 0,
-    "inventory": 3305,
+    "inventory": 3311,
     "last_run": "2026-09-28"
   },
   "workday:Mass General Brigham": {
@@ -260,7 +260,7 @@
       6
     ],
     "fail_streak": 0,
-    "inventory": 393,
+    "inventory": 392,
     "last_run": "2026-09-28"
   },
   "oracle_orc:Hill International": {
@@ -272,7 +272,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 344,
+    "inventory": 342,
     "last_run": "2026-09-28"
   },
   "successfactors:Amtrak": {
@@ -320,7 +320,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 3037,
+    "inventory": 3050,
     "last_run": "2026-09-28"
   },
   "workday:Intel": {
@@ -332,7 +332,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 601,
+    "inventory": 602,
     "last_run": "2026-09-28"
   },
   "workday:Pfizer": {
@@ -344,7 +344,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 539,
+    "inventory": 547,
     "last_run": "2026-09-28"
   },
   "workday:PwC": {
@@ -356,7 +356,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 4037,
+    "inventory": 4032,
     "last_run": "2026-09-28"
   },
   "phenom:Eli Lilly": {
@@ -368,7 +368,7 @@
       2
     ],
     "fail_streak": 0,
-    "inventory": 690,
+    "inventory": 694,
     "last_run": "2026-09-28"
   },
   "workday:Johnson & Johnson": {
@@ -380,7 +380,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 1896,
+    "inventory": 1908,
     "last_run": "2026-09-28"
   },
   "seed:MTA": {
@@ -402,8 +402,8 @@
   "adzuna": {
     "counts": [
       3,
-      3,
       2,
+      3,
       3,
       3
     ],
@@ -419,7 +419,7 @@
       1
     ],
     "fail_streak": 0,
-    "inventory": 89,
+    "inventory": 90,
     "last_run": "2026-09-28"
   },
   "workday:Moss": {
@@ -431,7 +431,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 106,
+    "inventory": 104,
     "last_run": "2026-09-28"
   },
   "hrmdirect:Project Partners": {
@@ -455,7 +455,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 89,
+    "inventory": 94,
     "last_run": "2026-09-28"
   },
   "oracle_orc:Con Edison": {
@@ -491,7 +491,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 40,
+    "inventory": 41,
     "last_run": "2026-09-28"
   },
   "phenom:NewYork-Presbyterian": {
@@ -515,7 +515,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 1208,
+    "inventory": 1214,
     "last_run": "2026-09-28"
   },
   "workday:Cleveland Clinic": {
@@ -527,7 +527,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 2172,
+    "inventory": 2180,
     "last_run": "2026-09-28"
   },
   "workday:Booz Allen Hamilton": {
