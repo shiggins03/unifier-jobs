@@ -308,6 +308,13 @@ def run():
     for name, h in health.items():
         if name.startswith("_"):
             continue
+        # Only sources attempted THIS run. Every enabled adapter goes through
+        # record_health (even when its fetch fails), so last_run == today is
+        # exactly "enabled and tried". Without this, a disabled or removed
+        # monitor keeps its last health entry forever and warns about it
+        # daily — EPMA kept reporting "0 total jobs" after being disabled.
+        if h.get("last_run") != today:
+            continue
         if h.get("fail_streak", 0) >= 3:
             warnings.append(f"{name}: fetch failing ({h['fail_streak']} runs)")
         elif h.get("inventory") == 0:
