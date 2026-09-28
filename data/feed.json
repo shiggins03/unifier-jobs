@@ -1,8 +1,6 @@
 {
   "updated": "2026-09-28",
-  "warnings": [
-    "jobvite:EPMA: source reports 0 total jobs — monitor may be blind or endpoint changed"
-  ],
+  "warnings": [],
   "roster": [
     {
       "name": "Meta",
@@ -3346,9 +3344,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
