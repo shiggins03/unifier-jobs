@@ -1,11 +1,11 @@
-Requisition ID: 299447
+Requisition ID: 299353
  
  
 Relocation Authorized: National - Single
  
 Telework Type: Full-Time Office/Project
  
-Work Location: Lake Charles,LA
+Work Location: Various Work Locations USA, Brownsville, TX, Houston, TX, Lake Charles,LA, Port Arthur, TX
  
 Extraordinary teams building inspiring projects:
  
@@ -21,9 +21,16 @@ Impact Report
 . 
 Project Overview:
  
-Louisiana LNG is located approximately 11 miles southwest of Lake Charles, Louisiana. The project includes a mid-scale, mixed-refrigerant Liquefied Natural Gas (LNG) production and export facility on the west side of the Calcasieu River. There are five identical process plants. Each process plant consists of one gas pre-treatment unit, one condensate stabilization unit, and four Chart heavy hydrocarbon (HHC) removal and liquefaction groups. The facility will include associated utilities, refrigerant storage, three 235,000m3 full-containment LNG storage tanks, and three marine berths.
-Job Summary:
- 
-In this role, you will provide automation support to project teams, including setup, training, application use in work-process, software quality assurance and control, reporting, database administration, and clo
+The selected candidate will initially be placed on one of our four Liquefied Natural Gas Plant Projects in the US Gulf Coast Region for our Energy Global Business Unit, but we may also require the selected candidate to have future mobility to one of our other Global Business Units in a different location. The ideal candidate will have market sector/ sub sector construction industry experience in 
+energy
+ (liquefied natural gas), 
+manufacturing and technology
+ (semiconductor, chemical, pharmaceutical, data centers, fire power generation),
+ infrastructure
+ (aviation, rail, roads/bridges),  
+mining and minerals
+ (water treatment plant, mineral extraction, metal refining), & 
+nuclear, security, and environmental
+ (nuclear power epc, pow
 
 [Truncated for this view — full text at the posting link]
