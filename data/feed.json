@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01",
+  "updated": "2026-10-02",
   "warnings": [],
   "roster": [
     {
@@ -1809,24 +1809,6 @@
       "has_desc": true
     },
     {
-      "id": "c56496bf7fb8c5d7",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Concrete Field Engineer",
-      "location": "Clay, New York, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=294763&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-06-29T11:16:32.799+0000",
-      "comp": "Salary Range: $105,000- $160,200 annually (salary range is based on market data;",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [
-        "long-posted"
-      ],
-      "role": "field",
-      "has_desc": true
-    },
-    {
       "id": "0d8ba802b86c1207",
       "kind": "direct",
       "company": "Bechtel",
@@ -1933,40 +1915,6 @@
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Vermont-Avenue-Washington-District-of-Columbia/Senior-Project-Controls-Specialist_JR5675",
       "posted_date": "Posted 30+ Days Ago",
       "comp": "$128,067.17 - $146,362.48",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "b605fa2dadddbf1c",
-      "kind": "direct",
-      "company": "Oracle",
-      "title": "Senior Principal Consultant-Oracle Primavera Unifier",
-      "location": "United States",
-      "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/job/341219",
-      "posted_date": "2026-07-27",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [
-        "title-match"
-      ],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
-      "id": "893a6bc8d7c72f07",
-      "kind": "direct",
-      "company": "Consertus",
-      "title": "P6 Scheduler",
-      "location": "US-CA-San Francisco Bay Area",
-      "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-CA-San-Francisco-Bay-Area/P6-Scheduler_JR1539",
-      "posted_date": "Posted 19 Days Ago",
-      "comp": "$128,960 - $139,360 annually",
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -2119,22 +2067,6 @@
       "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Pleasant-Prairie-WI/Project-Controls-Director--Global-Facilities-Delivery_R-109869/apply",
       "posted_date": "2026-08-13T00:21:47.083+0000",
       "comp": "$129,000 - $209,000",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "f2644f76f383f0f3",
-      "kind": "direct",
-      "company": "STV",
-      "title": "Project Controls Specialist",
-      "location": "South Flower Street, Los Angeles, California",
-      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/South-Flower-Street-Los-Angeles-California/Project-Controls-Coordinator_JR6022",
-      "posted_date": "Posted 30+ Days Ago",
-      "comp": "$82,862.07 - $94,699.51",
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -2405,7 +2337,7 @@
       "title": "Senior Change Manager - Aviation",
       "location": "Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Change-Manager_JR6193",
-      "posted_date": "Posted 22 Days Ago",
+      "posted_date": "Posted 23 Days Ago",
       "comp": "$128,067.17 - $146,362.48",
       "tier": 1,
       "status": "active",
@@ -2911,22 +2843,6 @@
       "has_desc": true
     },
     {
-      "id": "22424415f4adf194",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Field Welding Engineer",
-      "location": "Millersport, Ohio, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299560&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-09-23T16:16:28.907+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
-      "has_desc": true
-    },
-    {
       "id": "ed5b1e162d6d594b",
       "kind": "direct",
       "company": "Luster National",
@@ -3052,22 +2968,6 @@
       "gone_date": null,
       "flags": [],
       "role": "field",
-      "has_desc": true
-    },
-    {
-      "id": "13e80f9fd832b65b",
-      "kind": "direct",
-      "company": "Turner & Townsend",
-      "title": "Senior Digital Consultant – Systems, Data & Analytics (Construction)",
-      "location": "Houston, Texas, US",
-      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000151934359-senior-digital-consultant-systems-data-analytics-construction-?oga=true",
-      "posted_date": "2026-09-25T20:26:44.496Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
       "has_desc": true
     },
     {
@@ -3275,6 +3175,23 @@
       "gone_date": "2026-08-15",
       "flags": [],
       "role": "systems"
+    },
+    {
+      "id": "c56496bf7fb8c5d7",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Concrete Field Engineer",
+      "location": "Clay, New York, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=294763&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-06-29T11:16:32.799+0000",
+      "comp": "Salary Range: $105,000- $160,200 annually (salary range is based on market data;",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-02",
+      "flags": [
+        "long-posted"
+      ],
+      "role": "field"
     },
     {
       "id": "1c90c19778c8df5a",
@@ -3703,6 +3620,23 @@
       "role": "field"
     },
     {
+      "id": "b605fa2dadddbf1c",
+      "kind": "direct",
+      "company": "Oracle",
+      "title": "Senior Principal Consultant-Oracle Primavera Unifier",
+      "location": "United States",
+      "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/job/341219",
+      "posted_date": "2026-07-27",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-02",
+      "flags": [
+        "title-match"
+      ],
+      "role": "systems"
+    },
+    {
       "id": "0aba6533f5d73407",
       "kind": "direct",
       "company": "Bechtel",
@@ -3806,6 +3740,21 @@
       "gone_date": "2026-09-27",
       "flags": [],
       "role": "systems"
+    },
+    {
+      "id": "893a6bc8d7c72f07",
+      "kind": "direct",
+      "company": "Consertus",
+      "title": "P6 Scheduler",
+      "location": "US-CA-San Francisco Bay Area",
+      "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-CA-San-Francisco-Bay-Area/P6-Scheduler_JR1539",
+      "posted_date": "Posted 19 Days Ago",
+      "comp": "$128,960 - $139,360 annually",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-02",
+      "flags": [],
+      "role": "controls"
     },
     {
       "id": "129d9dad97036d6d",
@@ -4260,6 +4209,21 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-08-23",
+      "flags": [],
+      "role": "controls"
+    },
+    {
+      "id": "f2644f76f383f0f3",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Project Controls Specialist",
+      "location": "South Flower Street, Los Angeles, California",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/South-Flower-Street-Los-Angeles-California/Project-Controls-Coordinator_JR6022",
+      "posted_date": "Posted 30+ Days Ago",
+      "comp": "$82,862.07 - $94,699.51",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-02",
       "flags": [],
       "role": "controls"
     },
@@ -4894,6 +4858,21 @@
       "role": "unclear"
     },
     {
+      "id": "22424415f4adf194",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Field Welding Engineer",
+      "location": "Millersport, Ohio, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299560&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-23T16:16:28.907+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-02",
+      "flags": [],
+      "role": "field"
+    },
+    {
       "id": "89549d0ad8321b96",
       "kind": "board",
       "company": "AtkinsRéalis",
@@ -4922,6 +4901,21 @@
       "gone_date": "2026-09-30",
       "flags": [],
       "role": "unclear"
+    },
+    {
+      "id": "13e80f9fd832b65b",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Senior Digital Consultant – Systems, Data & Analytics (Construction)",
+      "location": "Houston, Texas, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000151934359-senior-digital-consultant-systems-data-analytics-construction-?oga=true",
+      "posted_date": "2026-09-25T20:26:44.496Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-02",
+      "flags": [],
+      "role": "systems"
     },
     {
       "id": "29271c559a4d016e",
