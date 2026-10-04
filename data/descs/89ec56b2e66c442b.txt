@@ -1,12 +1,19 @@
 U.S. Citizenship Required:
  This position supports projects with specific access and/or contractual requirements. As a result, U.S. citizenship is required for consideration for this role.
+
 Job Description
+
 Oracle’s Construction and Engineering Global Business Unit (CEGBU) focuses on project-intensive industries such as engineering and construction, aerospace and defense, utilities, oil and gas, chemicals, industrial manufacturing, automotive, financial services, communications, travel and transportation, healthcare; state, local and federal government.
+
 The CEGBU has numerous products that support Enterprise Project Portfolio Management software such as Unifier, P6, Aconex, OPPM and Oracle Primavera Cloud (formerly Prime) that encompasses resource allocation, cost reduction, supply-chain efficiency, and decision-making―using real-time data, for the enterprise market.
+
  
+
 The Technical Architect will be involved in solution design, implementation, deployment, maintenance and documentation of Project Integrated Framework (PIF) interfaces. PIF is an integration framework used to integrate CEGBU products with external applications like SAP, EBS etc. PIF interfaces can also be used for P6/Unifier data consolidation and data migrations. 
+
 This responsibility includes interacting with clients/internal stake holders at all levels to understand the business requirements to conclude the blueprint, configuration, testing, migration, support and continuous enhancements of the integration framework.
+
 The position operating independently with some assistance and guidance to provide quality work products to a project team or customer that comply with Oracle methodologies and practices. Performs standard duties and tasks with some variation to implement Oracle products and technology to meet customer specifications.
-Standard assignments are accomplished without assistance by exercising independent judgment, within defined policies and processes, to deliver functional and technical soluti
+Standard assignments are accomplished without assistance by exercising independent judgment, within defined policies and processes, to deliver functional and technical
 
 [Truncated for this view — full text at the posting link]
