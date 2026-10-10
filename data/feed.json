@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-09",
+  "updated": "2026-10-10",
   "warnings": [],
   "roster": [
     {
@@ -1802,6 +1802,20 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-10-09"
+    },
+    {
+      "company": "The Planet Group",
+      "url": "https://www.adzuna.com/land/ad/5922109423?se=lJKEE8XE8RGjSfrCsBO0RQ&utm_medium=api&utm_source=55569923&v=F48DB573308D9962BC9057A7887FA0CB3112CE18",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-10"
+    },
+    {
+      "company": "DFND Security",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=lJKEE8XE8RGjSfrCsBO0RQ&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-10"
     }
   ],
   "jobs": [
@@ -1981,14 +1995,30 @@
       "company": "Bechtel",
       "title": "Field Welding Engineer",
       "location": "Brownsville, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300055&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-10-08T13:29:26.439+0000",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300059&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-10-08T14:14:31.879+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
       "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "827308f08705f2d8",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Senior Digital Consultant – Systems, Data & Analytics (Construction)",
+      "location": "New York, New York, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000154790849-senior-digital-consultant-systems-data-analytics-construction-?oga=true",
+      "posted_date": "2026-10-09T23:26:39.422Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "systems",
       "has_desc": true
     },
     {
@@ -2164,7 +2194,7 @@
       "kind": "direct",
       "company": "Turner & Townsend",
       "title": "Director, Construction Technologies",
-      "location": "San Francisco, California, US",
+      "location": "San Francisco, CALIFORNIA, US",
       "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000144385367-director-construction-technologies?oga=true",
       "posted_date": "2026-08-19T18:59:48.284Z",
       "comp": null,
@@ -2288,22 +2318,6 @@
       "has_desc": true
     },
     {
-      "id": "d46130a734391356",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Welding Field Engineer",
-      "location": "Pecos, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=298427&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-08-31T19:16:29.169+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
-      "has_desc": true
-    },
-    {
       "id": "68c0cac114a3b1d8",
       "kind": "direct",
       "company": "Bechtel",
@@ -2390,7 +2404,7 @@
       "title": "Senior Change Manager - Aviation",
       "location": "Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Change-Manager_JR6193",
-      "posted_date": "Posted 30 Days Ago",
+      "posted_date": "Posted 30+ Days Ago",
       "comp": "$128,067.17 - $146,362.48",
       "tier": 1,
       "status": "active",
@@ -2832,22 +2846,6 @@
       "has_desc": true
     },
     {
-      "id": "465bc76823bb2646",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Field DSCS Coordinator",
-      "location": "Pecos, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=294338&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-09-24T14:17:45.522+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
       "id": "6d71bc1e11329039",
       "kind": "direct",
       "company": "Bechtel",
@@ -3272,7 +3270,7 @@
       "title": "Global Procore Administrator & Construction Process Lead",
       "location": "Boise, ID - Main Site",
       "url": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Boise-ID---Main-Site/Global-Document-Control---PMIS-Governance-Lead_JR104322",
-      "posted_date": "Posted Yesterday",
+      "posted_date": "Posted 2 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -3326,8 +3324,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [
-        "title-match",
-        "new"
+        "title-match"
       ],
       "role": "systems",
       "has_desc": true
@@ -3338,8 +3335,43 @@
       "company": "DFND Security",
       "title": "Oracle WACS",
       "location": "Fort Sam Houston, Bexar County",
-      "url": "https://www.adzuna.com/land/ad/5863704034?se=wkh_FwbE8RG_59bpLSVmjQ&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=lJKEE8XE8RGjSfrCsBO0RQ&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
       "posted_date": "2026-08-31T22:19:09Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "b5fcc0496044fbbd",
+      "kind": "direct",
+      "company": "Meta",
+      "title": "Schedule & Technical Integration Manager, Data Centers",
+      "location": "Reston, VA; Menlo Park, CA",
+      "url": "https://www.metacareers.com/profile/job_details/1565674545076717/",
+      "posted_date": "2026-06-23T06:45:55-07:00",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new",
+        "long-posted"
+      ],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "60bc7cb8e5fb2712",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Digital Commercial SME",
+      "location": "Houston, Texas, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000154791019-digital-commercial-sme?oga=true",
+      "posted_date": "2026-10-09T23:26:50.791Z",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -3348,6 +3380,78 @@
         "new"
       ],
       "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "61ae7c33700c72b3",
+      "kind": "direct",
+      "company": "Turner & Townsend",
+      "title": "Digital Project Controls SME",
+      "location": "Houston, Texas, US",
+      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000154790889-digital-project-controls-sme?oga=true",
+      "posted_date": "2026-10-09T23:26:43.285Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "d0a7c89e2775111f",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Senior Project Controls Manager - Aviation",
+      "location": "Denver, Colorado",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Denver-Colorado/Senior-Project-Controls-Manager---Aviation_JR6367",
+      "posted_date": "Posted Yesterday",
+      "comp": "$187,591.53 - $214,390.32",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "ec262923dbc9d591",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Senior Project Controls Manager - Aviation",
+      "location": "Los Angeles, California",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Project-Controls-Manager---Aviation_JR6366",
+      "posted_date": "Posted Today",
+      "comp": "$196,118.41 - $224,135.33",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "4f8ffeb8b6b4f3cb",
+      "kind": "board",
+      "company": "The Planet Group",
+      "title": "Document Control Specialist",
+      "location": "Bay City, Bay County",
+      "url": "https://www.adzuna.com/land/ad/5922109423?se=lJKEE8XE8RGjSfrCsBO0RQ&utm_medium=api&utm_source=55569923&v=F48DB573308D9962BC9057A7887FA0CB3112CE18",
+      "posted_date": "2026-10-10T07:58:33Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -3942,21 +4046,6 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-08-27",
-      "flags": [],
-      "role": "systems"
-    },
-    {
-      "id": "827308f08705f2d8",
-      "kind": "direct",
-      "company": "Turner & Townsend",
-      "title": "Senior Digital Consultant – Systems, Data & Analytics (Construction)",
-      "location": "New York, New York, US",
-      "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000140344104-senior-digital-consultant-systems-data-analytics-construction-?oga=true",
-      "posted_date": "2026-07-28T22:18:49.966Z",
-      "comp": null,
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-09-27",
       "flags": [],
       "role": "systems"
     },
@@ -4762,6 +4851,21 @@
       "role": "field"
     },
     {
+      "id": "d46130a734391356",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Welding Field Engineer",
+      "location": "Pecos, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=298427&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-08-31T19:16:29.169+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-10",
+      "flags": [],
+      "role": "field"
+    },
+    {
       "id": "5ee65b476fa25009",
       "kind": "direct",
       "company": "Accenture",
@@ -5118,6 +5222,21 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-10-07",
+      "flags": [],
+      "role": "unclear"
+    },
+    {
+      "id": "465bc76823bb2646",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Field DSCS Coordinator",
+      "location": "Pecos, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=294338&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-24T14:17:45.522+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-10",
       "flags": [],
       "role": "unclear"
     },
