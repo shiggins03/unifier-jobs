@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-10",
+  "updated": "2026-10-11",
   "warnings": [],
   "roster": [
     {
@@ -1816,6 +1816,20 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-10-10"
+    },
+    {
+      "company": "The Planet Group",
+      "url": "https://www.adzuna.com/land/ad/5922109423?se=UgTc-pHF8RGRs48L_-pA7w&utm_medium=api&utm_source=55569923&v=F48DB573308D9962BC9057A7887FA0CB3112CE18",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-11"
+    },
+    {
+      "company": "DFND Security",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=UgTc-pHF8RGRs48L_-pA7w&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-11"
     }
   ],
   "jobs": [
@@ -1995,8 +2009,8 @@
       "company": "Bechtel",
       "title": "Field Welding Engineer",
       "location": "Brownsville, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300059&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-10-08T14:14:31.879+0000",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300055&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-10-08T13:29:26.439+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -2119,24 +2133,6 @@
       "gone_date": null,
       "flags": [
         "title-match"
-      ],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
-      "id": "e0fa3a97533e4ebf",
-      "kind": "direct",
-      "company": "Meta",
-      "title": "Schedule & Technical Integration Manager, Data Centers",
-      "location": "Menlo Park, CA",
-      "url": "https://www.metacareers.com/profile/job_details/1565674545076717/",
-      "posted_date": "2026-06-23T06:45:55-07:00",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [
-        "long-posted"
       ],
       "role": "systems",
       "has_desc": true
@@ -3118,22 +3114,6 @@
       "has_desc": true
     },
     {
-      "id": "ca78d81c148710ed",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Civil Field Engineer",
-      "location": "Portland, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299798&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-09-29T23:24:27.927+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
-      "has_desc": true
-    },
-    {
       "id": "89ec56b2e66c442b",
       "kind": "direct",
       "company": "Oracle",
@@ -3270,7 +3250,7 @@
       "title": "Global Procore Administrator & Construction Process Lead",
       "location": "Boise, ID - Main Site",
       "url": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Boise-ID---Main-Site/Global-Document-Control---PMIS-Governance-Lead_JR104322",
-      "posted_date": "Posted 2 Days Ago",
+      "posted_date": "Posted 3 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -3335,7 +3315,7 @@
       "company": "DFND Security",
       "title": "Oracle WACS",
       "location": "Fort Sam Houston, Bexar County",
-      "url": "https://www.adzuna.com/land/ad/5863704034?se=lJKEE8XE8RGjSfrCsBO0RQ&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=UgTc-pHF8RGRs48L_-pA7w&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
       "posted_date": "2026-08-31T22:19:09Z",
       "comp": null,
       "tier": 1,
@@ -3358,7 +3338,6 @@
       "status": "active",
       "gone_date": null,
       "flags": [
-        "new",
         "long-posted"
       ],
       "role": "systems",
@@ -3376,9 +3355,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -3394,9 +3371,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -3407,14 +3382,12 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Denver, Colorado",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Denver-Colorado/Senior-Project-Controls-Manager---Aviation_JR6367",
-      "posted_date": "Posted Yesterday",
+      "posted_date": "Posted 2 Days Ago",
       "comp": "$187,591.53 - $214,390.32",
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -3425,14 +3398,12 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Project-Controls-Manager---Aviation_JR6366",
-      "posted_date": "Posted Today",
+      "posted_date": "Posted Yesterday",
       "comp": "$196,118.41 - $224,135.33",
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -3442,15 +3413,13 @@
       "company": "The Planet Group",
       "title": "Document Control Specialist",
       "location": "Bay City, Bay County",
-      "url": "https://www.adzuna.com/land/ad/5922109423?se=lJKEE8XE8RGjSfrCsBO0RQ&utm_medium=api&utm_source=55569923&v=F48DB573308D9962BC9057A7887FA0CB3112CE18",
+      "url": "https://www.adzuna.com/land/ad/5922109423?se=UgTc-pHF8RGRs48L_-pA7w&utm_medium=api&utm_source=55569923&v=F48DB573308D9962BC9057A7887FA0CB3112CE18",
       "posted_date": "2026-10-10T07:58:33Z",
       "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -4536,6 +4505,23 @@
       "role": "controls"
     },
     {
+      "id": "e0fa3a97533e4ebf",
+      "kind": "direct",
+      "company": "Meta",
+      "title": "Schedule & Technical Integration Manager, Data Centers",
+      "location": "Menlo Park, CA",
+      "url": "https://www.metacareers.com/profile/job_details/1565674545076717/",
+      "posted_date": "2026-06-23T06:45:55-07:00",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-11",
+      "flags": [
+        "long-posted"
+      ],
+      "role": "systems"
+    },
+    {
       "id": "f2644f76f383f0f3",
       "kind": "direct",
       "company": "STV",
@@ -5314,6 +5300,21 @@
       "gone_date": "2026-10-07",
       "flags": [],
       "role": "systems"
+    },
+    {
+      "id": "ca78d81c148710ed",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Civil Field Engineer",
+      "location": "Portland, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299798&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-29T23:24:27.927+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-11",
+      "flags": [],
+      "role": "field"
     }
   ]
 }
