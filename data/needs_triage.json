@@ -1558,5 +1558,19 @@
     "note": "unknown employer — find direct posting, propose tier",
     "source": "adzuna",
     "first_seen": "2026-10-12"
+  },
+  {
+    "company": "Meta",
+    "url": "https://www.metacareers.com/profile/job_details/1139865145249047/",
+    "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Research Scientist Intern, Multimodal Generative AI and Robotics (PhD)",
+    "source": "meta_graphql:Meta",
+    "first_seen": "2026-10-13"
+  },
+  {
+    "company": "Pyrovio",
+    "url": "https://www.adzuna.com/land/ad/5924584632?se=6CxaDzDH8RGpP9fItoBIjQ&utm_medium=api&utm_source=55569923&v=CE8C974027A99D964E7BBCF18BF47B79125E38B5",
+    "note": "unknown employer — find direct posting, propose tier",
+    "source": "adzuna",
+    "first_seen": "2026-10-13"
   }
 ]
