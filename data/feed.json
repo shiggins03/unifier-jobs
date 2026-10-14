@@ -1,8 +1,6 @@
 {
-  "updated": "2026-10-13",
-  "warnings": [
-    "generic_page:City of New York: zero results for 3+ runs (was returning data)"
-  ],
+  "updated": "2026-10-14",
+  "warnings": [],
   "roster": [
     {
       "name": "Meta",
@@ -1867,6 +1865,27 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-10-13"
+    },
+    {
+      "company": "The Planet Group",
+      "url": "https://www.adzuna.com/land/ad/5922109423?se=KCrAc-bH8RGzTbLyus6u7g&utm_medium=api&utm_source=55569923&v=F48DB573308D9962BC9057A7887FA0CB3112CE18",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-14"
+    },
+    {
+      "company": "DFND Security",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=KCrAc-bH8RGzTbLyus6u7g&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-14"
+    },
+    {
+      "company": "USK Technologies",
+      "url": "https://www.adzuna.com/land/ad/5927282530?se=1qxIdObH8RGzTbLyus6u7g&utm_medium=api&utm_source=55569923&v=0B009464FB7498B7DEE163820B0425E25A09916F",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-14"
     }
   ],
   "jobs": [
@@ -2000,8 +2019,8 @@
       "company": "Bechtel",
       "title": "Piping Superintendent",
       "location": "Lake Charles, Louisiana, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299574&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-09-24T22:16:40.733+0000",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300277&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-10-13T12:08:14.700+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -2657,22 +2676,6 @@
       "has_desc": true
     },
     {
-      "id": "af709386c2d4df15",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Life Safety System, Pfisterer, Fiber - Subcontract Technical Representative (STR)",
-      "location": "New Albany, Ohio, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299179&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-09-14T20:21:44.239+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
-      "has_desc": true
-    },
-    {
       "id": "acdc6850fadd0ff1",
       "kind": "direct",
       "company": "Luster National",
@@ -2798,22 +2801,6 @@
       "gone_date": null,
       "flags": [],
       "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "2dcf55bd6acb524f",
-      "kind": "board",
-      "company": "PMA Consultants",
-      "title": "Program Support Analyst (00603)",
-      "location": "Virginia Beach, Virginia Beach City",
-      "url": "https://www.adzuna.com/details/5890116270?utm_medium=api&utm_source=55569923",
-      "posted_date": "2026-09-18T23:07:03Z",
-      "comp": "$105,077 - $147,868",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "unclear",
       "has_desc": true
     },
     {
@@ -3201,24 +3188,6 @@
       "has_desc": true
     },
     {
-      "id": "c768d44e863f2293",
-      "kind": "board",
-      "company": "Careers Broadpin",
-      "title": "Oracle Primavera Unifier Implementation Consultant - US Based",
-      "location": "US",
-      "url": "https://www.adzuna.com/details/5792117724?utm_medium=api&utm_source=55569923",
-      "posted_date": "2026-07-08T02:48:33Z",
-      "comp": "$100,000 - $130,000",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [
-        "long-posted"
-      ],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
       "id": "7d51b65675e7610d",
       "kind": "direct",
       "company": "Eli Lilly",
@@ -3289,7 +3258,7 @@
       "title": "Global Procore Administrator & Construction Process Lead",
       "location": "Boise, ID - Main Site",
       "url": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Boise-ID---Main-Site/Global-Document-Control---PMIS-Governance-Lead_JR104322",
-      "posted_date": "Posted 5 Days Ago",
+      "posted_date": "Posted 6 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -3354,7 +3323,7 @@
       "company": "DFND Security",
       "title": "Oracle WACS",
       "location": "Fort Sam Houston, Bexar County",
-      "url": "https://www.adzuna.com/land/ad/5863704034?se=sgSaCHnG8RGTIJ38EyVzyQ&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=KCrAc-bH8RGzTbLyus6u7g&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
       "posted_date": "2026-08-31T22:19:09Z",
       "comp": null,
       "tier": 1,
@@ -3421,7 +3390,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Denver, Colorado",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Denver-Colorado/Senior-Project-Controls-Manager---Aviation_JR6367",
-      "posted_date": "Posted 4 Days Ago",
+      "posted_date": "Posted 5 Days Ago",
       "comp": "$187,591.53 - $214,390.32",
       "tier": 1,
       "status": "active",
@@ -3437,7 +3406,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Project-Controls-Manager---Aviation_JR6366",
-      "posted_date": "Posted 3 Days Ago",
+      "posted_date": "Posted 4 Days Ago",
       "comp": "$196,118.41 - $224,135.33",
       "tier": 1,
       "status": "active",
@@ -3452,7 +3421,7 @@
       "company": "The Planet Group",
       "title": "Document Control Specialist",
       "location": "Bay City, Bay County",
-      "url": "https://www.adzuna.com/land/ad/5922109423?se=sgSaCHnG8RGTIJ38EyVzyQ&utm_medium=api&utm_source=55569923&v=F48DB573308D9962BC9057A7887FA0CB3112CE18",
+      "url": "https://www.adzuna.com/land/ad/5922109423?se=KCrAc-bH8RGzTbLyus6u7g&utm_medium=api&utm_source=55569923&v=F48DB573308D9962BC9057A7887FA0CB3112CE18",
       "posted_date": "2026-10-10T07:58:33Z",
       "comp": null,
       "tier": 1,
@@ -3476,6 +3445,114 @@
       "gone_date": null,
       "flags": [],
       "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "f17761387a11791b",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Capital Cost Estimator – Mechanical, Electrical and Plumbing (MEP)",
+      "location": "Indianapolis, Indiana, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Indianapolis-IN/Capital-Cost-Estimator---Mechanical--Electrical-and-Plumbing--MEP-_R-113234/apply",
+      "posted_date": "2026-10-14T14:20:36.192+0000",
+      "comp": "$130,500 - $211,200",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "c35c3091999e0101",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Capital Cost Estimator - Civil, Structural, Architectural (CSA)",
+      "location": "Indianapolis, Indiana, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Indianapolis-IN/Capital-Cost-Estimator---Civil--Structural--Architectural--CSA-_R-113237/apply",
+      "posted_date": "2026-10-14T14:20:36.104+0000",
+      "comp": "$130,500 - $211,200",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "34f99135e59c1a2d",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Capital Cost Estimator – Industrial Process and Pharmaceutical Equipment",
+      "location": "Indianapolis, Indiana, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Indianapolis-IN/Capital-Cost-Estimator---Industrial-Process-and-Pharmaceutical-Equipment_R-113238/apply",
+      "posted_date": "2026-10-14T14:20:36.198+0000",
+      "comp": "$130,500 - $211,200",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "5d682a020a5c75d2",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Deputy Project Controls Director - Richmond",
+      "location": "Richmond, Virginia, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Richmond-VA/Deputy-Project-Controls-Director---Richmond_R-113397/apply",
+      "posted_date": "2026-10-14T14:20:36.171+0000",
+      "comp": "$67,500 - $173,800",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "4b0450c6b0c032c8",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "E&I Superintendent",
+      "location": "Lake Charles, Louisiana, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300323&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-10-13T22:11:25.308+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "a14df7d47941dec8",
+      "kind": "board",
+      "company": "USK Technologies",
+      "title": "Energy Supply Software Analyst",
+      "location": "Jackson, Jackson County",
+      "url": "https://www.adzuna.com/land/ad/5927282530?se=1qxIdObH8RGzTbLyus6u7g&utm_medium=api&utm_source=55569923&v=0B009464FB7498B7DEE163820B0425E25A09916F",
+      "posted_date": "2026-10-14T06:47:23Z",
+      "comp": "Pay: $40/hour Duration: 12 months Seeking an experien",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
       "has_desc": true
     },
     {
@@ -5102,6 +5179,21 @@
       "role": "field"
     },
     {
+      "id": "af709386c2d4df15",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Life Safety System, Pfisterer, Fiber - Subcontract Technical Representative (STR)",
+      "location": "New Albany, Ohio, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299179&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-14T20:21:44.239+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-14",
+      "flags": [],
+      "role": "field"
+    },
+    {
       "id": "30f503753362c467",
       "kind": "board",
       "company": "Oraapps Inc",
@@ -5160,6 +5252,21 @@
       "gone_date": "2026-09-29",
       "flags": [],
       "role": "systems"
+    },
+    {
+      "id": "2dcf55bd6acb524f",
+      "kind": "board",
+      "company": "PMA Consultants",
+      "title": "Program Support Analyst (00603)",
+      "location": "Virginia Beach, Virginia Beach City",
+      "url": "https://www.adzuna.com/details/5890116270?utm_medium=api&utm_source=55569923",
+      "posted_date": "2026-09-18T23:07:03Z",
+      "comp": "$105,077 - $147,868",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-14",
+      "flags": [],
+      "role": "unclear"
     },
     {
       "id": "47733dfa77659518",
@@ -5370,6 +5477,23 @@
       "gone_date": "2026-10-11",
       "flags": [],
       "role": "field"
+    },
+    {
+      "id": "c768d44e863f2293",
+      "kind": "board",
+      "company": "Careers Broadpin",
+      "title": "Oracle Primavera Unifier Implementation Consultant - US Based",
+      "location": "US",
+      "url": "https://www.adzuna.com/details/5792117724?utm_medium=api&utm_source=55569923",
+      "posted_date": "2026-07-08T02:48:33Z",
+      "comp": "$100,000 - $130,000",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-14",
+      "flags": [
+        "long-posted"
+      ],
+      "role": "systems"
     }
   ]
 }
