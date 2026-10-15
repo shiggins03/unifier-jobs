@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14",
+  "updated": "2026-10-15",
   "warnings": [],
   "roster": [
     {
@@ -1886,6 +1886,48 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-10-14"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/profile/job_details/2386855915053811/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Software Engineer (Technical Leadership) - Central Growth",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-10-15"
+    },
+    {
+      "company": "The Planet Group",
+      "url": "https://www.adzuna.com/land/ad/5922109423?se=xIha0K3I8RGYwPFSmBM_bA&utm_medium=api&utm_source=55569923&v=F48DB573308D9962BC9057A7887FA0CB3112CE18",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-15"
+    },
+    {
+      "company": "DFND Security",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=xIha0K3I8RGYwPFSmBM_bA&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-15"
+    },
+    {
+      "company": "Hivaa Services LLC",
+      "url": "https://www.adzuna.com/land/ad/5929004870?se=iGUO0a3I8RGvp-1Mt2mipA&utm_medium=api&utm_source=55569923&v=764858ED479DE8F65195092FABD227A872452E3C",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-15"
+    },
+    {
+      "company": "USK Technologies",
+      "url": "https://www.adzuna.com/land/ad/5927282530?se=iGUO0a3I8RGvp-1Mt2mipA&utm_medium=api&utm_source=55569923&v=0B009464FB7498B7DEE163820B0425E25A09916F",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-15"
+    },
+    {
+      "company": "USK Technologies",
+      "url": "https://www.adzuna.com/land/ad/5927891897?se=iGUO0a3I8RGvp-1Mt2mipA&utm_medium=api&utm_source=55569923&v=098FD5B9373D6105F83CA5C029354721DEEA9C8D",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-15"
     }
   ],
   "jobs": [
@@ -3220,45 +3262,13 @@
       "has_desc": true
     },
     {
-      "id": "ab9f02644152ec42",
-      "kind": "board",
-      "company": "GForce Life Sciences",
-      "title": "Cost and Claims Analyst",
-      "location": "Westchester County, New York",
-      "url": "https://www.adzuna.com/land/ad/5914061028?se=SlCjwnbC8RG_dfJx5Ytquw&utm_medium=api&utm_source=55569923&v=177B1D5236A43052ABA4C264BE8CBE18017D9BD2",
-      "posted_date": "2026-10-06T12:29:17Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "fb1c427e33f012ab",
-      "kind": "board",
-      "company": "Pyrovio",
-      "title": "Oracle Unifier Consultant",
-      "location": "Barton Hills, Washtenaw County",
-      "url": "https://www.adzuna.com/land/ad/5915552319?se=SlCjwnbC8RG_dfJx5Ytquw&utm_medium=api&utm_source=55569923&v=FB4080E1699E251C42AA53BADEF1E39FE83FA18D",
-      "posted_date": "2026-10-07T01:05:44Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
       "id": "a519da4856a8bc7e",
       "kind": "direct",
       "company": "Micron",
       "title": "Global Procore Administrator & Construction Process Lead",
       "location": "Boise, ID - Main Site",
       "url": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Boise-ID---Main-Site/Global-Document-Control---PMIS-Governance-Lead_JR104322",
-      "posted_date": "Posted 6 Days Ago",
+      "posted_date": "Posted 7 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -3300,30 +3310,12 @@
       "has_desc": true
     },
     {
-      "id": "1a44ebd35f6ada1f",
-      "kind": "direct",
-      "company": "Oracle",
-      "title": "Consulting Unifier Solution Manager",
-      "location": "United States",
-      "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/job/346831",
-      "posted_date": "2026-10-09",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [
-        "title-match"
-      ],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
       "id": "d6717ee516b4a3bb",
       "kind": "board",
       "company": "DFND Security",
       "title": "Oracle WACS",
       "location": "Fort Sam Houston, Bexar County",
-      "url": "https://www.adzuna.com/land/ad/5863704034?se=KCrAc-bH8RGzTbLyus6u7g&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=xIha0K3I8RGYwPFSmBM_bA&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
       "posted_date": "2026-08-31T22:19:09Z",
       "comp": null,
       "tier": 1,
@@ -3390,7 +3382,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Denver, Colorado",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Denver-Colorado/Senior-Project-Controls-Manager---Aviation_JR6367",
-      "posted_date": "Posted 5 Days Ago",
+      "posted_date": "Posted 6 Days Ago",
       "comp": "$187,591.53 - $214,390.32",
       "tier": 1,
       "status": "active",
@@ -3406,7 +3398,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Project-Controls-Manager---Aviation_JR6366",
-      "posted_date": "Posted 4 Days Ago",
+      "posted_date": "Posted 5 Days Ago",
       "comp": "$196,118.41 - $224,135.33",
       "tier": 1,
       "status": "active",
@@ -3421,7 +3413,7 @@
       "company": "The Planet Group",
       "title": "Document Control Specialist",
       "location": "Bay City, Bay County",
-      "url": "https://www.adzuna.com/land/ad/5922109423?se=KCrAc-bH8RGzTbLyus6u7g&utm_medium=api&utm_source=55569923&v=F48DB573308D9962BC9057A7887FA0CB3112CE18",
+      "url": "https://www.adzuna.com/land/ad/5922109423?se=xIha0K3I8RGYwPFSmBM_bA&utm_medium=api&utm_source=55569923&v=F48DB573308D9962BC9057A7887FA0CB3112CE18",
       "posted_date": "2026-10-10T07:58:33Z",
       "comp": null,
       "tier": 1,
@@ -3459,9 +3451,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -3477,9 +3467,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -3495,9 +3483,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -3513,9 +3499,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -3531,9 +3515,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "field",
       "has_desc": true
     },
@@ -3543,8 +3525,150 @@
       "company": "USK Technologies",
       "title": "Energy Supply Software Analyst",
       "location": "Jackson, Jackson County",
-      "url": "https://www.adzuna.com/land/ad/5927282530?se=1qxIdObH8RGzTbLyus6u7g&utm_medium=api&utm_source=55569923&v=0B009464FB7498B7DEE163820B0425E25A09916F",
+      "url": "https://www.adzuna.com/land/ad/5927282530?se=iGUO0a3I8RGvp-1Mt2mipA&utm_medium=api&utm_source=55569923&v=0B009464FB7498B7DEE163820B0425E25A09916F",
       "posted_date": "2026-10-14T06:47:23Z",
+      "comp": "Pay: $40/hour Duration: 12 months Seeking an experien",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "29b3a2ca343baf14",
+      "kind": "direct",
+      "company": "Oracle",
+      "title": "Director of Business Intelligence and AI Analytics (Nashville, TN)",
+      "location": "Nashville, TN, United States",
+      "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/job/346351",
+      "posted_date": "2026-09-29",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "7a612b2b5a1c4100",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Turnover Coordinator",
+      "location": "Brownsville, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300275&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-10-13T21:28:23.041+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "8cc587e4675c3608",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Field Digital Supply Chain Coordinator",
+      "location": "Pecos, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=294338&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-24T14:17:45.522+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "d39aef298728fb6e",
+      "kind": "direct",
+      "company": "STV",
+      "title": "PMIS Specialist",
+      "location": "Chicago, Illinois",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Chicago-Illinois/PMIS-Specialist_JR6372",
+      "posted_date": "Posted Yesterday",
+      "comp": "$75,656.68 - $86,464.77",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "5dbf0e1de3e8167c",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Scheduler",
+      "location": "Fairfax, Virginia",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Fairfax-Virginia/Scheduler_JR6369",
+      "posted_date": "Posted Yesterday",
+      "comp": "$102,094.36 - $116,679.27",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "fe2633557cbf915c",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Cost Controls Manager",
+      "location": "Los Angeles, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453436008",
+      "posted_date": "2026-10-14T19:44:46-04:00",
+      "comp": "Salary: $120k-$200k/year ($58-$96/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "c78971fd6858d1fd",
+      "kind": "board",
+      "company": "Hivaa Services LLC",
+      "title": "Energy Supply Software Configuration Analyst",
+      "location": "Jackson, Jackson County",
+      "url": "https://www.adzuna.com/land/ad/5929004870?se=iGUO0a3I8RGvp-1Mt2mipA&utm_medium=api&utm_source=55569923&v=764858ED479DE8F65195092FABD227A872452E3C",
+      "posted_date": "2026-10-15T08:18:22Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "3fd75e50fdb6454a",
+      "kind": "board",
+      "company": "USK Technologies",
+      "title": "Energy Supply Software Analyst (Jackson)",
+      "location": "Jackson, Jackson County",
+      "url": "https://www.adzuna.com/land/ad/5927891897?se=iGUO0a3I8RGvp-1Mt2mipA&utm_medium=api&utm_source=55569923&v=098FD5B9373D6105F83CA5C029354721DEEA9C8D",
+      "posted_date": "2026-10-14T13:49:52Z",
       "comp": "Pay: $40/hour Duration: 12 months Seeking an experien",
       "tier": 1,
       "status": "active",
@@ -5492,6 +5616,53 @@
       "gone_date": "2026-10-14",
       "flags": [
         "long-posted"
+      ],
+      "role": "systems"
+    },
+    {
+      "id": "ab9f02644152ec42",
+      "kind": "board",
+      "company": "GForce Life Sciences",
+      "title": "Cost and Claims Analyst",
+      "location": "Westchester County, New York",
+      "url": "https://www.adzuna.com/land/ad/5914061028?se=SlCjwnbC8RG_dfJx5Ytquw&utm_medium=api&utm_source=55569923&v=177B1D5236A43052ABA4C264BE8CBE18017D9BD2",
+      "posted_date": "2026-10-06T12:29:17Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-15",
+      "flags": [],
+      "role": "controls"
+    },
+    {
+      "id": "fb1c427e33f012ab",
+      "kind": "board",
+      "company": "Pyrovio",
+      "title": "Oracle Unifier Consultant",
+      "location": "Barton Hills, Washtenaw County",
+      "url": "https://www.adzuna.com/land/ad/5915552319?se=SlCjwnbC8RG_dfJx5Ytquw&utm_medium=api&utm_source=55569923&v=FB4080E1699E251C42AA53BADEF1E39FE83FA18D",
+      "posted_date": "2026-10-07T01:05:44Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-15",
+      "flags": [],
+      "role": "systems"
+    },
+    {
+      "id": "1a44ebd35f6ada1f",
+      "kind": "direct",
+      "company": "Oracle",
+      "title": "Consulting Unifier Solution Manager",
+      "location": "United States",
+      "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/job/346831",
+      "posted_date": "2026-10-09",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-15",
+      "flags": [
+        "title-match"
       ],
       "role": "systems"
     }
