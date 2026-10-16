@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "warnings": [],
   "roster": [
     {
@@ -1928,6 +1928,48 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-10-15"
+    },
+    {
+      "company": "Oracle",
+      "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/job/346902",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Oracle Primavera Cloud (OPC) Solution Architect (Nashville, TN)",
+      "source": "oracle_orc:Oracle",
+      "first_seen": "2026-10-16"
+    },
+    {
+      "company": "The Planet Group",
+      "url": "https://www.adzuna.com/land/ad/5922109423?se=GHnw4nTJ8RGD3NuKZ_epjg&utm_medium=api&utm_source=55569923&v=F48DB573308D9962BC9057A7887FA0CB3112CE18",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-16"
+    },
+    {
+      "company": "DFND Security",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=GHnw4nTJ8RGD3NuKZ_epjg&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-16"
+    },
+    {
+      "company": "USK Technologies",
+      "url": "https://www.adzuna.com/land/ad/5927282530?se=BKeA43TJ8RGD3NuKZ_epjg&utm_medium=api&utm_source=55569923&v=0B009464FB7498B7DEE163820B0425E25A09916F",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-16"
+    },
+    {
+      "company": "USK Technologies",
+      "url": "https://www.adzuna.com/land/ad/5927891897?se=BKeA43TJ8RGD3NuKZ_epjg&utm_medium=api&utm_source=55569923&v=098FD5B9373D6105F83CA5C029354721DEEA9C8D",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-16"
+    },
+    {
+      "company": "MaxIT Consulting - Max Corporate Group",
+      "url": "https://www.adzuna.com/details/5930595692?utm_medium=api&utm_source=55569923",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-16"
     }
   ],
   "jobs": [
@@ -2398,6 +2440,22 @@
       "has_desc": true
     },
     {
+      "id": "3e9bcb8d9f9f341f",
+      "kind": "direct",
+      "company": "Deloitte",
+      "title": "US E-Consulting Services – Sr. Consultant – S&T/Strategy/I&RE – Capital Projects (DBA) – 354006 – OK",
+      "location": null,
+      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Senior-Consultant-DBA-PWA/354006",
+      "posted_date": "Fri, 29 May 2026 00:00:00 +0000",
+      "comp": "range is $110,700 to $218,300",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
       "id": "7502be7141f16ad9",
       "kind": "direct",
       "company": "Deloitte",
@@ -2483,9 +2541,9 @@
       "company": "Luster National",
       "title": "Construction Inspector",
       "location": "Seattle, Washington, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5420014008",
-      "posted_date": "2026-09-10T10:55:06-04:00",
-      "comp": "Salary: $75k-$135k/year ($36-$65/hour)",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5443808008",
+      "posted_date": "2026-10-05T13:10:59-04:00",
+      "comp": "Salary: $85k-$150k/year ($41-$72/hour)",
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -2742,22 +2800,6 @@
       "url": "https://job-boards.greenhouse.io/lusternational/jobs/5423898008",
       "posted_date": "2026-09-14T16:54:10-04:00",
       "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
-      "has_desc": true
-    },
-    {
-      "id": "5005eee5b0512c29",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Area Lead Piping Field Engineer - Undergrounds",
-      "location": "New Albany, Ohio, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299181&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-09-16T20:41:55.126+0000",
-      "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -3268,7 +3310,7 @@
       "title": "Global Procore Administrator & Construction Process Lead",
       "location": "Boise, ID - Main Site",
       "url": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Boise-ID---Main-Site/Global-Document-Control---PMIS-Governance-Lead_JR104322",
-      "posted_date": "Posted 7 Days Ago",
+      "posted_date": "Posted 8 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -3315,7 +3357,7 @@
       "company": "DFND Security",
       "title": "Oracle WACS",
       "location": "Fort Sam Houston, Bexar County",
-      "url": "https://www.adzuna.com/land/ad/5863704034?se=xIha0K3I8RGYwPFSmBM_bA&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=GHnw4nTJ8RGD3NuKZ_epjg&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
       "posted_date": "2026-08-31T22:19:09Z",
       "comp": null,
       "tier": 1,
@@ -3382,7 +3424,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Denver, Colorado",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Denver-Colorado/Senior-Project-Controls-Manager---Aviation_JR6367",
-      "posted_date": "Posted 6 Days Ago",
+      "posted_date": "Posted 7 Days Ago",
       "comp": "$187,591.53 - $214,390.32",
       "tier": 1,
       "status": "active",
@@ -3398,7 +3440,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Project-Controls-Manager---Aviation_JR6366",
-      "posted_date": "Posted 5 Days Ago",
+      "posted_date": "Posted 6 Days Ago",
       "comp": "$196,118.41 - $224,135.33",
       "tier": 1,
       "status": "active",
@@ -3413,7 +3455,7 @@
       "company": "The Planet Group",
       "title": "Document Control Specialist",
       "location": "Bay City, Bay County",
-      "url": "https://www.adzuna.com/land/ad/5922109423?se=xIha0K3I8RGYwPFSmBM_bA&utm_medium=api&utm_source=55569923&v=F48DB573308D9962BC9057A7887FA0CB3112CE18",
+      "url": "https://www.adzuna.com/land/ad/5922109423?se=GHnw4nTJ8RGD3NuKZ_epjg&utm_medium=api&utm_source=55569923&v=F48DB573308D9962BC9057A7887FA0CB3112CE18",
       "posted_date": "2026-10-10T07:58:33Z",
       "comp": null,
       "tier": 1,
@@ -3525,7 +3567,7 @@
       "company": "USK Technologies",
       "title": "Energy Supply Software Analyst",
       "location": "Jackson, Jackson County",
-      "url": "https://www.adzuna.com/land/ad/5927282530?se=iGUO0a3I8RGvp-1Mt2mipA&utm_medium=api&utm_source=55569923&v=0B009464FB7498B7DEE163820B0425E25A09916F",
+      "url": "https://www.adzuna.com/land/ad/5927282530?se=BKeA43TJ8RGD3NuKZ_epjg&utm_medium=api&utm_source=55569923&v=0B009464FB7498B7DEE163820B0425E25A09916F",
       "posted_date": "2026-10-14T06:47:23Z",
       "comp": "Pay: $40/hour Duration: 12 months Seeking an experien",
       "tier": 1,
@@ -3547,9 +3589,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -3565,9 +3605,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -3583,9 +3621,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -3596,14 +3632,12 @@
       "title": "PMIS Specialist",
       "location": "Chicago, Illinois",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Chicago-Illinois/PMIS-Specialist_JR6372",
-      "posted_date": "Posted Yesterday",
+      "posted_date": "Posted 2 Days Ago",
       "comp": "$75,656.68 - $86,464.77",
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },
@@ -3614,14 +3648,12 @@
       "title": "Scheduler",
       "location": "Fairfax, Virginia",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Fairfax-Virginia/Scheduler_JR6369",
-      "posted_date": "Posted Yesterday",
+      "posted_date": "Posted 2 Days Ago",
       "comp": "$102,094.36 - $116,679.27",
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -3637,9 +3669,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -3655,9 +3685,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "systems",
       "has_desc": true
     },
@@ -3667,9 +3695,25 @@
       "company": "USK Technologies",
       "title": "Energy Supply Software Analyst (Jackson)",
       "location": "Jackson, Jackson County",
-      "url": "https://www.adzuna.com/land/ad/5927891897?se=iGUO0a3I8RGvp-1Mt2mipA&utm_medium=api&utm_source=55569923&v=098FD5B9373D6105F83CA5C029354721DEEA9C8D",
+      "url": "https://www.adzuna.com/land/ad/5927891897?se=BKeA43TJ8RGD3NuKZ_epjg&utm_medium=api&utm_source=55569923&v=098FD5B9373D6105F83CA5C029354721DEEA9C8D",
       "posted_date": "2026-10-14T13:49:52Z",
       "comp": "Pay: $40/hour Duration: 12 months Seeking an experien",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "f90262739fee7cea",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Senior Program C&Q Lead",
+      "location": "Houston, Texas, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Houston-TX/Senior-Program-C-Q-Lead_R-113225/apply",
+      "posted_date": "2026-10-16T14:20:37.548+0000",
+      "comp": "$163,500 - $239,800",
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -3677,6 +3721,132 @@
         "new"
       ],
       "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "a2a25dcffa3accdc",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Assistant Project Manager",
+      "location": "Washington, District of Columbia, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5454731008",
+      "posted_date": "2026-10-15T21:25:47-04:00",
+      "comp": "Salary: $95k-$170k/year ($46-$82/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "863a2049d1635219",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Construction Inspector",
+      "location": "Washington, District of Columbia, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5454330008",
+      "posted_date": "2026-10-15T15:23:20-04:00",
+      "comp": "Salary: $75k-$135k/year ($36-$65/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "f90b827b235355df",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Contract Administrator",
+      "location": "Washington, District of Columbia, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5454832008",
+      "posted_date": "2026-10-15T21:24:17-04:00",
+      "comp": "Salary: $80k-$180k/year ($38-$87/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "b58f9317c77ad8d1",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Office Engineer",
+      "location": "Washington, District of Columbia, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5454805008",
+      "posted_date": "2026-10-15T21:24:46-04:00",
+      "comp": "pay applications and progress payments on a program valued at $1B+",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "c74291d2795768fe",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Project Coordinator",
+      "location": "Washington, District of Columbia, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5454813008",
+      "posted_date": "2026-10-15T21:25:10-04:00",
+      "comp": "Salary: $75k-$135k/year ($36-$65/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "929565e6a99ece7d",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Quality Manager",
+      "location": "Washington, District of Columbia, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5454403008",
+      "posted_date": "2026-10-15T15:38:05-04:00",
+      "comp": "Salary: $110k-$185k/year ($53-$89/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "16fb29d17d29d219",
+      "kind": "board",
+      "company": "MaxIT Consulting - Max Corporate Group",
+      "title": "Energy Supply Systems Analyst – Primavera P6, Unifier & COTS Configuration",
+      "location": "Jackson, Jackson County",
+      "url": "https://www.adzuna.com/details/5930595692?utm_medium=api&utm_source=55569923",
+      "posted_date": "2026-10-16T08:11:57Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "systems",
       "has_desc": true
     },
     {
@@ -5033,21 +5203,6 @@
       "role": "systems"
     },
     {
-      "id": "3e9bcb8d9f9f341f",
-      "kind": "direct",
-      "company": "Deloitte",
-      "title": "US E-Consulting Services – Sr. Consultant – S&T/Strategy/I&RE – Capital Projects (DBA) – 354006 – OK",
-      "location": null,
-      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Senior-Consultant-DBA-PWA/354006",
-      "posted_date": "Fri, 29 May 2026 00:00:00 +0000",
-      "comp": "range is $110,700 to $218,300",
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-09-22",
-      "flags": [],
-      "role": "unclear"
-    },
-    {
       "id": "6e695f7c7a2ba0e0",
       "kind": "direct",
       "company": "Deloitte",
@@ -5344,6 +5499,21 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-09-30",
+      "flags": [],
+      "role": "field"
+    },
+    {
+      "id": "5005eee5b0512c29",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Area Lead Piping Field Engineer - Undergrounds",
+      "location": "New Albany, Ohio, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299181&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-16T20:41:55.126+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-16",
       "flags": [],
       "role": "field"
     },
