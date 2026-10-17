@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16",
+  "updated": "2026-10-17",
   "warnings": [],
   "roster": [
     {
@@ -1970,6 +1970,13 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-10-16"
+    },
+    {
+      "company": "DFND Security",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=rgSBGzTK8RGD3NuKZ_epjg&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-17"
     }
   ],
   "jobs": [
@@ -2006,6 +2013,22 @@
       "flags": [
         "long-posted"
       ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "6e02d7daf784bb12",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Document Control Manager",
+      "location": "Sacramento, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453446008",
+      "posted_date": "2026-10-16T17:43:37-04:00",
+      "comp": "Salary: $110k-$175k/year ($53-$84/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -2541,9 +2564,9 @@
       "company": "Luster National",
       "title": "Construction Inspector",
       "location": "Seattle, Washington, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5443808008",
-      "posted_date": "2026-10-05T13:10:59-04:00",
-      "comp": "Salary: $85k-$150k/year ($41-$72/hour)",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5420014008",
+      "posted_date": "2026-09-10T10:55:06-04:00",
+      "comp": "Salary: $75k-$135k/year ($36-$65/hour)",
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -2605,9 +2628,9 @@
       "company": "Luster National",
       "title": "Construction Manager",
       "location": "San Francisco, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5418953008",
-      "posted_date": "2026-09-09T01:46:51-04:00",
-      "comp": "Salary: $160k-$200k/year ($77-$96/hour)",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453331008",
+      "posted_date": "2026-10-16T17:31:20-04:00",
+      "comp": "Salary: $130k-$200k/year ($63-$96/hour)",
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -2685,8 +2708,8 @@
       "company": "Luster National",
       "title": "Project Manager",
       "location": "New York, New York, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5417090008",
-      "posted_date": "2026-09-10T11:00:24-04:00",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453503008",
+      "posted_date": "2026-10-16T18:15:50-04:00",
       "comp": "Salary: $115k-$210k/year ($55-$101/hour)",
       "tier": 1,
       "status": "active",
@@ -3037,8 +3060,8 @@
       "company": "Luster National",
       "title": "Project Controls Manager",
       "location": "Los Angeles, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5417175008",
-      "posted_date": "2026-09-10T11:14:18-04:00",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5455765008",
+      "posted_date": "2026-10-16T19:10:28-04:00",
       "comp": "Salary: $130k-$205k/year ($63-$99/hour)",
       "tier": 1,
       "status": "active",
@@ -3085,8 +3108,8 @@
       "company": "Luster National",
       "title": "Project Controls Manager",
       "location": "New York, New York, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5417138008",
-      "posted_date": "2026-09-10T11:10:47-04:00",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5455756008",
+      "posted_date": "2026-10-16T19:11:26-04:00",
       "comp": "Salary: $130k-$205k/year ($63-$99/hour)",
       "tier": 1,
       "status": "active",
@@ -3310,7 +3333,7 @@
       "title": "Global Procore Administrator & Construction Process Lead",
       "location": "Boise, ID - Main Site",
       "url": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Boise-ID---Main-Site/Global-Document-Control---PMIS-Governance-Lead_JR104322",
-      "posted_date": "Posted 8 Days Ago",
+      "posted_date": "Posted 9 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -3336,28 +3359,12 @@
       "has_desc": true
     },
     {
-      "id": "7d718e0873ed13a7",
-      "kind": "board",
-      "company": "Pyrovio",
-      "title": "Oracle Unifier Consultant",
-      "location": "Ann Arbor, Washtenaw County",
-      "url": "https://www.adzuna.com/land/ad/5914475532?se=wkh_FwbE8RG_59bpLSVmjQ&utm_medium=api&utm_source=55569923&v=203371E0F3D56274D7BF0E508747AC74DDB0D503",
-      "posted_date": "2026-10-06T20:17:01Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
       "id": "d6717ee516b4a3bb",
       "kind": "board",
       "company": "DFND Security",
       "title": "Oracle WACS",
       "location": "Fort Sam Houston, Bexar County",
-      "url": "https://www.adzuna.com/land/ad/5863704034?se=GHnw4nTJ8RGD3NuKZ_epjg&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=rgSBGzTK8RGD3NuKZ_epjg&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
       "posted_date": "2026-08-31T22:19:09Z",
       "comp": null,
       "tier": 1,
@@ -3424,7 +3431,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Denver, Colorado",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Denver-Colorado/Senior-Project-Controls-Manager---Aviation_JR6367",
-      "posted_date": "Posted 7 Days Ago",
+      "posted_date": "Posted 8 Days Ago",
       "comp": "$187,591.53 - $214,390.32",
       "tier": 1,
       "status": "active",
@@ -3440,7 +3447,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Project-Controls-Manager---Aviation_JR6366",
-      "posted_date": "Posted 6 Days Ago",
+      "posted_date": "Posted 7 Days Ago",
       "comp": "$196,118.41 - $224,135.33",
       "tier": 1,
       "status": "active",
@@ -3632,7 +3639,7 @@
       "title": "PMIS Specialist",
       "location": "Chicago, Illinois",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Chicago-Illinois/PMIS-Specialist_JR6372",
-      "posted_date": "Posted 2 Days Ago",
+      "posted_date": "Posted 3 Days Ago",
       "comp": "$75,656.68 - $86,464.77",
       "tier": 1,
       "status": "active",
@@ -3648,7 +3655,7 @@
       "title": "Scheduler",
       "location": "Fairfax, Virginia",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Fairfax-Virginia/Scheduler_JR6369",
-      "posted_date": "Posted 2 Days Ago",
+      "posted_date": "Posted 3 Days Ago",
       "comp": "$102,094.36 - $116,679.27",
       "tier": 1,
       "status": "active",
@@ -3717,9 +3724,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -3735,9 +3740,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -3753,9 +3756,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "field",
       "has_desc": true
     },
@@ -3771,9 +3772,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -3789,9 +3788,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "controls",
       "has_desc": true
     },
@@ -3807,9 +3804,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "unclear",
       "has_desc": true
     },
@@ -3825,9 +3820,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "role": "field",
       "has_desc": true
     },
@@ -3843,10 +3836,728 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
+      "flags": [],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "a19ade05e3ea7d0e",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Senior Program C&Q Lead",
+      "location": "Richmond, Virginia, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Richmond-VA/Senior-Program-C-Q-Lead_R-113593/apply",
+      "posted_date": "2026-10-16T18:21:26.392+0000",
+      "comp": "$163,500 - $239,800",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
       "flags": [
         "new"
       ],
-      "role": "systems",
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "345c9f3fcbd9aabf",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Change Manager",
+      "location": "New York, New York, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453314008",
+      "posted_date": "2026-10-16T17:16:48-04:00",
+      "comp": "Salary: $125k-$200k/year ($60-$96/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "8f6318d4fc87065a",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Change Manager",
+      "location": "Los Angeles, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453307008",
+      "posted_date": "2026-10-16T17:15:42-04:00",
+      "comp": "Salary: $125k-$200k/year ($60-$96/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "064bb1c55b98f79a",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Change Manager",
+      "location": "Fresno, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453309008",
+      "posted_date": "2026-10-16T17:16:01-04:00",
+      "comp": "Salary: $125k-$200k/year ($60-$96/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "5388ede5d50d2f84",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Change Manager",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453299008",
+      "posted_date": "2026-10-16T17:14:53-04:00",
+      "comp": "Salary: $125k-$200k/year ($60-$96/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "2d2b4fd0fb2782f4",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Change Manager",
+      "location": "Sacramento, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453311008",
+      "posted_date": "2026-10-16T18:42:32-04:00",
+      "comp": "Salary: $125k-$200k/year ($60-$96/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "0320b54cd4d56910",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Construction Manager",
+      "location": "Sacramento, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453344008",
+      "posted_date": "2026-10-16T17:32:12-04:00",
+      "comp": "Salary: $130k-$200k/year ($63-$96/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "77d2b26f37a3deea",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Construction Manager",
+      "location": "New York, New York, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453352008",
+      "posted_date": "2026-10-16T17:32:38-04:00",
+      "comp": "Salary: $130k-$200k/year ($63-$96/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "cb43a3a413022577",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Construction Manager",
+      "location": "Los Angeles, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453336008",
+      "posted_date": "2026-10-16T17:31:39-04:00",
+      "comp": "Salary: $130k-$200k/year ($63-$96/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "3f0e13fe574d1069",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Construction Manager",
+      "location": "Fresno, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453339008",
+      "posted_date": "2026-10-16T17:31:55-04:00",
+      "comp": "Salary: $130k-$200k/year ($63-$96/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "f7a76fe903a4bb4f",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Contracts and Claims Specialist",
+      "location": "Fresno, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453430008",
+      "posted_date": "2026-10-16T17:36:26-04:00",
+      "comp": "Salary: $90k-$155k/year ($43-$75/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "d44527ad0b1f7197",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Contracts and Claims Specialist",
+      "location": "Sacramento, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453432008",
+      "posted_date": "2026-10-16T17:36:41-04:00",
+      "comp": "Salary: $90k-$155k/year ($43-$75/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "90121f99b360e73a",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Contracts and Claims Specialist",
+      "location": "New York, New York, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453434008",
+      "posted_date": "2026-10-16T17:36:58-04:00",
+      "comp": "Salary: $90k-$155k/year ($43-$75/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "6dccdea302d0b27a",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Contracts and Claims Specialist",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453419008",
+      "posted_date": "2026-10-16T17:35:51-04:00",
+      "comp": "Salary: $90k-$155k/year ($43-$75/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "16e033c3110e0fb6",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Contracts and Claims Specialist",
+      "location": "Los Angeles, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453428008",
+      "posted_date": "2026-10-16T17:36:10-04:00",
+      "comp": "Salary: $90k-$155k/year ($43-$75/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "9f475597605ce37b",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Document Control Manager",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453438008",
+      "posted_date": "2026-10-16T17:42:30-04:00",
+      "comp": "Salary: $110k-$175k/year ($53-$84/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "02450375197e65e4",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Document Control Manager",
+      "location": "Baltimore, Maryland, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453452008",
+      "posted_date": "2026-10-16T17:44:21-04:00",
+      "comp": "Salary: $110k-$175k/year ($53-$84/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "9d759ad9a9b345c2",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Document Control Manager",
+      "location": "New York, New York, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453450008",
+      "posted_date": "2026-10-16T17:43:57-04:00",
+      "comp": "Salary: $110k-$175k/year ($53-$84/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "1fc6064d3264e5e6",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Document Control Manager",
+      "location": "Fresno, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453444008",
+      "posted_date": "2026-10-16T17:43:17-04:00",
+      "comp": "Salary: $110k-$175k/year ($53-$84/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "517489aa037836b0",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Document Control Manager",
+      "location": "Los Angeles, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453442008",
+      "posted_date": "2026-10-16T17:42:52-04:00",
+      "comp": "Salary: $110k-$175k/year ($53-$84/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "4e990746a0357fe0",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Document Control Specialist",
+      "location": "New York, New York, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453464008",
+      "posted_date": "2026-10-16T17:55:30-04:00",
+      "comp": "Salary: $80k-$140k/year ($38-$67/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "7b2ecf5dbb9d6042",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Document Control Specialist",
+      "location": "Los Angeles, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453456008",
+      "posted_date": "2026-10-16T17:54:39-04:00",
+      "comp": "Salary: $80k-$140k/year ($38-$67/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "0bcbf28b3347b5bb",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Document Control Specialist",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453454008",
+      "posted_date": "2026-10-16T17:54:21-04:00",
+      "comp": "Salary: $80k-$140k/year ($38-$67/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "94b1f33f0dff97f9",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Document Control Specialist",
+      "location": "Fresno, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453458008",
+      "posted_date": "2026-10-16T17:54:57-04:00",
+      "comp": "Salary: $80k-$140k/year ($38-$67/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "9974e6a9f8b82533",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Office Engineer",
+      "location": "Fresno, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453482008",
+      "posted_date": "2026-10-16T18:42:55-04:00",
+      "comp": "pay applications and progress payments on a program valued at $1B+",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "84d468eb7b47b248",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Project Manager",
+      "location": "Sacramento, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453501008",
+      "posted_date": "2026-10-16T18:15:30-04:00",
+      "comp": "Salary: $115k-$210k/year ($55-$101/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "f950e854b8620005",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Project Manager",
+      "location": "Fresno, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453499008",
+      "posted_date": "2026-10-16T18:14:43-04:00",
+      "comp": "Salary: $115k-$210k/year ($55-$101/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "c282899445210a29",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Project Manager",
+      "location": "Los Angeles, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453497008",
+      "posted_date": "2026-10-16T18:14:11-04:00",
+      "comp": "Salary: $115k-$210k/year ($55-$101/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "421d48a8d38bf008",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Project Manager",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453493008",
+      "posted_date": "2026-10-16T18:13:49-04:00",
+      "comp": "Salary: $115k-$210k/year ($55-$101/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "e04cae1240bf6dc8",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Reporting Specialist",
+      "location": "Sacramento, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453511008",
+      "posted_date": "2026-10-16T18:20:03-04:00",
+      "comp": "Salary: $80k-$145k/year ($38-$70/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "f9b219449ae1f81f",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Reporting Specialist",
+      "location": "Fresno, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453509008",
+      "posted_date": "2026-10-16T18:19:44-04:00",
+      "comp": "Salary: $80k-$145k/year ($38-$70/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "5329e9fbd7a65202",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Reporting Specialist",
+      "location": "New York, New York, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453513008",
+      "posted_date": "2026-10-16T18:20:18-04:00",
+      "comp": "Salary: $80k-$145k/year ($38-$70/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "fe720b5e489de7ae",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Reporting Specialist",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453505008",
+      "posted_date": "2026-10-16T18:19:14-04:00",
+      "comp": "Salary: $80k-$145k/year ($38-$70/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "fc59accb9fc07f8f",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Reporting Specialist",
+      "location": "Los Angeles, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453507008",
+      "posted_date": "2026-10-16T18:19:28-04:00",
+      "comp": "Salary: $80k-$145k/year ($38-$70/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "3723375a229aec68",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Resident Engineer",
+      "location": "Sacramento, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453526008",
+      "posted_date": "2026-10-16T18:24:13-04:00",
+      "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "070f7b448e1ae788",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Resident Engineer",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453517008",
+      "posted_date": "2026-10-16T18:23:23-04:00",
+      "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "2a0ab9cf1a5a10b5",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Resident Engineer",
+      "location": "Los Angeles, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453519008",
+      "posted_date": "2026-10-16T18:23:37-04:00",
+      "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "27eb958362dd2903",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Resident Engineer",
+      "location": "Fresno, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453524008",
+      "posted_date": "2026-10-16T18:23:54-04:00",
+      "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "cc03dbe6acc6030a",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Resident Engineer",
+      "location": "Seattle, Washington, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453528008",
+      "posted_date": "2026-10-16T18:43:14-04:00",
+      "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "4defe95187ec88c7",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Resident Engineer",
+      "location": "New York, New York, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453530008",
+      "posted_date": "2026-10-16T18:24:36-04:00",
+      "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "field",
       "has_desc": true
     },
     {
@@ -3879,21 +4590,6 @@
       "flags": [
         "long-posted"
       ],
-      "role": "controls"
-    },
-    {
-      "id": "6e02d7daf784bb12",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Document Control Manager",
-      "location": "Sacramento, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5255287008",
-      "posted_date": "2026-06-11T14:01:12-04:00",
-      "comp": "Salary: $120k-$190k/year ($57-$92/hour)",
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-07-24",
-      "flags": [],
       "role": "controls"
     },
     {
@@ -5816,6 +6512,21 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-10-15",
+      "flags": [],
+      "role": "systems"
+    },
+    {
+      "id": "7d718e0873ed13a7",
+      "kind": "board",
+      "company": "Pyrovio",
+      "title": "Oracle Unifier Consultant",
+      "location": "Ann Arbor, Washtenaw County",
+      "url": "https://www.adzuna.com/land/ad/5914475532?se=wkh_FwbE8RG_59bpLSVmjQ&utm_medium=api&utm_source=55569923&v=203371E0F3D56274D7BF0E508747AC74DDB0D503",
+      "posted_date": "2026-10-06T20:17:01Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-17",
       "flags": [],
       "role": "systems"
     },
