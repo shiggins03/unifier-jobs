@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "warnings": [],
   "roster": [
     {
@@ -2075,6 +2075,62 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-10-20"
+    },
+    {
+      "company": "The Planet Group",
+      "url": "https://www.adzuna.com/land/ad/5922109423?se=elrhYmfN8RGl_9lPbTA8Yg&utm_medium=api&utm_source=55569923&v=F48DB573308D9962BC9057A7887FA0CB3112CE18",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-21"
+    },
+    {
+      "company": "DFND Security",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=elrhYmfN8RGl_9lPbTA8Yg&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-21"
+    },
+    {
+      "company": "GForce Life Sciences",
+      "url": "https://www.adzuna.com/land/ad/5932531383?se=elrhYmfN8RGl_9lPbTA8Yg&utm_medium=api&utm_source=55569923&v=21C04F9CA7889B44C12CBE85E7CDEDF58A0C8BD7",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-21"
+    },
+    {
+      "company": "Talent Search PRO",
+      "url": "https://www.adzuna.com/details/5936322076?utm_medium=api&utm_source=55569923",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-21"
+    },
+    {
+      "company": "USK Technologies",
+      "url": "https://www.adzuna.com/land/ad/5927282530?se=_NeuY2fN8RGporBJ0RNkIQ&utm_medium=api&utm_source=55569923&v=0B009464FB7498B7DEE163820B0425E25A09916F",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-21"
+    },
+    {
+      "company": "TechnoSphere, Inc.",
+      "url": "https://www.adzuna.com/land/ad/5936196059?se=_NeuY2fN8RGporBJ0RNkIQ&utm_medium=api&utm_source=55569923&v=AFB859548A07B4F176D8EECE449E29612F7DDE4D",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-21"
+    },
+    {
+      "company": "USK Technologies",
+      "url": "https://www.adzuna.com/land/ad/5927891897?se=_NeuY2fN8RGporBJ0RNkIQ&utm_medium=api&utm_source=55569923&v=098FD5B9373D6105F83CA5C029354721DEEA9C8D",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-21"
+    },
+    {
+      "company": "Globalchannelmanagement",
+      "url": "https://www.adzuna.com/details/5936646535?utm_medium=api&utm_source=55569923",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-21"
     }
   ],
   "jobs": [
@@ -2377,7 +2433,8 @@
       "status": "active",
       "gone_date": null,
       "flags": [
-        "comp-manual"
+        "comp-manual",
+        "long-posted"
       ],
       "role": "systems",
       "has_desc": true
@@ -2678,9 +2735,9 @@
       "company": "Luster National",
       "title": "Document Control Specialist ",
       "location": "Sacramento, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5421040008",
-      "posted_date": "2026-09-10T14:51:55-04:00",
-      "comp": "Salary: $68k-$117k/year ($33-$56/hour)",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453460008",
+      "posted_date": "2026-10-16T17:55:14-04:00",
+      "comp": "Salary: $80k-$140k/year ($38-$67/hour)",
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -2766,6 +2823,22 @@
       "gone_date": null,
       "flags": [],
       "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "5005eee5b0512c29",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Area Lead Piping Field Engineer - Undergrounds",
+      "location": "New Albany, Ohio, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299181&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-16T20:41:55.126+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "field",
       "has_desc": true
     },
     {
@@ -3191,7 +3264,7 @@
       "title": "Global Procore Administrator & Construction Process Lead",
       "location": "Boise, ID - Main Site",
       "url": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Boise-ID---Main-Site/Global-Document-Control---PMIS-Governance-Lead_JR104322",
-      "posted_date": "Posted 12 Days Ago",
+      "posted_date": "Posted 13 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -3222,7 +3295,7 @@
       "company": "DFND Security",
       "title": "Oracle WACS",
       "location": "Fort Sam Houston, Bexar County",
-      "url": "https://www.adzuna.com/land/ad/5863704034?se=EnjjMJzM8RG-1e8SRbB5aA&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=elrhYmfN8RGl_9lPbTA8Yg&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
       "posted_date": "2026-08-31T22:19:09Z",
       "comp": null,
       "tier": 1,
@@ -3289,7 +3362,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Denver, Colorado",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Denver-Colorado/Senior-Project-Controls-Manager---Aviation_JR6367",
-      "posted_date": "Posted 11 Days Ago",
+      "posted_date": "Posted 12 Days Ago",
       "comp": "$187,591.53 - $214,390.32",
       "tier": 1,
       "status": "active",
@@ -3305,7 +3378,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Project-Controls-Manager---Aviation_JR6366",
-      "posted_date": "Posted 10 Days Ago",
+      "posted_date": "Posted 11 Days Ago",
       "comp": "$196,118.41 - $224,135.33",
       "tier": 1,
       "status": "active",
@@ -3320,7 +3393,7 @@
       "company": "The Planet Group",
       "title": "Document Control Specialist",
       "location": "Bay City, Bay County",
-      "url": "https://www.adzuna.com/land/ad/5922109423?se=EnjjMJzM8RG-1e8SRbB5aA&utm_medium=api&utm_source=55569923&v=F48DB573308D9962BC9057A7887FA0CB3112CE18",
+      "url": "https://www.adzuna.com/land/ad/5922109423?se=elrhYmfN8RGl_9lPbTA8Yg&utm_medium=api&utm_source=55569923&v=F48DB573308D9962BC9057A7887FA0CB3112CE18",
       "posted_date": "2026-10-10T07:58:33Z",
       "comp": null,
       "tier": 1,
@@ -3416,7 +3489,7 @@
       "company": "USK Technologies",
       "title": "Energy Supply Software Analyst",
       "location": "Jackson, Jackson County",
-      "url": "https://www.adzuna.com/land/ad/5927282530?se=jB1fMZzM8RGxOcn8vDO86g&utm_medium=api&utm_source=55569923&v=0B009464FB7498B7DEE163820B0425E25A09916F",
+      "url": "https://www.adzuna.com/land/ad/5927282530?se=_NeuY2fN8RGporBJ0RNkIQ&utm_medium=api&utm_source=55569923&v=0B009464FB7498B7DEE163820B0425E25A09916F",
       "posted_date": "2026-10-14T06:47:23Z",
       "comp": "Pay: $40/hour Duration: 12 months Seeking an experien",
       "tier": 1,
@@ -3481,7 +3554,7 @@
       "title": "PMIS Specialist",
       "location": "Chicago, Illinois",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Chicago-Illinois/PMIS-Specialist_JR6372",
-      "posted_date": "Posted 6 Days Ago",
+      "posted_date": "Posted 7 Days Ago",
       "comp": "$75,656.68 - $86,464.77",
       "tier": 1,
       "status": "active",
@@ -3497,7 +3570,7 @@
       "title": "Scheduler",
       "location": "Fairfax, Virginia",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Fairfax-Virginia/Scheduler_JR6369",
-      "posted_date": "Posted 6 Days Ago",
+      "posted_date": "Posted 7 Days Ago",
       "comp": "$102,094.36 - $116,679.27",
       "tier": 1,
       "status": "active",
@@ -3544,7 +3617,7 @@
       "company": "USK Technologies",
       "title": "Energy Supply Software Analyst (Jackson)",
       "location": "Jackson, Jackson County",
-      "url": "https://www.adzuna.com/land/ad/5927891897?se=jB1fMZzM8RGxOcn8vDO86g&utm_medium=api&utm_source=55569923&v=098FD5B9373D6105F83CA5C029354721DEEA9C8D",
+      "url": "https://www.adzuna.com/land/ad/5927891897?se=_NeuY2fN8RGporBJ0RNkIQ&utm_medium=api&utm_source=55569923&v=098FD5B9373D6105F83CA5C029354721DEEA9C8D",
       "posted_date": "2026-10-14T13:49:52Z",
       "comp": "Pay: $40/hour Duration: 12 months Seeking an experien",
       "tier": 1,
@@ -4346,6 +4419,148 @@
       "location": "US, NY, New York",
       "url": "https://www.amazon.jobs/en/jobs/10583496/executive-assistant-i-amazon-ads-demand-product",
       "posted_date": "October 19, 2026",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "8dfb8770d861213c",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Advisor/Sr Advisor - Program Governance and Operations - GFD",
+      "location": "Richmond, Virginia, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Richmond-VA/Advisor-Sr-Advisor---Program-Governance-and-Operations---GFD_R-113139/apply",
+      "posted_date": "2026-10-20T20:27:00.520+0000",
+      "comp": "$130,500 - $211,200",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "fcab0f8e560f4f06",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Advisor/Sr Advisor - Program Governance and Operations - GFD",
+      "location": "Allentown, Pennsylvania, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Allentown-PA/Advisor-Sr-Advisor---Program-Governance-and-Operations---GFD_R-113141/apply",
+      "posted_date": "2026-10-20T20:27:00.538+0000",
+      "comp": "$130,500 - $211,200",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "76f577ab23848489",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Field Welding Engineer - Night Shift",
+      "location": "Brownsville, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300505&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-10-21T15:11:47.412+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "ed0dc8cd2461be88",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Project Controls Specialist",
+      "location": "Philadelphia, Pennsylvania",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Philadelphia-Pennsylvania/Project-Controls-Specialist_JR6021-1",
+      "posted_date": "Posted Yesterday",
+      "comp": "$75,656.68 - $86,464.77",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "a96c07ee0248a916",
+      "kind": "board",
+      "company": "GForce Life Sciences",
+      "title": "Cost and Claims Analyst (Westchester County)",
+      "location": "Westchester County, New York",
+      "url": "https://www.adzuna.com/land/ad/5932531383?se=elrhYmfN8RGl_9lPbTA8Yg&utm_medium=api&utm_source=55569923&v=21C04F9CA7889B44C12CBE85E7CDEDF58A0C8BD7",
+      "posted_date": "2026-10-17T13:43:37Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "29bf177637e7741c",
+      "kind": "board",
+      "company": "Talent Search PRO",
+      "title": "Energy Supply Software Configuration Analyst- Oracle Primavera P6, Oracle Unifier",
+      "location": "Jackson, Hinds County",
+      "url": "https://www.adzuna.com/details/5936322076?utm_medium=api&utm_source=55569923",
+      "posted_date": "2026-10-21T02:09:24Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "20c0a6859f0987c4",
+      "kind": "board",
+      "company": "TechnoSphere, Inc.",
+      "title": "Contract Role: Energy Supply Software Configuration Analyst - Jackson, MI 49201(Hybrid)",
+      "location": "Jackson, Jackson County",
+      "url": "https://www.adzuna.com/land/ad/5936196059?se=_NeuY2fN8RGporBJ0RNkIQ&utm_medium=api&utm_source=55569923&v=AFB859548A07B4F176D8EECE449E29612F7DDE4D",
+      "posted_date": "2026-10-20T23:39:02Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "00aba62b14991317",
+      "kind": "board",
+      "company": "Globalchannelmanagement",
+      "title": "Business Analyst",
+      "location": "Pontiac, Livingston County",
+      "url": "https://www.adzuna.com/details/5936646535?utm_medium=api&utm_source=55569923",
+      "posted_date": "2026-10-21T07:39:15Z",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -6141,21 +6356,6 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-09-30",
-      "flags": [],
-      "role": "field"
-    },
-    {
-      "id": "5005eee5b0512c29",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Area Lead Piping Field Engineer - Undergrounds",
-      "location": "New Albany, Ohio, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299181&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-09-16T20:41:55.126+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-10-16",
       "flags": [],
       "role": "field"
     },
