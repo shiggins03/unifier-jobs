@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22",
+  "updated": "2026-10-23",
   "warnings": [
     "hrmdirect:Project Partners: source reports 0 total jobs — monitor may be blind or endpoint changed"
   ],
@@ -2168,6 +2168,55 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-10-22"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/profile/job_details/2234429583792056/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Software Developer, GO Systems",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-10-23"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/profile/job_details/1104320825918317/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Software Engineer - Central Growth",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-10-23"
+    },
+    {
+      "company": "The Planet Group",
+      "url": "https://www.adzuna.com/land/ad/5922109423?se=VnqGJfjO8RG1G-F4Et1fCg&utm_medium=api&utm_source=55569923&v=F48DB573308D9962BC9057A7887FA0CB3112CE18",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-23"
+    },
+    {
+      "company": "DFND Security",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=VnqGJfjO8RG1G-F4Et1fCg&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-23"
+    },
+    {
+      "company": "Veracity Ventures Inc.",
+      "url": "https://www.adzuna.com/land/ad/5938746929?se=HB41JvjO8RGKHsc_afnXVw&utm_medium=api&utm_source=55569923&v=6985BE4391065796901290C5F478F8F27B238A26",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-23"
+    },
+    {
+      "company": "USK Technologies",
+      "url": "https://www.adzuna.com/land/ad/5927282530?se=HB41JvjO8RGKHsc_afnXVw&utm_medium=api&utm_source=55569923&v=0B009464FB7498B7DEE163820B0425E25A09916F",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-23"
+    },
+    {
+      "company": "USK Technologies",
+      "url": "https://www.adzuna.com/land/ad/5927891897?se=HB41JvjO8RGKHsc_afnXVw&utm_medium=api&utm_source=55569923&v=098FD5B9373D6105F83CA5C029354721DEEA9C8D",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-23"
     }
   ],
   "jobs": [
@@ -2477,24 +2526,6 @@
       "has_desc": true
     },
     {
-      "id": "488da78c09368adc",
-      "kind": "direct",
-      "company": "Project Partners",
-      "title": "Oracle Primavera Unifier Implementation Consultant - US Based",
-      "location": "Remote - US Based, United States",
-      "url": "https://projectp.hrmdirect.com/employment/job-opening.php?req=3707233&req_loc=1313708&&&nohd#job",
-      "posted_date": null,
-      "comp": "$100000 - $130000 Per Year",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [
-        "title-match"
-      ],
-      "role": "systems",
-      "has_desc": true
-    },
-    {
       "id": "5e4242b5b90acc5b",
       "kind": "direct",
       "company": "Eli Lilly",
@@ -2508,22 +2539,6 @@
       "gone_date": null,
       "flags": [],
       "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "0c4d71df52f90061",
-      "kind": "direct",
-      "company": "Project Partners",
-      "title": "Oracle Primavera P6 EPPM and Oracle Primavera Cloud (OPC) Consultant - US Based",
-      "location": "Remote - US Based, United States",
-      "url": "https://projectp.hrmdirect.com/employment/job-opening.php?req=3776777&req_loc=1414124&&&nohd#job",
-      "posted_date": null,
-      "comp": "$100000 - $130000",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
       "has_desc": true
     },
     {
@@ -2583,22 +2598,6 @@
       "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Huntsville-AL/Commissioning---Qualification--C-Q--Lead_R-110337/apply",
       "posted_date": "2026-08-24T18:21:46.129+0000",
       "comp": "$159,000 - $233,200",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
-      "id": "3e9bcb8d9f9f341f",
-      "kind": "direct",
-      "company": "Deloitte",
-      "title": "US E-Consulting Services – Sr. Consultant – S&T/Strategy/I&RE – Capital Projects (DBA) – 354006 – OK",
-      "location": null,
-      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Senior-Consultant-DBA-PWA/354006",
-      "posted_date": "Fri, 29 May 2026 00:00:00 +0000",
-      "comp": "range is $110,700 to $218,300",
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -2708,9 +2707,9 @@
       "company": "Luster National",
       "title": "Construction Inspector",
       "location": "Seattle, Washington, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5420014008",
-      "posted_date": "2026-09-10T10:55:06-04:00",
-      "comp": "Salary: $75k-$135k/year ($36-$65/hour)",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5443808008",
+      "posted_date": "2026-10-05T13:10:59-04:00",
+      "comp": "Salary: $85k-$150k/year ($41-$72/hour)",
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -2860,6 +2859,22 @@
       "gone_date": null,
       "flags": [],
       "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "af709386c2d4df15",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Life Safety System, Pfisterer, Fiber - Subcontract Technical Representative (STR)",
+      "location": "New Albany, Ohio, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299179&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-14T20:21:44.239+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "role": "field",
       "has_desc": true
     },
     {
@@ -3285,7 +3300,7 @@
       "title": "Global Procore Administrator & Construction Process Lead",
       "location": "Boise, ID - Main Site",
       "url": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Boise-ID---Main-Site/Global-Document-Control---PMIS-Governance-Lead_JR104322",
-      "posted_date": "Posted 14 Days Ago",
+      "posted_date": "Posted 15 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -3316,7 +3331,7 @@
       "company": "DFND Security",
       "title": "Oracle WACS",
       "location": "Fort Sam Houston, Bexar County",
-      "url": "https://www.adzuna.com/land/ad/5863704034?se=1gVBjDDO8RGC1t7-FdjP9w&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=VnqGJfjO8RG1G-F4Et1fCg&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
       "posted_date": "2026-08-31T22:19:09Z",
       "comp": null,
       "tier": 1,
@@ -3324,24 +3339,6 @@
       "gone_date": null,
       "flags": [],
       "role": "unclear",
-      "has_desc": true
-    },
-    {
-      "id": "b5fcc0496044fbbd",
-      "kind": "direct",
-      "company": "Meta",
-      "title": "Schedule & Technical Integration Manager, Data Centers",
-      "location": "Reston, VA; Menlo Park, CA",
-      "url": "https://www.metacareers.com/profile/job_details/1565674545076717/",
-      "posted_date": "2026-06-23T06:45:55-07:00",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [
-        "long-posted"
-      ],
-      "role": "systems",
       "has_desc": true
     },
     {
@@ -3383,7 +3380,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Denver, Colorado",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Denver-Colorado/Senior-Project-Controls-Manager---Aviation_JR6367",
-      "posted_date": "Posted 13 Days Ago",
+      "posted_date": "Posted 14 Days Ago",
       "comp": "$187,591.53 - $214,390.32",
       "tier": 1,
       "status": "active",
@@ -3399,7 +3396,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Project-Controls-Manager---Aviation_JR6366",
-      "posted_date": "Posted 12 Days Ago",
+      "posted_date": "Posted 13 Days Ago",
       "comp": "$196,118.41 - $224,135.33",
       "tier": 1,
       "status": "active",
@@ -3414,7 +3411,7 @@
       "company": "The Planet Group",
       "title": "Document Control Specialist",
       "location": "Bay City, Bay County",
-      "url": "https://www.adzuna.com/land/ad/5922109423?se=1gVBjDDO8RGC1t7-FdjP9w&utm_medium=api&utm_source=55569923&v=F48DB573308D9962BC9057A7887FA0CB3112CE18",
+      "url": "https://www.adzuna.com/land/ad/5922109423?se=VnqGJfjO8RG1G-F4Et1fCg&utm_medium=api&utm_source=55569923&v=F48DB573308D9962BC9057A7887FA0CB3112CE18",
       "posted_date": "2026-10-10T07:58:33Z",
       "comp": null,
       "tier": 1,
@@ -3510,7 +3507,7 @@
       "company": "USK Technologies",
       "title": "Energy Supply Software Analyst",
       "location": "Jackson, Jackson County",
-      "url": "https://www.adzuna.com/land/ad/5927282530?se=ZvozjTDO8RGC1t7-FdjP9w&utm_medium=api&utm_source=55569923&v=0B009464FB7498B7DEE163820B0425E25A09916F",
+      "url": "https://www.adzuna.com/land/ad/5927282530?se=HB41JvjO8RGKHsc_afnXVw&utm_medium=api&utm_source=55569923&v=0B009464FB7498B7DEE163820B0425E25A09916F",
       "posted_date": "2026-10-14T06:47:23Z",
       "comp": "Pay: $40/hour Duration: 12 months Seeking an experien",
       "tier": 1,
@@ -3575,7 +3572,7 @@
       "title": "PMIS Specialist",
       "location": "Chicago, Illinois",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Chicago-Illinois/PMIS-Specialist_JR6372",
-      "posted_date": "Posted 8 Days Ago",
+      "posted_date": "Posted 9 Days Ago",
       "comp": "$75,656.68 - $86,464.77",
       "tier": 1,
       "status": "active",
@@ -3591,7 +3588,7 @@
       "title": "Scheduler",
       "location": "Fairfax, Virginia",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Fairfax-Virginia/Scheduler_JR6369",
-      "posted_date": "Posted 8 Days Ago",
+      "posted_date": "Posted 9 Days Ago",
       "comp": "$102,094.36 - $116,679.27",
       "tier": 1,
       "status": "active",
@@ -3622,7 +3619,7 @@
       "company": "USK Technologies",
       "title": "Energy Supply Software Analyst (Jackson)",
       "location": "Jackson, Jackson County",
-      "url": "https://www.adzuna.com/land/ad/5927891897?se=ZvozjTDO8RGC1t7-FdjP9w&utm_medium=api&utm_source=55569923&v=098FD5B9373D6105F83CA5C029354721DEEA9C8D",
+      "url": "https://www.adzuna.com/land/ad/5927891897?se=HB41JvjO8RGKHsc_afnXVw&utm_medium=api&utm_source=55569923&v=098FD5B9373D6105F83CA5C029354721DEEA9C8D",
       "posted_date": "2026-10-14T13:49:52Z",
       "comp": "Pay: $40/hour Duration: 12 months Seeking an experien",
       "tier": 1,
@@ -4487,7 +4484,7 @@
       "title": "Project Controls Specialist",
       "location": "Philadelphia, Pennsylvania",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Philadelphia-Pennsylvania/Project-Controls-Specialist_JR6021-1",
-      "posted_date": "Posted 2 Days Ago",
+      "posted_date": "Posted 3 Days Ago",
       "comp": "$75,656.68 - $86,464.77",
       "tier": 1,
       "status": "active",
@@ -4572,10 +4569,26 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
+      "flags": [],
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "92a46d9a489192e6",
+      "kind": "board",
+      "company": "Veracity Ventures Inc.",
+      "title": "Energy Supply Software Configuration Analyst",
+      "location": "Detroit, Wayne County",
+      "url": "https://www.adzuna.com/land/ad/5938746929?se=HB41JvjO8RGKHsc_afnXVw&utm_medium=api&utm_source=55569923&v=6985BE4391065796901290C5F478F8F27B238A26",
+      "posted_date": "2026-10-22T23:31:51Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
       "flags": [
         "new"
       ],
-      "role": "unclear",
+      "role": "systems",
       "has_desc": true
     },
     {
@@ -5645,6 +5658,23 @@
       "role": "controls"
     },
     {
+      "id": "488da78c09368adc",
+      "kind": "direct",
+      "company": "Project Partners",
+      "title": "Oracle Primavera Unifier Implementation Consultant - US Based",
+      "location": "Remote - US Based, United States",
+      "url": "https://projectp.hrmdirect.com/employment/job-opening.php?req=3707233&req_loc=1313708&&&nohd#job",
+      "posted_date": null,
+      "comp": "$100000 - $130000 Per Year",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-23",
+      "flags": [
+        "title-match"
+      ],
+      "role": "systems"
+    },
+    {
       "id": "e0fa3a97533e4ebf",
       "kind": "direct",
       "company": "Meta",
@@ -5675,6 +5705,21 @@
       "gone_date": "2026-10-02",
       "flags": [],
       "role": "controls"
+    },
+    {
+      "id": "0c4d71df52f90061",
+      "kind": "direct",
+      "company": "Project Partners",
+      "title": "Oracle Primavera P6 EPPM and Oracle Primavera Cloud (OPC) Consultant - US Based",
+      "location": "Remote - US Based, United States",
+      "url": "https://projectp.hrmdirect.com/employment/job-opening.php?req=3776777&req_loc=1414124&&&nohd#job",
+      "posted_date": null,
+      "comp": "$100000 - $130000",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-23",
+      "flags": [],
+      "role": "systems"
     },
     {
       "id": "facd2cb88187d0a7",
@@ -5975,6 +6020,21 @@
       "gone_date": "2026-09-20",
       "flags": [],
       "role": "systems"
+    },
+    {
+      "id": "3e9bcb8d9f9f341f",
+      "kind": "direct",
+      "company": "Deloitte",
+      "title": "US E-Consulting Services – Sr. Consultant – S&T/Strategy/I&RE – Capital Projects (DBA) – 354006 – OK",
+      "location": null,
+      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Senior-Consultant-DBA-PWA/354006",
+      "posted_date": "Fri, 29 May 2026 00:00:00 +0000",
+      "comp": "range is $110,700 to $218,300",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-23",
+      "flags": [],
+      "role": "unclear"
     },
     {
       "id": "6e695f7c7a2ba0e0",
@@ -6288,21 +6348,6 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-10-18",
-      "flags": [],
-      "role": "field"
-    },
-    {
-      "id": "af709386c2d4df15",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Life Safety System, Pfisterer, Fiber - Subcontract Technical Representative (STR)",
-      "location": "New Albany, Ohio, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299179&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-09-14T20:21:44.239+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-10-14",
       "flags": [],
       "role": "field"
     },
@@ -6787,6 +6832,23 @@
       "gone_date": "2026-10-15",
       "flags": [
         "title-match"
+      ],
+      "role": "systems"
+    },
+    {
+      "id": "b5fcc0496044fbbd",
+      "kind": "direct",
+      "company": "Meta",
+      "title": "Schedule & Technical Integration Manager, Data Centers",
+      "location": "Reston, VA; Menlo Park, CA",
+      "url": "https://www.metacareers.com/profile/job_details/1565674545076717/",
+      "posted_date": "2026-06-23T06:45:55-07:00",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-23",
+      "flags": [
+        "long-posted"
       ],
       "role": "systems"
     },
