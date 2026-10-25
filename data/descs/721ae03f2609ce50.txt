@@ -1,7 +1,10 @@
-We are seeking a hands-on technical leader to build and deploy the dashboards, reports, and AI-enabled analytics that help senior leadership understand operational performance, 
-identify risks, and make informed decisions.
+The Global Program Controls organization provides governance, reporting, controls processes, cost management support, and portfolio visibility to help Oracle Cloud Infrastructure deliver global data center programs with greater consistency, transparency, and execution discipline.  
+
+We are seeking a hands-on technical leader to build and deploy the dashboards, reports, and AI-enabled analytics that help senior leadership understand operational performance, identify risks, and make informed decisions.
 
 We have an established database foundation supported by data entry and governance processes. This role will build on that foundation by turning trusted data into reliable reporting products that people use in their daily work. The position will integrate information from Oracle Primavera Cloud (OPC), our scheduling platform, Oracle Primavera Unifier, and Oracle APEX applications and their underlying data sources.
+
+ 
 
 The successful candidate will personally write queries, develop reporting models, build dashboards, connect systems, and deploy solutions into production. They will also establish reporting priorities and technical standards, working closely with business leaders, system owners, and technical teams. The role carries substantial technical ownership and can operate as a senior individual contributor leading cross-functional delivery.
 
@@ -19,10 +22,6 @@ Dashboard and Reporting Development
 
 Design, build, and deploy executive and operational dashboards that provide consistent views of schedules, milestones, delivery progress, dependencies, and emerging risks.
 
-Translate business questions into defined metrics, data requirements, reporting logic, and intuitive visualizations with useful filters and drill-down capabilities.
-
-Develop reusable datasets, SQL queries, and reporting models that support multiple dashboards and reduce manual report preparation.
-
-Own reporting solutions through requirements, development, testing, deployment, user adoption, and ongoing maintenance.
+Translate business questions into defined metrics, data requirements, reporting logic, and intuitive visualizations with useful filt
 
 [Truncated for this view — full text at the posting link]
