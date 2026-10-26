@@ -1,11 +1,12 @@
-Requisition ID: 299406
+Requisition ID: 300472
  
  
-Relocation Authorized: National/International - Family
+Relocation Authorized: None
  
 Telework Type: Full-Time Office/Project
  
-Work Location: New Albany, OH
+Work Location: Reston, VA
+Salary Range: $166,260 - $224,960 annually (salary range is based on market data; final salary offered is determined by education, experience, and qualifications of the applicant.)
  
 Extraordinary teams building inspiring projects:
  
@@ -18,12 +19,13 @@ extraordinary teams building inspiring projects
  in our 
 Impact Report
 . 
-Project Overview:
- 
-Bechtel is building a semiconductor manufacturing plant in New Albany, Ohio. Bechtel will design and build Phase 1 of the Ohio One project, a total of 2.5 million square feet, including 600,000 square feet of cleanrooms. Construction will require as much steel as eight Eiffel Towers and as much concrete as the tallest skyscrapers.
-Bechtel will strengthen future economic development in the region by partnering with the North America Building Trades Unions and suppliers to create several thousand new jobs and work with local education organizations to implement new training programs that will support the future talent pipeline.
 Job Summary:
  
-The Lead CSA Field Engineer leads the civil, structural, and architectural field engineering team for the site as a whole and reports to the Project Field En
+The Project Innovation & Information Manager (PIIM) is responsible for spearheading the implementation of digital, AI and innovation, robotics solutions across cross-functional workflows to measurably improve productivity, safety, and quality. This role will work closely with the Project Management team to implement the technology, applications, and hardware required to deliver the project in a data-centric manner and enhance cross-functional delivery on Clean Power projects
+. #LI-JL1
+Major Responsibilities:
+ 
+The successful candidate can expect to deploy a broad range of automation, innovation and AI solutions including:
+Prepare, implement, and maintai
 
 [Truncated for this view — full text at the posting link]
