@@ -2041,5 +2041,54 @@
     "note": "unknown employer — find direct posting, propose tier",
     "source": "adzuna",
     "first_seen": "2026-10-26"
+  },
+  {
+    "company": "Meta",
+    "url": "https://www.metacareers.com/profile/job_details/3265378000517806/",
+    "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Research Scientist Intern, Generative Recommendation Systems (PhD)",
+    "source": "meta_graphql:Meta",
+    "first_seen": "2026-10-27"
+  },
+  {
+    "company": "Meta",
+    "url": "https://www.metacareers.com/profile/job_details/1794592705158849/",
+    "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Product Designer",
+    "source": "meta_graphql:Meta",
+    "first_seen": "2026-10-27"
+  },
+  {
+    "company": "The Planet Group",
+    "url": "https://www.adzuna.com/land/ad/5922109423?se=MAW_sCHS8RGnNKlqPo-d_w&utm_medium=api&utm_source=55569923&v=F48DB573308D9962BC9057A7887FA0CB3112CE18",
+    "note": "unknown employer — find direct posting, propose tier",
+    "source": "adzuna",
+    "first_seen": "2026-10-27"
+  },
+  {
+    "company": "Metropolitan Transportation Authority",
+    "url": "https://www.adzuna.com/land/ad/5936496971?se=MAW_sCHS8RGnNKlqPo-d_w&utm_medium=api&utm_source=55569923&v=71426BFC31F42817863F7D2C6512DA38C1CE82E4",
+    "note": "unknown employer — find direct posting, propose tier",
+    "source": "adzuna",
+    "first_seen": "2026-10-27"
+  },
+  {
+    "company": "USK Technologies",
+    "url": "https://www.adzuna.com/land/ad/5927282530?se=DtBlsSHS8RGnNKlqPo-d_w&utm_medium=api&utm_source=55569923&v=0B009464FB7498B7DEE163820B0425E25A09916F",
+    "note": "unknown employer — find direct posting, propose tier",
+    "source": "adzuna",
+    "first_seen": "2026-10-27"
+  },
+  {
+    "company": "TechnoSphere, Inc.",
+    "url": "https://www.adzuna.com/land/ad/5936196059?se=DtBlsSHS8RGnNKlqPo-d_w&utm_medium=api&utm_source=55569923&v=AFB859548A07B4F176D8EECE449E29612F7DDE4D",
+    "note": "unknown employer — find direct posting, propose tier",
+    "source": "adzuna",
+    "first_seen": "2026-10-27"
+  },
+  {
+    "company": "USK Technologies",
+    "url": "https://www.adzuna.com/land/ad/5927891897?se=DtBlsSHS8RGnNKlqPo-d_w&utm_medium=api&utm_source=55569923&v=098FD5B9373D6105F83CA5C029354721DEEA9C8D",
+    "note": "unknown employer — find direct posting, propose tier",
+    "source": "adzuna",
+    "first_seen": "2026-10-27"
   }
 ]
