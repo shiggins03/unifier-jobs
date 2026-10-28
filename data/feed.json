@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-27",
-  "warnings": [
-    "hrmdirect:Project Partners: source reports 0 total jobs — monitor may be blind or endpoint changed"
-  ],
+  "updated": "2026-10-28",
+  "new_window_days": 7,
+  "warnings": [],
   "roster": [
     {
       "name": "Meta",
+      "aliases": [],
       "tier": "A",
       "ats": "meta_graphql",
       "enabled": true,
@@ -13,6 +13,7 @@
     },
     {
       "name": "Google",
+      "aliases": [],
       "tier": "A",
       "ats": "generic_page",
       "enabled": true,
@@ -20,6 +21,7 @@
     },
     {
       "name": "Oracle",
+      "aliases": [],
       "tier": "A",
       "ats": "oracle_orc",
       "enabled": true,
@@ -27,6 +29,7 @@
     },
     {
       "name": "Amazon",
+      "aliases": [],
       "tier": "A",
       "ats": "amazon_jobs",
       "enabled": true,
@@ -34,6 +37,7 @@
     },
     {
       "name": "NVIDIA",
+      "aliases": [],
       "tier": "A",
       "ats": "workday",
       "enabled": true,
@@ -41,6 +45,7 @@
     },
     {
       "name": "Micron",
+      "aliases": [],
       "tier": "A",
       "ats": "workday",
       "enabled": true,
@@ -48,6 +53,7 @@
     },
     {
       "name": "Intel",
+      "aliases": [],
       "tier": "A",
       "ats": "workday",
       "enabled": true,
@@ -55,6 +61,7 @@
     },
     {
       "name": "Pfizer",
+      "aliases": [],
       "tier": "A",
       "ats": "workday",
       "enabled": true,
@@ -62,6 +69,7 @@
     },
     {
       "name": "PwC",
+      "aliases": [],
       "tier": "A",
       "ats": "workday",
       "enabled": true,
@@ -69,6 +77,7 @@
     },
     {
       "name": "Eli Lilly",
+      "aliases": [],
       "tier": "A",
       "ats": "phenom",
       "enabled": true,
@@ -76,6 +85,7 @@
     },
     {
       "name": "Johnson & Johnson",
+      "aliases": [],
       "tier": "A",
       "ats": "workday",
       "enabled": true,
@@ -83,6 +93,7 @@
     },
     {
       "name": "EY",
+      "aliases": [],
       "tier": "A",
       "ats": "successfactors",
       "enabled": false,
@@ -90,6 +101,7 @@
     },
     {
       "name": "Accenture",
+      "aliases": [],
       "tier": "A",
       "ats": "workday",
       "enabled": true,
@@ -97,6 +109,7 @@
     },
     {
       "name": "Deloitte",
+      "aliases": [],
       "tier": "A",
       "ats": "avature_feed",
       "enabled": true,
@@ -104,6 +117,7 @@
     },
     {
       "name": "JLL",
+      "aliases": [],
       "tier": "B",
       "ats": "workday",
       "enabled": true,
@@ -111,6 +125,7 @@
     },
     {
       "name": "Bechtel",
+      "aliases": [],
       "tier": "B",
       "ats": "phenom",
       "enabled": true,
@@ -118,6 +133,7 @@
     },
     {
       "name": "WSP",
+      "aliases": [],
       "tier": "B",
       "ats": "workday",
       "enabled": false,
@@ -125,6 +141,7 @@
     },
     {
       "name": "Burns & McDonnell",
+      "aliases": [],
       "tier": "B",
       "ats": "workday",
       "enabled": false,
@@ -132,6 +149,7 @@
     },
     {
       "name": "Turner & Townsend",
+      "aliases": [],
       "tier": "B",
       "ats": "smartrecruiters",
       "enabled": true,
@@ -139,6 +157,9 @@
     },
     {
       "name": "MTA",
+      "aliases": [
+        "Metropolitan Transportation Authority"
+      ],
       "tier": "B",
       "ats": "generic_page",
       "enabled": false,
@@ -146,6 +167,7 @@
     },
     {
       "name": "City of New York",
+      "aliases": [],
       "tier": "B",
       "ats": "generic_page",
       "enabled": true,
@@ -153,6 +175,7 @@
     },
     {
       "name": "STV",
+      "aliases": [],
       "tier": "B",
       "ats": "workday",
       "enabled": true,
@@ -160,6 +183,7 @@
     },
     {
       "name": "Hill International",
+      "aliases": [],
       "tier": "B",
       "ats": "oracle_orc",
       "enabled": true,
@@ -167,6 +191,7 @@
     },
     {
       "name": "Moss",
+      "aliases": [],
       "tier": "B",
       "ats": "workday",
       "enabled": true,
@@ -174,6 +199,7 @@
     },
     {
       "name": "Duke Energy",
+      "aliases": [],
       "tier": "B",
       "ats": "workday",
       "enabled": true,
@@ -181,6 +207,7 @@
     },
     {
       "name": "Con Edison",
+      "aliases": [],
       "tier": "B",
       "ats": "oracle_orc",
       "enabled": true,
@@ -188,6 +215,7 @@
     },
     {
       "name": "Booz Allen Hamilton",
+      "aliases": [],
       "tier": "B",
       "ats": "workday",
       "enabled": true,
@@ -195,6 +223,7 @@
     },
     {
       "name": "NewYork-Presbyterian",
+      "aliases": [],
       "tier": "B",
       "ats": "phenom",
       "enabled": true,
@@ -202,6 +231,7 @@
     },
     {
       "name": "AT&T",
+      "aliases": [],
       "tier": "A",
       "ats": "workday",
       "enabled": true,
@@ -209,6 +239,7 @@
     },
     {
       "name": "Cleveland Clinic",
+      "aliases": [],
       "tier": "B",
       "ats": "workday",
       "enabled": true,
@@ -216,6 +247,7 @@
     },
     {
       "name": "Peloton Consulting Group",
+      "aliases": [],
       "tier": "B",
       "ats": "oracle_orc",
       "enabled": true,
@@ -223,6 +255,7 @@
     },
     {
       "name": "Metropolitan Airports Commission",
+      "aliases": [],
       "tier": "B",
       "ats": "generic_page",
       "enabled": false,
@@ -230,6 +263,7 @@
     },
     {
       "name": "Argano",
+      "aliases": [],
       "tier": "B",
       "ats": "oracle_orc",
       "enabled": true,
@@ -237,6 +271,7 @@
     },
     {
       "name": "Amtrak",
+      "aliases": [],
       "tier": "B",
       "ats": "successfactors",
       "enabled": true,
@@ -244,6 +279,7 @@
     },
     {
       "name": "Turner Construction",
+      "aliases": [],
       "tier": "B",
       "ats": "generic_page",
       "enabled": false,
@@ -251,6 +287,7 @@
     },
     {
       "name": "Port Authority NY/NJ",
+      "aliases": [],
       "tier": "B",
       "ats": "workday",
       "enabled": false,
@@ -258,6 +295,7 @@
     },
     {
       "name": "NYPA",
+      "aliases": [],
       "tier": "B",
       "ats": "workday",
       "enabled": false,
@@ -265,6 +303,7 @@
     },
     {
       "name": "LA Metro",
+      "aliases": [],
       "tier": "B",
       "ats": "generic_page",
       "enabled": false,
@@ -272,6 +311,7 @@
     },
     {
       "name": "MARTA",
+      "aliases": [],
       "tier": "B",
       "ats": "generic_page",
       "enabled": false,
@@ -279,6 +319,7 @@
     },
     {
       "name": "BC Hydro",
+      "aliases": [],
       "tier": "B",
       "ats": "generic_page",
       "enabled": false,
@@ -286,6 +327,7 @@
     },
     {
       "name": "Northwell Health",
+      "aliases": [],
       "tier": "B",
       "ats": "generic_page",
       "enabled": false,
@@ -293,6 +335,7 @@
     },
     {
       "name": "Mass General Brigham",
+      "aliases": [],
       "tier": "B",
       "ats": "workday",
       "enabled": true,
@@ -300,6 +343,7 @@
     },
     {
       "name": "Petrofac",
+      "aliases": [],
       "tier": "B",
       "ats": "generic_page",
       "enabled": false,
@@ -307,6 +351,7 @@
     },
     {
       "name": "Linesight",
+      "aliases": [],
       "tier": "B",
       "ats": "generic_page",
       "enabled": true,
@@ -314,6 +359,7 @@
     },
     {
       "name": "Wipro",
+      "aliases": [],
       "tier": "B",
       "ats": "generic_page",
       "enabled": false,
@@ -321,13 +367,33 @@
     },
     {
       "name": "Consertus",
+      "aliases": [],
       "tier": "B",
       "ats": "workday",
       "enabled": true,
       "note": "moved C→B 2026-07-20 when tiers became prestige/comp — ~1,000-person global capital-program firm, same weight class as Hill/STV/Linesight, not a boutique. (Owner flagged it as under-rated at C.)"
     },
     {
+      "name": "AtkinsRéalis",
+      "aliases": [
+        "SNC-Lavalin"
+      ],
+      "tier": "B",
+      "ats": "workday",
+      "enabled": true,
+      "note": "ADDED 2026-10-28 from discovery — Adzuna surfaced five \"Systems Consultant - Unifier\" reqs (Tampa/Austin/Denver/Tempe/Miami) Aug-Sep. careers.atkinsrealis.com is a custom front end (token-gated connectid.cloud search API) but every posting links to Workday tenant slihrms (SNC-Lavalin's old HR system). cxs verified: inventory 2000, \"unifier\" -> Tempe Systems Consultant ($90-140k) + Denver + LA roles, nonsense query -> 0. Locations are raw ids (\"CA.QC.Montréal...\") — filters.WD_COUNTRY_PREFIX keeps the Canadian/Indian reqs off the board."
+    },
+    {
+      "name": "PMA Consultants",
+      "aliases": [],
+      "tier": "B",
+      "ats": "lever",
+      "enabled": true,
+      "note": "ADDED 2026-10-28 from discovery — Adzuna found their Program Support Analyst (Oracle Unifier, public capital program, $105,077-$147,868) in Sep. Lever public API, whole board in one call (26 reqs, 0 Unifier today); comp is quoted from their own salary sentence."
+    },
+    {
       "name": "DRMcNatty & Associates",
+      "aliases": [],
       "tier": "C",
       "ats": "generic_page",
       "enabled": true,
@@ -335,6 +401,7 @@
     },
     {
       "name": "OnIndus",
+      "aliases": [],
       "tier": "C",
       "ats": "generic_page",
       "enabled": true,
@@ -342,13 +409,17 @@
     },
     {
       "name": "Project Partners",
+      "aliases": [
+        "Broadpin"
+      ],
       "tier": "C",
-      "ats": "hrmdirect",
+      "ats": "clearcompany",
       "enabled": true,
-      "note": "careers.php only iframes their HRM Direct board, so the old generic_page monitor saw marketing copy (permanent \"unifier\" false positive) and never the jobs — fixed 2026-08-11 after the owner found their \"Oracle Primavera Unifier Implementation Consultant\" by hand. Board is branded Broadpin. Detail pages carry stated salary."
+      "note": "Rebranded Broadpin (alias, so aggregator copies under that name are recognized and dropped). careers.php only iframes their ATS. Was hrmdirect until ClearCompany retired HRM Direct boards ~2026-10-22 — the old board 301s to apply.clearcompany.com/projectp, a JS shell — which blinded the monitor and falsely marked both live reqs gone on 10-23. Switched to the clearcompany JSON API 2026-10-28."
     },
     {
       "name": "EPMA",
+      "aliases": [],
       "tier": "C",
       "ats": "jobvite",
       "enabled": false,
@@ -356,6 +427,7 @@
     },
     {
       "name": "CDP Inc.",
+      "aliases": [],
       "tier": "C",
       "ats": "generic_page",
       "enabled": false,
@@ -363,6 +435,7 @@
     },
     {
       "name": "Luster National",
+      "aliases": [],
       "tier": "C",
       "ats": "greenhouse",
       "enabled": true,
@@ -370,6 +443,7 @@
     },
     {
       "name": "Compass Consult",
+      "aliases": [],
       "tier": "C",
       "ats": "generic_page",
       "enabled": false,
@@ -377,6 +451,7 @@
     },
     {
       "name": "Foresee Consulting",
+      "aliases": [],
       "tier": "C",
       "ats": "generic_page",
       "enabled": false,
@@ -2385,6 +2460,41 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-10-27"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/profile/job_details/1789380188995838/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Research Scientist Intern, Computer Vision - Video Intelligence (PhD)",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-10-28"
+    },
+    {
+      "company": "DFND Security",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=zp6RLeDS8RG0v6omR9kuEw&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-28"
+    },
+    {
+      "company": "USK Technologies",
+      "url": "https://www.adzuna.com/land/ad/5927282530?se=nIOwLuDS8RGI5dVyyzz_lQ&utm_medium=api&utm_source=55569923&v=0B009464FB7498B7DEE163820B0425E25A09916F",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-28"
+    },
+    {
+      "company": "TechnoSphere, Inc.",
+      "url": "https://www.adzuna.com/land/ad/5936196059?se=nIOwLuDS8RGI5dVyyzz_lQ&utm_medium=api&utm_source=55569923&v=AFB859548A07B4F176D8EECE449E29612F7DDE4D",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-28"
+    },
+    {
+      "company": "USK Technologies",
+      "url": "https://www.adzuna.com/land/ad/5927891897?se=nIOwLuDS8RGI5dVyyzz_lQ&utm_medium=api&utm_source=55569923&v=098FD5B9373D6105F83CA5C029354721DEEA9C8D",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-28"
     }
   ],
   "jobs": [
@@ -2403,6 +2513,7 @@
       "flags": [
         "title-match"
       ],
+      "first_seen": "2026-07-17",
       "role": "systems",
       "has_desc": true
     },
@@ -2421,22 +2532,7 @@
       "flags": [
         "long-posted"
       ],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "6e02d7daf784bb12",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Document Control Manager",
-      "location": "Sacramento, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453446008",
-      "posted_date": "2026-10-16T17:43:37-04:00",
-      "comp": "Salary: $110k-$175k/year ($53-$84/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
+      "first_seen": "2026-07-17",
       "role": "controls",
       "has_desc": true
     },
@@ -2455,6 +2551,7 @@
       "flags": [
         "long-posted"
       ],
+      "first_seen": "2026-07-17",
       "role": "controls",
       "has_desc": true
     },
@@ -2473,6 +2570,7 @@
       "flags": [
         "long-posted"
       ],
+      "first_seen": "2026-07-17",
       "role": "field",
       "has_desc": true
     },
@@ -2491,6 +2589,7 @@
       "flags": [
         "long-posted"
       ],
+      "first_seen": "2026-07-17",
       "role": "field",
       "has_desc": true
     },
@@ -2509,6 +2608,7 @@
       "flags": [
         "long-posted"
       ],
+      "first_seen": "2026-07-17",
       "role": "field",
       "has_desc": true
     },
@@ -2525,6 +2625,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-07-17",
       "role": "field",
       "has_desc": true
     },
@@ -2541,6 +2642,26 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-07-17",
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "3c178b344fb01f46",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "LOTO Authority",
+      "location": "Chandler, Arizona, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296771&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-07-07T22:16:49.503+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "long-posted"
+      ],
+      "first_seen": "2026-07-17",
       "role": "field",
       "has_desc": true
     },
@@ -2557,6 +2678,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-07-20",
       "role": "controls",
       "has_desc": true
     },
@@ -2573,6 +2695,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-07-20",
       "role": "controls",
       "has_desc": true
     },
@@ -2582,13 +2705,14 @@
       "company": "Bechtel",
       "title": "Field Welding Engineer",
       "location": "Brownsville, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300059&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-10-08T14:14:31.879+0000",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300055&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-10-08T13:29:26.439+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-07-23",
       "role": "field",
       "has_desc": true
     },
@@ -2605,6 +2729,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-07-29",
       "role": "systems",
       "has_desc": true
     },
@@ -2623,23 +2748,8 @@
       "flags": [
         "long-posted"
       ],
+      "first_seen": "2026-07-30",
       "role": "field",
-      "has_desc": true
-    },
-    {
-      "id": "0b8287d0a22b0605",
-      "kind": "direct",
-      "company": "Amazon",
-      "title": "Construction Cost Manager, NA Design & Construction Governance, Global Engineering Services, GEMS D&C, Cost Management",
-      "location": "US, WA, Bellevue",
-      "url": "https://www.amazon.jobs/en/jobs/10436957/construction-cost-manager-na-design-construction-governance-global-engineering-services-gems-d-c-cost-management",
-      "posted_date": "June  2, 2026",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
       "has_desc": true
     },
     {
@@ -2658,23 +2768,8 @@
         "manual",
         "title-match"
       ],
+      "first_seen": "2026-07-30",
       "role": "systems"
-    },
-    {
-      "id": "7ab7020888283021",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Construction Automation Specialist",
-      "location": "New Albany, Ohio, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297566&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-08-11T19:17:20.690+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "unclear",
-      "has_desc": true
     },
     {
       "id": "98d913517a44be5e",
@@ -2692,6 +2787,44 @@
         "comp-manual",
         "long-posted"
       ],
+      "first_seen": "2026-08-12",
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "488da78c09368adc",
+      "kind": "direct",
+      "company": "Project Partners",
+      "title": "Oracle Primavera Unifier Implementation Consultant - US Based",
+      "location": "Remote - US Based, United States",
+      "url": "https://apply.clearcompany.com/projectp?jobId=122c92a5-89d9-aa62-7ceb-dfcafa632047",
+      "posted_date": "2026-05-05T00:00:00",
+      "comp": "Salary Range: $100,000 to $130,000 per year",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "title-match",
+        "long-posted"
+      ],
+      "first_seen": "2026-08-12",
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "0c4d71df52f90061",
+      "kind": "direct",
+      "company": "Project Partners",
+      "title": "Oracle Primavera P6 EPPM and Oracle Primavera Cloud (OPC) Consultant - US Based",
+      "location": "Remote - US Based, United States",
+      "url": "https://apply.clearcompany.com/projectp?jobId=c6811535-a0d9-9a75-e97d-17ab5f0734fd",
+      "posted_date": "2026-07-31T00:00:00",
+      "comp": "Salary Range: $100,000 - $130.000",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "first_seen": "2026-08-13",
       "role": "systems",
       "has_desc": true
     },
@@ -2708,6 +2841,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-08-18",
       "role": "systems",
       "has_desc": true
     },
@@ -2724,6 +2858,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-08-20",
       "role": "systems",
       "has_desc": true
     },
@@ -2740,6 +2875,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-08-22",
       "role": "systems",
       "has_desc": true
     },
@@ -2756,6 +2892,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-08-25",
       "role": "unclear",
       "has_desc": true
     },
@@ -2772,6 +2909,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-01",
       "role": "unclear",
       "has_desc": true
     },
@@ -2788,6 +2926,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-01",
       "role": "systems",
       "has_desc": true
     },
@@ -2804,6 +2943,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-01",
       "role": "field",
       "has_desc": true
     },
@@ -2820,6 +2960,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-02",
       "role": "field",
       "has_desc": true
     },
@@ -2836,6 +2977,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-02",
       "role": "field",
       "has_desc": true
     },
@@ -2852,6 +2994,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-04",
       "role": "field",
       "has_desc": true
     },
@@ -2868,6 +3011,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-05",
       "role": "controls",
       "has_desc": true
     },
@@ -2884,6 +3028,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-05",
       "role": "field",
       "has_desc": true
     },
@@ -2900,6 +3045,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-10",
       "role": "controls",
       "has_desc": true
     },
@@ -2916,6 +3062,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-10",
       "role": "controls",
       "has_desc": true
     },
@@ -2932,6 +3079,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-10",
       "role": "field",
       "has_desc": true
     },
@@ -2948,6 +3096,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-10",
       "role": "controls",
       "has_desc": true
     },
@@ -2964,6 +3113,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-10",
       "role": "unclear",
       "has_desc": true
     },
@@ -2980,6 +3130,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-10",
       "role": "field",
       "has_desc": true
     },
@@ -2996,6 +3147,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-10",
       "role": "field",
       "has_desc": true
     },
@@ -3011,7 +3163,10 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [],
+      "flags": [
+        "reposted"
+      ],
+      "first_seen": "2026-09-10",
       "role": "field",
       "has_desc": true
     },
@@ -3028,6 +3183,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-10",
       "role": "controls",
       "has_desc": true
     },
@@ -3044,6 +3200,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-14",
       "role": "unclear",
       "has_desc": true
     },
@@ -3060,6 +3217,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-15",
       "role": "field",
       "has_desc": true
     },
@@ -3076,6 +3234,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-17",
       "role": "field",
       "has_desc": true
     },
@@ -3092,6 +3251,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-18",
       "role": "unclear",
       "has_desc": true
     },
@@ -3108,23 +3268,8 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-22",
       "role": "field",
-      "has_desc": true
-    },
-    {
-      "id": "1b7d0001046df5a6",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "PMIS Configuration Consultant",
-      "location": "Phoenix, Arizona, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5431520008",
-      "posted_date": "2026-09-22T15:33:35-04:00",
-      "comp": "Salary: $130k-$160k/year ($63-$77/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
       "has_desc": true
     },
     {
@@ -3140,6 +3285,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-24",
       "role": "field",
       "has_desc": true
     },
@@ -3156,23 +3302,8 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-24",
       "role": "field",
-      "has_desc": true
-    },
-    {
-      "id": "ed5b1e162d6d594b",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "PMIS Configuration Consultant",
-      "location": "Los Angeles, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5431596008",
-      "posted_date": "2026-09-23T16:40:48-04:00",
-      "comp": "Salary: $130k-$160k/year ($63-$77/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
       "has_desc": true
     },
     {
@@ -3188,6 +3319,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-24",
       "role": "unclear",
       "has_desc": true
     },
@@ -3204,6 +3336,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-25",
       "role": "controls",
       "has_desc": true
     },
@@ -3220,6 +3353,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-25",
       "role": "controls",
       "has_desc": true
     },
@@ -3236,6 +3370,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-25",
       "role": "controls",
       "has_desc": true
     },
@@ -3252,6 +3387,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-25",
       "role": "controls",
       "has_desc": true
     },
@@ -3268,6 +3404,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-25",
       "role": "controls",
       "has_desc": true
     },
@@ -3284,6 +3421,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-25",
       "role": "field",
       "has_desc": true
     },
@@ -3300,6 +3438,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-26",
       "role": "systems",
       "has_desc": true
     },
@@ -3316,6 +3455,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-30",
       "role": "controls",
       "has_desc": true
     },
@@ -3332,6 +3472,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-30",
       "role": "controls",
       "has_desc": true
     },
@@ -3348,6 +3489,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-30",
       "role": "unclear",
       "has_desc": true
     },
@@ -3364,6 +3506,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-09-30",
       "role": "field",
       "has_desc": true
     },
@@ -3380,6 +3523,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-03",
       "role": "unclear",
       "has_desc": true
     },
@@ -3396,6 +3540,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-03",
       "role": "controls",
       "has_desc": true
     },
@@ -3412,6 +3557,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-03",
       "role": "controls",
       "has_desc": true
     },
@@ -3428,6 +3574,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-06",
       "role": "unclear",
       "has_desc": true
     },
@@ -3444,6 +3591,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-06",
       "role": "unclear",
       "has_desc": true
     },
@@ -3460,6 +3608,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-06",
       "role": "controls",
       "has_desc": true
     },
@@ -3470,12 +3619,13 @@
       "title": "Global Procore Administrator & Construction Process Lead",
       "location": "Boise, ID - Main Site",
       "url": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Boise-ID---Main-Site/Global-Document-Control---PMIS-Governance-Lead_JR104322",
-      "posted_date": "Posted 19 Days Ago",
+      "posted_date": "Posted 20 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-08",
       "role": "systems",
       "has_desc": true
     },
@@ -3492,6 +3642,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-08",
       "role": "systems",
       "has_desc": true
     },
@@ -3501,13 +3652,14 @@
       "company": "DFND Security",
       "title": "Oracle WACS",
       "location": "Fort Sam Houston, Bexar County",
-      "url": "https://www.adzuna.com/land/ad/5863704034?se=8pdMvoPQ8RGrV9qPojDs1w&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=zp6RLeDS8RG0v6omR9kuEw&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
       "posted_date": "2026-08-31T22:19:09Z",
       "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-09",
       "role": "unclear",
       "has_desc": true
     },
@@ -3524,6 +3676,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-10",
       "role": "unclear",
       "has_desc": true
     },
@@ -3540,6 +3693,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-10",
       "role": "controls",
       "has_desc": true
     },
@@ -3550,12 +3704,13 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Denver, Colorado",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Denver-Colorado/Senior-Project-Controls-Manager---Aviation_JR6367",
-      "posted_date": "Posted 18 Days Ago",
+      "posted_date": "Posted 19 Days Ago",
       "comp": "$187,591.53 - $214,390.32",
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-10",
       "role": "controls",
       "has_desc": true
     },
@@ -3566,12 +3721,13 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Project-Controls-Manager---Aviation_JR6366",
-      "posted_date": "Posted 17 Days Ago",
+      "posted_date": "Posted 18 Days Ago",
       "comp": "$196,118.41 - $224,135.33",
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-10",
       "role": "controls",
       "has_desc": true
     },
@@ -3588,6 +3744,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-10",
       "role": "controls",
       "has_desc": true
     },
@@ -3604,6 +3761,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-14",
       "role": "controls",
       "has_desc": true
     },
@@ -3620,6 +3778,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-14",
       "role": "controls",
       "has_desc": true
     },
@@ -3636,6 +3795,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-14",
       "role": "controls",
       "has_desc": true
     },
@@ -3652,6 +3812,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-14",
       "role": "controls",
       "has_desc": true
     },
@@ -3668,6 +3829,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-14",
       "role": "field",
       "has_desc": true
     },
@@ -3677,13 +3839,14 @@
       "company": "USK Technologies",
       "title": "Energy Supply Software Analyst",
       "location": "Jackson, Jackson County",
-      "url": "https://www.adzuna.com/land/ad/5927282530?se=DtBlsSHS8RGnNKlqPo-d_w&utm_medium=api&utm_source=55569923&v=0B009464FB7498B7DEE163820B0425E25A09916F",
+      "url": "https://www.adzuna.com/land/ad/5927282530?se=nIOwLuDS8RGI5dVyyzz_lQ&utm_medium=api&utm_source=55569923&v=0B009464FB7498B7DEE163820B0425E25A09916F",
       "posted_date": "2026-10-14T06:47:23Z",
       "comp": "Pay: $40/hour Duration: 12 months Seeking an experien",
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-14",
       "role": "unclear",
       "has_desc": true
     },
@@ -3700,6 +3863,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-15",
       "role": "unclear",
       "has_desc": true
     },
@@ -3716,6 +3880,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-15",
       "role": "unclear",
       "has_desc": true
     },
@@ -3726,12 +3891,13 @@
       "title": "PMIS Specialist",
       "location": "Chicago, Illinois",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Chicago-Illinois/PMIS-Specialist_JR6372",
-      "posted_date": "Posted 13 Days Ago",
+      "posted_date": "Posted 14 Days Ago",
       "comp": "$75,656.68 - $86,464.77",
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-15",
       "role": "systems",
       "has_desc": true
     },
@@ -3742,12 +3908,13 @@
       "title": "Scheduler",
       "location": "Fairfax, Virginia",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Fairfax-Virginia/Scheduler_JR6369",
-      "posted_date": "Posted 13 Days Ago",
+      "posted_date": "Posted 14 Days Ago",
       "comp": "$102,094.36 - $116,679.27",
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-15",
       "role": "controls",
       "has_desc": true
     },
@@ -3764,6 +3931,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-15",
       "role": "controls",
       "has_desc": true
     },
@@ -3773,13 +3941,14 @@
       "company": "USK Technologies",
       "title": "Energy Supply Software Analyst (Jackson)",
       "location": "Jackson, Jackson County",
-      "url": "https://www.adzuna.com/land/ad/5927891897?se=DtBlsSHS8RGnNKlqPo-d_w&utm_medium=api&utm_source=55569923&v=098FD5B9373D6105F83CA5C029354721DEEA9C8D",
+      "url": "https://www.adzuna.com/land/ad/5927891897?se=nIOwLuDS8RGI5dVyyzz_lQ&utm_medium=api&utm_source=55569923&v=098FD5B9373D6105F83CA5C029354721DEEA9C8D",
       "posted_date": "2026-10-14T13:49:52Z",
       "comp": "Pay: $40/hour Duration: 12 months Seeking an experien",
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-15",
       "role": "unclear",
       "has_desc": true
     },
@@ -3796,6 +3965,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-16",
       "role": "unclear",
       "has_desc": true
     },
@@ -3812,6 +3982,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-16",
       "role": "unclear",
       "has_desc": true
     },
@@ -3828,6 +3999,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-16",
       "role": "field",
       "has_desc": true
     },
@@ -3844,6 +4016,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-16",
       "role": "unclear",
       "has_desc": true
     },
@@ -3859,7 +4032,10 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [],
+      "flags": [
+        "reposted"
+      ],
+      "first_seen": "2026-10-16",
       "role": "controls",
       "has_desc": true
     },
@@ -3876,6 +4052,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-16",
       "role": "unclear",
       "has_desc": true
     },
@@ -3892,6 +4069,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-16",
       "role": "field",
       "has_desc": true
     },
@@ -3908,6 +4086,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-16",
       "role": "systems",
       "has_desc": true
     },
@@ -3924,6 +4103,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-17",
       "role": "unclear",
       "has_desc": true
     },
@@ -3940,87 +4120,8 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-17",
       "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "8f6318d4fc87065a",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Change Manager",
-      "location": "Los Angeles, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453307008",
-      "posted_date": "2026-10-16T17:15:42-04:00",
-      "comp": "Salary: $125k-$200k/year ($60-$96/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "064bb1c55b98f79a",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Change Manager",
-      "location": "Fresno, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453309008",
-      "posted_date": "2026-10-16T17:16:01-04:00",
-      "comp": "Salary: $125k-$200k/year ($60-$96/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "5388ede5d50d2f84",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Change Manager",
-      "location": "San Francisco, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453299008",
-      "posted_date": "2026-10-16T17:14:53-04:00",
-      "comp": "Salary: $125k-$200k/year ($60-$96/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "2d2b4fd0fb2782f4",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Change Manager",
-      "location": "Sacramento, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453311008",
-      "posted_date": "2026-10-16T18:42:32-04:00",
-      "comp": "Salary: $125k-$200k/year ($60-$96/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "0320b54cd4d56910",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Construction Manager",
-      "location": "Sacramento, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453344008",
-      "posted_date": "2026-10-16T17:32:12-04:00",
-      "comp": "Salary: $130k-$200k/year ($63-$96/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
       "has_desc": true
     },
     {
@@ -4036,71 +4137,8 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-17",
       "role": "field",
-      "has_desc": true
-    },
-    {
-      "id": "cb43a3a413022577",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Construction Manager",
-      "location": "Los Angeles, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453336008",
-      "posted_date": "2026-10-16T17:31:39-04:00",
-      "comp": "Salary: $130k-$200k/year ($63-$96/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
-      "has_desc": true
-    },
-    {
-      "id": "3f0e13fe574d1069",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Construction Manager",
-      "location": "Fresno, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453339008",
-      "posted_date": "2026-10-16T17:31:55-04:00",
-      "comp": "Salary: $130k-$200k/year ($63-$96/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
-      "has_desc": true
-    },
-    {
-      "id": "f7a76fe903a4bb4f",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Contracts and Claims Specialist",
-      "location": "Fresno, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453430008",
-      "posted_date": "2026-10-16T17:36:26-04:00",
-      "comp": "Salary: $90k-$155k/year ($43-$75/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "d44527ad0b1f7197",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Contracts and Claims Specialist",
-      "location": "Sacramento, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453432008",
-      "posted_date": "2026-10-16T17:36:41-04:00",
-      "comp": "Salary: $90k-$155k/year ($43-$75/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
       "has_desc": true
     },
     {
@@ -4116,118 +4154,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "6dccdea302d0b27a",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Contracts and Claims Specialist",
-      "location": "San Francisco, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453419008",
-      "posted_date": "2026-10-16T17:35:51-04:00",
-      "comp": "Salary: $90k-$155k/year ($43-$75/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "16e033c3110e0fb6",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Contracts and Claims Specialist",
-      "location": "Los Angeles, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453428008",
-      "posted_date": "2026-10-16T17:36:10-04:00",
-      "comp": "Salary: $90k-$155k/year ($43-$75/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "9f475597605ce37b",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Document Control Manager",
-      "location": "San Francisco, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453438008",
-      "posted_date": "2026-10-16T17:42:30-04:00",
-      "comp": "Salary: $110k-$175k/year ($53-$84/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "02450375197e65e4",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Document Control Manager",
-      "location": "Baltimore, Maryland, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453452008",
-      "posted_date": "2026-10-16T17:44:21-04:00",
-      "comp": "Salary: $110k-$175k/year ($53-$84/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "9d759ad9a9b345c2",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Document Control Manager",
-      "location": "New York, New York, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453450008",
-      "posted_date": "2026-10-16T17:43:57-04:00",
-      "comp": "Salary: $110k-$175k/year ($53-$84/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "1fc6064d3264e5e6",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Document Control Manager",
-      "location": "Fresno, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453444008",
-      "posted_date": "2026-10-16T17:43:17-04:00",
-      "comp": "Salary: $110k-$175k/year ($53-$84/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "517489aa037836b0",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Document Control Manager",
-      "location": "Los Angeles, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453442008",
-      "posted_date": "2026-10-16T17:42:52-04:00",
-      "comp": "Salary: $110k-$175k/year ($53-$84/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
+      "first_seen": "2026-10-17",
       "role": "controls",
       "has_desc": true
     },
@@ -4244,167 +4171,8 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-17",
       "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "7b2ecf5dbb9d6042",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Document Control Specialist",
-      "location": "Los Angeles, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453456008",
-      "posted_date": "2026-10-16T17:54:39-04:00",
-      "comp": "Salary: $80k-$140k/year ($38-$67/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "0bcbf28b3347b5bb",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Document Control Specialist",
-      "location": "San Francisco, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453454008",
-      "posted_date": "2026-10-16T17:54:21-04:00",
-      "comp": "Salary: $80k-$140k/year ($38-$67/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "94b1f33f0dff97f9",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Document Control Specialist",
-      "location": "Fresno, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453458008",
-      "posted_date": "2026-10-16T17:54:57-04:00",
-      "comp": "Salary: $80k-$140k/year ($38-$67/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "9974e6a9f8b82533",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Office Engineer",
-      "location": "Fresno, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453482008",
-      "posted_date": "2026-10-16T18:42:55-04:00",
-      "comp": "pay applications and progress payments on a program valued at $1B+",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "84d468eb7b47b248",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Project Manager",
-      "location": "Sacramento, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453501008",
-      "posted_date": "2026-10-16T18:15:30-04:00",
-      "comp": "Salary: $115k-$210k/year ($55-$101/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
-      "id": "f950e854b8620005",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Project Manager",
-      "location": "Fresno, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453499008",
-      "posted_date": "2026-10-16T18:14:43-04:00",
-      "comp": "Salary: $115k-$210k/year ($55-$101/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
-      "id": "c282899445210a29",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Project Manager",
-      "location": "Los Angeles, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453497008",
-      "posted_date": "2026-10-16T18:14:11-04:00",
-      "comp": "Salary: $115k-$210k/year ($55-$101/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
-      "id": "421d48a8d38bf008",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Project Manager",
-      "location": "San Francisco, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453493008",
-      "posted_date": "2026-10-16T18:13:49-04:00",
-      "comp": "Salary: $115k-$210k/year ($55-$101/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
-      "id": "e04cae1240bf6dc8",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Reporting Specialist",
-      "location": "Sacramento, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453511008",
-      "posted_date": "2026-10-16T18:20:03-04:00",
-      "comp": "Salary: $80k-$145k/year ($38-$70/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
-      "id": "f9b219449ae1f81f",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Reporting Specialist",
-      "location": "Fresno, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453509008",
-      "posted_date": "2026-10-16T18:19:44-04:00",
-      "comp": "Salary: $80k-$145k/year ($38-$70/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "unclear",
       "has_desc": true
     },
     {
@@ -4420,119 +4188,8 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-17",
       "role": "unclear",
-      "has_desc": true
-    },
-    {
-      "id": "fe720b5e489de7ae",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Reporting Specialist",
-      "location": "San Francisco, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453505008",
-      "posted_date": "2026-10-16T18:19:14-04:00",
-      "comp": "Salary: $80k-$145k/year ($38-$70/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
-      "id": "fc59accb9fc07f8f",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Reporting Specialist",
-      "location": "Los Angeles, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453507008",
-      "posted_date": "2026-10-16T18:19:28-04:00",
-      "comp": "Salary: $80k-$145k/year ($38-$70/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
-      "id": "3723375a229aec68",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Resident Engineer",
-      "location": "Sacramento, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453526008",
-      "posted_date": "2026-10-16T18:24:13-04:00",
-      "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
-      "has_desc": true
-    },
-    {
-      "id": "070f7b448e1ae788",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Resident Engineer",
-      "location": "San Francisco, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453517008",
-      "posted_date": "2026-10-16T18:23:23-04:00",
-      "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
-      "has_desc": true
-    },
-    {
-      "id": "2a0ab9cf1a5a10b5",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Resident Engineer",
-      "location": "Los Angeles, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453519008",
-      "posted_date": "2026-10-16T18:23:37-04:00",
-      "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
-      "has_desc": true
-    },
-    {
-      "id": "27eb958362dd2903",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Resident Engineer",
-      "location": "Fresno, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453524008",
-      "posted_date": "2026-10-16T18:23:54-04:00",
-      "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
-      "has_desc": true
-    },
-    {
-      "id": "cc03dbe6acc6030a",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Resident Engineer",
-      "location": "Seattle, Washington, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453528008",
-      "posted_date": "2026-10-16T18:43:14-04:00",
-      "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "field",
       "has_desc": true
     },
     {
@@ -4548,23 +4205,8 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-17",
       "role": "field",
-      "has_desc": true
-    },
-    {
-      "id": "b70840f261799a8a",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "PMIS Configuration Consultant",
-      "location": "Mill Valley, California, United States; Oakland, California, United States; San Francisco, California, United States; San Jose, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5431368008",
-      "posted_date": "2026-09-22T15:32:59-04:00",
-      "comp": "Salary: $130k-$160k/year ($63-$77/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
       "has_desc": true
     },
     {
@@ -4580,6 +4222,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-20",
       "role": "unclear",
       "has_desc": true
     },
@@ -4596,6 +4239,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-21",
       "role": "unclear",
       "has_desc": true
     },
@@ -4612,6 +4256,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-21",
       "role": "unclear",
       "has_desc": true
     },
@@ -4628,6 +4273,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-21",
       "role": "field",
       "has_desc": true
     },
@@ -4638,28 +4284,13 @@
       "title": "Project Controls Specialist",
       "location": "Philadelphia, Pennsylvania",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Philadelphia-Pennsylvania/Project-Controls-Specialist_JR6021-1",
-      "posted_date": "Posted 7 Days Ago",
+      "posted_date": "Posted 8 Days Ago",
       "comp": "$75,656.68 - $86,464.77",
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "a96c07ee0248a916",
-      "kind": "board",
-      "company": "GForce Life Sciences",
-      "title": "Cost and Claims Analyst (Westchester County)",
-      "location": "Westchester County, New York",
-      "url": "https://www.adzuna.com/land/ad/5932531383?se=elrhYmfN8RGl_9lPbTA8Yg&utm_medium=api&utm_source=55569923&v=21C04F9CA7889B44C12CBE85E7CDEDF58A0C8BD7",
-      "posted_date": "2026-10-17T13:43:37Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
+      "first_seen": "2026-10-21",
       "role": "controls",
       "has_desc": true
     },
@@ -4676,6 +4307,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-21",
       "role": "systems",
       "has_desc": true
     },
@@ -4685,13 +4317,14 @@
       "company": "TechnoSphere, Inc.",
       "title": "Contract Role: Energy Supply Software Configuration Analyst - Jackson, MI 49201(Hybrid)",
       "location": "Jackson, Jackson County",
-      "url": "https://www.adzuna.com/land/ad/5936196059?se=DtBlsSHS8RGnNKlqPo-d_w&utm_medium=api&utm_source=55569923&v=AFB859548A07B4F176D8EECE449E29612F7DDE4D",
+      "url": "https://www.adzuna.com/land/ad/5936196059?se=nIOwLuDS8RGI5dVyyzz_lQ&utm_medium=api&utm_source=55569923&v=AFB859548A07B4F176D8EECE449E29612F7DDE4D",
       "posted_date": "2026-10-20T23:39:02Z",
       "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-21",
       "role": "systems",
       "has_desc": true
     },
@@ -4708,22 +4341,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
-      "id": "0895a5847b826355",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Senior Project Manager (Recovery and Rebuild)",
-      "location": "Los Angeles, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5458534008",
-      "posted_date": "2026-10-21T21:34:25-04:00",
-      "comp": "Salary: $130k-$190k/year ($62-$91/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
+      "first_seen": "2026-10-21",
       "role": "unclear",
       "has_desc": true
     },
@@ -4740,6 +4358,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-23",
       "role": "systems",
       "has_desc": true
     },
@@ -4756,23 +4375,8 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-25",
       "role": "unclear",
-      "has_desc": true
-    },
-    {
-      "id": "8093bbbd0533ed49",
-      "kind": "board",
-      "company": "Broadpin",
-      "title": "Oracle Primavera Unifier Implementation Consultant - US Based",
-      "location": "US",
-      "url": "https://www.adzuna.com/details/5940448865?utm_medium=api&utm_source=55569923",
-      "posted_date": "2026-10-24T07:57:10Z",
-      "comp": "$100,000 - $130,000",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "role": "systems",
       "has_desc": true
     },
     {
@@ -4788,6 +4392,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-25",
       "role": "systems",
       "has_desc": true
     },
@@ -4804,6 +4409,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
+      "first_seen": "2026-10-26",
       "role": "unclear",
       "has_desc": true
     },
@@ -4820,8 +4426,9 @@
       "status": "active",
       "gone_date": null,
       "flags": [
-        "new"
+        "reposted"
       ],
+      "first_seen": "2026-10-27",
       "role": "controls",
       "has_desc": true
     },
@@ -4838,8 +4445,9 @@
       "status": "active",
       "gone_date": null,
       "flags": [
-        "new"
+        "reposted"
       ],
+      "first_seen": "2026-10-27",
       "role": "field",
       "has_desc": true
     },
@@ -4856,8 +4464,9 @@
       "status": "active",
       "gone_date": null,
       "flags": [
-        "new"
+        "reposted"
       ],
+      "first_seen": "2026-10-27",
       "role": "controls",
       "has_desc": true
     },
@@ -4874,8 +4483,9 @@
       "status": "active",
       "gone_date": null,
       "flags": [
-        "new"
+        "reposted"
       ],
+      "first_seen": "2026-10-27",
       "role": "controls",
       "has_desc": true
     },
@@ -4892,8 +4502,9 @@
       "status": "active",
       "gone_date": null,
       "flags": [
-        "new"
+        "reposted"
       ],
+      "first_seen": "2026-10-27",
       "role": "controls",
       "has_desc": true
     },
@@ -4910,8 +4521,9 @@
       "status": "active",
       "gone_date": null,
       "flags": [
-        "new"
+        "reposted"
       ],
+      "first_seen": "2026-10-27",
       "role": "controls",
       "has_desc": true
     },
@@ -4928,8 +4540,9 @@
       "status": "active",
       "gone_date": null,
       "flags": [
-        "new"
+        "reposted"
       ],
+      "first_seen": "2026-10-27",
       "role": "controls",
       "has_desc": true
     },
@@ -4946,8 +4559,9 @@
       "status": "active",
       "gone_date": null,
       "flags": [
-        "new"
+        "reposted"
       ],
+      "first_seen": "2026-10-27",
       "role": "systems",
       "has_desc": true
     },
@@ -4964,8 +4578,9 @@
       "status": "active",
       "gone_date": null,
       "flags": [
-        "new"
+        "reposted"
       ],
+      "first_seen": "2026-10-27",
       "role": "unclear",
       "has_desc": true
     },
@@ -4982,8 +4597,9 @@
       "status": "active",
       "gone_date": null,
       "flags": [
-        "new"
+        "reposted"
       ],
+      "first_seen": "2026-10-27",
       "role": "unclear",
       "has_desc": true
     },
@@ -4999,10 +4615,124 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
+      "flags": [],
+      "first_seen": "2026-10-27",
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "5957e8c715bcbe1f",
+      "kind": "direct",
+      "company": "Oracle",
+      "title": "Technical Integration Lead – Oracle Primavera Integrations and Data Migration",
+      "location": "United States",
+      "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/job/346380",
+      "posted_date": "2026-10-02",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
       "flags": [
         "new"
       ],
+      "first_seen": "2026-10-28",
       "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "8b1efa0f86773e98",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Field Welding Engineer",
+      "location": "Port Arthur, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300718&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-10-27T18:10:17.593+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-10-28",
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "e03bc4ddb6070a8b",
+      "kind": "direct",
+      "company": "AtkinsRéalis",
+      "title": "Systems Consultant - Unifier",
+      "location": "US.AZ.Tempe",
+      "url": "https://slihrms.wd3.myworkdayjobs.com/en-US/Careers/job/USAZTempe/Systems-Consultant---Unifier_R-165005",
+      "posted_date": "Posted 9 Days Ago",
+      "comp": "compensation range is between $90,000-$140,000 annually depending on skills, experience, and ge",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "title-match",
+        "new"
+      ],
+      "first_seen": "2026-10-28",
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "a86bf0932fa462b2",
+      "kind": "direct",
+      "company": "AtkinsRéalis",
+      "title": "Aviation Project Manager",
+      "location": "US.CO.Denver",
+      "url": "https://slihrms.wd3.myworkdayjobs.com/en-US/Careers/job/USCODenver/Aviation-Project-Manager_R-157379",
+      "posted_date": "Posted 30+ Days Ago",
+      "comp": "compensation range is between $99,000-$165,000 annually depending on skills, experience, and ge",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-10-28",
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "2a89f62ecb2d2bce",
+      "kind": "direct",
+      "company": "AtkinsRéalis",
+      "title": "Project Coordinator",
+      "location": "US.CA.Los Angeles.801 S. Grand Avenue",
+      "url": "https://slihrms.wd3.myworkdayjobs.com/en-US/Careers/job/USCALos-Angeles801-S-Grand-Avenue/Project-Coordinator_R-161583-1",
+      "posted_date": "Posted 16 Days Ago",
+      "comp": "compensation range is between $75,000 - $90,000 annually depending on skills, experience, and ge",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-10-28",
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "49941b77a7f5d57e",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Office Engineer",
+      "location": "Baltimore, Maryland, United States; New York, New York, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453486008",
+      "posted_date": "2026-10-27T19:35:19-04:00",
+      "comp": "pay applications and progress payments on a program valued at $1B+",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-10-28",
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -5018,6 +4748,7 @@
       "status": "gone",
       "gone_date": "2026-07-26",
       "flags": [],
+      "first_seen": "2026-07-17",
       "role": "controls"
     },
     {
@@ -5035,6 +4766,23 @@
       "flags": [
         "long-posted"
       ],
+      "first_seen": "2026-07-17",
+      "role": "controls"
+    },
+    {
+      "id": "6e02d7daf784bb12",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Document Control Manager",
+      "location": "Sacramento, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453446008",
+      "posted_date": "2026-10-16T17:43:37-04:00",
+      "comp": "Salary: $110k-$175k/year ($53-$84/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-07-17",
       "role": "controls"
     },
     {
@@ -5050,6 +4798,7 @@
       "status": "gone",
       "gone_date": "2026-08-15",
       "flags": [],
+      "first_seen": "2026-07-17",
       "role": "systems"
     },
     {
@@ -5065,6 +4814,7 @@
       "status": "gone",
       "gone_date": "2026-08-15",
       "flags": [],
+      "first_seen": "2026-07-17",
       "role": "field"
     },
     {
@@ -5080,6 +4830,7 @@
       "status": "gone",
       "gone_date": "2026-09-23",
       "flags": [],
+      "first_seen": "2026-07-17",
       "role": "field"
     },
     {
@@ -5095,6 +4846,7 @@
       "status": "gone",
       "gone_date": "2026-08-22",
       "flags": [],
+      "first_seen": "2026-07-17",
       "role": "field"
     },
     {
@@ -5110,6 +4862,7 @@
       "status": "gone",
       "gone_date": "2026-08-07",
       "flags": [],
+      "first_seen": "2026-07-17",
       "role": "field"
     },
     {
@@ -5125,6 +4878,7 @@
       "status": "gone",
       "gone_date": "2026-07-23",
       "flags": [],
+      "first_seen": "2026-07-17",
       "role": "field"
     },
     {
@@ -5140,6 +4894,7 @@
       "status": "gone",
       "gone_date": "2026-07-21",
       "flags": [],
+      "first_seen": "2026-07-17",
       "role": "unclear"
     },
     {
@@ -5155,6 +4910,7 @@
       "status": "gone",
       "gone_date": "2026-07-29",
       "flags": [],
+      "first_seen": "2026-07-17",
       "role": "field"
     },
     {
@@ -5170,6 +4926,7 @@
       "status": "gone",
       "gone_date": "2026-07-21",
       "flags": [],
+      "first_seen": "2026-07-17",
       "role": "field"
     },
     {
@@ -5185,6 +4942,7 @@
       "status": "gone",
       "gone_date": "2026-09-11",
       "flags": [],
+      "first_seen": "2026-07-17",
       "role": "field"
     },
     {
@@ -5200,6 +4958,7 @@
       "status": "gone",
       "gone_date": "2026-07-31",
       "flags": [],
+      "first_seen": "2026-07-17",
       "role": "field"
     },
     {
@@ -5215,6 +4974,7 @@
       "status": "gone",
       "gone_date": "2026-07-24",
       "flags": [],
+      "first_seen": "2026-07-17",
       "role": "field"
     },
     {
@@ -5230,22 +4990,8 @@
       "status": "gone",
       "gone_date": "2026-08-22",
       "flags": [],
+      "first_seen": "2026-07-17",
       "role": "unclear"
-    },
-    {
-      "id": "3c178b344fb01f46",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "LOTO Authority",
-      "location": "Chandler, Arizona, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=296771&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-07-07T22:16:49.503+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-10-03",
-      "flags": [],
-      "role": "field"
     },
     {
       "id": "13d0175cc88b6c9d",
@@ -5260,6 +5006,7 @@
       "status": "gone",
       "gone_date": "2026-10-07",
       "flags": [],
+      "first_seen": "2026-07-18",
       "role": "unclear"
     },
     {
@@ -5275,6 +5022,7 @@
       "status": "gone",
       "gone_date": "2026-07-30",
       "flags": [],
+      "first_seen": "2026-07-18",
       "role": "systems"
     },
     {
@@ -5290,6 +5038,7 @@
       "status": "gone",
       "gone_date": "2026-08-11",
       "flags": [],
+      "first_seen": "2026-07-18",
       "role": "systems"
     },
     {
@@ -5305,6 +5054,7 @@
       "status": "gone",
       "gone_date": "2026-09-10",
       "flags": [],
+      "first_seen": "2026-07-18",
       "role": "systems"
     },
     {
@@ -5322,6 +5072,7 @@
       "flags": [
         "long-posted"
       ],
+      "first_seen": "2026-07-18",
       "role": "controls"
     },
     {
@@ -5339,6 +5090,7 @@
       "flags": [
         "long-posted"
       ],
+      "first_seen": "2026-07-18",
       "role": "controls"
     },
     {
@@ -5356,6 +5108,7 @@
       "flags": [
         "long-posted"
       ],
+      "first_seen": "2026-07-18",
       "role": "controls"
     },
     {
@@ -5371,6 +5124,7 @@
       "status": "gone",
       "gone_date": "2026-08-30",
       "flags": [],
+      "first_seen": "2026-07-20",
       "role": "controls"
     },
     {
@@ -5386,6 +5140,7 @@
       "status": "gone",
       "gone_date": "2026-08-15",
       "flags": [],
+      "first_seen": "2026-07-20",
       "role": "systems"
     },
     {
@@ -5401,6 +5156,7 @@
       "status": "gone",
       "gone_date": "2026-07-30",
       "flags": [],
+      "first_seen": "2026-07-20",
       "role": "field"
     },
     {
@@ -5416,6 +5172,7 @@
       "status": "gone",
       "gone_date": "2026-09-10",
       "flags": [],
+      "first_seen": "2026-07-22",
       "role": "unclear"
     },
     {
@@ -5431,6 +5188,7 @@
       "status": "gone",
       "gone_date": "2026-08-04",
       "flags": [],
+      "first_seen": "2026-07-22",
       "role": "field"
     },
     {
@@ -5446,6 +5204,7 @@
       "status": "gone",
       "gone_date": "2026-09-30",
       "flags": [],
+      "first_seen": "2026-07-25",
       "role": "controls"
     },
     {
@@ -5461,6 +5220,7 @@
       "status": "gone",
       "gone_date": "2026-08-12",
       "flags": [],
+      "first_seen": "2026-07-25",
       "role": "controls"
     },
     {
@@ -5476,6 +5236,7 @@
       "status": "gone",
       "gone_date": "2026-09-05",
       "flags": [],
+      "first_seen": "2026-07-27",
       "role": "field"
     },
     {
@@ -5493,6 +5254,7 @@
       "flags": [
         "title-match"
       ],
+      "first_seen": "2026-07-28",
       "role": "systems"
     },
     {
@@ -5508,6 +5270,7 @@
       "status": "gone",
       "gone_date": "2026-07-30",
       "flags": [],
+      "first_seen": "2026-07-28",
       "role": "field"
     },
     {
@@ -5523,6 +5286,7 @@
       "status": "gone",
       "gone_date": "2026-08-12",
       "flags": [],
+      "first_seen": "2026-07-28",
       "role": "unclear"
     },
     {
@@ -5538,6 +5302,7 @@
       "status": "gone",
       "gone_date": "2026-09-20",
       "flags": [],
+      "first_seen": "2026-07-29",
       "role": "unclear"
     },
     {
@@ -5553,6 +5318,7 @@
       "status": "gone",
       "gone_date": "2026-09-11",
       "flags": [],
+      "first_seen": "2026-07-29",
       "role": "field"
     },
     {
@@ -5568,6 +5334,7 @@
       "status": "gone",
       "gone_date": "2026-09-04",
       "flags": [],
+      "first_seen": "2026-07-29",
       "role": "field"
     },
     {
@@ -5583,6 +5350,7 @@
       "status": "gone",
       "gone_date": "2026-08-27",
       "flags": [],
+      "first_seen": "2026-07-29",
       "role": "systems"
     },
     {
@@ -5598,6 +5366,7 @@
       "status": "gone",
       "gone_date": "2026-10-02",
       "flags": [],
+      "first_seen": "2026-07-29",
       "role": "controls"
     },
     {
@@ -5613,6 +5382,7 @@
       "status": "gone",
       "gone_date": "2026-10-01",
       "flags": [],
+      "first_seen": "2026-07-30",
       "role": "field"
     },
     {
@@ -5628,6 +5398,7 @@
       "status": "gone",
       "gone_date": "2026-08-28",
       "flags": [],
+      "first_seen": "2026-07-30",
       "role": "unclear"
     },
     {
@@ -5643,7 +5414,24 @@
       "status": "gone",
       "gone_date": "2026-08-03",
       "flags": [],
+      "first_seen": "2026-07-30",
       "role": "unclear"
+    },
+    {
+      "id": "0b8287d0a22b0605",
+      "kind": "direct",
+      "company": "Amazon",
+      "title": "Construction Cost Manager, NA Design & Construction Governance, Global Engineering Services, GEMS D&C, Cost Management",
+      "location": "US, WA, Bellevue",
+      "url": "https://www.amazon.jobs/en/jobs/10436957/construction-cost-manager-na-design-construction-governance-global-engineering-services-gems-d-c-cost-management",
+      "posted_date": "June  2, 2026",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-07-30",
+      "role": "controls"
     },
     {
       "id": "c056f1e8c2bf0d15",
@@ -5660,6 +5448,7 @@
       "flags": [
         "long-posted"
       ],
+      "first_seen": "2026-07-30",
       "role": "controls"
     },
     {
@@ -5677,6 +5466,7 @@
       "flags": [
         "long-posted"
       ],
+      "first_seen": "2026-07-30",
       "role": "controls"
     },
     {
@@ -5694,6 +5484,7 @@
       "flags": [
         "long-posted"
       ],
+      "first_seen": "2026-07-30",
       "role": "controls"
     },
     {
@@ -5709,6 +5500,7 @@
       "status": "gone",
       "gone_date": "2026-09-06",
       "flags": [],
+      "first_seen": "2026-07-31",
       "role": "field"
     },
     {
@@ -5724,6 +5516,7 @@
       "status": "gone",
       "gone_date": "2026-09-10",
       "flags": [],
+      "first_seen": "2026-07-31",
       "role": "systems"
     },
     {
@@ -5739,6 +5532,7 @@
       "status": "gone",
       "gone_date": "2026-08-09",
       "flags": [],
+      "first_seen": "2026-07-31",
       "role": "systems"
     },
     {
@@ -5754,6 +5548,7 @@
       "status": "gone",
       "gone_date": "2026-08-12",
       "flags": [],
+      "first_seen": "2026-07-31",
       "role": "systems"
     },
     {
@@ -5769,6 +5564,7 @@
       "status": "gone",
       "gone_date": "2026-08-09",
       "flags": [],
+      "first_seen": "2026-07-31",
       "role": "controls"
     },
     {
@@ -5784,6 +5580,7 @@
       "status": "gone",
       "gone_date": "2026-09-07",
       "flags": [],
+      "first_seen": "2026-08-01",
       "role": "systems"
     },
     {
@@ -5799,6 +5596,23 @@
       "status": "gone",
       "gone_date": "2026-08-23",
       "flags": [],
+      "first_seen": "2026-08-04",
+      "role": "unclear"
+    },
+    {
+      "id": "7ab7020888283021",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Construction Automation Specialist",
+      "location": "New Albany, Ohio, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=297566&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-08-11T19:17:20.690+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-08-05",
       "role": "unclear"
     },
     {
@@ -5814,6 +5628,7 @@
       "status": "gone",
       "gone_date": "2026-08-20",
       "flags": [],
+      "first_seen": "2026-08-05",
       "role": "unclear"
     },
     {
@@ -5829,6 +5644,7 @@
       "status": "gone",
       "gone_date": "2026-08-09",
       "flags": [],
+      "first_seen": "2026-08-05",
       "role": "controls"
     },
     {
@@ -5844,6 +5660,7 @@
       "status": "gone",
       "gone_date": "2026-08-24",
       "flags": [],
+      "first_seen": "2026-08-05",
       "role": "unclear"
     },
     {
@@ -5859,6 +5676,7 @@
       "status": "gone",
       "gone_date": "2026-09-25",
       "flags": [],
+      "first_seen": "2026-08-06",
       "role": "unclear"
     },
     {
@@ -5874,6 +5692,7 @@
       "status": "gone",
       "gone_date": "2026-08-07",
       "flags": [],
+      "first_seen": "2026-08-06",
       "role": "systems"
     },
     {
@@ -5889,6 +5708,7 @@
       "status": "gone",
       "gone_date": "2026-08-25",
       "flags": [],
+      "first_seen": "2026-08-06",
       "role": "systems"
     },
     {
@@ -5904,6 +5724,7 @@
       "status": "gone",
       "gone_date": "2026-08-18",
       "flags": [],
+      "first_seen": "2026-08-06",
       "role": "systems"
     },
     {
@@ -5919,6 +5740,7 @@
       "status": "gone",
       "gone_date": "2026-08-20",
       "flags": [],
+      "first_seen": "2026-08-06",
       "role": "systems"
     },
     {
@@ -5934,6 +5756,7 @@
       "status": "gone",
       "gone_date": "2026-08-20",
       "flags": [],
+      "first_seen": "2026-08-06",
       "role": "systems"
     },
     {
@@ -5949,6 +5772,7 @@
       "status": "gone",
       "gone_date": "2026-10-08",
       "flags": [],
+      "first_seen": "2026-08-06",
       "role": "systems"
     },
     {
@@ -5964,6 +5788,7 @@
       "status": "gone",
       "gone_date": "2026-08-23",
       "flags": [],
+      "first_seen": "2026-08-07",
       "role": "unclear"
     },
     {
@@ -5979,6 +5804,7 @@
       "status": "gone",
       "gone_date": "2026-09-01",
       "flags": [],
+      "first_seen": "2026-08-08",
       "role": "systems"
     },
     {
@@ -5994,6 +5820,7 @@
       "status": "gone",
       "gone_date": "2026-08-16",
       "flags": [],
+      "first_seen": "2026-08-08",
       "role": "unclear"
     },
     {
@@ -6009,6 +5836,7 @@
       "status": "gone",
       "gone_date": "2026-08-14",
       "flags": [],
+      "first_seen": "2026-08-08",
       "role": "unclear"
     },
     {
@@ -6024,6 +5852,7 @@
       "status": "gone",
       "gone_date": "2026-08-25",
       "flags": [],
+      "first_seen": "2026-08-10",
       "role": "systems"
     },
     {
@@ -6039,6 +5868,7 @@
       "status": "gone",
       "gone_date": "2026-08-14",
       "flags": [],
+      "first_seen": "2026-08-12",
       "role": "controls"
     },
     {
@@ -6054,6 +5884,7 @@
       "status": "gone",
       "gone_date": "2026-08-23",
       "flags": [],
+      "first_seen": "2026-08-12",
       "role": "controls"
     },
     {
@@ -6069,24 +5900,8 @@
       "status": "gone",
       "gone_date": "2026-08-23",
       "flags": [],
+      "first_seen": "2026-08-12",
       "role": "controls"
-    },
-    {
-      "id": "488da78c09368adc",
-      "kind": "direct",
-      "company": "Project Partners",
-      "title": "Oracle Primavera Unifier Implementation Consultant - US Based",
-      "location": "Remote - US Based, United States",
-      "url": "https://projectp.hrmdirect.com/employment/job-opening.php?req=3707233&req_loc=1313708&&&nohd#job",
-      "posted_date": null,
-      "comp": "$100000 - $130000 Per Year",
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-10-23",
-      "flags": [
-        "title-match"
-      ],
-      "role": "systems"
     },
     {
       "id": "e0fa3a97533e4ebf",
@@ -6103,6 +5918,7 @@
       "flags": [
         "long-posted"
       ],
+      "first_seen": "2026-08-12",
       "role": "systems"
     },
     {
@@ -6118,6 +5934,7 @@
       "status": "gone",
       "gone_date": "2026-10-25",
       "flags": [],
+      "first_seen": "2026-08-13",
       "role": "controls"
     },
     {
@@ -6133,22 +5950,8 @@
       "status": "gone",
       "gone_date": "2026-10-02",
       "flags": [],
+      "first_seen": "2026-08-13",
       "role": "controls"
-    },
-    {
-      "id": "0c4d71df52f90061",
-      "kind": "direct",
-      "company": "Project Partners",
-      "title": "Oracle Primavera P6 EPPM and Oracle Primavera Cloud (OPC) Consultant - US Based",
-      "location": "Remote - US Based, United States",
-      "url": "https://projectp.hrmdirect.com/employment/job-opening.php?req=3776777&req_loc=1414124&&&nohd#job",
-      "posted_date": null,
-      "comp": "$100000 - $130000",
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-10-23",
-      "flags": [],
-      "role": "systems"
     },
     {
       "id": "facd2cb88187d0a7",
@@ -6163,6 +5966,7 @@
       "status": "gone",
       "gone_date": "2026-09-11",
       "flags": [],
+      "first_seen": "2026-08-14",
       "role": "field"
     },
     {
@@ -6178,6 +5982,7 @@
       "status": "gone",
       "gone_date": "2026-08-20",
       "flags": [],
+      "first_seen": "2026-08-14",
       "role": "systems"
     },
     {
@@ -6193,6 +5998,7 @@
       "status": "gone",
       "gone_date": "2026-09-01",
       "flags": [],
+      "first_seen": "2026-08-18",
       "role": "unclear"
     },
     {
@@ -6208,6 +6014,7 @@
       "status": "gone",
       "gone_date": "2026-09-01",
       "flags": [],
+      "first_seen": "2026-08-18",
       "role": "unclear"
     },
     {
@@ -6223,6 +6030,7 @@
       "status": "gone",
       "gone_date": "2026-09-17",
       "flags": [],
+      "first_seen": "2026-08-18",
       "role": "controls"
     },
     {
@@ -6238,6 +6046,7 @@
       "status": "gone",
       "gone_date": "2026-08-26",
       "flags": [],
+      "first_seen": "2026-08-19",
       "role": "unclear"
     },
     {
@@ -6253,6 +6062,7 @@
       "status": "gone",
       "gone_date": "2026-08-29",
       "flags": [],
+      "first_seen": "2026-08-21",
       "role": "field"
     },
     {
@@ -6268,6 +6078,7 @@
       "status": "gone",
       "gone_date": "2026-09-03",
       "flags": [],
+      "first_seen": "2026-08-22",
       "role": "controls"
     },
     {
@@ -6283,6 +6094,7 @@
       "status": "gone",
       "gone_date": "2026-09-16",
       "flags": [],
+      "first_seen": "2026-08-27",
       "role": "unclear"
     },
     {
@@ -6298,6 +6110,7 @@
       "status": "gone",
       "gone_date": "2026-09-03",
       "flags": [],
+      "first_seen": "2026-08-27",
       "role": "controls"
     },
     {
@@ -6313,6 +6126,7 @@
       "status": "gone",
       "gone_date": "2026-09-01",
       "flags": [],
+      "first_seen": "2026-08-28",
       "role": "controls"
     },
     {
@@ -6328,6 +6142,7 @@
       "status": "gone",
       "gone_date": "2026-09-01",
       "flags": [],
+      "first_seen": "2026-08-28",
       "role": "controls"
     },
     {
@@ -6343,6 +6158,7 @@
       "status": "gone",
       "gone_date": "2026-09-01",
       "flags": [],
+      "first_seen": "2026-08-28",
       "role": "controls"
     },
     {
@@ -6358,6 +6174,7 @@
       "status": "gone",
       "gone_date": "2026-09-01",
       "flags": [],
+      "first_seen": "2026-08-28",
       "role": "controls"
     },
     {
@@ -6373,6 +6190,7 @@
       "status": "gone",
       "gone_date": "2026-09-04",
       "flags": [],
+      "first_seen": "2026-08-29",
       "role": "systems"
     },
     {
@@ -6388,6 +6206,7 @@
       "status": "gone",
       "gone_date": "2026-10-18",
       "flags": [],
+      "first_seen": "2026-08-31",
       "role": "controls"
     },
     {
@@ -6403,6 +6222,7 @@
       "status": "gone",
       "gone_date": "2026-10-18",
       "flags": [],
+      "first_seen": "2026-08-31",
       "role": "controls"
     },
     {
@@ -6418,6 +6238,7 @@
       "status": "gone",
       "gone_date": "2026-10-18",
       "flags": [],
+      "first_seen": "2026-08-31",
       "role": "controls"
     },
     {
@@ -6433,6 +6254,7 @@
       "status": "gone",
       "gone_date": "2026-10-18",
       "flags": [],
+      "first_seen": "2026-08-31",
       "role": "controls"
     },
     {
@@ -6448,6 +6270,7 @@
       "status": "gone",
       "gone_date": "2026-09-20",
       "flags": [],
+      "first_seen": "2026-08-31",
       "role": "systems"
     },
     {
@@ -6463,6 +6286,7 @@
       "status": "gone",
       "gone_date": "2026-09-26",
       "flags": [],
+      "first_seen": "2026-09-01",
       "role": "unclear"
     },
     {
@@ -6478,6 +6302,7 @@
       "status": "gone",
       "gone_date": "2026-09-17",
       "flags": [],
+      "first_seen": "2026-09-01",
       "role": "field"
     },
     {
@@ -6493,6 +6318,7 @@
       "status": "gone",
       "gone_date": "2026-10-10",
       "flags": [],
+      "first_seen": "2026-09-01",
       "role": "field"
     },
     {
@@ -6508,6 +6334,7 @@
       "status": "gone",
       "gone_date": "2026-09-11",
       "flags": [],
+      "first_seen": "2026-09-02",
       "role": "unclear"
     },
     {
@@ -6523,6 +6350,7 @@
       "status": "gone",
       "gone_date": "2026-09-19",
       "flags": [],
+      "first_seen": "2026-09-02",
       "role": "field"
     },
     {
@@ -6538,6 +6366,7 @@
       "status": "gone",
       "gone_date": "2026-09-12",
       "flags": [],
+      "first_seen": "2026-09-03",
       "role": "field"
     },
     {
@@ -6553,6 +6382,7 @@
       "status": "gone",
       "gone_date": "2026-09-17",
       "flags": [],
+      "first_seen": "2026-09-03",
       "role": "systems"
     },
     {
@@ -6568,6 +6398,7 @@
       "status": "gone",
       "gone_date": "2026-09-17",
       "flags": [],
+      "first_seen": "2026-09-09",
       "role": "field"
     },
     {
@@ -6583,6 +6414,7 @@
       "status": "gone",
       "gone_date": "2026-09-10",
       "flags": [],
+      "first_seen": "2026-09-09",
       "role": "controls"
     },
     {
@@ -6598,6 +6430,7 @@
       "status": "gone",
       "gone_date": "2026-09-11",
       "flags": [],
+      "first_seen": "2026-09-09",
       "role": "field"
     },
     {
@@ -6613,6 +6446,7 @@
       "status": "gone",
       "gone_date": "2026-09-22",
       "flags": [],
+      "first_seen": "2026-09-10",
       "role": "systems"
     },
     {
@@ -6628,6 +6462,7 @@
       "status": "gone",
       "gone_date": "2026-09-25",
       "flags": [],
+      "first_seen": "2026-09-10",
       "role": "field"
     },
     {
@@ -6643,6 +6478,7 @@
       "status": "gone",
       "gone_date": "2026-09-20",
       "flags": [],
+      "first_seen": "2026-09-10",
       "role": "systems"
     },
     {
@@ -6658,6 +6494,7 @@
       "status": "gone",
       "gone_date": "2026-10-18",
       "flags": [],
+      "first_seen": "2026-09-10",
       "role": "controls"
     },
     {
@@ -6673,6 +6510,7 @@
       "status": "gone",
       "gone_date": "2026-10-18",
       "flags": [],
+      "first_seen": "2026-09-10",
       "role": "controls"
     },
     {
@@ -6688,6 +6526,7 @@
       "status": "gone",
       "gone_date": "2026-10-18",
       "flags": [],
+      "first_seen": "2026-09-10",
       "role": "controls"
     },
     {
@@ -6703,6 +6542,7 @@
       "status": "gone",
       "gone_date": "2026-09-26",
       "flags": [],
+      "first_seen": "2026-09-10",
       "role": "controls"
     },
     {
@@ -6718,6 +6558,7 @@
       "status": "gone",
       "gone_date": "2026-09-26",
       "flags": [],
+      "first_seen": "2026-09-10",
       "role": "controls"
     },
     {
@@ -6733,6 +6574,7 @@
       "status": "gone",
       "gone_date": "2026-10-18",
       "flags": [],
+      "first_seen": "2026-09-10",
       "role": "unclear"
     },
     {
@@ -6748,6 +6590,7 @@
       "status": "gone",
       "gone_date": "2026-10-18",
       "flags": [],
+      "first_seen": "2026-09-10",
       "role": "field"
     },
     {
@@ -6763,6 +6606,7 @@
       "status": "gone",
       "gone_date": "2026-10-18",
       "flags": [],
+      "first_seen": "2026-09-15",
       "role": "unclear"
     },
     {
@@ -6777,7 +6621,10 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-10-18",
-      "flags": [],
+      "flags": [
+        "reposted"
+      ],
+      "first_seen": "2026-09-15",
       "role": "field"
     },
     {
@@ -6793,6 +6640,7 @@
       "status": "gone",
       "gone_date": "2026-09-28",
       "flags": [],
+      "first_seen": "2026-09-15",
       "role": "systems"
     },
     {
@@ -6808,6 +6656,7 @@
       "status": "gone",
       "gone_date": "2026-09-30",
       "flags": [],
+      "first_seen": "2026-09-17",
       "role": "field"
     },
     {
@@ -6823,6 +6672,7 @@
       "status": "gone",
       "gone_date": "2026-10-18",
       "flags": [],
+      "first_seen": "2026-09-17",
       "role": "controls"
     },
     {
@@ -6838,6 +6688,7 @@
       "status": "gone",
       "gone_date": "2026-10-03",
       "flags": [],
+      "first_seen": "2026-09-18",
       "role": "unclear"
     },
     {
@@ -6853,6 +6704,7 @@
       "status": "gone",
       "gone_date": "2026-10-18",
       "flags": [],
+      "first_seen": "2026-09-19",
       "role": "field"
     },
     {
@@ -6868,6 +6720,7 @@
       "status": "gone",
       "gone_date": "2026-10-18",
       "flags": [],
+      "first_seen": "2026-09-19",
       "role": "field"
     },
     {
@@ -6883,6 +6736,7 @@
       "status": "gone",
       "gone_date": "2026-10-18",
       "flags": [],
+      "first_seen": "2026-09-19",
       "role": "controls"
     },
     {
@@ -6898,6 +6752,7 @@
       "status": "gone",
       "gone_date": "2026-09-29",
       "flags": [],
+      "first_seen": "2026-09-19",
       "role": "systems"
     },
     {
@@ -6913,6 +6768,7 @@
       "status": "gone",
       "gone_date": "2026-10-14",
       "flags": [],
+      "first_seen": "2026-09-19",
       "role": "unclear"
     },
     {
@@ -6928,6 +6784,7 @@
       "status": "gone",
       "gone_date": "2026-09-30",
       "flags": [],
+      "first_seen": "2026-09-22",
       "role": "controls"
     },
     {
@@ -6943,6 +6800,7 @@
       "status": "gone",
       "gone_date": "2026-10-01",
       "flags": [],
+      "first_seen": "2026-09-23",
       "role": "unclear"
     },
     {
@@ -6958,6 +6816,7 @@
       "status": "gone",
       "gone_date": "2026-10-01",
       "flags": [],
+      "first_seen": "2026-09-23",
       "role": "field"
     },
     {
@@ -6973,6 +6832,7 @@
       "status": "gone",
       "gone_date": "2026-09-25",
       "flags": [],
+      "first_seen": "2026-09-23",
       "role": "systems"
     },
     {
@@ -6988,6 +6848,7 @@
       "status": "gone",
       "gone_date": "2026-09-25",
       "flags": [],
+      "first_seen": "2026-09-23",
       "role": "systems"
     },
     {
@@ -7003,6 +6864,7 @@
       "status": "gone",
       "gone_date": "2026-09-25",
       "flags": [],
+      "first_seen": "2026-09-23",
       "role": "unclear"
     },
     {
@@ -7018,6 +6880,23 @@
       "status": "gone",
       "gone_date": "2026-10-20",
       "flags": [],
+      "first_seen": "2026-09-23",
+      "role": "systems"
+    },
+    {
+      "id": "1b7d0001046df5a6",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "PMIS Configuration Consultant",
+      "location": "Phoenix, Arizona, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5431520008",
+      "posted_date": "2026-09-22T15:33:35-04:00",
+      "comp": "Salary: $130k-$160k/year ($63-$77/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-09-23",
       "role": "systems"
     },
     {
@@ -7033,6 +6912,7 @@
       "status": "gone",
       "gone_date": "2026-10-22",
       "flags": [],
+      "first_seen": "2026-09-23",
       "role": "field"
     },
     {
@@ -7048,6 +6928,7 @@
       "status": "gone",
       "gone_date": "2026-10-07",
       "flags": [],
+      "first_seen": "2026-09-24",
       "role": "unclear"
     },
     {
@@ -7063,7 +6944,24 @@
       "status": "gone",
       "gone_date": "2026-10-10",
       "flags": [],
+      "first_seen": "2026-09-24",
       "role": "unclear"
+    },
+    {
+      "id": "ed5b1e162d6d594b",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "PMIS Configuration Consultant",
+      "location": "Los Angeles, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5431596008",
+      "posted_date": "2026-09-23T16:40:48-04:00",
+      "comp": "Salary: $130k-$160k/year ($63-$77/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-09-24",
+      "role": "systems"
     },
     {
       "id": "89549d0ad8321b96",
@@ -7078,6 +6976,7 @@
       "status": "gone",
       "gone_date": "2026-09-29",
       "flags": [],
+      "first_seen": "2026-09-24",
       "role": "unclear"
     },
     {
@@ -7093,6 +6992,7 @@
       "status": "gone",
       "gone_date": "2026-09-30",
       "flags": [],
+      "first_seen": "2026-09-25",
       "role": "unclear"
     },
     {
@@ -7108,6 +7008,7 @@
       "status": "gone",
       "gone_date": "2026-10-02",
       "flags": [],
+      "first_seen": "2026-09-26",
       "role": "systems"
     },
     {
@@ -7123,6 +7024,7 @@
       "status": "gone",
       "gone_date": "2026-10-01",
       "flags": [],
+      "first_seen": "2026-09-26",
       "role": "systems"
     },
     {
@@ -7138,6 +7040,7 @@
       "status": "gone",
       "gone_date": "2026-10-26",
       "flags": [],
+      "first_seen": "2026-09-27",
       "role": "field"
     },
     {
@@ -7153,6 +7056,7 @@
       "status": "gone",
       "gone_date": "2026-10-19",
       "flags": [],
+      "first_seen": "2026-09-28",
       "role": "unclear"
     },
     {
@@ -7168,6 +7072,7 @@
       "status": "gone",
       "gone_date": "2026-10-07",
       "flags": [],
+      "first_seen": "2026-09-29",
       "role": "systems"
     },
     {
@@ -7183,6 +7088,7 @@
       "status": "gone",
       "gone_date": "2026-10-11",
       "flags": [],
+      "first_seen": "2026-09-30",
       "role": "field"
     },
     {
@@ -7200,6 +7106,7 @@
       "flags": [
         "long-posted"
       ],
+      "first_seen": "2026-10-04",
       "role": "systems"
     },
     {
@@ -7215,6 +7122,7 @@
       "status": "gone",
       "gone_date": "2026-10-15",
       "flags": [],
+      "first_seen": "2026-10-07",
       "role": "systems"
     },
     {
@@ -7230,6 +7138,7 @@
       "status": "gone",
       "gone_date": "2026-10-17",
       "flags": [],
+      "first_seen": "2026-10-08",
       "role": "systems"
     },
     {
@@ -7247,6 +7156,7 @@
       "flags": [
         "title-match"
       ],
+      "first_seen": "2026-10-09",
       "role": "systems"
     },
     {
@@ -7262,8 +7172,10 @@
       "status": "gone",
       "gone_date": "2026-10-23",
       "flags": [
-        "long-posted"
+        "long-posted",
+        "reposted"
       ],
+      "first_seen": "2026-10-10",
       "role": "systems"
     },
     {
@@ -7279,6 +7191,7 @@
       "status": "gone",
       "gone_date": "2026-10-20",
       "flags": [],
+      "first_seen": "2026-10-12",
       "role": "systems"
     },
     {
@@ -7294,6 +7207,7 @@
       "status": "gone",
       "gone_date": "2026-10-25",
       "flags": [],
+      "first_seen": "2026-10-15",
       "role": "unclear"
     },
     {
@@ -7309,7 +7223,596 @@
       "status": "gone",
       "gone_date": "2026-10-22",
       "flags": [],
+      "first_seen": "2026-10-15",
       "role": "systems"
+    },
+    {
+      "id": "8f6318d4fc87065a",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Change Manager",
+      "location": "Los Angeles, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453307008",
+      "posted_date": "2026-10-16T17:15:42-04:00",
+      "comp": "Salary: $125k-$200k/year ($60-$96/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "controls"
+    },
+    {
+      "id": "064bb1c55b98f79a",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Change Manager",
+      "location": "Fresno, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453309008",
+      "posted_date": "2026-10-16T17:16:01-04:00",
+      "comp": "Salary: $125k-$200k/year ($60-$96/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "controls"
+    },
+    {
+      "id": "5388ede5d50d2f84",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Change Manager",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453299008",
+      "posted_date": "2026-10-16T17:14:53-04:00",
+      "comp": "Salary: $125k-$200k/year ($60-$96/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "controls"
+    },
+    {
+      "id": "2d2b4fd0fb2782f4",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Change Manager",
+      "location": "Sacramento, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453311008",
+      "posted_date": "2026-10-16T18:42:32-04:00",
+      "comp": "Salary: $125k-$200k/year ($60-$96/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "controls"
+    },
+    {
+      "id": "0320b54cd4d56910",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Construction Manager",
+      "location": "Sacramento, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453344008",
+      "posted_date": "2026-10-16T17:32:12-04:00",
+      "comp": "Salary: $130k-$200k/year ($63-$96/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "field"
+    },
+    {
+      "id": "cb43a3a413022577",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Construction Manager",
+      "location": "Los Angeles, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453336008",
+      "posted_date": "2026-10-16T17:31:39-04:00",
+      "comp": "Salary: $130k-$200k/year ($63-$96/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "field"
+    },
+    {
+      "id": "3f0e13fe574d1069",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Construction Manager",
+      "location": "Fresno, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453339008",
+      "posted_date": "2026-10-16T17:31:55-04:00",
+      "comp": "Salary: $130k-$200k/year ($63-$96/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "field"
+    },
+    {
+      "id": "f7a76fe903a4bb4f",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Contracts and Claims Specialist",
+      "location": "Fresno, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453430008",
+      "posted_date": "2026-10-16T17:36:26-04:00",
+      "comp": "Salary: $90k-$155k/year ($43-$75/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "controls"
+    },
+    {
+      "id": "d44527ad0b1f7197",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Contracts and Claims Specialist",
+      "location": "Sacramento, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453432008",
+      "posted_date": "2026-10-16T17:36:41-04:00",
+      "comp": "Salary: $90k-$155k/year ($43-$75/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "controls"
+    },
+    {
+      "id": "6dccdea302d0b27a",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Contracts and Claims Specialist",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453419008",
+      "posted_date": "2026-10-16T17:35:51-04:00",
+      "comp": "Salary: $90k-$155k/year ($43-$75/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "controls"
+    },
+    {
+      "id": "16e033c3110e0fb6",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Contracts and Claims Specialist",
+      "location": "Los Angeles, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453428008",
+      "posted_date": "2026-10-16T17:36:10-04:00",
+      "comp": "Salary: $90k-$155k/year ($43-$75/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "controls"
+    },
+    {
+      "id": "9f475597605ce37b",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Document Control Manager",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453438008",
+      "posted_date": "2026-10-16T17:42:30-04:00",
+      "comp": "Salary: $110k-$175k/year ($53-$84/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "controls"
+    },
+    {
+      "id": "02450375197e65e4",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Document Control Manager",
+      "location": "Baltimore, Maryland, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453452008",
+      "posted_date": "2026-10-16T17:44:21-04:00",
+      "comp": "Salary: $110k-$175k/year ($53-$84/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "controls"
+    },
+    {
+      "id": "9d759ad9a9b345c2",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Document Control Manager",
+      "location": "New York, New York, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453450008",
+      "posted_date": "2026-10-16T17:43:57-04:00",
+      "comp": "Salary: $110k-$175k/year ($53-$84/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "controls"
+    },
+    {
+      "id": "1fc6064d3264e5e6",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Document Control Manager",
+      "location": "Fresno, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453444008",
+      "posted_date": "2026-10-16T17:43:17-04:00",
+      "comp": "Salary: $110k-$175k/year ($53-$84/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "controls"
+    },
+    {
+      "id": "517489aa037836b0",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Document Control Manager",
+      "location": "Los Angeles, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453442008",
+      "posted_date": "2026-10-16T17:42:52-04:00",
+      "comp": "Salary: $110k-$175k/year ($53-$84/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "controls"
+    },
+    {
+      "id": "7b2ecf5dbb9d6042",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Document Control Specialist",
+      "location": "Los Angeles, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453456008",
+      "posted_date": "2026-10-16T17:54:39-04:00",
+      "comp": "Salary: $80k-$140k/year ($38-$67/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "controls"
+    },
+    {
+      "id": "0bcbf28b3347b5bb",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Document Control Specialist",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453454008",
+      "posted_date": "2026-10-16T17:54:21-04:00",
+      "comp": "Salary: $80k-$140k/year ($38-$67/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "controls"
+    },
+    {
+      "id": "94b1f33f0dff97f9",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Document Control Specialist",
+      "location": "Fresno, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453458008",
+      "posted_date": "2026-10-16T17:54:57-04:00",
+      "comp": "Salary: $80k-$140k/year ($38-$67/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "controls"
+    },
+    {
+      "id": "9974e6a9f8b82533",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Office Engineer",
+      "location": "Fresno, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453482008",
+      "posted_date": "2026-10-16T18:42:55-04:00",
+      "comp": "pay applications and progress payments on a program valued at $1B+",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "controls"
+    },
+    {
+      "id": "84d468eb7b47b248",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Project Manager",
+      "location": "Sacramento, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453501008",
+      "posted_date": "2026-10-16T18:15:30-04:00",
+      "comp": "Salary: $115k-$210k/year ($55-$101/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "unclear"
+    },
+    {
+      "id": "f950e854b8620005",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Project Manager",
+      "location": "Fresno, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453499008",
+      "posted_date": "2026-10-16T18:14:43-04:00",
+      "comp": "Salary: $115k-$210k/year ($55-$101/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "unclear"
+    },
+    {
+      "id": "c282899445210a29",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Project Manager",
+      "location": "Los Angeles, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453497008",
+      "posted_date": "2026-10-16T18:14:11-04:00",
+      "comp": "Salary: $115k-$210k/year ($55-$101/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "unclear"
+    },
+    {
+      "id": "421d48a8d38bf008",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Project Manager",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453493008",
+      "posted_date": "2026-10-16T18:13:49-04:00",
+      "comp": "Salary: $115k-$210k/year ($55-$101/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "unclear"
+    },
+    {
+      "id": "e04cae1240bf6dc8",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Reporting Specialist",
+      "location": "Sacramento, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453511008",
+      "posted_date": "2026-10-16T18:20:03-04:00",
+      "comp": "Salary: $80k-$145k/year ($38-$70/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "unclear"
+    },
+    {
+      "id": "f9b219449ae1f81f",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Reporting Specialist",
+      "location": "Fresno, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453509008",
+      "posted_date": "2026-10-16T18:19:44-04:00",
+      "comp": "Salary: $80k-$145k/year ($38-$70/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "unclear"
+    },
+    {
+      "id": "fe720b5e489de7ae",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Reporting Specialist",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453505008",
+      "posted_date": "2026-10-16T18:19:14-04:00",
+      "comp": "Salary: $80k-$145k/year ($38-$70/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "unclear"
+    },
+    {
+      "id": "fc59accb9fc07f8f",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Reporting Specialist",
+      "location": "Los Angeles, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453507008",
+      "posted_date": "2026-10-16T18:19:28-04:00",
+      "comp": "Salary: $80k-$145k/year ($38-$70/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "unclear"
+    },
+    {
+      "id": "3723375a229aec68",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Resident Engineer",
+      "location": "Sacramento, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453526008",
+      "posted_date": "2026-10-16T18:24:13-04:00",
+      "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [
+        "reposted"
+      ],
+      "first_seen": "2026-10-17",
+      "role": "field"
+    },
+    {
+      "id": "070f7b448e1ae788",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Resident Engineer",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453517008",
+      "posted_date": "2026-10-16T18:23:23-04:00",
+      "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [
+        "reposted"
+      ],
+      "first_seen": "2026-10-17",
+      "role": "field"
+    },
+    {
+      "id": "2a0ab9cf1a5a10b5",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Resident Engineer",
+      "location": "Los Angeles, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453519008",
+      "posted_date": "2026-10-16T18:23:37-04:00",
+      "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [
+        "reposted"
+      ],
+      "first_seen": "2026-10-17",
+      "role": "field"
+    },
+    {
+      "id": "27eb958362dd2903",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Resident Engineer",
+      "location": "Fresno, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453524008",
+      "posted_date": "2026-10-16T18:23:54-04:00",
+      "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [
+        "reposted"
+      ],
+      "first_seen": "2026-10-17",
+      "role": "field"
+    },
+    {
+      "id": "cc03dbe6acc6030a",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Resident Engineer",
+      "location": "Seattle, Washington, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453528008",
+      "posted_date": "2026-10-16T18:43:14-04:00",
+      "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [
+        "reposted"
+      ],
+      "first_seen": "2026-10-17",
+      "role": "field"
+    },
+    {
+      "id": "b70840f261799a8a",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "PMIS Configuration Consultant",
+      "location": "Mill Valley, California, United States; Oakland, California, United States; San Francisco, California, United States; San Jose, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5431368008",
+      "posted_date": "2026-09-22T15:32:59-04:00",
+      "comp": "Salary: $130k-$160k/year ($63-$77/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [
+        "reposted"
+      ],
+      "first_seen": "2026-10-19",
+      "role": "systems"
+    },
+    {
+      "id": "a96c07ee0248a916",
+      "kind": "board",
+      "company": "GForce Life Sciences",
+      "title": "Cost and Claims Analyst (Westchester County)",
+      "location": "Westchester County, New York",
+      "url": "https://www.adzuna.com/land/ad/5932531383?se=elrhYmfN8RGl_9lPbTA8Yg&utm_medium=api&utm_source=55569923&v=21C04F9CA7889B44C12CBE85E7CDEDF58A0C8BD7",
+      "posted_date": "2026-10-17T13:43:37Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-21",
+      "role": "controls"
+    },
+    {
+      "id": "0895a5847b826355",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Senior Project Manager (Recovery and Rebuild)",
+      "location": "Los Angeles, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5458534008",
+      "posted_date": "2026-10-21T21:34:25-04:00",
+      "comp": "Salary: $130k-$190k/year ($62-$91/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-22",
+      "role": "unclear"
     }
   ]
 }

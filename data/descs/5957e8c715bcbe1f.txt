@@ -1,0 +1,19 @@
+Technical Integration Lead – Oracle Primavera Integrations and Data Migration
+U.S. Citizenship Required:
+ This position supports projects with specific access and/or contractual requirements. As a result, U.S. citizenship is required for consideration for this role.
+About the Role
+Oracle’s Construction and Engineering Global Business Unit (CEGBU) provides enterprise project and portfolio management solutions, including Primavera Unifier, P6 EPPM, Oracle Primavera Cloud, and Aconex.
+We are seeking a 
+Technical Integration Lead with proven, hands-on experience designing and developing integrations and data migrations using REST APIs through integration tools or middleware
+, such as Oracle Integration Cloud (OIC) or Project Integration Framework (PIF).
+This role combines client-facing technical leadership with direct development responsibility. You will own delivery from requirements gathering and data mapping through solution design, development, unit testing, UAT support, and production deployment.
+Direct integration development experience is essential. Experience limited to functional consulting, project coordination, or QA/testing on integration projects does not meet this requirement. Prior Oracle Primavera integration experience is an added advantage, but is not required.
+Key Responsibilities
+Lead client workshops to gather, clarify, and document integration and data migration requirements.
+Translate business requirements into technical specifications, source-to-target data mappings, transformation rules, and validation criteria.
+Assess and establish source and target system connectivity, including API access, authentication, authorization, and connectivity troubleshooting.
+Design integration and data migration solutions for Oracle Primavera applications and external enterprise systems.
+Personally build and configure integrations and migration workflows in OIC or PIF using REST API calls
+, including request and response handling, data transformations, orchestrati
+
+[Truncated for this view — full text at the posting link]
