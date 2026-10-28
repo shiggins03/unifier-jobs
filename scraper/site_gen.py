@@ -1,5 +1,6 @@
 """Static dashboard generator -> docs/index.html (served by GitHub Pages).
 Every displayed value is the source's verbatim text; absent fields say Not listed."""
+import datetime as dt
 import html
 from pathlib import Path
 
@@ -8,6 +9,28 @@ from .models import norm
 
 DOCS = Path(__file__).resolve().parent.parent / "docs"
 TIER_ORDER = {"A": 0, "B": 1, "C": 2}
+# "New" means first FOUND by this tracker within this many days (inclusive of
+# today). The old per-run "new" flag lasted one day, so anything that landed
+# between visits was never marked. first_seen is tracker metadata, not the
+# employer's posting date, and is always labelled "found" for that reason.
+NEW_WINDOW_DAYS = 7
+
+
+def found_recently(j, today):
+    if j["status"] != "active" or not j.get("first_seen") or "reposted" in j["flags"]:
+        return False
+    try:
+        age = (dt.date.fromisoformat(today) - dt.date.fromisoformat(j["first_seen"])).days
+    except ValueError:
+        return False
+    return 0 <= age < NEW_WINDOW_DAYS
+
+
+def found_label(first_seen, today):
+    if first_seen == today:
+        return "today"
+    d = dt.date.fromisoformat(first_seen)
+    return f"{d:%b} {d.day}"
 
 CSS = """
 :root{--bg:#f7f7f5;--card:#fff;--text:#1a1a1a;--muted:#666;--line:#e2e2de;
@@ -29,6 +52,15 @@ padding:14px 16px;margin-bottom:10px}
 background:var(--badge);color:var(--accent);border-radius:4px;padding:1px 6px;
 margin-left:6px;vertical-align:1px}
 .badge.new{background:transparent;color:var(--new);border:1px solid var(--new)}
+.badge.new::before{content:"";display:inline-block;width:7px;height:7px;
+border-radius:50%;background:var(--new);margin-right:5px;vertical-align:1px}
+.card.fresh{border-color:var(--new)}
+.newlist{display:flex;flex-direction:column;gap:8px}
+.newrow{display:grid;grid-template-columns:56px 1fr;gap:10px;align-items:baseline;
+font-size:14px}
+.newrow .when{color:var(--new);font-weight:600;font-size:12px;
+font-variant-numeric:tabular-nums}
+.newrow a{color:var(--accent);text-decoration:none}.newrow a:hover{text-decoration:underline}
 .title a{color:var(--accent);text-decoration:none;font-size:17px}
 .title a:hover{text-decoration:underline}
 .meta{color:var(--muted);font-size:13px;margin-top:4px}
@@ -47,10 +79,17 @@ def esc(s):
     return html.escape(str(s)) if s else ""
 
 
-def _card(j, prestige):
+def _card(j, prestige, today):
     tier_badge = f'<span class="badge">Tier {esc(prestige)}</span>' if prestige else ""
-    new_badge = '<span class="badge new">new</span>' if "new" in j["flags"] else ""
+    fresh = found_recently(j, today)
+    new_badge = (f'<span class="badge new" title="first found by this tracker on '
+                 f'{esc(j["first_seen"])} — not the employer\'s posting date">'
+                 f'new &middot; {esc(found_label(j["first_seen"], today))}</span>'
+                 if fresh else "")
     lp = ' <span class="badge">long-posted</span>' if "long-posted" in j["flags"] else ""
+    if "reposted" in j["flags"]:
+        lp += (' <span class="badge" style="opacity:.7" title="same title and location as '
+               'a listing this tracker found earlier — not counted as new">reposted</span>')
     role = (f' <span class="badge" style="background:transparent;color:var(--muted);'
             f'border:1px solid var(--line);font-weight:500" title="derived from title/'
             f'description keywords — not stated by the employer">{esc(j.get("role"))}</span>'
@@ -73,7 +112,7 @@ def _card(j, prestige):
     gone = ""
     if j["status"] == "gone":
         gone = f' — no longer listed as of {esc(j["gone_date"])}'
-    return f"""<div class="card{' gone' if j['status'] == 'gone' else ''}">
+    return f"""<div class="card{' gone' if j['status'] == 'gone' else ''}{' fresh' if fresh else ''}">
 <div class="co">{esc(j['company'])}{tier_badge}{new_badge}{lp}{man}{role}{tm}</div>
 <div class="title"><a href="{esc(j['url'])}" target="_blank" rel="noopener">{esc(j['title'])}</a></div>
 <div class="meta">{loc} &middot; Posted: {posted}{gone}</div>
@@ -82,7 +121,8 @@ def _card(j, prestige):
 
 
 def generate(store, companies, cities, warnings, today):
-    prestige = {norm(c["name"]): c["tier"] for c in companies}
+    prestige = {norm(n): c["tier"] for c in companies
+                for n in [c["name"], *(c.get("aliases") or [])]}
 
     def p_of(j):
         return prestige.get(norm(j["company"]))
@@ -125,7 +165,7 @@ def generate(store, companies, cities, warnings, today):
     def section(title, jobs, fold=False):
         if not jobs:
             return ""
-        cards = "\n".join(_card(j, p_of(j)) for j in jobs)
+        cards = "\n".join(_card(j, p_of(j), today) for j in jobs)
         if fold:
             return (f'<section><details class="fold"><summary>{esc(title)} '
                     f'({len(jobs)})</summary>{cards}</details></section>')
@@ -153,12 +193,39 @@ def generate(store, companies, cities, warnings, today):
                   'fingerprint (triage queue). Roster grows via discovery &rarr; triage PRs.</div>'
                   '</div></details></section>')
 
-    new_count = sum(1 for j in active if "new" in j["flags"])
+    # The artifact's "New this week" chip hides field roles by default (its
+    # "Hide field" chip), so this list leaves them out too; they still carry
+    # the new badge inside their collapsed section.
+    fresh = sorted((j for j in active if found_recently(j, today) and not is_field(j)),
+                   key=lambda j: (-dt.date.fromisoformat(j["first_seen"]).toordinal(),
+                                  sort_key(j)))
+
+    def new_section():
+        if not fresh:
+            return ""
+        rows = []
+        for j in fresh:
+            kind = (' <span class="badge" style="opacity:.7">board find</span>'
+                    if j["kind"] == "board" else "")
+            role = (f' <span class="meta">&middot; {esc(j["role"])}</span>'
+                    if j.get("role") and j["role"] != "unclear" else "")
+            rows.append(f'<div class="newrow"><span class="when">'
+                        f'{esc(found_label(j["first_seen"], today))}</span><span>'
+                        f'<b>{esc(j["company"])}</b> &mdash; <a href="{esc(j["url"])}" '
+                        f'target="_blank" rel="noopener">{esc(j["title"])}</a>{kind}{role}'
+                        f'</span></div>')
+        return (f'<section><h2>New this week ({len(fresh)})</h2><div class="card">'
+                f'<div class="newlist">{"".join(rows)}</div>'
+                f'<div class="meta" style="margin-top:10px">Dates are when this tracker '
+                f'first found the listing, not when it was posted. Full cards below '
+                f'carry a green &ldquo;new&rdquo; badge.</div></div></section>')
+
     body = f"""<main>
 <h1>Unifier job watch</h1>
 <div class="sub">Updated {esc(today)} &middot; {len(t1_direct)} direct listings
- &middot; {len(boards)} unresolved board finds &middot; {new_count} new this run</div>
+ &middot; {len(boards)} unresolved board finds &middot; {len(fresh)} new this week</div>
 {warn_html}
+{new_section()}
 {section("Unifier — direct listings", t1_direct)}
 {section("Field / construction roles (Unifier only in boilerplate)", field_direct, fold=True)}
 {section("Unresolved board finds (pending triage)", boards, fold=True)}

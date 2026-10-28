@@ -102,9 +102,20 @@ def keyword_tier(title, body, kw):
     return None
 
 
+# Some Workday tenants publish raw location ids that lead with an ISO country
+# code: "US.AZ.Tempe", "CA.QC.Montréal.455 boul. René-Lévesque Ouest"
+# (AtkinsRéalis, 2026-10-28). Checked BEFORE the marker layers because "CA"
+# there means Canada, and US_MARKER would read it as California. Uppercase
+# and no space after the dot, so "CA. Los Angeles"-style text can't match.
+WD_COUNTRY_PREFIX = re.compile(r"^([A-Z]{2})\.(?=\S)")
+
+
 def is_non_us(location):
     if not location:
         return False
+    m = WD_COUNTRY_PREFIX.match(location)
+    if m:
+        return m.group(1) != "US"
     if NON_US.search(location):
         return True
     # ambiguous city + no US state/country marker anywhere => foreign

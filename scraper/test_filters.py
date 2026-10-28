@@ -30,6 +30,9 @@ MUST_DROP = [
     "Paris, France", "Vienna, Austria", "Belgrade, Serbia", "Warsaw, Poland",
     # region codes used as locations
     "EMEA", "APAC", "LATAM",
+    # Workday raw location ids (AtkinsRéalis): CA = Canada here, not California
+    "CA.QC.Montréal.455 boul. René-Lévesque Ouest", "CA.ON.Toronto",
+    "GB.Epsom.Woodcote Grove", "IN.Gurgaon.DLF Cyber City",
 ]
 
 MUST_KEEP = [
@@ -47,6 +50,10 @@ MUST_KEEP = [
     "Amsterdam, NY", "Florence, SC", "St Petersburg, FL", "Glasgow, KY",
     "Cambridge, MA", "Naples, FL", "Odessa, TX", "Lima, OH", "Dublin, OH",
     "Moscow, ID", "Cairo, IL",
+    # Workday raw location ids with the US country code
+    "US.AZ.Tempe", "US.CA.Los Angeles.801 S. Grand Avenue", "US.CO.Denver",
+    # a California location written with a period must not read as Canada
+    "CA. Los Angeles", "Los Angeles, CA.",
 ]
 
 

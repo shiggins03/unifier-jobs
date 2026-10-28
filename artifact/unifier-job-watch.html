@@ -33,6 +33,15 @@ padding:14px 16px;margin-bottom:10px}
 background:var(--badge);color:var(--accent);border-radius:4px;padding:1px 6px;
 margin-left:6px;vertical-align:1px}
 .badge.new{background:transparent;color:var(--new);border:1px solid var(--new)}
+.badge.new::before{content:"";display:inline-block;width:7px;height:7px;
+border-radius:50%;background:var(--new);margin-right:5px;vertical-align:1px}
+.card.fresh{border-color:var(--new)}
+.newlink{font:inherit;cursor:pointer;border:0;background:none;padding:0;
+color:var(--new);font-weight:600;text-decoration:underline;
+text-underline-offset:2px}
+.newlink:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.chip.chip-new[aria-pressed="true"]{background:transparent;color:var(--new);
+border-color:var(--new)}
 .title a{color:var(--accent);text-decoration:none;font-size:17px}
 .title a:hover{text-decoration:underline}
 .meta{color:var(--muted);font-size:13px;margin-top:4px}
@@ -89,6 +98,9 @@ footer{color:var(--muted);font-size:12px;margin:24px 0}
 <div class="sub" id="sub">Loading&hellip;</div>
 <div class="fresh" id="fresh"></div>
 <div class="controls" id="controls" hidden>
+  <span class="fgroup"><span class="flabel">Found</span>
+    <button type="button" class="chip chip-new" data-f="fresh" data-v="week" aria-pressed="false">New this week</button>
+  </span>
   <span class="fgroup"><span class="flabel">Tier</span>
     <button type="button" class="chip" data-f="tiers" data-v="A" aria-pressed="false">A</button>
     <button type="button" class="chip" data-f="tiers" data-v="B" aria-pressed="false">B</button>
@@ -115,6 +127,7 @@ footer{color:var(--muted);font-size:12px;margin:24px 0}
   <span class="fgroup"><span class="flabel">Sort</span>
     <select id="f-sort" aria-label="Sort listings">
       <option value="best">Best match</option>
+      <option value="found">Newest found</option>
       <option value="date">Date posted (newest)</option>
       <option value="comp">Compensation (highest)</option>
     </select>
@@ -125,7 +138,9 @@ footer{color:var(--muted);font-size:12px;margin:24px 0}
 <footer>All fields shown verbatim from the source posting — nothing estimated.
 Sort and filters are display-only: date and comp are parsed from the verbatim
 strings for ordering, never altered. Role tags (systems/controls/field) are
-derived from title and description keywords, not stated by the employer.<br>
+derived from title and description keywords, not stated by the employer.
+&ldquo;New&rdquo; dates are when this tracker first found a listing, not when
+it was posted.<br>
 Canonical dashboard: <a href="https://shiggins03.github.io/unifier-jobs/"
 target="_blank" rel="noopener">shiggins03.github.io/unifier-jobs</a></footer>
 </main>
@@ -155,8 +170,11 @@ const state = { data: {}, err: {}, storedAt: {}, pageError: null, unsubs: [], de
   // sits in their systems boilerplate. Nothing is dropped silently: the
   // count line says how many are filtered out and the chip toggles off.
   ui: { tiers: new Set(), match: new Set(), roles: new Set(),
-        hideroles: new Set(["field"]), applied: new Set(),
+        hideroles: new Set(["field"]), applied: new Set(), fresh: new Set(),
         company: "", sort: "best" },
+  // Set per render from the feed: "new" = first found by the tracker within
+  // windowDays of the feed's update date (mirrors site_gen.found_recently).
+  newRef: { refMs: 0, windowDays: 7, today: "" },
   // job id -> ISO date the box was ticked. Job ids are a hash of
   // company|title|location, so a posting keeps its id across daily runs and
   // an "applied" tick survives re-fetches, filtering, and reloads.
@@ -183,7 +201,7 @@ function saveUI() {
     localStorage.setItem(UI_KEY, JSON.stringify({
       tiers: [...state.ui.tiers], match: [...state.ui.match],
       roles: [...state.ui.roles], hideroles: [...state.ui.hideroles],
-      applied: [...state.ui.applied],
+      applied: [...state.ui.applied], fresh: [...state.ui.fresh],
       company: state.ui.company, sort: state.ui.sort }));
   } catch (e) {}
 }
@@ -197,8 +215,9 @@ function loadUI() {
     // the field noise the owner asked about is gone on first load.
     if (Array.isArray(s.hideroles)) state.ui.hideroles = new Set(s.hideroles);
     if (Array.isArray(s.applied)) state.ui.applied = new Set(s.applied);
+    if (Array.isArray(s.fresh)) state.ui.fresh = new Set(s.fresh);
     if (typeof s.company === "string") state.ui.company = s.company;
-    if (["best", "date", "comp"].includes(s.sort)) state.ui.sort = s.sort;
+    if (["best", "found", "date", "comp"].includes(s.sort)) state.ui.sort = s.sort;
   } catch (e) {}
 }
 
@@ -359,13 +378,33 @@ function matchKind(j) {
   if ((j.flags || []).includes("title-match")) return "title";
   return "desc";  // tier 2 (P6/OPC/PIF/OIC) removed from the board 2026-08-07
 }
+function isoDayMs(s) {
+  const m = String(s || "").match(/^(\d{4})-(\d{2})-(\d{2})/);
+  return m ? Date.UTC(+m[1], +m[2] - 1, +m[3]) : NaN;
+}
+// A cached feed from before first_seen existed falls back to the old
+// one-run "new" flag rather than showing nothing.
+function isNew(j) {
+  if (j.status !== "active" || (j.flags || []).includes("reposted")) return false;
+  if (!j.first_seen) return (j.flags || []).includes("new");
+  const age = Math.round((state.newRef.refMs - isoDayMs(j.first_seen)) / 864e5);
+  return age >= 0 && age < state.newRef.windowDays;
+}
+function foundLabel(fs) {
+  if (fs === state.newRef.today) return "today";
+  const ms = isoDayMs(fs);
+  if (isNaN(ms)) return "";
+  return new Date(ms).toLocaleDateString("en-US",
+    { month: "short", day: "numeric", timeZone: "UTC" });
+}
 function uiActive() {
   return state.ui.tiers.size > 0 || state.ui.match.size > 0 ||
     state.ui.roles.size > 0 || state.ui.hideroles.size > 0 ||
-    state.ui.applied.size > 0 || !!state.ui.company;
+    state.ui.applied.size > 0 || state.ui.fresh.size > 0 || !!state.ui.company;
 }
 function passesFilters(j, prestige) {
   const ui = state.ui;
+  if (ui.fresh.size && !isNew(j)) return false;
   if (ui.tiers.size && !ui.tiers.has(prestige[norm(j.company)] || "?")) return false;
   if (ui.match.size && !ui.match.has(matchKind(j))) return false;
   if (ui.roles.size && !ui.roles.has(j.role || "unclear")) return false;
@@ -391,8 +430,16 @@ function jobCard(j, prestige) {
   const p = prestige[norm(j.company)];
   const flags = Array.isArray(j.flags) ? j.flags : [];
   const tierBadge = p ? `<span class="badge">Tier ${esc(p)}</span>` : "";
-  const newBadge = flags.includes("new") ? '<span class="badge new">new</span>' : "";
-  const lp = flags.includes("long-posted") ? ' <span class="badge">long-posted</span>' : "";
+  const fresh = isNew(j);
+  const when = j.first_seen ? foundLabel(j.first_seen) : "";
+  const newBadge = fresh
+    ? `<span class="badge new" title="first found by this tracker${j.first_seen
+        ? " on " + esc(j.first_seen) : ""} — not the employer's posting date">new${
+        when ? " &middot; " + esc(when) : ""}</span>` : "";
+  const lp = (flags.includes("long-posted") ? ' <span class="badge">long-posted</span>' : "")
+    + (flags.includes("reposted")
+       ? ' <span class="badge" style="opacity:.7" title="same title and location as a listing'
+         + ' this tracker found earlier — not counted as new">reposted</span>' : "");
   const roleBadge = (j.role && j.role !== "unclear")
     ? ` <span class="badge role" title="derived from title/description keywords — not stated by the employer">${esc(j.role)}</span>` : "";
   const man = flags.includes("manual")
@@ -415,7 +462,7 @@ function jobCard(j, prestige) {
   const box = `<div class="applied-row"><label>
 <input type="checkbox" data-applied="${esc(j.id)}"${appliedOn ? " checked" : ""}>
 ${appliedOn ? `Applied ${esc(appliedOn)}` : "Mark as applied"}</label></div>`;
-  return `<div class="card${j.status === "gone" ? " gone" : ""}${appliedOn ? " is-applied" : ""}">
+  return `<div class="card${j.status === "gone" ? " gone" : ""}${fresh ? " fresh" : ""}${appliedOn ? " is-applied" : ""}">
 <div class="co">${esc(j.company)}${tierBadge}${newBadge}${lp}${man}${roleBadge}${appliedBadge}${tm}</div>
 <div class="title"><a href="${esc(safeUrl(j.url))}" target="_blank" rel="noopener">${esc(j.title)}</a></div>
 <div class="meta">${loc} &middot; Posted: ${posted}${gone}</div>
@@ -508,6 +555,7 @@ function clearFilters() {
   state.ui.roles.clear();
   state.ui.hideroles.clear();
   state.ui.applied.clear();
+  state.ui.fresh.clear();
   state.ui.company = "";
   saveUI();
   render();
@@ -544,14 +592,23 @@ function render() {
   const jobs = (Array.isArray(feed.jobs) ? feed.jobs : []).filter((j) => j.tier === 1);
   const companies = Array.isArray(feed.roster) ? feed.roster : [];
   const prestige = {};
-  for (const c of companies) if (c.tier) prestige[norm(c.name)] = c.tier;
+  for (const c of companies) {
+    if (!c.tier) continue;
+    for (const n of [c.name, ...(Array.isArray(c.aliases) ? c.aliases : [])])
+      prestige[norm(n)] = c.tier;
+  }
   const bestKey = makeSortKey(prestige);
   const refMs = Date.parse(feed.updated || "") || Date.now();
+  state.newRef = { refMs: isoDayMs(feed.updated) || refMs,
+    windowDays: +feed.new_window_days || 7, today: feed.updated || "" };
+  const foundVal = (j) => { const v = isoDayMs(j.first_seen); return isNaN(v) ? -Infinity : v; };
   const keyFn = state.ui.sort === "date"
     ? (j) => [-dateSortValue(j.posted_date, refMs), ...bestKey(j)]
     : state.ui.sort === "comp"
       ? (j) => [-compSortValue(j.comp), ...bestKey(j)]
-      : bestKey;
+      : state.ui.sort === "found"
+        ? (j) => [-foundVal(j), ...bestKey(j)]
+        : bestKey;
   const cmp = bySortKey(keyFn);
 
   const active = jobs.filter((j) => j.status === "active");
@@ -563,7 +620,10 @@ function render() {
   const gone = jobs.filter((j) => j.status === "gone" && passesFilters(j, prestige))
     .sort((a, b) => (b.gone_date || "").localeCompare(a.gone_date || ""))
     .slice(0, 25);
-  const newCount = active.filter((j) => (j.flags || []).includes("new")).length;
+  // Same population as the chip would show with the default "Hide field" on,
+  // so tapping the count never reveals a different number.
+  const newCount = active.filter((j) => isNew(j) &&
+    !state.ui.hideroles.has(j.role || "unclear")).length;
   const triage = Array.isArray(feed.triage) ? feed.triage : [];
 
   const updated = feed.updated || "";
@@ -573,9 +633,13 @@ function render() {
   state.activeIds = new Set(active.map((j) => j.id));
   const appliedCount = active.filter((j) => state.applied[j.id]).length;
   const appliedNote = appliedCount ? ` &middot; ${appliedCount} applied` : "";
+  const newNote = newCount
+    ? `<button type="button" class="newlink" data-newchip aria-pressed="${
+        state.ui.fresh.size ? "true" : "false"}">${newCount} new this week</button>`
+    : "0 new this week";
   sub.innerHTML = `${updated ? "Updated " + esc(updated) + " &middot; " : ""}` +
     `${t1.length} direct listings &middot; ${boards.length} unresolved ` +
-    `board finds &middot; ${newCount} new this run` +
+    `board finds &middot; ${newNote}` +
     `<span id="applied-note">${appliedNote}</span>${filterNote}`;
 
   const at = state.storedAt.feed;
@@ -605,13 +669,16 @@ function render() {
         `${enabled ? " " + enabled + " company sources are checked daily at 11:00 UTC." : ""}</div>`;
     }
   }
+  // Board finds normally sit folded; under the New filter a fresh find (MTA
+  // arrived this way) must be visible without a second tap.
   html += section("boards", "Unresolved board finds (pending triage)",
-    boards.map((j) => jobCard(j, prestige)).join("\n"), boards.length, true, openSet);
-  // Triage entries are unextracted page hits, not applications — they can't
-  // be ticked, so they'd just be noise under an applied filter.
+    boards.map((j) => jobCard(j, prestige)).join("\n"), boards.length,
+    !state.ui.fresh.size, openSet);
+  // Triage entries are unextracted page hits, not listings — they can't be
+  // ticked or be "new", so they'd just be noise under those filters.
   html += section("triage", "Triage queue (page hits awaiting extraction)",
     triage.map(triageCard).join("\n"),
-    state.ui.applied.size ? 0 : triage.length, true, openSet);
+    state.ui.applied.size || state.ui.fresh.size ? 0 : triage.length, true, openSet);
   html += section("gone", "No longer listed",
     gone.map((j) => jobCard(j, prestige)).join("\n"), gone.length, true, openSet);
   html += rosterSection(companies, openSet);
@@ -726,6 +793,12 @@ async function boot() {
       return;
     }
     if (ev.target.id === "f-clear") clearFilters();
+  });
+  document.getElementById("sub").addEventListener("click", (ev) => {
+    if (!ev.target.closest("[data-newchip]")) return;
+    state.ui.fresh.has("week") ? state.ui.fresh.delete("week") : state.ui.fresh.add("week");
+    saveUI();
+    render();
   });
   controls.addEventListener("change", (ev) => {
     if (ev.target.id === "f-company") state.ui.company = ev.target.value;

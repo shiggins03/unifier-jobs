@@ -5,6 +5,7 @@ Direct adapters return (records, ok, inventory): inventory is the source's TOTAL
 visible job count regardless of keyword (aliveness check — 0 or None-when-expected
 means the monitor may be blind, not that no jobs match). Discovery adapters
 return (records, ok)."""
+import datetime as dt
 import html
 import json
 import os
@@ -172,6 +173,45 @@ def fetch_greenhouse(co, query):
             "description": desc,
         })
     return out, True, len(jobs)
+
+
+def fetch_lever(co, query):
+    """Lever public postings API (PMA Consultants). Whole board in one call,
+    keyword-filtered locally like greenhouse. Comp comes from the employer's
+    own salary sentence (salaryDescriptionPlain, shown on the posting page),
+    never from formatting the structured min/max numbers. createdAt is epoch
+    ms; it is shown as its UTC calendar date."""
+    slug = co["lever_slug"]
+    try:
+        r = requests.get(f"https://api.lever.co/v0/postings/{slug}",
+                         params={"mode": "json"}, headers=UA, timeout=TIMEOUT)
+        r.raise_for_status()
+        posts = r.json()
+    except Exception:
+        return [], False, None
+    out = []
+    for p in posts:
+        country = (p.get("country") or "").upper()
+        if country and country != "US":
+            continue
+        parts = [p.get("descriptionPlain")]
+        for lst in p.get("lists") or []:
+            parts.append(f"{lst.get('text') or ''}\n{_clean_html(lst.get('content')) or ''}")
+        parts += [p.get("additionalPlain"), p.get("salaryDescriptionPlain")]
+        desc = "\n\n".join(s.strip() for s in parts if s and s.strip()) or None
+        blob = f"{p.get('text', '')}\n{desc or ''}".casefold()
+        if query.casefold() not in blob:
+            continue
+        posted = None
+        if isinstance(p.get("createdAt"), (int, float)):
+            posted = dt.datetime.fromtimestamp(p["createdAt"] / 1000,
+                                               dt.timezone.utc).date().isoformat()
+        out.append({
+            "company": co["name"], "title": p.get("text"),
+            "location": (p.get("categories") or {}).get("location"),
+            "url": p.get("hostedUrl"), "posted_date": posted, "description": desc,
+        })
+    return out, True, len(posts)
 
 
 def fetch_generic_page(co, query):
@@ -786,6 +826,68 @@ def fetch_phenom(co, query):
     return out, True, inventory
 
 
+def fetch_clearcompany(co, query):
+    """ClearCompany career sites (apply.clearcompany.com/<slug>). ClearCompany
+    owns HRM Direct and retired those boards ~2026-10-22: projectp.hrmdirect.com
+    now 301s to a JS shell whose jobs come from this public JSON API, which
+    left fetch_hrmdirect parsing an empty table and both live Project Partners
+    reqs falsely marked gone. The list call already carries full descriptions.
+
+    Scope is decided here from the structured country codes, because the
+    display string can't carry it: an India req's `location` reads
+    "Banjara Hills 40, Remote (IN), Statewide (07)..." — nothing the US filter
+    recognizes. Location shows the employer's office name ("Remote - US
+    Based"); the street-address `location` field names the HQ even for remote
+    reqs. ", United States" expands the stated ISO code to match what their
+    HRM Direct board displayed, which also keeps job ids stable across the
+    migration."""
+    site, slug = co["clearcompany_site_id"], co["clearcompany_slug"]
+    api = f"https://careers-api.clearcompany.com/v1/{site}"
+    results, total, page = [], None, 0
+    try:
+        while True:
+            r = requests.get(api, params={"pageIndex": page, "pageSize": 50},
+                             headers=UA, timeout=TIMEOUT)
+            r.raise_for_status()
+            body = r.json()
+            batch = body.get("results") or []
+            results += batch
+            total = body.get("totalCount")
+            if not batch or total is None or len(results) >= total or page >= 20:
+                break
+            page += 1
+    except Exception:
+        return [], False, None
+
+    out = []
+    for j in results:
+        locs = j.get("locations") or []
+        if locs and not any((l.get("country") or "").upper() == "US" for l in locs):
+            continue
+        office = (j.get("officeName") or "").strip()
+        loc = f"{office}, United States" if office else j.get("location")
+        out.append({
+            "company": co["name"], "title": j.get("positionTitle"), "location": loc,
+            "url": f"https://apply.clearcompany.com/{slug}?jobId={j.get('id')}",
+            "posted_date": j.get("postedDate"),
+            "description": _inline_html_text(j.get("description")),
+        })
+    return out, True, total
+
+
+def _inline_html_text(fragment):
+    """Like _clean_html, but joins text nodes with nothing. Their editor wraps
+    pieces of one sentence in separate tags ("<strong>Salary Range:</strong>
+    <strong>$</strong>100,000"), which a "\\n" separator splits across lines so
+    the stated-comp extractor never sees the range. Paragraph breaks survive
+    because the HTML itself carries newlines between block tags."""
+    if not fragment:
+        return None
+    text = BeautifulSoup(html.unescape(fragment), "html.parser").get_text("")
+    text = "\n".join(line.strip() for line in text.splitlines())
+    return re.sub(r"\n{3,}", "\n\n", text).strip() or None
+
+
 def fetch_hrmdirect(co, query):
     """HRM Direct / ClearCompany boards (Project Partners). The company's own
     careers page just iframes this, and that iframe is why a generic_page
@@ -845,7 +947,9 @@ def fetch_hrmdirect(co, query):
 
 
 DIRECT_ADAPTERS = {
+    "clearcompany": fetch_clearcompany,
     "hrmdirect": fetch_hrmdirect,
+    "lever": fetch_lever,
     "jobvite": fetch_jobvite,
     "workday": fetch_workday,
     "google_careers": fetch_google_careers,

@@ -51,6 +51,8 @@ Runs daily at 11:00 UTC via GitHub Actions; publishes a static dashboard to GitH
   reads resource blocks + strips the SHA prefix — keep that parser, and keep the
   raw-event debug dump (20s timeout box) that diagnosed it.
 - Keep the page's sort/badges in sync with `scraper/site_gen.py` when either changes.
+  That includes the "new" window: the page reads `feed.new_window_days` and
+  measures from `feed.updated`, never the viewer's clock.
 - Role filtering: `ui.roles` is show-only, `ui.hideroles` is exclude. **`hideroles`
   defaults to `["field"]`** — the owner is a systems person and asked for
   welding/superintendent postings to be weeded out; the chip toggles it, "Clear
@@ -234,7 +236,51 @@ Actions log, iterate. `run_adapter()` exercises a real adapter end-to-end
 before trusting it in the daily run. Keep `main()` empty between
 investigations.
 
-## Current state (update this section when you change it) — as of 2026-09-23
+## Current state (update this section when you change it) — as of 2026-10-28
+
+- **"New" now means first FOUND within 7 days** (`site_gen.NEW_WINDOW_DAYS`,
+  `found_recently()`), not "arrived this run". The old one-run flag vanished
+  the next morning, so anything that landed between the owner's visits was
+  never marked. Both surfaces: green "new · Oct 27" badge + green card border;
+  Pages gets a compact "New this week" list at the top (field roles excluded,
+  mirroring the artifact's default Hide-field); the artifact gets a "New this
+  week" chip, a tappable "N new this week" count in the header, and a "Newest
+  found" sort. Under the chip, board finds render unfolded. `first_seen` and
+  `new_window_days` are now in feed.json. first_seen is TRACKER metadata, so
+  it is always labelled "found", never presented as a posting date.
+  `first_seen` survives gone→active reactivation and board→direct promotion,
+  so a job that blips doesn't come back as "new".
+- **Reposts aren't "new"** (`main._mark_reposts`, flag `reposted`, muted
+  badge on both surfaces). Same company + title + a shared location segment
+  as a listing found earlier and live within 30 days. Prompted by Luster on
+  10-27 closing its per-city reqs and re-posting them as multi-city listings
+  (new ids) — 10 of that week's 25 "new" were reposts. The shared-location
+  requirement keeps the same title in a NEW city counted as new. 38 Luster
+  per-city reqs closing on 10-28 is that consolidation, not a monitor fault.
+- **Project Partners was blind 10-22 → 10-28.** ClearCompany retired HRM
+  Direct boards; projectp.hrmdirect.com 301s to a JS shell, the adapter parsed
+  0 rows, and both live reqs were falsely marked gone 10-23. New
+  `clearcompany` adapter (public careers-api JSON). Job ids were kept stable
+  on purpose (office + "United States" location string) so the reqs
+  reactivated with their August first_seen instead of reappearing as "new".
+  `_merge` now moves a direct job's `source` to the monitor that re-saw it —
+  otherwise expiry (keyed on source) could never retire it again.
+- **Roster `aliases:`** — matched by `roster_match`, site_gen prestige, and
+  the artifact's tier badge. Broadpin → Project Partners (its Adzuna copy was
+  posing as an "unknown employer"), Metropolitan Transportation Authority →
+  MTA (still disabled/Cloudflare, so its Adzuna finds stay as board finds but
+  now carry the tier B badge), SNC-Lavalin → AtkinsRéalis.
+- **Added AtkinsRéalis** (Workday slihrms/Careers — see note; scope filter
+  gained `WD_COUNTRY_PREFIX` for raw "CA.QC.Montréal" ids, CA = Canada there)
+  and **PMA Consultants** (new `lever` adapter). Both found via Adzuna triage.
+- Checked and NOT added: Consumers Energy (SF CSB works via the existing
+  adapter, zero Unifier postings — the 7-firm "Energy Supply Software
+  Configuration Analyst, Jackson MI" swarm names no client, so treating it as
+  Consumers would be a guess); Crystal Management (site times out; its
+  Unifier Consultant stays a board find); TheirStack free page (only new
+  names are non-US).
+
+## Previous state — as of 2026-09-23
 
 - Added Booz Allen Hamilton (workday bah/BAH_Jobs) — found by the discovery
   net, 3 Norfolk roles with stated comp. NewYork-Presbyterian, AT&T, Cleveland

@@ -93,7 +93,11 @@ def run():
     # 2026-09-22 showing 6 entries for 3 jobs, because Adzuna titles them
     # "...with Security Clearance" and locates them "Norfolk, Norfolk City"
     # against Workday's "Norfolk, VA", so the id hash never matched.
-    roster_norms = {models.norm(c["name"]): c for c in companies}
+    # Aliases cover rebrands and long-form names the aggregators use instead
+    # of the roster name ("Broadpin" for Project Partners, "Metropolitan
+    # Transportation Authority" for MTA) — substring matching can't bridge those.
+    roster_norms = {models.norm(n): c for c in companies
+                    for n in [c["name"], *(c.get("aliases") or [])]}
     # ACTIVE copies only. A closed board copy is harmless (it sits in the
     # capped "no longer listed" section) and is worth keeping as evidence —
     # NewYork-Presbyterian earned its direct monitor precisely because an old
@@ -303,6 +307,8 @@ def run():
                 j["status"] = "gone"
                 j["gone_date"] = j["gone_date"] or today
 
+    _mark_reposts(store)
+
     # ---- health warnings ----
     warnings = []
     for name, h in health.items():
@@ -351,7 +357,7 @@ def run():
     for j in sorted(store.values(), key=lambda x: x["status"] != "active"):
         fj = {k: j[k] for k in ("id", "kind", "company", "title", "location", "url",
                                 "posted_date", "comp", "tier", "status", "gone_date",
-                                "flags")}
+                                "flags", "first_seen")}
         fj["role"] = j.get("role")   # derived filter tag, not a stated fact
         desc = j.get("description")
         if desc and j["status"] == "active":
@@ -363,8 +369,10 @@ def run():
         feed_jobs.append(fj)
     models.save_json(models.DATA / "feed.json", {
         "updated": today,
+        "new_window_days": site_gen.NEW_WINDOW_DAYS,
         "warnings": warnings,
-        "roster": [{"name": c["name"], "tier": c["tier"], "ats": c["ats"],
+        "roster": [{"name": c["name"], "aliases": c.get("aliases") or [],
+                    "tier": c["tier"], "ats": c["ats"],
                     "enabled": bool(c.get("enabled")), "note": c.get("note")}
                    for c in companies],
         "triage": [t for t in triage if not t.get("status")],
@@ -378,6 +386,41 @@ def run():
           f"{len(triage)} in triage queue, {len(warnings)} health warnings"
           + (f", {len(dropped_scope)} dropped as out-of-scope" if dropped_scope else "")
           + (" [baseline run]" if baseline else ""))
+
+
+REPOST_LOOKBACK_DAYS = 30
+
+
+def _mark_reposts(store):
+    """Flag listings that re-post a role already found, so "new this week"
+    means news. Luster National, 2026-10-27: closed its per-city reqs (found
+    10-17) and re-posted the same titles as combined multi-city listings —
+    new ids, so 10 of that week's 25 "new" jobs were things already seen.
+    A repost = same company + same title + at least one shared location
+    segment as a listing found EARLIER that was still live within
+    REPOST_LOOKBACK_DAYS. A shared location is required so the same title
+    opening in a new city still counts as new. Recomputed over the whole
+    store every run, like the role tag."""
+    def parts(j):
+        return {models.norm(p) for p in (j.get("location") or "").split(";") if p.strip()}
+
+    groups = {}
+    for j in store.values():
+        j["flags"] = [f for f in j["flags"] if f != "reposted"]
+        groups.setdefault((models.norm(j["company"]), models.norm(j["title"])), []).append(j)
+    for group in groups.values():
+        if len(group) < 2:
+            continue
+        for j in group:
+            seen = parse_date(j["first_seen"])
+            for k in group:
+                if k is j or not k["first_seen"] < j["first_seen"]:
+                    continue
+                last = parse_date(k.get("last_seen") or k["first_seen"])
+                if seen and last and (seen - last).days <= REPOST_LOOKBACK_DAYS \
+                        and parts(j) & parts(k):
+                    j["flags"].append("reposted")
+                    break
 
 
 def _merge(store, job, today, baseline):
@@ -396,6 +439,12 @@ def _merge(store, job, today, baseline):
         for f in ("posted_date", "comp", "description", "url", "location"):
             if job.get(f):
                 old[f] = job[f]
+        # Expiry only ages a job out when its recorded source ran, so the
+        # source must follow the monitor that actually sees the job. When
+        # Project Partners moved hrmdirect -> clearcompany, reactivated jobs
+        # still saying "hrmdirect:" could never have been marked gone again.
+        if old["kind"] == "direct" and job["kind"] == "direct":
+            old["source"] = job["source"]
         # Derived tags must refresh on every run, not just for new jobs —
         # otherwise tuning roles.yaml (or adding the classifier at all) never
         # reaches the ~all postings that already exist in the store.
