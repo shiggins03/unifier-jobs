@@ -2495,6 +2495,34 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-10-28"
+    },
+    {
+      "company": "DFND Security",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=Ang6wPHS8RGmy51G9FAheA&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-28"
+    },
+    {
+      "company": "USK Technologies",
+      "url": "https://www.adzuna.com/land/ad/5927282530?se=vtCqwvHS8RGmy51G9FAheA&utm_medium=api&utm_source=55569923&v=0B009464FB7498B7DEE163820B0425E25A09916F",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-28"
+    },
+    {
+      "company": "TechnoSphere, Inc.",
+      "url": "https://www.adzuna.com/land/ad/5936196059?se=vtCqwvHS8RGmy51G9FAheA&utm_medium=api&utm_source=55569923&v=AFB859548A07B4F176D8EECE449E29612F7DDE4D",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-28"
+    },
+    {
+      "company": "USK Technologies",
+      "url": "https://www.adzuna.com/land/ad/5927891897?se=vtCqwvHS8RGmy51G9FAheA&utm_medium=api&utm_source=55569923&v=098FD5B9373D6105F83CA5C029354721DEEA9C8D",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-10-28"
     }
   ],
   "jobs": [
@@ -3067,23 +3095,6 @@
       "has_desc": true
     },
     {
-      "id": "8d73e142acc99184",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Construction Manager",
-      "location": "San Francisco, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5418953008",
-      "posted_date": "2026-09-09T01:46:51-04:00",
-      "comp": "Salary: $160k-$200k/year ($77-$96/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-09-10",
-      "role": "field",
-      "has_desc": true
-    },
-    {
       "id": "e8dc825c8a54c683",
       "kind": "direct",
       "company": "Luster National",
@@ -3188,23 +3199,6 @@
       "has_desc": true
     },
     {
-      "id": "365043d9ca1c0aa7",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Construction Automation Engineer",
-      "location": "Lake Charles, Louisiana, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299159&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-09-14T12:16:40.126+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-09-14",
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
       "id": "af709386c2d4df15",
       "kind": "direct",
       "company": "Bechtel",
@@ -3304,23 +3298,6 @@
       "flags": [],
       "first_seen": "2026-09-24",
       "role": "field",
-      "has_desc": true
-    },
-    {
-      "id": "1170e234d95e771e",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Utility Coordinator",
-      "location": "San Francisco, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5432887008",
-      "posted_date": "2026-09-23T11:52:40-04:00",
-      "comp": "Salary: $115k-$165k/year ($55-$79/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-09-24",
-      "role": "unclear",
       "has_desc": true
     },
     {
@@ -3511,23 +3488,6 @@
       "has_desc": true
     },
     {
-      "id": "89ec56b2e66c442b",
-      "kind": "direct",
-      "company": "Oracle",
-      "title": "Senior Principal Consultant/Consulting Technical Manager",
-      "location": "United States",
-      "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/job/346380",
-      "posted_date": "2026-10-02",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-10-03",
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
       "id": "83f97110cbe273df",
       "kind": "direct",
       "company": "Eli Lilly",
@@ -3596,23 +3556,6 @@
       "has_desc": true
     },
     {
-      "id": "ab9f02644152ec42",
-      "kind": "board",
-      "company": "GForce Life Sciences",
-      "title": "Cost and Claims Analyst",
-      "location": "Westchester County, New York",
-      "url": "https://www.adzuna.com/land/ad/5932229519?se=1gVBjDDO8RGC1t7-FdjP9w&utm_medium=api&utm_source=55569923&v=A86BD57640EC398C3092F459B5D9838406D8290F",
-      "posted_date": "2026-10-17T10:10:30Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-10-06",
-      "role": "controls",
-      "has_desc": true
-    },
-    {
       "id": "a519da4856a8bc7e",
       "kind": "direct",
       "company": "Micron",
@@ -3652,7 +3595,7 @@
       "company": "DFND Security",
       "title": "Oracle WACS",
       "location": "Fort Sam Houston, Bexar County",
-      "url": "https://www.adzuna.com/land/ad/5863704034?se=zp6RLeDS8RG0v6omR9kuEw&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=Ang6wPHS8RGmy51G9FAheA&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
       "posted_date": "2026-08-31T22:19:09Z",
       "comp": null,
       "tier": 1,
@@ -3839,7 +3782,7 @@
       "company": "USK Technologies",
       "title": "Energy Supply Software Analyst",
       "location": "Jackson, Jackson County",
-      "url": "https://www.adzuna.com/land/ad/5927282530?se=nIOwLuDS8RGI5dVyyzz_lQ&utm_medium=api&utm_source=55569923&v=0B009464FB7498B7DEE163820B0425E25A09916F",
+      "url": "https://www.adzuna.com/land/ad/5927282530?se=vtCqwvHS8RGmy51G9FAheA&utm_medium=api&utm_source=55569923&v=0B009464FB7498B7DEE163820B0425E25A09916F",
       "posted_date": "2026-10-14T06:47:23Z",
       "comp": "Pay: $40/hour Duration: 12 months Seeking an experien",
       "tier": 1,
@@ -3941,7 +3884,7 @@
       "company": "USK Technologies",
       "title": "Energy Supply Software Analyst (Jackson)",
       "location": "Jackson, Jackson County",
-      "url": "https://www.adzuna.com/land/ad/5927891897?se=nIOwLuDS8RGI5dVyyzz_lQ&utm_medium=api&utm_source=55569923&v=098FD5B9373D6105F83CA5C029354721DEEA9C8D",
+      "url": "https://www.adzuna.com/land/ad/5927891897?se=vtCqwvHS8RGmy51G9FAheA&utm_medium=api&utm_source=55569923&v=098FD5B9373D6105F83CA5C029354721DEEA9C8D",
       "posted_date": "2026-10-14T13:49:52Z",
       "comp": "Pay: $40/hour Duration: 12 months Seeking an experien",
       "tier": 1,
@@ -4317,7 +4260,7 @@
       "company": "TechnoSphere, Inc.",
       "title": "Contract Role: Energy Supply Software Configuration Analyst - Jackson, MI 49201(Hybrid)",
       "location": "Jackson, Jackson County",
-      "url": "https://www.adzuna.com/land/ad/5936196059?se=nIOwLuDS8RGI5dVyyzz_lQ&utm_medium=api&utm_source=55569923&v=AFB859548A07B4F176D8EECE449E29612F7DDE4D",
+      "url": "https://www.adzuna.com/land/ad/5936196059?se=vtCqwvHS8RGmy51G9FAheA&utm_medium=api&utm_source=55569923&v=AFB859548A07B4F176D8EECE449E29612F7DDE4D",
       "posted_date": "2026-10-20T23:39:02Z",
       "comp": null,
       "tier": 1,
@@ -4632,9 +4575,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "first_seen": "2026-10-28",
       "role": "systems",
       "has_desc": true
@@ -4651,9 +4592,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "first_seen": "2026-10-28",
       "role": "field",
       "has_desc": true
@@ -4671,8 +4610,7 @@
       "status": "active",
       "gone_date": null,
       "flags": [
-        "title-match",
-        "new"
+        "title-match"
       ],
       "first_seen": "2026-10-28",
       "role": "systems",
@@ -4690,9 +4628,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "first_seen": "2026-10-28",
       "role": "unclear",
       "has_desc": true
@@ -4709,9 +4645,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "first_seen": "2026-10-28",
       "role": "unclear",
       "has_desc": true
@@ -4728,11 +4662,28 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
+      "flags": [],
+      "first_seen": "2026-10-28",
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "e103dc47ffbe18ea",
+      "kind": "direct",
+      "company": "Consertus",
+      "title": "Mid-Level Integration/Software Developer",
+      "location": "US-WA-Remote",
+      "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Remote/Mid-Level-Integration-Software-Developer_JR1699",
+      "posted_date": "Posted Today",
+      "comp": "compensation range $120,000 - $150,000",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
       "flags": [
         "new"
       ],
       "first_seen": "2026-10-28",
-      "role": "controls",
+      "role": "systems",
       "has_desc": true
     },
     {
@@ -6498,6 +6449,22 @@
       "role": "controls"
     },
     {
+      "id": "8d73e142acc99184",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Construction Manager",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5418953008",
+      "posted_date": "2026-09-09T01:46:51-04:00",
+      "comp": "Salary: $160k-$200k/year ($77-$96/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-09-10",
+      "role": "field"
+    },
+    {
       "id": "1d1793ab8987f727",
       "kind": "direct",
       "company": "Luster National",
@@ -6592,6 +6559,22 @@
       "flags": [],
       "first_seen": "2026-09-10",
       "role": "field"
+    },
+    {
+      "id": "365043d9ca1c0aa7",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Construction Automation Engineer",
+      "location": "Lake Charles, Louisiana, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299159&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-14T12:16:40.126+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-09-14",
+      "role": "unclear"
     },
     {
       "id": "acdc6850fadd0ff1",
@@ -6964,6 +6947,22 @@
       "role": "systems"
     },
     {
+      "id": "1170e234d95e771e",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Utility Coordinator",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5432887008",
+      "posted_date": "2026-09-23T11:52:40-04:00",
+      "comp": "Salary: $115k-$165k/year ($55-$79/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-09-24",
+      "role": "unclear"
+    },
+    {
       "id": "89549d0ad8321b96",
       "kind": "board",
       "company": "AtkinsRéalis",
@@ -7092,6 +7091,22 @@
       "role": "field"
     },
     {
+      "id": "89ec56b2e66c442b",
+      "kind": "direct",
+      "company": "Oracle",
+      "title": "Senior Principal Consultant/Consulting Technical Manager",
+      "location": "United States",
+      "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/job/346380",
+      "posted_date": "2026-10-02",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-03",
+      "role": "unclear"
+    },
+    {
       "id": "c768d44e863f2293",
       "kind": "board",
       "company": "Careers Broadpin",
@@ -7108,6 +7123,22 @@
       ],
       "first_seen": "2026-10-04",
       "role": "systems"
+    },
+    {
+      "id": "ab9f02644152ec42",
+      "kind": "board",
+      "company": "GForce Life Sciences",
+      "title": "Cost and Claims Analyst",
+      "location": "Westchester County, New York",
+      "url": "https://www.adzuna.com/land/ad/5932229519?se=1gVBjDDO8RGC1t7-FdjP9w&utm_medium=api&utm_source=55569923&v=A86BD57640EC398C3092F459B5D9838406D8290F",
+      "posted_date": "2026-10-17T10:10:30Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-10-28",
+      "flags": [],
+      "first_seen": "2026-10-06",
+      "role": "controls"
     },
     {
       "id": "fb1c427e33f012ab",

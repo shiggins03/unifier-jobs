@@ -1,0 +1,19 @@
+About Us:
+Consertus is an AI-native global capital program management and advisory firm that combines deep industry expertise with advanced digital capabilities to deliver smarter, faster, and more sustainable outcomes. Headquarters in Miami, Florida, and supported by a team of more than 1,500 professionals, we help clients plan, deliver, and optimize complex capital programs across the full project lifecycle.
+ 
+Our integrated capabilities span advisory, digital solutions, engineering and design, and program delivery, enabling organizations to navigate complexity, mitigate risk, and achieve strategic objectives. We serve a diverse range of industries, including aviation, transportation, transit, water, healthcare, energy, education, government, commercial real estate, life sciences, and technology.
+ 
+At Consertus, we believe our people are our greatest strength. We foster a collaborative, flexible, and inclusive environment where individuals can grow, develop their skills, and make a meaningful impact. Together, we're transforming the way the world is planned, built, and delivered.
+Learn more about how Consertus is creating lasting value for clients, communities, and our
+people at 
+www.consertus.com
+.
+ 
+About this Role:
+ 
+We are looking for 
+a Mid-Level Integration / Software Developer
+. In this role, you will help deliver innovative solutions for enterprise capital program platforms, with a primary focus on Oracle Primavera Unifier and related technologies. As a key contributor, you will work directly with clients to design, develop, and support integrations that drive critical business outcomes.
+The successful candidate will bring hands-on REST API development experience, strong Python and SQL capabilities, and experience building and orchestrating data workflows and integration pipelines. This is an exciting opportunity to work with a Fortune 50 technology client on large-scale, high-visibility capital programs while accelerating your career through a clearly def
+
+[Truncated for this view — full text at the posting link]
