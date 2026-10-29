@@ -1,0 +1,64 @@
+We are seeking a highly technical, hands-on Oracle Unifier Solution Architect to lead the design, configuration, and implementation of our enterprise PMIS platform supporting a multi-billion-dollar capital projects program.
+
+This is a senior individual contributor role for someone who operates at an architect level but remains deeply involved in system configuration and build. You will own the Unifier environment end-to-end—translating complex business requirements into scalable system solutions—while leading external consultants and aligning a broad set of stakeholders.
+
+This role is ideal for someone who prefers building over managing but can still lead through expertise and influence.
+
+Responsibilities:
+
+System Architecture & Design
+
+Define the overall Unifier system architecture, data structures, and configuration strategy
+
+Design scalable solutions aligned to program needs across cost, change, contracts, and reporting
+
+Establish standards for CBS, workflows, forms, and governance frameworks
+
+ 
+
+Hands-On Configuration & Build
+
+Personally configure and deploy Unifier business processes (BPs), workflows, and forms 
+
+Build and optimize:
+ 
+
+Cost management (budgets, commitments, actuals, accruals, EAC)
+
+Change management workflows
+
+Contract and invoice management processes
+
+Funding and cashflow tracking
+
+RFI and project workflows
+
+Ensure system performance, usability, and data integrity
+
+ 
+
+Implementation & Delivery
+
+Own the end-to-end implementation lifecycle (design, build, test, deploy, iterate)
+
+Drive rapid implementation with an MVP mindset, balancing speed with long-term scalability
+
+Lead system testing, issue resolution, and continuous improvement
+
+ 
+
+Stakeholder Leadership
+
+Partner with Program Controls, Finance, Construction, and Technology teams to translate requirements into system solutions
+
+Lead and coordinate external consultants and system integrators
+
+Act as the central point of accountability for Unifier delivery
+
+ 
+
+Integration & Data Strategy
+
+Sup
+
+[Truncated for this view — full text at the posting link]
