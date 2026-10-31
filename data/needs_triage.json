@@ -2167,5 +2167,19 @@
     "note": "unknown employer — find direct posting, propose tier",
     "source": "adzuna",
     "first_seen": "2026-10-29"
+  },
+  {
+    "company": "Meta",
+    "url": "https://www.metacareers.com/profile/job_details/1553890293163197/",
+    "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Research Scientist Intern, Video RecSys (PhD)",
+    "source": "meta_graphql:Meta",
+    "first_seen": "2026-10-31"
+  },
+  {
+    "company": "Meta",
+    "url": "https://www.metacareers.com/profile/job_details/1126899676481179/",
+    "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Research Scientist Intern, Computer Vision - Video Intelligence (PhD)",
+    "source": "meta_graphql:Meta",
+    "first_seen": "2026-10-31"
   }
 ]
