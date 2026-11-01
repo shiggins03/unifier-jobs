@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31",
+  "updated": "2026-11-01",
   "new_window_days": 7,
   "warnings": [],
   "roster": [
@@ -2551,6 +2551,13 @@
       "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Research Scientist Intern, Computer Vision - Video Intelligence (PhD)",
       "source": "meta_graphql:Meta",
       "first_seen": "2026-10-31"
+    },
+    {
+      "company": "DFND Security",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=oI_sMBbW8RGt4d-jWzUNpA&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-01"
     }
   ],
   "jobs": [
@@ -2590,25 +2597,6 @@
       ],
       "first_seen": "2026-07-17",
       "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "c56496bf7fb8c5d7",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Concrete Field Engineer",
-      "location": "Clay, New York, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=294763&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-06-29T11:16:32.799+0000",
-      "comp": "Salary Range: $105,000- $160,200 annually (salary range is based on market data;",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [
-        "long-posted"
-      ],
-      "first_seen": "2026-07-17",
-      "role": "field",
       "has_desc": true
     },
     {
@@ -2966,40 +2954,6 @@
       "gone_date": null,
       "flags": [],
       "first_seen": "2026-09-01",
-      "role": "field",
-      "has_desc": true
-    },
-    {
-      "id": "68c0cac114a3b1d8",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "HVAC/Process Duct Subcontract Technical Representative (STR)",
-      "location": "New Albany, Ohio, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=298723&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-09-01T23:17:04.984+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-09-02",
-      "role": "field",
-      "has_desc": true
-    },
-    {
-      "id": "f41115a3b8a7026f",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Fire Protection & Life Safety Systems Subcontract Technical Representative - STR",
-      "location": "New Albany, Ohio, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=298725&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-09-01T23:17:04.982+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-09-02",
       "role": "field",
       "has_desc": true
     },
@@ -3556,7 +3510,7 @@
       "title": "Global Procore Administrator & Construction Process Lead",
       "location": "Boise, ID - Main Site",
       "url": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Boise-ID---Main-Site/Global-Document-Control---PMIS-Governance-Lead_JR104322",
-      "posted_date": "Posted 23 Days Ago",
+      "posted_date": "Posted 24 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -3589,7 +3543,7 @@
       "company": "DFND Security",
       "title": "Oracle WACS",
       "location": "Fort Sam Houston, Bexar County",
-      "url": "https://www.adzuna.com/land/ad/5863704034?se=Ang6wPHS8RGmy51G9FAheA&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=oI_sMBbW8RGt4d-jWzUNpA&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
       "posted_date": "2026-08-31T22:19:09Z",
       "comp": null,
       "tier": 1,
@@ -3641,7 +3595,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Denver, Colorado",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Denver-Colorado/Senior-Project-Controls-Manager---Aviation_JR6367",
-      "posted_date": "Posted 22 Days Ago",
+      "posted_date": "Posted 23 Days Ago",
       "comp": "$187,591.53 - $214,390.32",
       "tier": 1,
       "status": "active",
@@ -3658,7 +3612,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Project-Controls-Manager---Aviation_JR6366",
-      "posted_date": "Posted 21 Days Ago",
+      "posted_date": "Posted 22 Days Ago",
       "comp": "$196,118.41 - $224,135.33",
       "tier": 1,
       "status": "active",
@@ -3828,7 +3782,7 @@
       "title": "PMIS Specialist",
       "location": "Chicago, Illinois",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Chicago-Illinois/PMIS-Specialist_JR6372",
-      "posted_date": "Posted 17 Days Ago",
+      "posted_date": "Posted 18 Days Ago",
       "comp": "$75,656.68 - $86,464.77",
       "tier": 1,
       "status": "active",
@@ -3845,7 +3799,7 @@
       "title": "Scheduler",
       "location": "Fairfax, Virginia",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Fairfax-Virginia/Scheduler_JR6369",
-      "posted_date": "Posted 17 Days Ago",
+      "posted_date": "Posted 18 Days Ago",
       "comp": "$102,094.36 - $116,679.27",
       "tier": 1,
       "status": "active",
@@ -4221,7 +4175,7 @@
       "title": "Project Controls Specialist",
       "location": "Philadelphia, Pennsylvania",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Philadelphia-Pennsylvania/Project-Controls-Specialist_JR6021-1",
-      "posted_date": "Posted 11 Days Ago",
+      "posted_date": "Posted 12 Days Ago",
       "comp": "$75,656.68 - $86,464.77",
       "tier": 1,
       "status": "active",
@@ -4280,23 +4234,6 @@
       "flags": [],
       "first_seen": "2026-10-21",
       "role": "unclear",
-      "has_desc": true
-    },
-    {
-      "id": "92a46d9a489192e6",
-      "kind": "board",
-      "company": "Veracity Ventures Inc.",
-      "title": "Energy Supply Software Configuration Analyst",
-      "location": "Detroit, Wayne County",
-      "url": "https://www.adzuna.com/land/ad/5940000359?se=FOu7xrXP8RG17O__M5KguQ&utm_medium=api&utm_source=55569923&v=C8EE1F7D0A0ECFFB8EC5ECC081F8A1B6FF95458B",
-      "posted_date": "2026-10-23T23:33:32Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-10-23",
-      "role": "systems",
       "has_desc": true
     },
     {
@@ -4598,7 +4535,7 @@
       "title": "Systems Consultant - Unifier",
       "location": "US.AZ.Tempe",
       "url": "https://slihrms.wd3.myworkdayjobs.com/en-US/Careers/job/USAZTempe/Systems-Consultant---Unifier_R-165005",
-      "posted_date": "Posted 12 Days Ago",
+      "posted_date": "Posted 13 Days Ago",
       "comp": "compensation range is between $90,000-$140,000 annually depending on skills, experience, and ge",
       "tier": 1,
       "status": "active",
@@ -4634,7 +4571,7 @@
       "title": "Project Coordinator",
       "location": "US.CA.Los Angeles.801 S. Grand Avenue",
       "url": "https://slihrms.wd3.myworkdayjobs.com/en-US/Careers/job/USCALos-Angeles801-S-Grand-Avenue/Project-Coordinator_R-161583-1",
-      "posted_date": "Posted 19 Days Ago",
+      "posted_date": "Posted 20 Days Ago",
       "comp": "compensation range is between $75,000 - $90,000 annually depending on skills, experience, and ge",
       "tier": 1,
       "status": "active",
@@ -4668,7 +4605,7 @@
       "title": "Mid-Level Integration/Software Developer",
       "location": "US-WA-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Remote/Mid-Level-Integration-Software-Developer_JR1699",
-      "posted_date": "Posted 3 Days Ago",
+      "posted_date": "Posted 4 Days Ago",
       "comp": "compensation range $120,000 - $150,000",
       "tier": 1,
       "status": "active",
@@ -4738,7 +4675,7 @@
       "title": "Senior Digital Project Manager",
       "location": "US-WA-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Remote/Senior-Digital-Project-Manager_JR1706",
-      "posted_date": "Posted Yesterday",
+      "posted_date": "Posted 2 Days Ago",
       "comp": "Compensation range based on skills, education, experience and geographic location: $140,000–$180,000",
       "tier": 1,
       "status": "active",
@@ -4760,9 +4697,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "first_seen": "2026-10-31",
       "role": "unclear",
       "has_desc": true
@@ -4850,6 +4785,24 @@
       "flags": [],
       "first_seen": "2026-07-17",
       "role": "systems"
+    },
+    {
+      "id": "c56496bf7fb8c5d7",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Concrete Field Engineer",
+      "location": "Clay, New York, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=294763&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-06-29T11:16:32.799+0000",
+      "comp": "Salary Range: $105,000- $160,200 annually (salary range is based on market data;",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-01",
+      "flags": [
+        "long-posted"
+      ],
+      "first_seen": "2026-07-17",
+      "role": "field"
     },
     {
       "id": "1c90c19778c8df5a",
@@ -6420,6 +6373,38 @@
       "role": "field"
     },
     {
+      "id": "68c0cac114a3b1d8",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "HVAC/Process Duct Subcontract Technical Representative (STR)",
+      "location": "New Albany, Ohio, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=298723&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-01T23:17:04.984+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-01",
+      "flags": [],
+      "first_seen": "2026-09-02",
+      "role": "field"
+    },
+    {
+      "id": "f41115a3b8a7026f",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Fire Protection & Life Safety Systems Subcontract Technical Representative - STR",
+      "location": "New Albany, Ohio, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=298725&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-01T23:17:04.982+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-01",
+      "flags": [],
+      "first_seen": "2026-09-02",
+      "role": "field"
+    },
+    {
       "id": "56fc1c7c24e51e26",
       "kind": "direct",
       "company": "Luster National",
@@ -7959,6 +7944,22 @@
       "flags": [],
       "first_seen": "2026-10-22",
       "role": "unclear"
+    },
+    {
+      "id": "92a46d9a489192e6",
+      "kind": "board",
+      "company": "Veracity Ventures Inc.",
+      "title": "Energy Supply Software Configuration Analyst",
+      "location": "Detroit, Wayne County",
+      "url": "https://www.adzuna.com/land/ad/5940000359?se=FOu7xrXP8RG17O__M5KguQ&utm_medium=api&utm_source=55569923&v=C8EE1F7D0A0ECFFB8EC5ECC081F8A1B6FF95458B",
+      "posted_date": "2026-10-23T23:33:32Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-01",
+      "flags": [],
+      "first_seen": "2026-10-23",
+      "role": "systems"
     }
   ]
 }
