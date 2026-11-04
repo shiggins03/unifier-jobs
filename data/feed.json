@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "new_window_days": 7,
   "warnings": [],
   "roster": [
@@ -2572,6 +2572,13 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-11-03"
+    },
+    {
+      "company": "DFND Security",
+      "url": "https://www.adzuna.com/details/5863704034?utm_medium=api&utm_source=55569923",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-04"
     }
   ],
   "jobs": [
@@ -2827,45 +2834,6 @@
         "long-posted"
       ],
       "first_seen": "2026-08-12",
-      "role": "systems",
-      "has_desc": true
-    },
-    {
-      "id": "488da78c09368adc",
-      "kind": "direct",
-      "company": "Project Partners",
-      "title": "Oracle Primavera Unifier Implementation Consultant - US Based",
-      "location": "Remote - US Based, United States",
-      "url": "https://apply.clearcompany.com/projectp?jobId=122c92a5-89d9-aa62-7ceb-dfcafa632047",
-      "posted_date": "2026-05-05T00:00:00",
-      "comp": "Salary Range: $100,000 to $130,000 per year",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [
-        "title-match",
-        "long-posted"
-      ],
-      "first_seen": "2026-08-12",
-      "role": "systems",
-      "has_desc": true
-    },
-    {
-      "id": "0c4d71df52f90061",
-      "kind": "direct",
-      "company": "Project Partners",
-      "title": "Oracle Primavera P6 EPPM and Oracle Primavera Cloud (OPC) Consultant - US Based",
-      "location": "Remote - US Based, United States",
-      "url": "https://apply.clearcompany.com/projectp?jobId=c6811535-a0d9-9a75-e97d-17ab5f0734fd",
-      "posted_date": "2026-07-31T00:00:00",
-      "comp": "Salary Range: $100,000 - $130.000",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [
-        "long-posted"
-      ],
-      "first_seen": "2026-08-13",
       "role": "systems",
       "has_desc": true
     },
@@ -3524,7 +3492,7 @@
       "title": "Global Procore Administrator & Construction Process Lead",
       "location": "Boise, ID - Main Site",
       "url": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Boise-ID---Main-Site/Global-Document-Control---PMIS-Governance-Lead_JR104322",
-      "posted_date": "Posted 26 Days Ago",
+      "posted_date": "Posted 27 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -3557,7 +3525,7 @@
       "company": "DFND Security",
       "title": "Oracle WACS",
       "location": "Fort Sam Houston, Bexar County",
-      "url": "https://www.adzuna.com/land/ad/5863704034?se=_mPu77LX8RGJF4UBchTzUg&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "url": "https://www.adzuna.com/details/5863704034?utm_medium=api&utm_source=55569923",
       "posted_date": "2026-08-31T22:19:09Z",
       "comp": null,
       "tier": 1,
@@ -3603,48 +3571,14 @@
       "has_desc": true
     },
     {
-      "id": "d0a7c89e2775111f",
-      "kind": "direct",
-      "company": "STV",
-      "title": "Senior Project Controls Manager - Aviation",
-      "location": "Denver, Colorado",
-      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Denver-Colorado/Senior-Project-Controls-Manager---Aviation_JR6367",
-      "posted_date": "Posted 24 Days Ago",
-      "comp": "$187,591.53 - $214,390.32",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-10-10",
-      "role": "controls",
-      "has_desc": true
-    },
-    {
       "id": "ec262923dbc9d591",
       "kind": "direct",
       "company": "STV",
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Project-Controls-Manager---Aviation_JR6366",
-      "posted_date": "Posted 24 Days Ago",
+      "posted_date": "Posted 25 Days Ago",
       "comp": "$196,118.41 - $224,135.33",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-10-10",
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "4f8ffeb8b6b4f3cb",
-      "kind": "board",
-      "company": "The Planet Group",
-      "title": "Document Control Specialist",
-      "location": "Bay City, Bay County",
-      "url": "https://www.adzuna.com/land/ad/5922109423?se=MAW_sCHS8RGnNKlqPo-d_w&utm_medium=api&utm_source=55569923&v=F48DB573308D9962BC9057A7887FA0CB3112CE18",
-      "posted_date": "2026-10-10T07:58:33Z",
-      "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -3796,7 +3730,7 @@
       "title": "PMIS Specialist",
       "location": "Chicago, Illinois",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Chicago-Illinois/PMIS-Specialist_JR6372",
-      "posted_date": "Posted 20 Days Ago",
+      "posted_date": "Posted 21 Days Ago",
       "comp": "$75,656.68 - $86,464.77",
       "tier": 1,
       "status": "active",
@@ -3813,7 +3747,7 @@
       "title": "Scheduler",
       "location": "Fairfax, Virginia",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Fairfax-Virginia/Scheduler_JR6369",
-      "posted_date": "Posted 20 Days Ago",
+      "posted_date": "Posted 21 Days Ago",
       "comp": "$102,094.36 - $116,679.27",
       "tier": 1,
       "status": "active",
@@ -4189,7 +4123,7 @@
       "title": "Project Controls Specialist",
       "location": "Philadelphia, Pennsylvania",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Philadelphia-Pennsylvania/Project-Controls-Specialist_JR6021-1",
-      "posted_date": "Posted 14 Days Ago",
+      "posted_date": "Posted 15 Days Ago",
       "comp": "$75,656.68 - $86,464.77",
       "tier": 1,
       "status": "active",
@@ -4492,23 +4426,6 @@
       "has_desc": true
     },
     {
-      "id": "abf0c5b9a2666688",
-      "kind": "board",
-      "company": "Metropolitan Transportation Authority",
-      "title": "Unifier-Advanced Software Engineer",
-      "location": "New York City, New York",
-      "url": "https://www.adzuna.com/land/ad/5936496971?se=MAW_sCHS8RGnNKlqPo-d_w&utm_medium=api&utm_source=55569923&v=71426BFC31F42817863F7D2C6512DA38C1CE82E4",
-      "posted_date": "2026-10-21T04:51:20Z",
-      "comp": "$140,828 - $166,223",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-10-27",
-      "role": "systems",
-      "has_desc": true
-    },
-    {
       "id": "5957e8c715bcbe1f",
       "kind": "direct",
       "company": "Oracle",
@@ -4549,7 +4466,7 @@
       "title": "Systems Consultant - Unifier",
       "location": "US.AZ.Tempe",
       "url": "https://slihrms.wd3.myworkdayjobs.com/en-US/Careers/job/USAZTempe/Systems-Consultant---Unifier_R-165005",
-      "posted_date": "Posted 15 Days Ago",
+      "posted_date": "Posted 16 Days Ago",
       "comp": "compensation range is between $90,000-$140,000 annually depending on skills, experience, and ge",
       "tier": 1,
       "status": "active",
@@ -4585,7 +4502,7 @@
       "title": "Project Coordinator",
       "location": "US.CA.Los Angeles.801 S. Grand Avenue",
       "url": "https://slihrms.wd3.myworkdayjobs.com/en-US/Careers/job/USCALos-Angeles801-S-Grand-Avenue/Project-Coordinator_R-161583-1",
-      "posted_date": "Posted 22 Days Ago",
+      "posted_date": "Posted 23 Days Ago",
       "comp": "compensation range is between $75,000 - $90,000 annually depending on skills, experience, and ge",
       "tier": 1,
       "status": "active",
@@ -4619,7 +4536,7 @@
       "title": "Mid-Level Integration/Software Developer",
       "location": "US-WA-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Remote/Mid-Level-Integration-Software-Developer_JR1699",
-      "posted_date": "Posted 6 Days Ago",
+      "posted_date": "Posted 7 Days Ago",
       "comp": "compensation range $120,000 - $150,000",
       "tier": 1,
       "status": "active",
@@ -4689,7 +4606,7 @@
       "title": "Senior Digital Project Manager",
       "location": "US-WA-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Remote/Senior-Digital-Project-Manager_JR1706",
-      "posted_date": "Posted 4 Days Ago",
+      "posted_date": "Posted 5 Days Ago",
       "comp": "Compensation range based on skills, education, experience and geographic location: $140,000–$180,000",
       "tier": 1,
       "status": "active",
@@ -4745,9 +4662,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "first_seen": "2026-11-03",
       "role": "systems",
       "has_desc": true
@@ -4759,14 +4674,12 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "North Central Avenue, Phoenix, Arizona",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/North-Central-Avenue-Phoenix-Arizona/Senior-Project-Controls-Manager---Aviation_JR6367",
-      "posted_date": "Posted Yesterday",
+      "posted_date": "Posted 2 Days Ago",
       "comp": "$162,010.86 - $185,155.27",
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "first_seen": "2026-11-03",
       "role": "controls",
       "has_desc": true
@@ -4783,11 +4696,104 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
+      "flags": [],
+      "first_seen": "2026-11-03",
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "41975aab0e4698ee",
+      "kind": "direct",
+      "company": "Deloitte",
+      "title": "US E-Consulting Services – Manager – S&T/Strategy/I&RE – Capital Projects (DBA-PWA) – FY27 – 373628– OK",
+      "location": null,
+      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Manager-Davis-Bacon-Prevailing-Wage/373628",
+      "posted_date": "Fri, 05 Jun 2026 00:00:00 +0000",
+      "comp": "range is $134,500 to $265,100",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
       "flags": [
         "new"
       ],
-      "first_seen": "2026-11-03",
-      "role": "systems",
+      "first_seen": "2026-11-04",
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "716c1ebd1b2b3da7",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "EPC Automation Lead",
+      "location": "Millersport, Ohio, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300952&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-11-04T00:09:30.244+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-11-04",
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "a122e860920965e7",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Transport Engineer",
+      "location": "Sugar Land, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300751&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-11-02T22:06:08.350+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-11-04",
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "13004ad2c93d8112",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Work Control Coordinator & Permit Writer",
+      "location": "Brownsville, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300903&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-11-03T01:06:54.217+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-11-04",
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "ca32c4a71053d4c2",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "EPC Automation Lead",
+      "location": "Arizona, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300754&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-11-04T00:09:30.252+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-11-04",
+      "role": "unclear",
       "has_desc": true
     },
     {
@@ -5995,6 +6001,25 @@
       "role": "controls"
     },
     {
+      "id": "488da78c09368adc",
+      "kind": "direct",
+      "company": "Project Partners",
+      "title": "Oracle Primavera Unifier Implementation Consultant - US Based",
+      "location": "Remote - US Based, United States",
+      "url": "https://apply.clearcompany.com/projectp?jobId=122c92a5-89d9-aa62-7ceb-dfcafa632047",
+      "posted_date": "2026-05-05T00:00:00",
+      "comp": "Salary Range: $100,000 to $130,000 per year",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-04",
+      "flags": [
+        "title-match",
+        "long-posted"
+      ],
+      "first_seen": "2026-08-12",
+      "role": "systems"
+    },
+    {
       "id": "e0fa3a97533e4ebf",
       "kind": "direct",
       "company": "Meta",
@@ -6043,6 +6068,24 @@
       "flags": [],
       "first_seen": "2026-08-13",
       "role": "controls"
+    },
+    {
+      "id": "0c4d71df52f90061",
+      "kind": "direct",
+      "company": "Project Partners",
+      "title": "Oracle Primavera P6 EPPM and Oracle Primavera Cloud (OPC) Consultant - US Based",
+      "location": "Remote - US Based, United States",
+      "url": "https://apply.clearcompany.com/projectp?jobId=c6811535-a0d9-9a75-e97d-17ab5f0734fd",
+      "posted_date": "2026-07-31T00:00:00",
+      "comp": "Salary Range: $100,000 - $130.000",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-04",
+      "flags": [
+        "long-posted"
+      ],
+      "first_seen": "2026-08-13",
+      "role": "systems"
     },
     {
       "id": "facd2cb88187d0a7",
@@ -7398,6 +7441,38 @@
       "role": "systems"
     },
     {
+      "id": "d0a7c89e2775111f",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Senior Project Controls Manager - Aviation",
+      "location": "Denver, Colorado",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Denver-Colorado/Senior-Project-Controls-Manager---Aviation_JR6367",
+      "posted_date": "Posted 24 Days Ago",
+      "comp": "$187,591.53 - $214,390.32",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-04",
+      "flags": [],
+      "first_seen": "2026-10-10",
+      "role": "controls"
+    },
+    {
+      "id": "4f8ffeb8b6b4f3cb",
+      "kind": "board",
+      "company": "The Planet Group",
+      "title": "Document Control Specialist",
+      "location": "Bay City, Bay County",
+      "url": "https://www.adzuna.com/land/ad/5922109423?se=MAW_sCHS8RGnNKlqPo-d_w&utm_medium=api&utm_source=55569923&v=F48DB573308D9962BC9057A7887FA0CB3112CE18",
+      "posted_date": "2026-10-10T07:58:33Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-04",
+      "flags": [],
+      "first_seen": "2026-10-10",
+      "role": "controls"
+    },
+    {
       "id": "5b64e13293f4a26b",
       "kind": "board",
       "company": "Pyrovio",
@@ -8047,6 +8122,22 @@
       "gone_date": "2026-11-01",
       "flags": [],
       "first_seen": "2026-10-23",
+      "role": "systems"
+    },
+    {
+      "id": "abf0c5b9a2666688",
+      "kind": "board",
+      "company": "Metropolitan Transportation Authority",
+      "title": "Unifier-Advanced Software Engineer",
+      "location": "New York City, New York",
+      "url": "https://www.adzuna.com/land/ad/5936496971?se=MAW_sCHS8RGnNKlqPo-d_w&utm_medium=api&utm_source=55569923&v=71426BFC31F42817863F7D2C6512DA38C1CE82E4",
+      "posted_date": "2026-10-21T04:51:20Z",
+      "comp": "$140,828 - $166,223",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-04",
+      "flags": [],
+      "first_seen": "2026-10-27",
       "role": "systems"
     }
   ]
