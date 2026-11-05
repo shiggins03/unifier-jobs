@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "new_window_days": 7,
   "warnings": [],
   "roster": [
@@ -2621,6 +2621,25 @@
       "has_desc": true
     },
     {
+      "id": "c56496bf7fb8c5d7",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Concrete Field Engineer",
+      "location": "Clay, New York, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=294763&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-06-29T11:16:32.799+0000",
+      "comp": "Salary Range: $105,000- $160,200 annually (salary range is based on market data;",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "long-posted"
+      ],
+      "first_seen": "2026-07-17",
+      "role": "field",
+      "has_desc": true
+    },
+    {
       "id": "0d8ba802b86c1207",
       "kind": "direct",
       "company": "Bechtel",
@@ -2743,23 +2762,6 @@
       "flags": [],
       "first_seen": "2026-07-20",
       "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "1ff175a24c2e5f41",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Field Welding Engineer",
-      "location": "Brownsville, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300055&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-10-08T13:29:26.439+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-07-23",
-      "role": "field",
       "has_desc": true
     },
     {
@@ -2886,6 +2888,23 @@
       "flags": [],
       "first_seen": "2026-08-22",
       "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "214f42b719ba0923",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Senior Program C&Q Lead",
+      "location": "Huntsville, Alabama, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Huntsville-AL/Commissioning---Qualification--C-Q--Lead_R-110337/apply",
+      "posted_date": "2026-08-24T18:21:46.129+0000",
+      "comp": "$163,500 - $239,800",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "first_seen": "2026-08-25",
+      "role": "unclear",
       "has_desc": true
     },
     {
@@ -3177,23 +3196,6 @@
       "flags": [],
       "first_seen": "2026-09-17",
       "role": "field",
-      "has_desc": true
-    },
-    {
-      "id": "a6ddfd4ee4641711",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Interface Manager",
-      "location": "San Francisco, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5427367008",
-      "posted_date": "2026-09-17T21:59:28-04:00",
-      "comp": "Salary: $190k-$260k/year ($91-$125/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-09-18",
-      "role": "unclear",
       "has_desc": true
     },
     {
@@ -3492,7 +3494,7 @@
       "title": "Global Procore Administrator & Construction Process Lead",
       "location": "Boise, ID - Main Site",
       "url": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Boise-ID---Main-Site/Global-Document-Control---PMIS-Governance-Lead_JR104322",
-      "posted_date": "Posted 27 Days Ago",
+      "posted_date": "Posted 28 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -3577,7 +3579,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Project-Controls-Manager---Aviation_JR6366",
-      "posted_date": "Posted 25 Days Ago",
+      "posted_date": "Posted 26 Days Ago",
       "comp": "$196,118.41 - $224,135.33",
       "tier": 1,
       "status": "active",
@@ -3695,8 +3697,8 @@
       "company": "Bechtel",
       "title": "Turnover Coordinator",
       "location": "Brownsville, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300694&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-10-28T17:11:07.449+0000",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300275&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-10-13T21:28:23.041+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -3747,7 +3749,7 @@
       "title": "Scheduler",
       "location": "Fairfax, Virginia",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Fairfax-Virginia/Scheduler_JR6369",
-      "posted_date": "Posted 21 Days Ago",
+      "posted_date": "Posted 22 Days Ago",
       "comp": "$102,094.36 - $116,679.27",
       "tier": 1,
       "status": "active",
@@ -4123,7 +4125,7 @@
       "title": "Project Controls Specialist",
       "location": "Philadelphia, Pennsylvania",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Philadelphia-Pennsylvania/Project-Controls-Specialist_JR6021-1",
-      "posted_date": "Posted 15 Days Ago",
+      "posted_date": "Posted 16 Days Ago",
       "comp": "$75,656.68 - $86,464.77",
       "tier": 1,
       "status": "active",
@@ -4466,7 +4468,7 @@
       "title": "Systems Consultant - Unifier",
       "location": "US.AZ.Tempe",
       "url": "https://slihrms.wd3.myworkdayjobs.com/en-US/Careers/job/USAZTempe/Systems-Consultant---Unifier_R-165005",
-      "posted_date": "Posted 16 Days Ago",
+      "posted_date": "Posted 17 Days Ago",
       "comp": "compensation range is between $90,000-$140,000 annually depending on skills, experience, and ge",
       "tier": 1,
       "status": "active",
@@ -4502,7 +4504,7 @@
       "title": "Project Coordinator",
       "location": "US.CA.Los Angeles.801 S. Grand Avenue",
       "url": "https://slihrms.wd3.myworkdayjobs.com/en-US/Careers/job/USCALos-Angeles801-S-Grand-Avenue/Project-Coordinator_R-161583-1",
-      "posted_date": "Posted 23 Days Ago",
+      "posted_date": "Posted 24 Days Ago",
       "comp": "compensation range is between $75,000 - $90,000 annually depending on skills, experience, and ge",
       "tier": 1,
       "status": "active",
@@ -4536,7 +4538,7 @@
       "title": "Mid-Level Integration/Software Developer",
       "location": "US-WA-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Remote/Mid-Level-Integration-Software-Developer_JR1699",
-      "posted_date": "Posted 7 Days Ago",
+      "posted_date": "Posted 8 Days Ago",
       "comp": "compensation range $120,000 - $150,000",
       "tier": 1,
       "status": "active",
@@ -4606,7 +4608,7 @@
       "title": "Senior Digital Project Manager",
       "location": "US-WA-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Remote/Senior-Digital-Project-Manager_JR1706",
-      "posted_date": "Posted 5 Days Ago",
+      "posted_date": "Posted 6 Days Ago",
       "comp": "Compensation range based on skills, education, experience and geographic location: $140,000–$180,000",
       "tier": 1,
       "status": "active",
@@ -4674,7 +4676,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "North Central Avenue, Phoenix, Arizona",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/North-Central-Avenue-Phoenix-Arizona/Senior-Project-Controls-Manager---Aviation_JR6367",
-      "posted_date": "Posted 2 Days Ago",
+      "posted_date": "Posted 3 Days Ago",
       "comp": "$162,010.86 - $185,155.27",
       "tier": 1,
       "status": "active",
@@ -4713,9 +4715,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "first_seen": "2026-11-04",
       "role": "unclear",
       "has_desc": true
@@ -4732,9 +4732,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "first_seen": "2026-11-04",
       "role": "unclear",
       "has_desc": true
@@ -4751,9 +4749,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "first_seen": "2026-11-04",
       "role": "unclear",
       "has_desc": true
@@ -4770,9 +4766,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "first_seen": "2026-11-04",
       "role": "field",
       "has_desc": true
@@ -4789,10 +4783,27 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
+      "flags": [],
+      "first_seen": "2026-11-04",
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "ad283753392ce63e",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Electrical Lead",
+      "location": "Brownsville, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300956&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-11-04T20:11:23.434+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
       "flags": [
         "new"
       ],
-      "first_seen": "2026-11-04",
+      "first_seen": "2026-11-05",
       "role": "unclear",
       "has_desc": true
     },
@@ -4879,24 +4890,6 @@
       "flags": [],
       "first_seen": "2026-07-17",
       "role": "systems"
-    },
-    {
-      "id": "c56496bf7fb8c5d7",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Concrete Field Engineer",
-      "location": "Clay, New York, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=294763&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-06-29T11:16:32.799+0000",
-      "comp": "Salary Range: $105,000- $160,200 annually (salary range is based on market data;",
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-11-01",
-      "flags": [
-        "long-posted"
-      ],
-      "first_seen": "2026-07-17",
-      "role": "field"
     },
     {
       "id": "1c90c19778c8df5a",
@@ -5286,6 +5279,22 @@
       "gone_date": "2026-08-04",
       "flags": [],
       "first_seen": "2026-07-22",
+      "role": "field"
+    },
+    {
+      "id": "1ff175a24c2e5f41",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Field Welding Engineer",
+      "location": "Brownsville, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300055&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-10-08T13:29:26.439+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-05",
+      "flags": [],
+      "first_seen": "2026-07-23",
       "role": "field"
     },
     {
@@ -6216,22 +6225,6 @@
       "role": "controls"
     },
     {
-      "id": "214f42b719ba0923",
-      "kind": "direct",
-      "company": "Eli Lilly",
-      "title": "Senior Program C&Q Lead",
-      "location": "Huntsville, Alabama, United States of America",
-      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Huntsville-AL/Commissioning---Qualification--C-Q--Lead_R-110337/apply",
-      "posted_date": "2026-08-24T18:21:46.129+0000",
-      "comp": "$159,000 - $233,200",
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-11-03",
-      "flags": [],
-      "first_seen": "2026-08-25",
-      "role": "unclear"
-    },
-    {
       "id": "18ef3629470b462d",
       "kind": "direct",
       "company": "Eli Lilly",
@@ -6885,6 +6878,22 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-10-03",
+      "flags": [],
+      "first_seen": "2026-09-18",
+      "role": "unclear"
+    },
+    {
+      "id": "a6ddfd4ee4641711",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Interface Manager",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5427367008",
+      "posted_date": "2026-09-17T21:59:28-04:00",
+      "comp": "Salary: $190k-$260k/year ($91-$125/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-05",
       "flags": [],
       "first_seen": "2026-09-18",
       "role": "unclear"
