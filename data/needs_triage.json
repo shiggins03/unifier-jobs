@@ -2209,5 +2209,19 @@
     "note": "unknown employer — find direct posting, propose tier",
     "source": "adzuna",
     "first_seen": "2026-11-04"
+  },
+  {
+    "company": "Meta",
+    "url": "https://www.metacareers.com/profile/job_details/1012709678418823/",
+    "note": "employer's own search matched 'unifier' but posting text unavailable — verify: Systems Architect, Data Center Design and Construction",
+    "source": "meta_graphql:Meta",
+    "first_seen": "2026-11-06"
+  },
+  {
+    "company": "AllSTEM Connections",
+    "url": "https://www.adzuna.com/land/ad/5955535164?se=YsiN3Qra8RG7pKajFhPexA&utm_medium=api&utm_source=55569923&v=1C62894072D47C4E0A9B3A8D232F7CC83362C41B",
+    "note": "unknown employer — find direct posting, propose tier",
+    "source": "adzuna",
+    "first_seen": "2026-11-06"
   }
 ]
