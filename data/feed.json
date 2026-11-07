@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "new_window_days": 7,
   "warnings": [],
   "roster": [
@@ -2593,6 +2593,34 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-11-06"
+    },
+    {
+      "company": "TechTu Business Solutions Inc",
+      "url": "https://www.adzuna.com/land/ad/5954900076?se=vlDl9Mra8RGJ_5m-0JeM1g&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-07"
+    },
+    {
+      "company": "Digital Links Inc",
+      "url": "https://www.adzuna.com/details/5956289258?utm_medium=api&utm_source=55569923",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-07"
+    },
+    {
+      "company": "DFND Security",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=vlDl9Mra8RGJ_5m-0JeM1g&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-07"
+    },
+    {
+      "company": "AllSTEM Connections",
+      "url": "https://www.adzuna.com/land/ad/5955139570?se=vlDl9Mra8RGJ_5m-0JeM1g&utm_medium=api&utm_source=55569923&v=A593E61AF72708789DCA1F6557489A2B6689B04E",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-07"
     }
   ],
   "jobs": [
@@ -2834,26 +2862,6 @@
       "role": "systems"
     },
     {
-      "id": "98d913517a44be5e",
-      "kind": "direct",
-      "company": "Meta",
-      "title": "Systems Architect, Data Center Design and Construction",
-      "location": "Reston, VA; Menlo Park, CA; San Francisco, CA",
-      "url": "https://www.metacareers.com/profile/job_details/1012709678418823/",
-      "posted_date": "2026-07-22T16:51:16-07:00",
-      "comp": "United States of America: $150,000/year to $209,000/year + bonus + equity + benefits",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [
-        "comp-manual",
-        "long-posted"
-      ],
-      "first_seen": "2026-08-12",
-      "role": "systems",
-      "has_desc": true
-    },
-    {
       "id": "f9ff7d292d91fc13",
       "kind": "board",
       "company": "Crystal Management",
@@ -2997,32 +3005,15 @@
       "company": "Luster National",
       "title": "Construction Inspector",
       "location": "Seattle, Washington, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5466570008",
-      "posted_date": "2026-10-30T12:52:36-04:00",
-      "comp": "Salary: $75k-$135k/year ($36-$65/hour)",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5443808008",
+      "posted_date": "2026-10-05T13:10:59-04:00",
+      "comp": "Salary: $85k-$150k/year ($41-$72/hour)",
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
       "first_seen": "2026-09-05",
       "role": "field",
-      "has_desc": true
-    },
-    {
-      "id": "f12d85de5e10bab4",
-      "kind": "direct",
-      "company": "STV",
-      "title": "Senior Change Manager - Aviation",
-      "location": "Los Angeles, California",
-      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Change-Manager_JR6193",
-      "posted_date": "Posted 30+ Days Ago",
-      "comp": "$128,067.17 - $146,362.48",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-09-10",
-      "role": "controls",
       "has_desc": true
     },
     {
@@ -3476,7 +3467,7 @@
       "title": "Global Procore Administrator & Construction Process Lead",
       "location": "Boise, ID - Main Site",
       "url": "https://micron.wd1.myworkdayjobs.com/en-US/External/job/Boise-ID---Main-Site/Global-Document-Control---PMIS-Governance-Lead_JR104322",
-      "posted_date": "Posted 29 Days Ago",
+      "posted_date": "Posted 30 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -3509,7 +3500,7 @@
       "company": "DFND Security",
       "title": "Oracle WACS",
       "location": "Fort Sam Houston, Bexar County",
-      "url": "https://www.adzuna.com/details/5863704034?utm_medium=api&utm_source=55569923",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=vlDl9Mra8RGJ_5m-0JeM1g&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
       "posted_date": "2026-08-31T22:19:09Z",
       "comp": null,
       "tier": 1,
@@ -3561,7 +3552,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Project-Controls-Manager---Aviation_JR6366",
-      "posted_date": "Posted 27 Days Ago",
+      "posted_date": "Posted 28 Days Ago",
       "comp": "$196,118.41 - $224,135.33",
       "tier": 1,
       "status": "active",
@@ -3657,23 +3648,6 @@
       "has_desc": true
     },
     {
-      "id": "a14df7d47941dec8",
-      "kind": "board",
-      "company": "USK Technologies",
-      "title": "Energy Supply Software Analyst",
-      "location": "Jackson, Jackson County",
-      "url": "https://www.adzuna.com/land/ad/5927282530?se=bAmTXr3T8RGMLP-mPvBk8g&utm_medium=api&utm_source=55569923&v=0B009464FB7498B7DEE163820B0425E25A09916F",
-      "posted_date": "2026-10-14T06:47:23Z",
-      "comp": "Pay: $40/hour Duration: 12 months Seeking an experien",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-10-14",
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
       "id": "7a612b2b5a1c4100",
       "kind": "direct",
       "company": "Bechtel",
@@ -3697,7 +3671,7 @@
       "title": "Scheduler",
       "location": "Fairfax, Virginia",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Fairfax-Virginia/Scheduler_JR6369",
-      "posted_date": "Posted 23 Days Ago",
+      "posted_date": "Posted 24 Days Ago",
       "comp": "$102,094.36 - $116,679.27",
       "tier": 1,
       "status": "active",
@@ -3722,23 +3696,6 @@
       "flags": [],
       "first_seen": "2026-10-15",
       "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "3fd75e50fdb6454a",
-      "kind": "board",
-      "company": "USK Technologies",
-      "title": "Energy Supply Software Analyst (Jackson)",
-      "location": "Jackson, Jackson County",
-      "url": "https://www.adzuna.com/land/ad/5927891897?se=bAmTXr3T8RGMLP-mPvBk8g&utm_medium=api&utm_source=55569923&v=098FD5B9373D6105F83CA5C029354721DEEA9C8D",
-      "posted_date": "2026-10-14T13:49:52Z",
-      "comp": "Pay: $40/hour Duration: 12 months Seeking an experien",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-10-15",
-      "role": "unclear",
       "has_desc": true
     },
     {
@@ -3860,23 +3817,6 @@
       "flags": [],
       "first_seen": "2026-10-16",
       "role": "field",
-      "has_desc": true
-    },
-    {
-      "id": "16fb29d17d29d219",
-      "kind": "board",
-      "company": "MaxIT Consulting - Max Corporate Group",
-      "title": "Energy Supply Systems Analyst – Primavera P6, Unifier & COTS Configuration",
-      "location": "Jackson, Jackson County",
-      "url": "https://www.adzuna.com/details/5930595692?utm_medium=api&utm_source=55569923",
-      "posted_date": "2026-10-16T08:11:57Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-10-16",
-      "role": "systems",
       "has_desc": true
     },
     {
@@ -4073,7 +4013,7 @@
       "title": "Project Controls Specialist",
       "location": "Philadelphia, Pennsylvania",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Philadelphia-Pennsylvania/Project-Controls-Specialist_JR6021-1",
-      "posted_date": "Posted 17 Days Ago",
+      "posted_date": "Posted 18 Days Ago",
       "comp": "$75,656.68 - $86,464.77",
       "tier": 1,
       "status": "active",
@@ -4081,40 +4021,6 @@
       "flags": [],
       "first_seen": "2026-10-21",
       "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "29bf177637e7741c",
-      "kind": "board",
-      "company": "Talent Search PRO",
-      "title": "Energy Supply Software Configuration Analyst- Oracle Primavera P6, Oracle Unifier",
-      "location": "Jackson, Hinds County",
-      "url": "https://www.adzuna.com/details/5936322076?utm_medium=api&utm_source=55569923",
-      "posted_date": "2026-10-21T02:09:24Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-10-21",
-      "role": "systems",
-      "has_desc": true
-    },
-    {
-      "id": "00aba62b14991317",
-      "kind": "board",
-      "company": "Globalchannelmanagement",
-      "title": "Business Analyst",
-      "location": "Pontiac, Livingston County",
-      "url": "https://www.adzuna.com/details/5936646535?utm_medium=api&utm_source=55569923",
-      "posted_date": "2026-10-21T07:39:15Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-10-21",
-      "role": "unclear",
       "has_desc": true
     },
     {
@@ -4132,23 +4038,6 @@
       "flags": [],
       "first_seen": "2026-10-25",
       "role": "unclear",
-      "has_desc": true
-    },
-    {
-      "id": "f5ba8434040621a7",
-      "kind": "board",
-      "company": "Cephas Consultancy Services Private Limited",
-      "title": "Energy Supply Software Configuration Analyst",
-      "location": "Michigan, US",
-      "url": "https://www.adzuna.com/details/5940381276?utm_medium=api&utm_source=55569923",
-      "posted_date": "2026-10-24T07:25:46Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-10-25",
-      "role": "systems",
       "has_desc": true
     },
     {
@@ -4393,25 +4282,6 @@
       "has_desc": true
     },
     {
-      "id": "e03bc4ddb6070a8b",
-      "kind": "direct",
-      "company": "AtkinsRéalis",
-      "title": "Systems Consultant - Unifier",
-      "location": "US.AZ.Tempe",
-      "url": "https://slihrms.wd3.myworkdayjobs.com/en-US/Careers/job/USAZTempe/Systems-Consultant---Unifier_R-165005",
-      "posted_date": "Posted 17 Days Ago",
-      "comp": "compensation range is between $90,000-$140,000 annually depending on skills, experience, and ge",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [
-        "title-match"
-      ],
-      "first_seen": "2026-10-28",
-      "role": "systems",
-      "has_desc": true
-    },
-    {
       "id": "a86bf0932fa462b2",
       "kind": "direct",
       "company": "AtkinsRéalis",
@@ -4435,7 +4305,7 @@
       "title": "Project Coordinator",
       "location": "US.CA.Los Angeles.801 S. Grand Avenue",
       "url": "https://slihrms.wd3.myworkdayjobs.com/en-US/Careers/job/USCALos-Angeles801-S-Grand-Avenue/Project-Coordinator_R-161583-1",
-      "posted_date": "Posted 25 Days Ago",
+      "posted_date": "Posted 26 Days Ago",
       "comp": "compensation range is between $75,000 - $90,000 annually depending on skills, experience, and ge",
       "tier": 1,
       "status": "active",
@@ -4469,7 +4339,7 @@
       "title": "Mid-Level Integration/Software Developer",
       "location": "US-WA-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Remote/Mid-Level-Integration-Software-Developer_JR1699",
-      "posted_date": "Posted 9 Days Ago",
+      "posted_date": "Posted 10 Days Ago",
       "comp": "compensation range $120,000 - $150,000",
       "tier": 1,
       "status": "active",
@@ -4539,7 +4409,7 @@
       "title": "Senior Digital Project Manager",
       "location": "US-WA-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Remote/Senior-Digital-Project-Manager_JR1706",
-      "posted_date": "Posted 7 Days Ago",
+      "posted_date": "Posted 8 Days Ago",
       "comp": "Compensation range based on skills, education, experience and geographic location: $140,000–$180,000",
       "tier": 1,
       "status": "active",
@@ -4584,30 +4454,13 @@
       "has_desc": true
     },
     {
-      "id": "6a79befbd017cd91",
-      "kind": "direct",
-      "company": "Deloitte",
-      "title": "US E-Consulting Services – Sr. Manager – S&T/Strategy/I&RE – Capital Projects (Tech-PMIS) – FY27 – 373299 – OK",
-      "location": null,
-      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Technical-Senior-Manager-PMIS/373299",
-      "posted_date": "Wed, 28 Oct 2026 00:00:00 +0000",
-      "comp": "range is $184,500 to $338,300",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-11-03",
-      "role": "systems",
-      "has_desc": true
-    },
-    {
       "id": "3fb5e89b599a8f40",
       "kind": "direct",
       "company": "STV",
       "title": "Senior Project Controls Manager - Aviation",
       "location": "North Central Avenue, Phoenix, Arizona",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/North-Central-Avenue-Phoenix-Arizona/Senior-Project-Controls-Manager---Aviation_JR6367",
-      "posted_date": "Posted 4 Days Ago",
+      "posted_date": "Posted 5 Days Ago",
       "comp": "$162,010.86 - $185,155.27",
       "tier": 1,
       "status": "active",
@@ -4748,10 +4601,103 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
+      "flags": [],
+      "first_seen": "2026-11-06",
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "3be772dab46758e8",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Engineer - Project Controls",
+      "location": "Indianapolis, Indiana, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Indianapolis-IN/Engineer---Project-Controls_R-114907/apply",
+      "posted_date": "2026-11-06T20:32:05.827+0000",
+      "comp": "$67,500 - $173,800",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
       "flags": [
         "new"
       ],
-      "first_seen": "2026-11-06",
+      "first_seen": "2026-11-07",
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "b767b7e335c8d43b",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Senior Project Manager",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5434120008",
+      "posted_date": "2026-11-06T16:36:25-05:00",
+      "comp": "Salary: $135k-$225k/year ($65-$108/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-11-07",
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "5a76d20cd13e909b",
+      "kind": "board",
+      "company": "TechTu Business Solutions Inc",
+      "title": "Solutions Architect  Technical PM - Oracle Primavera Unifier",
+      "location": "Pleasanton, Alameda County",
+      "url": "https://www.adzuna.com/land/ad/5954900076?se=vlDl9Mra8RGJ_5m-0JeM1g&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
+      "posted_date": "2026-11-05T20:05:58Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-11-07",
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "a45bcbb366a85f0b",
+      "kind": "board",
+      "company": "Digital Links Inc",
+      "title": "Oracle Primavera Unifier Tester (End-to-End Testing)",
+      "location": "Greeley Square, Manhattan",
+      "url": "https://www.adzuna.com/details/5956289258?utm_medium=api&utm_source=55569923",
+      "posted_date": "2026-11-06T23:01:49Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-11-07",
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "66b9a61beded041f",
+      "kind": "board",
+      "company": "AllSTEM Connections",
+      "title": "Claims Analyst",
+      "location": "Tarrytown, Westchester County",
+      "url": "https://www.adzuna.com/land/ad/5955139570?se=vlDl9Mra8RGJ_5m-0JeM1g&utm_medium=api&utm_source=55569923&v=A593E61AF72708789DCA1F6557489A2B6689B04E",
+      "posted_date": "2026-11-05T22:43:04Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-11-07",
       "role": "controls",
       "has_desc": true
     },
@@ -5910,6 +5856,25 @@
       "role": "systems"
     },
     {
+      "id": "98d913517a44be5e",
+      "kind": "direct",
+      "company": "Meta",
+      "title": "Systems Architect, Data Center Design and Construction",
+      "location": "Reston, VA; Menlo Park, CA; San Francisco, CA",
+      "url": "https://www.metacareers.com/profile/job_details/1012709678418823/",
+      "posted_date": "2026-07-22T16:51:16-07:00",
+      "comp": "United States of America: $150,000/year to $209,000/year + bonus + equity + benefits",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-07",
+      "flags": [
+        "comp-manual",
+        "long-posted"
+      ],
+      "first_seen": "2026-08-12",
+      "role": "systems"
+    },
+    {
       "id": "1c2472c169693a27",
       "kind": "direct",
       "company": "STV",
@@ -6587,6 +6552,22 @@
       "flags": [],
       "first_seen": "2026-09-10",
       "role": "systems"
+    },
+    {
+      "id": "f12d85de5e10bab4",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Senior Change Manager - Aviation",
+      "location": "Los Angeles, California",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Change-Manager_JR6193",
+      "posted_date": "Posted 30+ Days Ago",
+      "comp": "$128,067.17 - $146,362.48",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-07",
+      "flags": [],
+      "first_seen": "2026-09-10",
+      "role": "controls"
     },
     {
       "id": "c8fc942dd729e9f0",
@@ -7478,6 +7459,22 @@
       "role": "systems"
     },
     {
+      "id": "a14df7d47941dec8",
+      "kind": "board",
+      "company": "USK Technologies",
+      "title": "Energy Supply Software Analyst",
+      "location": "Jackson, Jackson County",
+      "url": "https://www.adzuna.com/land/ad/5927282530?se=bAmTXr3T8RGMLP-mPvBk8g&utm_medium=api&utm_source=55569923&v=0B009464FB7498B7DEE163820B0425E25A09916F",
+      "posted_date": "2026-10-14T06:47:23Z",
+      "comp": "Pay: $40/hour Duration: 12 months Seeking an experien",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-07",
+      "flags": [],
+      "first_seen": "2026-10-14",
+      "role": "unclear"
+    },
+    {
       "id": "29b3a2ca343baf14",
       "kind": "direct",
       "company": "Oracle",
@@ -7539,6 +7536,38 @@
       "gone_date": "2026-10-22",
       "flags": [],
       "first_seen": "2026-10-15",
+      "role": "systems"
+    },
+    {
+      "id": "3fd75e50fdb6454a",
+      "kind": "board",
+      "company": "USK Technologies",
+      "title": "Energy Supply Software Analyst (Jackson)",
+      "location": "Jackson, Jackson County",
+      "url": "https://www.adzuna.com/land/ad/5927891897?se=bAmTXr3T8RGMLP-mPvBk8g&utm_medium=api&utm_source=55569923&v=098FD5B9373D6105F83CA5C029354721DEEA9C8D",
+      "posted_date": "2026-10-14T13:49:52Z",
+      "comp": "Pay: $40/hour Duration: 12 months Seeking an experien",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-07",
+      "flags": [],
+      "first_seen": "2026-10-15",
+      "role": "unclear"
+    },
+    {
+      "id": "16fb29d17d29d219",
+      "kind": "board",
+      "company": "MaxIT Consulting - Max Corporate Group",
+      "title": "Energy Supply Systems Analyst – Primavera P6, Unifier & COTS Configuration",
+      "location": "Jackson, Jackson County",
+      "url": "https://www.adzuna.com/details/5930595692?utm_medium=api&utm_source=55569923",
+      "posted_date": "2026-10-16T08:11:57Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-07",
+      "flags": [],
+      "first_seen": "2026-10-16",
       "role": "systems"
     },
     {
@@ -8114,6 +8143,22 @@
       "role": "controls"
     },
     {
+      "id": "29bf177637e7741c",
+      "kind": "board",
+      "company": "Talent Search PRO",
+      "title": "Energy Supply Software Configuration Analyst- Oracle Primavera P6, Oracle Unifier",
+      "location": "Jackson, Hinds County",
+      "url": "https://www.adzuna.com/details/5936322076?utm_medium=api&utm_source=55569923",
+      "posted_date": "2026-10-21T02:09:24Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-07",
+      "flags": [],
+      "first_seen": "2026-10-21",
+      "role": "systems"
+    },
+    {
       "id": "20c0a6859f0987c4",
       "kind": "board",
       "company": "TechnoSphere, Inc.",
@@ -8128,6 +8173,22 @@
       "flags": [],
       "first_seen": "2026-10-21",
       "role": "systems"
+    },
+    {
+      "id": "00aba62b14991317",
+      "kind": "board",
+      "company": "Globalchannelmanagement",
+      "title": "Business Analyst",
+      "location": "Pontiac, Livingston County",
+      "url": "https://www.adzuna.com/details/5936646535?utm_medium=api&utm_source=55569923",
+      "posted_date": "2026-10-21T07:39:15Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-07",
+      "flags": [],
+      "first_seen": "2026-10-21",
+      "role": "unclear"
     },
     {
       "id": "0895a5847b826355",
@@ -8162,6 +8223,22 @@
       "role": "systems"
     },
     {
+      "id": "f5ba8434040621a7",
+      "kind": "board",
+      "company": "Cephas Consultancy Services Private Limited",
+      "title": "Energy Supply Software Configuration Analyst",
+      "location": "Michigan, US",
+      "url": "https://www.adzuna.com/details/5940381276?utm_medium=api&utm_source=55569923",
+      "posted_date": "2026-10-24T07:25:46Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-07",
+      "flags": [],
+      "first_seen": "2026-10-25",
+      "role": "systems"
+    },
+    {
       "id": "abf0c5b9a2666688",
       "kind": "board",
       "company": "Metropolitan Transportation Authority",
@@ -8175,6 +8252,40 @@
       "gone_date": "2026-11-04",
       "flags": [],
       "first_seen": "2026-10-27",
+      "role": "systems"
+    },
+    {
+      "id": "e03bc4ddb6070a8b",
+      "kind": "direct",
+      "company": "AtkinsRéalis",
+      "title": "Systems Consultant - Unifier",
+      "location": "US.AZ.Tempe",
+      "url": "https://slihrms.wd3.myworkdayjobs.com/en-US/Careers/job/USAZTempe/Systems-Consultant---Unifier_R-165005",
+      "posted_date": "Posted 17 Days Ago",
+      "comp": "compensation range is between $90,000-$140,000 annually depending on skills, experience, and ge",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-07",
+      "flags": [
+        "title-match"
+      ],
+      "first_seen": "2026-10-28",
+      "role": "systems"
+    },
+    {
+      "id": "6a79befbd017cd91",
+      "kind": "direct",
+      "company": "Deloitte",
+      "title": "US E-Consulting Services – Sr. Manager – S&T/Strategy/I&RE – Capital Projects (Tech-PMIS) – FY27 – 373299 – OK",
+      "location": null,
+      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Technical-Senior-Manager-PMIS/373299",
+      "posted_date": "Wed, 28 Oct 2026 00:00:00 +0000",
+      "comp": "range is $184,500 to $338,300",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-07",
+      "flags": [],
+      "first_seen": "2026-11-03",
       "role": "systems"
     }
   ]
