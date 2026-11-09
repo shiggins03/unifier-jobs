@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "new_window_days": 7,
   "warnings": [],
   "roster": [
@@ -2642,6 +2642,34 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-11-08"
+    },
+    {
+      "company": "TechTu Business Solutions Inc",
+      "url": "https://www.adzuna.com/land/ad/5954900076?se=Mt3UmoPc8RG6aZau-BQy2Q&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-09"
+    },
+    {
+      "company": "Innoworx Technology Services LLC",
+      "url": "https://www.adzuna.com/land/ad/5959519847?se=Mt3UmoPc8RG6aZau-BQy2Q&utm_medium=api&utm_source=55569923&v=EF883A80C0B42598B7E564DAE7D97D566C196E67",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-09"
+    },
+    {
+      "company": "DFND Security",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=Mt3UmoPc8RG6aZau-BQy2Q&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-09"
+    },
+    {
+      "company": "AllSTEM Connections",
+      "url": "https://www.adzuna.com/land/ad/5955139570?se=Mt3UmoPc8RG6aZau-BQy2Q&utm_medium=api&utm_source=55569923&v=A593E61AF72708789DCA1F6557489A2B6689B04E",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-09"
     }
   ],
   "jobs": [
@@ -3504,7 +3532,7 @@
       "company": "DFND Security",
       "title": "Oracle WACS",
       "location": "Fort Sam Houston, Bexar County",
-      "url": "https://www.adzuna.com/land/ad/5863704034?se=7EMfoZXb8RGc5LWfmB4X0A&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=Mt3UmoPc8RG6aZau-BQy2Q&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
       "posted_date": "2026-08-31T22:19:09Z",
       "comp": null,
       "tier": 1,
@@ -3556,7 +3584,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Project-Controls-Manager---Aviation_JR6366",
-      "posted_date": "Posted 29 Days Ago",
+      "posted_date": "Posted 30 Days Ago",
       "comp": "$196,118.41 - $224,135.33",
       "tier": 1,
       "status": "active",
@@ -3675,7 +3703,7 @@
       "title": "Scheduler",
       "location": "Fairfax, Virginia",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Fairfax-Virginia/Scheduler_JR6369",
-      "posted_date": "Posted 25 Days Ago",
+      "posted_date": "Posted 26 Days Ago",
       "comp": "$102,094.36 - $116,679.27",
       "tier": 1,
       "status": "active",
@@ -4017,7 +4045,7 @@
       "title": "Project Controls Specialist",
       "location": "Philadelphia, Pennsylvania",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Philadelphia-Pennsylvania/Project-Controls-Specialist_JR6021-1",
-      "posted_date": "Posted 19 Days Ago",
+      "posted_date": "Posted 20 Days Ago",
       "comp": "$75,656.68 - $86,464.77",
       "tier": 1,
       "status": "active",
@@ -4309,7 +4337,7 @@
       "title": "Project Coordinator",
       "location": "US.CA.Los Angeles.801 S. Grand Avenue",
       "url": "https://slihrms.wd3.myworkdayjobs.com/en-US/Careers/job/USCALos-Angeles801-S-Grand-Avenue/Project-Coordinator_R-161583-1",
-      "posted_date": "Posted 27 Days Ago",
+      "posted_date": "Posted 28 Days Ago",
       "comp": "compensation range is between $75,000 - $90,000 annually depending on skills, experience, and ge",
       "tier": 1,
       "status": "active",
@@ -4343,7 +4371,7 @@
       "title": "Mid-Level Integration/Software Developer",
       "location": "US-WA-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Remote/Mid-Level-Integration-Software-Developer_JR1699",
-      "posted_date": "Posted 11 Days Ago",
+      "posted_date": "Posted 12 Days Ago",
       "comp": "compensation range $120,000 - $150,000",
       "tier": 1,
       "status": "active",
@@ -4413,7 +4441,7 @@
       "title": "Senior Digital Project Manager",
       "location": "US-WA-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Remote/Senior-Digital-Project-Manager_JR1706",
-      "posted_date": "Posted 9 Days Ago",
+      "posted_date": "Posted 10 Days Ago",
       "comp": "Compensation range based on skills, education, experience and geographic location: $140,000–$180,000",
       "tier": 1,
       "status": "active",
@@ -4464,7 +4492,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "North Central Avenue, Phoenix, Arizona",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/North-Central-Avenue-Phoenix-Arizona/Senior-Project-Controls-Manager---Aviation_JR6367",
-      "posted_date": "Posted 6 Days Ago",
+      "posted_date": "Posted 7 Days Ago",
       "comp": "$162,010.86 - $185,155.27",
       "tier": 1,
       "status": "active",
@@ -4633,8 +4661,8 @@
       "company": "Luster National",
       "title": "Senior Project Manager",
       "location": "San Francisco, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5434120008",
-      "posted_date": "2026-11-06T16:36:25-05:00",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5434094008",
+      "posted_date": "2026-11-06T16:35:33-05:00",
       "comp": "Salary: $135k-$225k/year ($65-$108/hour)",
       "tier": 1,
       "status": "active",
@@ -4650,7 +4678,7 @@
       "company": "TechTu Business Solutions Inc",
       "title": "Solutions Architect  Technical PM - Oracle Primavera Unifier",
       "location": "Pleasanton, Alameda County",
-      "url": "https://www.adzuna.com/land/ad/5954900076?se=7EMfoZXb8RGc5LWfmB4X0A&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
+      "url": "https://www.adzuna.com/land/ad/5954900076?se=Mt3UmoPc8RG6aZau-BQy2Q&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
       "posted_date": "2026-11-05T20:05:58Z",
       "comp": null,
       "tier": 1,
@@ -4684,7 +4712,7 @@
       "company": "AllSTEM Connections",
       "title": "Claims Analyst",
       "location": "Tarrytown, Westchester County",
-      "url": "https://www.adzuna.com/land/ad/5955139570?se=7EMfoZXb8RGc5LWfmB4X0A&utm_medium=api&utm_source=55569923&v=A593E61AF72708789DCA1F6557489A2B6689B04E",
+      "url": "https://www.adzuna.com/land/ad/5955139570?se=Mt3UmoPc8RG6aZau-BQy2Q&utm_medium=api&utm_source=55569923&v=A593E61AF72708789DCA1F6557489A2B6689B04E",
       "posted_date": "2026-11-05T22:43:04Z",
       "comp": null,
       "tier": 1,
@@ -4693,6 +4721,101 @@
       "flags": [],
       "first_seen": "2026-11-07",
       "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "c402031a0539710e",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "CSU Electrical Specialist",
+      "location": "Brownsville, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300956&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-11-04T20:11:23.434+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-11-09",
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "bfd1465c6376fc10",
+      "kind": "direct",
+      "company": "STV",
+      "title": "Senior Project Controls Manager - Aviation",
+      "location": "Montgomery Street, San Francisco, California",
+      "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Montgomery-Street-San-Francisco-California/Senior-Project-Controls-Manager---Aviation_JR6368",
+      "posted_date": "Posted Today",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-11-09",
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "d64b8f65103b386d",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Project Coordinator",
+      "location": "Fresno, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5475579008",
+      "posted_date": "2026-11-08T18:00:00-05:00",
+      "comp": "Salary: $105k-$180k/year ($50-$87/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-11-09",
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "2c0e003f844be9e3",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Railroad/Roadway bridge and Guideway Inspector",
+      "location": "Fresno, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5475709008",
+      "posted_date": "2026-11-08T18:00:00-05:00",
+      "comp": "Salary: $120k-$200k/year ($57-$96/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-11-09",
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "00b57bbc5c52eafd",
+      "kind": "board",
+      "company": "Innoworx Technology Services LLC",
+      "title": "Oracle functional consultant",
+      "location": "US",
+      "url": "https://www.adzuna.com/land/ad/5959519847?se=Mt3UmoPc8RG6aZau-BQy2Q&utm_medium=api&utm_source=55569923&v=EF883A80C0B42598B7E564DAE7D97D566C196E67",
+      "posted_date": "2026-11-09T15:29:20Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-11-09",
+      "role": "unclear",
       "has_desc": true
     },
     {
