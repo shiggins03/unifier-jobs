@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "new_window_days": 7,
   "warnings": [],
   "roster": [
@@ -2670,6 +2670,34 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-11-09"
+    },
+    {
+      "company": "TechTu Business Solutions Inc",
+      "url": "https://www.adzuna.com/land/ad/5954900076?se=9CxKQzXd8RGW67hsumO50A&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-10"
+    },
+    {
+      "company": "Eversource Energy",
+      "url": "https://www.adzuna.com/land/ad/5938764037?se=9CxKQzXd8RGW67hsumO50A&utm_medium=api&utm_source=55569923&v=113F62A58C80AC617ABC4D30FF9284AB3990DD5C",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-10"
+    },
+    {
+      "company": "Innoworx Technology Services LLC",
+      "url": "https://www.adzuna.com/land/ad/5959519847?se=9CxKQzXd8RGW67hsumO50A&utm_medium=api&utm_source=55569923&v=EF883A80C0B42598B7E564DAE7D97D566C196E67",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-10"
+    },
+    {
+      "company": "AllSTEM Connections",
+      "url": "https://www.adzuna.com/land/ad/5955139570?se=9CxKQzXd8RGW67hsumO50A&utm_medium=api&utm_source=55569923&v=A593E61AF72708789DCA1F6557489A2B6689B04E",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-10"
     }
   ],
   "jobs": [
@@ -2892,6 +2920,25 @@
       "has_desc": true
     },
     {
+      "id": "e2b09eea06d5a92b",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Project Controls Lead",
+      "location": "Houston, Texas, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Houston-TX/Project-Controls-Lead_R-114942/apply",
+      "posted_date": "2026-11-10T16:33:07.615+0000",
+      "comp": "$67,500 - $173,800",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "long-posted"
+      ],
+      "first_seen": "2026-07-30",
+      "role": "controls",
+      "has_desc": true
+    },
+    {
       "id": "f08d43d50d302f6a",
       "kind": "direct",
       "company": "MTA",
@@ -3037,9 +3084,9 @@
       "company": "Luster National",
       "title": "Construction Inspector",
       "location": "Seattle, Washington, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5443808008",
-      "posted_date": "2026-10-05T13:10:59-04:00",
-      "comp": "Salary: $85k-$150k/year ($41-$72/hour)",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5466570008",
+      "posted_date": "2026-10-30T12:52:36-04:00",
+      "comp": "Salary: $75k-$135k/year ($36-$65/hour)",
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -3584,64 +3631,13 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Los Angeles, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Los-Angeles-California/Senior-Project-Controls-Manager---Aviation_JR6366",
-      "posted_date": "Posted 30 Days Ago",
+      "posted_date": "Posted 30+ Days Ago",
       "comp": "$196,118.41 - $224,135.33",
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
       "first_seen": "2026-10-10",
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "f17761387a11791b",
-      "kind": "direct",
-      "company": "Eli Lilly",
-      "title": "Capital Cost Estimator – Mechanical, Electrical and Plumbing (MEP)",
-      "location": "Indianapolis, Indiana, United States of America",
-      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Indianapolis-IN/Capital-Cost-Estimator---Mechanical--Electrical-and-Plumbing--MEP-_R-113234/apply",
-      "posted_date": "2026-10-14T14:20:36.192+0000",
-      "comp": "$130,500 - $211,200",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-10-14",
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "c35c3091999e0101",
-      "kind": "direct",
-      "company": "Eli Lilly",
-      "title": "Capital Cost Estimator - Civil, Structural, Architectural (CSA)",
-      "location": "Indianapolis, Indiana, United States of America",
-      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Indianapolis-IN/Capital-Cost-Estimator---Civil--Structural--Architectural--CSA-_R-113237/apply",
-      "posted_date": "2026-10-14T14:20:36.104+0000",
-      "comp": "$130,500 - $211,200",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-10-14",
-      "role": "controls",
-      "has_desc": true
-    },
-    {
-      "id": "34f99135e59c1a2d",
-      "kind": "direct",
-      "company": "Eli Lilly",
-      "title": "Capital Cost Estimator – Industrial Process and Pharmaceutical Equipment",
-      "location": "Indianapolis, Indiana, United States of America",
-      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Indianapolis-IN/Capital-Cost-Estimator---Industrial-Process-and-Pharmaceutical-Equipment_R-113238/apply",
-      "posted_date": "2026-10-14T14:20:36.198+0000",
-      "comp": "$130,500 - $211,200",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-10-14",
       "role": "controls",
       "has_desc": true
     },
@@ -3703,7 +3699,7 @@
       "title": "Scheduler",
       "location": "Fairfax, Virginia",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Fairfax-Virginia/Scheduler_JR6369",
-      "posted_date": "Posted 26 Days Ago",
+      "posted_date": "Posted 27 Days Ago",
       "comp": "$102,094.36 - $116,679.27",
       "tier": 1,
       "status": "active",
@@ -3954,6 +3950,23 @@
       "has_desc": true
     },
     {
+      "id": "fc59accb9fc07f8f",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Reporting Specialist",
+      "location": "Los Angeles, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5477701008",
+      "posted_date": "2026-11-10T11:24:35-05:00",
+      "comp": "Salary: $80k-$145k/year ($38-$70/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "first_seen": "2026-10-17",
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
       "id": "4defe95187ec88c7",
       "kind": "direct",
       "company": "Luster National",
@@ -4045,7 +4058,7 @@
       "title": "Project Controls Specialist",
       "location": "Philadelphia, Pennsylvania",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Philadelphia-Pennsylvania/Project-Controls-Specialist_JR6021-1",
-      "posted_date": "Posted 20 Days Ago",
+      "posted_date": "Posted 21 Days Ago",
       "comp": "$75,656.68 - $86,464.77",
       "tier": 1,
       "status": "active",
@@ -4337,7 +4350,7 @@
       "title": "Project Coordinator",
       "location": "US.CA.Los Angeles.801 S. Grand Avenue",
       "url": "https://slihrms.wd3.myworkdayjobs.com/en-US/Careers/job/USCALos-Angeles801-S-Grand-Avenue/Project-Coordinator_R-161583-1",
-      "posted_date": "Posted 28 Days Ago",
+      "posted_date": "Posted 29 Days Ago",
       "comp": "compensation range is between $75,000 - $90,000 annually depending on skills, experience, and ge",
       "tier": 1,
       "status": "active",
@@ -4371,7 +4384,7 @@
       "title": "Mid-Level Integration/Software Developer",
       "location": "US-WA-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Remote/Mid-Level-Integration-Software-Developer_JR1699",
-      "posted_date": "Posted 12 Days Ago",
+      "posted_date": "Posted 13 Days Ago",
       "comp": "compensation range $120,000 - $150,000",
       "tier": 1,
       "status": "active",
@@ -4441,7 +4454,7 @@
       "title": "Senior Digital Project Manager",
       "location": "US-WA-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Remote/Senior-Digital-Project-Manager_JR1706",
-      "posted_date": "Posted 10 Days Ago",
+      "posted_date": "Posted 11 Days Ago",
       "comp": "Compensation range based on skills, education, experience and geographic location: $140,000–$180,000",
       "tier": 1,
       "status": "active",
@@ -4492,7 +4505,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "North Central Avenue, Phoenix, Arizona",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/North-Central-Avenue-Phoenix-Arizona/Senior-Project-Controls-Manager---Aviation_JR6367",
-      "posted_date": "Posted 7 Days Ago",
+      "posted_date": "Posted 8 Days Ago",
       "comp": "$162,010.86 - $185,155.27",
       "tier": 1,
       "status": "active",
@@ -4605,23 +4618,6 @@
       "has_desc": true
     },
     {
-      "id": "ad283753392ce63e",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Electrical Lead",
-      "location": "Brownsville, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300956&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-11-04T20:11:23.434+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-11-05",
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
       "id": "09759570a93f45d1",
       "kind": "board",
       "company": "AllSTEM Connections",
@@ -4661,8 +4657,8 @@
       "company": "Luster National",
       "title": "Senior Project Manager",
       "location": "San Francisco, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5434094008",
-      "posted_date": "2026-11-06T16:35:33-05:00",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5434120008",
+      "posted_date": "2026-11-06T16:36:25-05:00",
       "comp": "Salary: $135k-$225k/year ($65-$108/hour)",
       "tier": 1,
       "status": "active",
@@ -4678,7 +4674,7 @@
       "company": "TechTu Business Solutions Inc",
       "title": "Solutions Architect  Technical PM - Oracle Primavera Unifier",
       "location": "Pleasanton, Alameda County",
-      "url": "https://www.adzuna.com/land/ad/5954900076?se=Mt3UmoPc8RG6aZau-BQy2Q&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
+      "url": "https://www.adzuna.com/land/ad/5954900076?se=9CxKQzXd8RGW67hsumO50A&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
       "posted_date": "2026-11-05T20:05:58Z",
       "comp": null,
       "tier": 1,
@@ -4712,7 +4708,7 @@
       "company": "AllSTEM Connections",
       "title": "Claims Analyst",
       "location": "Tarrytown, Westchester County",
-      "url": "https://www.adzuna.com/land/ad/5955139570?se=Mt3UmoPc8RG6aZau-BQy2Q&utm_medium=api&utm_source=55569923&v=A593E61AF72708789DCA1F6557489A2B6689B04E",
+      "url": "https://www.adzuna.com/land/ad/5955139570?se=9CxKQzXd8RGW67hsumO50A&utm_medium=api&utm_source=55569923&v=A593E61AF72708789DCA1F6557489A2B6689B04E",
       "posted_date": "2026-11-05T22:43:04Z",
       "comp": null,
       "tier": 1,
@@ -4735,9 +4731,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "first_seen": "2026-11-09",
       "role": "unclear",
       "has_desc": true
@@ -4749,14 +4743,12 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Montgomery Street, San Francisco, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Montgomery-Street-San-Francisco-California/Senior-Project-Controls-Manager---Aviation_JR6368",
-      "posted_date": "Posted Today",
+      "posted_date": "Posted Yesterday",
       "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "first_seen": "2026-11-09",
       "role": "controls",
       "has_desc": true
@@ -4773,9 +4765,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "first_seen": "2026-11-09",
       "role": "unclear",
       "has_desc": true
@@ -4792,9 +4782,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "first_seen": "2026-11-09",
       "role": "field",
       "has_desc": true
@@ -4805,8 +4793,44 @@
       "company": "Innoworx Technology Services LLC",
       "title": "Oracle functional consultant",
       "location": "US",
-      "url": "https://www.adzuna.com/land/ad/5959519847?se=Mt3UmoPc8RG6aZau-BQy2Q&utm_medium=api&utm_source=55569923&v=EF883A80C0B42598B7E564DAE7D97D566C196E67",
+      "url": "https://www.adzuna.com/land/ad/5959519847?se=9CxKQzXd8RGW67hsumO50A&utm_medium=api&utm_source=55569923&v=EF883A80C0B42598B7E564DAE7D97D566C196E67",
       "posted_date": "2026-11-09T15:29:20Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "first_seen": "2026-11-09",
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "20d723c82c63edd0",
+      "kind": "direct",
+      "company": "AtkinsRéalis",
+      "title": "Technical Enablement Consultant, Learning Systems",
+      "location": "US.TX.Houston",
+      "url": "https://slihrms.wd3.myworkdayjobs.com/en-US/Careers/job/USTXHouston/Technical-Enablement-Consultant--Learning-Systems_R-167325",
+      "posted_date": "Posted Yesterday",
+      "comp": "compensation range is between $67,000-$100,000 annually depending on skills, experience, and ge",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-11-10",
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "66f59401da42e6a0",
+      "kind": "board",
+      "company": "Digital Links Inc",
+      "title": "Oracle Primavera Unifier Functional Consultant (Configuration & Implementation)",
+      "location": "Greeley Square, Manhattan",
+      "url": "https://www.adzuna.com/details/5956289258?utm_medium=api&utm_source=55569923",
+      "posted_date": "2026-11-06T23:01:49Z",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -4814,8 +4838,27 @@
       "flags": [
         "new"
       ],
-      "first_seen": "2026-11-09",
-      "role": "unclear",
+      "first_seen": "2026-11-10",
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "f174e6826147f8c9",
+      "kind": "board",
+      "company": "Eversource Energy",
+      "title": "Senior Project Controls & Planning Manager",
+      "location": "Blue Hills, Hartford County",
+      "url": "https://www.adzuna.com/land/ad/5938764037?se=9CxKQzXd8RGW67hsumO50A&utm_medium=api&utm_source=55569923&v=113F62A58C80AC617ABC4D30FF9284AB3990DD5C",
+      "posted_date": "2026-10-22T23:38:55Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-11-10",
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -5580,24 +5623,6 @@
       "tier": 1,
       "status": "gone",
       "gone_date": "2026-09-17",
-      "flags": [
-        "long-posted"
-      ],
-      "first_seen": "2026-07-30",
-      "role": "controls"
-    },
-    {
-      "id": "e2b09eea06d5a92b",
-      "kind": "direct",
-      "company": "Eli Lilly",
-      "title": "Project Controls Lead",
-      "location": "Houston, Texas, United States of America",
-      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Houston-TX/Deputy-Project-Controls-Lead_R-106580-1/apply",
-      "posted_date": "2026-06-04T12:46:46.536+0000",
-      "comp": "$66,000 - $171,600",
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-09-05",
       "flags": [
         "long-posted"
       ],
@@ -7592,6 +7617,54 @@
       "role": "systems"
     },
     {
+      "id": "f17761387a11791b",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Capital Cost Estimator – Mechanical, Electrical and Plumbing (MEP)",
+      "location": "Indianapolis, Indiana, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Indianapolis-IN/Capital-Cost-Estimator---Mechanical--Electrical-and-Plumbing--MEP-_R-113234/apply",
+      "posted_date": "2026-10-14T14:20:36.192+0000",
+      "comp": "$130,500 - $211,200",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-10",
+      "flags": [],
+      "first_seen": "2026-10-14",
+      "role": "controls"
+    },
+    {
+      "id": "c35c3091999e0101",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Capital Cost Estimator - Civil, Structural, Architectural (CSA)",
+      "location": "Indianapolis, Indiana, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Indianapolis-IN/Capital-Cost-Estimator---Civil--Structural--Architectural--CSA-_R-113237/apply",
+      "posted_date": "2026-10-14T14:20:36.104+0000",
+      "comp": "$130,500 - $211,200",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-10",
+      "flags": [],
+      "first_seen": "2026-10-14",
+      "role": "controls"
+    },
+    {
+      "id": "34f99135e59c1a2d",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Capital Cost Estimator – Industrial Process and Pharmaceutical Equipment",
+      "location": "Indianapolis, Indiana, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Indianapolis-IN/Capital-Cost-Estimator---Industrial-Process-and-Pharmaceutical-Equipment_R-113238/apply",
+      "posted_date": "2026-10-14T14:20:36.198+0000",
+      "comp": "$130,500 - $211,200",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-10",
+      "flags": [],
+      "first_seen": "2026-10-14",
+      "role": "controls"
+    },
+    {
       "id": "a14df7d47941dec8",
       "kind": "board",
       "company": "USK Technologies",
@@ -8136,22 +8209,6 @@
       "role": "unclear"
     },
     {
-      "id": "fc59accb9fc07f8f",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Reporting Specialist",
-      "location": "Los Angeles, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453507008",
-      "posted_date": "2026-10-16T18:19:28-04:00",
-      "comp": "Salary: $80k-$145k/year ($38-$70/hour)",
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-10-28",
-      "flags": [],
-      "first_seen": "2026-10-17",
-      "role": "unclear"
-    },
-    {
       "id": "3723375a229aec68",
       "kind": "direct",
       "company": "Luster National",
@@ -8420,6 +8477,22 @@
       "flags": [],
       "first_seen": "2026-11-03",
       "role": "systems"
+    },
+    {
+      "id": "ad283753392ce63e",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Electrical Lead",
+      "location": "Brownsville, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300956&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-11-04T20:11:23.434+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-10",
+      "flags": [],
+      "first_seen": "2026-11-05",
+      "role": "unclear"
     }
   ]
 }
