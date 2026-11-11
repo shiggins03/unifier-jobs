@@ -236,7 +236,25 @@ Actions log, iterate. `run_adapter()` exercises a real adapter end-to-end
 before trusting it in the daily run. Keep `main()` empty between
 investigations.
 
-## Current state (update this section when you change it) — as of 2026-10-28
+## Current state (update this section when you change it) — as of 2026-11-11
+
+- **Edited postings no longer leave a phantom duplicate** (`_edited_postings`
+  in main.py). Ids hash company|title|location, so a retitled or relocated
+  posting arrives under a new id while the old record lingers 2-7 runs. The
+  URL is the real identity, trusted only under a strict rule: drop an active
+  record that is UNSEEN this run when a DIFFERENT record from the SAME source
+  with the SAME url WAS seen. Safe against generic shared careers URLs (both
+  seen → untouched) and failed sources (nothing seen → nothing dropped).
+  Trigger: Digital Links retitled Adzuna ad 5956289258 from "Unifier Tester"
+  to "Unifier Functional Consultant" and the board showed both.
+- Digital Links Inc (Chantilly/South Riding VA) is a small third-party
+  staffing firm; its Unifier postings never name the end client and are
+  1099/C2C. Currently visible; whether to blocklist them is an OPEN owner
+  decision (raised 2026-11-11, not yet answered). Their "C2C" sits in the
+  description, which the blocklist deliberately does not scan (scanning
+  descriptions would quarantine legitimate contract work).
+
+## Previous state — as of 2026-10-28
 
 - **"New" now means first FOUND within 7 days** (`site_gen.NEW_WINDOW_DAYS`,
   `found_recently()`), not "arrived this run". The old one-run flag vanished

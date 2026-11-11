@@ -284,6 +284,10 @@ def run():
             kept += 1
         record_health(name, kept, ok)
 
+    # ---- edited postings ----
+    for k in _edited_postings(store, seen_this_run):
+        del store[k]
+
     # ---- expiry ----
     for j in store.values():
         if j["status"] != "active":
@@ -421,6 +425,35 @@ def _mark_reposts(store):
                         and parts(j) & parts(k):
                     j["flags"].append("reposted")
                     break
+
+
+def _edited_postings(store, seen_this_run):
+    """Ids of active records that are the PREVIOUS VERSION of an edited posting.
+
+    Job ids hash company|title|location, so when an employer retitles or
+    relocates a posting it arrives under a new id while the old record sits
+    unseen, aging out over 2-7 runs as a phantom duplicate. Digital Links
+    retitled Adzuna ad 5956289258 from "Unifier Tester" to "Unifier Functional
+    Consultant" and the board showed both; Luster's "Resident Engineer" did
+    the same on a location edit.
+
+    The URL is the posting's real identity, but only trusted under a strict
+    rule: the record must be UNSEEN this run while a DIFFERENT record from the
+    SAME source with the SAME url WAS seen. Two distinct postings that share a
+    generic careers URL are both seen in the same run, so neither is touched;
+    and a source that failed this run has nothing seen, so nothing is dropped.
+    """
+    edited = []
+    for k, j in store.items():
+        url = j.get("url")
+        if j.get("status") != "active" or not url:
+            continue
+        seen = seen_this_run.get(j.get("source"), set())
+        if k in seen:
+            continue
+        if any(o != k and o in store and store[o].get("url") == url for o in seen):
+            edited.append(k)
+    return edited
 
 
 def _merge(store, job, today, baseline):
