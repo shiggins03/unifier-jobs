@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "new_window_days": 7,
   "warnings": [],
   "roster": [
@@ -2698,6 +2698,34 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-11-10"
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/profile/job_details/2110367506251350/",
+      "note": "employer's own search matched 'unifier' but posting text unavailable — verify: LINCS Security Engineer",
+      "source": "meta_graphql:Meta",
+      "first_seen": "2026-11-11"
+    },
+    {
+      "company": "TechTu Business Solutions Inc",
+      "url": "https://www.adzuna.com/land/ad/5954900076?se=mJyFmf3d8RG-3tonMCyHnw&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-11"
+    },
+    {
+      "company": "Eversource Energy",
+      "url": "https://www.adzuna.com/land/ad/5938764037?se=mJyFmf3d8RG-3tonMCyHnw&utm_medium=api&utm_source=55569923&v=113F62A58C80AC617ABC4D30FF9284AB3990DD5C",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-11"
+    },
+    {
+      "company": "Innoworx Technology Services LLC",
+      "url": "https://www.adzuna.com/land/ad/5959519847?se=mJyFmf3d8RG-3tonMCyHnw&utm_medium=api&utm_source=55569923&v=EF883A80C0B42598B7E564DAE7D97D566C196E67",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-11"
     }
   ],
   "jobs": [
@@ -3005,6 +3033,23 @@
       "gone_date": null,
       "flags": [],
       "first_seen": "2026-08-25",
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "3e9bcb8d9f9f341f",
+      "kind": "direct",
+      "company": "Deloitte",
+      "title": "US E-Consulting Services – Sr. Consultant – S&T/Strategy/I&RE – Capital Projects (DBA) – 354006 – OK",
+      "location": null,
+      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Senior-Consultant-DBA-PWA/354006",
+      "posted_date": "Fri, 29 May 2026 00:00:00 +0000",
+      "comp": "range is $110,700 to $218,300",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "first_seen": "2026-09-01",
       "role": "unclear",
       "has_desc": true
     },
@@ -3699,7 +3744,7 @@
       "title": "Scheduler",
       "location": "Fairfax, Virginia",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Fairfax-Virginia/Scheduler_JR6369",
-      "posted_date": "Posted 27 Days Ago",
+      "posted_date": "Posted 28 Days Ago",
       "comp": "$102,094.36 - $116,679.27",
       "tier": 1,
       "status": "active",
@@ -4058,7 +4103,7 @@
       "title": "Project Controls Specialist",
       "location": "Philadelphia, Pennsylvania",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Philadelphia-Pennsylvania/Project-Controls-Specialist_JR6021-1",
-      "posted_date": "Posted 21 Days Ago",
+      "posted_date": "Posted 22 Days Ago",
       "comp": "$75,656.68 - $86,464.77",
       "tier": 1,
       "status": "active",
@@ -4384,7 +4429,7 @@
       "title": "Mid-Level Integration/Software Developer",
       "location": "US-WA-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Remote/Mid-Level-Integration-Software-Developer_JR1699",
-      "posted_date": "Posted 13 Days Ago",
+      "posted_date": "Posted 14 Days Ago",
       "comp": "compensation range $120,000 - $150,000",
       "tier": 1,
       "status": "active",
@@ -4454,7 +4499,7 @@
       "title": "Senior Digital Project Manager",
       "location": "US-WA-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Remote/Senior-Digital-Project-Manager_JR1706",
-      "posted_date": "Posted 11 Days Ago",
+      "posted_date": "Posted 12 Days Ago",
       "comp": "Compensation range based on skills, education, experience and geographic location: $140,000–$180,000",
       "tier": 1,
       "status": "active",
@@ -4505,7 +4550,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "North Central Avenue, Phoenix, Arizona",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/North-Central-Avenue-Phoenix-Arizona/Senior-Project-Controls-Manager---Aviation_JR6367",
-      "posted_date": "Posted 8 Days Ago",
+      "posted_date": "Posted 9 Days Ago",
       "comp": "$162,010.86 - $185,155.27",
       "tier": 1,
       "status": "active",
@@ -4674,7 +4719,7 @@
       "company": "TechTu Business Solutions Inc",
       "title": "Solutions Architect  Technical PM - Oracle Primavera Unifier",
       "location": "Pleasanton, Alameda County",
-      "url": "https://www.adzuna.com/land/ad/5954900076?se=9CxKQzXd8RGW67hsumO50A&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
+      "url": "https://www.adzuna.com/land/ad/5954900076?se=mJyFmf3d8RG-3tonMCyHnw&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
       "posted_date": "2026-11-05T20:05:58Z",
       "comp": null,
       "tier": 1,
@@ -4743,7 +4788,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Montgomery Street, San Francisco, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Montgomery-Street-San-Francisco-California/Senior-Project-Controls-Manager---Aviation_JR6368",
-      "posted_date": "Posted Yesterday",
+      "posted_date": "Posted 2 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -4793,7 +4838,7 @@
       "company": "Innoworx Technology Services LLC",
       "title": "Oracle functional consultant",
       "location": "US",
-      "url": "https://www.adzuna.com/land/ad/5959519847?se=9CxKQzXd8RGW67hsumO50A&utm_medium=api&utm_source=55569923&v=EF883A80C0B42598B7E564DAE7D97D566C196E67",
+      "url": "https://www.adzuna.com/land/ad/5959519847?se=mJyFmf3d8RG-3tonMCyHnw&utm_medium=api&utm_source=55569923&v=EF883A80C0B42598B7E564DAE7D97D566C196E67",
       "posted_date": "2026-11-09T15:29:20Z",
       "comp": null,
       "tier": 1,
@@ -4816,9 +4861,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "first_seen": "2026-11-10",
       "role": "unclear",
       "has_desc": true
@@ -4835,9 +4878,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "first_seen": "2026-11-10",
       "role": "systems",
       "has_desc": true
@@ -4848,16 +4889,33 @@
       "company": "Eversource Energy",
       "title": "Senior Project Controls & Planning Manager",
       "location": "Blue Hills, Hartford County",
-      "url": "https://www.adzuna.com/land/ad/5938764037?se=9CxKQzXd8RGW67hsumO50A&utm_medium=api&utm_source=55569923&v=113F62A58C80AC617ABC4D30FF9284AB3990DD5C",
+      "url": "https://www.adzuna.com/land/ad/5938764037?se=mJyFmf3d8RG-3tonMCyHnw&utm_medium=api&utm_source=55569923&v=113F62A58C80AC617ABC4D30FF9284AB3990DD5C",
       "posted_date": "2026-10-22T23:38:55Z",
       "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "first_seen": "2026-11-10",
+      "role": "controls",
+      "has_desc": true
+    },
+    {
+      "id": "5d22777392ce613f",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Deputy Project Controls Director - Lehigh Valley",
+      "location": "Allentown, Pennsylvania, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Allentown-PA/Deputy-Project-Controls-Director---Lehigh-Valley_R-114797/apply",
+      "posted_date": "2026-11-10T20:19:41.455+0000",
+      "comp": "$67,500 - $173,800",
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [
         "new"
       ],
-      "first_seen": "2026-11-10",
+      "first_seen": "2026-11-11",
       "role": "controls",
       "has_desc": true
     },
@@ -6486,22 +6544,6 @@
       "flags": [],
       "first_seen": "2026-08-31",
       "role": "systems"
-    },
-    {
-      "id": "3e9bcb8d9f9f341f",
-      "kind": "direct",
-      "company": "Deloitte",
-      "title": "US E-Consulting Services – Sr. Consultant – S&T/Strategy/I&RE – Capital Projects (DBA) – 354006 – OK",
-      "location": null,
-      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Senior-Consultant-DBA-PWA/354006",
-      "posted_date": "Fri, 29 May 2026 00:00:00 +0000",
-      "comp": "range is $110,700 to $218,300",
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-10-30",
-      "flags": [],
-      "first_seen": "2026-09-01",
-      "role": "unclear"
     },
     {
       "id": "7502be7141f16ad9",
