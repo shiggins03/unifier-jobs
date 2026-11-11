@@ -2726,6 +2726,27 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-11-11"
+    },
+    {
+      "company": "TechTu Business Solutions Inc",
+      "url": "https://www.adzuna.com/land/ad/5954900076?se=sgHRewXe8RGYFNuPuswjLA&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-11"
+    },
+    {
+      "company": "Eversource Energy",
+      "url": "https://www.adzuna.com/land/ad/5938764037?se=sgHRewXe8RGYFNuPuswjLA&utm_medium=api&utm_source=55569923&v=113F62A58C80AC617ABC4D30FF9284AB3990DD5C",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-11"
+    },
+    {
+      "company": "Innoworx Technology Services LLC",
+      "url": "https://www.adzuna.com/land/ad/5959519847?se=sgHRewXe8RGYFNuPuswjLA&utm_medium=api&utm_source=55569923&v=EF883A80C0B42598B7E564DAE7D97D566C196E67",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-11"
     }
   ],
   "jobs": [
@@ -4389,23 +4410,6 @@
       "has_desc": true
     },
     {
-      "id": "2a89f62ecb2d2bce",
-      "kind": "direct",
-      "company": "AtkinsRéalis",
-      "title": "Project Coordinator",
-      "location": "US.CA.Los Angeles.801 S. Grand Avenue",
-      "url": "https://slihrms.wd3.myworkdayjobs.com/en-US/Careers/job/USCALos-Angeles801-S-Grand-Avenue/Project-Coordinator_R-161583-1",
-      "posted_date": "Posted 29 Days Ago",
-      "comp": "compensation range is between $75,000 - $90,000 annually depending on skills, experience, and ge",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-10-28",
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
       "id": "49941b77a7f5d57e",
       "kind": "direct",
       "company": "Luster National",
@@ -4702,8 +4706,8 @@
       "company": "Luster National",
       "title": "Senior Project Manager",
       "location": "San Francisco, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5434120008",
-      "posted_date": "2026-11-06T16:36:25-05:00",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5433641008",
+      "posted_date": "2026-11-06T16:38:41-05:00",
       "comp": "Salary: $135k-$225k/year ($65-$108/hour)",
       "tier": 1,
       "status": "active",
@@ -4719,25 +4723,8 @@
       "company": "TechTu Business Solutions Inc",
       "title": "Solutions Architect  Technical PM - Oracle Primavera Unifier",
       "location": "Pleasanton, Alameda County",
-      "url": "https://www.adzuna.com/land/ad/5954900076?se=mJyFmf3d8RG-3tonMCyHnw&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
+      "url": "https://www.adzuna.com/land/ad/5954900076?se=sgHRewXe8RGYFNuPuswjLA&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
       "posted_date": "2026-11-05T20:05:58Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-11-07",
-      "role": "systems",
-      "has_desc": true
-    },
-    {
-      "id": "a45bcbb366a85f0b",
-      "kind": "board",
-      "company": "Digital Links Inc",
-      "title": "Oracle Primavera Unifier Tester (End-to-End Testing)",
-      "location": "Greeley Square, Manhattan",
-      "url": "https://www.adzuna.com/details/5956289258?utm_medium=api&utm_source=55569923",
-      "posted_date": "2026-11-06T23:01:49Z",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -4838,7 +4825,7 @@
       "company": "Innoworx Technology Services LLC",
       "title": "Oracle functional consultant",
       "location": "US",
-      "url": "https://www.adzuna.com/land/ad/5959519847?se=mJyFmf3d8RG-3tonMCyHnw&utm_medium=api&utm_source=55569923&v=EF883A80C0B42598B7E564DAE7D97D566C196E67",
+      "url": "https://www.adzuna.com/land/ad/5959519847?se=sgHRewXe8RGYFNuPuswjLA&utm_medium=api&utm_source=55569923&v=EF883A80C0B42598B7E564DAE7D97D566C196E67",
       "posted_date": "2026-11-09T15:29:20Z",
       "comp": null,
       "tier": 1,
@@ -4846,23 +4833,6 @@
       "gone_date": null,
       "flags": [],
       "first_seen": "2026-11-09",
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
-      "id": "20d723c82c63edd0",
-      "kind": "direct",
-      "company": "AtkinsRéalis",
-      "title": "Technical Enablement Consultant, Learning Systems",
-      "location": "US.TX.Houston",
-      "url": "https://slihrms.wd3.myworkdayjobs.com/en-US/Careers/job/USTXHouston/Technical-Enablement-Consultant--Learning-Systems_R-167325",
-      "posted_date": "Posted Yesterday",
-      "comp": "compensation range is between $67,000-$100,000 annually depending on skills, experience, and ge",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-11-10",
       "role": "unclear",
       "has_desc": true
     },
@@ -4889,7 +4859,7 @@
       "company": "Eversource Energy",
       "title": "Senior Project Controls & Planning Manager",
       "location": "Blue Hills, Hartford County",
-      "url": "https://www.adzuna.com/land/ad/5938764037?se=mJyFmf3d8RG-3tonMCyHnw&utm_medium=api&utm_source=55569923&v=113F62A58C80AC617ABC4D30FF9284AB3990DD5C",
+      "url": "https://www.adzuna.com/land/ad/5938764037?se=sgHRewXe8RGYFNuPuswjLA&utm_medium=api&utm_source=55569923&v=113F62A58C80AC617ABC4D30FF9284AB3990DD5C",
       "posted_date": "2026-10-22T23:38:55Z",
       "comp": null,
       "tier": 1,
@@ -4912,9 +4882,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "first_seen": "2026-11-11",
       "role": "controls",
       "has_desc": true
@@ -8505,6 +8473,22 @@
       "role": "systems"
     },
     {
+      "id": "2a89f62ecb2d2bce",
+      "kind": "direct",
+      "company": "AtkinsRéalis",
+      "title": "Project Coordinator",
+      "location": "US.CA.Los Angeles.801 S. Grand Avenue",
+      "url": "https://slihrms.wd3.myworkdayjobs.com/en-US/Careers/job/USCALos-Angeles801-S-Grand-Avenue/Project-Coordinator_R-161583-1",
+      "posted_date": "Posted 29 Days Ago",
+      "comp": "compensation range is between $75,000 - $90,000 annually depending on skills, experience, and ge",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-11",
+      "flags": [],
+      "first_seen": "2026-10-28",
+      "role": "unclear"
+    },
+    {
       "id": "6a79befbd017cd91",
       "kind": "direct",
       "company": "Deloitte",
@@ -8534,6 +8518,22 @@
       "gone_date": "2026-11-10",
       "flags": [],
       "first_seen": "2026-11-05",
+      "role": "unclear"
+    },
+    {
+      "id": "20d723c82c63edd0",
+      "kind": "direct",
+      "company": "AtkinsRéalis",
+      "title": "Technical Enablement Consultant, Learning Systems",
+      "location": "US.TX.Houston",
+      "url": "https://slihrms.wd3.myworkdayjobs.com/en-US/Careers/job/USTXHouston/Technical-Enablement-Consultant--Learning-Systems_R-167325",
+      "posted_date": "Posted Yesterday",
+      "comp": "compensation range is between $67,000-$100,000 annually depending on skills, experience, and ge",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-11",
+      "flags": [],
+      "first_seen": "2026-11-10",
       "role": "unclear"
     }
   ]

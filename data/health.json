@@ -160,8 +160,8 @@
   "greenhouse:Luster National": {
     "counts": [
       45,
-      45,
       47,
+      48,
       48,
       48
     ],
@@ -191,14 +191,14 @@
     ],
     "fail_streak": 0,
     "last_run": "2026-11-11",
-    "inventory": 2854
+    "inventory": 2852
   },
   "avature_feed:Deloitte": {
     "counts": [
       2,
       2,
       2,
-      2,
+      3,
       3
     ],
     "fail_streak": 0,
@@ -213,7 +213,7 @@
       32
     ],
     "fail_streak": 0,
-    "inventory": 1122,
+    "inventory": 1133,
     "last_run": "2026-11-11"
   },
   "smartrecruiters:Turner & Townsend": {
@@ -225,7 +225,7 @@
       4
     ],
     "fail_streak": 0,
-    "inventory": 3589,
+    "inventory": 3595,
     "last_run": "2026-11-11"
   },
   "workday:Mass General Brigham": {
@@ -254,13 +254,13 @@
   "workday:STV": {
     "counts": [
       6,
-      6,
+      7,
       7,
       7,
       7
     ],
     "fail_streak": 0,
-    "inventory": 393,
+    "inventory": 392,
     "last_run": "2026-11-11"
   },
   "oracle_orc:Hill International": {
@@ -332,7 +332,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 877,
+    "inventory": 879,
     "last_run": "2026-11-11"
   },
   "workday:Pfizer": {
@@ -344,7 +344,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 728,
+    "inventory": 724,
     "last_run": "2026-11-11"
   },
   "workday:PwC": {
@@ -356,19 +356,19 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 3777,
+    "inventory": 3763,
     "last_run": "2026-11-11"
   },
   "phenom:Eli Lilly": {
     "counts": [
       15,
-      15,
       8,
       13,
+      14,
       14
     ],
     "fail_streak": 0,
-    "inventory": 518,
+    "inventory": 520,
     "last_run": "2026-11-11"
   },
   "workday:Johnson & Johnson": {
@@ -380,7 +380,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 1814,
+    "inventory": 1812,
     "last_run": "2026-11-11"
   },
   "seed:MTA": {
@@ -402,9 +402,9 @@
   "adzuna": {
     "counts": [
       5,
+      6,
+      6,
       5,
-      6,
-      6,
       5
     ],
     "fail_streak": 0,
@@ -527,7 +527,7 @@
       0
     ],
     "fail_streak": 0,
-    "inventory": 2404,
+    "inventory": 2403,
     "last_run": "2026-11-11"
   },
   "workday:Booz Allen Hamilton": {
@@ -546,8 +546,8 @@
     "counts": [
       2,
       2,
-      2,
       3,
+      1,
       1
     ],
     "fail_streak": 0,
