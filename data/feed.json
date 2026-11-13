@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "new_window_days": 7,
   "warnings": [],
   "roster": [
@@ -2775,6 +2775,34 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-11-12"
+    },
+    {
+      "company": "Innoworx Technology Services LLC",
+      "url": "https://www.adzuna.com/land/ad/5960622880?se=zhi714_f8RGDtoxXJCvQRQ&utm_medium=api&utm_source=55569923&v=9E7DCD24003F83687BDEDB53F4BC2039880943CF",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "company": "TechTu Business Solutions Inc",
+      "url": "https://www.adzuna.com/land/ad/5954900076?se=zhi714_f8RGDtoxXJCvQRQ&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "company": "Exl Neo Technologies",
+      "url": "https://www.adzuna.com/land/ad/5964787924?se=zhi714_f8RGDtoxXJCvQRQ&utm_medium=api&utm_source=55569923&v=5FB44EC6EFE1CF5E3EB59BD5C5B6FC4B4C19A48E",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "company": "FourthSquare",
+      "url": "https://www.adzuna.com/land/ad/5960621504?se=Kkup2I_f8RG3UKJUaLg__w&utm_medium=api&utm_source=55569923&v=E1D7606973EF865EF8D2243B11C91F7B8139C287",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-13"
     }
   ],
   "jobs": [
@@ -3328,23 +3356,6 @@
       "has_desc": true
     },
     {
-      "id": "5005eee5b0512c29",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Area Lead Piping Field Engineer - Undergrounds",
-      "location": "New Albany, Ohio, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299181&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-09-16T20:41:55.126+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-09-17",
-      "role": "field",
-      "has_desc": true
-    },
-    {
       "id": "38db547bdcd3cbd2",
       "kind": "direct",
       "company": "Bechtel",
@@ -3753,23 +3764,6 @@
       "has_desc": true
     },
     {
-      "id": "4b0450c6b0c032c8",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "E&I Superintendent",
-      "location": "Lake Charles, Louisiana, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300323&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-10-13T22:11:25.308+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-10-14",
-      "role": "field",
-      "has_desc": true
-    },
-    {
       "id": "7a612b2b5a1c4100",
       "kind": "direct",
       "company": "Bechtel",
@@ -3793,7 +3787,7 @@
       "title": "Scheduler",
       "location": "Fairfax, Virginia",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Fairfax-Virginia/Scheduler_JR6369",
-      "posted_date": "Posted 29 Days Ago",
+      "posted_date": "Posted 30 Days Ago",
       "comp": "$102,094.36 - $116,679.27",
       "tier": 1,
       "status": "active",
@@ -4169,7 +4163,7 @@
       "title": "Project Controls Specialist",
       "location": "Philadelphia, Pennsylvania",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Philadelphia-Pennsylvania/Project-Controls-Specialist_JR6021-1",
-      "posted_date": "Posted 23 Days Ago",
+      "posted_date": "Posted 24 Days Ago",
       "comp": "$75,656.68 - $86,464.77",
       "tier": 1,
       "status": "active",
@@ -4529,7 +4523,7 @@
       "title": "Mid-Level Integration/Software Developer",
       "location": "US-WA-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Remote/Mid-Level-Integration-Software-Developer_JR1699",
-      "posted_date": "Posted 15 Days Ago",
+      "posted_date": "Posted 16 Days Ago",
       "comp": "compensation range $120,000 - $150,000",
       "tier": 1,
       "status": "active",
@@ -4599,7 +4593,7 @@
       "title": "Senior Digital Project Manager",
       "location": "US-WA-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Remote/Senior-Digital-Project-Manager_JR1706",
-      "posted_date": "Posted 13 Days Ago",
+      "posted_date": "Posted 14 Days Ago",
       "comp": "Compensation range based on skills, education, experience and geographic location: $140,000–$180,000",
       "tier": 1,
       "status": "active",
@@ -4650,7 +4644,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "North Central Avenue, Phoenix, Arizona",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/North-Central-Avenue-Phoenix-Arizona/Senior-Project-Controls-Manager---Aviation_JR6367",
-      "posted_date": "Posted 10 Days Ago",
+      "posted_date": "Posted 11 Days Ago",
       "comp": "$162,010.86 - $185,155.27",
       "tier": 1,
       "status": "active",
@@ -4675,23 +4669,6 @@
       "flags": [],
       "first_seen": "2026-11-03",
       "role": "systems",
-      "has_desc": true
-    },
-    {
-      "id": "41975aab0e4698ee",
-      "kind": "direct",
-      "company": "Deloitte",
-      "title": "US E-Consulting Services – Manager – S&T/Strategy/I&RE – Capital Projects (DBA-PWA) – FY27 – 373628– OK",
-      "location": null,
-      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Manager-Davis-Bacon-Prevailing-Wage/373628",
-      "posted_date": "Fri, 05 Jun 2026 00:00:00 +0000",
-      "comp": "range is $134,500 to $265,100",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-11-04",
-      "role": "unclear",
       "has_desc": true
     },
     {
@@ -4802,7 +4779,7 @@
       "company": "TechTu Business Solutions Inc",
       "title": "Solutions Architect  Technical PM - Oracle Primavera Unifier",
       "location": "Pleasanton, Alameda County",
-      "url": "https://www.adzuna.com/land/ad/5954900076?se=6ukgVsne8RGgDrQN4m_CPg&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
+      "url": "https://www.adzuna.com/land/ad/5954900076?se=zhi714_f8RGDtoxXJCvQRQ&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
       "posted_date": "2026-11-05T20:05:58Z",
       "comp": null,
       "tier": 1,
@@ -4854,7 +4831,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Montgomery Street, San Francisco, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Montgomery-Street-San-Francisco-California/Senior-Project-Controls-Manager---Aviation_JR6368",
-      "posted_date": "Posted 3 Days Ago",
+      "posted_date": "Posted 4 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -4978,9 +4955,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "first_seen": "2026-11-12",
       "role": "unclear",
       "has_desc": true
@@ -4997,9 +4972,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "first_seen": "2026-11-12",
       "role": "field",
       "has_desc": true
@@ -5016,9 +4989,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "first_seen": "2026-11-12",
       "role": "field",
       "has_desc": true
@@ -5029,15 +5000,13 @@
       "company": "FourthSquare",
       "title": "Oracle Cloud Unifier / Primavera P6- Project Manager",
       "location": "US",
-      "url": "https://www.adzuna.com/land/ad/5960621504?se=RNG2Vsne8RGgDrQN4m_CPg&utm_medium=api&utm_source=55569923&v=E1D7606973EF865EF8D2243B11C91F7B8139C287",
+      "url": "https://www.adzuna.com/land/ad/5960621504?se=Kkup2I_f8RG3UKJUaLg__w&utm_medium=api&utm_source=55569923&v=E1D7606973EF865EF8D2243B11C91F7B8139C287",
       "posted_date": "2026-11-10T13:35:17Z",
       "comp": null,
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "first_seen": "2026-11-12",
       "role": "systems",
       "has_desc": true
@@ -5054,10 +5023,46 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
+      "flags": [],
+      "first_seen": "2026-11-12",
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "c8715fe85c26bff1",
+      "kind": "board",
+      "company": "Innoworx Technology Services LLC",
+      "title": "Oracle Primavera Unifier Functional Consultant",
+      "location": "US",
+      "url": "https://www.adzuna.com/land/ad/5960622880?se=zhi714_f8RGDtoxXJCvQRQ&utm_medium=api&utm_source=55569923&v=9E7DCD24003F83687BDEDB53F4BC2039880943CF",
+      "posted_date": "2026-11-10T13:43:17Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
       "flags": [
         "new"
       ],
-      "first_seen": "2026-11-12",
+      "first_seen": "2026-11-13",
+      "role": "systems",
+      "has_desc": true
+    },
+    {
+      "id": "0da4f63d3dd1d5a3",
+      "kind": "board",
+      "company": "Exl Neo Technologies",
+      "title": "Oracle Unifier SME",
+      "location": "US",
+      "url": "https://www.adzuna.com/land/ad/5964787924?se=zhi714_f8RGDtoxXJCvQRQ&utm_medium=api&utm_source=55569923&v=5FB44EC6EFE1CF5E3EB59BD5C5B6FC4B4C19A48E",
+      "posted_date": "2026-11-13T12:04:18Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-11-13",
       "role": "systems",
       "has_desc": true
     },
@@ -7154,6 +7159,22 @@
       "role": "field"
     },
     {
+      "id": "5005eee5b0512c29",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Area Lead Piping Field Engineer - Undergrounds",
+      "location": "New Albany, Ohio, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=299181&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-09-16T20:41:55.126+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-13",
+      "flags": [],
+      "first_seen": "2026-09-17",
+      "role": "field"
+    },
+    {
       "id": "eee3d2074cdf7f5b",
       "kind": "direct",
       "company": "Luster National",
@@ -7847,6 +7868,22 @@
       "flags": [],
       "first_seen": "2026-10-14",
       "role": "controls"
+    },
+    {
+      "id": "4b0450c6b0c032c8",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "E&I Superintendent",
+      "location": "Lake Charles, Louisiana, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300323&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-10-13T22:11:25.308+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-13",
+      "flags": [],
+      "first_seen": "2026-10-14",
+      "role": "field"
     },
     {
       "id": "a14df7d47941dec8",
@@ -8613,6 +8650,22 @@
       "flags": [],
       "first_seen": "2026-11-03",
       "role": "systems"
+    },
+    {
+      "id": "41975aab0e4698ee",
+      "kind": "direct",
+      "company": "Deloitte",
+      "title": "US E-Consulting Services – Manager – S&T/Strategy/I&RE – Capital Projects (DBA-PWA) – FY27 – 373628– OK",
+      "location": null,
+      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Manager-Davis-Bacon-Prevailing-Wage/373628",
+      "posted_date": "Fri, 05 Jun 2026 00:00:00 +0000",
+      "comp": "range is $134,500 to $265,100",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-13",
+      "flags": [],
+      "first_seen": "2026-11-04",
+      "role": "unclear"
     },
     {
       "id": "ad283753392ce63e",
