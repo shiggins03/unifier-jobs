@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14",
+  "updated": "2026-11-15",
   "new_window_days": 7,
   "warnings": [],
   "roster": [
@@ -2838,6 +2838,34 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-11-14"
+    },
+    {
+      "company": "Innoworx Technology Services LLC",
+      "url": "https://www.adzuna.com/land/ad/5960622880?se=CHKzLRvh8RGNl561rfNY_A&utm_medium=api&utm_source=55569923&v=9E7DCD24003F83687BDEDB53F4BC2039880943CF",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-15"
+    },
+    {
+      "company": "TechTu Business Solutions Inc",
+      "url": "https://www.adzuna.com/land/ad/5954900076?se=CHKzLRvh8RGNl561rfNY_A&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-15"
+    },
+    {
+      "company": "Exl Neo Technologies",
+      "url": "https://www.adzuna.com/land/ad/5964787924?se=CHKzLRvh8RGNl561rfNY_A&utm_medium=api&utm_source=55569923&v=5FB44EC6EFE1CF5E3EB59BD5C5B6FC4B4C19A48E",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-15"
+    },
+    {
+      "company": "FourthSquare",
+      "url": "https://www.adzuna.com/land/ad/5960621504?se=zBI6Lhvh8RGNl561rfNY_A&utm_medium=api&utm_source=55569923&v=E1D7606973EF865EF8D2243B11C91F7B8139C287",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-15"
     }
   ],
   "jobs": [
@@ -3697,23 +3725,6 @@
       "has_desc": true
     },
     {
-      "id": "d6717ee516b4a3bb",
-      "kind": "board",
-      "company": "DFND Security",
-      "title": "Oracle WACS",
-      "location": "Fort Sam Houston, Bexar County",
-      "url": "https://www.adzuna.com/land/ad/5863704034?se=Mt3UmoPc8RG6aZau-BQy2Q&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
-      "posted_date": "2026-08-31T22:19:09Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-10-09",
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
       "id": "60bc7cb8e5fb2712",
       "kind": "direct",
       "company": "Turner & Townsend",
@@ -3881,23 +3892,6 @@
       "flags": [],
       "first_seen": "2026-10-16",
       "role": "field",
-      "has_desc": true
-    },
-    {
-      "id": "f90b827b235355df",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Contract Administrator",
-      "location": "Washington, District of Columbia, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5454832008",
-      "posted_date": "2026-10-15T21:24:17-04:00",
-      "comp": "Salary: $80k-$180k/year ($38-$87/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-10-16",
-      "role": "unclear",
       "has_desc": true
     },
     {
@@ -4181,7 +4175,7 @@
       "title": "Project Controls Specialist",
       "location": "Philadelphia, Pennsylvania",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Philadelphia-Pennsylvania/Project-Controls-Specialist_JR6021-1",
-      "posted_date": "Posted 25 Days Ago",
+      "posted_date": "Posted 26 Days Ago",
       "comp": "$75,656.68 - $86,464.77",
       "tier": 1,
       "status": "active",
@@ -4541,7 +4535,7 @@
       "title": "Mid-Level Integration/Software Developer",
       "location": "US-WA-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Remote/Mid-Level-Integration-Software-Developer_JR1699",
-      "posted_date": "Posted 17 Days Ago",
+      "posted_date": "Posted 18 Days Ago",
       "comp": "compensation range $120,000 - $150,000",
       "tier": 1,
       "status": "active",
@@ -4611,7 +4605,7 @@
       "title": "Senior Digital Project Manager",
       "location": "US-WA-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Remote/Senior-Digital-Project-Manager_JR1706",
-      "posted_date": "Posted 15 Days Ago",
+      "posted_date": "Posted 16 Days Ago",
       "comp": "Compensation range based on skills, education, experience and geographic location: $140,000–$180,000",
       "tier": 1,
       "status": "active",
@@ -4662,7 +4656,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "North Central Avenue, Phoenix, Arizona",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/North-Central-Avenue-Phoenix-Arizona/Senior-Project-Controls-Manager---Aviation_JR6367",
-      "posted_date": "Posted 12 Days Ago",
+      "posted_date": "Posted 13 Days Ago",
       "comp": "$162,010.86 - $185,155.27",
       "tier": 1,
       "status": "active",
@@ -4780,8 +4774,8 @@
       "company": "Luster National",
       "title": "Senior Project Manager",
       "location": "San Francisco, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5433641008",
-      "posted_date": "2026-11-06T16:38:41-05:00",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5434120008",
+      "posted_date": "2026-11-06T16:36:25-05:00",
       "comp": "Salary: $135k-$225k/year ($65-$108/hour)",
       "tier": 1,
       "status": "active",
@@ -4797,7 +4791,7 @@
       "company": "TechTu Business Solutions Inc",
       "title": "Solutions Architect  Technical PM - Oracle Primavera Unifier",
       "location": "Pleasanton, Alameda County",
-      "url": "https://www.adzuna.com/land/ad/5954900076?se=vhzGDEzg8RGDtoxXJCvQRQ&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
+      "url": "https://www.adzuna.com/land/ad/5954900076?se=CHKzLRvh8RGNl561rfNY_A&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
       "posted_date": "2026-11-05T20:05:58Z",
       "comp": null,
       "tier": 1,
@@ -4849,7 +4843,7 @@
       "title": "Senior Project Controls Manager - Aviation",
       "location": "Montgomery Street, San Francisco, California",
       "url": "https://stvinc.wd5.myworkdayjobs.com/en-US/stv/job/Montgomery-Street-San-Francisco-California/Senior-Project-Controls-Manager---Aviation_JR6368",
-      "posted_date": "Posted 5 Days Ago",
+      "posted_date": "Posted 6 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -5001,7 +4995,7 @@
       "company": "FourthSquare",
       "title": "Oracle Cloud Unifier / Primavera P6- Project Manager",
       "location": "US",
-      "url": "https://www.adzuna.com/land/ad/5960621504?se=uspmDUzg8RG2_dMaX_9hbQ&utm_medium=api&utm_source=55569923&v=E1D7606973EF865EF8D2243B11C91F7B8139C287",
+      "url": "https://www.adzuna.com/land/ad/5960621504?se=zBI6Lhvh8RGNl561rfNY_A&utm_medium=api&utm_source=55569923&v=E1D7606973EF865EF8D2243B11C91F7B8139C287",
       "posted_date": "2026-11-10T13:35:17Z",
       "comp": null,
       "tier": 1,
@@ -5035,7 +5029,7 @@
       "company": "Innoworx Technology Services LLC",
       "title": "Oracle Primavera Unifier Functional Consultant",
       "location": "US",
-      "url": "https://www.adzuna.com/land/ad/5960622880?se=vhzGDEzg8RGDtoxXJCvQRQ&utm_medium=api&utm_source=55569923&v=9E7DCD24003F83687BDEDB53F4BC2039880943CF",
+      "url": "https://www.adzuna.com/land/ad/5960622880?se=CHKzLRvh8RGNl561rfNY_A&utm_medium=api&utm_source=55569923&v=9E7DCD24003F83687BDEDB53F4BC2039880943CF",
       "posted_date": "2026-11-10T13:43:17Z",
       "comp": null,
       "tier": 1,
@@ -5052,7 +5046,7 @@
       "company": "Exl Neo Technologies",
       "title": "Oracle Unifier SME",
       "location": "US",
-      "url": "https://www.adzuna.com/land/ad/5964787924?se=vhzGDEzg8RGDtoxXJCvQRQ&utm_medium=api&utm_source=55569923&v=5FB44EC6EFE1CF5E3EB59BD5C5B6FC4B4C19A48E",
+      "url": "https://www.adzuna.com/land/ad/5964787924?se=CHKzLRvh8RGNl561rfNY_A&utm_medium=api&utm_source=55569923&v=5FB44EC6EFE1CF5E3EB59BD5C5B6FC4B4C19A48E",
       "posted_date": "2026-11-13T12:04:18Z",
       "comp": null,
       "tier": 1,
@@ -7768,6 +7762,22 @@
       "role": "systems"
     },
     {
+      "id": "d6717ee516b4a3bb",
+      "kind": "board",
+      "company": "DFND Security",
+      "title": "Oracle WACS",
+      "location": "Fort Sam Houston, Bexar County",
+      "url": "https://www.adzuna.com/land/ad/5863704034?se=Mt3UmoPc8RG6aZau-BQy2Q&utm_medium=api&utm_source=55569923&v=4D047AA989453FFD8B2D454B645D5E498F0F496D",
+      "posted_date": "2026-08-31T22:19:09Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-15",
+      "flags": [],
+      "first_seen": "2026-10-09",
+      "role": "unclear"
+    },
+    {
       "id": "b5fcc0496044fbbd",
       "kind": "direct",
       "company": "Meta",
@@ -7992,6 +8002,22 @@
       "gone_date": "2026-11-07",
       "flags": [],
       "first_seen": "2026-10-15",
+      "role": "unclear"
+    },
+    {
+      "id": "f90b827b235355df",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Contract Administrator",
+      "location": "Washington, District of Columbia, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5454832008",
+      "posted_date": "2026-10-15T21:24:17-04:00",
+      "comp": "Salary: $80k-$180k/year ($38-$87/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-15",
+      "flags": [],
+      "first_seen": "2026-10-16",
       "role": "unclear"
     },
     {
