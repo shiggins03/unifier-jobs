@@ -1,7 +1,23 @@
 {
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "new_window_days": 7,
-  "warnings": [],
+  "warnings": [
+    "workday:JLL: fetch failing (3 runs)",
+    "workday:Accenture: fetch failing (3 runs)",
+    "workday:Mass General Brigham: fetch failing (3 runs)",
+    "workday:STV: fetch failing (3 runs)",
+    "workday:NVIDIA: fetch failing (3 runs)",
+    "workday:Intel: fetch failing (3 runs)",
+    "workday:Pfizer: fetch failing (3 runs)",
+    "workday:PwC: fetch failing (3 runs)",
+    "workday:Johnson & Johnson: fetch failing (3 runs)",
+    "workday:Moss: fetch failing (3 runs)",
+    "workday:Duke Energy: fetch failing (3 runs)",
+    "workday:AT&T: fetch failing (3 runs)",
+    "workday:Cleveland Clinic: fetch failing (3 runs)",
+    "workday:Booz Allen Hamilton: fetch failing (3 runs)",
+    "workday:AtkinsRéalis: fetch failing (3 runs)"
+  ],
   "roster": [
     {
       "name": "Meta",
@@ -2901,6 +2917,41 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-11-17"
+    },
+    {
+      "company": "Innoworx Technology Services LLC",
+      "url": "https://www.adzuna.com/land/ad/5960622880?se=sMhKgYTj8RG2TJ-CQSJ9NQ&utm_medium=api&utm_source=55569923&v=9E7DCD24003F83687BDEDB53F4BC2039880943CF",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-18"
+    },
+    {
+      "company": "TechTu Business Solutions Inc",
+      "url": "https://www.adzuna.com/land/ad/5954900076?se=sMhKgYTj8RG2TJ-CQSJ9NQ&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-18"
+    },
+    {
+      "company": "Digital Links Inc",
+      "url": "https://www.adzuna.com/details/5969734253?utm_medium=api&utm_source=55569923",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-18"
+    },
+    {
+      "company": "Metropolitan Transportation Authority",
+      "url": "https://www.adzuna.com/land/ad/5936496971?se=sMhKgYTj8RG2TJ-CQSJ9NQ&utm_medium=api&utm_source=55569923&v=71426BFC31F42817863F7D2C6512DA38C1CE82E4",
+      "note": "roster company not yet fingerprinted — verify ATS endpoint",
+      "source": "adzuna",
+      "first_seen": "2026-11-18"
+    },
+    {
+      "company": "FourthSquare",
+      "url": "https://www.adzuna.com/land/ad/5960621504?se=IhDwgYTj8RGWo_FM3TPZ7Q&utm_medium=api&utm_source=55569923&v=E1D7606973EF865EF8D2243B11C91F7B8139C287",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-18"
     }
   ],
   "jobs": [
@@ -3005,8 +3056,8 @@
       "company": "Bechtel",
       "title": "CIF Field Engineer",
       "location": "Lake Charles, Louisiana, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300979&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-11-05T20:07:27.333+0000",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=301442&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-11-18T19:01:46.569+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -3189,7 +3240,9 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [],
+      "flags": [
+        "long-posted"
+      ],
       "first_seen": "2026-08-20",
       "role": "systems",
       "has_desc": true
@@ -3226,6 +3279,23 @@
       "flags": [],
       "first_seen": "2026-09-01",
       "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "7502be7141f16ad9",
+      "kind": "direct",
+      "company": "Deloitte",
+      "title": "US E-Consulting Services – Sr. Consultant – S&T/Strategy/I&RE – Capital Projects (Procore) – 354008 – OK",
+      "location": null,
+      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Technical-Senior-Consultant-Procore-Implementation/354008",
+      "posted_date": "Fri, 29 May 2026 00:00:00 +0000",
+      "comp": "range is $110,700 to $218,300",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "first_seen": "2026-09-01",
+      "role": "systems",
       "has_desc": true
     },
     {
@@ -3338,8 +3408,8 @@
       "company": "Luster National",
       "title": "Project Manager",
       "location": "New York, New York, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453503008",
-      "posted_date": "2026-10-16T18:15:50-04:00",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5484138008",
+      "posted_date": "2026-11-17T17:16:55-05:00",
       "comp": "Salary: $115k-$210k/year ($55-$101/hour)",
       "tier": 1,
       "status": "active",
@@ -3379,25 +3449,6 @@
       "status": "active",
       "gone_date": null,
       "flags": [],
-      "first_seen": "2026-09-10",
-      "role": "field",
-      "has_desc": true
-    },
-    {
-      "id": "c96fbd6eb2cddf8d",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Resident Engineer",
-      "location": "Fresno, California, United States; Los Angeles, California, United States; Sacramento, California, United States; San Francisco, California, United States; Seattle, Washington, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453517008",
-      "posted_date": "2026-10-16T18:23:23-04:00",
-      "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [
-        "reposted"
-      ],
       "first_seen": "2026-09-10",
       "role": "field",
       "has_desc": true
@@ -3918,9 +3969,9 @@
       "company": "Luster National",
       "title": "Assistant Project Manager",
       "location": "Washington, District of Columbia, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5454731008",
-      "posted_date": "2026-10-15T21:25:47-04:00",
-      "comp": "Salary: $95k-$170k/year ($46-$82/hour)",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5482054008",
+      "posted_date": "2026-11-18T12:06:35-05:00",
+      "comp": "Salary: $148k-$185k/year ($71-$88/hour)",
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -3947,14 +3998,31 @@
       "has_desc": true
     },
     {
+      "id": "f90b827b235355df",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Contract Administrator",
+      "location": "Washington, District of Columbia, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5481730008",
+      "posted_date": "2026-11-18T12:08:36-05:00",
+      "comp": "Salary: $120k-$180k/year ($57-$86/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "first_seen": "2026-10-16",
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
       "id": "b58f9317c77ad8d1",
       "kind": "direct",
       "company": "Luster National",
       "title": "Office Engineer",
       "location": "Washington, District of Columbia, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5454805008",
-      "posted_date": "2026-10-15T21:24:46-04:00",
-      "comp": "pay applications and progress payments on a program valued at $1B+",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5481973008",
+      "posted_date": "2026-11-18T12:09:12-05:00",
+      "comp": "Salary: $120k-$180k/year ($57-$86/hour)",
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -4107,8 +4175,8 @@
       "company": "Luster National",
       "title": "Reporting Specialist",
       "location": "New York, New York, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453513008",
-      "posted_date": "2026-10-16T18:20:18-04:00",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5484149008",
+      "posted_date": "2026-11-17T17:15:20-05:00",
       "comp": "Salary: $80k-$145k/year ($38-$70/hour)",
       "tier": 1,
       "status": "active",
@@ -4141,8 +4209,8 @@
       "company": "Luster National",
       "title": "Resident Engineer",
       "location": "New York, New York, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453530008",
-      "posted_date": "2026-10-16T18:24:36-04:00",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5484163008",
+      "posted_date": "2026-11-17T17:12:29-05:00",
       "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
       "tier": 1,
       "status": "active",
@@ -4442,8 +4510,8 @@
       "company": "Luster National",
       "title": "Office Engineer",
       "location": "Fresno, California, United States; Los Angeles, California, United States; Sacramento, California, United States; San Francisco, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453478008",
-      "posted_date": "2026-10-26T17:51:06-04:00",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5484098008",
+      "posted_date": "2026-11-17T17:18:48-05:00",
       "comp": "pay applications and progress payments on a program valued at $1B+",
       "tier": 1,
       "status": "active",
@@ -4480,8 +4548,8 @@
       "company": "Luster National",
       "title": "Project Manager",
       "location": "Fresno, California, United States; Los Angeles, California, United States; Sacramento, California, United States; San Francisco, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453499008",
-      "posted_date": "2026-10-16T18:14:43-04:00",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5484135008",
+      "posted_date": "2026-11-17T17:17:36-05:00",
       "comp": "Salary: $115k-$210k/year ($55-$101/hour)",
       "tier": 1,
       "status": "active",
@@ -4499,8 +4567,8 @@
       "company": "Luster National",
       "title": "Reporting Specialist",
       "location": "Fresno, California, United States; Los Angeles, California, United States; Sacramento, California, United States; San Francisco, California, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453505008",
-      "posted_date": "2026-10-16T18:19:14-04:00",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5484145008",
+      "posted_date": "2026-11-17T17:15:56-05:00",
       "comp": "Salary: $80k-$145k/year ($38-$70/hour)",
       "tier": 1,
       "status": "active",
@@ -4510,6 +4578,23 @@
       ],
       "first_seen": "2026-10-27",
       "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "abf0c5b9a2666688",
+      "kind": "board",
+      "company": "Metropolitan Transportation Authority",
+      "title": "Unifier-Advanced Software Engineer",
+      "location": "New York City, New York",
+      "url": "https://www.adzuna.com/land/ad/5936496971?se=sMhKgYTj8RG2TJ-CQSJ9NQ&utm_medium=api&utm_source=55569923&v=71426BFC31F42817863F7D2C6512DA38C1CE82E4",
+      "posted_date": "2026-10-21T04:51:20Z",
+      "comp": "$140,828 - $166,223",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [],
+      "first_seen": "2026-10-27",
+      "role": "systems",
       "has_desc": true
     },
     {
@@ -4569,8 +4654,8 @@
       "company": "Luster National",
       "title": "Office Engineer",
       "location": "Baltimore, Maryland, United States; New York, New York, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453486008",
-      "posted_date": "2026-10-27T19:35:19-04:00",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5484131008",
+      "posted_date": "2026-11-17T17:18:10-05:00",
       "comp": "pay applications and progress payments on a program valued at $1B+",
       "tier": 1,
       "status": "active",
@@ -4587,32 +4672,13 @@
       "title": "Mid-Level Integration/Software Developer",
       "location": "US-WA-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Remote/Mid-Level-Integration-Software-Developer_JR1699",
-      "posted_date": "Posted 20 Days Ago",
+      "posted_date": "Posted 21 Days Ago",
       "comp": "compensation range $120,000 - $150,000",
       "tier": 1,
       "status": "active",
       "gone_date": null,
       "flags": [],
       "first_seen": "2026-10-28",
-      "role": "systems",
-      "has_desc": true
-    },
-    {
-      "id": "9a8e46135498bdd5",
-      "kind": "direct",
-      "company": "Oracle",
-      "title": "Oracle Unifier Solution Architect (Hands-On Configuration Lead)",
-      "location": "United States",
-      "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/job/349082",
-      "posted_date": "2026-10-28",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [
-        "title-match"
-      ],
-      "first_seen": "2026-10-29",
       "role": "systems",
       "has_desc": true
     },
@@ -4657,7 +4723,7 @@
       "title": "Senior Digital Project Manager",
       "location": "US-WA-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Remote/Senior-Digital-Project-Manager_JR1706",
-      "posted_date": "Posted 16 Days Ago",
+      "posted_date": "Posted 19 Days Ago",
       "comp": "Compensation range based on skills, education, experience and geographic location: $140,000–$180,000",
       "tier": 1,
       "status": "active",
@@ -4826,7 +4892,7 @@
       "company": "TechTu Business Solutions Inc",
       "title": "Solutions Architect  Technical PM - Oracle Primavera Unifier",
       "location": "Pleasanton, Alameda County",
-      "url": "https://www.adzuna.com/land/ad/5954900076?se=TOkuf77i8RGAhJv8AEGtZw&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
+      "url": "https://www.adzuna.com/land/ad/5954900076?se=sMhKgYTj8RG2TJ-CQSJ9NQ&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
       "posted_date": "2026-11-05T20:05:58Z",
       "comp": null,
       "tier": 1,
@@ -4923,23 +4989,6 @@
       "has_desc": true
     },
     {
-      "id": "00b57bbc5c52eafd",
-      "kind": "board",
-      "company": "Innoworx Technology Services LLC",
-      "title": "Oracle functional consultant",
-      "location": "US",
-      "url": "https://www.adzuna.com/land/ad/5959519847?se=sgHRewXe8RGYFNuPuswjLA&utm_medium=api&utm_source=55569923&v=EF883A80C0B42598B7E564DAE7D97D566C196E67",
-      "posted_date": "2026-11-09T15:29:20Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-11-09",
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
       "id": "66f59401da42e6a0",
       "kind": "board",
       "company": "Digital Links Inc",
@@ -4954,23 +5003,6 @@
       "flags": [],
       "first_seen": "2026-11-10",
       "role": "systems",
-      "has_desc": true
-    },
-    {
-      "id": "f174e6826147f8c9",
-      "kind": "board",
-      "company": "Eversource Energy",
-      "title": "Senior Project Controls & Planning Manager",
-      "location": "Blue Hills, Hartford County",
-      "url": "https://www.adzuna.com/land/ad/5938764037?se=sgHRewXe8RGYFNuPuswjLA&utm_medium=api&utm_source=55569923&v=113F62A58C80AC617ABC4D30FF9284AB3990DD5C",
-      "posted_date": "2026-10-22T23:38:55Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-11-10",
-      "role": "controls",
       "has_desc": true
     },
     {
@@ -5030,7 +5062,7 @@
       "company": "FourthSquare",
       "title": "Oracle Cloud Unifier / Primavera P6- Project Manager",
       "location": "US",
-      "url": "https://www.adzuna.com/land/ad/5960621504?se=qKE6Lv_h8RGkFs9JnLiCSw&utm_medium=api&utm_source=55569923&v=E1D7606973EF865EF8D2243B11C91F7B8139C287",
+      "url": "https://www.adzuna.com/land/ad/5960621504?se=IhDwgYTj8RGWo_FM3TPZ7Q&utm_medium=api&utm_source=55569923&v=E1D7606973EF865EF8D2243B11C91F7B8139C287",
       "posted_date": "2026-11-10T13:35:17Z",
       "comp": null,
       "tier": 1,
@@ -5064,7 +5096,7 @@
       "company": "Innoworx Technology Services LLC",
       "title": "Oracle Primavera Unifier Functional Consultant",
       "location": "US",
-      "url": "https://www.adzuna.com/land/ad/5960622880?se=TOkuf77i8RGAhJv8AEGtZw&utm_medium=api&utm_source=55569923&v=9E7DCD24003F83687BDEDB53F4BC2039880943CF",
+      "url": "https://www.adzuna.com/land/ad/5960622880?se=sMhKgYTj8RG2TJ-CQSJ9NQ&utm_medium=api&utm_source=55569923&v=9E7DCD24003F83687BDEDB53F4BC2039880943CF",
       "posted_date": "2026-11-10T13:43:17Z",
       "comp": null,
       "tier": 1,
@@ -5138,10 +5170,104 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
+      "flags": [],
+      "first_seen": "2026-11-17",
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "63e6c4f2f52641a5",
+      "kind": "direct",
+      "company": "Eli Lilly",
+      "title": "Senior Program C&Q Lead",
+      "location": "Fogelsville, Pennsylvania, United States of America",
+      "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Lehigh-Valley-PA/Senior-Program-C-Q-Lead_R-115686-1/apply",
+      "posted_date": "2026-11-18T10:28:13.305+0000",
+      "comp": "$163,500 - $239,800",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
       "flags": [
         "new"
       ],
-      "first_seen": "2026-11-17",
+      "first_seen": "2026-11-18",
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "90cb67385600d226",
+      "kind": "direct",
+      "company": "Deloitte",
+      "title": "US E-Consulting Services – Sr. Consultant – S&T/Strategy/I&RE – Capital Projects (Project Delivery) – 375807– OK",
+      "location": null,
+      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Senior-Consultant-Project-Delivery/375807",
+      "posted_date": "Tue, 17 Nov 2026 00:00:00 +0000",
+      "comp": "range is $131,000 to $218,300",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-11-18",
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "d48626939bb8e75c",
+      "kind": "direct",
+      "company": "Deloitte",
+      "title": "US E-Consulting Services – Sr. Consultant – S&T/Strategy/I&RE – Capital Projects (Data Centers) – 375824 – OK",
+      "location": null,
+      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Senior-Consultant-Data-Centers/375824",
+      "posted_date": "Tue, 17 Nov 2026 00:00:00 +0000",
+      "comp": "range is $110,700 to $218,300",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-11-18",
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "999549214d3a4267",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Resident Engineer",
+      "location": "Fresno, California, United States; Los Angeles, California, United States; Sacramento, California, United States; San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5484153008",
+      "posted_date": "2026-11-17T17:14:11-05:00",
+      "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new",
+        "reposted"
+      ],
+      "first_seen": "2026-11-18",
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "48ad5ce0841e19fb",
+      "kind": "board",
+      "company": "Digital Links Inc",
+      "title": "Oracle Data Migration Consultant",
+      "location": "Ladysmith, Caroline County",
+      "url": "https://www.adzuna.com/details/5969734253?utm_medium=api&utm_source=55569923",
+      "posted_date": "2026-11-17T22:55:52Z",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-11-18",
       "role": "unclear",
       "has_desc": true
     },
@@ -6772,22 +6898,6 @@
       "role": "systems"
     },
     {
-      "id": "7502be7141f16ad9",
-      "kind": "direct",
-      "company": "Deloitte",
-      "title": "US E-Consulting Services – Sr. Consultant – S&T/Strategy/I&RE – Capital Projects (Procore) – 354008 – OK",
-      "location": null,
-      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Technical-Senior-Consultant-Procore-Implementation/354008",
-      "posted_date": "Fri, 29 May 2026 00:00:00 +0000",
-      "comp": "range is $110,700 to $218,300",
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-11-06",
-      "flags": [],
-      "first_seen": "2026-09-01",
-      "role": "systems"
-    },
-    {
       "id": "6e695f7c7a2ba0e0",
       "kind": "direct",
       "company": "Deloitte",
@@ -7154,6 +7264,24 @@
       "flags": [],
       "first_seen": "2026-09-10",
       "role": "unclear"
+    },
+    {
+      "id": "c96fbd6eb2cddf8d",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Resident Engineer",
+      "location": "Fresno, California, United States; Los Angeles, California, United States; Sacramento, California, United States; San Francisco, California, United States; Seattle, Washington, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5453517008",
+      "posted_date": "2026-10-16T18:23:23-04:00",
+      "comp": "Salary: $100k-$180k/year ($48-$87/hour)",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-18",
+      "flags": [
+        "reposted"
+      ],
+      "first_seen": "2026-09-10",
+      "role": "field"
     },
     {
       "id": "609e6de7658a2eb9",
@@ -8077,22 +8205,6 @@
       "role": "unclear"
     },
     {
-      "id": "f90b827b235355df",
-      "kind": "direct",
-      "company": "Luster National",
-      "title": "Contract Administrator",
-      "location": "Washington, District of Columbia, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5454832008",
-      "posted_date": "2026-10-15T21:24:17-04:00",
-      "comp": "Salary: $80k-$180k/year ($38-$87/hour)",
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-11-15",
-      "flags": [],
-      "first_seen": "2026-10-16",
-      "role": "unclear"
-    },
-    {
       "id": "8f6318d4fc87065a",
       "kind": "direct",
       "company": "Luster National",
@@ -8697,22 +8809,6 @@
       "role": "systems"
     },
     {
-      "id": "abf0c5b9a2666688",
-      "kind": "board",
-      "company": "Metropolitan Transportation Authority",
-      "title": "Unifier-Advanced Software Engineer",
-      "location": "New York City, New York",
-      "url": "https://www.adzuna.com/land/ad/5936496971?se=MAW_sCHS8RGnNKlqPo-d_w&utm_medium=api&utm_source=55569923&v=71426BFC31F42817863F7D2C6512DA38C1CE82E4",
-      "posted_date": "2026-10-21T04:51:20Z",
-      "comp": "$140,828 - $166,223",
-      "tier": 1,
-      "status": "gone",
-      "gone_date": "2026-11-04",
-      "flags": [],
-      "first_seen": "2026-10-27",
-      "role": "systems"
-    },
-    {
       "id": "e03bc4ddb6070a8b",
       "kind": "direct",
       "company": "AtkinsRéalis",
@@ -8745,6 +8841,24 @@
       "flags": [],
       "first_seen": "2026-10-28",
       "role": "unclear"
+    },
+    {
+      "id": "9a8e46135498bdd5",
+      "kind": "direct",
+      "company": "Oracle",
+      "title": "Oracle Unifier Solution Architect (Hands-On Configuration Lead)",
+      "location": "United States",
+      "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/job/349082",
+      "posted_date": "2026-10-28",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-18",
+      "flags": [
+        "title-match"
+      ],
+      "first_seen": "2026-10-29",
+      "role": "systems"
     },
     {
       "id": "6a79befbd017cd91",
@@ -8827,6 +8941,22 @@
       "role": "controls"
     },
     {
+      "id": "00b57bbc5c52eafd",
+      "kind": "board",
+      "company": "Innoworx Technology Services LLC",
+      "title": "Oracle functional consultant",
+      "location": "US",
+      "url": "https://www.adzuna.com/land/ad/5959519847?se=sgHRewXe8RGYFNuPuswjLA&utm_medium=api&utm_source=55569923&v=EF883A80C0B42598B7E564DAE7D97D566C196E67",
+      "posted_date": "2026-11-09T15:29:20Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-18",
+      "flags": [],
+      "first_seen": "2026-11-09",
+      "role": "unclear"
+    },
+    {
       "id": "20d723c82c63edd0",
       "kind": "direct",
       "company": "AtkinsRéalis",
@@ -8841,6 +8971,22 @@
       "flags": [],
       "first_seen": "2026-11-10",
       "role": "unclear"
+    },
+    {
+      "id": "f174e6826147f8c9",
+      "kind": "board",
+      "company": "Eversource Energy",
+      "title": "Senior Project Controls & Planning Manager",
+      "location": "Blue Hills, Hartford County",
+      "url": "https://www.adzuna.com/land/ad/5938764037?se=sgHRewXe8RGYFNuPuswjLA&utm_medium=api&utm_source=55569923&v=113F62A58C80AC617ABC4D30FF9284AB3990DD5C",
+      "posted_date": "2026-10-22T23:38:55Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-18",
+      "flags": [],
+      "first_seen": "2026-11-10",
+      "role": "controls"
     },
     {
       "id": "5d22777392ce613f",
