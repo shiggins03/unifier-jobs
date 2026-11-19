@@ -86,7 +86,29 @@ def sf_csb(base, label):
 
 
 def main():
-    """Empty between investigations — see CLAUDE.md."""
+    """2026-11-19 round 2: after pacing, 11/17 Workday tenants still 429 on
+    their FIRST request. Does a throttled tenant recover with patience
+    (short rate window -> fixable by backoff) or stay blocked (shared-IP
+    reputation -> not fixable from the runner)?"""
+    import time
+    section("workday 429 recovery")
+    body = {"appliedFacets": {}, "limit": 1, "offset": 0, "searchText": "unifier"}
+    for host, ten, site in [("pfizer.wd1.myworkdayjobs.com", "pfizer", "PfizerCareers"),
+                            ("intel.wd1.myworkdayjobs.com", "intel", "External")]:
+        u = f"https://{host}/wday/cxs/{ten}/{site}/jobs"
+        waited = 0
+        for wait in (0, 15, 30, 60):
+            time.sleep(wait)
+            waited += wait
+            def go(u=u, waited=waited):
+                r = requests.post(u, json=body, headers=ADAPTER_UA, timeout=T)
+                head = re.search(r"<title>(.*?)</title>", r.text, re.S)
+                err = re.search(r"(Error\s*\d{3,4}[^<]{0,60})", r.text)
+                print(f"  {ten:8} t+{waited:3}s HTTP {r.status_code} "
+                      f"retry-after={r.headers.get('Retry-After')} "
+                      f"title={head.group(1).strip()[:50] if head else None!r} "
+                      f"err={err.group(1).strip() if err else None!r}")
+            show(ten, go)
 
 
 if __name__ == "__main__":
