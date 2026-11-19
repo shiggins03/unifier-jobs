@@ -10,12 +10,53 @@ import html
 import json
 import os
 import re
+import time
 
 import requests
 from bs4 import BeautifulSoup
 
 UA = {"User-Agent": "unifier-jobs-aggregator (personal job search; contact via repo)"}
 TIMEOUT = 30
+
+# Postings already in the store, keyed by URL: {url: {"description", "location"}}.
+# main.run() fills this before the direct monitors so adapters can skip
+# re-downloading detail pages they have already read. Workday is the reason:
+# see _wd_request.
+KNOWN = {}
+
+# Workday URLs read recently whose description did NOT mention the keyword.
+# Workday's search is fuzzy ("unifier" matches "Unified Memory", CUCM...), so
+# big tenants return ~20 irrelevant postings daily; re-reading them was ~150
+# of the ~170 requests per run. main.run() loads only entries younger than
+# its recheck window, so an edited posting is re-read within a week.
+CHECKED = set()
+
+# Workday's *.myworkdayjobs.com sits behind Cloudflare, which began answering
+# GitHub Actions runners with HTTP 429 around 2026-11-16 — 15 of 17 tenants
+# failed 3 runs straight while every one answered 200 from a residential IP.
+# Not a hard block (one tenant went 200 then 429 on consecutive requests); it
+# is rate-limiting of shared datacenter IPs, made worse by our own burst of
+# ~370 requests per run, nearly all re-fetching descriptions we already had.
+# So: reuse known descriptions, pace requests, and honour Retry-After once.
+# Deliberately polite rather than evasive — no proxies, no UA games.
+WORKDAY_PAUSE = 1.5      # seconds before each request to the shared zone
+WORKDAY_MAX_WAIT = 30    # cap on an honoured Retry-After
+
+
+def _wd_request(method, url, **kw):
+    """One paced request to Workday, with a single polite retry on 429."""
+    r = None
+    for attempt in range(2):
+        time.sleep(WORKDAY_PAUSE)
+        r = requests.request(method, url, headers=UA, timeout=TIMEOUT, **kw)
+        if r.status_code != 429 or attempt:
+            return r
+        try:
+            wait = min(float(r.headers.get("Retry-After", "")), WORKDAY_MAX_WAIT)
+        except ValueError:
+            wait = 10
+        time.sleep(wait)
+    return r
 
 
 def _clean_html(fragment):
@@ -29,16 +70,16 @@ def fetch_workday(co, query):
     host, tenant, site = co["workday_host"], co["workday_tenant"], co["workday_site"]
     url = f"https://{host}/wday/cxs/{tenant}/{site}/jobs"
     try:
-        r = requests.post(url, json={"appliedFacets": {}, "limit": 20, "offset": 0,
-                                     "searchText": query}, headers=UA, timeout=TIMEOUT)
+        r = _wd_request("POST", url, json={"appliedFacets": {}, "limit": 20,
+                                           "offset": 0, "searchText": query})
         r.raise_for_status()
         postings = r.json().get("jobPostings", [])
     except Exception:
         return [], False, None
     inventory = None
     try:
-        inv = requests.post(url, json={"appliedFacets": {}, "limit": 1, "offset": 0,
-                                       "searchText": ""}, headers=UA, timeout=TIMEOUT)
+        inv = _wd_request("POST", url, json={"appliedFacets": {}, "limit": 1,
+                                             "offset": 0, "searchText": ""})
         if inv.ok:
             inventory = inv.json().get("total")
     except Exception:
@@ -48,10 +89,25 @@ def fetch_workday(co, query):
         path = p.get("externalPath")
         if not path:
             continue
+        job_url = f"https://{host}/en-US/{site}{path}"
+        if job_url in CHECKED:      # read recently; didn't mention the keyword
+            continue
+        known = KNOWN.get(job_url)
+        if known and known.get("description"):
+            # Already read this posting. Reuse its stored location as well as
+            # its description: the id hashes company|title|location, and the
+            # search's locationsText ("2 Locations") differs from the detail
+            # page's real city, so swapping them would mint a duplicate.
+            out.append({
+                "company": co["name"], "title": p.get("title"),
+                "location": known.get("location") or p.get("locationsText"),
+                "url": job_url, "posted_date": p.get("postedOn"),
+                "description": known["description"],
+            })
+            continue
         detail, posted, desc = None, p.get("postedOn"), None
         try:
-            d = requests.get(f"https://{host}/wday/cxs/{tenant}/{site}{path}",
-                             headers=UA, timeout=TIMEOUT)
+            d = _wd_request("GET", f"https://{host}/wday/cxs/{tenant}/{site}{path}")
             if d.ok:
                 detail = d.json().get("jobPostingInfo", {})
         except Exception:
@@ -62,8 +118,7 @@ def fetch_workday(co, query):
         out.append({
             "company": co["name"], "title": p.get("title"),
             "location": (detail or {}).get("location") or p.get("locationsText"),
-            "url": f"https://{host}/en-US/{site}{path}",
-            "posted_date": posted, "description": desc,
+            "url": job_url, "posted_date": posted, "description": desc,
         })
     return out, True, inventory
 

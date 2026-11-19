@@ -16,6 +16,9 @@ BOARD_MAX_AGE_DAYS = 90
 GONE_AFTER_MISSES_DIRECT = 2
 GONE_AFTER_MISSES_BOARD = 7
 LONG_POSTED_DAYS = 90
+# Workday negatives cache (see sources.CHECKED): re-read after this many days.
+WD_CHECKED = models.DATA / "workday_checked.json"
+WD_RECHECK_DAYS = 7
 
 
 def load_yaml(name):
@@ -141,6 +144,26 @@ def run():
     seen_this_run = {}  # source name -> set of job ids seen
     sources_ok = set()
 
+    # Let adapters skip re-reading postings we already hold (see sources.KNOWN).
+    sources.KNOWN = {j["url"]: {"description": j.get("description"),
+                                "location": j.get("location")}
+                     for j in store.values() if j.get("url") and j.get("description")}
+    # ...and Workday postings recently read and found not to mention the
+    # keyword (see sources.CHECKED). Entries past the window are dropped, so
+    # every posting is re-read at least weekly in case it was edited.
+    wd_checked = {u: d for u, d in models.load_json(WD_CHECKED, {}).items()
+                  if (parse_date(d) and
+                      (dt.date.today() - parse_date(d)).days < WD_RECHECK_DAYS)}
+    sources.CHECKED = set(wd_checked)
+
+    def remember_wd_negative(co, r):
+        """Cache a Workday posting as not-for-this-board — ONLY when its
+        description really loaded. A throttled (429) detail fetch also lands
+        here with no description; caching that as irrelevant would hide a real
+        job for a week."""
+        if co["ats"] == "workday" and r.get("description") and r.get("url"):
+            wd_checked[r["url"]] = today
+
     # ---- direct monitors ----
     for co in companies:
         if not co.get("enabled"):
@@ -159,9 +182,14 @@ def run():
                 listings += 1
                 continue
             if is_non_us(r.get("location")):
+                # Foreign postings are by far the bulk of Workday's re-reads
+                # (Israel, China, India, Philippines...) and can never reach a
+                # US-only board, even when they do mention Unifier.
+                remember_wd_negative(co, r)
                 continue
             tier = keyword_tier(r.get("title"), r.get("description"), kw)
             if tier is None:
+                remember_wd_negative(co, r)
                 if r.get("search_matched"):
                     add_triage(r["company"], r["url"],
                                f"employer's own search matched '{query}' but posting "
@@ -345,6 +373,7 @@ def run():
     health["_warnings"] = warnings
 
     models.save_jobs(store)
+    models.save_json(WD_CHECKED, wd_checked)
     models.save_json(models.TRIAGE, triage)
     models.save_json(models.HEALTH, health)
     # Artifact feed: MCP connector replies have a size ceiling (large files

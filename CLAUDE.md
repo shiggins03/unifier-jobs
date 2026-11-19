@@ -236,7 +236,34 @@ Actions log, iterate. `run_adapter()` exercises a real adapter end-to-end
 before trusting it in the daily run. Keep `main()` empty between
 investigations.
 
-## Current state (update this section when you change it) — as of 2026-11-11
+## Current state (update this section when you change it) — as of 2026-11-19
+
+- **Workday is rate-limited on the GitHub runner — HTTP 429 from Cloudflare.**
+  From ~2026-11-16, 15 of 17 Workday monitors hit `fetch failing (3 runs)`.
+  Probe round 2026-11-19: every tenant answers 200 JSON from a residential
+  IP with either UA, but the runner gets Cloudflare 429s — intermittently (AT&T
+  went 200 then 429 on consecutive requests; "healthy" Micron got 429 too), so
+  it is rate-limiting of shared datacenter IPs, not a block and not headers.
+  Fix is to be a smaller, politer client — never evasive (no proxies, no UA
+  spoofing):
+  - `_wd_request`: 1.5s pause before every Workday request, one retry on 429
+    honouring Retry-After (capped 30s).
+  - `sources.KNOWN`: postings already stored reuse their description AND
+    stored location (the id hashes location; search gives "2 Locations" where
+    the detail page gives a city, so swapping them mints duplicates).
+  - `sources.CHECKED` / `data/workday_checked.json`: postings read in the last
+    7 days that were foreign or didn't mention the keyword are skipped. Only
+    recorded when the description actually loaded — a 429'd detail fetch also
+    yields no tier, and caching that would hide a real job for a week.
+    FOREIGN postings were the bulk of the waste (Israel/China/India/
+    Philippines…), dropped by the US filter before any cache saw them.
+  - Measured: 162 → 36 Workday requests per run (warm cache); 0 qualifying US
+    postings cached as negatives. Cold first run is still ~162, paced.
+  - If 429s persist at ~36 paced requests, the cause is IP reputation outside
+    our control; the free fallback is running the scrape from a residential
+    machine, at the cost of depending on it being on.
+
+## Previous state — as of 2026-11-11
 
 - **Edited postings no longer leave a phantom duplicate** (`_edited_postings`
   in main.py). Ids hash company|title|location, so a retitled or relocated
