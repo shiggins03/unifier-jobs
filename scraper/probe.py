@@ -86,7 +86,29 @@ def sf_csb(base, label):
 
 
 def main():
-    """Empty between investigations — see CLAUDE.md."""
+    """2026-11-19: 15 of 17 Workday monitors fail on the runner; all answer
+    200 JSON from a residential IP with either UA. What does the runner get?"""
+    section("workday from the runner")
+    body = {"appliedFacets": {}, "limit": 1, "offset": 0, "searchText": "unifier"}
+    targets = [("jll.wd1.myworkdayjobs.com", "jll", "jllcareers", "FAILING"),
+               ("att.wd1.myworkdayjobs.com", "att", "ATTGeneral", "FAILING"),
+               ("micron.wd1.myworkdayjobs.com", "micron", "External", "passing"),
+               ("consertus.wd501.myworkdayjobs.com", "consertus", "consertuscareers", "passing")]
+    for host, ten, site, state in targets:
+        u = f"https://{host}/wday/cxs/{ten}/{site}/jobs"
+        for label, h in (("adapter", ADAPTER_UA),
+                         ("browser+json", {**BROWSER_UA,
+                                           "Accept": "application/json",
+                                           "Content-Type": "application/json"})):
+            def go(u=u, h=h, label=label):
+                r = requests.post(u, json=body, headers=h, timeout=T)
+                keep = {k: v for k, v in r.headers.items()
+                        if k.lower() in ("server", "content-type", "cf-ray",
+                                         "x-akamai-transformed", "akamai-grn",
+                                         "retry-after", "x-cache", "via")}
+                print(f"  [{state}] {ten:10} {label:12} HTTP {r.status_code} {keep}")
+                print(f"      body: {r.text[:240]!r}")
+            show(f"{ten}/{label}", go)
 
 
 if __name__ == "__main__":
