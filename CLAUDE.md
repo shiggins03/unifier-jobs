@@ -259,9 +259,20 @@ investigations.
     Philippines…), dropped by the US filter before any cache saw them.
   - Measured: 162 → 36 Workday requests per run (warm cache); 0 qualifying US
     postings cached as negatives. Cold first run is still ~162, paced.
-  - If 429s persist at ~36 paced requests, the cause is IP reputation outside
-    our control; the free fallback is running the scrape from a residential
-    machine, at the cost of depending on it being on.
+  - CONFIRMED IP-level, not a rate window (probe 2026-11-19 round 2): Pfizer
+    and Intel stayed 429 across 0/15/45/105s of waiting, no Retry-After, no
+    Cloudflare error code. After the fix, the first paced run got 6/17 tenants
+    through (was 2/17) — the runner IP is a random draw, so coverage is a
+    lottery from the cloud. Backoff cannot fix this; do not keep tuning it.
+  - Data integrity holds regardless: a failed search returns ok=False, so
+    expiry skips the source (no false "gone"); stored postings are served from
+    KNOWN without a detail fetch, so a throttled detail can't blank them.
+  - Free, non-evasive ways to restore full Workday coverage: (1) self-hosted
+    Actions runner on the owner's PC (residential IP answers 200) — but the
+    repo is PUBLIC, and GitHub warns self-hosted runners on public repos let
+    fork PRs run code on the machine; workflows must stay schedule/dispatch
+    only. (2) Accept partial coverage; the Adzuna discovery net backstops
+    Workday employers. Owner decision pending as of 2026-11-19.
 
 ## Previous state — as of 2026-11-11
 
