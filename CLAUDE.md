@@ -259,11 +259,22 @@ investigations.
     Philippines…), dropped by the US filter before any cache saw them.
   - Measured: 162 → 36 Workday requests per run (warm cache); 0 qualifying US
     postings cached as negatives. Cold first run is still ~162, paced.
-  - CONFIRMED IP-level, not a rate window (probe 2026-11-19 round 2): Pfizer
-    and Intel stayed 429 across 0/15/45/105s of waiting, no Retry-After, no
-    Cloudflare error code. After the fix, the first paced run got 6/17 tenants
-    through (was 2/17) — the runner IP is a random draw, so coverage is a
-    lottery from the cloud. Backoff cannot fix this; do not keep tuning it.
+  - IP-level throttling, CORROBORATED externally 2026-11-19: other GitHub
+    Actions scrapers logged the same Workday 429s Nov 15-18, 2026 (e.g.
+    Emjumaev/FAANG-2027-Internships-Tracker-Europe#22, morriswong/
+    jtbf-scrape-runner issues), and a dev.to write-up ("The public job APIs
+    behind 10,000 career sites…", Nov 16) states Workday rate-limits each
+    client IP across ALL its hosts — ~1/4 of sites 429 from a cloud IP vs
+    almost none from home. No official Workday/Cloudflare statement found.
+  - Our probe: Pfizer and Intel stayed 429 across 0/15/45/105s with no
+    Retry-After. After pacing, the first run got 6/17 tenants (was 2/17).
+  - NOT proven unfixable. An earlier note here said "backoff cannot fix this;
+    do not keep tuning it" — that overstated a 2-tenant, 105s probe. The same
+    dev.to author cut Workday failures 796 -> 14 with one limiter shared
+    across all Workday hosts plus escalating retries (1.5/3/6/12s), and
+    naveenmorla1901/job-tracker#7 reports zero-429 runs after capping
+    concurrency with longer backoff. We are already sequential but retry only
+    once — escalating multi-retry backoff is the untried, free next step.
   - Data integrity holds regardless: a failed search returns ok=False, so
     expiry skips the source (no false "gone"); stored postings are served from
     KNOWN without a detail fetch, so a throttled detail can't blank them.
