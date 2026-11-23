@@ -1,21 +1,17 @@
 {
-  "updated": "2026-11-22",
+  "updated": "2026-11-23",
   "new_window_days": 7,
   "warnings": [
-    "workday:JLL: fetch failing (4 runs)",
-    "workday:Accenture: fetch failing (8 runs)",
-    "workday:Mass General Brigham: fetch failing (3 runs)",
-    "workday:NVIDIA: fetch failing (3 runs)",
-    "workday:Micron: fetch failing (5 runs)",
-    "workday:Intel: fetch failing (3 runs)",
-    "workday:Pfizer: fetch failing (8 runs)",
-    "workday:PwC: fetch failing (8 runs)",
-    "workday:Johnson & Johnson: fetch failing (4 runs)",
-    "workday:Moss: fetch failing (8 runs)",
-    "workday:Duke Energy: fetch failing (8 runs)",
-    "workday:Cleveland Clinic: fetch failing (4 runs)",
-    "workday:Booz Allen Hamilton: fetch failing (4 runs)",
-    "workday:AtkinsRéalis: fetch failing (8 runs)"
+    "workday:JLL: fetch failing (5 runs)",
+    "workday:Accenture: fetch failing (9 runs)",
+    "workday:NVIDIA: fetch failing (4 runs)",
+    "workday:Intel: fetch failing (4 runs)",
+    "workday:Pfizer: fetch failing (9 runs)",
+    "workday:Moss: fetch failing (9 runs)",
+    "workday:Duke Energy: fetch failing (9 runs)",
+    "workday:Cleveland Clinic: fetch failing (5 runs)",
+    "workday:Booz Allen Hamilton: fetch failing (5 runs)",
+    "workday:AtkinsRéalis: fetch failing (9 runs)"
   ],
   "roster": [
     {
@@ -3084,6 +3080,27 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-11-22"
+    },
+    {
+      "company": "Innoworx Technology Services LLC",
+      "url": "https://www.adzuna.com/land/ad/5960622880?se=Lof8B47n8RGc7Zrte3JR2g&utm_medium=api&utm_source=55569923&v=9E7DCD24003F83687BDEDB53F4BC2039880943CF",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-23"
+    },
+    {
+      "company": "TechTu Business Solutions Inc",
+      "url": "https://www.adzuna.com/land/ad/5954900076?se=Lof8B47n8RGc7Zrte3JR2g&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-23"
+    },
+    {
+      "company": "Exl Neo Technologies",
+      "url": "https://www.adzuna.com/land/ad/5964787924?se=Lof8B47n8RGc7Zrte3JR2g&utm_medium=api&utm_source=55569923&v=5FB44EC6EFE1CF5E3EB59BD5C5B6FC4B4C19A48E",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-23"
     }
   ],
   "jobs": [
@@ -3145,25 +3162,6 @@
       "has_desc": true
     },
     {
-      "id": "0d8ba802b86c1207",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Civil/Structural Field Engineer",
-      "location": "New Albany, Ohio, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=298278&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-08-26T13:17:09.590+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [
-        "long-posted"
-      ],
-      "first_seen": "2026-07-17",
-      "role": "field",
-      "has_desc": true
-    },
-    {
       "id": "e90f20f280d14e0a",
       "kind": "direct",
       "company": "Bechtel",
@@ -3205,8 +3203,8 @@
       "company": "Bechtel",
       "title": "Piping Superintendent",
       "location": "Lake Charles, Louisiana, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300277&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-10-13T12:08:14.700+0000",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=301463&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-11-20T15:17:51.396+0000",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -3391,7 +3389,9 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [],
+      "flags": [
+        "long-posted"
+      ],
       "first_seen": "2026-08-25",
       "role": "unclear",
       "has_desc": true
@@ -3523,9 +3523,9 @@
       "company": "Luster National",
       "title": "Construction Inspector",
       "location": "Seattle, Washington, United States",
-      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5443808008",
-      "posted_date": "2026-10-05T13:10:59-04:00",
-      "comp": "Salary: $85k-$150k/year ($41-$72/hour)",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5466570008",
+      "posted_date": "2026-10-30T12:52:36-04:00",
+      "comp": "Salary: $75k-$135k/year ($36-$65/hour)",
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -4770,7 +4770,7 @@
       "title": "Mid-Level Integration/Software Developer",
       "location": "US-WA-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Remote/Mid-Level-Integration-Software-Developer_JR1699",
-      "posted_date": "Posted 25 Days Ago",
+      "posted_date": "Posted 26 Days Ago",
       "comp": "compensation range $120,000 - $150,000",
       "tier": 1,
       "status": "active",
@@ -4821,7 +4821,7 @@
       "title": "Senior Digital Project Manager",
       "location": "US-WA-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Remote/Senior-Digital-Project-Manager_JR1706",
-      "posted_date": "Posted 23 Days Ago",
+      "posted_date": "Posted 24 Days Ago",
       "comp": "Compensation range based on skills, education, experience and geographic location: $140,000–$180,000",
       "tier": 1,
       "status": "active",
@@ -4922,7 +4922,7 @@
       "company": "TechTu Business Solutions Inc",
       "title": "Solutions Architect  Technical PM - Oracle Primavera Unifier",
       "location": "Pleasanton, Alameda County",
-      "url": "https://www.adzuna.com/land/ad/5954900076?se=aDCDRaHm8RGK1Jozpv_WtA&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
+      "url": "https://www.adzuna.com/land/ad/5954900076?se=Lof8B47n8RGc7Zrte3JR2g&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
       "posted_date": "2026-11-05T20:05:58Z",
       "comp": null,
       "tier": 1,
@@ -5075,7 +5075,7 @@
       "company": "Innoworx Technology Services LLC",
       "title": "Oracle Primavera Unifier Functional Consultant",
       "location": "US",
-      "url": "https://www.adzuna.com/land/ad/5960622880?se=aDCDRaHm8RGK1Jozpv_WtA&utm_medium=api&utm_source=55569923&v=9E7DCD24003F83687BDEDB53F4BC2039880943CF",
+      "url": "https://www.adzuna.com/land/ad/5960622880?se=Lof8B47n8RGc7Zrte3JR2g&utm_medium=api&utm_source=55569923&v=9E7DCD24003F83687BDEDB53F4BC2039880943CF",
       "posted_date": "2026-11-10T13:43:17Z",
       "comp": null,
       "tier": 1,
@@ -5092,7 +5092,7 @@
       "company": "Exl Neo Technologies",
       "title": "Oracle Unifier SME",
       "location": "US",
-      "url": "https://www.adzuna.com/land/ad/5964787924?se=aDCDRaHm8RGK1Jozpv_WtA&utm_medium=api&utm_source=55569923&v=5FB44EC6EFE1CF5E3EB59BD5C5B6FC4B4C19A48E",
+      "url": "https://www.adzuna.com/land/ad/5964787924?se=Lof8B47n8RGc7Zrte3JR2g&utm_medium=api&utm_source=55569923&v=5FB44EC6EFE1CF5E3EB59BD5C5B6FC4B4C19A48E",
       "posted_date": "2026-11-13T12:04:18Z",
       "comp": null,
       "tier": 1,
@@ -5333,7 +5333,7 @@
       "title": "Technical Manager",
       "location": "US-FL-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-FL-Remote/Technical-Manager_JR1743",
-      "posted_date": "Posted 3 Days Ago",
+      "posted_date": "Posted 4 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -5409,6 +5409,63 @@
       "flags": [],
       "first_seen": "2026-11-21",
       "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "82a02ad5dff61b3b",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Field Welding Engineer",
+      "location": "Chandler, Arizona, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=301511&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-11-23T14:51:27.339+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-11-23",
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "afad79c62ee7df00",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Field Engineer - Civil",
+      "location": "Lake Charles, Louisiana, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=301521&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-11-23T13:31:25.357+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-11-23",
+      "role": "field",
+      "has_desc": true
+    },
+    {
+      "id": "27c3e1c55a3a6527",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Superintendent- Structural Steel",
+      "location": "Portland, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=301444&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-11-20T10:13:47.367+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
+      "flags": [
+        "new"
+      ],
+      "first_seen": "2026-11-23",
+      "role": "field",
       "has_desc": true
     },
     {
@@ -5508,6 +5565,24 @@
       "status": "gone",
       "gone_date": "2026-08-15",
       "flags": [],
+      "first_seen": "2026-07-17",
+      "role": "field"
+    },
+    {
+      "id": "0d8ba802b86c1207",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Civil/Structural Field Engineer",
+      "location": "New Albany, Ohio, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=298278&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-08-26T13:17:09.590+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-23",
+      "flags": [
+        "long-posted"
+      ],
       "first_seen": "2026-07-17",
       "role": "field"
     },
