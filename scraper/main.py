@@ -419,6 +419,9 @@ def run():
           f"{len(triage)} in triage queue, {len(warnings)} health warnings"
           + (f", {len(dropped_scope)} dropped as out-of-scope" if dropped_scope else "")
           + (" [baseline run]" if baseline else ""))
+    s = sources.WD_STATS
+    print(f"workday: {s['requests']} requests, {s['throttled']} throttled (429), "
+          f"{s['recovered']} recovered by retry, {s['gave_up']} gave up")
 
 
 REPOST_LOOKBACK_DAYS = 30

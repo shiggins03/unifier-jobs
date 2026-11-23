@@ -39,23 +39,49 @@ CHECKED = set()
 # ~370 requests per run, nearly all re-fetching descriptions we already had.
 # So: reuse known descriptions, pace requests, and honour Retry-After once.
 # Deliberately polite rather than evasive — no proxies, no UA games.
-WORKDAY_PAUSE = 1.5      # seconds before each request to the shared zone
+WORKDAY_PAUSE = 1.5      # base seconds before each request to the shared zone
+WORKDAY_PAUSE_MAX = 3.0  # adaptive pause ceiling (grows on 429, decays on 200)
 WORKDAY_MAX_WAIT = 30    # cap on an honoured Retry-After
+# Escalating waits between retries of one request — the pattern that cut
+# another Actions scraper's Workday failures 796 -> 14 (see CLAUDE.md).
+WORKDAY_RETRY_WAITS = (1.5, 3, 6, 12)
+# Run-wide cap on retry sleeping. Once spent, requests get one attempt only,
+# so a fully blocked run cannot blow the workflow timeout.
+WORKDAY_RETRY_BUDGET = 480   # seconds
+
+WD_STATS = {"requests": 0, "throttled": 0, "recovered": 0, "gave_up": 0}
+_wd_state = {"pause": WORKDAY_PAUSE, "budget": WORKDAY_RETRY_BUDGET}
 
 
 def _wd_request(method, url, **kw):
-    """One paced request to Workday, with a single polite retry on 429."""
+    """One paced request to Workday. On 429: escalating retries (honouring
+    Retry-After when given), and a shared pause that grows after a 429 and
+    eases back after successes — the sequential equivalent of a limiter
+    shared across every Workday host, since Workday throttles per client IP
+    across all tenants."""
     r = None
-    for attempt in range(2):
-        time.sleep(WORKDAY_PAUSE)
+    waits = (0,) + WORKDAY_RETRY_WAITS
+    for attempt, backoff in enumerate(waits):
+        if attempt:
+            try:
+                wait = min(float(r.headers.get("Retry-After", "")), WORKDAY_MAX_WAIT)
+            except (ValueError, TypeError):
+                wait = backoff
+            if wait > _wd_state["budget"]:
+                break                      # budget spent: give up this request
+            _wd_state["budget"] -= wait
+            time.sleep(wait)
+        time.sleep(_wd_state["pause"])
+        WD_STATS["requests"] += 1
         r = requests.request(method, url, headers=UA, timeout=TIMEOUT, **kw)
-        if r.status_code != 429 or attempt:
+        if r.status_code != 429:
+            if attempt:
+                WD_STATS["recovered"] += 1
+            _wd_state["pause"] = max(WORKDAY_PAUSE, _wd_state["pause"] * 0.9)
             return r
-        try:
-            wait = min(float(r.headers.get("Retry-After", "")), WORKDAY_MAX_WAIT)
-        except ValueError:
-            wait = 10
-        time.sleep(wait)
+        WD_STATS["throttled"] += 1
+        _wd_state["pause"] = min(WORKDAY_PAUSE_MAX, _wd_state["pause"] * 1.5)
+    WD_STATS["gave_up"] += 1
     return r
 
 

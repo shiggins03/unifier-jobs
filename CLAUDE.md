@@ -273,8 +273,16 @@ investigations.
     dev.to author cut Workday failures 796 -> 14 with one limiter shared
     across all Workday hosts plus escalating retries (1.5/3/6/12s), and
     naveenmorla1901/job-tracker#7 reports zero-429 runs after capping
-    concurrency with longer backoff. We are already sequential but retry only
-    once — escalating multi-retry backoff is the untried, free next step.
+    concurrency with longer backoff.
+  - 2026-11-23 SHIPPED that next step (owner asked to "fix the lottery"):
+    `_wd_request` now retries 429s at 1.5/3/6/12s (honouring Retry-After),
+    with a shared adaptive pause (1.5s, grows x1.5 on 429 to 3s max, eases
+    x0.9 on success) and a run-wide 480s retry budget so a fully blocked run
+    can't blow the workflow timeout (raised 30 -> 45 min). Each run logs a
+    `workday: N requests, N throttled, N recovered, N gave up` line — read it
+    before tuning further. Baseline before the change: 6/17 then 3/17 tenants
+    succeeded (2026-11-19/20). If it still doesn't hold, the remaining free
+    option is a self-hosted runner (see the public-repo caveat above).
   - Data integrity holds regardless: a failed search returns ok=False, so
     expiry skips the source (no false "gone"); stored postings are served from
     KNOWN without a detail fetch, so a throttled detail can't blank them.
