@@ -283,6 +283,14 @@ investigations.
     before tuning further. Baseline before the change: 6/17 then 3/17 tenants
     succeeded (2026-11-19/20). If it still doesn't hold, the remaining free
     option is a self-hosted runner (see the public-repo caveat above).
+  - RESULT 2026-11-23 (run 45288793813): FAILED. `workday: 143 requests, 137
+    throttled (429), 3 recovered by retry, 46 gave up` -> 3/17 tenants, no
+    better than the old code (6, 3, 5 of 17). 96% throttled = that runner IP
+    was effectively blocked; retries cannot outlast that. The dev.to fix
+    worked for a CONCURRENCY problem; ours is IP reputation (we were already
+    sequential). Run time 10 -> 17 min. Do not tune backoff further. The only
+    real fix is a different IP: self-hosted runner on the owner's PC (open
+    owner decision), or accept partial Workday coverage.
   - Data integrity holds regardless: a failed search returns ok=False, so
     expiry skips the source (no false "gone"); stored postings are served from
     KNOWN without a detail fetch, so a throttled detail can't blank them.
