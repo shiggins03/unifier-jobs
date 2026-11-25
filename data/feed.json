@@ -1,16 +1,14 @@
 {
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "new_window_days": 7,
   "warnings": [
-    "workday:JLL: fetch failing (7 runs)",
-    "workday:NVIDIA: fetch failing (6 runs)",
-    "workday:Intel: fetch failing (6 runs)",
-    "workday:Moss: fetch failing (11 runs)",
-    "workday:Duke Energy: fetch failing (11 runs)",
-    "workday:AT&T: fetch failing (3 runs)",
-    "workday:Cleveland Clinic: fetch failing (7 runs)",
-    "workday:Booz Allen Hamilton: fetch failing (7 runs)",
-    "workday:AtkinsRéalis: fetch failing (11 runs)"
+    "workday:Mass General Brigham: fetch failing (3 runs)",
+    "workday:NVIDIA: fetch failing (7 runs)",
+    "workday:Johnson & Johnson: fetch failing (3 runs)",
+    "workday:Moss: fetch failing (12 runs)",
+    "workday:Duke Energy: fetch failing (12 runs)",
+    "workday:AT&T: fetch failing (4 runs)",
+    "workday:Booz Allen Hamilton: fetch failing (8 runs)"
   ],
   "roster": [
     {
@@ -3156,6 +3154,27 @@
       "note": "unknown employer — find direct posting, propose tier",
       "source": "adzuna",
       "first_seen": "2026-11-24"
+    },
+    {
+      "company": "Innoworx Technology Services LLC",
+      "url": "https://www.adzuna.com/land/ad/5960622880?se=QAdicxDp8RGCzaY2c7Xc0w&utm_medium=api&utm_source=55569923&v=9E7DCD24003F83687BDEDB53F4BC2039880943CF",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "company": "TechTu Business Solutions Inc",
+      "url": "https://www.adzuna.com/land/ad/5954900076?se=QAdicxDp8RGCzaY2c7Xc0w&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-25"
+    },
+    {
+      "company": "Exl Neo Technologies",
+      "url": "https://www.adzuna.com/land/ad/5964787924?se=QAdicxDp8RGCzaY2c7Xc0w&utm_medium=api&utm_source=55569923&v=5FB44EC6EFE1CF5E3EB59BD5C5B6FC4B4C19A48E",
+      "note": "unknown employer — find direct posting, propose tier",
+      "source": "adzuna",
+      "first_seen": "2026-11-25"
     }
   ],
   "jobs": [
@@ -4408,23 +4427,6 @@
       "has_desc": true
     },
     {
-      "id": "76f577ab23848489",
-      "kind": "direct",
-      "company": "Bechtel",
-      "title": "Field Welding Engineer - Night Shift",
-      "location": "Brownsville, Texas, United States",
-      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300505&jobPipeline=PhenomCareerSite",
-      "posted_date": "2026-10-21T15:11:47.412+0000",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-10-21",
-      "role": "field",
-      "has_desc": true
-    },
-    {
       "id": "ed0dc8cd2461be88",
       "kind": "direct",
       "company": "STV",
@@ -4473,23 +4475,6 @@
       "flags": [],
       "first_seen": "2026-10-21",
       "role": "unclear",
-      "has_desc": true
-    },
-    {
-      "id": "92a46d9a489192e6",
-      "kind": "board",
-      "company": "Veracity Ventures Inc.",
-      "title": "Energy Supply Software Configuration Analyst",
-      "location": "Detroit, Wayne County",
-      "url": "https://www.adzuna.com/land/ad/5971110321?se=yv-lcJLk8RGAvJnbPgF_oA&utm_medium=api&utm_source=55569923&v=1F4B125679E8D1CC5D56C8673F6FC68225B8DB7C",
-      "posted_date": "2026-11-19T00:17:24Z",
-      "comp": null,
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-10-23",
-      "role": "systems",
       "has_desc": true
     },
     {
@@ -4791,7 +4776,7 @@
       "title": "Mid-Level Integration/Software Developer",
       "location": "US-WA-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Remote/Mid-Level-Integration-Software-Developer_JR1699",
-      "posted_date": "Posted 27 Days Ago",
+      "posted_date": "Posted 28 Days Ago",
       "comp": "compensation range $120,000 - $150,000",
       "tier": 1,
       "status": "active",
@@ -4842,7 +4827,7 @@
       "title": "Senior Digital Project Manager",
       "location": "US-WA-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-WA-Remote/Senior-Digital-Project-Manager_JR1706",
-      "posted_date": "Posted 25 Days Ago",
+      "posted_date": "Posted 26 Days Ago",
       "comp": "Compensation range based on skills, education, experience and geographic location: $140,000–$180,000",
       "tier": 1,
       "status": "active",
@@ -4943,7 +4928,7 @@
       "company": "TechTu Business Solutions Inc",
       "title": "Solutions Architect  Technical PM - Oracle Primavera Unifier",
       "location": "Pleasanton, Alameda County",
-      "url": "https://www.adzuna.com/land/ad/5954900076?se=GtOnM0zo8RGJ3IkP01vxSg&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
+      "url": "https://www.adzuna.com/land/ad/5954900076?se=QAdicxDp8RGCzaY2c7Xc0w&utm_medium=api&utm_source=55569923&v=201F7F0201775EA55EE1611CFF35C3C6CE3BE4A8",
       "posted_date": "2026-11-05T20:05:58Z",
       "comp": null,
       "tier": 1,
@@ -5096,7 +5081,7 @@
       "company": "Innoworx Technology Services LLC",
       "title": "Oracle Primavera Unifier Functional Consultant",
       "location": "US",
-      "url": "https://www.adzuna.com/land/ad/5960622880?se=GtOnM0zo8RGJ3IkP01vxSg&utm_medium=api&utm_source=55569923&v=9E7DCD24003F83687BDEDB53F4BC2039880943CF",
+      "url": "https://www.adzuna.com/land/ad/5960622880?se=QAdicxDp8RGCzaY2c7Xc0w&utm_medium=api&utm_source=55569923&v=9E7DCD24003F83687BDEDB53F4BC2039880943CF",
       "posted_date": "2026-11-10T13:43:17Z",
       "comp": null,
       "tier": 1,
@@ -5113,7 +5098,7 @@
       "company": "Exl Neo Technologies",
       "title": "Oracle Unifier SME",
       "location": "US",
-      "url": "https://www.adzuna.com/land/ad/5964787924?se=GtOnM0zo8RGJ3IkP01vxSg&utm_medium=api&utm_source=55569923&v=5FB44EC6EFE1CF5E3EB59BD5C5B6FC4B4C19A48E",
+      "url": "https://www.adzuna.com/land/ad/5964787924?se=QAdicxDp8RGCzaY2c7Xc0w&utm_medium=api&utm_source=55569923&v=5FB44EC6EFE1CF5E3EB59BD5C5B6FC4B4C19A48E",
       "posted_date": "2026-11-13T12:04:18Z",
       "comp": null,
       "tier": 1,
@@ -5184,23 +5169,6 @@
       "url": "https://lilly.wd115.myworkdayjobs.com/LLY/job/US-Lehigh-Valley-PA/Senior-Program-C-Q-Lead_R-115686-1/apply",
       "posted_date": "2026-11-18T10:28:13.305+0000",
       "comp": "$163,500 - $239,800",
-      "tier": 1,
-      "status": "active",
-      "gone_date": null,
-      "flags": [],
-      "first_seen": "2026-11-18",
-      "role": "unclear",
-      "has_desc": true
-    },
-    {
-      "id": "90cb67385600d226",
-      "kind": "direct",
-      "company": "Deloitte",
-      "title": "US E-Consulting Services – Sr. Consultant – S&T/Strategy/I&RE – Capital Projects (Project Delivery) – 375807– OK",
-      "location": null,
-      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Senior-Consultant-Project-Delivery/375807",
-      "posted_date": "Tue, 17 Nov 2026 00:00:00 +0000",
-      "comp": "range is $131,000 to $218,300",
       "tier": 1,
       "status": "active",
       "gone_date": null,
@@ -5354,7 +5322,7 @@
       "title": "Technical Manager",
       "location": "US-FL-Remote",
       "url": "https://consertus.wd501.myworkdayjobs.com/en-US/consertuscareers/job/US-FL-Remote/Technical-Manager_JR1743",
-      "posted_date": "Posted 5 Days Ago",
+      "posted_date": "Posted 6 Days Ago",
       "comp": null,
       "tier": 1,
       "status": "active",
@@ -5495,9 +5463,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "first_seen": "2026-11-24",
       "role": "systems",
       "has_desc": true
@@ -5514,9 +5480,7 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "first_seen": "2026-11-24",
       "role": "unclear",
       "has_desc": true
@@ -5533,11 +5497,28 @@
       "tier": 1,
       "status": "active",
       "gone_date": null,
+      "flags": [],
+      "first_seen": "2026-11-24",
+      "role": "unclear",
+      "has_desc": true
+    },
+    {
+      "id": "3c0c52b447937e76",
+      "kind": "direct",
+      "company": "Luster National",
+      "title": "Document Control Systems Manager ",
+      "location": "Sacramento, California, United States",
+      "url": "https://job-boards.greenhouse.io/lusternational/jobs/5494596008",
+      "posted_date": "2026-11-25T12:56:44-05:00",
+      "comp": "Salary: $150k-$190k/year ($72-$91/hour)",
+      "tier": 1,
+      "status": "active",
+      "gone_date": null,
       "flags": [
         "new"
       ],
-      "first_seen": "2026-11-24",
-      "role": "unclear",
+      "first_seen": "2026-11-25",
+      "role": "controls",
       "has_desc": true
     },
     {
@@ -9080,6 +9061,22 @@
       "role": "systems"
     },
     {
+      "id": "76f577ab23848489",
+      "kind": "direct",
+      "company": "Bechtel",
+      "title": "Field Welding Engineer - Night Shift",
+      "location": "Brownsville, Texas, United States",
+      "url": "https://career4.successfactors.com/career?company=Bechtel&career_ns=job_application&career_job_req_id=300505&jobPipeline=PhenomCareerSite",
+      "posted_date": "2026-10-21T15:11:47.412+0000",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-25",
+      "flags": [],
+      "first_seen": "2026-10-21",
+      "role": "field"
+    },
+    {
       "id": "a96c07ee0248a916",
       "kind": "board",
       "company": "GForce Life Sciences",
@@ -9126,6 +9123,22 @@
       "flags": [],
       "first_seen": "2026-10-22",
       "role": "unclear"
+    },
+    {
+      "id": "92a46d9a489192e6",
+      "kind": "board",
+      "company": "Veracity Ventures Inc.",
+      "title": "Energy Supply Software Configuration Analyst",
+      "location": "Detroit, Wayne County",
+      "url": "https://www.adzuna.com/land/ad/5971110321?se=yv-lcJLk8RGAvJnbPgF_oA&utm_medium=api&utm_source=55569923&v=1F4B125679E8D1CC5D56C8673F6FC68225B8DB7C",
+      "posted_date": "2026-11-19T00:17:24Z",
+      "comp": null,
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-25",
+      "flags": [],
+      "first_seen": "2026-10-23",
+      "role": "systems"
     },
     {
       "id": "abf0c5b9a2666688",
@@ -9434,6 +9447,22 @@
       "flags": [],
       "first_seen": "2026-11-12",
       "role": "field"
+    },
+    {
+      "id": "90cb67385600d226",
+      "kind": "direct",
+      "company": "Deloitte",
+      "title": "US E-Consulting Services – Sr. Consultant – S&T/Strategy/I&RE – Capital Projects (Project Delivery) – 375807– OK",
+      "location": null,
+      "url": "https://apply.deloitte.com/careers/JobDetail/Capital-Projects-Senior-Consultant-Project-Delivery/375807",
+      "posted_date": "Tue, 17 Nov 2026 00:00:00 +0000",
+      "comp": "range is $131,000 to $218,300",
+      "tier": 1,
+      "status": "gone",
+      "gone_date": "2026-11-25",
+      "flags": [],
+      "first_seen": "2026-11-18",
+      "role": "unclear"
     }
   ]
 }
